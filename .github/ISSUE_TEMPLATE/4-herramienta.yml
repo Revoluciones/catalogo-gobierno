@@ -1,0 +1,13 @@
+name: Herramientas o esquema
+description: Mejoras al validador, al esquema, a la página o a los importadores.
+labels: [herramientas, por-revisar]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué propones y por qué
+    validations: {required: true}
+  - type: textarea
+    id: afecta
+    attributes:
+      label: Qué fichas o archivos cambia

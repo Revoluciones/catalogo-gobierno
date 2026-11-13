@@ -1,0 +1,24 @@
+# Crea o actualiza las etiquetas de .github/etiquetas.json.
+name: etiquetas
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/etiquetas.json]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  etiquetas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const want = require('./.github/etiquetas.json');
+            const have = await github.paginate(github.rest.issues.listLabelsForRepo, context.repo);
+            for (const l of want) {
+              if (have.some(h => h.name === l.name)) await github.rest.issues.updateLabel({ ...context.repo, ...l });
+              else await github.rest.issues.createLabel({ ...context.repo, ...l });
+            }

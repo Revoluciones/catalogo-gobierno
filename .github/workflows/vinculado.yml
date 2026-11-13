@@ -1,0 +1,41 @@
+# Revisa que cada PR cierre un issue asignado a su autor y que diga si usó IA.
+name: vinculado
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, labeled, unlabeled]
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+jobs:
+  vinculado:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || '';
+            const author = pr.user.login;
+            const problems = [];
+
+            // Solo quien tiene permiso de triage o escritura puede poner etiquetas, así que la etiqueta basta.
+            const maint = pr.labels.some(l => l.name === 'mantenimiento');
+            if (!maint) {
+              const m = body.match(/\b(cierra|cierran|closes|close|fixes|fix|resuelve|resolves)\s+#(\d+)/i);
+              if (!m) {
+                problems.push('Escribe "Cierra #<número>" con el issue que resuelve este PR.');
+              } else {
+                const { data: issue } = await github.rest.issues.get({ ...context.repo, issue_number: Number(m[2]) });
+                if (issue.pull_request) problems.push(`#${m[2]} es un pull request, no un issue.`);
+                else if (!issue.assignees.some(a => a.login === author))
+                  problems.push(`El issue #${m[2]} no está asignado a @${author}. Comenta /tomar en el issue primero.`);
+              }
+            }
+
+            const ia = body.split(/^##\s*Uso de IA\s*$/mi)[1];
+            const iaText = (ia || '').split(/^##\s/m)[0].replace(/<!--[\s\S]*?-->/g, '').trim();
+            if (!iaText) problems.push('Llena la sección "Uso de IA" (escribe "Ninguno" si no usaste IA).');
+
+            if (problems.length) core.setFailed(problems.join('\n'));
+            else core.info('Todo en orden.');

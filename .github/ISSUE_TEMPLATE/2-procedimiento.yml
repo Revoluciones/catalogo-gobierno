@@ -1,0 +1,27 @@
+name: Proponer un procedimiento
+description: Un trámite o un procedimiento interno del gobierno que falta.
+labels: [procedimiento, por-revisar]
+body:
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre
+      placeholder: Cómo se aprueba el presupuesto de Jalisco
+    validations: {required: true}
+  - type: input
+    id: lugar
+    attributes:
+      label: Lugar
+      description: Código de lugar, por ejemplo MX, MX-JAL o MX-JAL-Guadalajara.
+    validations: {required: true}
+  - type: textarea
+    id: fuentes
+    attributes:
+      label: Fuentes que conoces
+      description: Leyes, reglamentos, manuales o portales oficiales.
+  - type: checkboxes
+    id: yo
+    attributes:
+      label: ¿Quieres hacerlo tú?
+      options:
+        - label: Sí, quiero escribirlo cuando quede disponible.

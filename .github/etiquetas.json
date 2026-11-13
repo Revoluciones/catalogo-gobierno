@@ -1,0 +1,13 @@
+[
+  {"name": "disponible", "color": "0e8a16", "description": "Lista para que alguien la tome con /tomar"},
+  {"name": "en-curso", "color": "fbca04", "description": "Alguien ya la tomó; no la empieces en paralelo"},
+  {"name": "por-revisar", "color": "d4c5f9", "description": "Falta que el equipo la revise antes de abrirla"},
+  {"name": "aviso-vencido", "color": "e99695", "description": "Sin movimiento 14 días; se libera en 7 más"},
+  {"name": "para-empezar", "color": "7057ff", "description": "Buena primera tarea"},
+  {"name": "importar", "color": "1d76db", "description": "Importar un registro oficial de trámites"},
+  {"name": "procedimiento", "color": "0052cc", "description": "Escribir un procedimiento"},
+  {"name": "cotejar", "color": "5319e7", "description": "Revisar una ficha contra sus fuentes"},
+  {"name": "corregir", "color": "d93f0b", "description": "Algo está mal o desactualizado"},
+  {"name": "herramientas", "color": "006b75", "description": "Validador, esquema, página, importadores"},
+  {"name": "mantenimiento", "color": "c5def5", "description": "Trabajo del equipo; no necesita issue asignado"}
+]

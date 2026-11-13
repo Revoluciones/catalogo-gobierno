@@ -1,0 +1,21 @@
+name: Corregir una ficha
+description: Algo está mal, falta o cambió en un procedimiento.
+labels: [corregir, por-revisar]
+body:
+  - type: input
+    id: ficha
+    attributes:
+      label: Ficha
+      description: El archivo o el id, por ejemplo mx-registro-de-nacimiento.
+    validations: {required: true}
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué está mal y qué debería decir
+    validations: {required: true}
+  - type: textarea
+    id: fuente
+    attributes:
+      label: Fuente
+      description: Ley y artículo, enlace oficial, oficio o nota. Sin fuente no podemos cambiar la ficha.
+    validations: {required: true}
