@@ -1,0 +1,233 @@
+id: mx-bcn-tijuana-registrar-nacimiento-en-el-extranjero
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: identidad
+title: Registrar en México un nacimiento que ocurrió en otro país
+summary: Si naciste en otro país y tu mamá o tu papá es mexicano, ya eres mexicano por nacimiento. Este trámite
+  pasa tu acta extranjera a los libros del Registro Civil de Tijuana para que tengas acta mexicana. Pasa por tres
+  lugares, en este orden, y aquí está la ruta completa.
+authority:
+  name: Oficialía del Registro Civil de Tijuana
+  unit: Secretaría de Gobierno Municipal
+other_authorities:
+- name: Registro Civil del Estado de Baja California
+  unit: Secretaría General de Gobierno
+- name: Recaudación de Rentas del Estado de Baja California
+- name: El gobierno del país donde naciste (para el acta y la apostilla)
+who_can:
+- La persona interesada, si es mayor de edad
+- Su mamá o su papá mexicano, si es menor de edad
+- Un representante con carta poder ante notario, si la persona es mayor de edad y no puede ir
+when: Naciste en otro país, al menos uno de tus padres es mexicano y quieres tu acta de nacimiento mexicana.
+result: Acta de nacimiento mexicana, inscrita en el Registro Civil de Tijuana.
+requirements:
+- text: Solicitud de inscripción (te la dan en la oficialía)
+  original_or_copy: original
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Constancia de inexistencia de registro de nacimiento del Registro Civil del Estado (pasos 4 a 6)
+  original_or_copy: original y 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Acta de nacimiento de tu mamá o tu papá mexicano
+  original_or_copy: original y 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Identificación oficial vigente de tu mamá o tu papá, o la tuya si eres mayor de edad
+  original_or_copy: original y 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Acta de nacimiento extranjera con apostilla (o legalizada, según el país)
+  original_or_copy: original y 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Traducción oficial al español del acta, hecha por un perito traductor autorizado por el Tribunal Superior
+    de Justicia del Estado
+  original_or_copy: original y 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+- text: Si eres mayor de edad y no puedes ir, carta poder firmada ante notario
+  original_or_copy: 1 copia
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+cost:
+  type: variable
+  amount_mxn: 498
+  text: La constancia de inexistencia del Estado, $498 en noviembre de 2026. La inscripción en Tijuana es gratis.
+    La apostilla y la traducción se pagan aparte y su precio depende del país y del perito.
+  as_of: '2026-11-13'
+  cites:
+  - source: remutys-0190
+    pinpoint: Costo
+    quote: Gratuito
+  - source: retys-618
+    pinpoint: Costo
+    quote: 'COSTO VARIABLE: Noviembre $498.00 m.n.'
+deadlines:
+- what: vigencia
+  text: La constancia de inexistencia vale 3 meses. Haz la inscripción antes de que venza.
+  cites:
+  - source: retys-618
+    pinpoint: Vigencia
+- what: respuesta_autoridad
+  text: La oficialía de Tijuana tiene 1 día para resolver la inscripción.
+  cites:
+  - source: remutys-0190
+    pinpoint: Tiempo de respuesta
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialía del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 664 973 7000 ext. 7922
+  hours: Lunes a viernes, 8:00 a 15:00
+legal_basis:
+- source: cpeum
+  pinpoint: 'art. 30, apartado A, fracción II'
+- source: remutys-0190
+  pinpoint: 'Fundamento: arts. 52 y 55 de la Ley Orgánica del Registro Civil del Estado de Baja California'
+steps:
+- n: '1'
+  actor: Tú, en el país donde naciste
+  action: Consigue tu acta de nacimiento de ese país.
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+    quote: Acta de nacimiento extranjera, apostillada o legalizada según el país de origen.
+- n: '2'
+  actor: El gobierno del país donde naciste
+  action: Ponle la apostilla al acta en ese mismo país. Si ese país no usa apostilla, se legaliza.
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+    quote: apostillada o legalizada según el país de origen
+- n: '3'
+  actor: Un perito traductor de Baja California
+  action: Traduce el acta al español con un perito traductor autorizado por el Tribunal Superior de Justicia del
+    Estado. La lista oficial pide traducir el acta.
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+    quote: Traducción oficial al español del acta de nacimiento, realizada por un perito autorizado por el Tribunal
+      Superior de Justicia del Estado.
+  practice:
+  - text: En un caso de julio de 2025 también se tradujo la apostilla, no solo el acta, y se llevaron las dos
+      traducciones.
+    evidence_level: un_reporte
+    observed: Tijuana, julio de 2025
+    cites:
+    - source: reportes
+- n: '4'
+  actor: Tú
+  action: Llena y firma la solicitud de inexistencia de registro de nacimiento del Estado. Como naciste en otro
+    país, agrega una copia de tu acta extranjera.
+  cites:
+  - source: retys-618
+    pinpoint: Escenario «Inexistencia de nacimiento», notas
+    quote: Para los casos de nacimiento en el extranjero agregar copia de nacimiento.
+- n: '5'
+  actor: Tú, en Recaudación de Rentas del Estado
+  action: Paga los derechos de la constancia. En noviembre de 2026 cuesta $498.
+  cites:
+  - source: retys-618
+    pinpoint: Pasos y Costo
+    quote: Realizar pago de derechos ante la recaudación de rentas del Estado
+  practice:
+  - text: En julio de 2025 se pagó $473 en la Subrecaudación Auxiliar de Rentas de Tijuana. El precio sube cada
+      año.
+    evidence_level: un_reporte
+    observed: Tijuana, julio de 2025
+    cites:
+    - source: reportes
+- n: '6'
+  actor: Registro Civil del Estado
+  action: Te entrega la constancia de inexistencia. Dice que no tienes ya un registro de nacimiento en Baja California.
+  deadline: Vale 3 meses
+  cites:
+  - source: retys-618
+    pinpoint: Resultado y Vigencia
+- n: '7'
+  actor: Tú, en la Oficialía del Registro Civil de Tijuana
+  action: Lleva la solicitud de inscripción y todos los documentos de la lista, en original y 1 copia de cada
+    uno.
+  cites:
+  - source: remutys-0190
+    pinpoint: Requisitos
+  practice:
+  - text: En julio de 2025 se llevaron 2 copias de cada documento, no 1. En ese momento la ficha oficial pedía
+      el original solo de la solicitud y de la constancia; hoy pide el original de casi todo.
+    evidence_level: un_reporte
+    observed: Tijuana, julio de 2025
+    cites:
+    - source: reportes
+- n: '8'
+  actor: Oficialía del Registro Civil de Tijuana
+  action: Inscribe tu nacimiento y te entrega tu acta mexicana. No cobra.
+  deadline: 1 día
+  cites:
+  - source: remutys-0190
+    pinpoint: Costo y Tiempo de respuesta
+    quote: Gratuito
+  next:
+  - to: fin
+related:
+- mx-bcn-tijuana-tj-sgm-0190-inscripcion-de-registro-de-nacimiento-ocurrido-en
+- mx-bcn-retys-618-inexistencia-de-registro-de-nacimiento-o-matrimoni
+- mx-registro-de-nacimiento
+glossary:
+- apostilla
+- perito-traductor
+- constancia-de-inexistencia
+- inscripcion
+- derechos
+- registro-civil
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+  remutys-0190:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0190: Inscripción de registro de nacimiento ocurrido en el extranjero'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0190
+    version_date: '2026-10-22'
+    accessed: '2026-11-06'
+  retys-618:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 618 (BC-SGG-010): Inexistencia de registro de nacimiento o matrimonio'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/618
+    version_date: 04/Noviembre/2026
+    accessed: '2026-11-06'
+  reportes:
+    type: reportes_ciudadanos
+    official: false
+    title: Reporte de primera mano, Tijuana, julio de 2025
+    report_ids:
+    - 2025-07-01-jt7k2m
+status: borrador
+last_checked: '2026-11-13'
+checked_by: Claude (Compartido)
+notes: Ruta completa que junta tres trámites oficiales (las fichas TJ-SGM-0190 de Tijuana y BC-SGG-010 del Estado,
+  más la apostilla y la traducción). La ruta y las notas de práctica salen de un caso real de julio de 2025 que
+  se hizo de principio a fin. Una captura de la ficha de Tijuana de 2025 marcaba el original obligatorio solo para
+  la solicitud y la constancia; la ficha vigente lo pide para todo menos la carta poder.

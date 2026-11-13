@@ -5,3 +5,4 @@ fuentes-crudas/
 *.pyc
 .venv/
 .DS_Store
+salida/
