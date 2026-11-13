@@ -1,0 +1,104 @@
+id: mx-bcn-campana-soy-mexico-doble-nacionalidad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+category: identidad
+title: Registrar un nacimiento en Estados Unidos durante la campaña «Soy México»
+summary: Algunos meses, el gobierno abre la campaña «Soy México» en las oficialías del Registro Civil de Baja California.
+  Si naciste en Estados Unidos y tu mamá o tu papá es mexicano, inscribes tu acta con menos papeles y, en Tijuana, gratis.
+goal:
+  id: nacimiento-en-el-extranjero
+  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+route:
+  name: En la campaña «Soy México»
+  availability: solo_en_campana
+  availability_text: Solo los meses que dura la campaña. En Baja California empezó el 1 de agosto de 2025.
+  pros:
+  - text: En Tijuana es gratis.
+    cites:
+    - source: imparcial-2025-soy-mexico
+      quote: En Tijuana, Tecate, Playas de Rosarito, Ensenada y San Quintín el trámite será completamente gratuito
+  - text: No te piden la constancia de inexistencia del Estado, ni traducción, ni apostilla.
+    cites:
+    - source: zeta-2023-soy-mexico
+      quote: el solicitante queda exento del pago de la constancia de inexistencia de registro de nacimiento estatal,
+        así como de la traducción y apostillado del acta de nacimiento de Estados Unidos
+  cons:
+  - text: Solo existe algunos meses del año.
+    cites:
+    - source: zeta-2023-soy-mexico
+      quote: En Mexicali el programa se desarrolló durante julio, en agosto en Tijuana y en septiembre en Playas de Rosarito
+        y en Ensenada.
+  - text: Es solo para quien nació en Estados Unidos.
+    cites:
+    - source: imparcial-2025-soy-mexico
+authority:
+  name: Registro Civil del Estado de Baja California, en las oficialías de cada municipio
+who_can:
+- Personas nacidas en Estados Unidos con mamá o papá mexicano
+result: Acta de nacimiento mexicana.
+requirements:
+- text: Copia del acta de nacimiento de Estados Unidos, legible, solo de quien se registra
+  cites:
+  - source: imparcial-2025-soy-mexico
+- text: Identificación oficial y CURP de tu mamá o tu papá mexicano (o de los dos, si los dos lo son)
+  cites:
+  - source: imparcial-2025-soy-mexico
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratis en Tijuana, Tecate, Rosarito, Ensenada y San Quintín. En Mexicali y San Felipe tiene un costo.
+  as_of: '2025-07-31'
+  cites:
+  - source: imparcial-2025-soy-mexico
+channels:
+- presencial
+steps:
+- n: '1'
+  actor: Gobierno del Estado
+  action: Anuncia la campaña y las fechas en que las oficialías reciben solicitudes.
+  cites:
+  - source: imparcial-2025-soy-mexico
+- n: '2'
+  actor: Tú, en la oficialía del Registro Civil más cercana
+  action: Llena la solicitud y entrega tus documentos.
+  cites:
+  - source: imparcial-2025-soy-mexico
+    quote: pueden acudir a la oficialía del Registro Civil más cercana para llenar su solicitud, presentar los documentos
+      requeridos
+- n: '3'
+  actor: Registro Civil
+  action: Inscribe tu acta de Estados Unidos y te entrega tu acta mexicana.
+  cites:
+  - source: imparcial-2025-soy-mexico
+  next:
+  - to: fin
+related:
+- mx-bcn-tijuana-registrar-nacimiento-en-el-extranjero
+- mx-registro-de-nacimiento-en-el-consulado
+glossary:
+- constancia-de-inexistencia
+- apostilla
+sources:
+  imparcial-2025-soy-mexico:
+    type: periodismo
+    official: false
+    title: Realizarán campaña nacional «Soy México» para tramitar doble nacionalidad
+    publisher: El Imparcial, 31 de julio de 2025
+    url: https://www.elimparcial.com/tij/tijuana/2025/07/31/realizaran-campana-nacional-soy-mexico-para-tramitar-doble-nacionalidad/
+    accessed: '2026-11-13'
+  zeta-2023-soy-mexico:
+    type: periodismo
+    official: false
+    title: Impulsan la campaña «Soy México»
+    publisher: Zeta Tijuana, agosto de 2023 (cita un comunicado del Ayuntamiento de Tijuana)
+    url: https://zetatijuana.com/2023/08/impulsan-la-campana-soy-mexico/
+    accessed: '2026-11-13'
+status: borrador
+last_checked: '2026-11-13'
+checked_by: Claude (Compartido)
+notes: Falta la convocatoria oficial de la campaña; las fuentes son notas de prensa. Los requisitos pueden cambiar
+  de una campaña a otra.

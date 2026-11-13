@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITULO}} · Compartido · Por dentro</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="{{URL}}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Compartido · Por dentro">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="{{TITULO}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{URL}}">
+<meta property="og:image" content="{{OG}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{TITULO}}: la ruta paso a paso, con fuentes oficiales">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f3f3f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131320" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#f3f3f7;--papel-alto:#fff;--papel-hundido:#e8e8f0;--linea:#d6d6e2;--linea-fuerte:#737390;
+  --tinta:#1b1a2e;--tinta-suave:#51506b;--sobre-tinta:#fff;--enlace:#3d47b5;--foco:#3d47b5;
+  --jade:#0a7568;--jade-suave:#dcf0ec;--anil:#3d47b5;--anil-suave:#e3e5fa;--grana:#b3263f;
+  --cemp:#925600;--cemp-suave:#fbebcb;--cemp-logo:#b97a00;--barro:#9c4a26;--jaca:#6a47be;
+  --f-display:"Archivo","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-texto:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --papel:#131320;--papel-alto:#1c1c2c;--papel-hundido:#0d0d17;--linea:#34344b;--linea-fuerte:#8c8ca8;
+  --tinta:#ededf5;--tinta-suave:#abaac2;--sobre-tinta:#1b1a2e;--enlace:#9da4f6;--foco:#9da4f6;
+  --jade:#43c7b4;--jade-suave:#0e2c28;--anil:#9da4f6;--anil-suave:#1e2147;--grana:#f07b90;
+  --cemp:#f2b640;--cemp-suave:#33240a;--cemp-logo:#f2b640;--barro:#e89c75;--jaca:#bca5f4;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --papel:#131320;--papel-alto:#1c1c2c;--papel-hundido:#0d0d17;--linea:#34344b;--linea-fuerte:#8c8ca8;
+  --tinta:#ededf5;--tinta-suave:#abaac2;--sobre-tinta:#1b1a2e;--enlace:#9da4f6;--foco:#9da4f6;
+  --jade:#43c7b4;--jade-suave:#0e2c28;--anil:#9da4f6;--anil-suave:#1e2147;--grana:#f07b90;
+  --cemp:#f2b640;--cemp-suave:#33240a;--cemp-logo:#f2b640;--barro:#e89c75;--jaca:#bca5f4;color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.55 var(--f-texto)}
+a{color:var(--enlace)}
+:focus-visible{outline:3px solid var(--foco);outline-offset:2px;border-radius:4px}
+.envoltura{max-width:720px;margin:0 auto;padding-block:0 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Barra superior */
+.top{display:flex;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--linea)}
+.top a.marca{display:flex;align-items:center;gap:8px;color:var(--tinta);text-decoration:none}
+.logo{width:30px;height:30px;color:var(--tinta);flex:none}
+.marca span,.img-top .marca{font:800 21px/1 var(--f-display);font-stretch:112%;letter-spacing:-.02em}
+.pill{font:700 13px/1 var(--f-display);font-stretch:100%;text-transform:uppercase;letter-spacing:.08em;padding:6px 10px;border-radius:99px;background:var(--tinta);color:var(--papel);text-decoration:none}
+.top .pill{margin-left:auto}
+
+/* Encabezado */
+.cabeza{padding:28px 0 8px}
+.lugar{margin:0 0 8px;font:700 13px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.1em;color:var(--tinta-suave)}
+h1{margin:0;font:800 clamp(30px,7.4vw,46px)/1.04 var(--f-display);font-stretch:88%;letter-spacing:-.015em;text-wrap:balance}
+.resumen{margin:14px 0 0;font-size:18px;color:var(--tinta-suave);max-width:60ch}
+.hilos{height:6px;border-radius:3px;margin:22px 0 0;background:linear-gradient(90deg,var(--jade) 0 20%,var(--anil) 0 40%,var(--cemp-logo) 0 60%,var(--jaca) 0 80%,var(--barro) 0)}
+
+/* Datos clave */
+.hechos{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:10px;margin:22px 0 0;padding:0}
+.hecho{background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px;padding:12px 14px;min-width:0}
+.hecho dt{font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave)}
+.hecho dd{margin:4px 0 0}
+.hecho b{display:block;font:800 26px/1.1 var(--f-display);font-stretch:95%}
+.hecho span{display:block;font-size:14px;line-height:1.35;color:var(--tinta-suave);margin-top:4px}
+.hecho:first-child{grid-column:1/-1}
+.hecho:not(:first-child) span{display:none}
+.hecho:not(:first-child) b{font-size:22px}
+@media (min-width:640px){.hechos{grid-template-columns:1.6fr repeat(calc(var(--cols,3)),1fr)}.hecho:first-child{grid-column:auto}.hecho:not(:first-child) span{display:block}.hecho:not(:first-child) b{font-size:26px}}
+
+/* Compartir */
+.compartir{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 18px;border-radius:12px;font:700 16px/1 var(--f-texto);text-decoration:none;border:1px solid var(--linea-fuerte);color:var(--tinta);background:var(--papel-alto);cursor:pointer}
+.boton--wa{background:var(--jade);border-color:var(--jade);color:var(--sobre-tinta);flex:1 1 220px}
+.boton svg{width:20px;height:20px;flex:none}
+.aviso{font-size:14px;color:var(--jade);min-height:1.2em;margin:6px 0 0}
+
+/* Secciones */
+section{margin:40px 0 0}
+h2{font:800 24px/1.15 var(--f-display);font-stretch:95%;margin:0 0 14px}
+h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave);margin-top:4px}
+
+/* Ruta */
+.ruta-lista{list-style:none;margin:0;padding:0;position:relative}
+.paso{display:grid;grid-template-columns:40px 1fr;gap:14px;position:relative;padding-bottom:22px}
+.paso:not(:last-child)::before{content:"";position:absolute;left:19px;top:42px;bottom:2px;width:2px;background:var(--linea)}
+.paso .n{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 18px/1 var(--f-display);background:var(--anil-suave);color:var(--anil);border:2px solid var(--anil)}
+.paso--tu .n{background:var(--cemp-logo);border-color:var(--cemp-logo);color:#fff}
+.cuerpo{min-width:0;padding-top:2px}
+.actor{margin:0;font:700 13px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
+.paso--tu .actor{color:var(--cemp)}
+.accion{margin:4px 0 0;font-size:18px}
+.plazo{display:inline-block;margin-top:8px;font-size:14px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--cemp-suave);color:var(--cemp)}
+.practica{margin:12px 0 0;padding:12px 14px;border-radius:12px;background:var(--papel-hundido);border-left:4px solid var(--barro)}
+.practica p{margin:0}
+.practica .etq{font:700 12px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.07em;color:var(--barro);margin-bottom:4px}
+.cita{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 5px;border-radius:6px;font:700 12px/1 var(--f-texto);text-decoration:none;background:var(--papel-hundido);color:var(--enlace);vertical-align:2px;margin-left:2px;border:1px solid var(--linea)}
+
+
+/* Mapa: el diagrama de flujo */
+.mapa{position:relative;display:grid;grid-template-columns:repeat(var(--cols,1),minmax(0,1fr));gap:34px 12px;margin:0 0 30px}
+.flechas{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.flechas path{fill:none;stroke:var(--linea-fuerte);stroke-width:2}
+.flechas .punta{fill:var(--linea-fuerte)}
+.nodo{position:relative;z-index:1;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;background:var(--papel-alto);border:2px solid var(--anil);border-radius:12px;padding:10px 10px 11px}
+.nodo--tu{border-color:var(--cemp-logo)}
+.nodo .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:800 14px/1 var(--f-display);background:var(--anil-suave);color:var(--anil)}
+.nodo--tu .n{background:var(--cemp-logo);color:#fff}
+.nodo small{display:block;font:700 11px/1.25 var(--f-display);text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-suave)}
+.nodo--tu small{color:var(--cemp)}
+.nodo p{margin:3px 0 0;font-size:14px;line-height:1.35}
+.difiere{display:inline-block;margin-top:6px;font:700 11px/1 var(--f-texto);padding:4px 7px;border-radius:99px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
+.nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
+.mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
+.lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
+.lienzo .nodo{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px;border-width:3px;border-radius:16px}
+.lienzo .nodo .n{width:44px;height:44px;font-size:22px}
+.lienzo .nodo small{font-size:15px}
+.lienzo .nodo p{font-size:22px;line-height:1.3}
+.lienzo .difiere{font-size:15px;padding:5px 9px}
+.lienzo .nodo-fin{font-size:22px;padding:14px 26px}
+.lienzo .flechas path{stroke-width:3}
+
+
+/* Varios caminos para la misma meta */
+.otros{margin:22px 0 0;padding:14px;border-radius:14px;background:var(--anil-suave);border:1px solid var(--linea)}
+.otros p{margin:0 0 10px}
+.caminos{display:flex;flex-wrap:wrap;gap:8px}
+.camino{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:10px;background:var(--papel-alto);border:1px solid var(--linea);color:var(--tinta);text-decoration:none;flex:1 1 150px;min-width:0}
+.camino span{font-size:14px;color:var(--tinta-suave)}
+.comparar{display:inline-block;margin-top:10px;font-weight:700}
+.envoltura--ancha{max-width:1100px}
+.opciones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:26px 0 0;align-items:start}
+.opcion{background:var(--papel-alto);border:1px solid var(--linea);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.opcion header{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}
+.opcion h3{margin:0;font:800 22px/1.15 var(--f-display);font-stretch:92%}
+.opcion h4{margin:0;font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave)}
+.opcion ul{margin:-4px 0 0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.opcion ul.pros li::marker{content:"✓  ";color:var(--jade);font-weight:700}
+.opcion ul.cons li::marker{content:"!  ";color:var(--barro);font-weight:800}
+.cuando{margin:0;font-size:14px;color:var(--tinta-suave)}
+.disp{font:700 12px/1 var(--f-texto);padding:6px 9px;border-radius:99px;white-space:nowrap}
+.disp--jade{background:var(--jade-suave);color:var(--jade)}
+.disp--anil{background:var(--anil-suave);color:var(--anil)}
+.disp--cemp{background:var(--cemp-suave);color:var(--cemp)}
+.cifras{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;margin:0}
+.cifras div{background:var(--papel-hundido);border-radius:10px;padding:8px 10px}
+.cifras dt{font:700 11px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
+.cifras dd{margin:2px 0 0;font:800 22px/1.1 var(--f-display)}
+.boton--ver{margin-top:auto;background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.og--meta h1{font-size:60px!important;max-width:none!important}
+.og--meta .lugar{margin:auto 0 12px!important}
+.comparo{list-style:none;margin:28px 0 8px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.comparo li{background:var(--papel-alto);border:2px solid var(--linea);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.comparo li div{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.comparo b{font:800 24px/1.1 var(--f-display);font-stretch:90%}
+.comparo strong{font:800 40px/1 var(--f-display);margin-top:4px}
+.comparo small{font-size:18px;color:var(--tinta-suave)}
+.comparo .disp{font-size:16px}
+
+/* Lleva esto */
+.lleva{list-style:none;margin:0;padding:0;background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px}
+.lleva li+li{border-top:1px solid var(--linea)}
+.lleva label{display:grid;grid-template-columns:26px 1fr;gap:4px 12px;padding:14px;cursor:pointer;align-items:start}
+.lleva input{position:absolute;opacity:0;pointer-events:none}
+.caja{width:26px;height:26px;border-radius:7px;border:2px solid var(--linea-fuerte);display:grid;place-items:center}
+.lleva input:checked+.caja{background:var(--jade);border-color:var(--jade)}
+.lleva input:checked+.caja::after{content:"";width:7px;height:13px;border:solid var(--sobre-tinta);border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.lleva input:focus-visible+.caja{outline:3px solid var(--foco);outline-offset:2px}
+.lleva input:checked~.txt{color:var(--tinta-suave);text-decoration:line-through;text-decoration-color:var(--linea-fuerte)}
+.oc{grid-column:2;font-size:14px;font-weight:700;color:var(--tinta-suave)}
+
+/* Oficinas, glosario, fuentes */
+.ofis{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ofis li{background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px;padding:14px}
+.ofis span{display:block;color:var(--tinta-suave);font-size:15px}
+.glos{margin:0;display:grid;gap:12px}
+.glos dt{font-weight:700;text-transform:capitalize}
+.glos dd{margin:2px 0 0;color:var(--tinta-suave)}
+.fuentes{margin:0;padding:0;list-style:none;counter-reset:f;display:grid;gap:12px}
+.fuentes li{counter-increment:f;position:relative;padding-left:36px;font-size:15px;overflow-wrap:anywhere}
+.fuentes li::before{content:counter(f);position:absolute;left:0;top:0;min-width:24px;height:24px;border-radius:6px;display:grid;place-items:center;font:700 12px/1 var(--f-texto);background:var(--papel-hundido);border:1px solid var(--linea)}
+.fuentes li:target{background:var(--anil-suave);border-radius:8px}
+.fuentes small{display:block;color:var(--tinta-suave)}
+.tipo{display:block;font:700 11px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.07em;color:var(--jade)}
+.tipo--no{color:var(--barro)}
+.base{font-size:15px;color:var(--tinta-suave);margin:14px 0 0}
+
+/* Pie */
+.estado{margin:40px 0 0;padding:16px;border-radius:14px;border:1px dashed var(--linea-fuerte);font-size:15px}
+.estado p{margin:0}.estado p+p{margin-top:8px}
+.pie{margin:32px 0 0;padding-top:20px;border-top:1px solid var(--linea);font-size:15px;color:var(--tinta-suave)}
+
+@media print{
+  body{background:#fff;color:#000;font-size:12pt}
+  .compartir,.aviso,.top .pill{display:none}
+  .paso{break-inside:avoid}
+  a{color:#000}
+  .fuentes a::after{content:" " attr(href);font-size:9pt;color:#555}
+}
+
+/* Lienzo para og.png y ruta.png */
+.lienzo{margin:0;overflow:hidden;background:var(--papel)}
+.lienzo .og,.lienzo .ruta{position:relative;height:100vh;display:flex;flex-direction:column;padding:64px 72px}
+.img-top{display:flex;align-items:center;gap:14px}
+.img-top .logo{width:56px;height:56px}
+.img-top .marca{font-size:40px}
+.img-top .pill{margin-left:auto;font-size:22px;padding:10px 18px}
+.lienzo .lugar{margin:auto 0 14px;font-size:24px}
+.lienzo .og h1{font-size:76px;line-height:1;font-stretch:84%;max-width:15ch}
+.lienzo .datos{margin:26px 0 0;font:700 28px/1.2 var(--f-texto);color:var(--tinta-suave)}
+.lienzo .hilos{position:absolute;left:0;right:0;bottom:0;height:16px;margin:0;border-radius:0}
+.lienzo .ruta{padding:60px 64px 56px}
+.lienzo .ruta .lugar{margin:44px 0 10px}
+.lienzo .ruta h1{font-size:58px;line-height:1.02;font-stretch:84%}
+.og-cuerpo{display:flex;gap:56px;align-items:flex-end;margin-top:auto}
+.og-cuerpo>div{flex:1;min-width:0}
+.lienzo .og .lugar{margin:0 0 14px}
+.cadena{list-style:none;margin:0 0 6px;padding:0;display:grid;grid-template-columns:repeat(2,64px);gap:14px 22px;flex:none}
+.cadena li{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font:800 28px/1 var(--f-display);background:var(--anil-suave);color:var(--anil);border:4px solid var(--anil)}
+.cadena li.tu{background:var(--cemp-logo);border-color:var(--cemp-logo);color:#fff}
+.caja-datos{display:flex;gap:16px;margin:0 0 22px}
+.caja-datos div{flex:1;background:var(--papel-alto);border:2px solid var(--linea);border-radius:16px;padding:14px 18px}
+.caja-datos small{display:block;font:700 16px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
+.caja-datos b{display:block;font:800 34px/1.1 var(--f-display);margin-top:4px}
+.lienzo .ruta footer{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-top:22px;border-top:2px solid var(--linea);font-size:22px;color:var(--tinta-suave)}
+.lienzo .ruta footer b{font:800 26px/1.1 var(--f-display);text-align:right;color:var(--tinta)}
+</style>
+</head>
+<body>
+<div class="envoltura">
+  <header class="top">
+    <a class="marca" href="/" aria-label="Compartido, inicio">{{LOGO}}<span>compartido</span></a>
+    <a class="pill" href="/dentro">Por dentro</a>
+  </header>
+
+  <main>
+    <div class="cabeza">
+      <p class="lugar">{{TIPO}} · {{LUGAR}}</p>
+      <h1>{{TITULO}}</h1>
+      <p class="resumen">{{RESUMEN}}</p>
+      <div class="hilos" aria-hidden="true"></div>
+    </div>
+
+    <!--hechos--><dl class="hechos" style="--cols:{{NCOLS}}">{{HECHOS}}</dl><!--/hechos-->
+
+    {{CAMINOS}}
+
+    <div class="compartir">
+      <a class="boton boton--wa" href="{{WA}}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+        Mandar por WhatsApp
+      </a>
+      <button class="boton" type="button" id="copiar">Copiar enlace</button>
+      <a class="boton" href="ruta.png" download>Guardar imagen</a>
+    </div>
+    <p class="aviso" id="aviso" role="status"></p>
+
+    <!--pasos--><section aria-labelledby="t-ruta">
+      <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
+      {{MAPA}}
+      <ol class="ruta-lista">{{PASOS}}</ol>
+    </section><!--/pasos-->
+
+    <!--reqs--><section aria-labelledby="t-lleva">
+      <h2 id="t-lleva">Lleva esto<small>Toca cada documento cuando ya lo tengas.</small></h2>
+      <ul class="lleva">{{REQS}}</ul>
+    </section><!--/reqs-->
+
+    <!--ofis--><section aria-labelledby="t-donde">
+      <h2 id="t-donde">Dónde</h2>
+      <ul class="ofis">{{OFIS}}</ul>
+    </section><!--/ofis-->
+
+    <!--glos--><section aria-labelledby="t-palabras">
+      <h2 id="t-palabras">Palabras que vas a oír</h2>
+      <dl class="glos">{{GLOS}}</dl>
+    </section><!--/glos-->
+
+    <section aria-labelledby="t-fuentes">
+      <h2 id="t-fuentes">Fuentes</h2>
+      <ol class="fuentes">{{FUENTES}}</ol>
+      <p class="base">Fundamento legal: {{BASE}}</p>
+    </section>
+
+    <div class="estado">
+      <p>{{ESTADO}} Última revisión: {{REVISADO}}.</p>
+      <p>¿Te pasó algo distinto o ves un error? <a href="{{ARCHIVO}}">Corrige esta ficha</a> o cuéntanos cómo te fue.</p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <p>Por dentro es parte de Compartido, una herramienta libre para formar tu propio partido local, postularte sin partido o sumarte a uno que se está formando. Compartido no es un partido.</p>
+  </footer>
+</div>
+<script id="dibujar-flechas">
+window.dibujarFlechas=function(){
+  document.querySelectorAll('.mapa').forEach(function(m){
+    var svg=m.querySelector('.flechas'),z=parseFloat(getComputedStyle(m).zoom)||1;
+    var R=m.getBoundingClientRect(),ns='http://www.w3.org/2000/svg';
+    var aristas=JSON.parse(m.dataset.aristas||'[]'),nodos={},salen={};
+    m.querySelectorAll('.nodo').forEach(function(n){nodos[n.dataset.n]=n;});
+    aristas.forEach(function(a){salen[a[0]]=1;});
+    Object.keys(nodos).forEach(function(k){if(!salen[k])aristas.push([k,'fin','']);});
+    nodos.fin=m.querySelector('.nodo-fin');
+    var r=function(el){var b=el.getBoundingClientRect();return{l:(b.left-R.left)/z,r:(b.right-R.left)/z,t:(b.top-R.top)/z,b:(b.bottom-R.top)/z};};
+    var out='<defs><marker id="pt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="punta" d="M0 0L10 5L0 10z" style="stroke:none"/></marker></defs>';
+    aristas.forEach(function(a){
+      var A=nodos[a[0]],B=nodos[a[1]];if(!A||!B)return;
+      var p=r(A),q=r(B),x1=(p.l+p.r)/2,y1=p.b,y2=q.t-2;
+      var x2=Math.min(Math.max(x1,q.l+24),q.r-24);
+      var mid=y1+(y2-y1)/2;
+      var d=Math.abs(x1-x2)<1?'M'+x1+' '+y1+'V'+y2:'M'+x1+' '+y1+'V'+mid+'H'+x2+'V'+y2;
+      out+='<path d="'+d+'" marker-end="url(#pt)"/>';
+    });
+    svg.setAttribute('viewBox','0 0 '+(R.width/z)+' '+(R.height/z));
+    svg.innerHTML=out;
+  });
+};
+window.dibujarFlechas();
+addEventListener('resize',window.dibujarFlechas);
+if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
+</script>
+<script>
+(function(){
+  var aviso=document.getElementById('aviso');
+  document.getElementById('copiar').addEventListener('click',function(){
+    var url='{{URL}}';
+    var listo=function(){aviso.textContent='Enlace copiado.';};
+    if(navigator.clipboard){navigator.clipboard.writeText(url).then(listo,function(){aviso.textContent=url;});}
+    else{aviso.textContent=url;}
+  });
+  var clave='dentro:{{ID}}';
+  var marcas={};
+  try{marcas=JSON.parse(localStorage.getItem(clave)||'{}');}catch(e){}
+  document.querySelectorAll('.lleva input').forEach(function(c){
+    c.checked=!!marcas[c.dataset.k];
+    c.addEventListener('change',function(){marcas[c.dataset.k]=c.checked;try{localStorage.setItem(clave,JSON.stringify(marcas));}catch(e){}});
+  });
+})();
+</script>
+</body>
+</html>
