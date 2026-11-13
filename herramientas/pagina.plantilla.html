@@ -2,27 +2,34 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Atkinson+Hyperlegible+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: a register ledger. Index column on the left (search, filters, list), the open ficha on the right; stacked on phones. */
+/* Layout: a register ledger. Index column on the left (search, filters, list), the open ficha on the right; stacked on phones.
+   Colors and type are Compartido's (compartido.org): ink and paper, jade for links, barro for what happens in practice. */
 :root{
-  --bg:#f3f5f2; --panel:#ffffff; --ink:#15231f; --muted:#56655f; --rule:#d5ddd8;
-  --accent:#0f6b55; --accent-soft:#e1efe9; --stamp:#b5541c; --stamp-soft:#fbeadf; --chip:#eef2ef;
-  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
-  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --bg:#f3f3f7; --panel:#ffffff; --ink:#1b1a2e; --muted:#51506b; --rule:#d6d6e2;
+  --accent:#0a7568; --accent-soft:#dcf0ec; --stamp:#9c4a26; --stamp-soft:#f6e3d9; --chip:#e8e8f0;
+  --anil:#3d47b5; --cemp:#b97a00; --jaca:#6a47be;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,sans-serif;
+  --mono:"Atkinson Hyperlegible Mono",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0e1513; --panel:#16201d; --ink:#e4ece8; --muted:#9db0a8; --rule:#2a3833;
-  --accent:#5cc6a6; --accent-soft:#183129; --stamp:#f0955a; --stamp-soft:#35221a; --chip:#1d2a26; color-scheme:dark}}
+  --bg:#131320; --panel:#1c1c2c; --ink:#ededf5; --muted:#abaac2; --rule:#34344b;
+  --accent:#43c7b4; --accent-soft:#0e2c28; --stamp:#e89c75; --stamp-soft:#35190e; --chip:#0d0d17;
+  --anil:#9da4f6; --cemp:#f2b640; --jaca:#bca5f4; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0e1513; --panel:#16201d; --ink:#e4ece8; --muted:#9db0a8; --rule:#2a3833;
-  --accent:#5cc6a6; --accent-soft:#183129; --stamp:#f0955a; --stamp-soft:#35221a; --chip:#1d2a26; color-scheme:dark}
+  --bg:#131320; --panel:#1c1c2c; --ink:#ededf5; --muted:#abaac2; --rule:#34344b;
+  --accent:#43c7b4; --accent-soft:#0e2c28; --stamp:#e89c75; --stamp-soft:#35190e; --chip:#0d0d17;
+  --anil:#9da4f6; --cemp:#f2b640; --jaca:#bca5f4; color-scheme:dark}
+.brand{display:inline-flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font:800 17px/1 var(--display);font-stretch:112%;letter-spacing:-.02em;margin-bottom:12px}
+.brand:hover span{text-decoration:underline}
+.kicker{font:700 13px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 .wrap{max-width:1240px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header.top{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:20px}
-h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1{font:800 clamp(30px,4.4vw,46px)/1.05 var(--display);font-stretch:112%;margin:0;letter-spacing:-.02em;text-wrap:balance}
 .lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
 .count{font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
 .grid{display:grid;grid-template-columns:minmax(0,370px) minmax(0,1fr);gap:24px;align-items:start}
@@ -87,8 +94,9 @@ dl.glos dd{margin:0;color:var(--muted)}
 <div class="wrap">
   <header class="top">
     <div>
+      <a class="brand" href="/" aria-label="Compartido, inicio"><svg width="24" height="24" viewBox="0 0 120 120" aria-hidden="true"><path d="M79.3 37A30 30 0 1 0 79.3 83" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round"/><circle cx="45.2" cy="105.7" r="9" fill="var(--accent)"/><circle cx="21.2" cy="88.2" r="9" fill="var(--anil)"/><circle cx="12" cy="60" r="9" fill="var(--cemp)"/><circle cx="21.2" cy="31.8" r="9" fill="var(--jaca)"/><circle cx="45.2" cy="14.3" r="9" fill="var(--stamp)"/></svg><span>compartido</span></a>
       <h1>Por dentro</h1>
-      <p class="lede">Cómo funciona el gobierno de México: los trámites que tú haces y lo que pasa por dentro. Cada paso cita su ley, manual o registro oficial. Lo que pasa en la práctica va aparte, con sus propias fuentes.</p>
+      <p class="lede">Cómo funciona el gobierno, paso a paso: los trámites que tú haces y lo que pasa por dentro. Cada paso cita su ley, manual o registro oficial. Lo que pasa en la práctica va aparte, con sus propias fuentes.</p>
     </div>
     <span class="count" id="count"></span>
   </header>
