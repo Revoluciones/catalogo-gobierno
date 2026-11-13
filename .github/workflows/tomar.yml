@@ -1,0 +1,48 @@
+# /tomar asigna un issue disponible a quien lo pide; /soltar lo libera.
+name: tomar
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  issues: write
+concurrency:
+  group: tomar-${{ github.event.issue.number }}
+jobs:
+  tomar:
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const MAX = 2;
+            const issue = context.payload.issue;
+            const who = context.payload.comment.user.login;
+            const cmd = context.payload.comment.body.trim().split(/\s+/)[0].toLowerCase();
+            const labels = issue.labels.map(l => l.name);
+            const assigned = issue.assignees.map(a => a.login);
+            const n = issue.number;
+            const say = body => github.rest.issues.createComment({ ...context.repo, issue_number: n, body });
+            const drop = name => github.rest.issues.removeLabel({ ...context.repo, issue_number: n, name }).catch(() => {});
+
+            if (assigned.includes(who) && labels.includes('aviso-vencido')) await drop('aviso-vencido');
+
+            if (cmd === '/tomar') {
+              if (assigned.length) return say(`@${who} esta tarea ya la tiene @${assigned.join(', @')}. Si quieres ayudar, pónganse de acuerdo aquí.`);
+              if (!labels.includes('disponible')) return say(`@${who} esta tarea todavía no está disponible. El equipo la revisa y le pone \`disponible\` cuando se puede tomar.`);
+              const mine = await github.paginate(github.rest.issues.listForRepo, { ...context.repo, state: 'open', assignee: who, labels: 'en-curso' });
+              if (mine.length >= MAX) return say(`@${who} ya tienes ${mine.length} tareas en curso (${mine.map(i => '#' + i.number).join(', ')}). Termina o suelta una con /soltar antes de tomar otra.`);
+              await github.rest.issues.addAssignees({ ...context.repo, issue_number: n, assignees: [who] });
+              await drop('disponible');
+              await github.rest.issues.addLabels({ ...context.repo, issue_number: n, labels: ['en-curso'] });
+              return say(`Listo, @${who}: la tarea es tuya. Abre tu pull request con \`Cierra #${n}\`. Si en 14 días no hay movimiento, te avisamos, y 7 días después vuelve a quedar disponible. Si ya no puedes, comenta /soltar.`);
+            }
+
+            if (cmd === '/soltar') {
+              if (!assigned.includes(who)) return;
+              await github.rest.issues.removeAssignees({ ...context.repo, issue_number: n, assignees: [who] });
+              await drop('en-curso');
+              await drop('aviso-vencido');
+              await github.rest.issues.addLabels({ ...context.repo, issue_number: n, labels: ['disponible'] });
+              return say(`Gracias, @${who}. La tarea vuelve a estar disponible.`);
+            }

@@ -32,7 +32,7 @@ Los códigos de lugar son los mismos que usa Barda: `MX`, `MX-BCN`, `MX-BCN-Tiju
 ## Revisar
 
 ```
-pip install pyyaml jsonschema beautifulsoup4
+pip install -r requirements.txt
 python3 herramientas/validar.py
 ```
 
@@ -42,3 +42,19 @@ python3 herramientas/validar.py
 - `borrador`: escrito por el proyecto a partir de las fuentes citadas; falta que otra persona lo coteje.
 - `revisado`: alguien cotejó cada paso con su fuente.
 - `desactualizado`: la fuente cambió y la ficha no.
+
+## Contribuir
+
+Este catálogo lo construimos entre muchas personas de todo México, con o sin agentes de IA. Para no hacer el mismo trabajo dos veces, cada tarea se aparta antes de empezar:
+
+1. Escoge un [issue `disponible`](../../issues?q=is%3Aopen+label%3Adisponible) (o `para-empezar` si es tu primera vez).
+2. Comenta `/tomar`. La tarea queda a tu nombre.
+3. Abre un pull request con `Cierra #<número>`.
+
+Los detalles están en [CONTRIBUTING.md](CONTRIBUTING.md). Si usas Claude Code, Codex, Cursor, Copilot u otro agente, ya lee solo [AGENTS.md](AGENTS.md).
+
+## Licencia
+
+El código usa la licencia [MIT](LICENSE). El contenido usa [CC BY-SA 4.0](LICENSE-DATOS.md): puedes usarlo y cambiarlo si das crédito y compartes igual.
+
+Lo mantiene [Revoluciones](https://compartido.org) como parte de Compartido.

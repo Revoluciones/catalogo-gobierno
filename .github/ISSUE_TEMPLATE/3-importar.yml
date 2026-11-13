@@ -1,0 +1,27 @@
+name: Importar un registro oficial
+description: El registro de trámites de un estado o municipio que todavía no está.
+labels: [importar, por-revisar]
+body:
+  - type: input
+    id: lugar
+    attributes:
+      label: Lugar
+      placeholder: MX-NLE (Nuevo León)
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes:
+      label: Dirección del registro
+      description: El portal oficial de trámites y servicios.
+    validations: {required: true}
+  - type: textarea
+    id: como
+    attributes:
+      label: Cómo se pueden bajar los datos
+      description: ¿Tiene API, JSON, CSV, o hay que leer las páginas? ¿Cuántos trámites tiene?
+  - type: checkboxes
+    id: yo
+    attributes:
+      label: ¿Quieres hacerlo tú?
+      options:
+        - label: Sí, quiero escribir el importador cuando quede disponible.
