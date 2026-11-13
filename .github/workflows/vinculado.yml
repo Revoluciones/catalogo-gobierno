@@ -19,8 +19,8 @@ jobs:
             const author = pr.user.login;
             const problems = [];
 
-            const team = ['OWNER', 'MEMBER'].includes(pr.author_association);
-            const maint = team && pr.labels.some(l => l.name === 'mantenimiento');
+            // Solo quien tiene permiso de triage o escritura puede poner etiquetas, así que la etiqueta basta.
+            const maint = pr.labels.some(l => l.name === 'mantenimiento');
             if (!maint) {
               const m = body.match(/\b(cierra|cierran|closes|close|fixes|fix|resuelve|resolves)\s+#(\d+)/i);
               if (!m) {
