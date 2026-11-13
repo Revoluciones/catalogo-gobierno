@@ -1,0 +1,108 @@
+id: mx-bcn-retys-1070-cofepris-03-018-a-solicitud-de-visita-de-verificac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-03-018-A Solicitud de visita de verificación de materia prima y medicamentos que sean o contengan
+  estupefacientes o psicotrópicos Modalidad A: De Destrucción. - FARMACIAS. - BOTICAS.'
+summary: Es obligatoria la presencia de un verificador sanitario para constatar la destrucción de insumos que sean
+  o contengan estupefacientes o psicotrópicos.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1070
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1070
+  homoclave: BC-COEPRIS-063
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Visita de verificación
+cost:
+  type: fijo
+  amount_mxn: 4396.55
+  text: 'COSTO: $4396.55 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7725
+  - text: Original y dos copias del comprobante de pago de derechos
+    cites:
+    - source: retys
+  - text: Procedimiento normalizado de operación
+    cites:
+    - source: retys
+  - text: Copia de la autorización de SEMARNAT emitida a la empresa incineradora
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de visita de verificación de materia prima
+      y medicamentos que sean o contengan estupefacientes o psicotrópicos Modalidad A.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Artículos 40, 47, 117 y 151
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de visita de verificación de materia prima
+    y medicamentos que sean o contengan estupefacientes o psicotrópicos Modalidad A.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1070: COFEPRIS-03-018-A Solicitud de visita de verificación de materia prima y medicamentos
+      que sean o contengan estupefacientes o psicotrópicos Modalidad A: De Destrucción. - FARMACIAS. - BOTICAS.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1070
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Insumos para la Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-03-018-A Solicitud de visita de verificación de materia prima y medicamentos que
+  sean o contengan estupefacientes o psicotrópicos Modalidad A: De Destrucción.  - FARMACIAS. - BOTICAS.. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

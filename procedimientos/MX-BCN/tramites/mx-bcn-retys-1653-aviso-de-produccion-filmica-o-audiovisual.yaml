@@ -1,0 +1,185 @@
+id: mx-bcn-retys-1653-aviso-de-produccion-filmica-o-audiovisual
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aviso de Producción Fílmica o Audiovisual
+summary: Documento que indica la presencia de equipo de producción, trabajando en un proyecto audiovisual específico
+  en Baja California.
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1653
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1653
+  homoclave: BC-SEI-010
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretenda llevar a cabo un trabajo de proyecto audiovisual en Baja California
+result: Oficio autorización expedido por la Comisión Cinematografía de Baja California
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Cinematografía
+  address: 'Avenida República de Honduras y Justo Sierra #377, Cuauhtémoc Sur, Mexicali, 21200'
+- municipality: Tijuana
+  name: Departamento de Cinematografía
+  address: 'Carretera Libre Tijuana - Tecate #km 26.5, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Departamento de Cinematografía
+  address: 'Carretera transpenisular Ensenada- La Paz #6500, Ex- Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Departamento de Cinematografía
+  address: 'Baja California #53, La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Departamento de Cinematografía
+  address: 'José Aros Aguilar #2003, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Departamento de Cinematografía
+  address: 'Benito Juárez #108, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Departamento de Cinematografía
+  address: 'Mar de Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Registro de producción como Persona Física
+  requirements:
+  - text: Formato de registro de producción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/9476
+  - text: Sinopsis del proyecto(Maximo 1 cuartilla)
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (Instituto Nacional Electoral, pasaporte mexicano, cédula profesional con
+      fotografía, credencial del Instituto Nacional de las Personas Adultas Mayores, licencia de conducir del estado
+      de Baja California). Tratándose de personas extranjeras, documento migratorio vigente, emitido por la autoridad
+      competente
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio, no mayor a 2 meses
+    cites:
+    - source: retys
+  - text: póliza de seguro (responsabilidad civil)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Integrar documentación requerida
+    - Da click en iniciar trámite y presenta la documentación requerida
+    - Revisión de documentación
+    - Emisión de resolutivo, Nota. Dicha resolución puede archivarse como ¨spam¨ en el correo del ciudadano
+  - name: Presencial
+    steps:
+    - Integrar documentación requerida
+    - Presentar documentación en ventanilla
+    - Revisión de documentación
+    - Emisión de resolutivo
+  notes: Proceso y requisitos para obtener el aviso de producción en Baja California
+- name: Registro de producción como Persona Moral
+  requirements:
+  - text: Formato de registro de producción firmado por el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/9481
+  - text: Sinopsis del proyecto(Maximo 1 cuartilla)
+    cites:
+    - source: retys
+  - text: Acta constitutiva
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente del representante legal (credencial de elector, pasaporte mexicano, cédula
+      profesional, credencial del Instituto Nacional de las Personas Mayores o licencia de conducir del estado de
+      Baja California), copia del instrumento notarial que lo acredita como tal y copia del acta constitutiva
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio, no mayor a 2 meses
+    cites:
+    - source: retys
+  - text: Póliza de seguro (responsabilidad civil) - opcional
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Integrar documentación requerida
+    - Da click en iniciar trámite y presenta la documentación requerida
+    - Revisión de documentación
+    - Emisión de resolutivo
+  - name: Presencial
+    steps:
+    - Integrar documentación requerida
+    - Presentar documentación en ventanilla
+    - Revisión de documentación
+    - Emisión de resolutivo
+  notes: Proceso y requisitos para obtener el aviso de producción en Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 6
+- source: ley2
+  pinpoint: Artículo 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Integrar documentación requerida
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Da click en iniciar trámite y presenta la documentación requerida
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisión de documentación
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Emisión de resolutivo, Nota. Dicha resolución puede archivarse como ¨spam¨ en el correo del ciudadano
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1653: Aviso de Producción Fílmica o Audiovisual'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1653
+    version_date: 08/Abril /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley para la Promoción, Fomento y Desarrollo de la industria cinematográfica y audiovisual
+      del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley para la Promoción, Fomento y Desarrollo de la industria cinematográfica y audiovisual
+      del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

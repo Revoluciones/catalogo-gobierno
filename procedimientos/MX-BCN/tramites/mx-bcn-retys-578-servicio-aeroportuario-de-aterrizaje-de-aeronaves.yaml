@@ -1,0 +1,105 @@
+id: mx-bcn-retys-578-servicio-aeroportuario-de-aterrizaje-de-aeronaves
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio Aeroportuario de Aterrizaje de Aeronaves
+summary: Servicio que demanda un piloto nacional o extranjero, para que su aeronave haga uso de las instalaciones
+  del aeropuerto, como es la pista de aterrizaje, la calle de rodaje y estacionamiento.
+authority:
+  name: Secretaría de Turismo
+official_ids:
+  retys_id: 578
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/578
+  homoclave: BC-SECTURE-003
+who_can:
+- Interesado
+when: Al arribar al aeropuerto internacional de San Felipe, B.C.
+result: Uso de pista de aterrizaje 31/13
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: El costo depende de tipo de aeronave: monomotor 125.00 pesos, bimotor 250 pesos y ejecutivo 375
+    pesos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Felipe
+  name: Área Administrativa de Aeropuerto
+  address: 'Carretera Aeropuerto #KM 13, San Felipe, San Felipe, 21850'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Realización de pago
+    cites:
+    - source: retys
+  - text: Plan de vuelo emitido por la agencia federal de Aviación Civil
+    cites:
+    - source: retys
+  - text: Recepción de comprobante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse a las oficinas
+    - Presentar plan de vuelo
+    - Realizar el pago
+  notes: Uso de la aeronave de las instalaciones del aeropuerto
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 30 fracción XIII y 43 fracción I
+- source: ley2
+  pinpoint: Artículo 24 fracción XI y XIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse a las oficinas
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar plan de vuelo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 578: Servicio Aeroportuario de Aterrizaje de Aeronaves'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/578
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

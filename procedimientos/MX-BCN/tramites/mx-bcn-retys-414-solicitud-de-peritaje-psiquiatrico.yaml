@@ -1,0 +1,129 @@
+id: mx-bcn-retys-414-solicitud-de-peritaje-psiquiatrico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Peritaje Psiquiátrico
+summary: Un peritaje psiquiátrico es un informe especializado que evalúa el estado mental de una persona, detallando
+  sus condiciones, capacidades y limitaciones en contextos legales o administrativos.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 414
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/414
+  homoclave: BC-IPEBC-002
+who_can:
+- Interesado
+when: Cuando se requiera un peritaje psiquiátrico.
+result: Informe
+cost:
+  type: fijo
+  amount_mxn: 11095.0
+  text: 'COSTO: $11,095.00 pesos por informe.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Médica
+  address: 'Onceava #1753, Mexicali , Mexicali, 21396'
+scenarios:
+- name: Persona Solicitante
+  requirements:
+  - text: Oficio u documento oficial de solicitud de peritaje remitido por alguna autoridad administrativa, educativa
+      o judicial competente.
+    cites:
+    - source: retys
+  - text: Recibo de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Entrega oficio u documento oficial de solicitud de peritaje remitido por alguna autoridad administrativa,
+      educativa o judicial competente.
+    - Realiza pago correspondiente.
+    - Revisa y valida documentación y recibo de pago.
+    - Informa sobre la entrega del informe. En algunos casos especiales, se entregará a la autoridad judicial solicitante
+      para integración del expediente judicial que corresponda.
+    - Acude por entrega del informe solicitado en un lapso no mayor a 30 días hábiles.
+  notes: Persona Solicitante
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 2 y 4
+- source: ley2
+  pinpoint: Artículo 4, Fracción IV, 29 y 30
+- source: ley3
+  pinpoint: Artículo 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrega oficio u documento oficial de solicitud de peritaje remitido por alguna autoridad administrativa,
+    educativa o judicial competente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realiza pago correspondiente.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisa y valida documentación y recibo de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Informa sobre la entrega del informe. En algunos casos especiales, se entregará a la autoridad judicial
+    solicitante para integración del expediente judicial que corresponda.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acude por entrega del informe solicitado en un lapso no mayor a 30 días hábiles.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 414: Solicitud de Peritaje Psiquiátrico'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/414
+    version_date: 29/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

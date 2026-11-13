@@ -1,0 +1,82 @@
+id: mx-bcn-tijuana-tj-pm-0215-fotografia-satelital
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Infraestructura y vivienda
+title: Fotografía Satelital
+summary: Fotografía satelital del municipio de Tijuana en Tamaño Carta, doble carta o tamaño 60x90 acabado Glossy
+  e imágen completa.
+authority:
+  name: Presidencia Municipal (Ayuntamiento de Tijuana)
+  unit: Instituto Metropolitano de Planeación Tijuana (IMPLAN)
+official_ids:
+  homoclave: TJ-PM-0215
+who_can:
+- Interesado
+when: Cuando se necesite copia impresa de la fotografía satelital del municipio de Tijuana
+result: Fotografía satelital
+requirements:
+- text: Oficio de solicitud firmada por el usuario con sus respectivas especificaciones
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Cédula fiscal únicamente si requiere factura
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Impresión de Fotografía Satelital Tamaño Carta: 5 UMA ($586.55) · Impresión de Fotografía Satelital Tamaño
+    Doble Carta: 6.7 UMA ($785.98) · Impresión de Fotografía Satelital Tamaño 60 x 90 (Glossy): 27.2 UMA ($3,190.83)
+    · Impresión de Fotografía Satelital Completa: 165.3 UMA ($19,391.34). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Metropolitano de Planeación Tijuana (IMPLAN)
+  address: Canadá No. 7171, Río Tijuana 3a. Etapa, Tercera etapa Rio, 22226 Tijuana, B.C.
+  phones: '6646866241'
+  hours: LUNES A VIERNES DE 08:00 HRS A 16:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-PM-0215: Fotografía Satelital'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-PM-0215
+    version_date: '2026-08-19'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 17, Fracc. II del Reglamento Interior del Instituto Metropolitano de Planeación de Tijuana
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20250604113530884_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 49, Inciso AE) de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: N/A'

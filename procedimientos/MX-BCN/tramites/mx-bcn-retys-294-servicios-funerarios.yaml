@@ -1,0 +1,142 @@
+id: mx-bcn-retys-294-servicios-funerarios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicios Funerarios
+summary: Otorgar servicios funerarios profesionales y asistenciales a la población vulnerable que lo requiera.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 294
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/294
+  homoclave: BC-DIF-001
+who_can:
+- Interesado
+when: Cuando se requiera el servicio
+result: Servicio funerario profesional
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Monto a calcularse, depende del tipo de servicio que se requiera es el costo.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Funerarios Mexicali, DIF Estatal BC
+  address: 'Avenida Cristobal Garcilazo y Calle E #s/n, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Servicios Funerarios Ciudad Guadalupe Victoria, DIF Estatal BC
+  address: 'Av. Corregidora y calle decima, zona centro #S/N, Ciudad Guadalupe Victoria , Mexicali, 21720'
+- municipality: Tijuana
+  name: Servicios Funerarios Tijuana, DIF Estatal BC
+  address: 'Blvd. Fundadores  #300, Juárez, Tijuana, 22046'
+- municipality: Ensenada
+  name: Servicios Funerarios Ensenada, DIF Estatal BC
+  address: 'Calle Cuarta y Guadalupe #s/n, Obrera, Ensenada, 22830'
+- municipality: Tecate
+  name: Servicios Funerarios Tecate, DIF Estatal BC
+  address: 'Avenida México y Calle a Garibu s/n Espinoza #s/n, Valle de las Palmas, Tecate, 21410'
+- municipality: Tecate
+  name: Crematorio DIF Tecate, DIF Estatal BC
+  address: 'Km. 140  #s/n, Carretera Libre Tecate - Tijuana, Tecate, 21503'
+- municipality: Playas de Rosarito
+  name: Servicios Funerarios DIF Playas de Rosarito
+  address: 'Av. Islas Mujeres, Lote 1 Manzana 4  #s/n, Ejido Mazatlán, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Servicios Funerarios San Quintín, DIF Estatal BC
+  address: 'Privada Lázaro Cárdenas Esquina Esteban Cantú #s/n, Ejido Nuevo Baja California, San Quintín, 22930'
+- municipality: San Felipe
+  name: Servicios Funerarios San Felipe, DIF Estatal BC
+  address: 'Calle Mazatlán y Avenida Mar Adriatico #s/n, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: CURP del fallecido
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del fallecido
+    cites:
+    - source: retys
+  - text: Identificación oficial del solicitante
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio reciente del solicitante
+    cites:
+    - source: retys
+  - text: Certificado de defunción (original)
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la funeraria a solicitar el servicio
+    - Definir el tipo de servicio que necesita
+    - Presentar la documentación requerida
+    - Se revisará que la documentación requerida este completa
+    - Se realiza la prestación del servicio
+  notes: Recopilación de documentos para el servicio funerario
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4, fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la funeraria a solicitar el servicio
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Definir el tipo de servicio que necesita
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se revisará que la documentación requerida este completa
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se realiza la prestación del servicio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 294: Servicios Funerarios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/294
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicios Funerarios Velación en Capilla, Velación en Domicilio y Traslado de Cuerpos. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

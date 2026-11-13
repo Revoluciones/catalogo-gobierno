@@ -1,0 +1,118 @@
+id: mx-bcn-retys-996-cofepris-05-044-a-solicitud-de-modificacion-a-la-l
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-044-A Solicitud de Modificación a la Licencia Sanitaria para Establecimiento de Plaguicidas,
+  Nutrientes Vegetales y Sustancias Tóxicas o Peligrosas para Servicios Urbanos de Fumigación,etc
+summary: Cuando el ciudadano pretenda modificar las condiciones de su licencia sanitaria.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 996
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/996
+  homoclave: BC-COEPRIS-044
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: En operación
+result: Modificación
+cost:
+  type: fijo
+  amount_mxn: 7046.71
+  text: 'COSTO: $7046.71 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7618
+  - text: Original y dos copias del comprobante de pago de derechos, en términos de la ley federal de derechos
+    cites:
+    - source: retys
+  - text: Adjuntar información que sustente el cambio solicitado
+    cites:
+    - source: retys
+  - text: 'Para cambio de Razón Social: Original y copia simple del Acta Constitutiva o Poder Notarial en donde
+      se acredite la nueva Razón Social y al Representante Legal'
+    cites:
+    - source: retys
+  - text: 'Por cambio de domicilio (Sin cambio de ubicación geográfica o cambio físico en las instalaciones): Documento
+      emitido por el municipio o alcaldía notificando el nuevo nombre de la calle, número oficial, etc. o escrito
+      libre firmado por el Representante Legal o propietario señalando, bajo protesta de decir verdad, que el establecimiento
+      no se reubicó físicamente.'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Modificación a la Licencia
+      Sanitaria para Establecimiento de Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas o Peligrosas para
+      Servicios Urbanos de Fumigación, etc.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la coepris
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 204 y 375 Fraccion X
+- source: ley2
+  pinpoint: Articulo 86 Fraccion III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Modificación a la Licencia
+    Sanitaria para Establecimiento de Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas o Peligrosas para Servicios
+    Urbanos de Fumigación, etc.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 996: COFEPRIS-05-044-A Solicitud de Modificación a la Licencia Sanitaria para Establecimiento
+      de Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas o Peligrosas para Servicios Urbanos de Fumigación,etc'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/996
+    version_date: 20/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Control Sanitario de Actividades, Establecimientos,
+      Productos Y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS- 05-044-A Solicitud de Modificación a la Licencia Sanitaria para Establecimiento
+  de Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas o Peligrosas. Modalidad A.- Para Servicios Urbanos de
+  Fumigación, Desinfección y Control de Plaga.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

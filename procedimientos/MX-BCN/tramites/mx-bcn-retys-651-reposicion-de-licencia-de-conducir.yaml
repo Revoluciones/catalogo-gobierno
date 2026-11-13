@@ -1,0 +1,169 @@
+id: mx-bcn-retys-651-reposicion-de-licencia-de-conducir
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición de Licencia de Conducir
+summary: Garantizar se lleva a cabo la reposición con o sin cambios de una Licencia para conducir vehículos, cumpliendo
+  los requisitos legales e implícitos con calidad.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 651
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/651
+  homoclave: BC-SH-004
+who_can:
+- Interesado
+when: Cuándo se requiera reemplazar una Licencia, ya sea por cambio de datos, robo o extravío.
+result: Licencia de Conducir.
+cost:
+  type: variable
+  amount_mxn: 861.61
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Costos de acuerdo a la Ley de Ingresos del Estado de Baja California.
+    $861.61 *No incluye costo de contribuciones municipales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 34 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Variable.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Tijuana
+  name: Oficinas de Gobierno del Estado en Tijuana
+  address: 'Vía rápida oriente #S/N, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de identificación oficial vigente ( INE, pasaporte mexicano, cartilla del
+      servicio militar nacional ó matrícula consular)
+    cites:
+    - source: retys
+  - text: Tratándose de robo o extravío, presentar el reporte respectivo ante el ministerio público que corresponda.
+      La Secretaría podrá determinar los supuestos de extravío en los cuales no se requerirá el citado reporte,
+      señalando el documento que lo suplirá (original y copia)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10945
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita en https://citas.ebajacalifornia.gob.mx/
+    - Acudir a la Recaudación de Rentas del Estado
+    - Solicitar el trámite correspondiente
+    - Presentar documentos
+    - Revisión de documentos y toma de las 10 huellas digitales y fotografía
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Pasar a ventanilla para la entrega de su licencia de conducir
+  notes: Requisitos para obtener la reposición de licencia de conducir
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, Fracción I, Inciso D.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haz tu cita en https://citas.ebajacalifornia.gob.mx/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a la Recaudación de Rentas del Estado
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Solicitar el trámite correspondiente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Presentar documentos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Revisión de documentos y toma de las 10 huellas digitales y fotografía
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Pasar a ventanilla para la entrega de su licencia de conducir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 651: Reposición de Licencia de Conducir'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/651
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

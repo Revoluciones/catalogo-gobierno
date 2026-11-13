@@ -1,0 +1,143 @@
+id: mx-bcn-retys-837-factibilidad-de-servicio-para-toma-y-descarga
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Factibilidad de Servicio para Toma y Descarga
+summary: La CESPE proporciona este servicio realizando una inspección mediante la cual se determina si el servicio
+  tanto de agua potable como de alcantarillado sanitario solicitado por el usuario es factible o no.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 837
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/837
+  homoclave: BC-CESPE-007
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera conocer si se puede contar con el servicio
+result: Aprobación
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costo actualizado al mes de noviembre 2026. Uso doméstico: $ 410 moneda nacional. Uso no
+    doméstico: $ 834 moneda nacional.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 MESES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Propietario del predio a contratar
+  requirements:
+  - text: Documentos de propiedad oficiales
+    cites:
+    - source: retys
+  - text: Identificacion oficial con fotografía vigente
+    cites:
+    - source: retys
+  - text: Carta poder (si no es el propietario)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/5536
+  - text: Deslinde reciente del predio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar la factibilidad de servicios
+    - Realizar el pago correspondiente
+    - Firmar las solicitudes correspondientes
+    - Esperar la visita del inspector
+    - En caso de ser positiva acudir a realizar la contratación de servicios
+  notes: El propietario deberá acreditar su personalidad con identificación oficial.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III
+- source: ley2
+  pinpoint: Artículos 3, 6, 14,15, 16,17, 19, 20, 22, 23,24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44, 45,
+    47, 48, 49,51, 52, 53, 54, 56, 59, 60 y 64.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a solicitar la factibilidad de servicios
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Firmar las solicitudes correspondientes
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Esperar la visita del inspector
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En caso de ser positiva acudir a realizar la contratación de servicios
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 837: Factibilidad de Servicio para Toma y Descarga'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/837
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Factibilidad de Servicio para Toma y Descarga.. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

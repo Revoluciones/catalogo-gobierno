@@ -1,0 +1,157 @@
+id: mx-bcn-retys-1757-actualizacion-de-datos-para-licencia-de-conducir-p
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Actualización de datos para Licencia de conducir permanente
+summary: Actualizar los datos de licencia de conducir con vigencia permanente.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 1757
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1757
+  homoclave: BC-SH-048
+who_can:
+- Interesado
+when: Al cumplir 5 años a partir de la fecha de expedición
+result: Licencia de conducir actualizada
+cost:
+  type: variable
+  amount_mxn: 861.61
+  text: 'COSTO VARIABLE: Costo mes de Noviembre 2026 $861.61'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: vigencia
+  text: 5 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Volanta CESPM Calle Novena
+  address: 'Calle Novena y Palmira #SN, Calles (Poblado Compuertas), Mexicali, 21226'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Tijuana
+  name: Oficinas de Gobierno del Estado en Tijuana
+  address: 'Vía rápida oriente #S/N, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Presencial
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de indentificación oficial con fotografía vigente (INE, pasaporte mexicano
+      vigente, cédula profesional, matrícula consular, cartilla militar)
+    cites:
+    - source: retys
+  - text: Presentar en original y copia comprobante de domicilio no mayor a tres meses de antigüedad (solo en caso
+      de hacer actualización de domicilio)
+    cites:
+    - source: retys
+  - text: Presentar Licencia Permanente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita en https://citas.ebajacalifornia.gob.mx/, seleciona tu municipio de residencia y llena la información
+      requerida.
+    - Acudir a las oficinas de Recaudación de Rentas del Estado
+    - Toma de datos (huellas digitales y fotografía)
+    - 'Realizar el pago correspondiente. (Opciones de pago: efectivo, cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    - Recoger licencia de conducir
+  notes: Requisitos para actualizar licencia de conducir
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, fracción I, antepenúltimo párrafo.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haz tu cita en https://citas.ebajacalifornia.gob.mx/, seleciona tu municipio de residencia y llena la
+    información requerida.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Toma de datos (huellas digitales y fotografía)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. (Opciones de pago: efectivo, cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recoger licencia de conducir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1757: Actualización de datos para Licencia de conducir permanente'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1757
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,115 @@
+id: mx-bcn-retys-1208-clases-de-natacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Clases de Natación
+summary: Proporcionar los fundamentos deportivos técnicos básicos, intermedios y avanzados en la disciplina de natación.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1208
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1208
+  homoclave: BC-INDEBC-001
+who_can:
+- Interesado
+- Tutor
+when: Cuando la ciudadanía solicite el servicio
+result: Clases de natación
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: En Ciudad deportiva Mexicali tiene un costo mensual de $800.00 pesos. En el Centro de Alto
+    Rendimiento en Tijuana, tiene un costo de $1,045.00 pesos (3 días por semana) y $815.00 pesos (2 dias por semana).'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 MES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Contabilidad
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Tijuana
+  name: Centro De Alto Rendimiento Tijuana
+  address: 'Circuito Vial Sur #S/N, UABC, Universidad Otay, Tijuana, 22427'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Presentar copia del acta de nacimiento
+    cites:
+    - source: retys
+  - text: Presentar una fotografía tamaño infantil a color o blanco y negro para la credencial
+    cites:
+    - source: retys
+  - text: Si dejó de asistir a clases por 6 meses seguidos o más y desea incorporarse nuevamente, debe presentar
+      únicamente un certificado médico
+    cites:
+    - source: retys
+  - text: Presentar certificado médico y ser apto para clases de natación
+    cites:
+    - source: retys
+  - text: 'Nota informativa: La duración de las clases de natación son de 50 minutos'
+    cites:
+    - source: retys
+  - text: Utilizar traje de baño, gorra para el cabello, googles y sandalias
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el pago en el área de caja y especificar el horario de su clase
+    - Cumplir con todos los requisitos previos
+    - Presentarse en el área de albercas con el recibo en mano el día que de inicio el curso
+  notes: Proporcionar los fundamentos deportivos técnicos básicos, intermedios y avanzados en la disciplina de natación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción XXIV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Realizar el pago en el área de caja y especificar el horario de su clase
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cumplir con todos los requisitos previos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentarse en el área de albercas con el recibo en mano el día que de inicio el curso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1208: Clases de Natación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1208
+    version_date: 05/Junio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura física y deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

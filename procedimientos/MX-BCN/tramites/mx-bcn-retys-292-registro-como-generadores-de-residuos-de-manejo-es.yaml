@@ -1,0 +1,217 @@
+id: mx-bcn-retys-292-registro-como-generadores-de-residuos-de-manejo-es
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro como Generadores de Residuos de Manejo Especial
+summary: Documento mediante el cuál se presenta solicitud para formar parte del registro cómo generador de residuos
+  de manejo especial en el Estado de Baja California
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 292
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/292
+  homoclave: BC-SMADS-055
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo se pretende obtener el registro cómo pequeño o grande generador de residuos de manejo especial
+result: Registro cómo grande o pequeño generador de residuos de manejo especiale
+cost:
+  type: variable
+  amount_mxn: 1455.48
+  text: 'COSTO VARIABLE: $1,455.48 Moneda Nacional costo actualizado al mes de octubre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Indefinida
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Gestión Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Gestión Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Gestión Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Moral
+  requirements:
+  - text: Formato de registro de residuos de manejo especial
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3758
+  - text: Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  - text: Acta constitutiva (en caso de ser persona moral)
+    cites:
+    - source: retys
+  - text: Poder Legal (se presenta cuándo una persona acude en representación de una persona moral)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Contrato de servicios, facturas o manifiestos de entrega, transporte y recepción de residuos de manejo
+      especial expedido por prestador de servicio autorizado.
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía vigente (del representante legal).
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal mediante el botón "Iniciar trámite" ubicado en la parte inferior derecha.
+    - Seleccionar el tipo de persona (física o moral) y capturar los campos requeridos.
+    - Realizar el pago de derechos.
+    - Subir los documentos solicitados.
+    - Se le va a indicar que el documento correspondiente se encuentra disponible para su entrega y deberá acudir
+      a la oficina correspondiente para recogerlo.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETYS y revisar los requisitos, formatos y costo aplicable.
+    - Llenar el formato de solicitud con la información actualizada.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Presentar la solicitud en las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, anexando
+      el formato, la documentación y el comprobante de pago.
+    - Dar seguimiento al trámite consultando periódicamente el listado de resoluciones publicadas en el enlace disponible
+      en la página oficial de la SMADS.
+    - Recoger la notificación de resolución una vez que el trámite aparezca como disponible en el listado. La notificación
+      deberá ser recibida por el representante legal o apoderado legal, quien deberá acreditar su personalidad jurídica
+      conforme a la normatividad aplicable.
+  notes: Industrias o empresas que generen residuos de manejo especial.
+- name: Persona Fisica
+  requirements:
+  - text: Formato de registro de residuos de manejo especial.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10637
+  - text: Registro federal de contribuyentes (RFC).
+    cites:
+    - source: retys
+  - text: Poder legal (se presenta cuando una persona acude en representacion de una persona moral).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: Contrato de servicios, facturas o manifiestos de entrega, transporte y recepción de residuos de manejo
+      especial expedido por prestador de servicio autorizado.
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía vigente del representante legal.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal mediante el botón "Iniciar trámite" ubicado en la parte inferior derecha.
+    - Seleccionar el tipo de persona (física o moral) y capturar los campos requeridos.
+    - Realizar el pago de derechos.
+    - Subir los documentos solicitados.
+    - Se le va a indicar que el documento correspondiente se encuentra disponible para su entrega y deberá acudir
+      a la oficina correspondiente para recogerlo.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETYS y revisar los requisitos, formatos y costo aplicable.
+    - Llenar el formato de solicitud con la información actualizada.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Presentar la solicitud en las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, anexando
+      el formato, la documentación y el comprobante de pago.
+    - Dar seguimiento al trámite consultando periódicamente el listado de resoluciones publicadas en el enlace disponible
+      en la página oficial de la SMADS.
+    - Recoger la notificación de resolución una vez que el trámite aparezca como disponible en el listado. La notificación
+      deberá ser recibida por el representante legal o apoderado legal, quien deberá acreditar su personalidad jurídica
+      conforme a la normatividad aplicable.
+  notes: Individuos generadores de residuos de manejo especial.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción IV
+- source: ley2
+  pinpoint: Artículo 25
+- source: ley3
+  pinpoint: Artículo 45, párrafo III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal mediante el botón "Iniciar trámite" ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el tipo de persona (física o moral) y capturar los campos requeridos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir los documentos solicitados.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se le va a indicar que el documento correspondiente se encuentra disponible para su entrega y deberá acudir
+    a la oficina correspondiente para recogerlo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 292: Registro como Generadores de Residuos de Manejo Especial'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/292
+    version_date: 08/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

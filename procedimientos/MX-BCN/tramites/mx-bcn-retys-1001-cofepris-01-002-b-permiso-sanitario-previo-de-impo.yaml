@@ -1,0 +1,117 @@
+id: mx-bcn-retys-1001-cofepris-01-002-b-permiso-sanitario-previo-de-impo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-01-002-B Permiso Sanitario Previo de Importación de Productos. Modalidad: B.- Importación de Muestras
+  o Consumo Personal (para Donación, Consumo Personal, Investigación Científica, Pruebas de Laboratorio y Exhibición)'
+summary: Importación de Muestras o Consumo Personal (para Donación, Consumo Personal, Investigación Científica,
+  Pruebas de Laboratorio y Exhibición).
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1001
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1001
+  homoclave: BC-COEPRIS-046
+who_can:
+- Interesado
+- Tutor
+- Representante Legal
+- Otro
+when: Cuando el ciudadano requiera solicitar permiso sanitario de importación de productos.
+result: Permiso previo de importacion
+cost:
+  type: fijo
+  amount_mxn: 469.77
+  text: 'COSTO: $469.77 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7619
+  - text: Original y copia del comprobante de pago de derechos
+    cites:
+    - source: retys
+  - text: Factura o recibo que indique muestras sin valor comercial, o guía aérea, marítima o terrestre que ampare
+      los productos a importar
+    cites:
+    - source: retys
+  - text: Carta que indique el uso que le dará al producto
+    cites:
+    - source: retys
+  - text: Etiquetas de origen de suplementos alimenticios, en su caso
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario Previo
+      de Importación de Productos. Modalidad B: Importación de Muestras o Consumo Personal (para Donación, Consumo
+      Personal, Investigación Científica, Pruebas de Laboratorio y Exhibición).'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Artículos 283 y 375 Fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario Previo
+    de Importación de Productos. Modalidad B: Importación de Muestras o Consumo Personal (para Donación, Consumo
+    Personal, Investigación Científica, Pruebas de Laboratorio y Exhibición).'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1001: COFEPRIS-01-002-B Permiso Sanitario Previo de Importación de Productos. Modalidad:
+      B.- Importación de Muestras o Consumo Personal (para Donación, Consumo Personal, Investigación Científica,
+      Pruebas de Laboratorio y Exhibición)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1001
+    version_date: 24/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-002-B Permiso Sanitario Previo de Importación de Productos. Modalidad: B.- Importación
+  de Muestras o Consumo Personal (para Donación, Consumo Personal, Investigación Científica, Pruebas de Laboratorio
+  y Exhibición).. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las
+  demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

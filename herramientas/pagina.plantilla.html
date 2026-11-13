@@ -1,0 +1,186 @@
+<title>Gobierno paso a paso</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a register ledger. Index column on the left (search, filters, list), the open ficha on the right; stacked on phones. */
+:root{
+  --bg:#f3f5f2; --panel:#ffffff; --ink:#15231f; --muted:#56655f; --rule:#d5ddd8;
+  --accent:#0f6b55; --accent-soft:#e1efe9; --stamp:#b5541c; --stamp-soft:#fbeadf; --chip:#eef2ef;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1513; --panel:#16201d; --ink:#e4ece8; --muted:#9db0a8; --rule:#2a3833;
+  --accent:#5cc6a6; --accent-soft:#183129; --stamp:#f0955a; --stamp-soft:#35221a; --chip:#1d2a26; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1513; --panel:#16201d; --ink:#e4ece8; --muted:#9db0a8; --rule:#2a3833;
+  --accent:#5cc6a6; --accent-soft:#183129; --stamp:#f0955a; --stamp-soft:#35221a; --chip:#1d2a26; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:1240px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:20px}
+h1{font:700 clamp(28px,4vw,42px)/1.05 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
+.count{font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:minmax(0,370px) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);display:flex;flex-direction:column;gap:12px;min-width:0}
+@media (max-width:860px){.side{position:static}}
+label.lbl{font:700 12px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+input[type=search]{width:100%;font:16px var(--body);padding:10px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--panel);color:var(--ink)}
+input[type=search]:focus-visible,button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:14px var(--body);padding:6px 10px;border-radius:999px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+select{width:100%;font:15px var(--body);padding:8px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--panel);color:var(--ink)}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule);max-height:62vh;overflow:auto}
+@media (max-width:860px){.list{max-height:46vh}}
+.list li button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--rule);padding:10px 4px;color:var(--ink);cursor:pointer;font:15px/1.35 var(--body)}
+.list li button:hover{background:var(--chip)}
+.list li button[aria-current=true]{background:var(--accent-soft)}
+.list .meta{display:block;font:12px var(--mono);color:var(--muted);margin-top:2px}
+.kind{display:inline-block;font:700 11px var(--body);letter-spacing:.05em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:1px}
+.kind.interno{background:var(--stamp-soft);color:var(--stamp)}
+.kind.tramite{background:var(--accent-soft);color:var(--accent)}
+main.ficha{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:24px clamp(16px,3vw,32px);min-width:0}
+.ficha h2{font:700 clamp(24px,3vw,32px)/1.15 var(--display);margin:6px 0 8px;text-wrap:balance}
+.ficha .sum{font-size:18px;max-width:62ch;margin:0 0 16px}
+.badges{display:flex;flex-wrap:wrap;gap:6px 10px;font:13px var(--mono);color:var(--muted)}
+.badges b{color:var(--ink);font-weight:500}
+.status{border:1px dashed var(--muted);padding:0 6px;border-radius:3px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin:18px 0 22px}
+.facts div{background:var(--panel);padding:10px 12px;min-width:0;box-shadow:0 0 0 .5px var(--rule)}
+.ficha a{color:var(--accent)}
+.facts dt{font:700 11px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.facts dd{margin:2px 0 0;overflow-wrap:anywhere}
+h3{font:700 19px var(--display);margin:24px 0 10px}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps>li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 12px;padding:12px 0;border-top:1px solid var(--rule)}
+.num{font:700 20px var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.actor{font:700 13px var(--body);color:var(--muted)}
+.cites{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.cite{font:12px/1.35 var(--mono);background:var(--chip);border-radius:4px;padding:3px 7px;color:var(--ink);text-decoration:none;max-width:100%;overflow-wrap:anywhere}
+a.cite:hover{text-decoration:underline}
+.cite.unofficial{border:1px dashed var(--muted);background:transparent}
+.branch{font-size:14px;color:var(--muted);margin-top:6px}
+.branch span{font-family:var(--mono)}
+.practice{margin-top:10px;border-left:3px solid var(--stamp);background:var(--stamp-soft);padding:10px 12px;border-radius:0 6px 6px 0}
+.practice .tag{font:700 11px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--stamp)}
+.practice p{margin:4px 0 0}
+.practice small{display:block;color:var(--muted);margin-top:4px}
+.scen{border-top:1px solid var(--rule);padding:10px 0}
+.scen h4{margin:0 0 4px;font:700 16px var(--body)}
+.scen ul,.scen ol{margin:4px 0;padding-left:22px}
+dl.glos{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:6px 14px;margin:0}
+@media (max-width:520px){dl.glos{grid-template-columns:minmax(0,1fr)}}
+dl.glos dt{font-weight:700}
+dl.glos dd{margin:0;color:var(--muted)}
+.note{color:var(--muted);font-size:14px;border-top:1px solid var(--rule);padding-top:12px;margin-top:22px}
+.empty{color:var(--muted)}
+.legend{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:4px}
+@media (prefers-reduced-motion:no-preference){.list li button{transition:background .12s}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Gobierno paso a paso</h1>
+      <p class="lede">Cómo funciona el gobierno de México: los trámites que tú haces y lo que pasa por dentro. Cada paso cita su ley, manual o registro oficial. Lo que pasa en la práctica va aparte, con sus propias fuentes.</p>
+    </div>
+    <span class="count" id="count"></span>
+  </header>
+
+  <div class="grid">
+    <aside class="side">
+      <label class="lbl" for="q">Buscar</label>
+      <input type="search" id="q" placeholder="licencia, acta, ley, denuncia…" autocomplete="off">
+      <div class="seg" role="group" aria-label="Tipo">
+        <button type="button" data-k="" aria-pressed="true">Todo</button>
+        <button type="button" data-k="interno" aria-pressed="false">Cómo funciona por dentro</button>
+        <button type="button" data-k="tramite" aria-pressed="false">Trámites</button>
+      </div>
+      <label class="lbl" for="au">Dependencia</label>
+      <select id="au"><option value="">Todas</option></select>
+      <ul class="list" id="list"></ul>
+    </aside>
+    <main class="ficha" id="ficha" aria-live="polite"></main>
+  </div>
+</div>
+
+<script>
+const DATA=/*DATOS*/[];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const JUR={MX:'México (federal)','MX-BCN':'Baja California','MX-BCN-Tijuana':'Tijuana'};
+const EVID={documento_oficial:'documento oficial',auditoria_o_sentencia:'auditoría o sentencia',periodismo_o_investigacion:'periodismo o investigación',varios_reportes:'varios reportes',un_reporte:'un reporte'};
+const STATUS={importado:'importado de registro oficial',borrador:'borrador, falta revisión',revisado:'revisado',desactualizado:'desactualizado'};
+DATA.sort((a,b)=>(a.k===b.k?0:a.k==='interno'?-1:1)||a.t.localeCompare(b.t,'es'));
+DATA.forEach(d=>d._q=norm([d.t,d.s,d.au,d.hc,d.cat].join(' ')));
+const byId=Object.fromEntries(DATA.map(d=>[d.id,d]));
+let kind='',cur=null;
+const aus=[...new Set(DATA.map(d=>d.au))].sort((a,b)=>a.localeCompare(b,'es'));
+$('#au').insertAdjacentHTML('beforeend',aus.map(a=>`<option>${esc(a)}</option>`).join(''));
+
+function cite(c){
+  const label=esc(c.t)+(c.p?' · '+esc(c.p):'');
+  const cls='cite'+(c.o?'':' unofficial');
+  const title=c.o?'Fuente oficial':'Fuente no oficial';
+  return c.u?`<a class="${cls}" href="${esc(c.u)}" target="_blank" rel="noopener" title="${title}">${label}</a>`:`<span class="${cls}" title="${title}">${label}</span>`;
+}
+function filtered(){
+  const q=norm($('#q').value).split(/\s+/).filter(Boolean),au=$('#au').value;
+  return DATA.filter(d=>(!kind||d.k===kind)&&(!au||d.au===au)&&q.every(w=>d._q.includes(w)));
+}
+function renderList(){
+  const L=filtered();
+  $('#count').textContent=`${L.length} de ${DATA.length} procedimientos`;
+  $('#list').innerHTML=L.slice(0,400).map(d=>`<li><button type="button" data-id="${d.id}" aria-current="${d.id===cur}"><span class="kind ${d.k}">${d.k==='interno'?'por dentro':'trámite'}</span>${esc(d.t)}<span class="meta">${esc(JUR[d.j]||d.j)}${d.hc?' · '+esc(d.hc):''}</span></button></li>`).join('')+(L.length>400?`<li class="empty" style="padding:10px 4px">Hay ${L.length-400} más. Escribe algo para acotar.</li>`:'')+(L.length?'':`<li class="empty" style="padding:10px 4px">Nada coincide. Prueba con otra palabra.</li>`);
+}
+function stepName(n){return n==='fin'?'fin':(byId[n]?`<a href="#${n}">${esc(byId[n].t)}</a>`:'paso '+esc(n));}
+function show(id){
+  const d=byId[id]; if(!d) return; cur=id;
+  const facts=[];
+  if(d.who.length) facts.push(['Quién puede',d.who.join(', ')]);
+  if(d.res) facts.push(['Qué obtienes',d.res]);
+  if(d.cost) facts.push(['Costo',d.cost]);
+  if(d.dl.length) facts.push(['Plazos',d.dl.join(' · ')]);
+  if(d.pf!==null&&d.pf!==undefined) facts.push(['Si no contestan a tiempo',d.pf?'Cuenta como un sí (afirmativa ficta)':'No cuenta como un sí']);
+  if(d.ch.length) facts.push(['Dónde',d.ch.map(c=>c==='en_linea'?'en línea':c).join(', ')]);
+  const steps=d.st.map(s=>`<li><div class="num">${esc(s.n)}</div><div>
+    <div class="actor">${esc(s.a)}</div><div>${esc(s.x)}</div>
+    ${s.d?`<div class="branch">Plazo: ${esc(s.d)}</div>`:''}
+    ${s.nx.length?`<div class="branch">${s.nx.map(n=>`${n.w?esc(n.w)+' → ':'Luego → '}${stepName(n.to)}`).join('<br>')}</div>`:''}
+    <div class="cites">${s.c.map(cite).join('')}</div>
+    ${s.pr.map(p=>`<div class="practice"><span class="tag">En la práctica · ${esc(EVID[p.e]||p.e)}</span><p>${esc(p.x)}</p>${p.o?`<small>${esc(p.o)}</small>`:''}<div class="cites">${p.c.map(cite).join('')}</div></div>`).join('')}
+  </div></li>`).join('');
+  const scen=d.sc.length>1||(d.sc.length===1&&d.sc[0].r.length)?`<h3>Requisitos${d.sc.length>1?' por caso':''}</h3>`+d.sc.map(e=>`<div class="scen">${d.sc.length>1?`<h4>${esc(e.n)}</h4>`:''}${e.no?`<p>${esc(e.no)}</p>`:''}${e.r.length?`<ul>${e.r.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>`:''}${d.sc.length>1?e.m.map(m=>`<div class="branch">${esc(m.n)}: ${m.s.map(esc).join(' → ')}</div>`).join(''):''}</div>`).join(''):'';
+  const glos=Object.keys(d.g).length?`<h3>Palabras que usa</h3><dl class="glos">${Object.entries(d.g).map(([k,v])=>`<dt>${esc(k.replace(/-/g,' '))}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`:'';
+  $('#ficha').innerHTML=`
+    <div class="badges"><span class="kind ${d.k}">${d.k==='interno'?'por dentro':'trámite'}</span><span><b>${esc(JUR[d.j]||d.j)}</b></span><span>${esc(d.au)}</span>${d.hc?`<span>Homoclave <b>${esc(d.hc)}</b></span>`:''}<span class="status">${esc(STATUS[d.stt]||d.stt)} · ${esc(d.lc)}</span></div>
+    <h2>${esc(d.t)}</h2>
+    ${d.s?`<p class="sum">${esc(d.s)}</p>`:''}
+    ${facts.length?`<dl class="facts">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`:''}
+    ${d.lb.length?`<h3>Fundamento legal</h3><div class="cites">${d.lb.map(cite).join('')}</div>`:''}
+    ${d.st.length?'<h3>Pasos</h3>':''}
+    <div class="legend" ${d.st.length?'':'hidden'}><span><span class="cite">fuente oficial</span></span><span><span class="cite unofficial">fuente no oficial</span></span><span>En naranja: lo que pasa en la práctica.</span></div>
+    ${d.st.length?`<ol class="steps">${steps}</ol>`:''}
+    ${d.rq.length?`<h3>Requisitos</h3>${d.st.length?'':'<p class="empty">El registro oficial publica los requisitos de este trámite, no sus pasos.</p>'}<ul>${d.rq.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>`:''}
+    ${scen}
+    ${d.of.length?`<h3>Oficinas</h3><ul>${d.of.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>`:''}
+    ${d.rel.filter(r=>byId[r]).length?`<h3>Relacionados</h3><ul>${d.rel.filter(r=>byId[r]).map(r=>`<li><a href="#${r}">${esc(byId[r].t)}</a> <span class="meta" style="font:12px var(--mono);color:var(--muted)">${esc(JUR[byId[r].j]||byId[r].j)}</span></li>`).join('')}</ul>`:''}
+    ${glos}
+    ${d.ru?`<p class="note">Ficha oficial: <a href="${esc(d.ru)}" target="_blank" rel="noopener">${esc(d.ru)}</a></p>`:''}
+    ${d.no?`<p class="note">${esc(d.no)}</p>`:''}`;
+  document.querySelectorAll('#list button').forEach(b=>b.setAttribute('aria-current',b.dataset.id===id));
+}
+$('#list').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(!b)return;location.hash=b.dataset.id;if(matchMedia('(max-width:860px)').matches)$('#ficha').scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{kind=b.dataset.k;document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderList();}));
+$('#q').addEventListener('input',renderList);$('#au').addEventListener('change',renderList);
+function route(){const id=decodeURIComponent(location.hash.slice(1));show(byId[id]?id:'mx-como-se-aprueba-una-ley-federal');}
+window.addEventListener('hashchange',route);
+renderList();route();
+</script>

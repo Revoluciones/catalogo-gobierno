@@ -1,0 +1,122 @@
+id: mx-bcn-retys-1042-cofepris-02-001-a-permiso-de-publicidad-para-produ
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-02-001-A Permiso de Publicidad para Productos y Servicios (Bebidas Alcohólicas, Suplementos Alimenticios,
+  Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas, Servicios de Salud, Servicio)
+summary: 'Cuando el ciudadano responsable de los productos: bebidas alcohólicas, suplementos alimenticios, plaguicidas,
+  nutrientes vegetales, sustancias tóxicas o de prestación de servicios de salud o procedimientos de embellecimiento,
+  deseen hacer publicidad.'
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1042
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1042
+  homoclave: BC-COEPRIS-054
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: En operacion
+result: Permiso de publicidad
+cost:
+  type: fijo
+  amount_mxn: 2052.86
+  text: 'COSTO: $2052.86 pesos Moneda Nacional'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7702
+  - text: Formato “publicidad” debidamente requisitado
+    cites:
+    - source: retys
+  - text: Original y dos copias simples legibles del comprobante del pago de derechos
+    cites:
+    - source: retys
+  - text: El proyecto de publicidad, en dos tantos (preferentemente a color)
+    cites:
+    - source: retys
+  - text: La documentación que dé sustento a las afirmaciones hechas en la publicidad
+    cites:
+    - source: retys
+  - text: El número de la licencia sanitaria o del aviso de funcionamiento, en su caso (preferentemente copia de
+      la licencia o del aviso)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 301
+- source: ley2
+  pinpoint: Artículo 79 y 80
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el Centro Integral de Servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1042: COFEPRIS-02-001-A Permiso de Publicidad para Productos y Servicios (Bebidas Alcohólicas,
+      Suplementos Alimenticios, Plaguicidas, Nutrientes Vegetales y Sustancias Tóxicas, Servicios de Salud, Servicio)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1042
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley en Materia de Publicidad
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-02-001-A - Productos y Servicios (Para el caso de bebidas alcohólicas, suplementos
+  alimenticios, plaguicidas, nutrientes vegetales y sustancias tóxicas, servicios de salud, servicios y procedimientos
+  de embellecimiento físico).. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

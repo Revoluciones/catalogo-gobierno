@@ -1,0 +1,98 @@
+id: mx-bcn-retys-867-expedicion-de-constancias
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Constancias
+summary: Se expiden constancias de servicios, o de no servicios así como constancias de factibilidad, a petición
+  del usuario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 867
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/867
+  homoclave: BC-CESPE-020
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera una constancia de servicios
+result: Constancia debidamente firmada y sellada
+cost:
+  type: variable
+  amount_mxn: 253.0
+  text: 'COSTO VARIABLE: Costo actualizado al mes de noviembre de 2026. $ 253 moneda nacional.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Deslinde reciente del predio
+    cites:
+    - source: retys
+  - text: Que la cuenta de agua del predio no tenga adeudo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar el sello de libertad de gravamen
+  notes: Información de carácter general que se le puede brindar a cualquier ciudadano.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a solicitar el sello de libertad de gravamen
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 867: Expedición de Constancias'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/867
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

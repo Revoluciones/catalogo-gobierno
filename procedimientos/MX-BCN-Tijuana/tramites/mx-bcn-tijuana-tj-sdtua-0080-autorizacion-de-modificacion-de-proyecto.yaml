@@ -1,0 +1,150 @@
+id: mx-bcn-tijuana-tj-sdtua-0080-autorizacion-de-modificacion-de-proyecto
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Autorización de Modificación de Proyecto
+summary: Para modificar un proyecto de construcción con licencia autorizada, se requiere presentar un escrito detallado
+  ante la dirección de administración urbana, especificando las modificaciones propuestas y adjuntando planos actualizados
+  que reflejen dichos cambios, permitiendo así la revisión y posible aprobación de la modificación solicitada.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0080
+who_can:
+- Interesado
+when: Cuando surgen modificaciones al proyecto de licencia autorizada (diseño arquitectónico, estructura, instalaciones,
+  uso del suelo etc.)
+result: Aprobación
+requirements:
+- text: Solicitud firmada por el propietario, o su representante legal debidamente acreditado, así como las firmas
+    del Director Responsable de Obra y del corresponsable
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Escrito donde se especifique la modificación
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de impuesto predial vigente
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Licencia de construcción
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Planos del proyecto autorizado
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Nuevo proyecto ejecutivo completo, firmado por el propietario y el Director Responsable de Obra
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Menor de 200.00 m²: 20.8 UMA ($2,440.05) · 201 m² a 500 m²: 35.76 UMA ($4,195.01) · 501 m² a 1000 m²: 55.85
+    UMA ($6,551.76) · Mayor de 1000 m²: 67.5 UMA ($7,918.43). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 10 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0080: Autorización de Modificación de Proyecto'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0080
+    version_date: '2026-08-06'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento General de Condominos para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/RM_Condominios_TJ-BC_20102017.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 31, Fracción VII de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Para la autorización del proyecto se basará en la evaluación del cumplimiento de las modificaciones
+  propuestas como de la normativa vigente'

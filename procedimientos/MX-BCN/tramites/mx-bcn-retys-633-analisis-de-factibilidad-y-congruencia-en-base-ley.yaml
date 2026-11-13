@@ -1,0 +1,112 @@
+id: mx-bcn-retys-633-analisis-de-factibilidad-y-congruencia-en-base-ley
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Análisis de Factibilidad y Congruencia en Base Ley de Ingresos
+summary: Se realiza cuando el usuario solicita al municipio una autorización o permiso para llevar a cabo acciones
+  de urbanización que no estén definidas en los planes y programas de desarrollo urbano y/o dichas acciones se ubican
+  fuera de los límites de los centros de población, casos señalados en los artículos 150 y 200 de la Ley de Desarrollo
+  Urbano del Estado y artículos 60 y 61 de la Ley de Edificaciones del Estado.
+authority:
+  name: Secretaría de Infraestructura, Desarrollo Urbano y Reordenación Territorial de Baja California
+official_ids:
+  retys_id: 633
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/633
+  homoclave: BC-SIDURT-006
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera un análisis de factibilidad para llevar a cabo acciones de urbanización.
+result: Dictamen
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Capítulo VIII Artículo 19. I.- por análisis de factibilidad y congruencia de acciones de
+    urbanización que no estén contempladas en los planes y programas de desarrollo urbano, o que se ubiquen dónde
+    no existan estos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección De Reordenación Territorial
+  address: 'Calzada Independencia #994, Centro Cívico , Mexicali, 21100'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar al Ayuntamiento por medio de un oficio y anexar expedientes, información del caso y datos del tramitador.
+    - Pasar a recoger el oficio a SIDURT el cual le permitirá al tramitador pasar a recaudación de rentas a realizar
+      el pago correspondiente
+    - Realiza el pago correspondiente, entrega una copia del recibo de pago, y recoge una copia del dictamen ya
+      despachado.
+  notes: Cualquier persona que requiera o necesite el servicio o trámite
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo(s): 150,200 Fracc. I, II'
+- source: ley2
+  pinpoint: 'Artículo(s): 62,19, Fracc. VIII, I'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar al Ayuntamiento por medio de un oficio y anexar expedientes, información del caso y datos del
+    tramitador.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar a recoger el oficio a SIDURT el cual le permitirá al tramitador pasar a recaudación de rentas a
+    realizar el pago correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza el pago correspondiente, entrega una copia del recibo de pago, y recoge una copia del dictamen
+    ya despachado.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 633: Análisis de Factibilidad y Congruencia en Base Ley de Ingresos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/633
+    version_date: 19/Septiembre/2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Urbano del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Edificaciones del Estado de Baja California / Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

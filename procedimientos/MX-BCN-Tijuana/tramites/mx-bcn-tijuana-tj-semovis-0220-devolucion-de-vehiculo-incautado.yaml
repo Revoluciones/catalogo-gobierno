@@ -1,0 +1,119 @@
+id: mx-bcn-tijuana-tj-semovis-0220-devolucion-de-vehiculo-incautado
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Movilidad y transporte
+title: Devolucion de Vehiculo Incautado
+summary: Este trámite permite recuperar un vehículo que fue remolcado por haber cometido una falta administrativa.
+  Para ello, el propietario o persona autorizada debe acudir a la Dirección Municipal del Transporte Público.
+authority:
+  name: Secretaría de Movilidad Urbana Sustentable (Ayuntamiento de Tijuana)
+  unit: Dirección de Transporte Público
+official_ids:
+  homoclave: TJ-SEMOVIS-0220
+who_can:
+- Interesado
+when: Cuando un vehículo ha sido retenido y remolcado por infringir el reglamento de tránsito o transporte y su
+  propietario desea recuperarlo.
+result: Oficio
+requirements:
+- text: Pago de infracción y adeudos por maniobras, arrastre y almacenamiento.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Visto bueno emitido por la Secretaría de Gobierno o el Departamento de Arrastres y Almacenamiento de Vehículos
+    (con sello, fecha, nombre y firma del titular).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'Documento que acredite la propiedad del vehículo, puede ser:'
+  cites:
+  - source: remutys
+- text: Tarjeta de circulación vigente o constancia de cotejo (si es vehículo fronterizo o nacional).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Factura sellada y firmada por el lote o agencia de autos.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Factura electrónica válida ante el SAT.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Endoso o contrato de compraventa (con identificación oficial de ambas partes).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: En caso de ser vehículo rentado, contrato de arrendamiento y copia de identificación oficial de las partes
+    involucradas.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Hoja de inventario del vehículo y orden de liberación.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Transporte Público
+  address: Prolongación Paseo de los Heroes s/n, Los Santos, 22104 Tijuana, B.C.
+  phones: 6646088400 ext. 8400
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEMOVIS-0220: Devolucion de Vehiculo Incautado'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEMOVIS-0220
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Capítulo VIII Numerales 32, 33, 34 y 35 de la Norma Técnica No. 22 Operación de la Concesión Administrativa,
+      no Exclusiva para el arrastre y Almacenamiento de Vehículos
+    url: http://www.sindicatura.gob.mx/static/pdf/normas-administrativas/NTA-22.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículos 103, 104 y 105 del Reglamento de Arrastre y Almacenamiento de Vehículos del Municipio de Tijuana,
+      Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2022131163929167_wp.pdf
+  fund3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Municipio de Tijuana, Baja California, para el ejercicio fiscal 2025, Capitulo XV
+      y XVI, en los numerales 40 y 41.
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: La devolución del vehículo se autoriza una vez que se ha verificado la documentación, se ha comprobado
+  el pago de las infracciones y servicios de remolque, y se ha obtenido la validación de las autoridades correspondientes.'

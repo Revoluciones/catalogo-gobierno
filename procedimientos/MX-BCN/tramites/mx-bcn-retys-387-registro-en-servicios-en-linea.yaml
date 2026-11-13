@@ -1,0 +1,155 @@
+id: mx-bcn-retys-387-registro-en-servicios-en-linea
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro en Servicios en Línea
+summary: Realizar alta en los servicios en línea de ISSSTECALI, para realizar citas, cancelarlas y otros movimientos
+  a realizar.
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 387
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/387
+  homoclave: BC-ISSSTECALI-004
+who_can:
+- Interesado
+when: Cuando requiera realizar algún trámite en línea
+result: Usuario y contraseña de acceso
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Jefatura de Departamento de Hospitales
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Registro para Servicios en Línea
+  requirements:
+  - text: Credencial de Afiliación
+    cites:
+    - source: retys
+  - text: Correo electrónico del interesado(a)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - hacer click en el Sistema Integral de Servicios a afiliados (SISA)
+    - Ingresar a la opción regístrate.
+    - Ingresa el número de afiliación, el número de serie impreso en el reverso de tu credencial de afiliación,
+      tu número de teléfono y tu dirección de correo electrónico. Asegúrate de confirmar tu correo electrónico en
+      el campo correspondiente.
+    - Leer el aviso de privacidad integral y simplificado, y marca las casillas correspondientes para indicar que
+      has leído y aceptado estos avisos.
+    - Leer los términos y condiciones de uso del servicio y marca las casillas para aceptar dichos términos.
+    - Otorgar el consentimiento para la agrupación de información de agenda médica y recetas por núcleo familiar.
+    - Presionar el botón de registrarte para proceder con el registro.
+    - Ingresar a cuenta de correo electrónico indicado y del mensaje de confirmación recibido hacer click en el
+      enlace de validación de cuenta.
+    - Recibir en cuenta de correo electrónico indicado un nuevo mensaje con la contraseña temporal generada automáticamente
+      por el servicio.
+  notes: Usuario y Contraseña
+legal_basis:
+- source: ley1
+  pinpoint: 46, Fracción VII y Artículo 111
+- source: ley2
+  pinpoint: 3 y 52.
+- source: ley3
+  pinpoint: '35'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: hacer click en el Sistema Integral de Servicios a afiliados (SISA)
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar a la opción regístrate.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresa el número de afiliación, el número de serie impreso en el reverso de tu credencial de afiliación,
+    tu número de teléfono y tu dirección de correo electrónico. Asegúrate de confirmar tu correo electrónico en
+    el campo correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Leer el aviso de privacidad integral y simplificado, y marca las casillas correspondientes para indicar
+    que has leído y aceptado estos avisos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Leer los términos y condiciones de uso del servicio y marca las casillas para aceptar dichos términos.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Otorgar el consentimiento para la agrupación de información de agenda médica y recetas por núcleo familiar.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Presionar el botón de registrarte para proceder con el registro.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Ingresar a cuenta de correo electrónico indicado y del mensaje de confirmación recibido hacer click en
+    el enlace de validación de cuenta.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Recibir en cuenta de correo electrónico indicado un nuevo mensaje con la contraseña temporal generada
+    automáticamente por el servicio.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 387: Registro en Servicios en Línea'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/387
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código de Procedimientos Civiles para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Procedimiento para los Actos de da Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

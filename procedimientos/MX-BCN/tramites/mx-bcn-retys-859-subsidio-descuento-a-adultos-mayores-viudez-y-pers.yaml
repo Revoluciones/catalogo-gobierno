@@ -1,0 +1,114 @@
+id: mx-bcn-retys-859-subsidio-descuento-a-adultos-mayores-viudez-y-pers
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Subsidio Descuento a Adultos Mayores, Viudez y Personas con Discapacidad
+summary: Los usuarios en situación de pobreza, adultos mayores de 60 años que sean viudas o viudos y personas con
+  discapacidad, tienen derecho a descuentos según su consumo de agua, y este descuento se otorgará a quién cada
+  año presente su acreditación cumpliendo con los requisitos en nuestras oficinas. El subsidio solo se otorgará
+  a personas en situación de pobreza, mediante estudio socio-económico.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 859
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/859
+  homoclave: BC-CESPE-017
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se cumpla con los requisitos establecidos
+result: Aprobación para el descuento
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Adulto mayor de 60 años en extrema pobreza
+  requirements:
+  - text: Identificacion oficial
+    cites:
+    - source: retys
+  - text: Acreditar el estudio socioeconomico
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar el subsidio
+  notes: Se acreditará bajo estudio socioeconómico.
+- name: Personas con discapacidad
+  requirements:
+  - text: Acreditar mediante documento oficial la discapacidad
+    cites:
+    - source: retys
+  - text: Acreditar estudio socioeconómico
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar el subsidio
+  notes: Acreditar mediante documento oficial la discapacidad en mención
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a solicitar el subsidio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 859: Subsidio Descuento a Adultos Mayores, Viudez y Personas con Discapacidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/859
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Subsidio Descuento a Adultos Mayores, Viudez y Personas con Discapacidad.. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

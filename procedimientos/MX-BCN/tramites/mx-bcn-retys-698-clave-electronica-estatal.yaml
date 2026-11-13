@@ -1,0 +1,153 @@
+id: mx-bcn-retys-698-clave-electronica-estatal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Clave Electrónica Estatal
+summary: Proporcionar al contribuyente inscrito, medios alternos y confidenciales para la consulta de su situación
+  fiscal, así como para el envío de las declaraciones de impuestos que les correspondan desde cualquier punto con
+  conexión a internet.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 698
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/698
+  homoclave: BC-SH-019
+who_can:
+- Representante Legal
+- Interesado
+when: El contribuyente podrá solicitar su clave electrónica en el momento en que el lo solicite.
+result: Hoja de asignación, impresa y sellada por Recaudación de Rentas del Estado.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Personas Fisicas
+  requirements:
+  - text: Identificación oficial vigente del contribuyente (INE, pasaporte mexicano vigente, cédula profesional,
+      matrícula consular, cartilla militar y/o licencia de conducir).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir físicamente a la oficina de Recaudación de Rentas del Estado más cercana a su domicilio fiscal
+    - El asesor de la recaudación atenderá personalmente al contribuyente para obtener la clave electrónica estatal
+      para realizar sus pagos vía internet.
+    - El asesor requerirá al contribuyente los documentos para iniciar el trámite solicitado.
+    - Una vez procesado el trámite, el asesor generará el acuse de clave electrónica estatal y lo entregá al contribuyente.
+  notes: Proporcionar al contribuyente inscrito, medios alternos y confidenciales para la consulta de su situación
+    fiscal, así como para el envío de las declaraciones de impuestos que les correspondan desde cualquier punto
+    con conexión a internet.
+- name: Persona Moral
+  requirements:
+  - text: Identificación oficial vigente del contribuyente (INE, pasaporte mexicano vigente, cédula profesional,
+      matrícula consular, cartilla militar y/o licencia de conducir).
+    cites:
+    - source: retys
+  - text: Acta constitutiva y/o poder notarial donde acredite el carácter de representante legal y/o apoderado legal.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir físicamente a la oficina de Recaudación de Rentas del Estado más cercana a su domicilio fiscal
+    - El asesor de la recaudación atenderá personalmente al contribuyente para obtener la clave electrónica estatal
+      para realizar sus pagos vía internet.
+    - El asesor requerirá al contribuyente los documentos para iniciar el trámite solicitado.
+    - Una vez procesado el trámite, el asesor generará el acuse de clave electrónica estatal y lo entregá al contribuyente.
+  notes: Proporcionar al contribuyente inscrito, medios alternos y confidenciales para la consulta de su situación
+    fiscal, así como para el envío de las declaraciones de impuestos que les correspondan desde cualquier punto
+    con conexión a internet.
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULOS 94 y 94 BIS.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir físicamente a la oficina de Recaudación de Rentas del Estado más cercana a su domicilio fiscal
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El asesor de la recaudación atenderá personalmente al contribuyente para obtener la clave electrónica
+    estatal para realizar sus pagos vía internet.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El asesor requerirá al contribuyente los documentos para iniciar el trámite solicitado.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez procesado el trámite, el asesor generará el acuse de clave electrónica estatal y lo entregá al
+    contribuyente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 698: Clave Electrónica Estatal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/698
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: CÓDIGO FISCAL PARA EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

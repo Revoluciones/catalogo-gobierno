@@ -1,0 +1,116 @@
+id: mx-bcn-retys-1074-cofepris-03-018-c-solicitud-de-visita-de-verificac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-03-018-C Solicitud de Visita de Verificación de Materia Prima y Medicamentos que Sean o Contengan
+  Estupefacientes o Psicotrópicos Modalidad C: De balance– FARMACIAS - BOTICAS'
+summary: Cuando el ciudadano dueño de establecimiento requiera realizar el balance de materia prima o medicamentos
+  que sean o contengan estupefacientes o psicotrópicos.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1074
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1074
+  homoclave: BC-COEPRIS-064
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Cuando el interesado lo requiera
+result: Visita de verificación
+cost:
+  type: fijo
+  amount_mxn: 8618.31
+  text: 'COSTO: $8618.31 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 40 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de Autorizaciones, Certificados y Visitas, debidamente requisitado.
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago de derechos.
+    cites:
+    - source: retys
+  - text: Original y copia para cotejo del Acta Constitutiva o Poder Notarial en donde se acredite al Representante
+      Legal.
+    cites:
+    - source: retys
+  - text: Copia simple de la Identificación Oficial vigente del propietario o del Representante Legal.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de Visita de Verificación de Materia Prima
+      y Medicamentos que Sean o Contengan Estupefacientes o Psicotrópicos Modalidad C.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Artículo 368
+- source: ley3
+  pinpoint: Artículo 47
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de Visita de Verificación de Materia Prima
+    y Medicamentos que Sean o Contengan Estupefacientes o Psicotrópicos Modalidad C.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1074: COFEPRIS-03-018-C Solicitud de Visita de Verificación de Materia Prima y Medicamentos
+      que Sean o Contengan Estupefacientes o Psicotrópicos Modalidad C: De balance– FARMACIAS - BOTICAS'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1074
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedmiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Insumos para la Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-03-018-C Solicitud de visita de verificación de materia prima y medicamentos que
+  sean o contengan estupefacientes o psicotrópicos Modalidad C: De balance– FARMACIAS - BOTICAS. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

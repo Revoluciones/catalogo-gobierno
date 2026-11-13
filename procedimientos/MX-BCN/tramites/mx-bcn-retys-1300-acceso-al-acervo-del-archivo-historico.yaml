@@ -1,0 +1,109 @@
+id: mx-bcn-retys-1300-acceso-al-acervo-del-archivo-historico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso al Acervo del Archivo Histórico
+summary: Proporcionar una atención personalizada para que conozca la funcionalidad, los servicios y las formas de
+  consulta de los acervos del archivo histórico.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1300
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1300
+  homoclave: BC-SC-001
+who_can:
+- Interesado
+when: Cuando la persona tenga interés
+result: Asesoría y orientación para la consulta de los diversos acervos documentales.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Archivo Histórico Del Estado
+  address: 'Pedro F. Pérez Y Ramírez #621, Primera Sección, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Registrarse en la entrada (En caso presencial)
+    cites:
+    - source: retys
+  - text: Descripción de la información, documentos que desea conocer
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en el botón de Iniciar trámite para acceder al Centro de Documentación de las Artes
+    - Consultar por categoría la información deseada
+    - Puede descargar si desea la información en formato PDF
+  - name: Presencial
+    steps:
+    - Acuda al archivo histórico
+    - Regístrese en la entrada (en caso presencial)
+    - Describiba la información o documento que desea conocer
+    - Personal de la Secretaría de Cultura asesorá para encontrar la información solicitada
+  notes: Requisitos y pasos a seguir por cualquier persona
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 16 fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en el botón de Iniciar trámite para acceder al Centro de Documentación de las Artes
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Consultar por categoría la información deseada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Puede descargar si desea la información en formato PDF
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1300: Acceso al Acervo del Archivo Histórico'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1300
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

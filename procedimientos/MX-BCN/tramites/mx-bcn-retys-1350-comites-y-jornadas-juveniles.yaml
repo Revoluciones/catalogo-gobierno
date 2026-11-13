@@ -1,0 +1,130 @@
+id: mx-bcn-retys-1350-comites-y-jornadas-juveniles
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Comités y Jornadas Juveniles
+summary: Conformar grupos de líderes jóvenes en las comunidades para la creación de comités para promover la participación
+  social dentro de su comunidad así como promocionar los programas del Instituto de la Juventud y llevar a cabo
+  jornadas para el mejoramiento de espacios vulnerables dentro de su comunidad.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 1350
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1350
+  homoclave: BC-INJUVE-013
+who_can:
+- Interesado
+when: Cuando sea necesario
+result: Atención y asistencia del INJUVE para conformar un comité juvenil, en la comunidad solicitante y apoyo en
+  recursos humanos, así como material
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Atención Integral a la Juventud
+  address: 'Boulevard Adolfo López Mateos y Prolongación Avenida Larroque  #S/N, Fraccionamiento Caliss, Mexicali,
+    21010'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Identificación oficial de cada uno de los representantes del comité (presidente, secretario, tesorero
+      y vocal)
+    cites:
+    - source: retys
+  - text: La persona que se seleccione como Presidente deberá presentar un comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Formato de peticiones por parte del Cómite (Formato libre)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - La información se solicita de dos maneras, de manera presencial en las instalaciones del Instituto y por llamada
+      telefónica al 6865684009 ext. 105 para la conformación del comité juvenil del Instituto de la Juventud del
+      Estado de Baja California
+    - Se notifica por medio de llamada al solicitante que la conformación del comité es de 10 jóvenes de los cuales
+      4 tienen que ser mayores de edad.
+    - Por llamada se agenda el día, la hora y el lugar ya confirmado previamente con el solicitante para la firma
+      del Acta.
+    - Por parte del Instituto de la Juventud del Estado de Baja California, se proporcionará el Acta de Registro
+      del comité para llenarlo de manera presencial con el grupo de jóvenes a realizar el comité de la comunidad.
+    - El seguimiento del comité es responsabilidad del presidente una vez que se haya firmado el Acta.
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 83, Facción XXVII
+- source: ley2
+  pinpoint: 39, Fracción IV, V
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: La información se solicita de dos maneras, de manera presencial en las instalaciones del Instituto y por
+    llamada telefónica al 6865684009 ext. 105 para la conformación del comité juvenil del Instituto de la Juventud
+    del Estado de Baja California
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se notifica por medio de llamada al solicitante que la conformación del comité es de 10 jóvenes de los
+    cuales 4 tienen que ser mayores de edad.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Por llamada se agenda el día, la hora y el lugar ya confirmado previamente con el solicitante para la
+    firma del Acta.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Por parte del Instituto de la Juventud del Estado de Baja California, se proporcionará el Acta de Registro
+    del comité para llenarlo de manera presencial con el grupo de jóvenes a realizar el comité de la comunidad.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El seguimiento del comité es responsabilidad del presidente una vez que se haya firmado el Acta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1350: Comités y Jornadas Juveniles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1350
+    version_date: 28/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de las juventudes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,165 @@
+id: mx-bcn-retys-406-prestamo-a-corto-plazo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Préstamo a Corto Plazo
+summary: Recepción de solicitudes de préstamos a corto plazo.
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 406
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/406
+  homoclave: BC-ISSSTECALI-009
+who_can:
+- Interesado
+when: Cuando el trabajador así lo requiera
+result: Préstamo a corto plazo
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento Préstamos a Corto Plazo e Hipotecario
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Prestaciones Económicas y Sociales
+  address: 'Blvd. Díaz Ordaz  #12649, El paraíso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Afiliaciones y Prestaciones Económicas
+  address: 'Calle de Las Rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+- municipality: San Felipe
+  name: Administración Clínica San Felipe
+  address: 'Avenida Mar Caribe #615, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Préstamo a Corto Plazo
+  requirements:
+  - text: Solicitud llena.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1173
+  - text: Copia de últimos 3 comprobantes de nómina.
+    cites:
+    - source: retys
+  - text: Copia de credencial del ISSSTECALI.
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial (INE).
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con vigencia no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Estar vigente en ISSSTECALI.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude a las oficinas de atención. Solicita el préstamo y entrega toda la documentación requerida.
+    - Al entregar sus documentos y la solicitud, recibirá una copia con un sello que confirma que hemos recibido
+      todo. Se le informará cuánto tiempo tomará revisar su solicitud. Además, deberá comunicarse con nosotros en
+      dos semanas para consultar el estado de su trámite.
+    - Se revisará la documentación entregada, se verificará la relación laboral y se evaluará la situación financiera.
+      La solicitud será ingresada en el sistema para continuar con el proceso.
+    - Se le informará si su préstamo ha sido aprobado o el motivo del rechazo. Pago de prestación sujeto a flujo
+      y disponibilidad presupuestal
+    - Se registrará y autorizará el pago del préstamo, y se le notificará cuando esté listo.
+    - Se revisarán y guardarán los documentos, se informará al organismo patronal sobre el descuento y se confirmará
+      que se haya aplicado correctamente en la nómina.
+    - Acudir a oficinas a recibir el cheque.
+  notes: Asegurado(a) basificado(a)
+legal_basis:
+- source: ley1
+  pinpoint: 1,4, 51,52,53,54,55,56,57
+- source: ley2
+  pinpoint: '65'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acude a las oficinas de atención. Solicita el préstamo y entrega toda la documentación requerida.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Al entregar sus documentos y la solicitud, recibirá una copia con un sello que confirma que hemos recibido
+    todo. Se le informará cuánto tiempo tomará revisar su solicitud. Además, deberá comunicarse con nosotros en
+    dos semanas para consultar el estado de su trámite.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se revisará la documentación entregada, se verificará la relación laboral y se evaluará la situación financiera.
+    La solicitud será ingresada en el sistema para continuar con el proceso.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se le informará si su préstamo ha sido aprobado o el motivo del rechazo. Pago de prestación sujeto a flujo
+    y disponibilidad presupuestal
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se registrará y autorizará el pago del préstamo, y se le notificará cuando esté listo.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se revisarán y guardarán los documentos, se informará al organismo patronal sobre el descuento y se confirmará
+    que se haya aplicado correctamente en la nómina.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir a oficinas a recibir el cheque.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 406: Préstamo a Corto Plazo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/406
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

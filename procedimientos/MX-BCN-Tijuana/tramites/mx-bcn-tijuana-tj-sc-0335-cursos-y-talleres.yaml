@@ -1,0 +1,196 @@
+id: mx-bcn-tijuana-tj-sc-0335-cursos-y-talleres
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Educación, deporte y cultura
+title: Cursos Y Talleres
+summary: El Instituto Municipal de Arte y Cultura (IMAC), a través de las cuatro Casas de Cultura, imparte cursos
+  y talleres de acuerdo a la demanda de las diferentes disciplinas artístico-culturales. Esto con la finalidad de
+  despertar el interés en niños, jóvenes y adultos en las expresiones humanas y mejorar su calidad de vida
+authority:
+  name: Secretaría de Cultura (Ayuntamiento de Tijuana)
+  unit: Instituto Municipal de Arte y Cultura (IMAC)
+official_ids:
+  homoclave: TJ-SC-0335
+who_can:
+- Interesado
+- Tutor
+when: 'Casa de la Cultura Tijuana (Av. París y Lisboa #5, Col. Altamira), Tel. (664) 687 2604 Correo: imac.casaculturatj@gmail.com
+  · Casa de la Cultura Playas Av. Del Agua #777, Secc. Jardines, Playas de Tijuana Tel. (664) 630 1825 Correo: imac.casadeculturaplayas1@gmail.com
+  · Casa de la Cultura El Pípila Calle Décima #7828, Col. El Pípila, Tel. (664) 629 4264 Correo: ccppipila24.imac@gmail.com
+  · Casa de la Cultura San Antonio de los Buenos Av. Miraflores #7001, Fracc. El Rubí, Tel. (664) 637 0941 Correo:
+  info.paolalozano@gmail.com'
+result: Recibo
+requirements:
+- text: Identificación oficial
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Llenar ficha de inscripción
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Realizar el pago de inscripción
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller de disciplinas alternativas: 3.37 UMA
+    ($395.33) · Casa de la Cultura Playas de Tijuana - Campamento de verano, incluye camiseta: 19.37 UMA ($2,272.29)
+    · Casa de la Cultura Playas de Tijuana - Playera campamento de verano: 1.35 UMA ($158.37) · Casa de la Cultura
+    Pípila - Inscripción semestral a cursos y talleres: 1.34 UMA ($157.20) · Casa de la Cultura Pípila - Mensualidad
+    de Orquesta (Cuerdas y Alientos): 3.34 UMA ($391.82) · Casa de la Cultura Pípila - Mensualidad de taller, canto,
+    coro y teoría musical: 3.34 UMA ($391.82) · Casa de la Cultura Pípila - Mensualidad de taller de piano: 2.67
+    UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller de Iniciación a la Música: 2.67 UMA ($313.22)
+    · Casa de la Cultura Pípila - Mensualidad Taller de Guitarra Clásica: 2.67 UMA ($313.22) · Casa de la Cultura
+    San Antonio de los Buenos - Inscripción Taller Artes Escénicas: 1.45 UMA ($170.10) · Casa de la Cultura San
+    Antonio de los Buenos - Mensualidad Ballet Clásico Infantil: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio
+    de los Buenos - Mensualidad Ballet Clásico: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos
+    - Mensualidad Jazz: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Danza Árabe
+    infantil: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Danza Árabe: 2.89
+    UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Taller Integral de Danza: 2.89 UMA
+    ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Baile Social: 2.89 UMA ($339.03) · Casa
+    de la Cultura San Antonio de los Buenos - Mensualidad Danza Contemporánea: 2.89 UMA ($339.03) · Casa de la Cultura
+    San Antonio de los Buenos - Mensualidad Hip Hop: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los
+    Buenos - Mensualidad Danza Folclórica: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad
+    Actuación: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Inscripción Taller de Música:
+    1.45 UMA ($170.10) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Guitarra Clásica: 2.89 UMA ($339.03)
+    · Casa de la Cultura San Antonio de los Buenos - Mensualidad Guitarra Popular: 2.89 UMA ($339.03) · Casa de
+    la Cultura San Antonio de los Buenos - Mensualidad Guitarra Eléctrica: 2.89 UMA ($339.03) · Casa de la Cultura
+    San Antonio de los Buenos - Mensualidad Clase de Piano: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio
+    de los Buenos - Mensualidad Clase de Teclado: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos
+    - Mensualidad Canto y Coro: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad
+    Clase de batería: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Iniciación
+    Musical: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Clase Instrumento,
+    Canto y Juego: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Clase Bajo: 2.89
+    UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Clase de Violín: 2.89 UMA ($339.03)
+    · Casa de la Cultura San Antonio de los Buenos - Mensualidad Orquesta: 2.89 UMA ($339.03) · Casa de la Cultura
+    San Antonio de los Buenos - Mensualidad Saxofón: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los
+    Buenos - Inscripción Taller de Artes Plásticas: 1.45 UMA ($170.10) · Casa de la Cultura San Antonio de los Buenos
+    - Mensualidad Crayolarte, Iniciación a la Pintura: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los
+    Buenos - Mensualidad Taller de Pintura: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos -
+    Mensualidad Taller Dibujo Artístico: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad
+    Taller Serigrafía: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Fotografía
+    Digital I: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Fotografía Digital
+    II: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Fotografía Digital III:
+    2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Inscripción Taller de Idiomas: 1.45 UMA
+    ($170.10) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Inglés Infantil: 2.89 UMA ($339.03) ·
+    Casa de la Cultura San Antonio de los Buenos - Mensualidad Inglés Básico: 2.89 UMA ($339.03) · Casa de la Cultura
+    San Antonio de los Buenos - Mensualidad Inglés Principiantes: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio
+    de los Buenos - Mensualidad Francés: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad
+    Alemán: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Italiano: 2.89 UMA ($339.03)
+    · Casa de la Cultura San Antonio de los Buenos - Mensualidad Portugués: 2.89 UMA ($339.03) · Casa de la Cultura
+    San Antonio de los Buenos - Inscripción Taller de Gastronomía: 1.45 UMA ($170.10) · Casa de la Cultura San Antonio
+    de los Buenos - Mensualidad Repostería y Manualidades: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de
+    los Buenos - Mensualidad Cocina Verde: 2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Inscripción
+    Taller de Yoga: 1.45 UMA ($170.10) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Yoga Infantil:
+    2.89 UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Yoga adultos: 2.89 UMA ($339.03)
+    · Casa de la Cultura San Antonio de los Buenos - Curso de Verano: Campamento Infantil de Verano con camiseta:
+    10.72 UMA ($1,257.56) · Casa de la Cultura San Antonio de los Buenos - Mensualidad curso taller de Disciplinas
+    alternativas: 3.37 UMA ($395.33) · Casa de la Cultura Pípila - Mensualidad Taller de Guitarra Popular: 2.67
+    UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller de Hip-Hop: 2.67 UMA ($313.22) · Casa de la Cultura
+    Pípila - Mensualidad Taller de Jazz: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller de
+    Francés: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller de Danza Árabe: 2.67 UMA ($313.22)
+    · Casa de la Cultura Pípila - Mensualidad Taller Fotografía Infantil: 2.67 UMA ($313.22) · Casa de la Cultura
+    Pípila - Mensualidad Taller Cortometraje y Video infantil: 2.67 UMA ($313.22) · Casa de la Cultura Pípila -
+    Mensualidad Taller Danza Contemporánea: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller
+    Batería y Percusiones: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller Guitarra Eléctrica:
+    2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller Baile de Salón: 3.34 UMA ($391.82) · Casa
+    de la Cultura Pípila - Mensualidad Taller Ritmos Latinos: 3.34 UMA ($391.82) · Casa de la Cultura Pípila - Mensualidad
+    Taller de Iniciación a la Danza: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller Ballet
+    Clásico: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Curso de Inglés: 2.67 UMA ($313.22) ·
+    Casa de la Cultura Pípila - Mensualidad Clase de Ajedrez: 3.64 UMA ($427.01) · Casa de la Cultura Pípila - Mensualidad
+    Taller Artes Plásticas: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller Creación de Comics:
+    2.67 UMA ($313.22) · Casa de la Cultura Pípila - Mensualidad Taller de Manualidades: 2.67 UMA ($313.22) · Casa
+    de la Cultura Pípila - Mensualidad Clase de Corte y Confección (vestuario): 2.67 UMA ($313.22) · Casa de la
+    Cultura Pípila - Mensualidad Taller de Teatro: 2.67 UMA ($313.22) · Casa de la Cultura Pípila - Campamento de
+    Verano: 10.6 UMA ($1,243.49) · Casa de la Cultura Pípila - Camiseta Campamento de Verano: 1.07 UMA ($125.52)
+    · Casa de la Cultura Pípila - Otras rentas de espacio: 6.66 UMA ($781.28) · Casa de la Cultura Pípila - Otros
+    eventos: 100.69 UMA ($11,811.94) · Casa de la Cultura Pípila - Mensualidad curso taller de disciplinas alternativas:
+    3.37 UMA ($395.33) · Casa de la Cultura Pípila - Mensualidad o curso taller de literatura: 2.89 UMA ($339.03)
+    · Casa de la Cultura Tijuana - Inscripción semestral a cursos y talleres: 1.6 UMA ($187.70) · Casa de la Cultura
+    Tijuana - Inscripción cursos EMNO Escuela de Música del Noroeste: 1.6 UMA ($187.70) · Casa de la Cultura Tijuana
+    - Mensualidad cursos EMNO Escuela de Música del Noroeste: 6.01 UMA ($705.03) · Casa de la Cultura Tijuana -
+    Campamento de verano, incluye camiseta: 19.37 UMA ($2,272.29) · Casa de la Cultura Tijuana - Mensualidad curso
+    o taller de música: 4.68 UMA ($549.01) · Casa de la Cultura Tijuana - Mensualidad curso o taller de danza: 4.68
+    UMA ($549.01) · Casa de la Cultura Tijuana - Mensualidad curso o taller de idiomas: 4.68 UMA ($549.01) · Casa
+    de la Cultura Tijuana - Mensualidad curso o taller de manualidades: 4.68 UMA ($549.01) · Casa de la Cultura
+    Tijuana - Mensualidad curso o taller de artes plásticas: 4.68 UMA ($549.01) · Casa de la Cultura Tijuana - Mensualidad
+    curso o taller de artes visuales: 4.68 UMA ($549.01) · Casa de la Cultura Tijuana - Mensualidad curso o taller
+    de artes escénicas: 4.68 UMA ($549.01) · Casa de la Cultura Tijuana sub-Inciso -Mensualidad curso o taller de
+    disciplinas alternativas: 4.68 UMA ($549.01) · Casa de la Cultura Tijuana - Mensualidad de talleres, cursos,
+    diplomados, seminarios y eventos en co-producción 70-30 (IMAC): 16.86 UMA ($1,977.85) · Casa de la Cultura Tijuana
+    - Mensualidad de talleres, cursos diplomados, seminarios y eventos en co-producción 80-20 (IMAC): 0.01 UMA ($1.17)
+    · Casa de la Cultura Tijuana - Curso de verano julio-agosto: 6.01 UMA ($705.03) · Casa de la Cultura Playas
+    de Tijuana - Curso de verano julio-agosto: 6.01 UMA ($705.03) · Casa de la Cultura Playas de Tijuana - Inscripción
+    a curso de verano: 1.35 UMA ($158.37) · Casa de la Cultura Playas de Tijuana - Inscripción semestral a cursos
+    y talleres: 1.6 UMA ($187.70) · Casa de la Cultura Playas de Tijuana - Inscripción a cursos EMNO: 1.34 UMA ($157.20)
+    · Casa de la Cultura Playas de Tijuana - Mensualidad curso EMNO: 2.67 UMA ($313.22) · Casa de la Cultura Playas
+    de Tijuana - Mensualidad curso o taller de música: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana
+    - Mensualidad curso o taller de danza: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad
+    curso o taller de literatura: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso
+    o taller de idiomas: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller
+    de manualidades: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller de artes
+    visuales: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller de artes escénicas:
+    4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller de bienestar físico:
+    4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Evento con la banda de Música para Jóvenes de Preparatoria:
+    0.4 UMA ($46.92) · Casa de la Cultura Playas de Tijuana - Campamento de verano de música: 6.66 UMA ($781.28)
+    · Casa de la Cultura Playas de Tijuana - Mensualidad clases individuales de música, pintura y danza: 8 UMA ($938.48)
+    · Casa de la Cultura Playas de Tijuana - Recorrido Taller de Creatividad: 0.2 UMA ($23.46) · Casa de la Cultura
+    Playas de Tijuana - Recorrido taller y cuenta cuentos: 0.34 UMA ($39.89) · Casa de la Cultura Playas de Tijuana
+    - Recorrido taller y obra de teatro: 0.4 UMA ($46.92) · Casa de la Cultura Tijuana - Mensualidad curso o taller
+    de literatura: 4.68 UMA ($549.01) · Casa de la Cultura Playas de Tijuana - Mensualidad curso o taller de artes
+    plásticas: 4.68 UMA ($549.01) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Jazz Infantil: 2.89
+    UMA ($339.03) · Casa de la Cultura San Antonio de los Buenos - Mensualidad Cocina Verde, Repostería y Manualidades:
+    2.89 UMA ($339.03). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 día
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Municipal de Arte y Cultura (IMAC)
+  address: C. Segunda, Zona Centro. C.P.22000
+  phones: 6646881721 ext. 117
+  hours: LUNES A VIERNES DE 08:00 HRS A 17:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SC-0335: Cursos Y Talleres'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SC-0335
+    version_date: '2026-07-01'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio Fiscal del 2026 Artículo
+      52 Fracción III, Incisos A).-Casa de la Cultura Tijuana, B).-Casa de la Cultura Playas, C).-Casa de la Cultura
+      Pípila, D).-Casa de la Cultura San Antonio de los Buenos
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: Disponibilidad de espacio'

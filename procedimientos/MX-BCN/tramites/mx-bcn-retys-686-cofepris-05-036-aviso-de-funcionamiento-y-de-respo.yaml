@@ -1,0 +1,113 @@
+id: mx-bcn-retys-686-cofepris-05-036-aviso-de-funcionamiento-y-de-respo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-036 Aviso de Funcionamiento y de Responsable Sanitario del Establecimiento de Servicios de salud
+summary: 'Cuando el ciudadano requiera obtener el aviso de funcionamiento, siempre y cuando tu empresa con establecimiento
+  de atención médica no practiqué actos quirúrgicos u obstétricos, como son: consultorios médicos, consultorios
+  y clínicas dentales, laboratorios de análisis clínicos sin rayos x, ambulancias y servicios de asistencia social.'
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 686
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/686
+  homoclave: BC-COEPRIS-007
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Aviso de funcionamiento
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Original y copia simple legible del formato “Aviso de funcionamiento, de responsable sanitario y de modificación
+      o baja”, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Original y copia legible del acta constitutiva o poder notarial que acredite al representante legal
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial del representante legal
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial de las personas autorizadas
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en la
+      parte inferior derecha
+    - Elegir la modalidad del trámite de interés
+    - Llenar formato requerido
+    - Firmar resolución de trámite enviado vía correo
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 47, Articulo 200 y Articulo 200 BIS
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en
+    la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elegir la modalidad del trámite de interés
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar formato requerido
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar resolución de trámite enviado vía correo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 686: COFEPRIS-05-036 Aviso de Funcionamiento y de Responsable Sanitario del Establecimiento
+      de Servicios de salud'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/686
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-036 Aviso de Funcionamiento y de Responsable Sanitario del Establecimiento de
+  Servicios de Salud.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

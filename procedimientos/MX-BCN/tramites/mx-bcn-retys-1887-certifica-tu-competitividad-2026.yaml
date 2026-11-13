@@ -1,0 +1,219 @@
+id: mx-bcn-retys-1887-certifica-tu-competitividad-2026
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certifica tu Competitividad 2026
+summary: Programa dirigido a empresas y personas físicas con actividad empresarial establecidas en el Estado de
+  Baja California, para solicitar apoyo en la obtención, recertificación o vigilancia de certificaciones que fortalezcan
+  su competitividad y promuevan su integración a cadenas productivas.
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1887
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1887
+  homoclave: BC-SEI-015
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la empresa haya obtenido una certificación, recertificación o vigilancia y desee solicitar el apoyo
+  económico.
+result: Reembolso de hasta $25,000 o $35,000, según la certificación.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Hasta el 13 de noviembre de 2026, y/o hasta agotar el recurso.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Avenida República de Honduras y Justo Sierra #377, Cuauhtémoc Sur, Mexicali, 21200'
+- municipality: Tijuana
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, Colonia El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Carretera Transpeninsular #6500, Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Baja California #53, La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'José Aros Aguilar #2003, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Benito Juárez #1108, Colonia Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Mar de Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Persona Física con Actividad Empresarial
+  requirements:
+  - text: Solicitud de Apoyo Certifica tu Competitividad 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14769
+  - text: Copia de la constancia o certificado obtenido, en el que se indique la norma bajo la cual se acredita.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente (credencial para votar, pasaporte o cédula profesional vigente;
+      en caso de ser extranjero, documento migratorio o visa permanente).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal vigente.
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio en el Estado de Baja California, con una antigüedad no mayor a 2 meses
+      (recibo de luz o agua).
+    cites:
+    - source: retys
+  - text: Escrito libre en hoja membretada de la empresa, dirigido a la Dirección de Sectores y Cadenas Productivas
+      (DSCP), indicando el monto del apoyo solicitado, la actividad económica de la empresa, el proceso de certificación
+      y el número de empleados.
+    cites:
+    - source: retys
+  - text: Comprobante Fiscal Digital por Internet (CFDI) que ampare el pago de los servicios de certificación, emitido
+      por el organismo certificador correspondiente.
+    cites:
+    - source: retys
+  - text: Manifestación, bajo protesta de decir verdad, de no ser familiar directo de personas servidoras o funcionarias
+      de los tres niveles de gobierno, ni ocupar cargo público ni tener interés personal, familiar o de negocios
+      en dichas instituciones.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El interesado llena la solicitud y entrega la documentación en la ventanilla de las oficinas de atención de
+      la SEI.
+    - El Comité Evaluador realiza la revisión y, en su caso, aprueba la solicitud.
+    - El beneficiario realiza la emisión de la factura.
+    - La Dirección de Sectores y Cadenas Productivas entrega el cheque al beneficiario, a su nombre con la leyenda
+      “no negociable”.
+  notes: Certificación Básica (ISO 9001, 14001, 18001, 17025 o equivalentes) y Certificación Especializada (ISO
+    16949, IATF 16949, AS900, AS9100, ISO 13485, 27001 o equivalentes).
+- name: Persona Moral
+  requirements:
+  - text: Solicitud de Apoyo Certifica tu Competitividad 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14783
+  - text: Copia de la constancia o certificado obtenido, en el que se indique la norma bajo la cual se acredita.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del representante legal (credencial para votar, pasaporte o cédula
+      profesional vigente; en caso de ser extranjero, documento migratorio o visa permanente).
+    cites:
+    - source: retys
+  - text: Copia simple del Acta Constitutiva, y Poder vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal vigente.
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio en el Estado de Baja California, con una antigüedad no mayor a 2 meses
+      (recibo de luz o agua).
+    cites:
+    - source: retys
+  - text: Escrito libre en hoja membretada de la empresa, dirigido a la Dirección de Sectores y Cadenas Productivas
+      (DSCP), indicando el monto del apoyo solicitado, la actividad económica de la empresa, el proceso de certificación
+      y el número de empleados.
+    cites:
+    - source: retys
+  - text: Comprobante Fiscal Digital por Internet (CFDI) que ampare el pago de los servicios de certificación, emitido
+      por el organismo certificador correspondiente.
+    cites:
+    - source: retys
+  - text: Manifestación, bajo protesta de decir verdad, de no ser familiar directo de personas servidoras o funcionarias
+      de los tres niveles de gobierno, ni ocupar cargo público ni tener interés personal, familiar o de negocios
+      en dichas instituciones.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El interesado llena la solicitud y entrega la documentación en la ventanilla de las oficinas de atención de
+      la SEI.
+    - El Comité Evaluador realiza la revisión y, en su caso, aprueba la solicitud.
+    - El beneficiario realiza la emisión de la factura.
+    - La Dirección de Sectores y Cadenas Productivas entrega el cheque al beneficiario, a su nombre con la leyenda
+      “no negociable”.
+  notes: Certificación Básica (ISO 9001, 14001, 18001, 17025 o equivalentes) y Certificación Especializada (ISO
+    16949, IATF 16949, AS900, AS9100, ISO 13485, 27001 o equivalentes).
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30, fracción XI, y 41, fracciones I, III, V, VI, X, XII, XIII, XVIII y XXIV.
+- source: ley2
+  pinpoint: Artículos 7 y 8 fracción I, VI, VII, X,XVII y XX.
+- source: ley3
+  pinpoint: Artículos 7 y 8
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado llena la solicitud y entrega la documentación en la ventanilla de las oficinas de atención
+    de la SEI.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El Comité Evaluador realiza la revisión y, en su caso, aprueba la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El beneficiario realiza la emisión de la factura.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La Dirección de Sectores y Cadenas Productivas entrega el cheque al beneficiario, a su nombre con la leyenda
+    “no negociable”.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1887: Certifica tu Competitividad 2026'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1887
+    version_date: 10/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Economía e Innovación.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Reglas de Operación Certifica tu Competitividad 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Certifica tu Competitividad 2026. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

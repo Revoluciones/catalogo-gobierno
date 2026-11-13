@@ -1,0 +1,200 @@
+id: mx-bcn-retys-340-informe-anual-de-prestadores-de-servicios-para-el
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Informe Anual de Prestadores de Servicios para el Manejo Integral de Residuos de Manejo Especial
+summary: Reporte de los volúmenes y tipos de residuos, el manejo que se les dio y demás elementos establecidos en
+  las condicionantes de la Licencia de Prestador de Servicios, respecto a las actividades realizadas durante un
+  año.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 340
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/340
+  homoclave: BC-SMADS-059
+who_can:
+- Representante Legal
+- Interesado
+when: Anualmente, durante la vigencia de su registro.
+result: Oficio donde se le tiene por presentado o no el informe anual.
+cost:
+  type: variable
+  amount_mxn: 2639.6
+  text: 'COSTO VARIABLE: $2,639.60 Moneda Nacional. Costo actualizado para el mes de noviembre del 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 60 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Formato de solicitud debidamente requisitado, o escrito libre que proporcione la misma información requerida
+      en el formato, que contenga la firma autógrafa de la persona interesada o de la persona apoderada o representante
+      legal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13926
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Los documentos e información que le fueron establecidos en su Licencia de Prestador de Servicios, en los
+      términos que le fueron solicitados.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, y su personalidad no esté
+      reconocida en el expediente en el que se actúa o el mandato hubiera fenecido, presentar copia simple de la
+      documental idónea vigente, completa y nítida, mediante la cual se acredite como tal.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, presentar copia simple de
+      la identificación oficial de esta, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: 'Entregar USB que contenga la totalidad de la información presentada en el informe. Las bases de datos
+      deben ser presentadas en formato electrónico editable: Word o Excel.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de del Acuerdo Administrativo de titularidad o de requerimiento de información.
+    - Recolectar el oficio.
+  notes: Persona autorizada como Prestador de Servicios para el Manejo Integral de Residuos de Manejo Especial,
+    con registro vigente.
+- name: Persona Moral
+  requirements:
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Los documentos e información que le fueron establecidos en su Licencia de Prestador de Servicios, en los
+      términos que le fueron solicitados.
+    cites:
+    - source: retys
+  - text: Copia simple de la documental idónea vigente, completa y nítida, mediante la cual se acredite a la persona
+      como apoderada o representante legal como tal, cuando no esté reconocida en expediente, o cuando su poder
+      ya haya fenecido.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona apoderada o representante legal, legible y con
+      vigencia activa.
+    cites:
+    - source: retys
+  - text: 'Entregar USB que contenga la totalidad de la información presentada en el informe. Las bases de datos
+      deben ser presentadas en formato electrónico editable: Word o Excel.'
+    cites:
+    - source: retys
+  - text: Formato de solicitud debidamente requisitado, o escrito libre que proporcione la misma información requerida
+      en el formato, que contenga la firma autógrafa de la persona apoderada o representante legal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13927
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de del Acuerdo Administrativo de titularidad o de requerimiento de información.
+    - Recolectar el oficio.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, autorizada
+    como Prestador de Servicios para el Manejo Integral de Residuos de Manejo Especial, con registro vigente.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción IV, inciso u)
+- source: ley2
+  pinpoint: Artículos 26 y 48
+- source: ley3
+  pinpoint: Artículos 14 fracción II y IX, 15 BIS 2 fracción VI y 15 BIS 5 fracción I
+- source: ley4
+  pinpoint: Artículos 39 y TRANSITORIO CUARTO
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de del Acuerdo Administrativo de titularidad o de requerimiento de información.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 340: Informe Anual de Prestadores de Servicios para el Manejo Integral de Residuos de Manejo
+      Especial'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/340
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Procedimiento para los Actos de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Prevención y Gestión Integral de Residuos para el Estado de Baja California de aplicación supletoria
+      a la LPGIECR
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley para la Prevención, Gestión Integral y Economía Circular de los Residuos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Recepción y Evaluación del Informe Anual de Prestadores de Servicios para el Manejo Integral
+  de Residuos de Manejo Especial. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

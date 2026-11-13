@@ -1,0 +1,99 @@
+id: mx-bcn-retys-1727-acceso-al-programa-estatal-de-fomento-a-la-lectura
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso al Programa Estatal de Fomento a la Lectura 5 libros por Año
+summary: Transmitir y arraigar el entusiasmo por leer para que todos los bajacalifornianos leamos 5 libros por año
+  por lo menos. Pregunta en tu escuela o Centro Comunitario de tu zona para participar.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1727
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1727
+  homoclave: BC-SC-021
+who_can:
+- Interesado
+when: Cuando se deseé acceder a las opciones de fomento y hábito de la lectura
+result: Al registrar en el pasaporte lector los libros consultados se puede acceder al sorteo de diversos premios.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Consultar agenda de actividades.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Acudir a las Oficinas de la Secretaría de Cultura o consultar en el siguiente enlace: https://www.bajacalifornia.gob.mx/Cultura/Secciones/Fomento_Lectura'
+    - Descargar pasaporte lector
+    - Registrar en la escuela, centro comunitario, biblioteca el avance de las lecturas
+    - Estar atentos a las redes sociales de CulturaBC donde se anunciaran las premiaciones
+  notes: niñas, niños, jovenes y personas adultas
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción IV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Acudir a las Oficinas de la Secretaría de Cultura o consultar en el siguiente enlace: https://www.bajacalifornia.gob.mx/Cultura/Secciones/Fomento_Lectura'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Descargar pasaporte lector
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Registrar en la escuela, centro comunitario, biblioteca el avance de las lecturas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Estar atentos a las redes sociales de CulturaBC donde se anunciaran las premiaciones
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1727: Acceso al Programa Estatal de Fomento a la Lectura 5 libros por Año'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1727
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Acceso al Programa 5 libros por Año. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

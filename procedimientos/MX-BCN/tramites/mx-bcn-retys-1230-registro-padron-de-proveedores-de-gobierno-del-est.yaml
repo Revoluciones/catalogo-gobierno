@@ -1,0 +1,134 @@
+id: mx-bcn-retys-1230-registro-padron-de-proveedores-de-gobierno-del-est
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro Padrón de Proveedores de Gobierno del Estado
+summary: Contribuir al fortalecimiento del micro, pequeñas y medianas empresas, dándoles la oportunidad de formar
+  parte del padrón de proveedores del Gobierno del Estado.
+authority:
+  name: Oficialía Mayor de Gobierno
+official_ids:
+  retys_id: 1230
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1230
+  homoclave: BC-OM-079
+who_can:
+- Interesado
+when: Cuando la persona esté interesada en brindar servicios y bienes a Gobierno del Estado
+result: Constancia de registro
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección De Adquisiciones (Mexicali)
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Persona interesada
+  requirements:
+  - text: Cédula del registro federal de contribuyentes
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Estado de cuenta para validación de la clabe conteniendo los 18 dígitos
+    cites:
+    - source: retys
+  - text: Escritura constitutiva (persona moral)
+    cites:
+    - source: retys
+  - text: Poder de la persona que actuará bajo su nombre y representación
+    cites:
+    - source: retys
+  - text: Carta de recomendacion de un cliente.
+    cites:
+    - source: retys
+  - text: Acuse de inscripción al decreto del 8% (en caso de contar con el estimulo)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página http://tramites.ebajacalifornia.gob.mx/Compras/
+    - En la opción registro de proveedores, proporcionar información relacionada con su empresa
+    - Llenar todos los campos de información y hacer clic en el botón “registrarme”
+    - Una vez recibido por correo el usuario y contraseña debe iniciar sesión, adjuntar los documentos solicitados,
+      agregar giros y enviar a revisión
+    - 'Una vez verificada que la información es correcta se entrega la constancia de registro Nota: Una vez registrado
+      por internet, deberá adjuntar la documentación en plataforma en un período máximo de 30 días, posterior al
+      término establecido a falta de la misma, su registro se inactivará hasta la entrega y validación de su documentación.'
+  notes: Persona interesada
+legal_basis:
+- source: ley1
+  pinpoint: 33, Fracción XX
+- source: ley2
+  pinpoint: 13, Párrafo II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página http://tramites.ebajacalifornia.gob.mx/Compras/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: En la opción registro de proveedores, proporcionar información relacionada con su empresa
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar todos los campos de información y hacer clic en el botón “registrarme”
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez recibido por correo el usuario y contraseña debe iniciar sesión, adjuntar los documentos solicitados,
+    agregar giros y enviar a revisión
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: 'Una vez verificada que la información es correcta se entrega la constancia de registro Nota: Una vez
+    registrado por internet, deberá adjuntar la documentación en plataforma en un período máximo de 30 días, posterior
+    al término establecido a falta de la misma, su registro se inactivará hasta la entrega y validación de su documentación.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1230: Registro Padrón de Proveedores de Gobierno del Estado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1230
+    version_date: 12/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Adquisiciones, Arrendamientos y Servicios para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

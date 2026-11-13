@@ -1,0 +1,114 @@
+id: mx-bcn-retys-1701-inscripcion-al-video-fest
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Video Fest.
+summary: Que la persona partícipe en este evento internacional de conferencias, ciclos, muestras y demás temas relacionados
+  con las artes visuales.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1701
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1701
+  homoclave: BC-SC-012
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se publique la convocatoria en la página www.bajacalifornia.gob.mx/cultura o las redes sociales https://www.facebook.com/culturabajacalifornia/
+result: Promoción y Difusión de la Producción de los Videastas.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Museos y Galerías
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Cumplir con lo solicitado en la convocatoria
+    cites:
+    - source: retys
+  - text: Elaborar formato de inscripción (puede ser en línea o físico)
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar ficha de inscripción
+    - Entregar/Enviar ficha de registro y video (Oficinas o correo electrónico de acuerdo a convocatoria)
+    - Recibe y da respuesta al participante
+    - Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+    - Se anuncias ganadores
+    - Se expone el material participante y de los ganadores
+  notes: Ciudadanía de acuerdo a lo establecido en la convocatoria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 27, fracción VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar ficha de inscripción
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar/Enviar ficha de registro y video (Oficinas o correo electrónico de acuerdo a convocatoria)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibe y da respuesta al participante
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se anuncias ganadores
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se expone el material participante y de los ganadores
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1701: Inscripción al Video Fest.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1701
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción a la Bienal Internacional de Cine y Video Contemporáneo.. Copiado tal cual de
+  RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

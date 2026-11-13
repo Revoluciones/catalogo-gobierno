@@ -1,0 +1,115 @@
+id: mx-bcn-tijuana-tj-sdtua-0115-subdivision-y-fusion
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Infraestructura y vivienda
+title: Subdivisión y Fusión
+summary: Trámite para la división o fusión de predios (en el caso de fusión, aplica a 2 o más predios), de acuerdo
+  con los lineamientos establecidos. Cada fracción debe cumplir con un frente mínimo de 8 metros y una superficie
+  mínima de 180 m²
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0115
+who_can:
+- Interesado
+when: Cuando lo requiera
+result: SUBDIVISION, FUSION
+requirements:
+- text: Llenar y firmar solicitud (propietario o representante legal).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Documento de propiedad (escritura pública o título de propiedad del terreno debidamente inscrito en el registro
+    público de la propiedad y comercio).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Certificado de inscripción y libertad de gravámenes hipotecarios del predio o predios.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Predial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta de deslinde catastral y/o plano certificado (vigencia de 1 año).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Proyecto de subdivisión o fusión (impreso y digital en archivo DWG AUTOCAD, firmado por el perito deslindador
+    del acta o plano que se presente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Memorias técnico descriptivas de las fracciones o predios resultantes.
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Análisis de factibilidad para Relotificación, Subdivisión y/o Fusión...: 6.29 UMA ($737.88) · Relotificación,
+    subdivisión y/o fusión de lotes urbanos/certificación memorias, por lote fusionado o lote resultante(lo que
+    sea mayor) sobre lotes baldíos...: 15.73 UMA ($1,845.29) · Relotificación, subdivisión y/o fusión de lotes urbanos/certificación
+    memorias, por lote fusionado o lote resultante(lo que sea mayor) sobre lotes construidos...: 20.45 UMA ($2,398.99)
+    · Subdivisión predio rústico, que no requiera apertura de calles, por fracción resultante, dentro del centro
+    de población...: 52 UMA ($6,100.12) · Subdivisión predio rústico, que no requiera apertura de calles, por fracción
+    resultante, fuera del centro de población, uso agropecuario y otros...: 42.9 UMA ($5,032.60) · Certificación
+    de planos correspondientes a relotificación, subdivisión y/o fusión. cada certificación...: 6.29 UMA ($737.88)
+    · Copia certificada de relotificación, subdivisión y/o fusión...: 3.15 UMA ($369.53). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 7 días habiles
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0115: Subdivisión y Fusión'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0115
+    version_date: '2026-11-04'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de acciones de urbanización para el municipio de Tijuana.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20241227113533997_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Articulo 31, fracción XVII, inciso O) y P), fracción XIX, inciso B) y C) de la Ley de Ingresos del Municipio
+      de Tijuana, Baja California para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con lo que se indica en el reglamento.'

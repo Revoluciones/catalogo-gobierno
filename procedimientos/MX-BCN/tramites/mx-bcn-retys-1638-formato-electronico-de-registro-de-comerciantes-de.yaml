@@ -1,0 +1,103 @@
+id: mx-bcn-retys-1638-formato-electronico-de-registro-de-comerciantes-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Formato electrónico de registro de comerciantes de autos
+summary: La generación del registro de los vehículos enajenados hacia el contribuyente por los comerciantes de autos.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 1638
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1638
+  homoclave: BC-SH-046
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando vende un vehículo
+result: Formato electrónico
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Recaudación de Rentas de Mexicali
+  address: 'Calzada Independecia #994, Centro Cívico , Mexicali, 21000'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+scenarios:
+- name: Formato electrónico de registro de comerciantes de autos
+  requirements:
+  - text: Contar previamente con usuario para generar el folio electrónico.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dale click al botón "Iniciar tramite"
+    - Capturar la información solicitada.
+    - Una vez capturada la información proceder a la generación del folio.
+  notes: Contar previamente con usuario para la generación del folio electronico
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dale click al botón "Iniciar tramite"
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Capturar la información solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez capturada la información proceder a la generación del folio.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1638: Formato electrónico de registro de comerciantes de autos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1638
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley que Regula los Servicios de Control Vehicular en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

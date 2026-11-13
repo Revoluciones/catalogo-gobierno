@@ -1,0 +1,134 @@
+id: mx-bcn-retys-556-inscripcion-y-registro-de-patente-sellos-y-firma-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción y Registro de Patente, Sellos y Firma de Notario, Titular, Adscrito, Aspirante al Ejercicio del
+  Notariado y de Corredores Públicos
+summary: Llevar acabo el registro de las patentes otorgadas por la Secretaría General de Gobierno y por la Secretaría
+  de Economía para conocimiento de terceros.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 556
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/556
+  homoclave: BC-DRPPC-021
+who_can:
+- Interesado
+when: Cuando sea otorgada una patente de titular, adscrito, aspirante al ejercicio del notariado y de corredores
+  públicos
+result: Registro de patente
+cost:
+  type: variable
+  amount_mxn: 11.0
+  text: 'COSTO VARIABLE: El aspirante al ejercicio de notario el costo para su inscripción es de $11 118.00 para
+    el mes de octubre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Cubrir previamente en la caja recaudadora los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Patente otorgada por la Secretaría General de Gobierno para el Notario y patente otorgada por la Secretaría
+      de Economía para el Corredor Público
+    cites:
+    - source: retys
+  - text: Fotografía igual a la patente
+    cites:
+    - source: retys
+  - text: Plasmar en el libro de registro sello de cotejo
+    cites:
+    - source: retys
+  - text: Firmar el libro de registro
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Dirección de Registro Público de la Propiedad y del Comercio
+    - Ingresar la patente adjunto al pago de derechos
+    - Esperar cita de ratificación para insripción
+  notes: Para el registro de patente
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, fracción I, VII, inciso I)
+- source: ley3
+  pinpoint: 40 y 59
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Dirección de Registro Público de la Propiedad y del Comercio
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar la patente adjunto al pago de derechos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Esperar cita de ratificación para insripción
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 556: Inscripción y Registro de Patente, Sellos y Firma de Notario, Titular, Adscrito, Aspirante
+      al Ejercicio del Notariado y de Corredores Públicos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/556
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Notariado para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

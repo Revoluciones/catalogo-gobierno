@@ -1,0 +1,129 @@
+id: mx-bcn-retys-1242-tren-turistico-tijuana-tecate
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Tren Turístico Tijuana - Tecate
+summary: ¡Paseo en tren a Tecate! Salimos de la Estación García y te llevamos hasta el Pueblo Mágico de Tecate,
+  para que lo conozcas y disfrutes. El boleto incluye Viaje redondo, Seguro de viajero, Asistencia médica y Entretenimiento
+  a bordo.
+authority:
+  name: Administradora de la Vía Corta Tijuana-Tecate
+official_ids:
+  retys_id: 1242
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1242
+  homoclave: BC-ADMICARGA-002
+who_can:
+- Interesado
+when: Cuando se requiera realizar el viaje y adquirir el boleto para el recorrido
+result: Boleto virtual
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Adultos $550.00 M.N. / Niños (5 - 12 años) y Tercera edad $520.00 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 24 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: El mismo día al finalizar el recorrido
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Subdirección Operativa
+  address: 'Av. Ferrocarril #1, Libertad Parte Baja, Tijuana, 22300'
+- municipality: Tijuana
+  name: Coordinadora Administrativa
+  address: 'Avenida Ferrocarril #1, Libertda parte Baja, Tijuana, 22300'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: Presentar el boleto el día del recorrido
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Estar atento a las fechas del paseo del tren turístico en las redes sociales de ADMICARGA en los siguientes
+      enlaces: https://www.facebook.com/BC y https://www.instagram.com/admicargabc/'
+    - Dar click en el botón de "Iniciar trámite" para la compra del boleto
+    - Llenar el formulario
+    - Realizar el pago de derechos
+    - Entrega del boleto virtual
+    - Presentarse con boleto el día del recorrido
+  - name: Presencial
+    steps:
+    - 'Estar atento a las fechas del paseo del tren turístico en las redes sociales de ADMICARGA en los siguientes
+      enlaces: https://www.facebook.com/BC y https://www.instagram.com/admicargabc/'
+    - Acudir a las oficinas de ADMICARGA
+    - Solicitar el Servicio del Tren Turístico
+    - Pago de Derechos del Boleto
+    - Entrega del Boleto por parte del servidor público
+    - Presentarse con boleto el día del recorrido
+  notes: Recorrido en tren turístico de acuerdo al programa de recorridos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 1, Fracción XI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Estar atento a las fechas del paseo del tren turístico en las redes sociales de ADMICARGA en los siguientes
+    enlaces: https://www.facebook.com/BC y https://www.instagram.com/admicargabc/'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar click en el botón de "Iniciar trámite" para la compra del boleto
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar el formulario
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entrega del boleto virtual
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentarse con boleto el día del recorrido
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1242: Tren Turístico Tijuana - Tecate'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1242
+    version_date: 16/Octubre /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Reglamentaria del Servicio Ferroviario
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

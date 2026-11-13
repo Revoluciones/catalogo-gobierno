@@ -1,0 +1,114 @@
+id: mx-bcn-retys-1372-portabilidad-de-estudios-conalep
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Portabilidad de Estudios CONALEP
+summary: Reconocimiento que el sistema CONALEP hace de las unidades de aprendizaje curriculares acreditadas, en
+  instituciones de educación media superior del sistema educativo nacional.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1372
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1372
+  homoclave: BC-CONALEP-011
+who_can:
+- Interesado
+- Tutor
+when: De acuerdo al calendario de actividades escolares emitidas por el Colegio de Educación Profesional Técnica
+  de Baja California. Inicio de trámite enero
+result: El ingreso como alumno a los planteles del sistema CONALEP
+cost:
+  type: variable
+  amount_mxn: 390.0
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: $ 390.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Plan y programa de estudios del plantel origen
+    cites:
+    - source: retys
+  - text: Historial académico
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la documentación requerida en el plantel que aplique
+    - Confirmar la portabilidad del estudiante
+    - Entregar información de horario y grupo
+  notes: Requisitos para tramitar la portabilidad de un estudiante
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida en el plantel que aplique
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Confirmar la portabilidad del estudiante
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar información de horario y grupo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1372: Portabilidad de Estudios CONALEP'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1372
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de Creación del Colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

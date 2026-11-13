@@ -1,0 +1,209 @@
+id: mx-bcn-retys-1610-contrato-de-registro-para-dotacion-de-agua-residua
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de registro para dotación de Agua Residual Tratada
+summary: Documento en el que se establecen las condiciones bajo las cuales se realizará la dotación de agua residual
+  tratada en sitios autorizados por la CESPT, por medio de camiones-cisterna.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1610
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1610
+  homoclave: BC-CESPT-032
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Contrato de Dotación de Agua Residual Tratada
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Registro de dotación de agua residual tratada en camión-cisterna: $7,738.36 pesos Revalidación
+    anual de registro de dotación de agua residual tratada: $4,411.93 pesos Tratada, por cada m³ entregada en planta:
+    $8.15 pesos Tratada, por cada m³ entregada en el domicilio del usuario: $23.15 pesos Derecho anual de reservas
+    de agua residual tratada, por cada m³: $0.51 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Primera vez
+  requirements:
+  - text: Original y copia del formulario Solicitud del servicio de dotación de agua residual tratada (FRM-008)
+      debidamente llenado y firmado por el propietario o el representante legal, lo proporciona CESPT o lo puede
+      obtener en la página de Internet de CESPT en Solicitud del servicio de dotación de agua residual tratada (FRM-008),
+      las instrucciones para el llenado del formulario las puede obtener en la página de Internet de CESPT en INS-003.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11646
+  - text: Copia del Acta Constitutiva
+    cites:
+    - source: retys
+  - text: 3. Copia certificada del Poder legal para actos de administración, vigente, que acredite la personalidad
+      del representante legal, en caso de NO ESTAR ESTABLECODO en el Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: 'Copia de identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a
+      quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de alta ante la Secretaría de Hacienda y Crédito Público
+    cites:
+    - source: retys
+  - text: Croquis de localización con descripción de colindancias hacia los cuatro puntos cardinales
+    cites:
+    - source: retys
+  - text: Pagar los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+      se completen, indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+      de validación el original y copia del formulario Solicitud del servicio de dotación de agua residual tratada
+      (FRM-008), la cual entregará al solicitante junto con todos los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago de derechos correspondiente en cajas.
+    - Acudir al área de Cajas con la Ficha de pago y realizar el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud del servicio de
+      dotación de agua residual tratada (FRM-008) con la certificación de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Primera vez
+- name: Revalidación de contrato
+  requirements:
+  - text: 1. Original y copia del formulario Solicitud del servicio de dotación de agua residual tratada (FRM-008)
+      debidamente llenado y firmado por el propietario o el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11664
+  - text: Pagar los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+      se completen, indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+      de validación el original y copia del formulario Solicitud del servicio de dotación de agua residual tratada
+      (FRM-008), la cual entregará al solicitante junto con todos los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago de derechos correspondiente en cajas.
+    - Acudir al área de Cajas con la Ficha de pago y realizar el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud del servicio de
+      dotación de agua residual tratada (FRM-008) con la certificación de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Revalidación de contrato
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+    posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos,
+    si no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+    se completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+    de validación el original y copia del formulario Solicitud del servicio de dotación de agua residual tratada
+    (FRM-008), la cual entregará al solicitante junto con todos los requisitos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará
+    al solicitante para que realice el pago de derechos correspondiente en cajas.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir al área de Cajas con la Ficha de pago y realizar el pago correspondiente, la persona de Cajas le
+    entregará un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de pago y entregar todos los requisitos.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud del servicio
+    de dotación de agua residual tratada (FRM-008) con la certificación de recibido.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+    para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1610: Contrato de registro para dotación de Agua Residual Tratada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1610
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

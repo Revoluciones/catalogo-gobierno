@@ -1,0 +1,160 @@
+id: mx-bcn-retys-1760-denuncia-sanitaria
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Denuncia Sanitaria
+summary: DENUNCIA SANITARIA A ESTABLECIMIENTOS O PRODUCTOS QUE PRESENTAN RIESGOS A LA SALUD PÚBLICA.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1760
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1760
+  homoclave: BC-ISESALUD-025
+who_can:
+- Interesado
+when: INMEDIATAMENTE DESPUES DE PRESENCIAR EL RIESGO DE SALUD PUBLICA
+result: COPIA DE LA DENUNCIA SANITARIA QUE PRESENTÓ
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: UNIDAD REGIONAL DE PROTECCIÓN CONTRA RIESGOS SANITARIOS MEXICALI
+  address: 'AVENIDA DE LA PATRIA ENTRE CALLE ÁLAMO Y CALLE OCÉANO  #808, CENTRO CIVICO, MEXICALI, Mexicali, 21000'
+- municipality: Tijuana
+  name: UNIDAD REGIONAL DE PROTECCIÓN CONTRA RIESGOS SANITARIOS TIJUANA
+  address: 'BOULEVARD AGUA CALIENTE  #2430, REVOLUCIÓN, TIJUANA, Tijuana, 21060'
+- municipality: Ensenada
+  name: Unidad Regional de Protección Contra Riesgos Sanitarios Ensenada
+  address: 'Calle Séptima entre Miramar Y Gastelum, 561, Local 7 Y 8  #561, ZONA CENTRO, ENSENADA, Ensenada, 22800'
+scenarios:
+- name: Denuncia sanitaria
+  requirements:
+  - text: Solamente el interesado podrá presentar la denuncia, no se requiere algún documento adicional
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la pagina web de ventanilla digital bc, y en el apartado de ´búsqueda´ teclear ´Denuncias Sanitarias´
+    - 'Se habilitarán dos opciones: denuncia a establecimiento o denuncia a producto, se eligirá la opción según
+      sea el caso'
+    - Llenar la plantilla con información solicitada (nombre del denunciante, dirección, teléfono, correo electrónico,
+      nombre y dirección del establecimiento a fin de poder identificarlo al momento de realizar la visita, entre
+      otros)
+    - Una vez llenada la plantilla con la información solicitada, se deberá ingresar debidamente llenado el motivo
+      de la denuncia sanitaria
+    - En caso de contar con alguna foto digital o video de evidencia, puede subirlo a la plataforma (no es requisito)
+    - Una vez otorgada toda la información requerida, podrá imprimir una copia de su denuncia para contar con evidencia
+      de que se realizó
+    - El personal de la Unidad Regional que corresponda según sea el caso, recibirá la denuncia sanitaria y agendará
+      visita de verificación según su logística
+    - Se notificara al denunciante por medio de plataforma si su denuncia ya fue atendida
+  - name: Mixto
+    steps:
+    - El ciudadano identifica un riesgo a la salud pública y acude a la Unidad Regional que corresponda y solicita
+      hacer la denuncia sanitaria
+    - El servidor público le ofrece un equipo de cómputo con las facilidades para realizar la denuncia en línea,
+      o en su caso, se le ofrecerá un formato de Denuncia Sanitaria Estatal, mismo que contiene la misma información
+      que la plantilla en línea
+    - Llena debidamente el formato con la información requerida
+    - Entrega al ciudadano una copia en físico de su denuncia
+  notes: Proceso para interponer denuncia sanitaria a establecimientos o productos que presentan riesgos a la salud
+    pública
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: '60'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la pagina web de ventanilla digital bc, y en el apartado de ´búsqueda´ teclear ´Denuncias Sanitarias´
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'Se habilitarán dos opciones: denuncia a establecimiento o denuncia a producto, se eligirá la opción según
+    sea el caso'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar la plantilla con información solicitada (nombre del denunciante, dirección, teléfono, correo electrónico,
+    nombre y dirección del establecimiento a fin de poder identificarlo al momento de realizar la visita, entre
+    otros)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez llenada la plantilla con la información solicitada, se deberá ingresar debidamente llenado el
+    motivo de la denuncia sanitaria
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En caso de contar con alguna foto digital o video de evidencia, puede subirlo a la plataforma (no es requisito)
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez otorgada toda la información requerida, podrá imprimir una copia de su denuncia para contar con
+    evidencia de que se realizó
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: El personal de la Unidad Regional que corresponda según sea el caso, recibirá la denuncia sanitaria y
+    agendará visita de verificación según su logística
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Se notificara al denunciante por medio de plataforma si su denuncia ya fue atendida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1760: Denuncia Sanitaria'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1760
+    version_date: 19/Junio /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE SALUD PÚBLICA PARA EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY GENERAL DE SALUD
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

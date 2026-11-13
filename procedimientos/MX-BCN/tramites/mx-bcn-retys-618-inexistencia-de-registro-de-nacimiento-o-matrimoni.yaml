@@ -1,0 +1,143 @@
+id: mx-bcn-retys-618-inexistencia-de-registro-de-nacimiento-o-matrimoni
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inexistencia de Registro de Nacimiento o Matrimonio
+summary: Extender a los interesados un documento certificado que haga constar la inexistencia para hacer del conocimiento
+  de terceros que no han sido registrados en el estado o que no han celebrado en el estado el acto civil del matrimonio,
+  o que habiendo celebrado alguno este haya sido disuelto.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 618
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/618
+  homoclave: BC-SGG-010
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se requiera certificar la inexistencia de registro de nacimiento en el Estado
+result: Certificación
+cost:
+  type: variable
+  amount_mxn: 498.0
+  text: 'COSTO VARIABLE: Noviembre $498.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 Meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Registro Civil
+  address: 'Avenida Independencia #994, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Inexistencia de matrimonio
+  requirements:
+  - text: Llenar formato de solicitud de Inexistencia de registro de matrimonio
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11014
+  - text: Pago de los derechos correspondientes.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención al público
+    - Llenar formato de solicitud
+    - Realizar pago de derechos ante la recaudación de rentas del Estado
+  notes: La solicitud debe de estar firmada por el interesado. En caso de existir divorcio o defunción del cónyuge
+    anexar copia legible del documento que lo acredite.
+- name: Inexistencia de nacimiento
+  requirements:
+  - text: Llenar formato de solicitud de Inexistencia de registro de nacimiento
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11018
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención al público
+    - Llenar formato de solicitud
+    - Realizar pago de derechos ante la recaudación de rentas del Estado
+  notes: La solicitud debe de estar firmada por el interesado. En caso de menores de edad puede hacerlo el padre
+    o madre. Para los casos de nacimiento en el extranjero agregar copia de nacimiento.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 8, fracción XI
+- source: ley2
+  pinpoint: Artículo 31
+- source: ley3
+  pinpoint: Artículo 18, fracción III Inciso F
+- source: ley4
+  pinpoint: Artículo 37
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención al público
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar formato de solicitud
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar pago de derechos ante la recaudación de rentas del Estado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 618: Inexistencia de Registro de Nacimiento o Matrimonio'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/618
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de Registro Civil del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos para el Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Certificados de Inexistencia de Registro de Nacimiento o Matrimonio. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,128 @@
+id: mx-bcn-retys-1005-cofepris-01-002-c-permiso-sanitario-previo-de-impo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-01-002-C Permiso Sanitario Previo de Importación de Productos. Modalidad: C.- Importación por Retorno
+  de Productos. Importación por Retorno de Productos'
+summary: Importación por Retorno de Productos. Importación por Retorno de Productos
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1005
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1005
+  homoclave: BC-COEPRIS-047
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el ciudadano requiera retornar el producto.
+result: Permiso sanitario previo de importación
+cost:
+  type: fijo
+  amount_mxn: 7040.75
+  text: 'COSTO: $7040.75 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15, 30 y 90 días
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Etiquetas con las que comercializará en México, de ser el caso
+    cites:
+    - source: retys
+  - text: Carta del importador donde indique cantidad, destino y uso que le dará al producto, lote y fecha de caducidad,
+      en su caso, en papel membretado de la empresa
+    cites:
+    - source: retys
+  - text: Original y dos copias del comprobante de pago de derechos, en términos de la ley federal de derechos
+    cites:
+    - source: retys
+  - text: Copia del pedimento de exportación
+    cites:
+    - source: retys
+  - text: Factura de exportación que ampare el producto que se exportó, donde se especifique la cantidad, el nombre
+      y domicilio completo del destinatario
+    cites:
+    - source: retys
+  - text: Carta de rechazo emitida por la autoridad sanitaria del país al que se exportó, donde se indique el motivo
+      del rechazo; en caso de no ser el rechazo por la autoridad un escrito en hoja membretada de la empresa donde
+      se indique el motivo del retorno.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario Previo
+      de Importación de Productos. Modalidad C: Importación por Retorno de Productos. Importación por Retorno de
+      Productos.'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 283 y 375 Fraccion VIII
+- source: ley2
+  pinpoint: Artículos 15 y 19
+- source: ley3
+  pinpoint: Articulo 238
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario Previo
+    de Importación de Productos. Modalidad C: Importación por Retorno de Productos. Importación por Retorno de Productos.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1005: COFEPRIS-01-002-C Permiso Sanitario Previo de Importación de Productos. Modalidad:
+      C.- Importación por Retorno de Productos. Importación por Retorno de Productos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1005
+    version_date: 24/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-002-C Permiso sanitario previo de importación de productos. Modalidad: C.- Importación
+  por retorno de productos. Importación por retorno de productos.. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

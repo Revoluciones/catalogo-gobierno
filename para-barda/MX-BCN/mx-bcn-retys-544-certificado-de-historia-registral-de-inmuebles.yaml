@@ -1,0 +1,139 @@
+id: mx-bcn-retys-544-certificado-de-historia-registral-de-inmuebles
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Historia Registral de Inmuebles
+summary: Documento oficial que muestra las ventas o modificaciones que ha sufrido un predio y/o local a partir del
+  momento de su primera inscripción.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 544
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/544
+  homoclave: BC-DRPPC-015
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuándo se requiera contar con un documento oficial de los movimientos jurídicos de un inmueble
+result: Certificado de historia registral de inmuebles
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Octubre 2026 hasta cinco partidas registrales $ 1365.00, de seis a diez partidas registrales
+    $1,755.00, más de diez partidas registrales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Llenar solicitud de certificaciones correctamente
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1937
+  - text: Pago de los derechos cubiertos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Llenar el formato FM0-8.5.1-02
+    - Realizar el pago correspondiente de los derechos
+    - Tomar turno
+    - Presentar en ventanilla el pago y la solicitud debidamente llena
+    - Recoger el trámite el día estipulado por el servidor público con el volante entregado y debidamente sellado
+  notes: Cuando necesiten de un certificado de historia registral de inmuebles
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, Fracción IX, Inciso E
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar el formato FM0-8.5.1-02
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente de los derechos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Tomar turno
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presentar en ventanilla el pago y la solicitud debidamente llena
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recoger el trámite el día estipulado por el servidor público con el volante entregado y debidamente sellado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 544: Certificado de Historia Registral de Inmuebles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/544
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica para el Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

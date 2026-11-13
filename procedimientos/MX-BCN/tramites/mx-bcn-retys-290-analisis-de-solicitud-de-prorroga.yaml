@@ -1,0 +1,240 @@
+id: mx-bcn-retys-290-analisis-de-solicitud-de-prorroga
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Análisis de solicitud de prórroga
+summary: Aplazamiento para presentar la información adicional de un trámite en evaluación o para dar cumplimiento
+  a condicionantes de una autorización o licencia, en materia de impacto ambiental, de riesgo, de emisiones a la
+  atmósfera y/o de residuos de manejo especial, para esta última solo aplica la prórroga para dar cumplimiento a
+  condicionantes.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 290
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/290
+  homoclave: BC-SMADS-053
+who_can:
+- Representante Legal
+when: Cuando se tenga imposibilidad de dar cumplimiento a lo requerido en el plazo originalmente otorgado y previo
+  a la conclusión del mismo.
+result: Oficio donde se autoriza o no el plazo solicitado.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Información Adicional: $2,012.68 Moneda Nacional. Cumplimiento a condicionantes: $2,091.20
+    Moneda Nacional. Costo actualizado para el mes de noviembre del 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Regularmente se otorga el plazo solicitado.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Gestión Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Gestión Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Gestión Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Escrito libre en el que señale claramente el trámite solicitado, especificar el plazo requerido, exponiendo
+      las razones técnicas, jurídicas y/o de imposibilidad material, que sustenten su petición y en el cual contenga
+      la firma autógrafa del representante legal.
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, y su personalidad no esté
+      reconocida en el expediente en el que se actúa o el mandato hubiera fenecido, presentar copia simple de la
+      documental idónea vigente, completa y nítida, mediante la cual se acredite como tal.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, presentar copia simple de
+      la identificación oficial de esta, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Capturar la información solicitada.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  notes: Persona que requiere un plazo para presentar información adicional o para dar cumplimiento a condicionantes.
+- name: Persona Moral
+  requirements:
+  - text: Escrito libre en el que señale claramente el trámite solicitado, especificar el plazo requerido, exponiendo
+      las razones técnicas, jurídicas y/o de imposibilidad material, que sustenten su petición y en el cual contenga
+      la firma autógrafa del representante legal.
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Copia simple de la documental idónea, completa y nítida, mediante la cual se acredite a la persona como
+      apoderada o representante legal, vigente, solo cuando su personalidad no esté reconocida en el expediente
+      en el que se actúa o cuando el mandato hubiera fenecido.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona apoderada o representante legal, legible y con
+      vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Capturar la información solicitada.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que requiere
+    un plazo adicional para presentar información adicional o para dar cumplimiento a condicionantes.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción IV, incisos e) y i).
+- source: ley2
+  pinpoint: Artículos 23 y 48
+- source: ley3
+  pinpoint: Artículo 28.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Capturar la información solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos y obtener el comprobante correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir los documentos solicitados vigentes.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible
+    en el listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá
+    acreditar su personalidad jurídica conforme a la normatividad aplicable.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 290: Análisis de solicitud de prórroga'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/290
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Procedimiento para los Actos de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Impacto
+      Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

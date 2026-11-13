@@ -1,0 +1,142 @@
+id: mx-bcn-retys-1022-cofepris-01-015-e-permiso-sanitario-de-importacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-01-015-E Permiso sanitario de importación de dispositivos médicos que no sean o contengan estupefacientes
+  o psicotrópicos, sin registro o en fase de experimentación. Modalidad e. importación
+summary: Importación de dispositivos médicos para donación.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1022
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1022
+  homoclave: BC-COEPRIS-053
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado requiera importar dispositivos médicos destinados a donación
+result: Permiso de importación
+cost:
+  type: fijo
+  amount_mxn: 440.45
+  text: 'COSTO: $440.45 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15 días
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7695
+  - text: Original y dos copias del comprobante de pago de derechos
+    cites:
+    - source: retys
+  - text: Carta de donación y carta de aceptación que incluya compromiso de no comercialización
+    cites:
+    - source: retys
+  - text: Copia de la licencia sanitaria o aviso de funcionamiento, en su caso
+    cites:
+    - source: retys
+  - text: Copia de la cédula profesional del médico responsable
+    cites:
+    - source: retys
+  - text: Tratándose de fuentes de radiación, copia de la licencia sanitaria expedida por la Comisión Federal para
+      la Protección contra Riesgos Sanitarios con el giro correspondiente
+    cites:
+    - source: retys
+  - text: Copia de la licencia sanitaria expedida por la Comisión Federal para la Protección contra Riesgos Sanitarios
+      con el giro correspondiente
+    cites:
+    - source: retys
+  - text: Copia del permiso de responsable de operación y funcionamiento del equipo de rayos X
+    cites:
+    - source: retys
+  - text: Factura certificada ante Fedatario Público (notario o corredor público) que indique que el equipo es usado
+    cites:
+    - source: retys
+  - text: Fe de hechos ante notario o corredor público o su equivalente en el extranjero, de las garantías de efectividad
+      y pruebas del correcto funcionamiento del equipo usado y que es apto para su uso
+    cites:
+    - source: retys
+  - text: Para el caso de aparatos de Rayos X usado, deberá presentar original de los documentos probatorios que
+      certifiquen el cumplimiento de la NOM-229-SSA1-2002, salud ambiental. Requisitos técnicos para las instalaciones,
+      responsabilidades sanitarias, especificaciones técnicas para los equipos y protección radiológica en establecimientos
+      de diagnóstico médico con rayos x, elaborados por el fabricante o el asesor especializado en seguridad radiológica,
+      autorizado por la Comisión Federal, firmados conjuntamente con el importador bajo protesta de decir verdad
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso sanitario de importación
+      de dispositivos médicos que no sean o contengan estupefacientes o psicotrópicos, sin registro o en fase de
+      experimentación. Modalidad E: importación de dispositivos médicos para donación.'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Artículo 295 y 375 fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso sanitario de
+    importación de dispositivos médicos que no sean o contengan estupefacientes o psicotrópicos, sin registro o
+    en fase de experimentación. Modalidad E: importación de dispositivos médicos para donación.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1022: COFEPRIS-01-015-E Permiso sanitario de importación de dispositivos médicos que no
+      sean o contengan estupefacientes o psicotrópicos, sin registro o en fase de experimentación. Modalidad e.
+      importación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1022
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-015-E Permiso sanitario de importación de dispositivos médicos que no sean o
+  contengan estupefacientes o psicotrópicos, sin registro o en fase de experimentación. Modalidad E. Importación..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,166 @@
+id: mx-bcn-retys-502-artes-y-oficios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Artes y Oficios
+summary: Apoyos para la adquisición de material, equipo y/o la impartición de algún curso o taller en centros comunitarios
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 502
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/502
+  homoclave: BC-SB-015
+who_can:
+- Representante Legal
+when: Cuando se requiera acceder a un apoyo para la adquisición de material, equipo o impartición de un curso o
+  taller en centros comunitarios
+result: Apoyo en material para cursos o talleres
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Copia de Identificación oficial vigente con fotografía con domicilio en Baja California
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio no mayor a 3 meses de antigüedad
+    cites:
+    - source: retys
+  - text: Cotización a nombre de gobierno del estado de Baja California, del material, equipo, herramientas o insumos.
+    cites:
+    - source: retys
+  - text: Ficha de inscripción en alguno de los cursos en centros comunitarios o espacios asignados para la impartición
+      de los cursos o talleres
+    cites:
+    - source: retys
+  - text: Copia de constancia de situación fiscal del proveedor
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaria de Bienestar o a los espacios asignados para el registro con la
+      documentación solicitada
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal
+    - Notificación por teléfono al solicitante que se le brindará el apoyo
+  notes: Requisitos para el apoyo
+- name: Beneficiarias del programa tarjeta violeta
+  requirements:
+  - text: Carta petición del representante del curso o taller dirigido al titular de la Secretaría de Bienestar
+    cites:
+    - source: retys
+  - text: Llenado de formato único de la representante del grupo
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial vigente con domicilio en Baja California (INE)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: Copia de Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Listado de beneficiarias de la tarjeta violeta inscritas en el curso o taller, la cual deberá estar firmada
+      por las beneficiarias y el personal a cargo de la Tarjeta Violeta
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la secretaria de bienestar o a los espacios asignados para el registro, con
+      la documentación solicitada
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al ciudadano del estatus de su trámite
+  notes: Requisitos para las mujeres beneficiarias del programa tarjeta violeta
+legal_basis:
+- source: ley1
+  pinpoint: Art. 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Secretaria de Bienestar o a los espacios asignados para el registro con
+    la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación por teléfono al solicitante que se le brindará el apoyo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 502: Artes y Oficios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/502
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: ROP (Ley de desarrollo social para el Estado de B.C.)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

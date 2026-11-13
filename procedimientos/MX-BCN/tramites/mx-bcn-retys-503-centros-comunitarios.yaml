@@ -1,0 +1,118 @@
+id: mx-bcn-retys-503-centros-comunitarios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Centros Comunitarios
+summary: Apoyo para el mantenimiento, servicios y equipamientos de los centros comunitarios inscritos a la secretaría
+  de Bienestar, para que estos continúen impartiendo cursos, talleres y otras acciones para su comunidad.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 503
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/503
+  homoclave: BC-SB-016
+who_can:
+- Interesado
+when: Cuando se necesite brindar mantenimiento o equipamiento al Centro Comunitario.
+result: Apoyo en especie o servicio
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Encargado o vecino del centro comunitario
+  requirements:
+  - text: Carta de petición con fotografías de la necesidad dirigida al Secretario de Bienestar
+    cites:
+    - source: retys
+  - text: Copia de Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP) del interesado
+    cites:
+    - source: retys
+  - text: Copia de Comprobante de domicilio del interesado, no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: Cotización del proveedor a nombre del Gobierno del Estado de Baja California.
+    cites:
+    - source: retys
+  - text: Copia de Registro Federal de Contribuyentes del proveedor
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos para solicitar el apoyo para centros comunitarios
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 503: Centros Comunitarios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/503
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: ROP (Ley de Desarrollo Social para el Estado de Baja California)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

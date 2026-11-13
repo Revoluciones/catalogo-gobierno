@@ -1,0 +1,148 @@
+id: mx-bcn-retys-800-expedicion-de-engomado-qr-para-transporte-publico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de engomado QR, para transporte público, privado, y empresas de redes de transporte
+summary: Consiste en solicitar la expedición de engomado QR, para transporte público, privado, y empresas de redes
+  de transporte, por unidad.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 800
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/800
+  homoclave: BC-IMOS-050
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera.
+result: Engomado QR.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 6.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Operadores del servicio transporte público y privada
+  requirements:
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Licencia de conducir vigente, expedida por el Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tarjeta de circulación vigente
+    cites:
+    - source: retys
+  - text: Póliza de seguro de responsabilidad por daños a terceros y usuarios, acorde a la modalidad
+    cites:
+    - source: retys
+  - text: Permiso público de transporte original, vigente
+    cites:
+    - source: retys
+  - text: Presentar el vehículo a revisión mecánica
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para expedición de engomado QR
+- name: Operadores ERT
+  requirements:
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Licencia de conducir vigente, expedida por el Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tarjeta de circulación vigente
+    cites:
+    - source: retys
+  - text: Póliza de seguro de responsabilidad civil por daño a terceros y usuarios (correspondiente a plataformas
+      digitales)
+    cites:
+    - source: retys
+  - text: Antidoping (expedido por laboratorio autorizado por el Instituto, con antigüedad menor a seis meses)
+    cites:
+    - source: retys
+  - text: Carta de no antecedentes penales (antigüedad menor a seis meses)
+    cites:
+    - source: retys
+  - text: Presentar vehículo a revisión mecánica
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal
+    cites:
+    - source: retys
+  - text: Pago de Derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para expedición de engomado QR
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Inciso N, Numeral 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 800: Expedición de engomado QR, para transporte público, privado, y empresas de redes de
+      transporte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/800
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Engomado QR, para Transporte Público, Privado, y Empresas de Redes de Transporte.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

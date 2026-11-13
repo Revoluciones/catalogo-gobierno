@@ -1,0 +1,117 @@
+id: mx-bcn-retys-306-asesoria-juridica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asesoría Jurídica
+summary: Brindar asesoría jurídica al ciudadano en temas relacionados con la familia.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 306
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/306
+  homoclave: BC-DIF-003
+who_can:
+- Interesado
+- Tutor
+when: Cuando el usuario requiera asesoría en algún conflicto familiar
+result: Asesoría
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Apoyo y Protección a la Familia Mexicali
+  address: 'Avenida Cristobal Garcilazo y Plateros S/n #s/n, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tijuana
+  address: 'Avenida Río Tijuana y Avenida de los Taxistas #s/n, Infonavit La Mesa, Tijuana, 22114'
+- municipality: Ensenada
+  name: Subprocuraduría para la Defensa de los Menores y la Familia Ensenada
+  address: 'Calle Transpeninsular del Poder Ejecutivo #s/n, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tecate
+  address: 'Avenida Hidalgo y Profesor Gutiérrez Hernandez Durán #s/n, Colonia Downey, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Subprocuraduria para la Defensa de los Menores y la Familia Playas de Rosarito
+  address: 'ROSARITO CENTRO FRANCISCO DE ANZA MANZANA 25  #lote 26, Predios Urbanos, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Procuraduría para la Defensa de los Menores y la Familia en San Quintín
+  address: 'Calle A entre las Avenidas 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Subprocuraduría para la Defensa de los Menores y la Familia San Felipe
+  address: 'Mar Bermejo entre Chetumal y Ensenada #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Acude de manera presencial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier subprocaduría de protección de niñas, niños y adolescentes
+    - Solicitar el servicio que requiere
+    - Recibir asesoría por parte del agente procurador
+  notes: Presentarse a solicitar la asesoría
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4 fracción V y 17 fracción XI
+- source: ley2
+  pinpoint: Artículos 21 fracción III y 29 fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier subprocaduría de protección de niñas, niños y adolescentes
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar el servicio que requiere
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir asesoría por parte del agente procurador
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 306: Asesoría Jurídica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/306
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la Protección y Defensa de los derechos de niñas, niños y adolescentes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Asesoría Jurídica en Atención Ciudadana de Procuraduría. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

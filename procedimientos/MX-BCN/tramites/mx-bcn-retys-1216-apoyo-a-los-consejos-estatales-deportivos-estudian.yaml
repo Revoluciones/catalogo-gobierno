@@ -1,0 +1,110 @@
+id: mx-bcn-retys-1216-apoyo-a-los-consejos-estatales-deportivos-estudian
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Apoyo a los Consejos Estatales Deportivos Estudiantiles
+summary: Apoyar a nivel estatal a los Consejos Nacionales del deporte estudiantil en el otorgamiento de asesoría,
+  coordinación, recursos y materiales para la ejecución de sus programas, Consejo Nacional Para el Desarrollo del
+  Deporte en la Educación Media Superior (CONADEMS). Consejo Nacional del Deporte de la Educación (CONDDE).
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1216
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1216
+  homoclave: BC-INDEBC-003
+who_can:
+- Representante Legal
+when: Cuando algún Consejo Estudiantil Estatal requiera del apoyo
+result: Apoyo en asesoría, coordinación y recursos materiales para ejecución de los programas
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Depende del apoyo solicitado
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Deporte Estudiantil
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+scenarios:
+- name: Representante Consejos Estatales Deportivos Estudiantiles
+  requirements:
+  - text: La representación del Consejo Deportivo Estudiantil (CONDEBA, CONADEMS Y CONDDE), deberá solicitar por
+      escrito en hoja membretada, sellada y firmada por el titular del Consejo, debiendo ser dirigida al titular
+      del Instituto del Deporte y Cultura Física de Baja California, solicitando asesoría, coordinación, recursos
+      y materiales, entre otros para la ejecución de sus programas
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El solicitante de los Consejos Deportivos Estudiantiles debera de acudir a las oficinas administrativas del
+      Instituto del Deporte y la Cultura Física de Baja California
+    - Entregar la hoja membretada debidamente sellada y firmada por el titular del Consejo Deportivo Estudiantil
+    - Solicitar la respuesta de la solicitud presentada
+    - El Instituto del Deporte y la Cultura Física de Baja California proporciona la respuesta a la solicitud
+  notes: Apoyar al Consejo Nacional para el desarrollo de la Educación Física y el Deporte en la Educación Básica
+    (CONDEBA), al Consejo Nacional para el desarrollo del Deporte en la Educación Media Superior (CONADEMS) y el
+    Consejo Nacional del Deporte de la Educación (CONDDE), en el otorgamiento de asesoría, coordinación, recursos
+    y materiales para la realización de programas
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, Fracción VIII y 79
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El solicitante de los Consejos Deportivos Estudiantiles debera de acudir a las oficinas administrativas
+    del Instituto del Deporte y la Cultura Física de Baja California
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar la hoja membretada debidamente sellada y firmada por el titular del Consejo Deportivo Estudiantil
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Solicitar la respuesta de la solicitud presentada
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Instituto del Deporte y la Cultura Física de Baja California proporciona la respuesta a la solicitud
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1216: Apoyo a los Consejos Estatales Deportivos Estudiantiles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1216
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

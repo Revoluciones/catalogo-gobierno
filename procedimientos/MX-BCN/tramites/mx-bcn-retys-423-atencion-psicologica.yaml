@@ -1,0 +1,108 @@
+id: mx-bcn-retys-423-atencion-psicologica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención Psicológica
+summary: Brindar atención Psicológica a las y los Jóvenes de 12 a 29 años, logrando de esta forma que pongan en
+  práctica habilidades adaptativas y eficientes que le ayuden a solucionar, enfrentar, manejar, superar o prevenir
+  posibles atenuantes en contra de su salud mental.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 423
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/423
+  homoclave: BC-INJUVE-003
+who_can:
+- Interesado
+- Tutor
+when: Cuando requiera el Ciudadano el servicio
+result: Sesiones terapéuticas con duración de 60 minutos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Atención Integral a la Juventud
+  address: 'Boulevard Adolfo López Mateos y Prolongación Avenida Larroque  #S/N, Fraccionamiento Caliss, Mexicali,
+    21010'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Ninguno
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Solicitar servicio enviando mensaje de Whatsapp al 686 339 7687.
+    - Por medio de whatsapp se envía un formulario de Google docs en donde deberá registrar su solicitud al servicio.
+    - Una vez aprobada su solicitud, se notificará por medio de whatsapp al usuario el día y la hora de la sesión.
+    - Acudir a las sesiones psicológicas en la modalidad que se le indique.
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 83, Facción XXXIV
+- source: ley2
+  pinpoint: 39, Fracciones I y VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar servicio enviando mensaje de Whatsapp al 686 339 7687.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Por medio de whatsapp se envía un formulario de Google docs en donde deberá registrar su solicitud al
+    servicio.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez aprobada su solicitud, se notificará por medio de whatsapp al usuario el día y la hora de la sesión.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a las sesiones psicológicas en la modalidad que se le indique.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 423: Atención Psicológica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/423
+    version_date: 28/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,134 @@
+id: mx-bcn-retys-594-expedicion-de-certificados-de-libertad-de-gravamen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de certificados de libertad de gravamen.
+summary: Otorgar la firma de libertad de gravamen al no presentar adeudos con este organismo.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 594
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/594
+  homoclave: BC-CESPM-015
+who_can:
+- Interesado
+when: Cuando requiera el trámite
+result: Certificado de libertad de gravamen
+cost:
+  type: fijo
+  amount_mxn: 382.15
+  text: 'COSTO: $382.15 m.n. el costo del servicio variará durante el ejercicio 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Presentar documento de certificado de libertad de gravamen, expedido por el H. Ayuntamiento
+    cites:
+    - source: retys
+  - text: Realizar el pago.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en la zona comercial más cercana.
+    - Cumplir con los requisitos.
+    - Efectuar el pago correspondiente
+    - En caso de que el predio tenga la cuenta inactiva, será necesario realización de la inspección.
+    - Recoger su certificado de libertad de gravamen.
+  notes: Tramitador de certificado
+legal_basis:
+- source: ley1
+  pinpoint: ART. 9, SECCIÓN I, INCISO G. PUNTO 7.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en la zona comercial más cercana.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cumplir con los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Efectuar el pago correspondiente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: En caso de que el predio tenga la cuenta inactiva, será necesario realización de la inspección.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recoger su certificado de libertad de gravamen.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 594: Expedición de certificados de libertad de gravamen.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/594
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de certificados de libertad de gravamen. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

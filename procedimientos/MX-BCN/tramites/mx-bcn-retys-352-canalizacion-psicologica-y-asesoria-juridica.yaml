@@ -1,0 +1,112 @@
+id: mx-bcn-retys-352-canalizacion-psicologica-y-asesoria-juridica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Canalización Psicológica y Asesoría Jurídica
+summary: Brindar de manera gratuita apoyo y protección a las personas y familias vulnerables a través de la integración
+  de servicios de las dependencias e instituciones de gobierno y áreas de DIF Estatal.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 352
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/352
+  homoclave: BC-DIF-014
+who_can:
+- Interesado
+- Tutor
+when: Cuando se requiera apoyo psicológico y jurídico
+result: Asesoría
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Apoyo y Protección a la Familia Mexicali
+  address: 'Avenida Cristobal Garcilazo y Plateros S/n #s/n, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Centro de Atención Integral para la protección de la Familia, Tijuana
+  address: 'Av. de los Patrones  #s/n, Zona Urbana Rio Tijuana, Tijuana, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Acudir a las oficinas del Centro de Apoyo y Protección a la Familia en Mexicali o Centro de Atencion Integral
+      en Tijuana.
+    cites:
+    - source: retys
+  - text: Solicitar el servicio y/o trámite que requiere
+    cites:
+    - source: retys
+  - text: El Agente Procurador otorga la asesoría y/o canalización.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Centro de Apoyo y Protección a la Famalia en Mexicali o Centro de Atención Integral
+      en Tijuana
+    - Solicitar el servicio y/o trámite que requiere
+    - El Agente Procurador otorga la asesoría y/o canalización
+  notes: Recopilación de documentos para el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 21, fracción III, 29 fracción I y 31 fracciones I y II
+- source: ley2
+  pinpoint: Artículo 3
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Centro de Apoyo y Protección a la Famalia en Mexicali o Centro de Atención Integral
+    en Tijuana
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar el servicio y/o trámite que requiere
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El Agente Procurador otorga la asesoría y/o canalización
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 352: Canalización Psicológica y Asesoría Jurídica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/352
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Protección de los Derechos de los Menores y la Familia en el Estado de Baja California (De conformidad
+      a la Ley para la protección y defensa de los derechos de niñas, niños y adolescentes en el Estado)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la Protección y Defensa de los Derechos de Niñas, Niños y Adolescentes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

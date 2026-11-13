@@ -1,0 +1,200 @@
+id: mx-bcn-retys-1684-cirugia-de-las-varices-del-testiculo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cirugía de las Várices del Testículo
+summary: Es una cirugía de corta duración en la que se corrige el conducto espermático del testículo y/o sus venas.
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1684
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1684
+  homoclave: BC-UNEME-016
+who_can:
+- Interesado
+when: Cuando la o el médico detecte inflamación testicular acompañada de dolor.
+result: Atención médica especializada en urología
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Olimpus #S/N, Plutarco Elías Calles, Mexicali, 21376'
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente requisitada y sellada, que le proporcionan en el centro de salud y/u Hospital
+      General.
+    cites:
+    - source: retys
+  - text: Historia clínica, exámenes de laboratorio, reporte de la valoración cardiopulmonar cuando proceda y demás
+      estudios de gabinete que procedan de acuerdo a la intervención quirúrgica, que le proporciona el centro de
+      salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte o licencia de manejo).
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado para cirugía y anestesia. Se le entrega en UNEME, previo a la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física. Se deriva con un especialista
+    - Acudir a la consulta con el especialista
+    - Se miden signos vitales, se realiza una entrevista médica y exploración física. Si es necesario, se deriva
+      a UNEME
+    - El personal de UNEME le contacta por vía telefónica, indicando fecha, hora y cuidados necesarios previos a
+      la cirugía
+    - Acudir a UNEME con un acompañante. Identificarse en recepción y entregar los requisitos
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE e ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Nota médica de referencia de la unidad de origen que incluya resultados de laboratorio o los exámenes
+      de laboratorio de respaldo
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte o licencia de manejo).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento IMSS, ISSSTE o ISSSTECALI que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física.
+    - Si se detectan los signos y síntomas, se envía a consulta de especialidad en urología
+    - Acudir a la consulta con el especialista
+    - Si en la consulta de especialidad se confirma el diagnóstico, se deriva a UNEME para su atención
+    - El personal de UNEME le contacta por vía telefónica, indicando fecha, hora y cuidados necesarios previos a
+      la cirugía
+    - Acudir a UNEME en la fecha y hora programados, con 1 persona acompañante. Identificarse en el área de recepción,
+      entregar los requisitos y firmar la carta de consentimiento informado.
+    - Pasar al área que le indique el personal de UNEME para el cambio de ropa por una bata hospitalaria
+    - Pasar al paciente al área de preparación previa para el vendaje de los extremidades inferiores y colocación
+      de suero intravenoso
+    - Pasar al paciente a quirófano cuando el personal médico lo solicite
+    - Al estar en el área de recuperación posterior a la cirugía, el médico le dará las indicaciones para seguir
+      con los cuidados necesarios y le dará de alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: '4'
+- source: ley2
+  pinpoint: '6'
+- source: ley3
+  pinpoint: '7'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta médica del establecimiento que le corresponda.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le miden los signos vitales, se realiza una entrevista médica y exploración física. Se deriva con un
+    especialista
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta con el especialista
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se miden signos vitales, se realiza una entrevista médica y exploración física. Si es necesario, se deriva
+    a UNEME
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El personal de UNEME le contacta por vía telefónica, indicando fecha, hora y cuidados necesarios previos
+    a la cirugía
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a UNEME con un acompañante. Identificarse en recepción y entregar los requisitos
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del
+    procedimiento, dar instrucciones para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1684: Cirugía de las Várices del Testículo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1684
+    version_date: 20/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Urología Cirugía de escisión de Varicocele/Hidrocele.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,142 @@
+id: mx-bcn-retys-186-aprovechamiento-no-extractivo-de-vida-silvestre
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aprovechamiento no extractivo de vida silvestre
+summary: Autorización que permite la realización de actividades turísticas relacionadas con la naturaleza, tales
+  como safaris fotográficos, senderismo y observación de aves, que no implican la extracción de especies de vida
+  silvestre.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 186
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/186
+  homoclave: BC-SMADS-014
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretendan llevar este tipo de actividades ecoturísticas en los lugares permitidos.
+result: Resolutivo con la autorización
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: SIN COSTO'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recursos Naturales
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Recursos Naturales
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Formato de aprovechamiento no extractivo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3746
+  - text: Copia de la identificación oficial vigente (credencial de elector, pasaporte o cedula profesional)
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago
+    cites:
+    - source: retys
+  - text: Plan de manejo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6208
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina para presentar el trámite
+    - Entrega de requisitos
+    - Evaluación de solicitud y emisión del oficio de respuesta
+  notes: Persona interesada en realizar actividades ecoturísticas
+- name: Persona moral
+  requirements:
+  - text: Formato de aprovechamiento no extractivo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11261
+  - text: Copia y original de comprobante de pago
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial vigente del apoderado y/o promovente (INE, cédula profesional o pasaporte
+      mexicano)
+    cites:
+    - source: retys
+  - text: Plan de manejo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina para presentar el trámite
+    - Entrega de requisitos
+    - Evaluación de solicitud y emisión del oficio de respuesta
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad que requiere ser evaluada o necesite realizar algún tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 99
+- source: ley2
+  pinpoint: Artículo 133
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina para presentar el trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega de requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de solicitud y emisión del oficio de respuesta
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 186: Aprovechamiento no extractivo de vida silvestre'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/186
+    version_date: 13/Enero /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

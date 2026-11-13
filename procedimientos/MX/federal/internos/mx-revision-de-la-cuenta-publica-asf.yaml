@@ -1,0 +1,145 @@
+id: mx-revision-de-la-cuenta-publica-asf
+country: MX
+jurisdiction: MX
+level: federal
+branch: legislativo
+kind: interno
+category: contrapesos
+title: Cómo se revisa en qué se gastó el dinero federal (Cuenta Pública y Auditoría Superior)
+summary: >-
+  Cada año el gobierno federal entrega su informe de cuánto cobró y cuánto gastó (la Cuenta Pública). La
+  Auditoría Superior de la Federación (ASF), que depende de la Cámara de Diputados, lo revisa, publica sus
+  hallazgos, pide aclaraciones y puede llevar casos a un tribunal o a la fiscalía anticorrupción.
+authority:
+  name: Auditoría Superior de la Federación (ASF)
+  url: https://www.asf.gob.mx
+other_authorities:
+  - name: Cámara de Diputados (recibe los informes y cierra la revisión)
+  - name: Las dependencias y gobiernos revisados (entidades fiscalizadas)
+  - name: Tribunal Federal de Justicia Administrativa y Fiscalía Especializada en Combate a la Corrupción
+legal_basis:
+  - source: cpeum
+    pinpoint: art. 74, fracción VI; art. 79
+deadlines:
+  - what: otro
+    text: El Ejecutivo entrega la Cuenta Pública a más tardar el 30 de abril del año siguiente.
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI, segundo párrafo
+  - what: otro
+    text: >-
+      La ASF entrega informes de auditoría el último día hábil de junio y de octubre, y el 20 de febrero del
+      año siguiente a la entrega de la Cuenta Pública. Ese día también entrega el informe general.
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracción II
+  - what: otro
+    text: La Cámara de Diputados termina la revisión a más tardar el 31 de octubre del año siguiente a la entrega.
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI, tercer párrafo
+steps:
+  - n: '1'
+    actor: Ejecutivo Federal
+    action: Entrega la Cuenta Pública a la Cámara de Diputados a más tardar el 30 de abril del año siguiente al gasto.
+    deadline: 30 de abril
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI
+  - n: '2'
+    actor: Auditoría Superior de la Federación
+    action: >-
+      Revisa ingresos, gastos y deuda del año que terminó, incluido el dinero federal que gastan estados y
+      municipios. También revisa si los programas cumplieron sus metas. Puede empezar desde el primer día
+      hábil del año siguiente. Mientras revisa, mantiene sus hallazgos en reserva.
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, párrafos tercero y quinto, fracción I y fracción II último párrafo
+  - n: '3'
+    actor: Auditoría Superior de la Federación y entidades revisadas
+    action: >-
+      Antes de publicar, la ASF muestra a cada dependencia lo que encontró, para que presente aclaraciones.
+      La ASF tiene que tomarlas en cuenta al escribir el informe.
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracción II, segundo párrafo
+  - n: '4'
+    actor: Auditoría Superior de la Federación
+    action: >-
+      Entrega a la Cámara los informes de cada auditoría (en junio, octubre y febrero) y el informe general.
+      Todos son públicos e incluyen lo que observó y las respuestas de cada dependencia.
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracción II, primer párrafo
+  - n: '5'
+    actor: Entidades revisadas
+    action: >-
+      Reciben su informe a más tardar 10 días hábiles después y tienen hasta 30 días hábiles para responder a
+      las recomendaciones y acciones. Si no responden, pueden ser sancionadas.
+    deadline: 30 días hábiles
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracción II, tercer párrafo
+  - n: '6'
+    actor: Auditoría Superior de la Federación
+    action: >-
+      Tiene 120 días hábiles para pronunciarse sobre esas respuestas. Si no lo hace, las recomendaciones y
+      acciones se dan por atendidas.
+    deadline: 120 días hábiles
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracción II, cuarto párrafo
+    practice:
+      - text: >-
+          El dinero que la ASF logra que se aclare o se regrese (recuperaciones operadas) cayó de un promedio
+          de 6.4 millones de pesos por auditoría en 2017 a 0.97 millones en la primera entrega de la Cuenta
+          Pública 2021, según el Sistema Público de Consulta de Auditorías de la propia ASF.
+        evidence_level: periodismo_o_investigacion
+        observed: ASF, Cuentas Públicas 2017 a 2021
+        cites:
+          - source: ejecentral-2022-recuperaciones
+  - n: '7'
+    actor: Auditoría Superior de la Federación
+    action: >-
+      Si encuentra posibles faltas o delitos, investiga y lleva el caso al Tribunal Federal de Justicia
+      Administrativa o a la Fiscalía Especializada en Combate a la Corrupción. Cada 1 de mayo y 1 de
+      noviembre informa en qué van sus observaciones, cuánto dinero se recuperó y cuántas denuncias presentó.
+    cites:
+      - source: cpeum
+        pinpoint: art. 79, fracciones II (quinto párrafo), III y IV
+  - n: '8'
+    actor: Cámara de Diputados
+    action: >-
+      Con base en el informe general, concluye la revisión de la Cuenta Pública a más tardar el 31 de octubre
+      del año siguiente a su entrega. Los casos abiertos siguen su curso.
+    deadline: 31 de octubre del año siguiente
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI, tercer párrafo
+related:
+  - mx-presupuesto-de-egresos-de-la-federacion
+glossary: [cuenta-publica, fiscalizar, entidad-fiscalizada, dias-habiles]
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+  ejecentral-2022-recuperaciones:
+    type: periodismo
+    official: false
+    title: Se desploma poder de recuperación de ASF
+    publisher: Eje Central (Juan Carlos Rodríguez), 2 de julio de 2022
+    url: https://www.ejecentral.com.mx/se-desploma-poder-de-recuperacion-de-asf
+    accessed: '2026-11-06'
+status: borrador
+last_checked: '2026-11-06'
+checked_by: Claude (Compartido)
+notes: >-
+  Pendiente: los pasos detallados de la Ley de Fiscalización y Rendición de Cuentas de la Federación, el manual
+  de procedimientos de la ASF, y una cifra más reciente de recuperaciones tomada directamente del Sistema
+  Público de Consulta de Auditorías (fuente oficial) para reemplazar la nota periodística. En Baja California
+  el equivalente es la Auditoría Superior del Estado (ASEBC) revisando al estado y a los municipios.

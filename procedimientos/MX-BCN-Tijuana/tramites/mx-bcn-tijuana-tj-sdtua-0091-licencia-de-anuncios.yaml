@@ -1,0 +1,210 @@
+id: mx-bcn-tijuana-tj-sdtua-0091-licencia-de-anuncios
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Licencia de Anuncios
+summary: Licencia que permite hacer gestión de instalación de anuncios nuevos, regularización (ya instalados), y/o
+  revalidación (cuentan con licencia anterior) y/o volanteo.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0091
+who_can:
+- Interesado
+when: Cuando la persona interesada desee instalar o regularizar anuncios.
+result: Licencia
+requirements:
+- text: Llenar la solicitud de la dirección de administración urbana. (Verificar la información) firmada en original
+    por el perito responsable que firmo la memoria de cálculo.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo original del pago de derechos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia del recibo de impuesto predial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia de documento que acredite la propiedad. (Escrituras, título de propiedad, contrato de compra – venta,
+    arrendamiento o comodato notariado y/o sentencia de juicio de prescripción, contrato de un empresa regularizadora)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia de identificación oficial del propietario del predio, solicitante y/o arrendatario.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Domicilio y número del propietario del predio donde se encuentra ubicada la cartelera.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Para personas morales: presentar copia de acta constitutiva y poderes legales.'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de localización detallado con referencia.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Memoria de cálculo firmada en original por el perito responsable, representantes legales, responsables y
+    corresponsables.(mayor a 6m2 y mayor a 3.00mts de altura)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Licencia nueva con vigencia de hasta un año, cuando la instalación se efectúe después que sea emitida esta
+    licencia: a).-Cartelera o anuncio autoportante para uso exclusivo de comercio establecido en el mismo predio
+    a publicitar (excepto espectaculares): 1).-De 0.01 M² a 1.00 M² en área de rótulo, por cartelera o anuncio autoportante,
+    2).-De 1.01 M² a 5.99 M² en área de rótulo, por cartelera o anuncio autoportante, 3).-De 6.00 M² a 45.00 M²
+    en área de rótulo, por cartelera o anuncio autoportante y De 45.01 M² a 92.00 M² en área de rótulo, por cartelera
+    o anuncio autoportante: 13 UMA ($1,525.03) · Anuncio (autosoportado, autoportante o de cualquier otro tipo)
+    de propaganda comercial tipo espectacular, por anuncio: 260 UMA ($30,500.60) · Anuncio tipo espectacular de
+    pantalla electrónica y/o electromecánico o digital, incluye torre directorio de pantalla electrónica, pantalla
+    en vehículos, con o sin movimiento, por cara de pantalla, por cartelera y/o estructura: 520 UMA ($61,001.20)
+    · Rótulo pintado, denominativo y/o rótulo con propaganda comercial de productos que se venden en el establecimiento,
+    por fachada ... . . 1).- De 0.01 M² a 2.00 M² en área de rótulo, excepto denominativos, por fachada, 2).- De
+    2.01 M² a 10.00 M² en área de rótulo, por fachada, 3).-De 10.01 M² a 15.00 M² en área de rótulo, por fachada
+    y 4).- Mayor de 15.00 M² Por M² o fracción excedente: 3 UMA ($351.93) · Rótulos pintados o adosados, para yonkes,
+    recicladoras y centros de acopio, por fachada o barda: 15.6 UMA ($1,830.04) · Rótulo adosado, toldo, marquesina,
+    por anuncio: 1).-Denominativos de 2.01 M² hasta 3.99 M² y/o rótulos con propaganda comercial de productos que
+    se venden en el establecimiento de 0.01 M² hasta 3.99 M², 2).-Mayor de 3.99 M² hasta 15.00 M² y Los mayores
+    de 15.00 M² costo por metro cuadrado o fracción excedente: 5.85 UMA ($686.26) · Rótulo adosado de pantalla electrónica
+    para publicitar exclusivamente al establecimiento en el que se encuentra, exceptuando espectaculares y/o carteleras
+    autoportantes y pantallas en vehículos: 1).- De 0.01 M² a 1.00 M² en área de rótulo, por anuncio de pantalla
+    electrónica, 2).- De 1.01 M² a 5.99 M² en área de rótulo, por anuncio de pantalla electrónica y 3).- De 6.00
+    M² a 10.00 M²en área de rótulo, por anuncio de pantalla electrónica: 13 UMA ($1,525.03) · Rótulo electrónico
+    y/o electromecánico, y de neón con o sin movimiento, exceptuando espectaculares y/o carteleras, autoportantes
+    y pantalla en vehículos: 1).-De 0.01 M² y hasta 1.50 M², por cara de anuncio, 2).-Mayor de 1.50 M², por cara
+    de anuncio y 3).-Los mayores de 10.00 M², costo por M² o fracción excedente: 7.8 UMA ($915.02) · Anuncio de
+    evento (manta, cartel y pendones) con información laica, cultural, deportivo, económico, educativo, que beneficie
+    a la comunidad en su desarrollo social, que no implique erogación económica alguna para los habitantes del municipio
+    o con información gubernamental de la federación, estado o municipio. Excento de Pago.: 0 UMA ($0.00) · Torre
+    directorio, por unidad (excepto electrónicas): 39 UMA ($4,575.09) · Mini porta cartel direccional exclusivamente
+    para desarrollos habitacionales e industriales nuevos, por pieza por doce meses: 14.3 UMA ($1,677.53) · Cobertizo
+    publicitario y/o mobiliario urbano con publicidad, (banca publicitaria, bote de basura o buzón con publicidad,
+    etc.), por unidad: 26 UMA ($3,050.06) · Carro de sonido por unidad, por 90 días: 15.6 UMA ($1,830.04) · Torreta
+    en techo de camión o taxi, por unidad: 19.5 UMA ($2,287.55) · Rótulo en vehículo público o privado, por anuncio:
+    12.19 UMA ($1,430.01) · Valla publicitaria de hasta 12.50 M², por cada unidad: 52 UMA ($6,100.12) · Valla publicitaria
+    por cada M² excedente: 10.4 UMA ($1,220.02) · Publicidad móvil remolcada: 1).-Con vehículo de tracción motriz
+    de cuatro ruedas o más, en cualquier modalidad, sea en valla, cartelera giratoria, digital, etc., por 360 días,
+    por unidad publicitaria (excepto pantalla electrónica) y 2).-Con vehículo de tracción motriz o no motriz menor
+    de cuatro ruedas, en cualquier modalidad, sea en valla, cartelera giratoria, digital, etc., por cara publicitada,
+    por 180 días, de unidad publicitaria (excepto pantalla electrónica): 26 UMA ($3,050.06) · Anuncio adosado en
+    plumas de acceso a estacionamientos, por cara de anuncio: 8.53 UMA ($1,000.65) · Publicidad en nomenclatura
+    vial, por placa con anuncio: 32.5 UMA ($3,812.58) · Publicidad en banderas, banderolas o estandartes, pendón
+    o gallardete en sitio público o privado, por pieza de anuncio por tres meses: 10.39 UMA ($1,218.85) · Anuncio
+    ambulante conducido por personas, por anuncio por día: 3.25 UMA ($381.26) · Anuncio en tapial por cada 12.50
+    M², por anuncio: 39 UMA ($4,575.09) · Anuncio de proyección óptica, por anuncio: 65 UMA ($7,625.15) · Anuncio
+    tipo caballete con superficie máxima de 1.20 m x 0.60 m., por 6 meses, por pieza: 11.7 UMA ($1,372.53) · Desmonte
+    de estructura con grúa y acarreo: 1300 UMA ($152,503.00) · Almacenaje por día de la estructura: 1.95 UMA ($228.75)
+    · Revalidación anual de licencia de anuncios, al verificarse que aún se cumplen los requisitos de reglamento;
+    con vigencia de hasta un año: 1.7 UMA ($199.43) · Licencia de regularización de Anuncios con vigencia de hasta
+    un año, cuando se ha efectuado la instalación sin contar previamente con la licencia correspondiente y/o revalidación
+    extemporánea de licencia, a partir del cuarto mes de vencimiento: 1 UMA ($117.31). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 7 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0091: Licencia de Anuncios'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0091
+    version_date: '2026-11-04'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de Rótulos, Anuncios y Similares para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/reglamentos/Municipales/RM_RotulosAnunciosySimilares_TJ-BC_09062017.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Articulo 31, fracción XXXIII de la Ley de Ingresos del Municipio de Tijuana, Baja California para el
+      Ejercicio Fiscal del 2025
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://pagos.tijuana.gob.mx/PagosEnLinea/index.aspx Criterio para resolver: Cumplir con lo que se indica
+  en el reglamento.'

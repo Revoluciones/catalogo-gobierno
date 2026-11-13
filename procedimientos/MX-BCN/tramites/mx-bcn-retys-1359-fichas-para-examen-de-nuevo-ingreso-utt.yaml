@@ -1,0 +1,123 @@
+id: mx-bcn-retys-1359-fichas-para-examen-de-nuevo-ingreso-utt
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Fichas para Examen de Nuevo Ingreso UTT
+summary: Dirigido a estudiantes del último año o egresados del nivel medio superior interesados en ingresar a estudiar
+  a la UTT, para que obtengan su ficha para realizar el examen de nuevo ingreso.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1359
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1359
+  homoclave: BC-UTT-005
+who_can:
+- Interesado
+when: En el periodo de venta de fichas señalado por la Universidad Tecnológica de Tijuana.
+result: Ficha para el realizar el Examen de Nuevo Ingreso.
+cost:
+  type: fijo
+  amount_mxn: 566.5
+  text: 'COSTO: $566.50 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 24 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Cierre de convocatoria
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Operativa de Servicios Escolares
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+- municipality: Ensenada
+  name: Unidad Académica Ensenada
+  address: 'Avenida de las Flores s/n Carretera 1 a La Bufadora #s/n, Maneadero, Ensenada, 22790'
+scenarios:
+- name: Estudiantes y ciudadanía en general
+  requirements:
+  - text: Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Referencia de pago.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Accede a la página oficial de la UTT en https://calificaciones.uttijuana.edu.mx/portal-alumnos/aspirantes/
+    - Registrar sus datos
+    - Generar referencia de pago.
+    - Realizar el pago en Multicajero Santander; Transferencia con tarjeta de débito en https://boton.uttijuana.edu.mx/cliente;
+      y en la Caja de Pagos en Edificio de Rectoría con tarjeta de débito o de crédito
+    - Seleccionar fecha de examen de acuerdo a las opciones de la UTT.
+    - Presentarse a realizar el examen en el día y hora seleccionado.
+  notes: Convocatoria
+legal_basis:
+- source: ley1
+  pinpoint: 6, 7, 8 y 13
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Accede a la página oficial de la UTT en https://calificaciones.uttijuana.edu.mx/portal-alumnos/aspirantes/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrar sus datos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Generar referencia de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago en Multicajero Santander; Transferencia con tarjeta de débito en https://boton.uttijuana.edu.mx/cliente;
+    y en la Caja de Pagos en Edificio de Rectoría con tarjeta de débito o de crédito
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Seleccionar fecha de examen de acuerdo a las opciones de la UTT.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentarse a realizar el examen en el día y hora seleccionado.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1359: Fichas para Examen de Nuevo Ingreso UTT'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1359
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Académico de Alumnos de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Fichas para Examen de Nuevo Ingreso a la Universidad Tecnológica de Tijuana. Copiado tal
+  cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

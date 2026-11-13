@@ -1,0 +1,211 @@
+id: mx-bcn-retys-1888-programa-pescando-con-el-corazon
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Pescando con el Corazón
+summary: Trámite para la Recepción de Solicitudes para aplicar a los beneficios del Programa de Apoyos Economicos
+  Directos, denominado “PESCANDO CON EL CORAZÓN”, con el objetivo de contribuir al bienestar de las y los trabajadores
+  del sector pesquero y acuícola, ligados a personas permisionarias pesqueras, acuícolas a través del otorgamiento
+  de un apoyo económico directo, en especial a quienes no reciban un ingresos en temporadas de veda de sus especies
+  de aprovechamiento o pérdidas de cosecha de especies de cultivo por eventos extraordinarios.
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1888
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1888
+  homoclave: BC-SEPESCA-007
+who_can:
+- Representante Legal
+- Interesado
+when: En el periodo que permanezca abierta la Ventanilla de Recepción de Solicitudes; periodo que se especifica
+  en los Lineamientos vigentes en cada año
+result: Apoyo Económico Directo
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 6 Meses'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: En el periodo que permanezca abierta la Ventanilla de Recepción de Solicitudes; en Lineamientos.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Ensenada
+  name: Departamento de Proyectos Estratégicos
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Registro de Empresa Empleadora de Personas Trabajadoras del Sector Pesquero y Acuícola
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada
+      (Registro de Empresa Empleadora del Sector Pesquero y Acuícola.). Archivo PDF para firma que emite el Sistema
+      de Ventanilla Digital B.C. para la captura de solicitudes de apoyo en línea.
+    cites:
+    - source: retys
+  - text: Formato PDF debidamente llenado y firmado para Seguimiento y Relación de Trabajadores Activos para Empresa
+      cuando se trate de Empresa de tipo Persona Física.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14781
+  - text: Formato PDF debidamente llenado y firmado para Seguimiento y Relación de Trabajadores Activos para Empresa
+      cuando se trate de Empresa de tipo Persona Moral.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14782
+  - text: Identificación Oficial con fotografía vigente (para Persona Física y para Persona Moral la del Representante
+      Legal)
+    cites:
+    - source: retys
+  - text: Comprobante de Domicilio con antigüedad no mayor a 03 (tres) meses, carta de residencia emitida por autoridad
+      municipal, recibos de servicios públicos (agua, energía eléctrica, predial u otros), permisos o concesión
+      de pesca comercial y/o acuacultura.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal SAT vigente de un periodo no mayor a 3 (tres) meses al momento del ingreso
+      de Solicitud
+    cites:
+    - source: retys
+  - text: Permiso o concesión de Pesca Comercial y/o Fomento, Autorización de Aprovechamiento expedido por SEMARNAT
+      del año en curso, permiso de fomento Acuícola o Concesión de Acuacultura, vigente.
+    cites:
+    - source: retys
+  - text: 'Avisos de arribo y/o cosecha 2025 de CONAPESCA, y/o 2026 facturas de producto vendido de permisos de
+      SEMARNAT. Nota: Integrar todo en un solo Documento PDF (avisos y facturas).'
+    cites:
+    - source: retys
+  - text: Acta Constitutiva en formato digital, y original para cotejo. (Solo cuando se trate de Personas Morales)
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación en
+      formato Digital y original para cotejo. (Solo cuando se trate de Personas Morales)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: 'Registro de Empresas de PESCA COMERCIAL o ACUÍCOLA del Estado de Baja California, que son PERSONAS FÍSICAS
+    o MORALES y buscan beneficiar a sus Personas Trabajadoras, tales como personas pescadoras, cosechadoras acuícolas,
+    buceadoras, tripulantes y/o ayudantes en activo, que trabajan de manera particular o colectiva, en el territorio
+    y litoral del Estado de Baja California. Para este efecto, se le dará prioridad a: Personas pertenecientes a
+    Zona Prioritaria en San Quintín, Personas pertenecientes a los pueblos originarios, Mujeres, Personas con discapacidad
+    y Personas adultas mayores.'
+- name: Registro de Persona Trabajadora del Sector Pesquero y Acuícola
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación Oficial con fotografía vigente con domicilio en el Estado de Baja California, como de Credencial
+      para Votar INE, Pasaporte o Licencia de Conducir.
+    cites:
+    - source: retys
+  - text: Estado de cuenta Bancario o captura de la aplicación digital o contrato, donde se aprecie el nombre completo
+      del beneficiario y el número de la cuenta CLABE.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    - Carga de Documentos de Requisitos
+    - Revisión, Validación de Documentos de Requisitos e Integración de Expediente de Empresas Empleadoras donde
+      se Dictaminan los Expedientes.
+  notes: 'Registro de Personas Trabajadoras en Empresas de PESCA COMERCIAL o ACUÍCOLA del Estado de Baja California,
+    tales como personas pescadoras, cosechadoras acuícolas, buceadoras, tripulantes y/o ayudantes en activo, que
+    trabajan de manera particular o colectiva, en el territorio y litoral del Estado de Baja California. Para este
+    efecto, se le dará prioridad a: Personas pertenecientes a Zona Prioritaria en San Quintín, Personas pertenecientes
+    a los pueblos originarios, Mujeres, Personas con discapacidad y Personas adultas mayores.'
+- name: Encuesta Socioeconómica a Personas Solicitantes del Programa "Pescando con el Corazón"
+  requirements:
+  - text: No requiere presentar documentos tipo requisitos, solo el llenado de la encuesta.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Llenado de Encuesta de datos Socioeconómicos de la Persona Solicitante del Programa Estatal de Apoyo Pescando
+      con el Corazón.
+    - Integración de Expediente de Empresas Empleadoras donde se Dictaminan los Expedientes de las Personas Solicitantes
+      del Beneficio.
+  notes: Registro de información socioeconómica de las personas solicitantes del Programa Estatal de Apoyo Pescando
+    con el Corazón, debe ser llenado una sola vez por cada Persona Trabajadora, tales como personas pescadoras,
+    cosechadoras acuícolas, buceadoras, tripulantes y/o ayudantes en activo, que trabajan de manera particular o
+    colectiva, en el territorio y litoral del Estado de Baja California.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30 fracción XV, 45 fracción I, XII y XIII
+- source: ley2
+  pinpoint: Artículo 8 fracción I y XVIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Carga de Documentos de Requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Validación de Expediente para Asignación de Folio Estatal del Programa
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Dictaminación de Expediente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1888: Programa Pescando con el Corazón'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1888
+    version_date: 27/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Pesca y Acuacultura Sustentables para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Estatal de Apoyo "Pescando con el Corazón". Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

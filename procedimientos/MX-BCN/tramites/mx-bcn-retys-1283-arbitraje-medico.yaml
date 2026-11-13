@@ -1,0 +1,140 @@
+id: mx-bcn-retys-1283-arbitraje-medico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Arbitraje Médico
+summary: Es un proceso donde una persona que ha tenido un problema con la atención médica que recibió puede resolver
+  su conflicto sin tener que ir a juicio. Este proceso inicia después de no haberse logrado la conciliación, en
+  el, un árbitro neutral escucha a la persona quejosa y a la persona prestadora de servicio de salud y toma una
+  decisión basada en la evidencia presentada.
+authority:
+  name: Comisión de Arbitraje Medico del Estado de Baja California
+official_ids:
+  retys_id: 1283
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1283
+  homoclave: BC-CAME-004
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera la intervención de la Comisión.
+result: Resolución Técnica y Laudo.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 6 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 5 AÑOS
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación de Conciliación
+  address: 'Paseo de los Héroes #s/n H9-31, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación de Conciliación
+  address: 'Diego Rivera y Vía Rápida Poniente #S/N, Zona Río, Tijuana, 22320'
+- municipality: Ensenada
+  name: Coordinación de Conciliación
+  address: 'Carretera Transpeninsular Ensenada la Paz #6500, Ex Ejido Chapultepec, Ensenada, 22880'
+- municipality: Tecate
+  name: Coordinación de Conciliación
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Coordinación de Conciliación
+  address: 'Avenida José Haros Aguilar #2000, Villa Turística, Playas de Rosarito, 22710'
+scenarios:
+- name: Arbitraje Médico
+  requirements:
+  - text: Presentar identificación oficial
+    cites:
+    - source: retys
+  - text: Carta de aceptación firmada por la persona quejosa y la persona prestadora de servicio de salud.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a audiencia de conciliación sin que se logre acuerdo, con identificación oficial
+    - Aceptar el arbitraje y firmar el compromiso arbitral
+    - Esperar a que la persona Titular de la Comisión apruebe el arbitraje
+    - Después de que se acepta comienza un periodo en el que se pueden presentar mas pruebas y se pueden dar mas
+      argumentos
+    - Hay que esperar un tiempo para que los peritos expertos den su opinión o dictamen
+    - Una vez que se recibe la opinión de los expertos, un consejo ciudadano vota si hay responsabilidad o no.
+    - Finalmente la persona Comisionada emite la decisión final (laudo) que resuelve la queja
+  notes: Es un proceso para resolver problemas entre pacientes y proveedores de servicios de salud de manera justa
+    y rápida sin tener que ir a los juzgados
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75 y 76
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a audiencia de conciliación sin que se logre acuerdo, con identificación oficial
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Aceptar el arbitraje y firmar el compromiso arbitral
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Esperar a que la persona Titular de la Comisión apruebe el arbitraje
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Después de que se acepta comienza un periodo en el que se pueden presentar mas pruebas y se pueden dar
+    mas argumentos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Hay que esperar un tiempo para que los peritos expertos den su opinión o dictamen
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez que se recibe la opinión de los expertos, un consejo ciudadano vota si hay responsabilidad o no.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Finalmente la persona Comisionada emite la decisión final (laudo) que resuelve la queja
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1283: Arbitraje Médico'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1283
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Comisión de Arbitraje Médico del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Arbitraje. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,254 @@
+id: mx-bcn-retys-1633-autorizacion-para-recepcion-de-aguas-residuales-sa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para Recepción de Aguas Residuales Sanitarias Domésticas y no Domésticas
+summary: Solicitar el servicio de recepción, en sitios establecidos por la CESPT, de aguas residuales sanitarias
+  domésticas y no domésticas, transportadas en camiones cisterna autorizados.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1633
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1633
+  homoclave: BC-CESPT-040
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera descargar aguas residuales sanitarias en sitios autorizados por CESPT a través de camiones
+  cisterna
+result: Contrato
+cost:
+  type: variable
+  amount_mxn: 3373.55
+  text: 'COSTO VARIABLE: $3,373.55 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Primera vez - Personas Morales
+  requirements:
+  - text: Original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas y no
+      domésticas (FRM-020), debidamente llenado y firmado por el propietario o representante legal de la empresa.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12022
+  - text: Copia certificada del Acta constitutiva de la empresa
+    cites:
+    - source: retys
+  - text: Copia certificada del Poder legal para actos de administración, vigente, que acredite la personalidad
+      del representante legal, en caso de NO ESTAR ESTABLECIDO en el Acta Constitutiva
+    cites:
+    - source: retys
+  - text: 'Copia de identificación oficial con fotografía, VIGENTE, del representante legal, puede ser UNO de los
+      siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de Cédula de Inscripción en el Registro Federal de Contribuyentes de la empresa
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa al ciudadano que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, personal de la Coordinación de Servicios de Saneamiento, sellará y firmará de
+      validación el original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas
+      y no domésticas (FRM-020), la cual entregará al solicitante.
+    - Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago correspondiente en cajas.
+    - Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de pago y entregar original y copia del formulario Solicitud
+      de recepción de aguas residuales sanitarias domésticas y no domésticas (FRM-020).
+    - La persona del área de Archivo certifica de recibido original y copia del Solicitud de recepción de aguas
+      residuales sanitarias domésticas y no domésticas (FRM-020), y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Primera vez - Personas Morales
+- name: Primera vez - Personas Físicas
+  requirements:
+  - text: Original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas y no
+      domésticas (FRM-020), debidamente llenado y firmado por el propietario.Formulario de Solicitud de recepción
+      de aguas residuales (FRM-020), tanto el original como una copia, debidamente firmado y llenado por el propietario.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12548
+  - text: 'Copia de identificación oficial con fotografía, VIGENTE, del propietario del predio, UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de la cédula de inscripción en el Registro Federal de Contribuyentes.
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente.
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa al ciudadano que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, personal de la Coordinación de Servicios de Saneamiento, sellará y firmará de
+      validación el original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas
+      y no domésticas (FRM-020), la cual entregará al solicitante.
+    - Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago correspondiente en cajas.
+    - Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de pago y entregar original y copia del formulario Solicitud
+      de recepción de aguas residuales sanitarias domésticas y no domésticas (FRM-020).
+    - La persona del área de Archivo certifica de recibido original y copia del Solicitud de recepción de aguas
+      residuales sanitarias domésticas y no domésticas (FRM-020), y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Primera vez - Personas Físicas
+- name: Revalidación de contrato
+  requirements:
+  - text: Original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas y no
+      domésticas (FRM-020), debidamente llenado y firmado por el propietario o el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12049
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa al ciudadano que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, personal de la Coordinación de Servicios de Saneamiento, sellará y firmará de
+      validación el original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas
+      y no domésticas (FRM-020), la cual entregará al solicitante.
+    - Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago correspondiente en cajas.
+    - Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de pago y entregar original y copia del formulario Solicitud
+      de recepción de aguas residuales sanitarias domésticas y no domésticas (FRM-020).
+    - La persona del área de Archivo certifica de recibido original y copia del Solicitud de recepción de aguas
+      residuales sanitarias domésticas y no domésticas (FRM-020), y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Revalidación de contrato
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2.
+- source: ley2
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+    posterior izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos,
+    si no están completos, informa al ciudadano que no es posible realizar el trámite hasta que éstos se completen,
+    indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, personal de la Coordinación de Servicios de Saneamiento, sellará y firmará
+    de validación el original y copia del formulario Solicitud de recepción de aguas residuales sanitarias domésticas
+    y no domésticas (FRM-020), la cual entregará al solicitante.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará
+    al solicitante para que realice el pago correspondiente en cajas.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de Cajas le entregará
+    un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de pago y entregar original y copia del formulario Solicitud
+    de recepción de aguas residuales sanitarias domésticas y no domésticas (FRM-020).
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo certifica de recibido original y copia del Solicitud de recepción de aguas
+    residuales sanitarias domésticas y no domésticas (FRM-020), y le entrega al solicitante la copia.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+    para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1633: Autorización para Recepción de Aguas Residuales Sanitarias Domésticas y no Domésticas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1633
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

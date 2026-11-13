@@ -1,0 +1,120 @@
+id: mx-bcn-retys-1528-expedicion-de-certificados-de-defuncion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Certificados de Defunción
+summary: Documento que de fe de la muerte de las personas, con el propósito de inscribir su defunción en el registro
+  civil, así como, realizar los trámites administrativos de inhumación o cremación.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1528
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1528
+  homoclave: BC-ISESALUD-012
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando se requiera el certificado para inscribir la defunción en el registro civil
+result: Acta
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento De Epidemiología (Consulta Externa)
+  address: 'Del Hospital #S/N, Centro Cívico , Mexicali, 21000'
+- municipality: Mexicali
+  name: Departamento de Epidemiología (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Tijuana
+  name: Departamento de Epidemiología (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Ensenada
+  name: Departamento de Epidemiología (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Ensenada
+  name: Departamento De Epidemiología
+  address: 'Guillermo Prieto #S/N, Villa De Juarez, Ensenada, 22766'
+- municipality: Tecate
+  name: Departamento De Epidemiología
+  address: 'Guillermo Prieto y Quinta Avenida #S/N, Centro, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Departamento de Epidemiología (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: Playas de Rosarito
+  name: Departamento De Epidemiología
+  address: 'Las Lomas Altas Y La Bajada #S/N, Lomas De Rosarito, Playas de Rosarito, 22710'
+scenarios:
+- name: Certificado de Defunción
+  requirements:
+  - text: Documentación del familiar fallecido (INE o Acta de nacimiento).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El familiar o representante debe acudir a la unidad hospitalaria en donde falleció su familiar
+    - El familiar debe presentar la documentación del familiar fallecido
+    - El servidor público tratante expide el certificado de defunción y hace entrega directa del certificado de
+      defunción al familiar
+  notes: Proceso para adquirir un certificado de defunción
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El familiar o representante debe acudir a la unidad hospitalaria en donde falleció su familiar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El familiar debe presentar la documentación del familiar fallecido
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público tratante expide el certificado de defunción y hace entrega directa del certificado
+    de defunción al familiar
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1528: Expedición de Certificados de Defunción'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1528
+    version_date: 12/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-035-SSA3-2012, En Materia en Información De Salud.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

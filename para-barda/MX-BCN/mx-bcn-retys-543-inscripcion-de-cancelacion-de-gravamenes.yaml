@@ -1,0 +1,155 @@
+id: mx-bcn-retys-543-inscripcion-de-cancelacion-de-gravamenes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Cancelación de Gravámenes
+summary: Dar publicidad cuando se ha cubierto el pago de una hipoteca, embargo o cédula hipotecaria, para dejar
+  sin efecto la misma de los bienes inmuebles otorgados en garantía.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 543
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/543
+  homoclave: BC-DRPPC-014
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se ha cubierto el pago de un hipoteca, embargo o cédula hipotecaria
+result: Inscripción de Cancelación de Gravámenes
+cost:
+  type: variable
+  amount_mxn: 794.0
+  text: 'COSTO VARIABLE: Octubre 2026 el costo de cancelación de gravámenes (con uno) $ 794.00 pesos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Cubrir previamente en la caja recaudadora los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Carta de cancelación
+    cites:
+    - source: retys
+  - text: Presentar la escritura en caso de ser medio de la cancelación
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral y/o al notario que desee el usuario
+    - Tomar turno para la emisión del recibo
+    - Pasar a ventanilla a generar el recibo
+    - Realizar pago correspondiente en la oficina recaudadora
+    - Tomar turno para ingreso de documentos
+    - Recibir el tramite concluido de acuerdo a la fecha que se asigne al volante
+  notes: Para la inscripción de cancelación de gravámenes
+legal_basis:
+- source: ley1
+  pinpoint: '2869'
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 12 fracción
+- source: ley4
+  pinpoint: '14'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral y/o al notario que desee el usuario
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para la emisión del recibo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasar a ventanilla a generar el recibo
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar pago correspondiente en la oficina recaudadora
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para ingreso de documentos
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recibir el tramite concluido de acuerdo a la fecha que se asigne al volante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 543: Inscripción de Cancelación de Gravámenes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/543
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Civil para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción de Cancelación de Gravámenes y de otros Actos No Comprendidos, así como de Extinción
+  Parcial de Fideicomisos. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,136 @@
+id: mx-bcn-tijuana-tj-sgm-0265-eventos-de-culto-publico
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Otros
+title: Eventos de culto público
+summary: Para realizar actos religiosos de culto público con carácter extraordinario fuera de los templos, los organizadores
+  de los mismos deberán dar aviso previo a las autoridades federales, del Distrito Federal, estatales o municipales
+  competentes, por lo menos quince días hábiles antes de la fecha en que pretendan celebrarlos, el aviso deberá
+  indicar el lugar, fecha, hora del acto, así como el motivo por el que éste se pretende celebrar. (LARCP art. 22)
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Asuntos Religiosos
+official_ids:
+  homoclave: TJ-SGM-0265
+who_can:
+- Interesado
+when: Actos de Culto Público en General · Conciertos de alabanzas · Jornadas de Oración · Campañas Evangelísticas
+  · Peregrinaciones, caminatas etc. · Todo aquel acto de culto religioso fuera de las instalaciones propias de las
+  iglesias
+result: PERMISO EVENTUAL
+requirements:
+- text: INE del responsable del evento
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Registro Constitutivo de Asociación Religiosa
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Factibilidad de la delegación correspondiente
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Escrito de solicitud de permiso y no inconveniencia a la Secretaría de Gobierno Municipal y Subdirección
+    de Asuntos Religiosos
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Solicitud de rondines de vigilancia y no inconveniencia a la Secretaría de Seguridad y Protección Ciudadana
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de la Dirección de Servicios Públicos Municipales
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Llenar formato de solicitud por evento ante la Subdirección de Asuntos Religiosos
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: A partir de 250 asistentes deberá solicitar Anuencia de Protección Civil
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: A partir de 300 asistentes deberá solicitar Anuencia de COEPRIS
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: A partir de 1000 asistentes deberán solicitar Dictamen de Bomberos
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: A partir de 500 en espacios cerrados y más de 1000 en espacios abiertos deberá solicitar Dictamen de Protección
+    Civil del Estado
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Mencionar en el escrito dirigido a asuntos religiosos si pretende pasar por alguna ruta establecida del
+    SITT
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Caminatas, peregrinaciones y eventos masivos deberá contratar el servicio de Ambulancia Particular
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 día
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Asuntos Religiosos
+  address: Palacio Municipal
+  phones: 6649737000 ext. 7351
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0265: Eventos de culto público'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0265
+    version_date: '2026-10-14'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 8 Fracción I, Artículo 9 Fracción III, Artículo 21, Artículo 22 y Artículo 23 de la Ley de Asociaciones
+      Religiosas y Culto Público
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LARCP.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 27, Artículo 29, Artículo 30 y Artículo 33 del Reglamento de la Ley de Asociaciones Religiosas
+      y Culto Público
+    url: https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LARCP.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplimiento de todos los requisitos'

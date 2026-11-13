@@ -1,0 +1,168 @@
+id: mx-bcn-retys-388-arrendamiento-de-espacios-fisicos-del-instituto-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Arrendamiento de Espacios Físicos del Instituto de Servicios Culturales de Baja California.
+summary: El arrendamiento de un espacio físico con las condiciones para la realización de eventos educativos, artísticos
+  y/o culturales, comerciales, sociales, políticos, o sin fines de lucro.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 388
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/388
+  homoclave: BC-ICBC-002
+who_can:
+- Representante Legal
+- Interesado
+when: Con anticipación hasta de un año y de acuerdo a la disponibilidad de espacios físicos para su arrendamiento
+result: Espacio físico para desarrollar el evento de su interés.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: De acuerdo al tarifario vigente, el pago varía de acuerdo al espacio que se desee arrendar'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Teatro Del Estado
+  address: 'Boulevard Adolfo López Mateos #1112, Zona Industrial, Mexicali, 21150'
+- municipality: Mexicali
+  name: Biblioteca Pública Central Estatal
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+- municipality: Mexicali
+  name: Centro Estatal de las Artes Mexicali
+  address: 'Calzada de los Presidentes y Ciudad Victoria #s/n, Zona Río Nuevo, Mexicali, 21120'
+- municipality: Tijuana
+  name: Centro Estatal de las Artes Tijuana
+  address: 'Vía Rápida Oriente #15320, Tercera Etapa Zona Río Tijuana, Tijuana, 22105'
+- municipality: Ensenada
+  name: Teatro y Parque de la Ciudad
+  address: 'Diamente #S/N, Nueva Ensenada, Ensenada, 22880'
+- municipality: Ensenada
+  name: Centro Estatal de las Artes Ensenada
+  address: 'Boulevard Lázaro Cárdenas #1430, Zona Centro, Ensenada, 22880'
+- municipality: Ensenada
+  name: Biblioteca Pública Regional Benito Juárez
+  address: 'Guadalupe #201, Obrera, Ensenada, 22830'
+- municipality: Tecate
+  name: Centro Estatal de las Artes Tecate
+  address: 'Federico Benítez y Boulevard Encinos #s/n, Varios Predios, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Centro Estatal de las Artes Playas de Rosarito
+  address: 'Paseo la Cascada #s/n, La Cascada, Playas de Rosarito, 22701'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: Identificación oficial (persona física), Acta constitutiva (persona moral)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal vigente
+    cites:
+    - source: retys
+  - text: Solicitud de arrendamiento (oficio libre)
+    cites:
+    - source: retys
+  - text: Contrato de arrendamiento firmado
+    cites:
+    - source: retys
+  - text: Pago en banco, pago en efectivo en el lugar, o transferencia, según sea el caso
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Persona interesada pregunta acerca de la disponibilidad y costos de un espacio físico del Instituto para arrendar
+    - Se elabora oficio de solicitud de arrendamiento
+    - El Instituto otorga respuesta a solicitud con fecha disponible, costo y modalidad de pago
+    - La persona interesada realiza el pago correspondiente
+    - Se elabora el contrato de arrendamiento, firman la persona interesada y funcionarios del ISCBC
+    - La persona interesada y el Instituto preparan evento
+    - La persona interesada realiza su evento
+  notes: Cuando la persona interesada desee arrendar un espacio del Instituto de Cultura
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, Fracción III
+- source: ley2
+  pinpoint: Artículo 27, Fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Persona interesada pregunta acerca de la disponibilidad y costos de un espacio físico del Instituto para
+    arrendar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se elabora oficio de solicitud de arrendamiento
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El Instituto otorga respuesta a solicitud con fecha disponible, costo y modalidad de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona interesada realiza el pago correspondiente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se elabora el contrato de arrendamiento, firman la persona interesada y funcionarios del ISCBC
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona interesada y el Instituto preparan evento
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona interesada realiza su evento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 388: Arrendamiento de Espacios Físicos del Instituto de Servicios Culturales de Baja California.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/388
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

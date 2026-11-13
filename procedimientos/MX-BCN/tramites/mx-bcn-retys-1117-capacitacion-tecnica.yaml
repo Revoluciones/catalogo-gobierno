@@ -1,0 +1,135 @@
+id: mx-bcn-retys-1117-capacitacion-tecnica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Capacitación Técnica
+summary: Capacitación técnica que se ofrecen al público en general en diversos temas, así como a empresas que requieren
+  capacitar a su personal ofreciendo adecuarse a sus necesidades.
+authority:
+  name: Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California
+official_ids:
+  retys_id: 1117
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1117
+  homoclave: BC-CECYTE-011
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando el ciudadano y/o la empresa requiera capacitación.
+result: Capacitación y actualización a nivel técnico obteniendo constancia .con validez en la Secretaria de Educación
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Para mayor información del costo sobre algún tema de capacitación que se requiera o se
+    oferte se recomienda ponerse en contacto con el departamento de vinculación en Dirección General. (686)905.56.00
+    ext .1510'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección General del CECyTE BC
+  address: 'Panamá #199, Cuauhtémoc sur, Mexicali, 21200'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Acudir o ponerse en contacto con la dirección de servicios educativos para solicitar información para
+      la capacitación que se oferta.
+    cites:
+    - source: retys
+  - text: Realizar el pago correspondiente a través de algunas de las opciones disponibles.
+    cites:
+    - source: retys
+  - text: Entregar o enviar comprobante de pago para el registro en el curso de capacitación de interés
+    cites:
+    - source: retys
+  - text: Tomar el curso y obtener constancia que acredita la capacitación en el tema
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El interesado se pone en contacto por correo o teléfono al depto. De vinculación en dirección general de cecyte
+      bc para conocer si ofertan o van a ofertar algún curso con el tema de interés
+    - Se indica los temas programados para capacitación próximas o pregunta cuál es el tema de interés para su programación.
+    - Indica al interesado información y costos sobre capacitación programada o indica fecha para concertar cita
+      para conocer necesidades de capacitación.
+    - Cubre requisitos, realiza pago correspondiente y enviá comprobante de pago.
+    - Realizan registro del interesado en el curso y se indica fecha de capacitación
+    - Acude a capacitación en la fecha y lugar indicados
+    - Toma curso y obtiene constancia del mismo.
+  notes: Persona que desea capacitarse en algún tema de interés que se oferte en CECyTE BC.
+legal_basis:
+- source: ley1
+  pinpoint: Art. 5 Inciso III A y B
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado se pone en contacto por correo o teléfono al depto. De vinculación en dirección general
+    de cecyte bc para conocer si ofertan o van a ofertar algún curso con el tema de interés
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se indica los temas programados para capacitación próximas o pregunta cuál es el tema de interés para
+    su programación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Indica al interesado información y costos sobre capacitación programada o indica fecha para concertar
+    cita para conocer necesidades de capacitación.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Cubre requisitos, realiza pago correspondiente y enviá comprobante de pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizan registro del interesado en el curso y se indica fecha de capacitación
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acude a capacitación en la fecha y lugar indicados
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Toma curso y obtiene constancia del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1117: Capacitación Técnica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1117
+    version_date: 02/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Lineamiento para la Impartición de Cursos y Talleres en el Colegio de Estudios Científicos y Tecnológicos
+      del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Educación Continua. Copiado tal cual de RETyS. Los pasos son los del primer escenario y
+  la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

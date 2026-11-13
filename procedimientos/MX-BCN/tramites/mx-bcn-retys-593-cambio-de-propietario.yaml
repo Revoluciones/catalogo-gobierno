@@ -1,0 +1,135 @@
+id: mx-bcn-retys-593-cambio-de-propietario
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cambio de Propietario
+summary: Realizar modificaciones en los datos del nombre de la cuenta del padron de usuarios de CESPM
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 593
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/593
+  homoclave: BC-CESPM-014
+who_can:
+- Representante Legal
+when: Cuando requiera el trámite.
+result: Cambio en la factura.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: 'Identificación oficial cualquiera de las siguientes: INE, licencia de conducir, matricula consular, cédula
+      profesional, pasaporte mexicano (documentos deben estar vigentes).'
+    cites:
+    - source: retys
+  - text: No presentar adeudos.
+    cites:
+    - source: retys
+  - text: Escrituras del predio o certificado de inscripción ante el registro público de la propiedad y del comercio,
+      expedido por el gobierno del estado, no mayor a seis meses de antigüedad.
+    cites:
+    - source: retys
+  - text: Presentar copia de los requisitos y original para cotejo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente.
+    - Presentar solicitud con requisitos.
+    - Firma del contrato de adhesión.
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 3
+- source: ley2
+  pinpoint: ARTÍCULOS 3O
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención a usuarios de la zona comercial correspondiente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar solicitud con requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Firma del contrato de adhesión.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 593: Cambio de Propietario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/593
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY QUE REGLAMENTA EL SERVICIO DE AGUA POTABLE EN EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY QUE REGLAMENTA EL SERVICIO DE AGUA POTABLE EN EL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

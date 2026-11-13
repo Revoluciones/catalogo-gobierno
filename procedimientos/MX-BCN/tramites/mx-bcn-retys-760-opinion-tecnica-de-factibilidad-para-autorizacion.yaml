@@ -1,0 +1,110 @@
+id: mx-bcn-retys-760-opinion-tecnica-de-factibilidad-para-autorizacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Opinión técnica de factibilidad para autorización de zonas de transporte
+summary: Consiste en solicitar la opinión técnica para determinar la factibilidad de dar autorización para utilizar
+  cierres de circuito, lanzaderas, bases, encierros, terminales, zonas de ascenso y descenso, zonas de carga y descarga.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 760
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/760
+  homoclave: BC-IMOS-011
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se busque obtener la autorización para utilizar una zona de transporte.
+result: Opinión técnica de factibilidad para autorización de zonas de transporte.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 138.12 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios, agrupaciones, gremios, representante legal de empresas concesionarias, etc
+  requirements:
+  - text: Formato de solicitud original y copia , debidamente firmado, completando todos los campos que sean requeridos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14756
+  - text: Copia de Identificación oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: Croquis de PROPUESTA DE UBICACIÓN legible de la zona de transporte, si esta ubicado en vía pública deberá
+      indicar la dirección completa y calles colindantes, si se ubica en propiedad privada deberá indicar ubicación
+      de cajones asignados.
+    cites:
+    - source: retys
+  - text: Anuencia por escrito donde se manifieste la autorización para el uso de servicios sanitarios. (Antigüedad
+      no mayor a 90 días)
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para opinión técnica con respecto de las zonas de transporte a utilizar
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 47
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 760: Opinión técnica de factibilidad para autorización de zonas de transporte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/760
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Opinión Técnica de Factibilidad para Autorización de Zonas de Transporte. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

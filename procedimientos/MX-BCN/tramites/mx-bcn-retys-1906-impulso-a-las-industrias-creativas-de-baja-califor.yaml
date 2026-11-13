@@ -1,0 +1,193 @@
+id: mx-bcn-retys-1906-impulso-a-las-industrias-creativas-de-baja-califor
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Impulso a las Industrias Creativas de Baja California 2026
+summary: Programa dirigido a personas físicas residentes en el Estado de Baja California que desarrollen proyectos
+  vinculados con las industrias creativas, para solicitar apoyo en su profesionalización, capacitación, formación,
+  desarrollo y consolidación, a fin de fortalecer su talento creativo y competitividad.
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1906
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1906
+  homoclave: BC-SEI-018
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretenda desarrollar un proyecto vinculado con las industrias creativas.
+result: Apoyo económico por única ocasión de $10,000.00 (diez mil pesos 00/100 M.N.) hasta $100,000.00 (cien mil
+  pesos 00/100 M.N.)
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Hasta el 15 de diciembre de 2026, y/o hasta agotar el recurso.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Azueta #298, Centro, Mexicali, 21100'
+- municipality: Tijuana
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Carretera Libre Tijuana-Tecate km 26.5 #S/N, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Carretera Transpeninsular #6500, Ex. Ej Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Blvd. Defensores de Baja California #53, La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'José Aros Aguilar #2003 - L7, Fracc. Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Benito Juárez #108 L-E, Plaza Melina, San Quintín, 22920'
+- municipality: San Felipe
+  name: Direccion de Fortalecimiento al Sector Creativo
+  address: 'Mar De Cortés #39 L 4-B, Fracc. Mar de Cortes, San Felipe, 21850'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Solicitud de Apoyo (Anexo 1).
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15137
+  - text: Copia de identificación oficial vigente (credencial para votar, pasaporte o cédula profesional vigente;
+      en caso de ser extranjero, documento migratorio o visa permanente).
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio, con una antigüedad no mayor a 2 meses (recibo de luz o agua).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal, con una antigüedad no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Proyecto Creativo (Formato Libre).
+    cites:
+    - source: retys
+  - text: Cotización de acuerdo a los conceptos elegibles, con datos fiscales del proveedor, dirigida al solicitante.
+    cites:
+    - source: retys
+  - text: Manifiesto bajo protesta de decir verdad que el trámite es gratuito.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15144
+  - text: Manifiesto no ser funcionario.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15145
+  - text: 'En caso de personas menores de edad, la solicitud deberá presentarse por medio de una persona representante
+      y, además de los requisitos aplicables, deberá presentar: Copia del acta de nacimiento de la persona menor
+      de edad.'
+    cites:
+    - source: retys
+  - text: Documento que acredite la representación legal.
+    cites:
+    - source: retys
+  - text: Carta Compromiso (Anexo V).
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15149
+  - text: Carta Poder (Anexo VI).
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15150
+  - text: Documentación adicional que, en su caso, requiera la SEI para integrar el expediente o salvaguardar el
+      interés superior de la persona menor de edad.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El interesado consulta la convocatoria y descarga los formatos y anexos correspondientes.
+    - El interesado recaba la información y documentación requerida.
+    - El interesado presenta el expediente completo en las oficinas de la Dirección de Fortalecimiento al Sector
+      Creativo (DSFC).
+    - El Comité revisa y evalúa los proyectos recibidos.
+    - La DSFC notifica al interesado el resultado de la dictaminación y, en caso de aprobación, realiza el proceso
+      administrativo para la entrega del apoyo.
+    - El beneficiario recibe el apoyo y presenta las evidencias del proyecto dentro de los 15 días hábiles siguientes,
+      incluyendo el informe y la documentación que acredite el uso del recurso.
+  notes: Documentación necesaria para iniciar el trámite.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 33 Quarter, fracción XI y XII.
+- source: ley2
+  pinpoint: Artículos 3,7,8,10,11,12,13,14,15
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado consulta la convocatoria y descarga los formatos y anexos correspondientes.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El interesado recaba la información y documentación requerida.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El interesado presenta el expediente completo en las oficinas de la Dirección de Fortalecimiento al Sector
+    Creativo (DSFC).
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Comité revisa y evalúa los proyectos recibidos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La DSFC notifica al interesado el resultado de la dictaminación y, en caso de aprobación, realiza el proceso
+    administrativo para la entrega del apoyo.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: El beneficiario recibe el apoyo y presenta las evidencias del proyecto dentro de los 15 días hábiles siguientes,
+    incluyendo el informe y la documentación que acredite el uso del recurso.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1906: Impulso a las Industrias Creativas de Baja California 2026'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1906
+    version_date: 21/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria de Economía e Innovación.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Reglas de Operación del "Programa para el Impulso a las Industrias Creativas de Baja California 2026"
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa de Impulso a las Industrias Creativas de Baja California. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

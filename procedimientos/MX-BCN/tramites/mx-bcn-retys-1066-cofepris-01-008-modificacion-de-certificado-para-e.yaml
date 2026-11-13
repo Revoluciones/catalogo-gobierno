@@ -1,0 +1,113 @@
+id: mx-bcn-retys-1066-cofepris-01-008-modificacion-de-certificado-para-e
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-01-008 Modificación de Certificado para Exportación. (Certificado para Exportación de Libre Venta,
+  de Productos para Exportación de Análisis de Producto y de Conformidad de Buenas Practicas Sanitarias). - [EXCEPTO
+  SUPLEMENTOS ALIMENTICIOS, FÓRMULAS PARA LACTANTES, DE CONTINUACIÓN Y PARA NECESIDADES ESPECIALES DE NUTRICIÓN,
+  BEBIDAS TONIFICANTES (AQUELLAS QUE CONTIENEN TAURINA Y/0 GLUCURONOLACTONA Y/O CAFEÍNA).
+summary: El ciudadano podrá solicitar modificaciones a los certificados para exportación libre venta, para exportación
+  de conformidad de buenas prácticas sanitarias y análisis de producto emitidos por esta comisión estatal para la
+  protección contra riesgos sanitarios.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1066
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1066
+  homoclave: BC-COEPRIS-062
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera la modificación
+result: Modificación
+cost:
+  type: fijo
+  amount_mxn: 1128.79
+  text: 'COSTO: $1128.79 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7633
+  - text: Original y dos copias del comprobante de pago de derechos, en términos de la ley federal de derechos
+    cites:
+    - source: retys
+  - text: Original del certificado correspondiente vigente
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Modificación de Certificado para Exportación.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Articulo 389 Fraccion IV
+- source: ley3
+  pinpoint: Artículo 241
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Modificación de Certificado para Exportación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1066: COFEPRIS-01-008 Modificación de Certificado para Exportación. (Certificado para Exportación
+      de Libre Venta, de Productos para Exportación de Análisis de Producto y de Conformidad de Buenas Practicas
+      Sanitarias). - [EXCEPTO SUPLEMENTOS ALIMENTICIOS, FÓRMULAS PARA LACTANTES, DE CONTINUACIÓN Y PARA NECESIDADES
+      ESPECIALES DE NUTRICIÓN, BEBIDAS TONIFICANTES (AQUELLAS QUE CONTIENEN TAURINA Y/0 GLUCURONOLACTONA Y/O CAFEÍNA).'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1066
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,131 @@
+id: mx-bcn-retys-389-citas-en-linea
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Citas en Línea
+summary: 'Programar una cita médica de consulta de medicina general u odontológica en su unidad médica de adscripción,
+  desde la plataforma web o la aplicación móvil. Para soporte técnico: Si tiene problemas de acceso para la aplicación,
+  favor de comunicarse al teléfono mostrado en la ficha de este trámite. Nota: En caso de falta de disponibilidad
+  de citas, será necesario acudir a su unidad de adscripción para realizar la cita en forma presencial.'
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 389
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/389
+  homoclave: BC-ISSSTECALI-005
+who_can:
+- Interesado
+when: Cuando requiera programar una cita médica ó administrar sus citas
+result: Fecha y hora de su cita agendada
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: FECHA Y HORA DE CITA
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Jefatura de Departamento de Hospitales
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Citas en Línea
+  requirements:
+  - text: Número de afiliación
+    cites:
+    - source: retys
+  - text: Contraseña registrada
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal web del Sistema Integral de servicios a afiliados (SISA) o a la aplicacion móvil " Mi ISSSTECALI"
+    - Introducir número de afiliación y contraseña obtenida mediante el registro de servicio en línea
+    - 'En portal web: Abrir el menú de Servicios Médicos y hacer click en tus citas. En aplicación móvil, seleccionar
+      la opción Citas.'
+    - Seleccionar el miembro del núcleo familiar que requiere agendar consulta.
+    - Elegir la opción "Solicitar Cita", seleccionar servicio médico, fecha de cita, médico disponible y horario
+      disponible
+    - Utilizar la opción agendar cita para confirmar la información y proceder a registrar la cita agendada.
+  notes: Asegurado
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 46, Fracción VII y Artículo 111
+- source: ley2
+  pinpoint: '52'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal web del Sistema Integral de servicios a afiliados (SISA) o a la aplicacion móvil "
+    Mi ISSSTECALI"
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Introducir número de afiliación y contraseña obtenida mediante el registro de servicio en línea
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'En portal web: Abrir el menú de Servicios Médicos y hacer click en tus citas. En aplicación móvil, seleccionar
+    la opción Citas.'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Seleccionar el miembro del núcleo familiar que requiere agendar consulta.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Elegir la opción "Solicitar Cita", seleccionar servicio médico, fecha de cita, médico disponible y horario
+    disponible
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Utilizar la opción agendar cita para confirmar la información y proceder a registrar la cita agendada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 389: Citas en Línea'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/389
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código de Procedimientos Civiles para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LPAAPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,445 @@
+id: mx-bcn-retys-393-jubilacion-o-pension
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Jubilación o Pensión
+summary: 'Brindar a los trabajadores asegurados la prestación que le corresponde una vez que se han complicado con
+  el tiempo mínimo de servicio, cotización y edad, requerida para disfrutar de la pensión o jubilación, en su caso;
+  una vez que se generan los siguientes documentos: A).- Histórico de cotizaciones ante el ISSSTECALI que emite
+  el departamento histórico de cotizaciones. B).- Dictamen que propone a la junta directiva conceder, negar, modificar
+  o revocar la pensión o jubilación y, que emite la dirección de pensiones y jubilaciones del ISSSTECALI'
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 393
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/393
+  homoclave: BC-ISSSTECALI-006
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se cumplan las condiciones establecidas en la Ley de ISSSTECALI
+result: Acuerdo de junta directiva que concede, niega, modifica o revoca la pensión o jubilación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento Gestión de Pensiones y Jubilaciones
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Pensiones y Jubilaciones
+  address: 'Blvd. Díaz Ordaz  #12649, El paraíso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Coordinacion de Prestaciones Económicas y Sociales
+  address: 'Calle de las rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+scenarios:
+- name: Pensión por Jubilación
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12704
+  - text: Original de Hoja de servicio actualizada y detallada
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del interesado(a)
+    cites:
+    - source: retys
+  - text: Original de CURP
+    cites:
+    - source: retys
+  - text: Original de Constancia De Situación Fiscal del interesado(a)
+    cites:
+    - source: retys
+  - text: Original de acta nacimiento del interesado(a) (únicamente en caso de magisterio)
+    cites:
+    - source: retys
+  - text: 'Magisterio: Cumplir con edad mínima requerida indicada en la tabla de gradualidad, y 30 años cotizados
+      al fondo de pensiones'
+    cites:
+    - source: retys
+  - text: 'Burocracia: Contar con edad mínima requerida de acuerdo a la Ley de inicio de aportaciones al fondo de
+      pensiones y 30 años cotizados al fondo de pensiones'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Jubilación
+- name: Pensión por Retiro de edad
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12705
+  - text: Original de hoja de servicio actualizada y detallada
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del interesado(a)
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del interesado(a)
+    cites:
+    - source: retys
+  - text: Original del CURP
+    cites:
+    - source: retys
+  - text: Original de Constancia de Situación Fiscal del interesado(a)
+    cites:
+    - source: retys
+  - text: 15 Años cotizados al fondo de pensiones
+    cites:
+    - source: retys
+  - text: 'Magisterio: Cumplir con edad mínima requerida indicada en la tabla de gradualidad.'
+    cites:
+    - source: retys
+  - text: 'Burocracia: Contar con edad mínima requerida de acuerdo a la Ley de inicio de aportación al fondo de
+      pensiones.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al Usuario para seguimiento de trámite
+  notes: Retiro por Edad
+- name: Pensión por Invalidez
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12706
+  - text: Original de hoja de servicio actualizada y detallada
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del interesado(a)
+    cites:
+    - source: retys
+  - text: Original del CURP
+    cites:
+    - source: retys
+  - text: Original de Constancia de Situación Fiscal del interesado(a)
+    cites:
+    - source: retys
+  - text: Copia del Certificado del estado de invalidez expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Cuando menos 7 Años cotizados al fondo de pensiones
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Invalidez
+- name: Pensión por viudez
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12707
+  - text: Original de Hoja de servicio actualizada y detallada (En caso de haber fallecido activo(a), deberá indicar
+      la fecha de baja por defunción del trabajador(a))
+    cites:
+    - source: retys
+  - text: Original Acta de defunción del trabajador(a).
+    cites:
+    - source: retys
+  - text: Original de Acta de matrimonio expedida con fecha posterior al fallecimiento del trabajador (a).
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del finado(a)
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del solicitante
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del interesado(a)
+    cites:
+    - source: retys
+  - text: Original del CURP del interesado(a)
+    cites:
+    - source: retys
+  - text: Original de Constancia de Situación Fiscal del interesado(a)
+    cites:
+    - source: retys
+  - text: Copia Certificada de resolución de jurisdicción voluntaria en caso de concubinato
+    cites:
+    - source: retys
+  - text: Solicitud de trabajo social en caso de concubinato
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13203
+  - text: Hoja de acreditación de no derechohabiencia del IMSS e ISSSTE del interesado(a)
+    cites:
+    - source: retys
+  - text: Original de Certificado de inexistencia de matrimonio (Estatal). En caso de concubinato (No mayor a tres
+      meses de presentar el trámite).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - ENTREGAR DOCUMENTACIÓN SEGÚN CORRESPONDA
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Viudez
+- name: Pensión por orfandad
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12709
+  - text: Original de Hoja de servicio actualizada y detallada (en caso de haber fallecido Activo deberá indicar
+      la fecha de baja por defunción del trabajador(a))
+    cites:
+    - source: retys
+  - text: Original de Acta de defunción del trabajador(a)
+    cites:
+    - source: retys
+  - text: Original de Certificado de inexistencia de matrimonio (Estatal). En caso de hijos mayores de edad (No
+      mayor a tres meses de presentar el trámite)
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del finado(a)
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del solicitante, menor o mayor de edad
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del interesado(a) o tutor legal en caso de menor de edad
+    cites:
+    - source: retys
+  - text: Original del CURP del interesado(a), menor o mayor de edad
+    cites:
+    - source: retys
+  - text: Solicitud de trabajo social en caso de mayores de edad
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal del interesado(a) o de tutor legal
+    cites:
+    - source: retys
+  - text: Hoja de acreditación de no derechohabiencia del IMSS e ISSSTE del interesado(a)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Orfandad
+- name: Pensión por ascendencia
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12714
+  - text: Original de Hoja de servicio actualizada y detallada (en caso de haber fallecido activo, deberá indicar
+      la fecha de baja por defunción del trabajador(a))
+    cites:
+    - source: retys
+  - text: Original de Acta de defunción del trabajador(a)
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del finado (a)
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del solicitante
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del interesado(a)
+    cites:
+    - source: retys
+  - text: Original del CURP del interesado(a)
+    cites:
+    - source: retys
+  - text: Solicitud de trabajo social
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13205
+  - text: Constancia de Situación Fiscal del interesado(a)
+    cites:
+    - source: retys
+  - text: A falta de Cónyuge, Concubino, o Hijos.
+    cites:
+    - source: retys
+  - text: Original de Certificado de Inexistencia Matrimonio del finado(a) (Estatal) vigente
+    cites:
+    - source: retys
+  - text: Hoja de acreditación de no derechohabiencia del IMSS e ISSSTE del interesado(a)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Ascendencia
+- name: Pensión por riesgo de trabajo
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12717
+  - text: Original de Hoja de servicio actualizada y detallada
+    cites:
+    - source: retys
+  - text: Original de Acta de nacimiento del trabajador(a)
+    cites:
+    - source: retys
+  - text: Copia de Identificación Oficial vigente del trabajador(a)
+    cites:
+    - source: retys
+  - text: Original del CURP del trabajador(a)
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal del trabajador(a)
+    cites:
+    - source: retys
+  - text: Original de Certificado de riesgo de trabajo expedido por ISSSTECALI
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficinas de atención
+    - Solicitar en ventanilla el servicio
+    - Entregar solicitud llena
+    - Entregar documentación según corresponda
+    - Revisar información y sellar de recibido
+    - Orientar al usuario para seguimiento de trámite
+  notes: Riesgo de Trabajo
+legal_basis:
+- source: ley1
+  pinpoint: 58 al 86, Decreto 203 Articulo 11 transitorio tercero, y Decreto 205 Articulo 3 transitorio tercero
+    y cuarto.
+- source: ley2
+  pinpoint: 1 al 20 y Artículos Transitorios
+- source: ley3
+  pinpoint: 19,25,67 y 68
+- source: ley4
+  pinpoint: 1 al 16
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a oficinas de atención
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar en ventanilla el servicio
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar solicitud llena
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entregar documentación según corresponda
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Revisar información y sellar de recibido
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Orientar al usuario para seguimiento de trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 393: Jubilación o Pensión'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/393
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del
+      Estado de Baja California, publicada en el Periódico Oficial del Estado de Baja California de fecha 17 de
+      febrero de 2015.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Regula a los Trabajadores que refiere la Fracción Segunda, Apartado B del Artículo 99 de La Constitución
+      Política del Estado Libre y Soberano Baja California, en materia de Seguridad Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto De Seguridad y Servicios Sociales de los Trabajadores Del Gobierno y
+      Municipios del Estado de Baja California, Publicado en el Periódico Oficial del Estado De fecha 19 de abril
+      de 2013 y sus reformas publicadas en el P.O. el 27 de mayo de 2016 y el 19 de octubre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento para el Otorgamiento de Pensiones a los Asegurados del Instituto de Seguridad y Servicios
+      Sociales de los Trabajadores del Gobierno y Municipios del Estado de Baja California, publicado en el Periódico
+      Oficial del Estado de Baja California de fecha 10 de septiembre de 1984.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

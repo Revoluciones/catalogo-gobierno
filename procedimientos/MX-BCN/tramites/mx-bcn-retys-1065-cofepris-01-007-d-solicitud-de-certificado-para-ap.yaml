@@ -1,0 +1,123 @@
+id: mx-bcn-retys-1065-cofepris-01-007-d-solicitud-de-certificado-para-ap
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-01-007-D Solicitud de certificado para apoyo a la exportación Modalidad D: Solicitud de certificado
+  para exportación análisis de producto - [EXCEPTO SUPLEMENTOS ALIMENTICIOS, FÓRMULAS PARA LACTANTES, DE CONTINUACIÓN
+  Y PARA NECESIDADES ESPECIALES DE NUTRICIÓN, BEBIDAS TONIFICANTES (AQUELLAS QUE CONTIENEN TAURINA Y/O GLUCURONOLACTONA
+  Y/O CAFEÍNA)'
+summary: Cuando el ciudadano requiera realizar una exportación que se encuentre domiciliada en territorio nacional,
+  que solicite que esta autoridad sanitaria certifique los análisis realizados a los lotes de los productos a exportar
+  por los laboratorios terceros autorizados.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1065
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1065
+  homoclave: BC-COEPRIS-061
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Certificado
+cost:
+  type: fijo
+  amount_mxn: 1505.21
+  text: 'COSTO: $1505.21 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7632
+  - text: Original y dos copias del comprobante de pago de derechos
+    cites:
+    - source: retys
+  - text: Resultados originales de laboratorio efectuados a los productos que se van a exportar y copia del acta
+      de verificación
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de certificado para apoyo a la exportación
+      Modalidad D.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: 287 y 389 fracción IV
+- source: ley3
+  pinpoint: Artículo 242
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de certificado para apoyo a la exportación
+    Modalidad D.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1065: COFEPRIS-01-007-D Solicitud de certificado para apoyo a la exportación Modalidad
+      D: Solicitud de certificado para exportación análisis de producto - [EXCEPTO SUPLEMENTOS ALIMENTICIOS, FÓRMULAS
+      PARA LACTANTES, DE CONTINUACIÓN Y PARA NECESIDADES ESPECIALES DE NUTRICIÓN, BEBIDAS TONIFICANTES (AQUELLAS
+      QUE CONTIENEN TAURINA Y/O GLUCURONOLACTONA Y/O CAFEÍNA)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1065
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-007-D Solicitud de certificado para apoyo a la exportación Modalidad D: Solicitud
+  de certificado para exportación análisis de producto - [EXCEPTO SUPLEMENTOS ALIMENTICIOS, FÓRMULAS PARA LACTANTES,
+  DE CONTINUACIÓN Y PARA NECESIDADES ESPECIALES DE NUTRICIÓN, BEBIDAS TONIFICANTES (AQUELLAS QUE CONTIENEN TAURINA
+  Y/O GLUCURONOLACTONA Y/O CAFEÍNA).. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

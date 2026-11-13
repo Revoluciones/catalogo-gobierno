@@ -1,0 +1,210 @@
+id: mx-bcn-retys-787-solicitud-de-expedicion-de-concesion-de-transporte
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de expedición de concesión de transporte público masivo, de personal o turístico
+summary: Consiste, para una empresa que busque ser concesionaria, en solicitar la expedición de concesión de transporte
+  público masivo, de personal o turístico.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 787
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/787
+  homoclave: BC-IMOS-037
+who_can:
+- Representante Legal
+when: Cuando la persona representante legal busque otorgamiento de concesión
+result: Concesión de transporte público masivo, de personal o turístico
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Expedición de concesión por 1 a 15 años por unidad autorizada: 110.00 UMAS Expedición de concesión
+    por 16 a 30 años por unidad autorizada: 220.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Requisitos concesión de transporte de pasajeros en la modalidad de "masivo"
+  requirements:
+  - text: Solicitud de concesión, debidamente llenada y firmada
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral titular de la concesión y constancia de inscripción en el Registro
+      Público de la Propiedad y Comercio
+    cites:
+    - source: retys
+  - text: Poder de representante legal
+    cites:
+    - source: retys
+  - text: Identificación oficial del representante legal
+    cites:
+    - source: retys
+  - text: Cédula de identificación fiscal (RFC)
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales en sentido positivo
+    cites:
+    - source: retys
+  - text: Rutas e itinerarios (Formato "KMZ")
+    cites:
+    - source: retys
+  - text: Información del parque vehicular
+    cites:
+    - source: retys
+  - text: Croquis y ubicación del parque de encierro
+    cites:
+    - source: retys
+  - text: Pólizas de responsabilidad civil vigentes
+    cites:
+    - source: retys
+  - text: Inventario de las instalaciones de terminales
+    cites:
+    - source: retys
+  - text: Certificado de libertad de gravámenes (no adeudos por concepto de transporte público)
+    cites:
+    - source: retys
+  - text: Señalar correo electrónico, domicilio para oír y recibir notificaciones y números telefónicos de contacto
+    cites:
+    - source: retys
+  - text: Proporcionar toda la información y documentos señalados en formato digital a los correos electrónicos
+      que para tal efecto señale el Instituto
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos concesión de transporte de pasajeros en la modalidad de "masivo"
+- name: Requisitos concesión de transporte de pasajeros en la modalidad de "personal"
+  requirements:
+  - text: Solicitud de concesión, debidamente llenada y firmada, dónde se describan los motivos que generan la necesidad
+      del servicio de transporte y la capacidad con la que cuenta la empresa para prestarlo
+    cites:
+    - source: retys
+  - text: Presentar los estudios técnicos relativos ante el Instituto. Estos deberán ser realizados por profesionales
+      en la materia autorizados por el Instituto, o bien. Solicitar, previo pago de derechos, que estos sean llevados
+      a cabo por el Instituto
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral titular de la concesión y la inscripción en el Registro Público
+      de la Propiedad y Comercio
+    cites:
+    - source: retys
+  - text: Poder del representante legal
+    cites:
+    - source: retys
+  - text: Identificación oficial del representante legal
+    cites:
+    - source: retys
+  - text: Cédula de identificación fiscal (RFC)
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales en sentido positivo
+    cites:
+    - source: retys
+  - text: Itinerarios (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Recorridos (Formato "KMZ")
+    cites:
+    - source: retys
+  - text: Inventario del parque vehicular (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Padrón de operadores (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Croquis y domicilio de parques de encierro
+    cites:
+    - source: retys
+  - text: Póliza, constancia o carta cobertura de responsabilidad civil global (Formato EXCEL y PDF)
+    cites:
+    - source: retys
+  - text: Contratos o convenios celebrados con terceros, relacionados con la prestación del servicio público de
+      transporte
+    cites:
+    - source: retys
+  - text: Señalar correo electrónico, domicilio para oír y recibir notificaciones y números telefónicos de contacto
+    cites:
+    - source: retys
+  - text: Presentar toda la información y documentos señalados en formato digital. deberán ser enviados a los correos
+      electrónicos que para tal efecto señale el Instituto
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - ACUDIR A LAS OFICINAS DEL INSTITUTO DE MOVILIDAD SUSTENTABLE Y PRESENTAR LA DOCUMENTACIÓN REQUERIDA
+  notes: Requisitos concesión de transporte de pasajeros en la modalidad de "personal"
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Apartado L, Inciso 4, Subinciso A, Numeral 1
+- source: ley2
+  pinpoint: Artículo 11, Fracción I, Apartado L, Inciso 4, Subinciso B, Numeral 1
+- source: ley3
+  pinpoint: Artículo 134
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 787: Solicitud de expedición de concesión de transporte público masivo, de personal o turístico'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/787
+    version_date: 23/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Expedición de Concesión de Transporte Público Masivo, de Personal o Turístico.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

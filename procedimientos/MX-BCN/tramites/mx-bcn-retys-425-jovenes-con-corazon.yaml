@@ -1,0 +1,127 @@
+id: mx-bcn-retys-425-jovenes-con-corazon
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Jóvenes con Corazón
+summary: Se busca promover una formación integral en los jóvenes del estado a través de talleres, conferencias y
+  módulos de atención en escuelas y otras instalaciones educativas ya sean públicas o privadas, fomentando su desarrollo
+  y concientización sobre temas de interés.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 425
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/425
+  homoclave: BC-INJUVE-004
+who_can:
+- Interesado
+when: Cuando sea necesario
+result: Información por medio de talleres, conferencias y charlas
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Atención Integral a la Juventud
+  address: 'Boulevard Adolfo López Mateos y Prolongación Avenida Larroque  #S/N, Fraccionamiento Caliss, Mexicali,
+    21010'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Una solicitud dirigida a la persona titular de la Director General del Instituto firmada por el Director
+      del plantel, centro educativo u organismo.
+    cites:
+    - source: retys
+  - text: La solicitud puede ser por medio de oficio, a través de correo electrónico (instituto.integral.delajuventudebc@gmail.com)
+      o llamada telefónica (686 568 4009 ext 105).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - La solicitud se entrega mediante oficio de manera presencial y también a través de correo electronico (jovenesconelcorazon.juventudbc@gmail.com)
+      al Instituto de la Juventud del Estado de Baja California.
+    - Se notifica por llamada telefónica a la escuela solicitante para confirmar dicha solicitud y se le proporciona
+      el catálogo de pláticas preventivas que maneja el Instituto.
+    - Se agenda el día, la hora, el lugar y el tema seleccionado por parte de la escuela para confirmar asistencia
+      en la misma llamada o por correo electrónico.
+    - El Instituto de la Juventud del Estado de Baja California proporciona las listas de asistencia para los alumnos
+      y la ficha de impacto de los jóvenes participantes en la escuela en el mismo día de la plática.
+    - Por parte del Instituto de la Juventud del Estado de Baja California, se proporcionará el apoyo del programa,
+      que son las plâticas preventivas.
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 83, Fracción XVIII.
+- source: ley2
+  pinpoint: 39, V,VI,IX
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: La solicitud se entrega mediante oficio de manera presencial y también a través de correo electronico
+    (jovenesconelcorazon.juventudbc@gmail.com) al Instituto de la Juventud del Estado de Baja California.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se notifica por llamada telefónica a la escuela solicitante para confirmar dicha solicitud y se le proporciona
+    el catálogo de pláticas preventivas que maneja el Instituto.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se agenda el día, la hora, el lugar y el tema seleccionado por parte de la escuela para confirmar asistencia
+    en la misma llamada o por correo electrónico.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Instituto de la Juventud del Estado de Baja California proporciona las listas de asistencia para los
+    alumnos y la ficha de impacto de los jóvenes participantes en la escuela en el mismo día de la plática.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Por parte del Instituto de la Juventud del Estado de Baja California, se proporcionará el apoyo del programa,
+    que son las plâticas preventivas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 425: Jóvenes con Corazón'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/425
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

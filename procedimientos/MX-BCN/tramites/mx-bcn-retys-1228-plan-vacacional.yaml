@@ -1,0 +1,130 @@
+id: mx-bcn-retys-1228-plan-vacacional
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Plan Vacacional
+summary: El Instituto del Deporte y Cultura Física de Baja California invita a todas las niñas y niños de Mexicali,
+  Tijuana y Ensenada a su Plan Vacional el cuál tiene un duración de 3 semanas.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1228
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1228
+  homoclave: BC-INDEBC-004
+who_can:
+- Tutor
+- Otro
+when: Las inscripciones se encuentran abiertas hasta el inicio del plan vacacional, el cuál se celebra en julio
+  de cada año
+result: Un curso de verano en que se aprenderá de forma divertida diferentes disciplinas deportivas en las mejores
+  instalaciones de todo el Estado
+cost:
+  type: fijo
+  amount_mxn: 1800.0
+  text: 'COSTO: $1,800.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 semanas
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Activación Física y Deporte para todos
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Tijuana
+  name: Departamento de Activación Física y Deporte para Todos
+  address: 'Circuito Vial Sur #s/n, UABC, Universidad Otay, Tijuana, 22427'
+- municipality: Ensenada
+  name: Departamento de Activación Física y Deporte para Todos
+  address: 'Boulevard de los lagos #s/n, Fraccionamiento Valle Dorado, Ensenada, 22890'
+scenarios:
+- name: Niñas, niños y jóvenes
+  requirements:
+  - text: Presentar pago de inscripción (ficha de registro)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento original
+    cites:
+    - source: retys
+  - text: 2 fotografías tamaño infantil a color o blanco y negro
+    cites:
+    - source: retys
+  - text: Formato de inscripción
+    cites:
+    - source: retys
+  - text: Carta responsiva del padre o tutor
+    cites:
+    - source: retys
+  - text: Presentar certificado médico
+    cites:
+    - source: retys
+  - text: Tener de 6 a 13 años de edad
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Revisar convocatoria
+    - Revisar folleto informativo
+    - Realizar el pago en el área de caja
+    - Presentarse la niña o niño en la fecha indicada para participar en el Plan Vacacional
+  notes: Corresponde a un curso de verano en que se aprenderá de forma divertida diferentes disciplinas deportivas
+    en las mejores instalaciones del Estado
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción XXIV y artículo 26, fracción VII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Revisar convocatoria
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisar folleto informativo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago en el área de caja
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Presentarse la niña o niño en la fecha indicada para participar en el Plan Vacacional
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1228: Plan Vacacional'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1228
+    version_date: 10/Junio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

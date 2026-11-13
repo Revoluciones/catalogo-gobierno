@@ -1,0 +1,105 @@
+id: mx-bcn-retys-1702-inscripcion-en-la-bienal-fotografica-de-baja-calif
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción en la Bienal Fotográfica de Baja California
+summary: Los artistas visuales participen en la bienal fotográfica de Baja California y concursen por premios económicos,
+  la promoción y difusión a través de exposiciones de las obras premiadas y seleccionadas.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1702
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1702
+  homoclave: BC-SC-013
+who_can:
+- Representante Legal
+- Interesado
+when: Consultar la convocatoria en la página
+result: Premio, Mención Honorífica o Constancia de Selección según sea el caso.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Museos y Galerías
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Atender requerimientos de convocatoria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Entrega la obra fotográfica
+    - Personal de la Secretaría de Cultura te entregara el recibo de la obra
+    - Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+    - Personal de la Secretaría de Cultura anuncia ganadores
+    - Ceremonia de inauguración y premiación por parte de la Secretaría de Cultura
+  notes: Artístas visuales, fotógrafos.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 27, fracción V.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrega la obra fotográfica
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura te entregara el recibo de la obra
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura anuncia ganadores
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Ceremonia de inauguración y premiación por parte de la Secretaría de Cultura
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1702: Inscripción en la Bienal Fotográfica de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1702
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción a la Bienal Fotográfica de Baja California. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

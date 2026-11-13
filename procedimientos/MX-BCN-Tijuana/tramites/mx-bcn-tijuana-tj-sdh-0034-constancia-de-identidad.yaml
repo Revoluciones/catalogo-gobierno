@@ -1,0 +1,86 @@
+id: mx-bcn-tijuana-tj-sdh-0034-constancia-de-identidad
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Identidad
+title: Constancia de Identidad
+summary: Carta de identidad con vigencia de 90 días para personas sin identificación oficial.
+authority:
+  name: Secretaría de Desarrollo Humanista (Ayuntamiento de Tijuana)
+  unit: Dirección Municipal de Atención al Migrante (DMAM)
+official_ids:
+  homoclave: TJ-SDH-0034
+who_can:
+- Interesado
+when: Cuando la persona connacional no cuente con una identificación oficial y necesite realizar algún trámite
+result: Constancia
+requirements:
+- text: CURP
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Dos fotografías tamaño infantil a color
+  cites:
+  - source: remutys
+  original_or_copy: original, 2 copia(s)
+- text: Copia del INE del padre, madre o tutor en caso de ser menor de edad
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Si el padre o la madre no pueden estar presentes, es obligatorio que asista el tutor legal del menor con
+    el documento que lo acredita como tal.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: vigencia
+  text: 90 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección Municipal de Atención al Migrante (DMAM)
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737000 ext. 7022
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDH-0034: Constancia de Identidad'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDH-0034
+    version_date: '2026-08-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Dictamen XXII-GL-10/2017, para la emisión de constancia de identidad.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Otros%20Documentos%20Normativos/49_20241113102305311_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Ser de nacionalidad mexicana, no contar con identificación oficial, que la información sea verídica
+  y que cumpla con los requisitos'

@@ -1,0 +1,122 @@
+id: mx-bcn-retys-1537-hospitalizacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Hospitalización
+summary: Proporcionar internamiento A pacientes que requieren atención médica continua con fines de diagnóstico,
+  tratamiento de enfermedades que afecten su calidad de vida la cual no se logra restablecer en un periodo de 24
+  horas y se requiera más tiempo de convalecencia.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1537
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1537
+  homoclave: BC-ISESALUD-017
+who_can:
+- Interesado
+when: Cuando se requiera atención médica continua con fines de diagnóstico, tratamiento o rehabilitación de enfermedades
+  que afecten la calidad de vida
+result: Restablecimiento de la salud
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 8 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Del Hospital #S/N, CENTRO CÍVICO , Mexicali, 21000'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Tijuana
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Tecate
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+scenarios:
+- name: Internamiento a Pacientes
+  requirements:
+  - text: La mayoría de las hospitalizaciones son a través del servicio de urgencias, en donde el médico tratante
+      realizará las gestiones técnicas y administrativas para el ingreso del paciente al servicio de hospitalización
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Médico de consulta externa o urgencias realizará interrogatorio, exploración física del paciente y determinará
+      si requiere hospitalización, iniciará gestiones administrativas para realizar referencia al área de hospitalización
+      como son entrega de expediente clínico y solicitud de hospitalización.
+    - En el área de hospitalización se continuará la atención del paciente hasta que las condiciones clínicas del
+      paciente determinen su egreso, traslado a otro hospital o defunción.
+  notes: Es el servicio destinado al internamiento de pacientes que requieren atención médica continua para establecer
+    un diagnóstico, recibir tratamiento y dar seguimiento a su padecimiento.
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Médico de consulta externa o urgencias realizará interrogatorio, exploración física del paciente y determinará
+    si requiere hospitalización, iniciará gestiones administrativas para realizar referencia al área de hospitalización
+    como son entrega de expediente clínico y solicitud de hospitalización.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: En el área de hospitalización se continuará la atención del paciente hasta que las condiciones clínicas
+    del paciente determinen su egreso, traslado a otro hospital o defunción.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1537: Hospitalización'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1537
+    version_date: 25/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-016-SSA3-2012, Que Establece las Características Mínimas de Infraestructura
+      y Equipamiento de Hospitales y Consultorios de Atención Médica Especializada.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios de Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

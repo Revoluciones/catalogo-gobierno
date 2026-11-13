@@ -1,0 +1,151 @@
+id: mx-bcn-retys-688-constancia-de-situacion-fiscal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de Situación Fiscal
+summary: La expedición de un documento que haga constar que el contribuyente se encuentra activo en el Padrón Estatal
+  de Causantes, con cierto domicilio fiscal y un correcto cumplimiento de todas sus obligaciones fiscales ante el
+  Estado, considerando la posible existencia de créditos fiscales vigentes y previamente formalizados.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 688
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/688
+  homoclave: BC-SH-017
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo el contribuyente requiera su constancia de Situación Fiscal
+result: Constancia emitida y sellada por las Oficinas de Recaudación y Rentas del Estado.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Sujeto a la tabla de Actualización de Derechos 2026 Ley de Ingresos del Estado artículo
+    Séptimo transitorio.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Recaudación de Rentas de Mexicali
+  address: 'Calzada Independecia #994, Centro Cívico , Mexicali, 21000'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Copia de identificación oficial con fotografía vigente (INE, pasaporte mexicano vigente, cédula profesional,
+      matrícula consular, cartilla militar y/o licencia de conducir) del contribuyente, persona física interesada
+      o del representante legal, según sea el caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano deberá acudir físicamente a la oficina de recaudación de rentas del estado más cercana a su domicilio
+      fiscal.
+    - Solicitar al asesor de la recaudación de manera verbal la constancia de situación fiscal.
+    - El servidor en turno solicitará al contribuyente o Representante Legal los requisitos para procesar el trámite.
+    - Una vez recibidos los documentos el servidor envía a contribuyente o representante legal a realizar el pago
+      correspondiente a cajas y regresar con recibo pagado.
+    - Una vez realizado el pago, se le recoge la copia del recibo pagado y se indica al contribuyente que su constancia
+      le será entregada en un tiempo de un día hábil, a efecto de procesar la información y certificar dicho documento
+      mediante la firma del recaudador titular de dicha oficina.
+    - Finalmente, se le indica regresar al día siguiente (hábil) y para la entrega la Constancia correspondiente.
+  notes: La expedición de un documento que haga constar que el contribuyente se encuentra activo en el padrón estatal
+    de causantes, con cierto domicilio fiscal y un correcto cumplimiento de todas sus obligaciones fiscales ante
+    el estado, considerando la posible existencia de créditos fiscales vigentes y previamente formalizados (Certificación
+    de no adeudo)
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 18 fracción I inciso E).
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano deberá acudir físicamente a la oficina de recaudación de rentas del estado más cercana a
+    su domicilio fiscal.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar al asesor de la recaudación de manera verbal la constancia de situación fiscal.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor en turno solicitará al contribuyente o Representante Legal los requisitos para procesar el
+    trámite.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez recibidos los documentos el servidor envía a contribuyente o representante legal a realizar el
+    pago correspondiente a cajas y regresar con recibo pagado.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago, se le recoge la copia del recibo pagado y se indica al contribuyente que su
+    constancia le será entregada en un tiempo de un día hábil, a efecto de procesar la información y certificar
+    dicho documento mediante la firma del recaudador titular de dicha oficina.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Finalmente, se le indica regresar al día siguiente (hábil) y para la entrega la Constancia correspondiente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 688: Constancia de Situación Fiscal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/688
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal 2026.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

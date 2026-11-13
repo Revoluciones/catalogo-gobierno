@@ -1,0 +1,821 @@
+id: mx-bcn-retys-274-manifestacion-de-impacto-ambiental-modalidad-gener
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Manifestación de Impacto Ambiental Modalidad General
+summary: 'Documento mediante el cual se evalúa la viabilidad ambiental de una obra o actividad, asegurando su cumplimiento
+  con la normativa vigente. Por su complejidad, se dividieron en grupos: A) Obras o actividades señaladas en las
+  fracciones II, IV, VIII, IX, X, XII y XIII del artículo 13 del Reglamento en la materia; B) Parques industriales;
+  C) Sistemas de almacenamiento, confinamiento, recuperación, reciclaje, incineración, tratamiento o disposición
+  de residuos de manejo especial (art. 13 fracc. V del regl.); D) Fraccionamientos habitacionales que se ubiquen
+  fuera de los centros de población (art. 13 fracc. III del regl.); E) Pétreos (art. 13 fracc. VII del regl.); F)
+  Obras o actividades ubicadas dentro de áreas naturales protegidas de competencia estatal y municipal (art. 13
+  fracc. XI del regl.); G) Carreras fuera de carretera, Rally y paseos, utilizando vehículos automotores, y H) Tratamiento,
+  confinamiento, o disposición de residuos sólidos urbanos.'
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 274
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/274
+  homoclave: BC-SMADS-042
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera evaluar el impacto ambiental de una obra o actividad.
+result: Resolución administrativa en materia de impacto ambiental.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Grupos A), B) y C): $22,625.18 Moneda Nacional. Grupos D), E), F) y G): $32,429.42 Moneda
+    Nacional. Grupo H): $32,429.42 Moneda Nacional. Costo actualizado para el mes de noviembre 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Los Grupos E), G) y H), regularmente están sujetos a un plazo
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física Grupo A)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12893
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona interesada que pretende realizar una obra o actividad que requiere ser evaluada en materia de impacto
+    ambiental.
+- name: Persona Moral Grupo A)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12902
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad que requiere ser evaluada en materia de impacto ambiental.
+- name: Persona Física Grupo C)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12911
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberán complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes al manejo de residuos de manejo especial.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12913
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar una obra o actividad relativa a sistemas de almacenamiento, confinamiento,
+    recuperación, reciclaje, incineración, tratamiento o disposición de residuos de manejo especial.
+- name: Persona Moral Grupo C)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12921
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberán complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes al manejo de residuos de manejo especial.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12923
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad relativa a sistemas de almacenamiento, confinamiento, recuperación, reciclaje,
+    incineración, tratamiento o disposición de residuos de manejo especial.
+- name: Persona Física Grupos B) y D)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12931
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes a fraccionamientos habitacionales, turísticos e industriales.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12933
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende la construcción y/u operación de un fraccionamiento habitacional o turístico que se
+    ubiquen fuera del centro de población o de un parque industrial.
+- name: Persona Moral Grupos B) y D)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12941
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes a fraccionamientos habitacionales, turísticos e industriales.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12950
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que pretende
+    la construcción y/u operación de un fraccionamiento habitacional o turístico que se ubiquen fuera del centro
+    de población o de un parque industrial.
+- name: Persona Física Grupo E)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12951
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes al aprovechamiento de materiales pétreos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12953
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar las actividades de extracción, explotación y tratamiento de minerales o substancias
+    no reservadas a la federación que constituyan depósitos de naturaleza semejante a los componentes de los suelos,
+    tales como arena, grava, roca, polvo de sílice, o productos de su fragmentación, utilizados para la fabricación
+    de materiales de construcción u ornamento, así como para su exportación.
+- name: Persona Moral Grupo E)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12962
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes al aprovechamiento de materiales pétreos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12961
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que pretende
+    realizar las actividades de extracción, explotación y tratamiento de minerales o substancias no reservadas a
+    la federación que constituyan depósitos de naturaleza semejante a los componentes de los suelos, tales como
+    arena, grava, roca, polvo de sílice, o productos de su fragmentación, utilizados para la fabricación de materiales
+    de construcción u ornamento, así como para su exportación.
+- name: Persona Física Grupo F)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12971
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con la Guía para presentar la Manifestación de Impacto Ambiental, Modalidad
+      Áreas Naturales Protegidas.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12973
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar obras o actividades ubicadas dentro de áreas naturales protegidas de competencia
+    estatal y municipal.
+- name: Persona Moral Grupo F)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12981
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá complementar su solicitud con la Guía para presentar la Manifestación de Impacto Ambiental, Modalidad
+      Áreas Naturales Protegidas.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12983
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que pretende
+    realizar obras o actividades ubicadas dentro de áreas naturales protegidas de competencia estatal y municipal.
+- name: Persona Física Grupo G)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12991
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberán complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes a carreras fuera de carretera.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12993
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar eventos denominados carreras fuera de carretera (Off Road), Rally (competición
+    deportiva de automóviles o motocicletas, celebrada en carreteras abiertas y otros caminos) y paseos, utilizando
+    vehículos automotores (automóvil, motocicleta, cuatrimoto, etc.) en general.
+- name: Persona Moral Grupo G)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13001
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberán complementar su solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de
+      proyectos referentes a carreras fuera de carretera.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13003
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que pretende
+    realizar eventos denominados carreras fuera de carretera (Off Road), Rally (competición deportiva de automóviles
+    o motocicletas, celebrada en carreteras abiertas y otros caminos) y paseos, utilizando vehículos automotores
+    (automóvil, motocicleta, cuatrimoto, etc.) en general.
+- name: Persona Física Grupo H)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13011
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá cumplir con la NORMA Oficial Mexicana NOM-083-SEMARNAT-2003, Especificaciones de protección ambiental
+      para la selección del sitio, diseño, construcción, operación, monitoreo, clausura y obras complementarias
+      de un sitio de disposición final de residuos sólidos urbanos y de manejo especial, y presentar los estudios
+      y la información señalada en la misma.
+    cites:
+    - source: retys
+  - text: En el caso de proyectos que impliquen el manejo de residuos de manejo especial, deberán complementar su
+      solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de proyectos referentes al manejo
+      de residuos de manejo especial.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13014
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar el desarrollo de obras y actividades relacionadas con el tratamiento, confinamiento
+    o disposición de residuos sólidos urbanos.
+- name: Persona Moral Grupo H)
+  requirements:
+  - text: Formato para presentar la Manifestación de Impacto Ambiental, Modalidad General, debidamente requisitado,
+      de conformidad con su Instructivo de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13022
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Deberá cumplir con la NORMA Oficial Mexicana NOM-083-SEMARNAT-2003, Especificaciones de protección ambiental
+      para la selección del sitio, diseño, construcción, operación, monitoreo, clausura y obras complementarias
+      de un sitio de disposición final de residuos sólidos urbanos y de manejo especial, y presentar los estudios
+      y la información señalada en la misma.
+    cites:
+    - source: retys
+  - text: En el caso de proyectos que impliquen el manejo de residuos de manejo especial, deberán complementar su
+      solicitud con los Lineamientos, complementarios a la MIA, para el desarrollo de proyectos referentes al manejo
+      de residuos de manejo especial.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13025
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en la Manifestación de Impacto Ambiental,
+      Modalidad General.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que pretende
+    realizar el desarrollo de obras y actividades relacionadas con el tratamiento, confinamiento o disposición de
+    residuos sólidos urbanos.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción I, inciso B), numeral 1, incisos a), b), c) y d)
+- source: ley2
+  pinpoint: Artículos 41, 42, 44 y 46
+- source: ley3
+  pinpoint: Artículos 4 fracción VIII, 6, 10 fracciones II y III, 13, 14, 15, 23 fracción II y 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de la resolución o solicitud de información adicional.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 274: Manifestación de Impacto Ambiental Modalidad General'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/274
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Impacto
+      Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Recepción y Evaluación de Maniestación de Impacto Ambiental, Modalidad General. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

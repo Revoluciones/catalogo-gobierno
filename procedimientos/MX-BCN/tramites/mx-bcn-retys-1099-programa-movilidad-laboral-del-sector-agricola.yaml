@@ -1,0 +1,158 @@
+id: mx-bcn-retys-1099-programa-movilidad-laboral-del-sector-agricola
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Movilidad Laboral del Sector Agrícola
+summary: Apoyar a los buscadores de empleo de otras entidades federativas a que obtengan un empleo digno en el sector
+  agrícola.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1099
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1099
+  homoclave: BC-STPS-005
+who_can:
+- Interesado
+when: Cuando se requiera
+result: Vinculación con empresas del sector agrícola
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección del Servicio Nacional del Empleo BC
+  address: 'Avenida de los Pioneros #1100, Centro Cívico y Comercial, Mexicali, 21000'
+- municipality: Tijuana
+  name: Unidad Regional Tijuana del Servicio Nacional del Empleo
+  address: 'Bulevar Federico Benitez #14785, Las Brisas, Tijuana, 22115'
+- municipality: Ensenada
+  name: Unidad Regional Ensenada del Servicio Nacional del Empleo
+  address: 'Del Puerto #351, Playa Ensenada, Ensenada, 22880'
+- municipality: San Quintín
+  name: Módulo San Quintín del Servicio Nacional del Empleo
+  address: 'Avenida A #s/n, Centro de Gobierno, San Quintín, 22930'
+scenarios:
+- name: Desempleado
+  requirements:
+  - text: Ser buscador de trabajo
+    cites:
+    - source: retys
+  - text: 18 años o más
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Traer documentación a la oficina
+    - Se le proporciona información
+    - Llenado de formularios
+  notes: Mayor de 18 años
+legal_basis:
+- source: ley1
+  pinpoint: D.O.F. 26-01-2017
+- source: ley2
+  pinpoint: D.O.F. 31-12-1982 y sus reformas
+- source: ley3
+  pinpoint: D.O.F. 23-08-2019
+- source: ley4
+  pinpoint: D.O.F. 11-04-2003
+- source: ley5
+  pinpoint: D.O.F. 01-04-1970 Y SUS REFORMAS
+- source: ley6
+  pinpoint: D.O.F. 28-12-2022
+- source: ley7
+  pinpoint: D.O.F. 05-02-1917 y sus reformas
+- source: ley8
+  pinpoint: D.O.F. 04-08-1994 y sus reformas
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Traer documentación a la oficina
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le proporciona información
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenado de formularios
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1099: Programa Movilidad Laboral del Sector Agrícola'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1099
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Responsabilidades Administrativas
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interior de la Secretaría del Trabajo y Previsión Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley Federal para Prevenir y Eliminar la Discriminación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: ley
+    official: true
+    title: Reglas de Operación del Programa de Apoyo al Empleo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley7:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley8:
+    type: ley
+    official: true
+    title: Ley Federal del Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Movilidad Laboral. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

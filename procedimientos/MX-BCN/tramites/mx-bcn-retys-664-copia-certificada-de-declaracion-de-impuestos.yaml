@@ -1,0 +1,159 @@
+id: mx-bcn-retys-664-copia-certificada-de-declaracion-de-impuestos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Copia Certificada de declaración de impuestos
+summary: La expedición de copia certificada de algún documento que obre en los archivos de las recaudaciones de
+  rentas del estado, propio del contribuyente, siempre y cuando el motivo que declare justifique razonablemente
+  el hecho de no contar con el original del mismo.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 664
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/664
+  homoclave: BC-SH-015
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el contribuyente requiera copia certificada de declaración (es) del pago de sus impuestos.
+result: Copia certificada
+cost:
+  type: variable
+  amount_mxn: 320.41
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Copia certificada por hoja $320.41 *No incluye costos de contribuciones
+    municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Recaudación de Rentas de Mexicali
+  address: 'Calzada Independecia #994, Centro Cívico , Mexicali, 21000'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Copias certificadas de declaraciones de pago de Impuestos
+  requirements:
+  - text: Copia de comprobante de domicilio fiscal, no mayor a 3 meses de antigüedad
+    cites:
+    - source: retys
+  - text: Original y copia de IDENTIFICACIÓN OFICIAL con fotografía vigente (INE, pasaporte mexicano vigente, cédula
+      profesional, matrícula consular, cartilla militar y/o licencia de conducir) del contribuyente (persona física/moral).
+    cites:
+    - source: retys
+  - text: Copia del Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  - text: Fecha del impuesto declarado y periodo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El contribuyente deberá acudir a la Recaudación de Rentas y dirigirse al área de cajas o ventanilla única.
+    - El servidor público de la recaudación atenderá al contribuyente que solicita obtener una(s) copia certificada.
+    - El servidor público solicitará al contribuyente la información para iniciar el trámite.
+    - El servidor público deberá informar al contribuyente que la entrega del documento solicitado se realizará
+      de 3 a 5 días hábiles.
+    - El servidor público solicitará al contribuyente el pago correspondiente del trámite solicitado
+    - Una vez procesado el cobro y certificado el documento solicitado mediante firma del recaudador titular de
+      dicha oficina, el servidor público entregará el original del documento al contribuyente en el tiempo estipulado.
+    - Terminado lo anterior el contribuyente se retira de la Recaudación de Rentas.
+  notes: Proporcionar a todo contribuyente que lo solicite, copia certificada de sus declaraciones que obran en
+    los archivos de la Recaudación de Rentas del Estado, siempre que correspondan al contribuyente.
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 18, FRACCIÓN I.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El contribuyente deberá acudir a la Recaudación de Rentas y dirigirse al área de cajas o ventanilla única.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El servidor público de la recaudación atenderá al contribuyente que solicita obtener una(s) copia certificada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público solicitará al contribuyente la información para iniciar el trámite.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público deberá informar al contribuyente que la entrega del documento solicitado se realizará
+    de 3 a 5 días hábiles.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El servidor público solicitará al contribuyente el pago correspondiente del trámite solicitado
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez procesado el cobro y certificado el documento solicitado mediante firma del recaudador titular
+    de dicha oficina, el servidor público entregará el original del documento al contribuyente en el tiempo estipulado.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Terminado lo anterior el contribuyente se retira de la Recaudación de Rentas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 664: Copia Certificada de declaración de impuestos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/664
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Copias  certificadas de declaraciones de pago  de  impuestos  que  obren  en  las Recaudaciones
+  de Rentas del Estado. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,108 @@
+id: mx-bcn-retys-1236-desarrollo-de-talentos-deportivos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Desarrollo de Talentos Deportivos
+summary: Proporcionar a las niñas, niños y jóvenes de 7 a 17 años de edad, detectados como talentos deportivos,
+  los métodos y medios necesarios para la práctica deportiva de forma sistemática y con seguimiento técnico-metodológico
+  con el apoyo de entrenadores, médicos y especialistas en las ciencias aplicadas al deporte, psicólogos deportivos
+  y preparadores físicos.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1236
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1236
+  homoclave: BC-INDEBC-009
+who_can:
+- Interesado
+- Tutor
+when: Cuando la niña, niño y joven detectado requieran el servicio
+result: Los métodos y medios necesarios para la práctica deportiva de forma sistemática y con seguimiento técnico-metodológico
+  con el apoyo de entrenadores
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Años'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Talentos Deportivos
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Ensenada
+  name: Departamento de Talentos Deportivos
+  address: 'Circuito Vial Sur #s/n, UABC, Universidad Otay, Ensenada, 22427'
+- municipality: Ensenada
+  name: Departamento de Talentos Deportivos
+  address: 'Boulevard de los lagos #s/n, Fraccionamiento Valle Dorado, Ensenada, 22890'
+scenarios:
+- name: Niñas, niños y jóvenes de 7 a 17 años de edad
+  requirements:
+  - text: Ser talento deportivo
+    cites:
+    - source: retys
+  - text: Tener domicilio en el Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tener las características somatotípicas adecuadas según el deporte (edad, estatura, peso)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la documentación requerida con el área responsable
+    - Asistir a las instalaciones del instituto en los horarios que indique el programa
+  notes: Deportistas detectados y en desarrollo
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción XXIV y 96 fracción XIV
+- source: ley2
+  pinpoint: Artículo 49. fracción V
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida con el área responsable
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Asistir a las instalaciones del instituto en los horarios que indique el programa
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1236: Desarrollo de Talentos Deportivos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1236
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Fisíca y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto del Deporte y la Cultura Fisíca de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

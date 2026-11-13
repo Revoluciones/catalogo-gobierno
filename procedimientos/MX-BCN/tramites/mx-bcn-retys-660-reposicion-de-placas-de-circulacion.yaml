@@ -1,0 +1,146 @@
+id: mx-bcn-retys-660-reposicion-de-placas-de-circulacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición de Placas de Circulación
+summary: Cuando se requiera reponer placas en caso de robo, extravío, deterioro o daño que impida la clara visualización.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 660
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/660
+  homoclave: BC-SH-011
+who_can:
+- Interesado
+when: Cuando sea necesario reponer placas debido a robo, extravío, deterioro o daño que impida una clara visualización.
+result: Placas de circulación
+cost:
+  type: variable
+  amount_mxn: 1492.72
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Por reposición de placas de servicio particular: $1,492.72 *No
+    incluye costo de contribuciones municipales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Presentar en original y copia de Licencia de conducir vigente del Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tratándose de deterioro o daño, presentar el elemento de identificación vehicular que se haya deteriorado
+      o dañado
+    cites:
+    - source: retys
+  - text: Tratándose de robo o extravío de placas de circulación, presentar el reporte respectivo ante el Ministerio
+      Público que corresponda. La Recaudación de Rentas del Estado podrá determinar los supuestos de extravío en
+      los cuales no se requerirá el citado reporte, señalando el documento que lo suplirá
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10973
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de Recaudación de Rentas del Estado
+    - Realizar el pago de derechos e impuestos correspondiente
+    - Pasar a la ventanilla de entrega de láminas
+  notes: Trámite para reponer placas debido a robo, extravío, deterioro o daño que impida una clara visualización.
+legal_basis:
+- source: ley1
+  pinpoint: '20'
+- source: ley2
+  pinpoint: Artículo 10 Fracción III, Número 4.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos e impuestos correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasar a la ventanilla de entrega de láminas
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 660: Reposición de Placas de Circulación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/660
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY QUE REGULA LOS SERVICIOS DE CONTROL VEHICULAR EN EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

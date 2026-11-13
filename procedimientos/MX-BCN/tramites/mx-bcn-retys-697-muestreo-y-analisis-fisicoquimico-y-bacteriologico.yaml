@@ -1,0 +1,132 @@
+id: mx-bcn-retys-697-muestreo-y-analisis-fisicoquimico-y-bacteriologico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Muestreo y análisis fisicoquímico y bacteriológico. forma individual
+summary: Realización de muestreo y análisis para particulares, empresas y gobierno.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 697
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/697
+  homoclave: BC-CESPM-031
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el servicio
+result: Reportes de muestreo
+cost:
+  type: variable
+  amount_mxn: 1085.27
+  text: 'COSTO VARIABLE: $ 1,085.27. el costo del servicio variara durante el ejerció 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 12 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Solicitud de servicio.
+    cites:
+    - source: retys
+  - text: Nombre a quien se dirige la cotización, nombre de la empresa muestreada que se reflejará en el informe.
+    cites:
+    - source: retys
+  - text: Título de concesión y/ó permiso de descarga.
+    cites:
+    - source: retys
+  - text: Condiciones físicas de la descargas a muestrear.
+    cites:
+    - source: retys
+  - text: Procesos generadores del agua a muestrear.
+    cites:
+    - source: retys
+  - text: Recibo de pago o convenir el costo del servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contactarse con departamento de control de procesos para contratar el servicio.
+    - Presentar requisitos solicitados para dar factibilidad del servicio.
+    - Recibir presupuesto emitido.
+    - Pagar en zonas comerciales.
+    - Enviar comprobante de pago al laboratorio para coordinar el servicio.
+    - Periodo de análisis referido en cotización.
+    - Informe de laboratorio.
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ART 9 PUNTO 8 INCISO j)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Contactarse con departamento de control de procesos para contratar el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar requisitos solicitados para dar factibilidad del servicio.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir presupuesto emitido.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pagar en zonas comerciales.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Enviar comprobante de pago al laboratorio para coordinar el servicio.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Periodo de análisis referido en cotización.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Informe de laboratorio.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 697: Muestreo y análisis fisicoquímico y bacteriológico. forma individual'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/697
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Análisis de laboratorio  fisicoquímico y bacteriológico. forma individual. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

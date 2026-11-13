@@ -1,0 +1,136 @@
+id: mx-bcn-retys-596-cambio-de-datos-en-la-factura
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cambio de Datos en la Factura
+summary: Realizar modificaciones en el padrón de usuarios de CESPM
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 596
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/596
+  homoclave: BC-CESPM-017
+who_can:
+- Interesado
+when: Cuando requiera el trámite.
+result: Cambio de datos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Recibo de impuesto predial actualizado o deslinde catastral.
+    cites:
+    - source: retys
+  - text: De ser necesario inspección física de la ubicación del terreno.
+    cites:
+    - source: retys
+  - text: presentar copias de RFC.
+    cites:
+    - source: retys
+  - text: Autorización de propietario o contrato de arrendamiento.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial cualquiera de las siguientes: INE, licencia de conducir, matricula consular, cédula
+      profesional, pasaporte mexicano (documentos deben estar vigentes).'
+    cites:
+    - source: retys
+  - text: Numeración asignada por el municipio.
+    cites:
+    - source: retys
+  - text: Recibo de pago de impuesto predial.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente.
+    - Cumplir con los requisitos.
+    - Recibir su factura modificada
+  notes: Escrituras
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULOS 1, 2, 5, 14, 15, 16, 17, 22, 23, 24, 25, 26, 27 Y 30
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención a usuarios de la zona comercial correspondiente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cumplir con los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir su factura modificada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 596: Cambio de Datos en la Factura'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/596
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY QUE REGLAMENTA EL SERVICIO DE AGUA POTABLE EN EL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

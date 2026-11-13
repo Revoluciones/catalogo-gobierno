@@ -1,0 +1,139 @@
+id: mx-bcn-retys-498-proyectos-productivos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Proyectos Productivos
+summary: Apoyo económico destinado a impulsar proyectos productivos que mejoren la economía de las familias vulnerables.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 498
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/498
+  homoclave: BC-SB-011
+who_can:
+- Interesado
+when: Cuando se requiera el apoyo económico para un proyecto productivo
+result: Apoyo económico
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Copia Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de ubicación del negocio (menor a 3 meses de emitido)
+    cites:
+    - source: retys
+  - text: Presupuesto original del bien a adquirir (de 1 hasta 3 proveedores)
+    cites:
+    - source: retys
+  - text: Copia de contrato de arrendamiento (en el caso de que sea local rentado)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal del proveedor
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada para entrevista inicial
+    - Revisión de documentación y llenado de formato de solicitud
+    - Realizar visita de verificación por parte del personal de la Secretaría
+    - Seguimiento de la solicitud del ciudadano
+    - Notificación al ciudadano del estatus de su trámite
+  notes: Requisitos para la solicitud del apoyo del programa proyectos productivos
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada para entrevista
+    inicial
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisión de documentación y llenado de formato de solicitud
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar visita de verificación por parte del personal de la Secretaría
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Seguimiento de la solicitud del ciudadano
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Notificación al ciudadano del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 498: Proyectos Productivos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/498
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: ROP (Ley de Desarrollo Social para el Estado de Baja California)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

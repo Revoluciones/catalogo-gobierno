@@ -1,0 +1,155 @@
+id: mx-bcn-retys-535-inscripcion-de-asociaciones-sociedades-civiles-y-r
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Asociaciones, Sociedades Civiles y Religiosas
+summary: Inscripción de Constitución de Asociaciones, Sociedades Civiles, Religiosas, así como de las actas de asamblea,
+  juntas administrativas o modificaciones a los estatutos de las mismas.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 535
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/535
+  homoclave: BC-DRPPC-009
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera dar publicidad frente a terceros en la que se constituyen las asociaciones y sociedades
+  civiles
+result: Registro de Inscripción o modificación con respecto a una sociedad o asociación Civil.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: octubre 2026 sociedad o asociación civil hasta por $50, 000.00 costo es de $ 4,976.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Escritura Pública
+    cites:
+    - source: retys
+  - text: En caso de asociación civil o sociedad civil, puede realizarse por contrato privado
+    cites:
+    - source: retys
+  - text: Permiso de la Secretaría de Economía, tratándose de los demás actos únicamente original de la escritura
+      pública
+    cites:
+    - source: retys
+  - text: Cubrir los derechos correspondientes
+    cites:
+    - source: retys
+  - text: En caso de constitución de Asociaciones Religiosas se deberá anexar permiso de la Secretaría de Gobernación
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral y/o a la notaria que desee el usuario
+    - Tomar turno para la emisión del recibo
+    - Presentar acta constitutiva para el recibo de pago, en caso de ser mercantil traer USB y hojas precodificadas
+    - Realizar el pago de derechos
+    - Tomar turno para ingresar la escritura
+    - Acudir el día que se asigne en el volante para recibir el trámite
+  notes: Para dar publicidad frente a terceros en la inscripción de las Asociaciones, Sociedades Civiles y Religiosas
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, fracción I, fracción VII, inciso E, párrafo I
+- source: ley3
+  pinpoint: 11, Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral y/o a la notaria que desee el usuario
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para la emisión del recibo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar acta constitutiva para el recibo de pago, en caso de ser mercantil traer USB y hojas precodificadas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para ingresar la escritura
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir el día que se asigne en el volante para recibir el trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 535: Inscripción de Asociaciones, Sociedades Civiles y Religiosas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/535
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

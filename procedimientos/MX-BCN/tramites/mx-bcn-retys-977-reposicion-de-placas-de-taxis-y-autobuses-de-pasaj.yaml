@@ -1,0 +1,104 @@
+id: mx-bcn-retys-977-reposicion-de-placas-de-taxis-y-autobuses-de-pasaj
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición de placas de taxis y autobuses de pasajeros
+summary: Consiste en solicitar la reposición de placas para taxis y autobuses de pasajeros.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 977
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/977
+  homoclave: BC-IMOS-080
+who_can:
+- Interesado
+when: Cuando la persona interesada lo solicite.
+result: Reposición de placas (taxis o autobús).
+cost:
+  type: fijo
+  amount_mxn: 1776.25
+  text: 'COSTO: $1,776.25 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Operadores del servicio de transporte
+  requirements:
+  - text: Reporte ante la Fiscalía General del Estado de Baja California de robo o extravío
+    cites:
+    - source: retys
+  - text: Identificación Oficial vigente
+    cites:
+    - source: retys
+  - text: Última tarjeta de circulación
+    cites:
+    - source: retys
+  - text: Permiso de servicio público original y digitalización
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del instituto de movilidad sustentable y presentar la documentación requerida
+  notes: Requisitos para reposición de placas para taxi y autobuses de pasajeros
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, Fracción III, Inciso 6
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del instituto de movilidad sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 977: Reposición de placas de taxis y autobuses de pasajeros'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/977
+    version_date: 24/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Reposición de Placas de Taxis y Autobuses de Pasajeros. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1400-asistencia-y-representacion-legal-en-proceso-penal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asistencia y representación legal en proceso penal
+summary: La Asistencia y representación legal en proceso penal es el servicio que puede solicitar una persona cuando
+  enfrenta una investigación o un juicio por un delito y necesita apoyo de un abogado que la oriente y la defienda
+  ante las autoridades. Se solicita cuando alguien requiere conocer sus derechos, preparar su defensa y contar con
+  acompañamiento legal durante todas las etapas del proceso penal, únicamente si no dispone de un abogado particular.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1400
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1400
+  homoclave: BC-CJ-020
+who_can:
+- Interesado
+when: Cuando lo requiera
+result: Representación jurídica
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de la Defensoría Pública del Estado y Coordinación Estatal del Área Laboral
+  address: 'Calz. De Los Presidentes #1185, Río Nuevo, Mexicali, 21120'
+- municipality: Mexicali
+  name: Área Penal, Guadalupe Victoria, Mexicali
+  address: 'Calle Gizel Y Cerrada De Las Orquídeas #S/N, Fracc. Valle De Guadalupe, Mexicali, 21720'
+- municipality: Mexicali
+  name: Área Penal, Ciudad Morelos, Mexicali
+  address: 'Av. Leonardo Guillén Y General Rodolfo Sánchez Taboada #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Área Penal, Tijuana
+  address: 'Vía Rápida José Fimbres Moreno #Loc. 41,43, Fracc. San José, Tijuana, 22226'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: Playas de Rosarito
+  name: Área Penal, Rosarito
+  address: 'Calle General Juan Vicario #S/N, Ampl. Benito Juárez, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: No contar con representación jurídica de abogado particular o en su caso solicitar su revocación.
+    cites:
+    - source: retys
+  - text: Presentarse con el defensor público o solicitar la presencia del mismo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps: []
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, Inciso B), Fracción 8.
+- source: ley2
+  pinpoint: Artículo 2, Fracciones I y IV.
+steps: []
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1400: Asistencia y representación legal en proceso penal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1400
+    version_date: 13/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

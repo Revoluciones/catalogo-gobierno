@@ -1,0 +1,164 @@
+id: mx-bcn-tijuana-tj-sgm-0350-eventos-via-publica
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: trámite
+title: Eventos Vía Pública
+summary: Eventos Vía Pública
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Gobierno / Correspondencia
+official_ids:
+  homoclave: TJ-SGM-0350
+who_can:
+- Interesado
+result: Opinión técnica
+requirements:
+- text: Solicitud debidamente llenada, especificando cantidad de asistentes
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Escrito por parte del interesado solicitando el permiso, el cual especifique los siguiente datos:'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Escrito dirigido al Secretario de Gobierno
+  cites:
+  - source: remutys
+- text: Especificar, día, hora, lugar, motivo y debidamente firmada por el solicitante
+  cites:
+  - source: remutys
+- text: En caso de ser persona moral el solicitante, deberá acreditar la personalidad mediante un documento oficial
+    o poder notarial
+  cites:
+  - source: remutys
+- text: Copia de la identificación oficial vigente con fotografía del responsable del evento
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: En caso de desfile, caravanas, cierre de calles o eventos en la vía pública deberán solicitar factibilidad
+    a la delegación que corresponde
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: En caso de colecta, encuesta y/o volanteo, deberán anexar copia de la identificación oficial de cada una
+    de las personas encargadas del área que participen en dicha actividad
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Oficio de respuesta por parte de Seguridad Pública, en solicitud de apoyo para el evento en vía pública,
+    apoyo vial y factibilidad
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Oficio de contratación de Servicios de Protección Comercial y Vigilancia Auxiliar
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Oficio de respuesta del SITT en caso de carrera, caminata, marcha, desfile, caravanas, paso ciclista, etc.
+    que pase frente alguna estación del SITT
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: En caso de ser carrera pedestre profesional, solicitar anuencia y registro ante la Liga Municipal de Atletismo
+    de Tijuana
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contratación de servicios de ambulancia
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Deberá acudir a la Dirección de Servicios Públicos Municipales para el deposito de fianza en referencia
+    a los residuos sólidos urbanos (limpieza del lugar) generados al final del evento, según lo estipula la ley
+    de ingresos
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de Protección Civil Municipal para el evento con asistencia de hasta 499 personas
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de Protección Civil del Estado para el evento con asistencia de 500 o más personas
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Pago de derechos de permiso emitido según el monto que estipula la ley de ingresos
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Espectáculos o eventos públicos y masivos: Con fines de lucro y asistencia de 1000 o más personas: 65 UMA
+    ($7,625.15) · Espectáculos o eventos públicos y masivos: Con fines de lucro y asistencia de 999 o menos personas:
+    39 UMA ($4,575.09) · Espectáculos o eventos públicos y masivos: Sin fines de lucro y asistencia de 1,000 o más
+    personas: 26 UMA ($3,050.06) · Espectáculos o eventos públicos y masivos: Sin fines de lucro y asistencia de
+    999 o menos personas: 26 UMA ($3,050.06) · Eventos en vía pública: Carreras, caminatas, rallys, maratones y
+    eventos deportivos con fines de lucro para 500 o más personas: 45.5 UMA ($5,337.61) · Eventos en vía pública:
+    Carreras, caminatas, rallys, maratones y eventos deportivos con fines de lucro para 499 o menos personas: 32.5
+    UMA ($3,812.58) · Eventos en vía pública: Carreras, caminatas, rallys, maratones y eventos deportivos sin fines
+    de lucro para 500 o más personas: 32.5 UMA ($3,812.58) · Eventos en vía pública: Carreras, caminatas, rallys,
+    maratones y eventos deportivos sin fines de lucro para 499 o menos personas: 19.5 UMA ($2,287.55) · Eventos
+    en vía pública: Encuestas, inauguraciones, conferencias de prensa, filmaciones, exhibiciones y otros: 16.25
+    UMA ($1,906.29) · Eventos en vía pública: Filmaciones documentales, comerciales, películas, series con una participación
+    de más de 100 personas: 50 UMA ($5,865.50) · Eventos en vía pública: Filmaciones documentales, comerciales,
+    películas, series con una participación de 99 o menos personas: 25.5 UMA ($2,991.41) · Cierre total o parcial
+    de la vía pública en otros eventos no especificados: 5.53 UMA ($648.72) · Espectáculos públicos y masivos: Presentación
+    de artistas, cantantes, funciones de box, lucha libre, obras de teatro, cine, eventos deportivos, eventos culturales,
+    bailes, exposiciones, feria, verbena, festivales, congresos, exhibiciones de moda, con fines de lucro y asistencia
+    de 999 o menos personas y asistencia de 1000 o más personas: 78 UMA ($9,150.18) · Espectáculos públicos y masivos:
+    Presentación de artistas, cantantes, funciones de box, lucha libre, obras de teatro, cine, eventos deportivos,
+    eventos culturales, bailes, exposiciones, feria, verbena, festivales, congresos, exhibiciones de moda, sin fines
+    de lucro y asistencia de 999 o menos personas y y asistencia de 1000 o más personas: 52 UMA ($6,100.12) · Eventos
+    particulares y sociales: 3.25 UMA ($381.26) · Espectáculos públicos y masivos con cierre de calle, solicitados
+    por asociaciones civiles y/o instituciones de gobierno: 39 UMA ($4,575.09) · Cierre total o parcial de la vía
+    pública en otros eventos no especificados: 5.53 UMA ($648.72) · Circos y juegos mecánicos: 39 UMA ($4,575.09)
+    · En general por la recepción y expedición de permisos para espectáculos y eventos urgentes (en menos de 72
+    horas) se cobrará el doble de la tarifa: 0 UMA ($0.00) · Servicio de renta de unidad motocicleta: Por servicios
+    de vigilancia y control de tránsito en vía pública, para eventos culturales, sociales, deportivos, religiosos
+    y/o artísticos, por turno de 6 horas: 21.5 UMA ($2,522.16) · Servicios extraordinarios: Por elemento operativo
+    para servicio de protección y vigilancia para eventos masivos o no masivos culturales, sociales, deportivos,
+    religiosos y/o artísticos por turno de 6 horas: 9.32 UMA ($1,093.33) · Revisión de las condiciones de seguridad
+    en las instalaciones temporales: Exposiciones, ferias, bailes populares, car show, eventos deportivos, eventos
+    en vía pública, obras de teatro hasta 5,000 personas: 36 UMA ($4,223.16). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Gobierno / Correspondencia
+  address: Avenida Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7195
+  hours: LUNES A VIERNES DE 08:00 HRS A 03:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0350: Eventos Vía Pública'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0350
+    version_date: '2026-10-21'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 19, Fracción I - Inciso A), Inciso B) e Inciso C), Fracción II, Artículo 36 Fracción IV y V
+      y Artículo 37 Fracción VII - Inciso D) de la Ley de Ingresos del municipio de Tijuana para el Ejercicio Fiscal
+      de 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://mail.google.com/mail/u/0/#inbox Criterio para resolver: .'

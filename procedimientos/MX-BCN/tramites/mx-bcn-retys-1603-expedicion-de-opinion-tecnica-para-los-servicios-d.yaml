@@ -1,0 +1,229 @@
+id: mx-bcn-retys-1603-expedicion-de-opinion-tecnica-para-los-servicios-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Opinión Técnica para los Servicios de Agua Potable y/o Alcantarillado Sanitario
+summary: Expedición de documento mediante el cual se indica si existe o no, la posibilidad de que la CESPT ofrezca
+  el o los servicios a solicitud del interesado. Si es el caso, se establecen las condiciones a cumplir por parte
+  del solicitante para que se le pueda otorgar el servicio.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1603
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1603
+  homoclave: BC-CESPT-025
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Opinión técnica
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Terrenos de uso doméstico: $380.17 pesos Terrenos de uso comercial, industrial y otros
+    no domésticos: $772.64 pesos Para los sistemas de tratamiento (PTAR) $1,255.18 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Expedición por Primera vez
+  requirements:
+  - text: Presentar el Formulario para la solicitud de Opinión Técnica (FRM-004 Rev 09 - Solicitud de Opinión Técnica)
+      llenado y firmado, ya sea por el propietario del predio, el representante legal de la empresa propietaria
+      o el gestor; en caso de ser este último deberá presentar carta poder simple otorgada por alguno de los dos
+      primeros, anexando copia de identificaciones oficiales tanto del gestor como de quien otorga el poder.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11425
+  - text: Constancia de No Adeudo para Desarrolladores vigente, expedida por CESPT
+    cites:
+    - source: retys
+  - text: Recibo del pago total de Derechos de Conexión o Convenio de pago en parcialidades al corriente de Derechos
+      de Conexión.
+    cites:
+    - source: retys
+  - text: Recibo (s) predial(es) de los predios en estudio
+    cites:
+    - source: retys
+  - text: Croquis de localización de la zona donde se ubica el predio a desarrollar
+    cites:
+    - source: retys
+  - text: Recibo de pago por el servicio conforme a la Ley de Ingresos del Estado de Baja California vigente, cuya
+      fecha de pago no exceda una antigüedad de 30 días naturales.
+    cites:
+    - source: retys
+  - text: 'Documento para comprobar propiedad del predio en estudio, que puede ser UNO de los siguientes: • Escrituras
+      notariadas o título de propiedad del predio en estudio, inscritas en el Registro Público de la Propiedad y
+      de Comercio; • Título Agrario, para predios ejidales.'
+    cites:
+    - source: retys
+  - text: En caso de que el propietario sea una persona moral, un fideicomiso o un ejidatario, además deberá presentar
+      documento notariado (acta constitutiva, poder general, etc.) que otorgue al representante legal o fiduciario,
+      poder para ejercer actos de administración.
+    cites:
+    - source: retys
+  - text: 'Documento para verificar uso de suelo y densidad de población permitida, emitido por el Ayuntamiento
+      correspondiente, que puede ser UNO de los siguientes: • Opinión Técnica de uso de suelo favorable vigente.
+      • Constancia de zonificación de uso de suelo favorable vigente. • Dictamen de uso de suelo favorable vigente.'
+    cites:
+    - source: retys
+  - text: 'Plano certificado o deslinde catastral del polígono con cuadro de construcción conforme a coordenadas
+      de la ciudad: • En caso de utilización parcial del predio presentar plano de subdivisión, todos ellos autorizados
+      por el Ayuntamiento correspondiente. • En caso de predios en régimen en condominio deberá presentar original
+      de Certificación Cartográfica a nombre del propietario del predio, expedida por el Ayuntamiento correspondiente.'
+    cites:
+    - source: retys
+  - text: Copia del proyecto de instalaciones hidrosanitarias para aquellos desarrollos comerciales e industriales
+      que requieran un gasto de diseño mayor al establecido en la normatividad estatal vigente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en copia, la cual debe ser legible y contener el documento completo.
+    cites:
+    - source: retys
+  - text: Los planos deben presentarse en un tamaño que sea legible.
+    cites:
+    - source: retys
+  - text: Las opiniones técnicas solo podrán ser solicitadas por el propietario del predio en estudio, por el representante
+      legal del mismo, o por el representante legal del fiduciario en caso de un fideicomiso, debiéndose acreditar
+      cualquiera de los supuestos en forma documental.
+    cites:
+    - source: retys
+  - text: Si la documentación requerida no está completa, el trámite de opinión técnica se expedirá negativo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales
+    - Pasar al área de cajas a realizar su pago para el trámite de Opinión Técnica, la persona de cajas le entregará
+      su comprobante de pago
+    - Pasar al área de Archivo y entregar todos los requisitos
+    - La persona de Archivo revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+    - Con los requisitos completos, la persona de Archivo sella de recibido la copia del formulario FRM-004 Rev
+      09 - Solicitud de Opinión Técnica, indicando la fecha de respuesta
+    - Regresar al Área de Archivo por la respuesta a su trámite, en la fecha indicada
+  notes: Primera vez
+- name: Renovación
+  requirements:
+  - text: Presentar el Formulario para la solicitud de Opinión Técnica (FRM-004 Rev 09 - Solicitud de Opinión Técnica)
+      llenado y firmado, ya sea por el propietario del predio, el representante legal de la empresa propietaria
+      o el gestor; en caso de ser este último deberá presentar carta poder simple otorgada por alguno de los dos
+      primeros, anexando copia de identificaciones oficiales tanto del gestor como de quien otorga el poder.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12749
+  - text: Constancia de No Adeudo para Desarrolladores vigente, expedida por CESPT
+    cites:
+    - source: retys
+  - text: Croquis de localización de la zona donde se ubica el predio a desarrollar
+    cites:
+    - source: retys
+  - text: Si presentó Opinión Técnica de Uso de Suelo o Constancia de Zonificación de Uso de Suelo en la expedición
+      por primera vez, anexar la renovación del documento
+    cites:
+    - source: retys
+  - text: Opinión Técnica para los Servicios de Agua Potable y/o Alcantarillado Sanitario a renovar
+    cites:
+    - source: retys
+  - text: Carta compromiso firmada por el propietario o representante legal, en donde bajo protesta de decir la
+      verdad, haga constar que no ha habido modificación en la documentación que se proporcionó para obtener la
+      Opinión Técnica que solicita renovar y que no es requerida para la renovación.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en copia, la cual debe ser legible y contener el documento completo.
+    cites:
+    - source: retys
+  - text: Si la documentación requerida no está completa, el trámite de opinión técnica se expedirá negativo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales
+    - Pasar al área de cajas a realizar su pago para el trámite de Opinión Técnica, la persona de cajas le entregará
+      su comprobante de pago
+    - Pasar al área de Archivo y entregar todos los requisitos
+    - La persona de Archivo revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+    - Con los requisitos completos, la persona de Archivo sella de recibido la copia del formulario FRM-004 Rev
+      09 - Solicitud de Opinión Técnica, indicando la fecha de respuesta
+    - Regresar al Área de Archivo por la respuesta a su trámite, en la fecha indicada
+  notes: Renovación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de cajas a realizar su pago para el trámite de Opinión Técnica, la persona de cajas le entregará
+    su comprobante de pago
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo y entregar todos los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona de Archivo revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+    que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de Archivo sella de recibido la copia del formulario FRM-004
+    Rev 09 - Solicitud de Opinión Técnica, indicando la fecha de respuesta
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Regresar al Área de Archivo por la respuesta a su trámite, en la fecha indicada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1603: Expedición de Opinión Técnica para los Servicios de Agua Potable y/o Alcantarillado
+      Sanitario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1603
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

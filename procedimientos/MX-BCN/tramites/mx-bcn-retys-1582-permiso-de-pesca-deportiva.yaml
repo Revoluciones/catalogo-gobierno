@@ -1,0 +1,103 @@
+id: mx-bcn-retys-1582-permiso-de-pesca-deportiva
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Permiso de Pesca Deportiva
+summary: Todas las personas que se encuentren a bordo de una embarcación practicando la pesca deportiva-recreativa,
+  deberán contar con un permiso individual vigente, para la actividad de pesca deportiva en aguas interiores.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 1582
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1582
+  homoclave: BC-SH-045
+who_can:
+- Interesado
+when: Al realizar la actividad de pesca deportiva
+result: Un permiso para practicar pesca deportiva-recreativa.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: De acuerdo a la ley de ingresos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: DE UN DÍA A UN AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+scenarios:
+- name: Permiso para pesca deportiva
+  requirements:
+  - text: Hacer el registro de sus datos generales (nombre, dirección, estado, etc.).
+    cites:
+    - source: retys
+  - text: Comprobante de pago de derechos.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha.
+    - Registrar sus datos.
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Hacer la impresión de su permiso
+  notes: Requisitos para obtener el permiso de pesca deportiva
+legal_basis:
+- source: ley1
+  pinpoint: Anexo 9
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrar sus datos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Hacer la impresión de su permiso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1582: Permiso de Pesca Deportiva'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1582
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Convenio de colaboración administrativa en materia fiscal entre la Secretaría de Hacienda y Crédito Público
+      y el Gobierno del Estado de Baja California, publicado en el DOF el 11 de agosto de 2015
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

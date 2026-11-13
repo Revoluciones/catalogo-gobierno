@@ -1,0 +1,230 @@
+id: mx-bcn-retys-321-expedicion-de-credencial-para-personas-con-discapa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Credencial para Personas con Discapacidad
+summary: Las personas con discapacidad cuenten con una credencial que los identifique como tal.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 321
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/321
+  homoclave: BC-DIF-009
+who_can:
+- Interesado
+- Tutor
+when: Cuando se cuente con una discapacidad
+result: Credencial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 5 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Rehabilitación Integral (CRI Mexicali) DIF Estatal BC
+  address: 'Calzada Cuauhtémoc #384, Fraccionamiento Las Fuentes, Mexicali, 21230'
+- municipality: Tijuana
+  name: Centro de Rehabilitación Integral (CRI Tijuana), DIF Estatal BC
+  address: 'Av. Paseo del Rio esquina Calle Valle  #s/n, Zona del Río 3ra Etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Centro de Rehabilitación Integral (CRI) Ensenada
+  address: 'Av. Francisco González Bocanegra #s/n, Hidalgo, Ensenada, 22880'
+- municipality: Tecate
+  name: Unidad Básica de Rehabilitación en Tecate
+  address: 'Av. Hidalgo y Profesor Gutiérrez Durán  #s/n, Downey, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Unidad Básica de Rehabilitación de Playas de Rosarito
+  address: 'Villas de las Olas  #211, Fraccionamiento Villas del mar, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Unidad Básica Rehabilitación, San Quintín
+  address: 'Ing. Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento Popular San Quintín, San Quintín, 22340'
+- municipality: San Felipe
+  name: Unidad Básica de Rehabilitación, San Felipe
+  address: 'Av. Bermejo entre Chetumal y Ensenada #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: CRI Mexicali, Tijuana y Ensenada
+  requirements:
+  - text: CURP (Copia)
+    cites:
+    - source: retys
+  - text: Certificado médico (original)
+    cites:
+    - source: retys
+  - text: Identificación oficial si es mayor de edad (original)
+    cites:
+    - source: retys
+  - text: Si es menor de edad, cualquier identificación con fotografía e identificación oficial de los padres
+    cites:
+    - source: retys
+  - text: Acta de nacimiento (original y copia)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (original y copia)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en "Iniciar trámite" e ingresar tu correo electrónico.
+    - Dirigete a tu correo electrónico, recibiras una confirmación.
+    - Completa el formulario.
+    - Adjunta documentos en formato PDF.
+    - Un analista cotejerá tus documentos y te hará saber el resultado vía correo electrónico.
+    - Una vez validados los documentos, se indicará la programación de cita para valoración medica y toma de biométricos
+      en Centro de Rehabilitación Integral.
+    - Se genera una solicitud de Credencial.
+    - Se notifica vía correo electrónico la fecha en que se debe presentar en el centro.
+    - En valoración médica se verifica si el paciente cumple con los criterios de discapacidad.
+    - Se emitirá la credencial.
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Rehabilitación Integral (CRI ) a solicitar la credencial.
+    - Solicitar una cita para presentar documentación.
+    - Presentar documentación requerida.
+    - Veririfcar que la documentación este completa.
+    - Llenar la cédula de credencial y se turnará al paciente a Valoración médica.
+    - Se verificará si el paciente cumple con los criterios de discapacidad (valoración médica).
+    - Se emitirá la credencial.
+  notes: Recopilación de documentos para el servicio
+- name: UBR San Felipe, San Quintin, Tecate y Playas de Rosarito
+  requirements:
+  - text: CURP (Copia)
+    cites:
+    - source: retys
+  - text: Certificado médico (original)
+    cites:
+    - source: retys
+  - text: Identificación oficial si es mayor de edad (original)
+    cites:
+    - source: retys
+  - text: Si es menor de edad, cualquier identificación con fotografía e identificación oficial de los padres
+    cites:
+    - source: retys
+  - text: Acta de nacimiento (original y copia)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (original y copia)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en "Iniciar trámite" e ingresar tu correo electrónico.
+    - Dirigete a tu correo electrónico, recibiras una confirmación.
+    - Completa el formulario.
+    - Adjunta documentos en formato PDF.
+    - Un analista cotejerá tus documentos y te hará saber el resultado vía correo electrónico.
+    - Una vez validados los documentos, se indicará la programación de cita para valoración medica y toma de biométricos
+      en Centro de Rehabilitación Integral.
+    - Se genera una solicitud de Credencial.
+    - Se notifica vía correo electrónico la fecha en que se debe presentar en la UBR.
+    - En valoración médica se verifica si el paciente cumple con los criterios de discapacidad.
+    - Se emitirá la credencial.
+  - name: Presencial
+    steps:
+    - Acudir a la Unidad Básica de Rehabilitación (UBR ) a solicitar una cita para la credencial.
+    - Se notificará vía telefónica el día que se debe presentar en la UBR.
+    - Presentar documentación requerida.
+    - Veririfcar que la documentación este completa.
+    - Llenar la cédula de credencial y se turnará al paciente a Valoración médica.
+    - Se verificará si el paciente cumple con los criterios de discapacidad (valoración médica).
+    - Se emitirá la credencial.
+  notes: Recopilación de documentos para el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en "Iniciar trámite" e ingresar tu correo electrónico.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dirigete a tu correo electrónico, recibiras una confirmación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Completa el formulario.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Adjunta documentos en formato PDF.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Un analista cotejerá tus documentos y te hará saber el resultado vía correo electrónico.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez validados los documentos, se indicará la programación de cita para valoración medica y toma de
+    biométricos en Centro de Rehabilitación Integral.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se genera una solicitud de Credencial.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Se notifica vía correo electrónico la fecha en que se debe presentar en el centro.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: En valoración médica se verifica si el paciente cumple con los criterios de discapacidad.
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Se emitirá la credencial.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 321: Expedición de Credencial para Personas con Discapacidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/321
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley para el Desarrollo Integral de Personas con Capacidad Diferentes para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

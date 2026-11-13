@@ -1,0 +1,212 @@
+id: mx-como-se-aprueba-una-ley-federal
+country: MX
+jurisdiction: MX
+level: federal
+branch: legislativo
+kind: interno
+category: leyes
+title: Cómo se aprueba una ley federal
+summary: >-
+  Una ley federal nace como iniciativa, la estudia una comisión, la votan las dos Cámaras del Congreso
+  y la publica el Ejecutivo. El Ejecutivo puede regresarla con objeciones, y el Congreso puede insistir
+  si 2 de cada 3 votos lo respaldan en cada Cámara.
+authority:
+  name: Congreso de la Unión (Cámara de Diputados y Cámara de Senadores)
+  url: https://www.diputados.gob.mx
+other_authorities:
+  - name: Presidencia de la República (publica la ley o la regresa con objeciones)
+  - name: Diario Oficial de la Federación (DOF)
+who_can:
+  - La persona titular de la Presidencia de la República
+  - Diputadas, diputados, senadoras y senadores
+  - Los congresos de los estados y de la Ciudad de México
+  - La ciudadanía, si la firma al menos 1 de cada 770 personas en la lista nominal de electores (0.13 %)
+legal_basis:
+  - source: cpeum
+    pinpoint: arts. 71 y 72
+  - source: rcd
+    pinpoint: arts. 82, 89, 182 a 184
+deadlines:
+  - what: otro
+    text: >-
+      La comisión tiene 45 días hábiles para dar su opinión por escrito (dictamen) sobre cada asunto que le
+      turnan. Puede pedir una prórroga.
+    cites:
+      - source: rcd
+        pinpoint: arts. 182.1 y 183.1
+  - what: otro
+    text: >-
+      El Ejecutivo tiene 30 días naturales para regresar la ley con objeciones. Si no lo hace, se considera
+      aprobada y tiene 10 días más para publicarla.
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartado B
+steps:
+  - n: '1'
+    actor: Quien tiene derecho a proponer leyes
+    action: >-
+      Presenta la propuesta por escrito (iniciativa) en la Cámara de Diputados o en el Senado. Las leyes sobre
+      préstamos, impuestos o reclutamiento de tropas siempre empiezan en la Cámara de Diputados.
+    cites:
+      - source: cpeum
+        pinpoint: art. 71; art. 72, apartado H
+  - n: '2'
+    actor: Mesa Directiva de la Cámara donde se presentó (Cámara de origen)
+    action: >-
+      Envía la iniciativa a una o varias comisiones, que son grupos pequeños de legisladores que estudian
+      cada tema antes de que vote toda la Cámara.
+    cites:
+      - source: rcd
+        pinpoint: art. 182.1
+  - n: '3'
+    actor: Comisión
+    action: >-
+      Escribe su opinión sobre la iniciativa (dictamen): propone aprobarla completa, en parte o rechazarla.
+      Tiene 45 días hábiles.
+    deadline: 45 días hábiles, prorrogables
+    cites:
+      - source: rcd
+        pinpoint: arts. 82.1, 182.1 y 183.1
+    next:
+      - to: '4'
+        when: La comisión entrega su dictamen
+      - to: '3b'
+        when: La comisión no dictamina a tiempo
+      - to: '4'
+        when: La Cámara la declara de urgente u obvia resolución y la vota sin dictamen
+    practice:
+      - text: >-
+          La gran mayoría de las iniciativas nunca se dictamina. En los dos primeros años de la legislatura
+          actual (2024 a 2026) se presentaron 6,867 iniciativas en la Cámara de Diputados y se aprobaron 341,
+          más o menos 1 de cada 20. Las demás siguen en comisiones, se retiraron o se desecharon.
+        evidence_level: periodismo_o_investigacion
+        observed: Cámara de Diputados, LXVI Legislatura, datos del Sistema de Información Legislativa al 11 de agosto de 2026
+        cites:
+          - source: excelsior-2026-rezago
+      - text: >-
+          Las comisiones a veces dictaminan el mismo día y a la par del Pleno. En abril de 2023 la Cámara de
+          Diputados aprobó nueve decretos en una sola sesión: cinco con dictámenes votados por comisiones que
+          sesionaban al mismo tiempo que el Pleno y cuatro a partir de iniciativas presentadas esa misma
+          sesión, sin pasar por comisión.
+        evidence_level: periodismo_o_investigacion
+        observed: Cámara de Diputados, 25 y 26 de abril de 2023
+        cites:
+          - source: animal-2023-fast-track
+  - n: '3b'
+    actor: Presidencia de la Mesa Directiva
+    action: >-
+      Si la comisión no dictamina a tiempo, la iniciativa puede llevarse al Pleno tal como se presentó. Ahí
+      necesita mayoría calificada (2 de cada 3 votos); si no la alcanza, se desecha. Lo que no se dictamina al
+      terminar la legislatura se desecha y se archiva.
+    cites:
+      - source: rcd
+        pinpoint: arts. 82.2, fracción II; 89.1; 184.2
+    next:
+      - to: '4'
+        when: Llega al Pleno
+      - to: fin
+        when: Se desecha
+  - n: '4'
+    actor: Pleno de la Cámara de origen (todos sus integrantes)
+    action: >-
+      Discute y vota. Cada voto se registra con el nombre de quien votó (votación nominal). Si la rechaza
+      completa, no se puede volver a presentar en las sesiones de ese año.
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartados A, C y G
+    next:
+      - to: '5'
+        when: La aprueba
+      - to: fin
+        when: La rechaza
+  - n: '5'
+    actor: La otra Cámara (Cámara revisora)
+    action: >-
+      Recibe el proyecto aprobado (minuta), lo estudia en comisión y lo vota. Puede aprobarlo, cambiarlo o
+      rechazarlo. Si lo cambia, la Cámara de origen solo discute los cambios.
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartados A, D y E
+    next:
+      - to: '6'
+        when: Lo aprueba sin cambios
+      - to: '4'
+        when: Lo cambia o lo rechaza, y regresa a la Cámara de origen
+  - n: '6'
+    actor: Presidencia de la República
+    action: >-
+      Publica la ley en el Diario Oficial de la Federación (DOF) o la regresa a la Cámara de origen con
+      objeciones (lo que se conoce como veto). Tiene 30 días naturales; si no hace nada, la ley se considera
+      aprobada y tiene 10 días más para publicarla.
+    deadline: 30 días naturales + 10 para publicar
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartados A y B
+    next:
+      - to: '8'
+        when: La publica
+      - to: '7'
+        when: La regresa con objeciones
+  - n: '7'
+    actor: Las dos Cámaras
+    action: >-
+      Vuelven a votar. Si 2 de cada 3 votos de cada Cámara confirman la ley, el Ejecutivo tiene que
+      publicarla.
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartado C
+    next:
+      - to: '8'
+        when: Ambas Cámaras la confirman con 2 de cada 3 votos
+      - to: fin
+        when: No alcanzan esa votación
+  - n: '8'
+    actor: Presidencia de la República o, si no lo hace, la Presidencia de la Cámara de origen
+    action: >-
+      La ley se publica en el DOF y entra en vigor en la fecha que ella misma diga. Si el Ejecutivo deja pasar
+      el plazo, la Presidencia de la Cámara de origen ordena la publicación en los 10 días siguientes.
+    cites:
+      - source: cpeum
+        pinpoint: art. 72, apartado B
+related:
+  - mx-presupuesto-de-egresos-de-la-federacion
+glossary: [iniciativa, comision, dictamen, pleno, minuta, camara-de-origen, camara-revisora, votacion-nominal, dof, veto, mayoria-calificada, dias-habiles]
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+  rcd:
+    type: reglamento
+    official: true
+    title: Reglamento de la Cámara de Diputados
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/Reg_Diputados.pdf
+    version_date: Última reforma DOF 07-05-2025
+    accessed: '2026-11-06'
+  excelsior-2026-rezago:
+    type: periodismo
+    official: false
+    title: San Lázaro arrastra 95% de iniciativas
+    publisher: Excélsior (Hilda Castellanos), 22 de agosto de 2026, con datos del Sistema de Información Legislativa
+    url: https://www.excelsior.com.mx/nacional/iniciativas-san-lazaro
+    accessed: '2026-11-06'
+  animal-2023-fast-track:
+    type: periodismo
+    official: false
+    title: 'Maratón legislativo: estas fueron las reformas aprobadas en ‘fast track’ por la Cámara'
+    publisher: Animal Político, 26 de abril de 2023
+    url: https://grupoanimal.mx/politica/reformas-fast-track-camara-diputados
+    accessed: '2026-11-06'
+status: borrador
+last_checked: '2026-11-06'
+checked_by: Claude (Compartido)
+notes: >-
+  Falta el trámite en el Senado (su propio reglamento) y las reformas a la Constitución, que siguen otro camino
+  (art. 135: 2 de cada 3 votos en el Congreso y aprobación de la mayoría de los congresos estatales). El conteo
+  oficial de iniciativas puede pedirse al Sistema de Información Legislativa para reemplazar la cifra
+  periodística por la fuente primaria.

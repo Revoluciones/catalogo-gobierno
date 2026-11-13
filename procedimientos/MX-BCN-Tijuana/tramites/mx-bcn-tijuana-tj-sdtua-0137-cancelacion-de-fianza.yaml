@@ -1,0 +1,68 @@
+id: mx-bcn-tijuana-tj-sdtua-0137-cancelacion-de-fianza
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Infraestructura y vivienda
+title: Cancelación de fianza
+summary: Permite gestionar la cancelación de una fianza relacionada con trabajos ejecutados por la ruptura de concreto
+  hidráulico y/o mezcla asfáltica
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Obras e Infraestructura Urbana Municipal (DOIUM)
+official_ids:
+  homoclave: TJ-SDTUA-0137
+who_can:
+- Interesado
+when: Cuando se haya finalizado la obra y se requiera verificar que todos los trabajos fueron ejecutados correctamente
+  para proceder con la liberación de la fianza de garantía
+result: Oficios de autorización
+requirements:
+- text: Oficio de autorizacion
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 610.01
+  text: 'Por inspección para devolución de depósitos en garantía de rupturas de banquetas y pavimentos: 5.2 UMA
+    ($610.01). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Obras e Infraestructura Urbana Municipal (DOIUM)
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737159 ext. 7160
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0137: Cancelación de fianza'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0137
+    version_date: '2026-08-07'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 35, Fracción VI de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Tras la inspección, se verifica que los trabajos han sido ejecutados conforme a los planos aprobados
+  y cumplen con las especificaciones técnicas requeridas'

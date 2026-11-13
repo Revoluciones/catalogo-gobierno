@@ -1,0 +1,129 @@
+id: mx-bcn-retys-1722-inscripcion-a-maestria
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción a Maestría
+summary: Inscribir a las y los estudiantes egresados de nivel Licenciatura interesados en ingresar a estudiar Maestría
+  en la Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1722
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1722
+  homoclave: BC-UTT-010
+who_can:
+- Interesado
+when: Cuando este vigente la convocatoria para ingresar a estudiar la maestría
+result: Carta de aceptación para estudiar la maestría en la UTT
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $4,008.76 M.N. Inscripción Inicial cuatrimestral. $4,008.76 M.N. Cuota de 1 de 3 para cursar maestría.
+    $4,008.76 M.N. Cuota de 2 de 3 para cursar maestría. $4,008.76 M.N. Cuota de 3 de 3 para cursar maestría.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Por el cuatrimestre vigente
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Posgrado e Investigación
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+scenarios:
+- name: Interesados en estudiar maestría
+  requirements:
+  - text: Ser seleccionado por medio de la evaluación diagnóstica
+    cites:
+    - source: retys
+  - text: Registro en la página de internet oficial de la UTT
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  - text: Formatos de inscripción
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Entrar a la liga https://docs.google.com/forms/d/e/1FAIpQLSf1ymYiaC19BCyI1ukbZwhFK3cQAsJVq6paX3nEFzf6tKycNg/viewform
+      o dar clic en el botón de iniciar trámite
+    - Ingresar datos de acceso
+    - Generar referencia de pago
+    - Realizar pago con la referencia por medio de Transferencia bancaria, depósito en ventanilla de Banco Santander
+      o practicaja de Banco Santander
+    - Presentarse en la Dirección de Posgrado e Investigación en la UTT
+    - Llenar los formatos de inscripción
+  notes: Las y los interesados en estudiar maestría en la Universidad Tecnológica de Tijuana
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrar a la liga https://docs.google.com/forms/d/e/1FAIpQLSf1ymYiaC19BCyI1ukbZwhFK3cQAsJVq6paX3nEFzf6tKycNg/viewform
+    o dar clic en el botón de iniciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar datos de acceso
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Generar referencia de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar pago con la referencia por medio de Transferencia bancaria, depósito en ventanilla de Banco Santander
+    o practicaja de Banco Santander
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presentarse en la Dirección de Posgrado e Investigación en la UTT
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Llenar los formatos de inscripción
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1722: Inscripción a Maestría'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1722
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Ingresos Propios de la Universidad Tecnológica de Tijuana.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción de Estudiantes al nivel de Maestría. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

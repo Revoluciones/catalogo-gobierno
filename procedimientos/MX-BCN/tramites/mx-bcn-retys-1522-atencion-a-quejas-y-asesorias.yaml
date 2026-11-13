@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1522-atencion-a-quejas-y-asesorias
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención a Quejas y Asesorías
+summary: Atención a los visitantes nacionales y extranjeros con la finalidad de asesorarlos en tramitología, promoción
+  y ubicación de los destinos del estado así como brindarles seguimiento cuando sea necesaria la intervención de
+  autoridades locales.
+authority:
+  name: Secretaría de Turismo
+official_ids:
+  retys_id: 1522
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1522
+  homoclave: BC-SECTURE-007
+who_can:
+- Interesado
+when: Cuando se desee presentar una queja o recibir una asesoría
+result: Acuse de recibido o asesoría
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación
+  address: 'Boulevard Bénito Juárez Y L. Montejano 1 #S/N, Estaban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Delegación
+  address: 'Lázaro Cárdenas #1477, Centro, Ensenada, 22800'
+scenarios:
+- name: Ciudadania en general
+  requirements: []
+  modes:
+  - name: Presencial
+    steps:
+    - Acercamiento por algún medio hacia el personal de la secretaria de turismo
+    - Realización de solicitud de información
+    - Recepción de respuesta por parte de la Secretaría de Turismo
+  notes: Atención a visitantes
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30 fracción XIII y 43 fracción XII
+- source: ley2
+  pinpoint: Artículo 63 fracción V
+- source: ley3
+  pinpoint: Artículo 21 fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acercamiento por algún medio hacia el personal de la secretaria de turismo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realización de solicitud de información
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recepción de respuesta por parte de la Secretaría de Turismo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1522: Atención a Quejas y Asesorías'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1522
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

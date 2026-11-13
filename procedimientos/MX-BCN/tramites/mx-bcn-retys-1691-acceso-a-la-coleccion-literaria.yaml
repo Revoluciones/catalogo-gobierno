@@ -1,0 +1,92 @@
+id: mx-bcn-retys-1691-acceso-a-la-coleccion-literaria
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a la Colección Literaria
+summary: Acceso a obras literarias y de cultura general de autores bajacalifornianos, entre otros; publicadas para
+  su consulta, disfrute, fomento a la lectura, investigación, conocimiento, etc.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1691
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1691
+  homoclave: BC-SC-003
+who_can:
+- Interesado
+when: Cuando desee leer o conocer las obras publicadas por la Secretaría de Cultura de la colección literaria
+result: Acceder a una Colección de obras de interés local, regional y nacional
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Contar con un dispositivo con acceso a internet
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Accede a la página oficial https://www.bajacalifornia.gob.mx/Cultura/Secciones/Coleccion
+    - Selecciona el libro de su interés para su consulta
+    - Puede descargarlo o bien leerlo desde la pagina web
+  notes: Toda persona con acceso a internet y dispositivos habilitados para abrir documentos en formato pdf
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción III.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Accede a la página oficial https://www.bajacalifornia.gob.mx/Cultura/Secciones/Coleccion
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Selecciona el libro de su interés para su consulta
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Puede descargarlo o bien leerlo desde la pagina web
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1691: Acceso a la Colección Literaria'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1691
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Acceso a la Colección Literaria de la Secretaría de Cultura de Baja California. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

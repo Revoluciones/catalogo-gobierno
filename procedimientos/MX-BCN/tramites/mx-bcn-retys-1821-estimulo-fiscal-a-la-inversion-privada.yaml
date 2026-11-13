@@ -1,0 +1,175 @@
+id: mx-bcn-retys-1821-estimulo-fiscal-a-la-inversion-privada
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Estímulo Fiscal a la Inversión Privada
+summary: Estímulo fiscal a proyectos de inversión que se establezcan en el Estado, sobre los empleos nuevos que
+  se generen.
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1821
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1821
+  homoclave: BC-SEI-013
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando una empresa cuente con un proyecto de inversión nuevo o de implementación de tecnología e innovación
+  en el Estado.
+result: Exención total o parcial del Impuesto sobre Remuneraciones al Trabajo Personal (ISRTP).
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 a 3 años.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Calzada Independencia  #994, Centro Civico, Mexicali, 21200'
+- municipality: Tijuana
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Carretera Libre, Tijuana-Tecate Km. 26.5 #N/A, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Carretera Transpeninsular #6500, Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Baja California #53,  La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Jose Aros Aguilar #2003, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Benito Juárez #108, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Mar De Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Persona física con Actividad Empresarial/Persona Moral
+  requirements:
+  - text: Escrito libre, en el que manifieste contar con un proyecto de inversión real y concreto a desarrollar
+      en el Estado.
+    cites:
+    - source: retys
+  - text: Cédula de Solicitud de Estímulos Fiscales.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13815
+  - text: Plan de Negocios o Proyecto de Inversión.
+    cites:
+    - source: retys
+  - text: Solicitud de Estímulo Fiscal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15133
+  - text: Anexo I. Formato de Compromisos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13829
+  - text: En su caso, copia simple del Acta constitutiva, y Poder vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Identificación oficial del solicitante o representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal vigente.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El interesado descarga la Solicitud de Estímulos Fiscal, la Cédula de Solicitud de Estímulos Fiscales y el
+      Anexo I “Compromisos.
+    - El interesado recaba la información y documentación.
+    - 'El interesado remite la información (a través de ventanilla única o correo electrónico: igdiaz@baja.gob.mx).'
+    - La SEI tiene 5 días hábiles para realizar alguna observación o emitir la validación y la opinión técnica.
+    - La SEI remite opinión técnica a la Procuraduría Fiscal.
+    - La Procuraduría Fiscal revisa y analiza el expediente y tiene 20 días hábiles para emitir resolución.
+  notes: Documentación necesaria para iniciar el trámite.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 10, 12,13,14 y 15.
+- source: ley2
+  pinpoint: Artículo 175.
+- source: ley3
+  pinpoint: Artículo 17.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado descarga la Solicitud de Estímulos Fiscal, la Cédula de Solicitud de Estímulos Fiscales
+    y el Anexo I “Compromisos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El interesado recaba la información y documentación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'El interesado remite la información (a través de ventanilla única o correo electrónico: igdiaz@baja.gob.mx).'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La SEI tiene 5 días hábiles para realizar alguna observación o emitir la validación y la opinión técnica.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La SEI remite opinión técnica a la Procuraduría Fiscal.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La Procuraduría Fiscal revisa y analiza el expediente y tiene 20 días hábiles para emitir resolución.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1821: Estímulo Fiscal a la Inversión Privada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1821
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Fomento de la Competitividad y Desarrollo Económico para Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Hacienda del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Fomento de la Competitividad y Desarrollo Económico para Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Estímulos Fiscales de Inversión Privada. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

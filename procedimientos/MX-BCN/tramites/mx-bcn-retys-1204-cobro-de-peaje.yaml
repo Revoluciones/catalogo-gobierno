@@ -1,0 +1,84 @@
+id: mx-bcn-retys-1204-cobro-de-peaje
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cobro de Peaje
+summary: Cobro de peaje en la caseta La Rumorosa al Transitar por el tramo carretero Centinela-La Rumorosa
+authority:
+  name: Fideicomiso Público de Administración de Fondos e Inversión del Tramo Carretero Centinela Rumorosa
+official_ids:
+  retys_id: 1204
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1204
+  homoclave: BC-FIARUM-001
+who_can:
+- Interesado
+when: Cuando se transite por el tramo carretero Centinela-La Rumorosa
+result: El derecho de transitar de manera segura por el tramo carretero Centinela- La Rumorosa
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo de peaje es según el número de ejes del vehículo'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tecate
+  name: Operación
+  address: 'La Rumorosa Km 62 +900 #S/N, Carretera Centinela Rumorosa, Tecate, 21510'
+scenarios:
+- name: Cobro de peaje
+  requirements:
+  - text: Arribar a la caseta y realizar el pago correspondiente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Arribar a la caseta de La Rumorosa
+    - Realizar el pago correspondiente.
+  notes: Cobro de peaje en la caseta la rumorosa al transitar el usuario por el tramo carretera Centinela-La Rumorosa.
+legal_basis:
+- source: ley1
+  pinpoint: '2'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Arribar a la caseta de La Rumorosa
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1204: Cobro de Peaje'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1204
+    version_date: 29/Abril /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del FIARUM
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

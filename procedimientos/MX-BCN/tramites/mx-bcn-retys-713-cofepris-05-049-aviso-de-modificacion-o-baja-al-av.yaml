@@ -1,0 +1,106 @@
+id: mx-bcn-retys-713-cofepris-05-049-aviso-de-modificacion-o-baja-al-av
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-049 Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable Sanitario del Establecimiento
+  de Salud Ambiental
+summary: Cuando el ciudadano requiera obtener el aviso de modificación o la baja del aviso de funcionamiento y responsable
+  sanitario de un establecimiento de salud ambiental, (que no opera con licencia sanitaria) éste debe ser ingresado
+  cuando se modifiquen datos o se suspendan actividades.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 713
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/713
+  homoclave: BC-COEPRIS-015
+who_can:
+- Representante Legal
+- Interesado
+when: 'Cuando se requiera avisar: a) Cambio de representante legal b) Cambio en la persona autorizada c) Cambio
+  de responsable sanitario'
+result: Aviso de modificacion o baja
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Original y copia simple legible del formato “Aviso de funcionamiento, de responsable sanitario y de modificación
+      o baja”, debidamente requisitado
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en la
+      parte inferior derecha
+    - Elegir la modalidad del trámite de interés
+    - Llenar formato requerido
+    - Firmar resolución de trámite enviado vía correo
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 200, 200 Bis y 202
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en
+    la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elegir la modalidad del trámite de interés
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar formato requerido
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar resolución de trámite enviado vía correo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 713: COFEPRIS-05-049 Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable
+      Sanitario del Establecimiento de Salud Ambiental'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/713
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-049 Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable
+  Sanitario del Establecimiento de Salud Ambiental.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

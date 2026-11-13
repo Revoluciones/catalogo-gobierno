@@ -1,0 +1,154 @@
+id: mx-bcn-retys-542-inscripcion-de-gravamen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Gravamen
+summary: Acto mediante el cual se inscribe el gravamen sobre el predio, departamento o local, garantizando el adeudo
+  al acreedor para que conste en los archivos registrales ante terceros.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 542
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/542
+  homoclave: BC-DRPPC-013
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando el o los inmuebles cuentan con un gravamen de carácter hipotecario
+result: Inscripción o anotación de gravamen
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: EL costo del servicio es de acuerdo al valor del gravamen que puede ser (embargo civil
+    o mercantil).'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Presentar el título o documento en el que consta el gravamen, el cual deberá contener el nombre del acreedor
+      y deudor, datos de inscripción, número de manzana, lote, local, departamento, colonia, fraccionamiento o poblado
+      donde se ubique y monto gravable
+    cites:
+    - source: retys
+  - text: Cubrir previamente los derechos correspondientes en la caja recaudadora
+    cites:
+    - source: retys
+  - text: El tramite es entregado de acuerdo a la fecha que se asigna al volante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+    - Presentar la documentación a inscribir de acuerdo a los lineamientos establecidos por la DRPPC
+    - Realizar el pago correspondiente en la oficina recaudadora
+    - Tomar turno para ingresar la solicitud
+    - Entrega del trámite de acuerdo a la fecha asignada al volante
+  notes: Para la inscripción o anotación de gravámen
+legal_basis:
+- source: ley1
+  pinpoint: '2885'
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 12, fracción XII
+- source: ley4
+  pinpoint: 11, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la documentación a inscribir de acuerdo a los lineamientos establecidos por la DRPPC
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente en la oficina recaudadora
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para ingresar la solicitud
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Entrega del trámite de acuerdo a la fecha asignada al volante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 542: Inscripción de Gravamen'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/542
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Civil para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del poder Ejecutivo para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción de Gravámenes. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

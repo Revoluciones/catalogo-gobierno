@@ -1,0 +1,99 @@
+id: mx-bcn-tijuana-tj-sc-0334-recorridos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Educación, deporte y cultura
+title: Recorridos
+summary: El Instituto Municipal de Arte y Cultura IMAC), a través de la coordinación de Vinculación Educativa, ofrecen
+  recorridos guiados a las escuelas de la ciudad. Las visitas se realizan en las instalaciones del recinto, como
+  las salas del Museo de Historia de Tijuana, Galería de la Ciudad, Espacio 5, Archivo Histórico y Casas de Cultura
+  (Tijuana, Playas, San Antonio de los Buenos y El Pípila) con el objetivo de resaltar la importancia de preservar
+  y proteger los bienes que integran el patrimonio cultural de la ciudad.
+authority:
+  name: Secretaría de Cultura (Ayuntamiento de Tijuana)
+  unit: Instituto Municipal de Arte y Cultura (IMAC)
+official_ids:
+  homoclave: TJ-SC-0334
+who_can:
+- Interesado
+result: Oficio de aceptación
+requirements:
+- text: Oficio de solicitud dirigido a dirección del Instituto Munipal de Arte y Cultura.
+  cites:
+  - source: remutys
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'A) Recorrido Binacional: JPAUL GETTY MUSEUM: 9.43 UMA ($1,106.23) · A).-Recorrido Binacional, Sub-inciso
+    b).-HEARTS CASTLE: 29.69 UMA ($3,482.93) · A).-Recorrido Binacional, Sub-inciso, C) AQUARIUM OF THE PACIFIC:
+    15.47 UMA ($1,814.79) · A).-Recorrido Binacional, Sub-inciso D) GRIFFITH OBSERVATORY: 9.43 UMA ($1,106.23) ·
+    A).-Recorrido Binacional, Sub-inciso E) CALIFORNIA SCIENCE CENTER: 4.68 UMA ($549.01) · B) Taller en recorrido:
+    0.34 UMA ($39.89) · C) Recorrido por galerías del IMAC con degustación de vinos: 4.52 UMA ($530.24) · D) Recorrido
+    histórico, Sub-inciso a) Estudiante visita guiada a Museo de Historia de Tijuana, Archivo Histórico y taller
+    artístico: 0.2 UMA ($23.46) · D) Recorrido histórico, Sub-inciso b) Estudiante visita guiada a Museo de Historia
+    de Tijuana, Archivo Histórico y cuenta cuentos: 0.34 UMA ($39.89) · D) Recorrido histórico, Sub-inciso c) Estudiante
+    visita guiada a Museo de Historia de Tijuana, Archivo Histórico y cuenta cuentos con transporte: 0.48 UMA ($56.31)
+    · E).-Recorrido Cultural, Sub-inciso a) Estudiante visita guiada a bibliotecas municipales y taller artístico:
+    0.2 UMA ($23.46) · E).-Recorrido Cultural, Sub-inciso b) Estudiante visita guiada a bibliotecas municipales
+    y cuenta cuentos: 0.34 UMA ($39.89) · E).-Recorrido Cultural, Sub-inciso c) Estudiante visita guiada a Museo
+    de Historia de Tijuana, Archivo Histórico y taller artístico: 0.2 UMA ($23.46) · E).-Recorrido Cultural, Sub-inciso
+    d) Estudiante visita guiada a bibliotecas municipales y cuenta cuentos con transporte: 0.48 UMA ($56.31) · E).-Recorrido
+    Cultural, Sub-inciso e) Estudiante visita guiada casas de cultura y taller artístico: 0.2 UMA ($23.46) · E).-Recorrido
+    Cultural, Sub-inciso f) Estudiante visita guiada casas de cultura y cuenta cuentos: 0.34 UMA ($39.89) · E).-Recorrido
+    Cultural, Sub-inciso g) Estudiante visita guiada casas de cultura y taller artístico con transporte: 0.48 UMA
+    ($56.31) · E).-Recorrido Cultural, Sub-inciso h) Estudiante visita guiada casas de cultura y cuenta cuentos
+    con transporte: 0.48 UMA ($56.31) · F,) Función de teatro exclusiva para estudiantes organizado por el IMAC,
+    en casa de cultura; Sub-inciso a) Boleto de entrada: 0.48 UMA ($56.31) · G), Sub-inciso a) Cobro por estudiantes
+    en escuelas de escasos recursos por cuenta cuentos: 0.08 UMA ($9.38) · G), Sub-inciso b) Presentación de cuenta
+    cuentos en escuelas de escasos recursos con matricula mayor a cien alumnos, precio por estudiante: 0.14 UMA
+    ($16.42) · G) Sub-inciso c) Presentación de obra de teatro en escuelas con matrícula mayor a 100 alumnos, precio
+    por estudiante: 0.34 UMA ($39.89) · G), Sub-inciso d) Presentación de obra de teatro en escuelas con matrículas
+    menor a 100 alumnos, precio por estudiante: 0.48 UMA ($56.31). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 mes
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Municipal de Arte y Cultura (IMAC)
+  address: C. Segunda, Zona Centro. C.P.22000
+  phones: 6646881721 ext. 117
+  hours: LUNES A VIERNES DE 08:00 HRS A 17:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SC-0334: Recorridos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SC-0334
+    version_date: '2026-06-26'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL MUNICIPIO DE TIJUANA, BAJA CALIFORNIA PARA EL EJERCICIO FISCAL DEL 2026
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20251230_LEYINGRESOTIJUANA2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: Se revisa la disponibilidad de los espacios y se confirma fecha
+  y lugar, para así quedar reservada la actividad.'

@@ -1,0 +1,112 @@
+id: mx-bcn-retys-1414-bolsa-de-trabajo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Bolsa de Trabajo
+summary: Ofrecer a las personas interesadas la oportunidad de integrar su currículum vitae a la bolsa de trabajo
+  de la administración estatal, con la finalidad de ser considerado para futuras vacantes relacionadas a su perfil
+  y experiencia profesional.
+authority:
+  name: Oficialía Mayor de Gobierno
+official_ids:
+  retys_id: 1414
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1414
+  homoclave: BC-OM-081
+who_can:
+- Interesado
+when: Cuando la persona interesada lo desee.
+result: Registro en la bolsa de la administración estatal.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento De Administración De Personal (Mexicali)
+  address: 'Calzada Independencia #994, Centro Cívico , Mexicali, 21000'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Currículum Vitae
+    cites:
+    - source: retys
+  - text: Solicitud de empleo
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Acceder a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+    - Registrar currículum en caso de ser nuevo usuario
+    - Llenar solicitud
+  - name: Presencial
+    steps:
+    - Acudir a la coordinación de reclutamiento y selección
+    - Entregar curriculum vitae
+    - Solicitud de empleo
+  notes: Ciudadano
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 33
+- source: ley2
+  pinpoint: Artículo 9, Fracción XIX
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acceder a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrar currículum en caso de ser nuevo usuario
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar solicitud
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1414: Bolsa de Trabajo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1414
+    version_date: 13/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Administración Publica del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Oficialía Mayor de Gobierno del Estado
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

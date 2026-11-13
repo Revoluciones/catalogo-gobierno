@@ -1,0 +1,77 @@
+id: mx-bcn-tijuana-tj-sdtua-0290-finiquitos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Finiquitos
+summary: Es un documento legal que certifica que el ciudadano no tiene ningún adeudo pendiente con la Promotora
+  Municipal de Tijuana (PROMUN)
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Fideicomiso Promotora Municipal de Tijuana (PROMUN)
+official_ids:
+  homoclave: TJ-SDTUA-0290
+who_can:
+- Interesado
+when: Cuando se realiza Cesión de Derechos para la obtención del Título de Propiedad
+result: Documento
+requirements:
+- text: Recibo de pago de trámite de Carta Finiquito
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: fijo
+  amount_mxn: 679.22
+  text: 'Carta finiquito: 5.79 UMA ($679.22). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Fideicomiso Promotora Municipal de Tijuana (PROMUN)
+  address: Calle Miguel Negrete Num. 222, local 3, Colonia Centro, Tijuana, Baja California
+  phones: '6646238417'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0290: Finiquitos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0290
+    version_date: '2026-08-18'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Articulo 25 fracc. XII del Reglamento Interno del Fideicomiso Promotora Municipal de Tijuana
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20211229152445336_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Capitulo IX, Articulo 54, inciso A), Subinciso a) de la Ley de Ingresos para el Municipio de Tijuana
+      Baja California, Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: El solicitante deberá haber liquidado la totalidad de los pagos mensuales establecidos en los términos
+  del contrato de compraventa.'

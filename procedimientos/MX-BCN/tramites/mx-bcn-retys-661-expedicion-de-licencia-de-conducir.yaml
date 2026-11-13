@@ -1,0 +1,313 @@
+id: mx-bcn-retys-661-expedicion-de-licencia-de-conducir
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Licencia de Conducir
+summary: Expedir licencia de conducir para manejo de vehículo
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 661
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/661
+  homoclave: BC-SH-012
+who_can:
+- Interesado
+when: Cuándo se requiera obtener la Licencia de Conducir.
+result: La Licencia de Conducir para automóvilista, Chofer A, B, C Y D, motociclista menor de edad (16 y 17 años)
+  y provisionales
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Automovilista 3 años $ 1,127.38 5 años $ 1,503.17 Motociclista
+    3 años $ 1,127.38 5 años $1,503.17 Chofer C 3 años $1,286.45 5 años $1,715.27 Chofer A, B Y D $2,121.21 Motociclista
+    y automóvil (de 16 a 18 años) $832.55 Licencia Provisional de Automovilista, Motociclista o Chofer “C”, nacional
+    o extranjero, hasta por 9 meses $965.79 .*Los costos pueden variar dependiendo de la fecha de cumpleaños del
+    solicitante.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 45 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 años, 5 años y provisionales 9 meses y 1 año.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Volanta CESPM Calle Novena
+  address: 'Calle Novena y Palmira #SN, Calles (Poblado Compuertas), Mexicali, 21226'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Expedición de licencias de conducir
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Solicitud del trámite (formato de manifiesto que se captura en la Recaudación de Rentas)
+    cites:
+    - source: retys
+  - text: 'Presentar en original y copia identificación oficial con fotografía vigente : INE, pasaporte mexicano
+      vigente, cédula profesional, matrícula consular, cartilla militar. (Si el INE presentado cuenta con domicilio
+      actual, no se requiere presentar comprobante de domicilio)'
+    cites:
+    - source: retys
+  - text: Presentar en original y copia comprobante de domicilio a nombre del interesado, no mayor a tres meses
+      de antigüedad
+    cites:
+    - source: retys
+  - text: Presentar en original y copia certificado médico, expedido por institución pública o privada de salud,
+    cites:
+    - source: retys
+  - text: Presentar y aprobar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada
+      que cuente con tarjeta de circulación vigente (original y copia)
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Para agendar una cita accede a https://citas.ebajacalifornia.gob.mx/, selecciona tu municipio de residencia
+      y llena la información requerida, descarga el comprobante de cita para que conozcas el día, la hora y el lugar
+      para realizar el trámite
+    - Acudir a las oficinas de Recaudación de Rentas del Estado que corresponda con el municipio de su domicilio
+    - Solicitar trámite presentando documentos en ventanilla
+    - Toma de datos, las 10 huellas digitales y fotografía
+    - Pasar a área médica en caso de no traer certificado médico
+    - Presentar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada que cuente
+      con tarjeta de circulación vigente (original y copia).
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Recoger licencia de conducir
+  notes: Colaborar con el ciudadano para cumplir con los requisitos establecidos para que obtenga su licencia de
+    conducir, con la certeza de que se trata de un documento obtenido legalmente y buscando la seguridad en el manejo
+    de vehículos automotor, con la protección individual como de terceros.
+- name: Expedición de licencias para menores de edad.
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Solicitud del trámite (formato de manifiesto que se captura en la recaudación de rentas)
+    cites:
+    - source: retys
+  - text: 'Acreditar identidad (presentado en original y copia de alguno de los siguientes documentos: constancia
+      de estudios, pasaporte mexicano vigente, matrícula consular o en caso de ser extranjero forma expedida por
+      el Instituto Nacional de Migración.'
+    cites:
+    - source: retys
+  - text: Acreditar edad (haber cumplido 16 o 17 años de edad con los siguientes documentos acta de nacimiento,
+      pasaporte mexicano vigente, curp, matrícula consular o en caso de ser extranjero forma expedida por el Instituto
+      Nacional de Migración.
+    cites:
+    - source: retys
+  - text: Presentar copia de comprobante de domicilio no mayor a tres meses de antigüedad
+    cites:
+    - source: retys
+  - text: Certificado médico, expedido por institución pública o privada de salud, que acredite que es apto para
+      conducir vehículos (original y copia)
+    cites:
+    - source: retys
+  - text: El padre, madre o tutor debe acompañar al menor de edad y presentar carta responsiva por escrito (original
+      y copia).
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10904
+  - text: Presentar y aprobar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada
+      y que cuente con tarjeta de circulación vigente (original y copia).
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Para agendar una cita accede https://citas.ebajacalifornia.gob.mx/, selecciona tu municipio de residencia
+      y llena la información requerida, descarga el comprobante de cita para que conozcas el día, la hora y el lugar
+      para realizar el trámite
+    - Acudir a las oficinas de Recaudación de Rentas del Estado que corresponda con el municipio de su domicilio
+    - Solicitar trámite presentando documentos en ventanilla
+    - Toma de datos, las 10 huellas digitales, lectura del iris de ojos y fotografía
+    - Pasar a área médica en caso de no traer certificado médico
+    - Presentar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada que cuente
+      con tarjeta de circulación vigente (original y copia).
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Recoger licencia de conducir
+  notes: Expedición de licencias para ciudadanos de 16 a 17 años.
+- name: Expedición de licencias de conducir para choferes.
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Solicitud del trámite (formato de manifiesto que se captura en la Recaudación de Rentas)
+    cites:
+    - source: retys
+  - text: Presentar en original y copia identificación oficial con fotografía vigente (INE, pasaporte mexicano vigente,
+      cédula profesional, matrícula consular, cartilla militar. (ORIGINAL Y COPIA)
+    cites:
+    - source: retys
+  - text: Presentar en original y copia comprobante de domicilio no mayor a tres meses de antigüedad
+    cites:
+    - source: retys
+  - text: Certificado médico, expedido por institución pública o privada de salud, (original y copia)
+    cites:
+    - source: retys
+  - text: Acreditar no haber sido condenado por sentencia ejecutoriada por manejar vehículo de motor en estado de
+      ebriedad o bajo el influjo de drogas o enervantes en los últimos cinco años (carta de no antecedentes penales)
+    cites:
+    - source: retys
+  - text: Presentar examen antidoping
+    cites:
+    - source: retys
+  - text: Certificado de estudios con fotografía (mínimo contar con certificado de primaria), este requisito solo
+      aplica para licencias tipo B y D
+    cites:
+    - source: retys
+  - text: Presentar y aprobar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada
+      y que cuente con tarjeta de circulación vigente (original y copia)
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Para agendar una cita accede a https://citas.ebajacalifornia.gob.mx/, selecciona tu municipio de residencia
+      y llena la información requerida, descarga el comprobante de cita para que conozcas el día, la hora y el lugar
+      para realizar el trámite
+    - Acudir a las oficinas de Recaudación de Rentas del Estado que corresponda con el municipio de su domicilio
+    - Solicitar trámite presentando documentos en ventanilla
+    - Toma de datos, las 10 huellas digitales, lectura del iris de ojos y fotografía
+    - Pasar a área médica en caso de no traer certificado médico
+    - Presentar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada que cuente
+      con tarjeta de circulación vigente (original y copia).
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Recoger licencia de conducir
+  notes: Expedición de licencias de conducir para choferes.
+legal_basis:
+- source: ley1
+  pinpoint: 10, fracc I, inciso A
+- source: ley2
+  pinpoint: 37,38,39,40,41
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Para agendar una cita accede a https://citas.ebajacalifornia.gob.mx/, selecciona tu municipio de residencia
+    y llena la información requerida, descarga el comprobante de cita para que conozcas el día, la hora y el lugar
+    para realizar el trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado que corresponda con el municipio de su domicilio
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Solicitar trámite presentando documentos en ventanilla
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Toma de datos, las 10 huellas digitales y fotografía
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar a área médica en caso de no traer certificado médico
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentar exámenes teórico y práctico de manejo, con un vehículo apropiado a la licencia solicitada que
+    cuente con tarjeta de circulación vigente (original y copia).
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Recoger licencia de conducir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 661: Expedición de Licencia de Conducir'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/661
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del Año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Regula los Servicios de Control Vehicular en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

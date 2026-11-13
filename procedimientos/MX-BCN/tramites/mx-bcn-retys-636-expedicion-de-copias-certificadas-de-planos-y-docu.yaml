@@ -1,0 +1,114 @@
+id: mx-bcn-retys-636-expedicion-de-copias-certificadas-de-planos-y-docu
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Copias Certificadas de Planos y Documentos
+summary: Cuando el usuario requiere planos de predios certificados para usos legales o que deba de dar fe que los
+  planos son auténticos, puede solicitar copia de planos de predios en papel bond, certificados por la secretaría
+  que son copia fiel de los originales que se archivan en las oficinas de SIDURT.
+authority:
+  name: Secretaría de Infraestructura, Desarrollo Urbano y Reordenación Territorial de Baja California
+official_ids:
+  retys_id: 636
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/636
+  homoclave: BC-SIDURT-009
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el usuario lo requiera
+result: Copia certificada de plano y/o documento en su caso.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Capítulo VIII Artículo 19. VII.- Por Expedición De Documentos: A). - Certificación De Copias
+    De Planos B). - Constancias En Relación Con Los Desarrollos Urbanos C). - Constancias Y Copias Certificadas
+    De Documentos, Por La Primera Hoja D). - Por Hoja Adicional E). - Copias Simples De Documentos, Por Hoja F).
+    - Catálogo De Costos Unitarios De Edificación O Infraestructura'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección De Reordenación Territorial
+  address: 'Calzada Independencia #994, Centro Cívico , Mexicali, 21100'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Entregar solicitud dirigida al director de reordenación territorial
+    - La dirección emitira un oficio de notificación de pago dirigido al solicitante con la cantidad a pagar y el
+      tiempo de entrega del trabajo
+    - El solicitante pasará a cubrir la cantidad a pagar en recaudación de rentas del estado
+    - El solicitante entregará copia del recibo de pago a la dirección de reordenación territorial
+    - La dirección de reordenación territorial, entrega las copias solicitadas en el tiempo establecido
+  notes: Cualquier persona que requiera o necesite el servicio o trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 19, Fracción VII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entregar solicitud dirigida al director de reordenación territorial
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La dirección emitira un oficio de notificación de pago dirigido al solicitante con la cantidad a pagar
+    y el tiempo de entrega del trabajo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El solicitante pasará a cubrir la cantidad a pagar en recaudación de rentas del estado
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El solicitante entregará copia del recibo de pago a la dirección de reordenación territorial
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La dirección de reordenación territorial, entrega las copias solicitadas en el tiempo establecido
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 636: Expedición de Copias Certificadas de Planos y Documentos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/636
+    version_date: 19/Septiembre/2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

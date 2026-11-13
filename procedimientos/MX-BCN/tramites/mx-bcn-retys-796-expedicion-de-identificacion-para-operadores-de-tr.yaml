@@ -1,0 +1,135 @@
+id: mx-bcn-retys-796-expedicion-de-identificacion-para-operadores-de-tr
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Identificación para Operadores de Transporte Público, Privado y Empresas de Redes de Transporte
+  (ERT) en Todas Sus Modalidades
+summary: Consiste en solicitar la expedición de la identificación para operadores de transporte público, privado
+  y empresas de redes de transporte (ERT) en todas sus modalidades.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 796
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/796
+  homoclave: BC-IMOS-046
+who_can:
+- Interesado
+when: Cuando la persona interesada busque obtener identificación de operador
+result: Identificación de operador.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 8.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Operadores del servicio de transporte público y privado; operadores de ERT
+  requirements:
+  - text: Tarjeta de circulación vigente
+    cites:
+    - source: retys
+  - text: Licencia de conducir vigente con domicilio en Baja California (correspondiente al tipo de vehículo y modalidad)
+    cites:
+    - source: retys
+  - text: Carta de no antecedentes penales (antigüedad menor a seis meses)
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Examen toxicologico sin reactivos positivos (realizado en laboratorios autorizados por el Instituto, con
+      antigüedad no mayor a seis meses)
+    cites:
+    - source: retys
+  - text: Documento firmado por permisionario donde se designa como chofer sustituto. (Requisito para choferes de
+      taxi libre, metropolitano, escolar, turístico y carga persona física)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14821
+  - text: Los conductores afiliados a empresas de Redes de Transporte deberán tener cuenta de plataforma.(Uber/DiDi)
+    cites:
+    - source: retys
+  - text: Conductores de Taxis de sitio y ruta, deberán estar dados de alta por su agrupación.
+    cites:
+    - source: retys
+  - text: Conductores de empresas de carga (Pública y privada) deberán estar dados de alta en el padrón de su empresa.
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para expedición de identificación de operador
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Inciso N, Numeral 1
+- source: ley2
+  pinpoint: Artículo 57
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 796: Expedición de Identificación para Operadores de Transporte Público, Privado y Empresas
+      de Redes de Transporte (ERT) en Todas Sus Modalidades'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/796
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

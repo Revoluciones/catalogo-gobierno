@@ -1,0 +1,141 @@
+id: mx-bcn-retys-1354-proceso-de-revalidacion-equivalencia-y-acreditacio
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Proceso de Revalidación, Equivalencia y Acreditación
+summary: Realizar proceso de revalidación, equivalencia, así como la acreditación de estudios, el cual se otorga
+  validez oficial a estudios realizados en Instituciones que no forman parte del Sistema Educativo Nacional.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1354
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1354
+  homoclave: BC-UPBC-007
+who_can:
+- Interesado
+when: Cuando el solicitante requiera la información
+result: Revalidación, equivalencia y acreditación de planes de estudios
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $1,200.00 M.N. es costo fijo para inicio del trámite, más el costo de $150.00 M.N. por cada materia
+    por carta descriptiva'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Apoyar a estudiantes de la Universidad a que continúen su carrera
+  requirements:
+  - text: Haber cursado carrera en otra institución educativa o en la UPBC
+    cites:
+    - source: retys
+  - text: 'Presentar documentos que solicita la revalidación de materias: programa de estudios de la materia y boletas
+      que certifique su aprobación en ellas'
+    cites:
+    - source: retys
+  - text: Realizar pago para la revalidación de materias
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6116
+  - text: Realizar petición por escrito (documento libre)
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El alumno solicitará su revalidación por medio de escrito, indicando la carrera donde requiere se revalida
+      las materias
+    - Deberá adjuntar a la petición el programa educativo de las materias a revalidar y recibo de pago
+    - Toda la información se presenta al área de gestión escolar, la cual revisará para poder enviar al sistema
+      educativo para su validación
+    - Gestión escolar una vez que revisa la documentación presentada por estudiante, procede a enviar por escrito
+      la petición del alumno a la Secretaria de Educación, para que a su vez revise y valide la petición del alumno
+    - Gestión escolar una vez que recibe la respuesta de la petición de la revalidación de las materias, informa
+      al alumno
+    - El estudiante recibe respuesta de la revalidación de materias
+    - En el caso de que sea afirmativa la petición de revalidación, la Secretaria Académica da las indicaciones
+      a Gestión Escolar y a Director de carrera para que se proceda el seguimiento de revalidación
+  notes: Ubicar a los estudiantes en los cuatrimestres indicado de acuerdo a la revalidación de las materias
+legal_basis:
+- source: ley1
+  pinpoint: Titulo 7mo, del establecimiento de equivalencias, revalidaciones y acreditación de estudios
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El alumno solicitará su revalidación por medio de escrito, indicando la carrera donde requiere se revalida
+    las materias
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Deberá adjuntar a la petición el programa educativo de las materias a revalidar y recibo de pago
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Toda la información se presenta al área de gestión escolar, la cual revisará para poder enviar al sistema
+    educativo para su validación
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Gestión escolar una vez que revisa la documentación presentada por estudiante, procede a enviar por escrito
+    la petición del alumno a la Secretaria de Educación, para que a su vez revise y valide la petición del alumno
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Gestión escolar una vez que recibe la respuesta de la petición de la revalidación de las materias, informa
+    al alumno
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: El estudiante recibe respuesta de la revalidación de materias
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: En el caso de que sea afirmativa la petición de revalidación, la Secretaria Académica da las indicaciones
+    a Gestión Escolar y a Director de carrera para que se proceda el seguimiento de revalidación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1354: Proceso de Revalidación, Equivalencia y Acreditación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1354
+    version_date: 24/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Estudios de Profesional Asociado y Licenciatura de la UPBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

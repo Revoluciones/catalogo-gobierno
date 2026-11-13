@@ -1,0 +1,147 @@
+id: mx-bcn-retys-182-autorizacion-de-aprovechamiento-extractivo-de-ejem
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización de aprovechamiento extractivo de ejemplares, partes o derivados
+summary: Autorización otorgada a Unidades de Manejo (UMA) previamente registradas para aprovechar de manera extractiva
+  la flora y fauna.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 182
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/182
+  homoclave: BC-SMADS-010
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretenda la extracción y/o aprovechamiento de la flora y fauna
+result: Autorización para llevar a cabo la actividad
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 90 días
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recursos Naturales
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Recursos Naturales
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Formato semarnat-08-023 de autorización de aprovechamiento extractivo de ejemplares, partes o derivados
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3747
+  - text: Original y copia de la identificación oficial vigente (credencial de elector, pasaporte o cédula profesional
+    cites:
+    - source: retys
+  - text: Documentos con los cuales se demuestren que las tasas solicitadas son menores a la de renovación natural
+      de las poblaciones sujetas a aprovechamiento
+    cites:
+    - source: retys
+  - text: Estudio de la población
+    cites:
+    - source: retys
+  - text: Los resultados del muestreo más reciente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la informacion que se requisita en el formato
+    - Evaluar el tramite y generar un oficio de respuesta
+  notes: Persona interesada que pretende realizar una obra o actividad que requiere ser evaluada
+- name: Persona moral
+  requirements:
+  - text: Formato semarnat-08-023 de la autorización de aprovechamiento extractivo de ejemplares, partes o derivados
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11104
+  - text: Original y copia de la identificación oficial vigente del representante (credencial de elector, pasaporte
+      o cédula profesional
+    cites:
+    - source: retys
+  - text: Original y copia del acta constitutiva
+    cites:
+    - source: retys
+  - text: Original y copia del instrumento que acredite la representación legal
+    cites:
+    - source: retys
+  - text: Documentos con los cuales se demuestren que las tasas solicitadas son menores a la de renovación natural
+      de las poblaciones sujetas a aprovechamiento
+    cites:
+    - source: retys
+  - text: Estudio de la población
+    cites:
+    - source: retys
+  - text: Resultados del muestreo más reciente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la informacion que se requisita en el formato
+    - Evaluar el tramite y generar un oficio de respuesta
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 83 y 85
+- source: ley2
+  pinpoint: Artículo 91
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la informacion que se requisita en el formato
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Evaluar el tramite y generar un oficio de respuesta
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 182: Autorización de aprovechamiento extractivo de ejemplares, partes o derivados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/182
+    version_date: 29/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,138 @@
+id: mx-bcn-retys-747-alerta-registral
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Alerta Registral
+summary: La Alerta Registral del Registro Público de la Propiedad y de Comercio de Baja California es un servicio
+  de monitoreo que permite a los propietarios recibir notificaciones cuando existe algún movimiento o trámite relacionado
+  con un inmueble registrado a su nombre.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 747
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/747
+  homoclave: BC-DRPPC-026
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuándo se requiera monitorear los actos registrales
+result: Servicio de monitoreo de los actos registrales de un predio
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Octubre 2026 costo $568.00 pesos por un predio, $1,136.00 por hasta 4 predios, $2,159.00
+    de 5 a 10 predios, $2,840.00 de 11 a 20 predios'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Persona físicas
+  requirements:
+  - text: Formato de Inscripción para el servicio de monitoreo electrónico de predios (Nombre, Correo Electrónico,
+      Teléfono, Folio real a monitorear)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/2098
+  - text: Pago de los derechos cubiertos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Oficina Registral
+    - Llenar el formato de inscripción para servicio de monitoreo electrónico de predios ( FIN-8.5.1-07)
+    - Realizar el pago en cajas de recaudación de rentas
+    - Entregar el pago junto con la solicitud
+    - Usuario recibe a través de su correo electrónico la activación de la alerta registral
+  notes: Para inscribirse en el servicio de monitoreo de los actos registrales de un predio
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, Fracción XVI, inciso a), b), c) y d) e)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Oficina Registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar el formato de inscripción para servicio de monitoreo electrónico de predios ( FIN-8.5.1-07)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago en cajas de recaudación de rentas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entregar el pago junto con la solicitud
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Usuario recibe a través de su correo electrónico la activación de la alerta registral
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 747: Alerta Registral'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/747
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

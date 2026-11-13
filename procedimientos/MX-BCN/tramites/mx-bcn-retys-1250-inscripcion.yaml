@@ -1,0 +1,134 @@
+id: mx-bcn-retys-1250-inscripcion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción
+summary: Inscripción para alumnos de nuevo ingreso.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1250
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1250
+  homoclave: BC-CONALEP-002
+who_can:
+- Interesado
+- Tutor
+when: Después de haber sido seleccionado en un proceso de admisión
+result: La inscripción al plantel
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: Concepto de pago a terceros: $ 1,870.00 Aportaciones voluntarias
+    plantel Ensenada y Tecate: $ 800.00 Aportaciones voluntarias plantel Tijuana I y plantel Tijuana II: $ 800.00
+    Aportaciones voluntarias plantel Mexicali II: $ 903.00 Aportaciones voluntarias plantel Mexicali I: $ 700.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Comprobante de domicilio actual
+    cites:
+    - source: retys
+  - text: Certificado de secundaria
+    cites:
+    - source: retys
+  - text: Acta de Nacimiento
+    cites:
+    - source: retys
+  - text: 2 fotos tamaño infantil, a blanco y negro
+    cites:
+    - source: retys
+  - text: Haber sido seleccionado en el exámen diagnóstico
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Validar información en portal http://miportal.conalepbc.edu.mx/
+    - Realizar pago con recibo generado desde portal
+    - Presentarse al plantel que aplique y entregar documentación requerida.
+    - Entrega de información de horarios, grupos, y/o material de curso de inducción cuando aplique
+  - name: Presencial
+    steps:
+    - Presentar la documentación requerida en el plantel que aplique
+    - Entregar información de horarios, grupos, y/o material de curso de inducción cuando aplique
+  notes: Requisitos para trámite de inscripción
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Validar información en portal http://miportal.conalepbc.edu.mx/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar pago con recibo generado desde portal
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentarse al plantel que aplique y entregar documentación requerida.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega de información de horarios, grupos, y/o material de curso de inducción cuando aplique
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1250: Inscripción'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1250
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

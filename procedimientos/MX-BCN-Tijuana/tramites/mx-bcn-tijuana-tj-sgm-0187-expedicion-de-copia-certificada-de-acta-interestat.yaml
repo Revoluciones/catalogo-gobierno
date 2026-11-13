@@ -1,0 +1,89 @@
+id: mx-bcn-tijuana-tj-sgm-0187-expedicion-de-copia-certificada-de-acta-interestat
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: Expedición de COPIA CERTIFICADA DE ACTA INTERESTATAL (Foráneas) de Nacimiento, Matrimonio, Defunción, Divorcio
+summary: Permite obtener una copia certificada de un acta de nacimiento, matrimonio, defunción o divorcio , registrada
+  fuera del estado de Baja California. Esta copia tiene validez legal y se puede usar para diversos trámites oficiales,
+  como la obtención de documentos, identificación o para trámites legales.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0187
+who_can:
+- Interesado
+when: Cuando se necesita una copia certificada para gestiones como pasaporte, inscripción escolar, trámites migratorios
+  o legales. · Si el acta original se extravió, está dañada o es ilegible. · En casos donde se requiera comprobar
+  datos personales o familiares, como matrimonio, divorcio, adopción o defunción.
+result: Certificado
+requirements:
+- text: Acta de nacimiento o CURP
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 234.62
+  text: 'Copia certificada estatal o interestatal. (Debiéndose adicionar los derechos correspondientes a la Dirección
+    del Registro Civil de Gobierno del Estado de B.C. de acuerdo su Ley de Ingresos vigente, dos campañas por año):
+    2 UMA ($234.62). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 Entrega inmediata
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0187: Expedición de COPIA CERTIFICADA DE ACTA INTERESTATAL (Foráneas)
+      de Nacimiento, Matrimonio, Defunción, Divorcio.'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0187
+    version_date: '2026-10-23'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 35 y 94 del Código Civil para el Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20230421_CODCIVIL-2.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 35 y 44 del Código Civil para el Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20260605_CODCIVIL.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18, fracción VII, inciso B), subinciso e) de la Ley de Ingresos del Municipio de Tijuana, Baja
+      California del Ejercicio Fiscal 2026
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20251230_LEYINGRESOTIJUANA2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://www.gob.mx/ActaNacimiento/ Criterio para resolver: Cumplir con los requisitos solicitados.'

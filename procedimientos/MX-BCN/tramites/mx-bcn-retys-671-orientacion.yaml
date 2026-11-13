@@ -1,0 +1,130 @@
+id: mx-bcn-retys-671-orientacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Orientación
+summary: Proceso que incluye informar sobre los derechos del paciente, y sobre las opciones disponibles para la
+  solución del conflicto.
+authority:
+  name: Comisión de Arbitraje Medico del Estado de Baja California
+official_ids:
+  retys_id: 671
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/671
+  homoclave: BC-CAME-001
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se necesite orientación sobre cómo, cuándo, dónde, para qué y por qué presentar una queja así como
+  las posibles formas de solución.
+result: información detallada sobre sus derechos explicación de las opciones disponibles y apoyo durante el proceso.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: SERVICIO UNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación de Conciliación
+  address: 'Paseo de los Héroes #s/n H9-31, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación de Conciliación
+  address: 'Diego Rivera y Vía Rápida Poniente #S/N, Zona Río, Tijuana, 22320'
+- municipality: Ensenada
+  name: Coordinación de Conciliación
+  address: 'Carretera Transpeninsular Ensenada la Paz #6500, Ex Ejido Chapultepec, Ensenada, 22880'
+- municipality: Tecate
+  name: Coordinación de Conciliación
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Coordinación de Conciliación
+  address: 'Avenida José Haros Aguilar #2000, Villa Turística, Playas de Rosarito, 22710'
+scenarios:
+- name: Orientación sobre servicios de la Comisión de Arbitraje Médico
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página oficial de la comisión.
+    - Seleccionar la opción de solicitar una orientación.
+    - Completar información solicitada.
+    - Seleccionar enviar.
+    - Esperar respuesta de la Comisión.
+  - name: Presencial
+    steps:
+    - Acudir a oficina con identificación oficial.
+    - Exponer su asunto a persona que atiende.
+    - Recibe información o pasa con Médico Conciliador.
+  notes: Dirigido a ciudadanía en general cuando tiene necesidad de recibir orientación sobre las funciones y atribuciones
+    de la Comisión de Arbitraje Médico del Estado y/o sobre la entidad pública o privada a la cual corresponda su
+    inconformidad, atención inmediata, el servicio se puede brindar de manera telefónica, en línea o de manera presencial,
+    sin costo alguno
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página oficial de la comisión.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar la opción de solicitar una orientación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Completar información solicitada.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Seleccionar enviar.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Esperar respuesta de la Comisión.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 671: Orientación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/671
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisión de Arbitraje Médico del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

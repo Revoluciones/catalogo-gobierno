@@ -1,0 +1,220 @@
+id: mx-bcn-retys-1758-apoyo-directo-para-organizaciones-de-la-sociedad-c
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Apoyo Directo para Organizaciones de la Sociedad Civil
+summary: Entrega de Apoyos Económicos directos para OSC´s inscritas en el Catálogo Estatal 2025 que realizan proyectos
+  encaminados a la realización de acciones que brinden el bienestar a la población vulnerable.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 1758
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1758
+  homoclave: BC-SB-036
+who_can:
+- Representante Legal
+when: Cuando se requiera apoyo económico para un proyecto social
+result: Apoyo económico.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 60 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Centros de Rehabilitación
+  requirements:
+  - text: Formato de apoyo directo 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14197
+  - text: Carta petición dirigida a la Gobernadora con atención al titular de la Secretaría.
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial (INE) vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al Catálogo Estatal de OSC 2026.
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal con antigüedad no mayor a un mes.
+    cites:
+    - source: retys
+  - text: Copia de constancia expedida u oficio que se encuentra en vía de cumplimiento, expedida por el Instituto
+      de Psiquiatría del Estado (IPEBC) de Baja California, del cumplimiento de la Norma de Salud NOM-028-SSA2-2009,
+      con una antigüedad no mayor a un año.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los espacios asignados para el registro con la documentación solicitada.
+    - Revisión de documentación.
+    - Evaluación de la solicitud por parte del personal.
+    - Notificación al usuario del estatus de su trámite.
+  notes: Centros de Rehabilitación constituidos que soliciten el apoyo
+- name: Instituciones de Asistencia Social
+  requirements:
+  - text: Formato de registro 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14198
+  - text: Carta petición dirigida a la Gobernadora con atención al titular de la Secretaría.
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial (INE) vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al Catálogo Estatal de OSC 2026.
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal con antigüedad no mayor a un mes.
+    cites:
+    - source: retys
+  - text: Licencia de operación o constancia que se encuentra en vía de cumplimiento, expedida por el Sistema Estatal
+      para el Desarrollo Integral de la Familia (DIF), con antigüedad no mayor a un año.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los espacios asignados para el registro con la documentación solicitada.
+    - Revisión de documentación.
+    - Evaluación de la solicitud por parte del personal.
+    - Notificación al usuario del estatus de su trámite.
+  notes: Requisitos para Instituciones de Asistencia Social constituidas
+- name: Organizaciones que reciban la donación, suministro o distribución de alimentos
+  requirements:
+  - text: Formato de registro 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14199
+  - text: Carta petición dirigida a la Gobernadora con atención al titular de la Secretaría.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial (INE) vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al catálogo estatal de OSC 2026.
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal con antigüedad no mayor a un mes.
+    cites:
+    - source: retys
+  - text: Copia de comprobante de aviso de funcionamiento de regulación de servicios de salud, expedido por la COEPRISBC.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los espacios asignados para el registro con la documentación solicitada.
+    - Revisión de documentación.
+    - Evaluación de la solicitud por parte del personal.
+    - Notificación al usuario del estatus de su trámite.
+  notes: Requisitos para las Organizaciones de la Sociedad Civil cuyo objeto sea la recepción de donaciones de alimentos,
+    su suministro o distribución, o que estén sujetas a control sanitario
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 5, 6 y 12
+- source: ley2
+  pinpoint: Artículos 49 y 49 BIS
+- source: ley3
+  pinpoint: Artículos 24, 30 y 31
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a los espacios asignados para el registro con la documentación solicitada.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisión de documentación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1758: Apoyo Directo para Organizaciones de la Sociedad Civil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1758
+    version_date: 04/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: La Ley de Fomento a las Actividades de Bienestar y Desarrollo Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Fomento a las Actividades de Bienestar y Desarrollo Social para el Estado de
+      Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

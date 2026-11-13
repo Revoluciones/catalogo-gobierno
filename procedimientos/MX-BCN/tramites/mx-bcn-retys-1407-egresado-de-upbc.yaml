@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1407-egresado-de-upbc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Egresado de UPBC
+summary: Otorgar a estudiantes egresados de la UPBC, constancia de terminación de estudios una vez que hayan concluido
+  su carrera satisfactoriamente.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1407
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1407
+  homoclave: BC-UPBC-008
+who_can:
+- Interesado
+when: Cuando el egresado lo solicite
+result: Constancia de terminación de estudios
+cost:
+  type: fijo
+  amount_mxn: 100.0
+  text: 'COSTO: $100.00 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Obtención de constancia de terminación de estudios
+  requirements:
+  - text: El egresado deberá haber concluido toda la carrera satisfactoriamente, para solicitar su constancia de
+      estudios
+    cites:
+    - source: retys
+  - text: Obtener el recibo de pago y realizar el pago en línea o en ventanilla bancaria
+    cites:
+    - source: retys
+  - text: una vez realizado el pago debera presentarse al depto. de gestion escolar para solicitar previamente.
+    cites:
+    - source: retys
+  - text: se presenta al depto. de gestion escolar para solicitar su constancia de terminacion de estudios, mostrando
+      credencial oficial de identificación.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Estudiante egresado con numero de matricula
+    - Ingresar a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+      derecha
+    - Obtener recibo de pago de la constancia en línea, efectuar el pago en línea o imprimir para pago en ventanilla
+      bancaria
+    - Subir al sistema Siaax, el recibo de pago en formato pdf, para su validación, aprobación y obtención del documento
+    - Descargar el archivo de la constancia de estudios, y una vez hecho tendrá un plazo de 24 horas para imprimir
+      o archivar el documento
+  notes: Facilitar a los estudiantes egresados de la UPBC, para que puedan obtener su constancia de terminación
+    de estudios
+legal_basis:
+- source: ley1
+  pinpoint: Título décimo segundo, de las constancias y del título de profesiones, capítulo II título profesionales,
+    articulo 73
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Estudiante egresado con numero de matricula
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+    derecha
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Obtener recibo de pago de la constancia en línea, efectuar el pago en línea o imprimir para pago en ventanilla
+    bancaria
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir al sistema Siaax, el recibo de pago en formato pdf, para su validación, aprobación y obtención del
+    documento
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Descargar el archivo de la constancia de estudios, y una vez hecho tendrá un plazo de 24 horas para imprimir
+    o archivar el documento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1407: Egresado de UPBC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1407
+    version_date: 22/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de estudios profesionales asociados y licenciatura de la UPBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Constancia de Terminación de Estudios. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

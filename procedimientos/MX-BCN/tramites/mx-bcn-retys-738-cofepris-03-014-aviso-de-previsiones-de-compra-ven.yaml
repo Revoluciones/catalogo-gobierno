@@ -1,0 +1,100 @@
+id: mx-bcn-retys-738-cofepris-03-014-aviso-de-previsiones-de-compra-ven
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-03-014 Aviso de Previsiones de Compra-Venta de Medicamentos que Contengan Estupefacientes para Farmacias,
+  Droguerías y Boticas
+summary: Cuando una farmacia, botica o droguería pretenda adquirir medicamentos con estupefacientes y comercializarlos,
+  debe presentar el aviso antes de realizar cualquier adquisición.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 738
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/738
+  homoclave: BC-COEPRIS-025
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura operación
+result: Aviso de previsión
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7724
+  - text: Formato “avisos”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple legible
+      del mismo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 114 ultimo parrafo
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el Centro Integral de Servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 738: COFEPRIS-03-014 Aviso de Previsiones de Compra-Venta de Medicamentos que Contengan
+      Estupefacientes para Farmacias, Droguerías y Boticas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/738
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Insumos para la Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-03-014 Aviso de previsiones de compra-venta de medicamentos que contengan estupefacientes
+  para farmacias, droguerías y boticas.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la
+  primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

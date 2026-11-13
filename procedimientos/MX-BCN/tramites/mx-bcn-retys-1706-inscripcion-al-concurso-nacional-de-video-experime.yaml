@@ -1,0 +1,107 @@
+id: mx-bcn-retys-1706-inscripcion-al-concurso-nacional-de-video-experime
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Concurso Nacional de Video Experimental
+summary: Que las personas videastas y ciudadanía en general compartan experiencias a través de un nutrido programa
+  integrado por muestras nacionales e internacionales, conferencias, intervenciones sonoras y visuales para ampliar
+  el panorama del que hacer del concurso de vídeo.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1706
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1706
+  homoclave: BC-SC-017
+who_can:
+- Interesado
+when: Cuando se publique la convocatoria
+result: Promoción y difusión del vídeo y/o premio en efectivo.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Museos y Galerías
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Personas videastas y cineastas locales, regionales o nacionales
+  requirements:
+  - text: Llenar ficha de inscripción
+    cites:
+    - source: retys
+  - text: Proporcionar video para concursar
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar ficha de inscripción.
+    - Enviar por correo o entregar en oficinas ficha de inscripción y proyecto de video
+    - Realiza evento.
+    - Jurado dictamina y entrega a Secretaría de Cultura lista de ganadores
+    - Se anuncian ganadores y se entregan premios.
+  notes: Personas videastas y cineastas locales, regionales o nacionales
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 27, fracción V.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar ficha de inscripción.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Enviar por correo o entregar en oficinas ficha de inscripción y proyecto de video
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza evento.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Jurado dictamina y entrega a Secretaría de Cultura lista de ganadores
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se anuncian ganadores y se entregan premios.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1706: Inscripción al Concurso Nacional de Video Experimental'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1706
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

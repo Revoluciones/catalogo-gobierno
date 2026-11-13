@@ -1,0 +1,137 @@
+id: mx-bcn-retys-533-certificado-de-no-propiedad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de No Propiedad
+summary: Documento dónde se hace constar que determinada persona no posee propiedades inscritas a su nombre dentro
+  del municipio correspondiente.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 533
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/533
+  homoclave: BC-DRPPC-007
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera establecer que una persona no cuenta con propiedades inscritas a su nombre
+result: Certificado en el cual establece que no cuenta con propiedades
+cost:
+  type: variable
+  amount_mxn: 89.0
+  text: 'COSTO VARIABLE: Octubre 2026 el costo es de $89.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Formato FMO-8.5.1-04 con el nombre y/o nombres de manera precisa
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1944
+  - text: No contar con propiedades inscritas a su nombre dentro de los archivos registrales
+    cites:
+    - source: retys
+  - text: Pago de derechos cubiertos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar correctamente la solicitud FMO-8.5.1-04
+    - Realizar los pagos correspondientes en las oficinas de Recaudación de Rentas
+    - Tomar turno para acudir a la ventanilla correspondiente para entregar el formato FMO-8.5.1-04 y el pago correspondiente
+    - Presentarse con el volante pagado el día que el servidor público haya señalado como fecha de entrega
+  notes: Para la obtención del Certificado de no propiedad
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, Fracción VIII, Inciso A
+- source: ley3
+  pinpoint: 11, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar correctamente la solicitud FMO-8.5.1-04
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar los pagos correspondientes en las oficinas de Recaudación de Rentas
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Tomar turno para acudir a la ventanilla correspondiente para entregar el formato FMO-8.5.1-04 y el pago
+    correspondiente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Presentarse con el volante pagado el día que el servidor público haya señalado como fecha de entrega
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 533: Certificado de No Propiedad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/533
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1700-gestion-para-la-incorporacion-de-un-bien-al-patrim
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Gestión para la incorporación de un bien al Patrimonio Cultural de Baja California
+summary: Atender las solicitudes para la promoción declaratoria de bienes y valores culturales al patrimonio cultural
+  del estado de acuerdo al procedimiento indicado en la Ley de Preservación del Patrimonio Cultural del Estado de
+  Baja California.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1700
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1700
+  homoclave: BC-SC-011
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se desee incorporar un bien tangible intangible como patrimonio cultural
+result: El decreto de la declaratoria del bien cultural o histórico.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Años'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Patrimonio Cultural y Culturas Populares
+  address: 'Álvaro Obregón #1209, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Solicitud de declaratoria (carta de formato libre donde se manifieste y fundamente la intención de llegar
+      a una declaratoria)
+    cites:
+    - source: retys
+  - text: Expediente técnico de acuerdo a lo establecido en la guía para la elaboración de expedientes, que contiene
+      la información mínima indispensable, que los miembros del consejo de patrimonio requieren para evaluar su
+      pertinencia
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Elabore y entrege de forma impresa la solicitud de declaratoria de un bien tangible o intangible al patrimonio
+      cultural de Baja California, adjuntando el expediente técnico de acuerdo a lo establecido en la guía para
+      la elaboración de expedientes
+    - Personal de la Secretaría de Cultura, revisa y validada la solicitud y el expediente
+    - Personal de la Secretaría turna al Consejo de Patrimonio para su estudio
+    - Consejo de Patrimonio analiza, sesiona y emite votación
+    - Publicación de la declaratoria
+  notes: Toda persona que desee incorporar un bien tangible o intangible al Patrimonio Cultural de Baja California.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 33, fracciones III y IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Elabore y entrege de forma impresa la solicitud de declaratoria de un bien tangible o intangible al patrimonio
+    cultural de Baja California, adjuntando el expediente técnico de acuerdo a lo establecido en la guía para la
+    elaboración de expedientes
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura, revisa y validada la solicitud y el expediente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría turna al Consejo de Patrimonio para su estudio
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Consejo de Patrimonio analiza, sesiona y emite votación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Publicación de la declaratoria
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1700: Gestión para la incorporación de un bien al Patrimonio Cultural de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1700
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Gestión para la incorporación de un bien tangible o intangible al Patrimonio Cultural de
+  Baja California.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las
+  demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

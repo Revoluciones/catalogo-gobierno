@@ -1,0 +1,174 @@
+id: mx-bcn-retys-401-pruebas-psicologicas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pruebas Psicológicas
+summary: Herramientas para evaluar la personalidad, las habilidades cognitivas, las emociones y el comportamiento
+  de una persona con el fin de generar un diagnóstico.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 401
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/401
+  homoclave: BC-IPEBC-001
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se requiera de una evaluación o diagnostico de la personalidad.
+result: Evaluación
+cost:
+  type: fijo
+  amount_mxn: 315.0
+  text: 'COSTO: $315.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 MESES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Médica
+  address: 'Onceava #1753, Mexicali , Mexicali, 21396'
+- municipality: Tijuana
+  name: Dirección Médica
+  address: 'Maclovio Herrera #S/N, Francisco Villa , Tijuana, 22000'
+- municipality: Ensenada
+  name: Dirección Médica
+  address: 'Floresta, Locales 15 y 16, Plaza Elva #321, Obrera, Ensenada, 22830'
+scenarios:
+- name: Derechohabiente IMSS, ISSSTE, ISSSTECALI, ISESALUD
+  requirements:
+  - text: Original y copia de Hoja de Derivación emitida por Centro de Salud u Hospital General de su localidad.
+    cites:
+    - source: retys
+  - text: 2 copias de Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Original y 2 Copias de Comprobante de Domicilio.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Identificación Oficial (INE, Pasaporte Mexicano, Licencia de Conducir, Cartilla
+      Militar)
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Acta de Nacimiento.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la dependencia a solicitar el servicio.
+    - Presentar la solicitud por el médico psiquiatra tratante, institución de servicios de salud, judicial o educativa.
+    - Acudir en la fecha programada para aplicación de prueba psicológica.
+    - Realiza prueba psicológica e informa del tiempo de entrega de resultados. Entrega de resultados aproximadamente
+      10 días siguientes hábiles.
+    - En caso de que el solicitante utilice lentes oftálmicos es necesario llevarlos el día de la prueba.
+  notes: Cualquier derechohabiente del IMSS, ISSSTE, ISSSTECALI, ISESALUD
+- name: Público en General
+  requirements:
+  - text: Original y 2 copias de Identificación oficial vigente (INE, pasaporte mexicano, licencia de conducir,
+      cartilla militar)
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Acta de Nacimiento.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: 2 copias de Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Recibo de pago.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contar con documento de solicitud por el médico psiquiatra tratante, institución de servicios de salud, judicial
+      o educativa.
+    - Realizar pago correspondiente
+    - Acudir en la fecha programada para aplicación de prueba psicológica.
+    - Realiza prueba psicológica e informa del tiempo de entrega de resultados.
+    - En caso de que el solicitante utilice lentes oftálmicos es necesario llevarlos el día de la prueba.
+  notes: Público en General
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2
+- source: ley2
+  pinpoint: Artículo 4. Fracción IV
+- source: ley3
+  pinpoint: Artículo 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la dependencia a solicitar el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud por el médico psiquiatra tratante, institución de servicios de salud, judicial
+    o educativa.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir en la fecha programada para aplicación de prueba psicológica.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realiza prueba psicológica e informa del tiempo de entrega de resultados. Entrega de resultados aproximadamente
+    10 días siguientes hábiles.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En caso de que el solicitante utilice lentes oftálmicos es necesario llevarlos el día de la prueba.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 401: Pruebas Psicológicas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/401
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Pruebas Psicológicas. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

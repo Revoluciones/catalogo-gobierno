@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1369-capacitacion-para-el-trabajo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Capacitación para el Trabajo
+summary: Cursos de capacitación del área técnica industrial para empresas o en población en general.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1369
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1369
+  homoclave: BC-CONALEP-008
+who_can:
+- Interesado
+when: Cuando el interesado o la empresa lo requiera
+result: Diploma de acreditación de las horas y contenido
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: Costo por capacitación en sector industrial $ 1,700.00 Costo
+    por capacitación en sector servicios $1,500.00 Los costos pueden variar'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 6 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAST
+  address: 'Avenida Ermita Norte #3600-B, Río Tijuana, 3ra Etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Copia de credencial de elector
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Publicar calendario de cursos
+    - Solicitar curso presentando documentos requeridos
+    - Impartir el curso
+    - Entregar diploma
+  notes: Requisitos para obtener una capacitación
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Publicar calendario de cursos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar curso presentando documentos requeridos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Impartir el curso
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entregar diploma
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1369: Capacitación para el Trabajo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1369
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de Creación del Colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

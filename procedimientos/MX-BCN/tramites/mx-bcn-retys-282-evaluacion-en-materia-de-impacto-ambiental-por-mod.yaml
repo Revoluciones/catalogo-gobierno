@@ -1,0 +1,241 @@
+id: mx-bcn-retys-282-evaluacion-en-materia-de-impacto-ambiental-por-mod
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Evaluación en materia de impacto ambiental por modificaciones a proyectos autorizados
+summary: Solicitud para la evaluación de modificaciones o ampliaciones a proyectos autorizados en materia de impacto
+  ambiental, a fin de determinar si afecta o no el contenido de la autorización otorgada.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 282
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/282
+  homoclave: BC-SMADS-049
+who_can:
+- Representante Legal
+when: Previo a la realización de cualquier modificación o ampliación de una obra o actividad ya autorizada.
+result: Acuerdo Administrativo con la autorización de la modificación o ampliación, o con el requerimiento de presentación
+  de un IP o una MIA.
+cost:
+  type: variable
+  amount_mxn: 4548.98
+  text: 'COSTO VARIABLE: $4,548.98 M.N. Costo actualizado para el mes de noviembre del 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Escrito de solicitud que contenga la firma autógrafa de la persona apoderada o representante legal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14830
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En su caso, los planos y/o croquis con los cambios pretendidos.
+    cites:
+    - source: retys
+  - text: Documentos técnicos que considere necesario para amparar su solicitud y sus manifestaciones.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental vigente, completo
+      y nítido que lo se acredite como tal
+    cites:
+    - source: retys
+  - text: USB con la totalidad de la información presentada.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Seleccionar el tipo de persona (física o moral) y capturar la información solicitada.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  notes: Persona titular de una autorización, que pretende realizar una modificación a la misma.
+- name: Persona Moral
+  requirements:
+  - text: Escrito de solicitud que contenga la firma autógrafa de la persona apoderada o representante legal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14831
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Documentos vigentes, completos y nítidos que acrediten al apoderado o representante legal como tal de
+      la persona moral
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal de la persona moral, legible
+      y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En su caso, los planos y/o croquis con los cambios pretendidos.
+    cites:
+    - source: retys
+  - text: Documentos técnicos que consideren necesarios para amparar su solicitud y sus manifestaciones.
+    cites:
+    - source: retys
+  - text: USB con la totalidad de la información presentada.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Capturar la información solicitada.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, titular de
+    una autorización, que pretende realizar una modificación a la misma.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción IV, inciso c)
+- source: ley2
+  pinpoint: Artículos 41 y 45
+- source: ley3
+  pinpoint: Artículo 23
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el tipo de persona (física o moral) y capturar la información solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos y obtener el comprobante correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir los documentos solicitados vigentes.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+    notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+    por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la normatividad
+    aplicable.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 282: Evaluación en materia de impacto ambiental por modificaciones a proyectos autorizados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/282
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente del Gobierno del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Impacto
+      Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,109 @@
+id: mx-bcn-tijuana-tj-sdtua-0155-permiso-para-tala-de-arboles
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Medio ambiente, Servicios públicos municipales
+title: Permiso para Tala de Árboles
+summary: Permite solicitar la autorización para la tala de un árbol en la vía pública o en propiedad privada, cuando
+  este presenta riesgos derivados de plagas, enfermedades, vandalismo o daño estructural.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Servicios Públicos Municipales
+official_ids:
+  homoclave: TJ-SDTUA-0155
+who_can:
+- Interesado
+when: Cuando se requiere talar un árbol porque afecta algún elemento urbano
+result: Oficio
+requirements:
+- text: Solicitud por escrito.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Fotográfias que muestren el elemento al que afecta
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de impuesto predial pagado.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Factibilidad de la Dirección de Protección al Ambiente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Identifcación oficial vigente (acreditar propiedad).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Tala con herramienta manual de pieza menor de 3.00 m de altura (copa de 3.00 a 4.00 m.), incluye: herramienta
+    menor, realización del trabajo, limpieza, retiro y traslado del producto de la tala: 23.4 UMA ($2,745.05) ·
+    Tala con maquinaria y equipo a pieza mayor a 3.00 metros y menor a 6.00 metros (copa de 4.00 a 8.00 metros),
+    incluye: grúa, equipo especial y herramienta menor, mano de obra, limpieza y retiro del producto de la tala:
+    66.3 UMA ($7,777.65) · Tala con maquinaria y equipo a pieza mayor a 6.00 metros y menor a 9.00 metros (copa
+    de 8.00 a 11.00 metros), incluye: grúa, equipo especial y herramienta menor, mano de obra, limpieza y retiro
+    del producto de la tala: 163.77 UMA ($19,211.86) · Tala con maquinaria y equipo a pieza de 9.00 metros o mayor
+    (copa de 11.00 metros o más), incluye: grúa, equipo especial y herramienta menor, mano de obra, limpieza y retiro
+    del producto de la tala: 369.11 UMA ($43,300.29) · Tala urgente con herramienta manual de pieza menor de 3.00
+    m de altura (copa de 3.00 a 4.00 m.), incluye: herramienta menor, realización del trabajo, limpieza, retiro
+    y traslado del producto de la tala: 123.5 UMA ($14,487.78) · Tala urgente con maquinaria y equipo a pieza mayor
+    a 3.00 metros y menor a 6.00 metros (copa de 4.00 a 8.00 metros), incluye: grúa, equipo especial y herramienta
+    menor, mano de obra, limpieza y retiro del producto de la tala: 239.2 UMA ($28,060.55) · Tala urgente con maquinaria
+    y equipo a pieza mayor a 6.00 metros y menor a 9.00 metros (copa de 8.00 a 11.00 metros), incluye: grúa, equipo
+    especial y herramienta menor, mano de obra, limpieza y retiro del producto de la tala: 478.4 UMA ($56,121.10)
+    · Tala urgente con maquinaria y equipo a pieza de 9.00 metros o más (copa de 11.00 metros o más), incluye: grúa,
+    equipo especial y herramienta menor, mano de obra, limpieza y retiro del producto de la tala: 956 UMA ($112,148.36).
+    UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 10 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Servicios Públicos Municipales
+  address: Av. Independencia 1350, Zona Río
+  phones: 6649737100 ext. 7423
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0155: Permiso para Tala de Árboles'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0155
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de Forestación para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20231123141040508_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Articulo 29, fracción VIII, inciso C, subincisos a), b), c) y d) de la Ley de Ingresos del Municipio
+      de Tijuana, Baja California para el Ejercicio Fiscal del 2025
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Presentar dictamen favorable emitido por la Dirección de proteccion al Ambiente.'

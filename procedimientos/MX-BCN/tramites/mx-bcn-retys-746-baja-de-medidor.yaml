@@ -1,0 +1,119 @@
+id: mx-bcn-retys-746-baja-de-medidor
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Baja de Medidor
+summary: Proceso mediante el cual se solicita por parte del usuario la baja un medidor, ya sea de forma temporal
+  o definitiva.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 746
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/746
+  homoclave: BC-CESPE-002
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando ya no se requiera el servicio y la casa esté deshabitada o el local desocupado
+result: Aprobación de baja de medidor
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El monto a pagar dependerá del saldo pendiente de la cuenta al momento de la solicitud
+    de baja.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Propietario del predio
+  requirements:
+  - text: Formato de solicitud de baja.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3820
+  - text: Carta poder en caso de no ser el propietario
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas con el formato de baja debidamente lleno
+    - Esperar el lapso de tiempo que el operador de módulo le indique
+    - Corroborar que la cuenta esté dada de baja en el lapso indicado por operador
+  notes: El propietario deberá acreditar su personalidad con identificación oficial.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+- source: ley2
+  pinpoint: Artículos 2, 20, 21 Y 22.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas con el formato de baja debidamente lleno
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Esperar el lapso de tiempo que el operador de módulo le indique
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Corroborar que la cuenta esté dada de baja en el lapso indicado por operador
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 746: Baja de Medidor'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/746
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de las Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Baja de Medidor.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la
+  primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

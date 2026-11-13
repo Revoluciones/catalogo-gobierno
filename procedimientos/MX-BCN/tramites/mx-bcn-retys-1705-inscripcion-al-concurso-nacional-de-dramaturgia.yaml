@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1705-inscripcion-al-concurso-nacional-de-dramaturgia
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Concurso Nacional de Dramaturgia
+summary: Dramaturgos mexicanos o extranjeros participen con una obra de teatro inédita
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1705
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1705
+  homoclave: BC-SC-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando lo establezca la convocatoria
+result: Constancia de participación y en su caso premio por el primer lugar en alguna de las categorías
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Escritores, dramaturgos
+  requirements:
+  - text: Elaborar ficha de inscripción
+    cites:
+    - source: retys
+  - text: Texto de obra de dramaturgia (firmado con seudónimo) que contenga datos del participante
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Consultar página web entre los meses de febrero y julio: https://www.bajacalifornia.gob.mx/Cultura/Secciones/Convocatorias'
+    - Entregar en oficina la obra escrita acompañada de sobre cerrado identificado con seudónimo
+    - Podrá enviar la obra por correo o mensajería se tomará como fecha de envió la de mensajería
+    - Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+    - Secretaría de Cultura e Instituto Nacional de Bellas Artes (INBA) entregan premio
+  notes: Personas autoras de textos inéditos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción IV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Consultar página web entre los meses de febrero y julio: https://www.bajacalifornia.gob.mx/Cultura/Secciones/Convocatorias'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar en oficina la obra escrita acompañada de sobre cerrado identificado con seudónimo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Podrá enviar la obra por correo o mensajería se tomará como fecha de envió la de mensajería
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Jurado dictamina y entrega a la Secretaría de Cultura lista de ganadores
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Secretaría de Cultura e Instituto Nacional de Bellas Artes (INBA) entregan premio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1705: Inscripción al Concurso Nacional de Dramaturgia'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1705
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

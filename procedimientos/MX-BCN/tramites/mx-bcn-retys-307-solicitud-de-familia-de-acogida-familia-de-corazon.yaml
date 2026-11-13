@@ -1,0 +1,237 @@
+id: mx-bcn-retys-307-solicitud-de-familia-de-acogida-familia-de-corazon
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Familia de Acogida (Familia de Corazón)
+summary: Brindar cuidado temporal a niñas, niños y adolescentes carentes de cuidados parentales, a través de familias
+  distintas a su familia de origen, en tanto se resuelva su situación jurídica.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 307
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/307
+  homoclave: BC-DIF-004
+who_can:
+- Interesado
+when: En cualquier momento que lo desee
+result: La oportunidad de brindarle a una niña, niño o adolescente un ambiente armónico y familiar
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 4 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: DIF BC Oficinas Generales, Coordinación de Familias de Acogida, Mexicali
+  address: 'Av. Álvaro Obregón, entre calle D y E  #s/n, Segunda Sección, Mexicali, 21100'
+- municipality: Tijuana
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tijuana
+  address: 'Avenida Río Tijuana y Avenida de los Taxistas #s/n, Infonavit La Mesa, Tijuana, 22114'
+- municipality: Ensenada
+  name: Subprocuraduría para la Defensa de los Menores y la Familia Ensenada
+  address: 'Calle Transpeninsular del Poder Ejecutivo #s/n, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tecate
+  address: 'Avenida Hidalgo y Profesor Gutiérrez Hernandez Durán #s/n, Colonia Downey, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Subprocuraduria para la Defensa de los Menores y la Familia Playas de Rosarito
+  address: 'ROSARITO CENTRO FRANCISCO DE ANZA MANZANA 25  #lote 26, Predios Urbanos, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Procuraduría para la Defensa de los Menores y la Familia en San Quintín
+  address: 'Calle A entre las Avenidas 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Subprocuraduría para la Defensa de los Menores y la Familia San Felipe
+  address: 'Mar Bermejo entre Chetumal y Ensenada #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Solicitud de familia de acogida, debidamente firmada por las partes interesadas;
+    cites:
+    - source: retys
+  - text: Escrito libre dirigido a la procuraduría de protección, debidamente firmado por el solicitante.
+    cites:
+    - source: retys
+  - text: Cédula única de registro de población del solicitante y de cada uno de los integrantes de la familia
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía del solicitante expedida por la autoridad oficial;
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio de no mayor a tres meses anteriores a la solicitud.
+    cites:
+    - source: retys
+  - text: Original y copia de título de propiedad del o los inmuebles señalados como domicilio familiar en donde
+      se pretenda acoger a la niña, niño o adolescente.
+    cites:
+    - source: retys
+  - text: Copia certificada del acta de nacimiento del solicitante de quien o quienes soliciten la certificación
+      y de cada uno de los integrantes de la familia;
+    cites:
+    - source: retys
+  - text: En su caso, copia certificada del acta de matrimonio de los solicitantes, o acta, constancia o certificado
+      de concubinato emitido por autoridad judicial;
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos el cual podrá ser recibo de nómina de los tres últimos meses expedido por la empresa
+      o institución donde labora.
+    cites:
+    - source: retys
+  - text: Constancia de trabajo expedida por la empresa o institución donde labora el solicitante.
+    cites:
+    - source: retys
+  - text: Carta de no antecedentes penales de cada solicitante, expedida por la autoridad de la entidad federativa
+      que corresponda a su domicilio o residencia habitual;
+    cites:
+    - source: retys
+  - text: Carta compromiso del solicitante de quien o quienes soliciten la certificación se obligan a presentar
+      en tiempo y forma los documentos que se le requieran.
+    cites:
+    - source: retys
+  - text: Carta compromiso del solicitante se obligan, a aceptar las evaluaciones psicológicas y de estudios socioeconómicos
+      periódicas.
+    cites:
+    - source: retys
+  - text: Dos cartas de recomendación, signadas por personas no familiares del solicitante que conozcan su intención
+      de formar parte del programa de familias de acogida;
+    cites:
+    - source: retys
+  - text: Carta de aceptación de los familiares mayores de edad que vivan en el mismo domicilio del solicitante,
+      para constituirse como familias de acogida
+    cites:
+    - source: retys
+  - text: Fotografías del inmueble en el que habita el solicitante, deberán ser como mínimo diez fotografías.
+    cites:
+    - source: retys
+  - text: Fotografías de convivencias familiares que deberán ser mínimo cinco;
+    cites:
+    - source: retys
+  - text: Certificado médico de buena salud del solicitante y de cada uno de los miembros de la familia, practicado
+      por institución pública de salud.
+    cites:
+    - source: retys
+  - text: Exámenes toxicológicos que incluyan los elementos siguiente, con una expedición máxima de dos meses anteriores
+      a la fecha de solicitud;
+    cites:
+    - source: retys
+  - text: Ser mayor de 25 años
+    cites:
+    - source: retys
+  - text: Acudir a platica de Inducción
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - 'Proporcionar los siguientes datos por teléfono o en persona: nombre, edad, estado civil, teléfono, correo
+      electrónico, informar si cuenta con hijos y edad de los mismos, en caso de estar casado o concubinato, nombre
+      y edad de la pareja.'
+    - Se le notificará a las personas registradas el día y hora para la plática de inducción que se realizan en
+      los diferentes municipios.
+    - Asistir el día y hora acordada para recibir la plática de inducción.
+    - El servidor público brinda la platica de inducción
+    - Terminando la platica de Inducción, el servidor público proporciona los formatos a las familias solicitantes
+    - Presentar la documentación solicitada
+    - Se notificará la fecha para valoraciones psicológicas y sociales, así como para la capacitación de familias
+      de corazón
+    - Una vez acreditada la capacitación se podrá proseguir con la familia de acogida
+  notes: Para iniciar el trámite para la certificación de familias de corazón
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20
+- source: ley2
+  pinpoint: Artículo 26 Fracción II
+- source: ley3
+  pinpoint: Artículo 24 Fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Proporcionar los siguientes datos por teléfono o en persona: nombre, edad, estado civil, teléfono, correo
+    electrónico, informar si cuenta con hijos y edad de los mismos, en caso de estar casado o concubinato, nombre
+    y edad de la pareja.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le notificará a las personas registradas el día y hora para la plática de inducción que se realizan
+    en los diferentes municipios.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Asistir el día y hora acordada para recibir la plática de inducción.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público brinda la platica de inducción
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Terminando la platica de Inducción, el servidor público proporciona los formatos a las familias solicitantes
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentar la documentación solicitada
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se notificará la fecha para valoraciones psicológicas y sociales, así como para la capacitación de familias
+    de corazón
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Una vez acreditada la capacitación se podrá proseguir con la familia de acogida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 307: Solicitud de Familia de Acogida (Familia de Corazón)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/307
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Convención de los Derechos del Niño
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de los Derechos de Niñas, Niños y Adolescentes
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley para la Protección y Defensa de los Derechos de Niñas, Niños y Adolescentes en Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Familia de Acogida (Familia de Corazón).. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

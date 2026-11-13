@@ -1,0 +1,135 @@
+id: mx-bcn-retys-767-anuencia-para-la-modificacion-de-los-elementos-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Anuencia para la modificación de los elementos de identificación por instalación de publicidad
+summary: Consiste en solicitar la autorización para la modificación de los elementos de identificación de las unidades
+  de transporte público por instalación de publicidad gráfica, por metro cuadrado.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 767
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/767
+  homoclave: BC-IMOS-017
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la persona interesada busque autorización para instalar publicidad
+result: Autorización para instalar elementos publicitarios
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 2.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 Meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios y concesionarios del servicio público de transporte
+  requirements:
+  - text: Presentar formato de solicitud en original y copia debidamente firmada completando todos los campos que
+      sean requeridos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14745
+  - text: Presentar original y copia de identificación oficial vigente (persona física)
+    cites:
+    - source: retys
+  - text: Presentar original y copia de poder notarial e identificación oficial vigente (persona moral)
+    cites:
+    - source: retys
+  - text: Presentar comprobante de digitalización emitido por el Instituto de Movilidad Sustentable del Estado de
+      Baja California
+    cites:
+    - source: retys
+  - text: 'Descripción detallada del padrón vehicular que portará la publicidad, deberá incluir las siguientes características:
+      tipología de vehículo, número económico y número de placa.'
+    cites:
+    - source: retys
+  - text: La ubicación de publicidad en vehículo (Para unidades de Transporte Público seleccionar las opciones enlistadas
+      al final de la solicitud)
+    cites:
+    - source: retys
+  - text: Realizar el pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable
+    - Presentar la documentación requerida
+  notes: Requisitos para la anuencia de modificación de elementos de identificación vehicular
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso J, Subincisos I y II
+- source: ley2
+  pinpoint: Artículos 57 y 58
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 767: Anuencia para la modificación de los elementos de identificación por instalación de
+      publicidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/767
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Anuencia para la Modificación de los Elementos de Identificación por Instalación de Publicidad.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

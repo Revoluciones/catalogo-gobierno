@@ -1,0 +1,115 @@
+id: mx-bcn-retys-887-cofepris-05-060-a-aviso-de-actualizacion-de-datos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-05-060-A Aviso de Actualización de Datos o Baja del Establecimiento Médico que Utiliza Fuentes
+  de Radiación para Fines Médicos o de Diagnóstico. Modalidad: A: Rayos X'
+summary: 'Cuando el ciudadano necesite actualizar datos como: representante legal, personas autorizadas, domicilio
+  fiscal, teléfono, fax y correo electrónico, o por baja de este tipo de establecimiento.'
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 887
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/887
+  homoclave: BC-COEPRIS-033
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Aviso
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato “Servicios de Salud”, debidamente requisitado y en caso de requerir acuse deberá presentar copia
+      simple legible del mismo
+    cites:
+    - source: retys
+  - text: 'Para actualización o cambio de representante legal Para Persona moral: » Original y copia legible del
+      acta constitutiva o poder notarial que acredite al representante legal » Copia legible de identificación oficial
+      del representante legal (Credencial del Instituto Nacional Electoral (INE) o pasaporte vigente o cartilla
+      del servicio militar nacional o licencia de manejo) Para Persona física: » Copia legible de identificación
+      oficial del representante legal (INE, pasaporte vigente o licencia de manejo) Para el caso de Instituciones
+      públicas adjuntar la documentación conforme a lo siguiente: » Documento que acredite la personalidad jurídica
+      del Representante Legal de la institución (que'
+    cites:
+    - source: retys
+  - text: Para actualización o cambio de personas autorizadas » Copia legible de identificación oficial de personas
+      autorizadas (Credencial del Instituto Nacional Electoral (INE) o pasaporte vigente o cartilla del servicio
+      militar nacional o licencia de manejo)
+    cites:
+    - source: retys
+  - text: Para cambio de domicilio del propietario (domicilio fiscal) » Documentación que avale el cambio de domicilio
+    cites:
+    - source: retys
+  - text: Para baja » Original de la licencia sanitaria o en su caso Acta Ministerial original del robo o extravío
+      de la misma.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de Aviso de Actualización de Datos o Baja
+      del Establecimiento Médico que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad
+      A: Rayos X'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 47 y 200 Bis
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de Aviso de Actualización de Datos o
+    Baja del Establecimiento Médico que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad
+    A: Rayos X'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 887: COFEPRIS-05-060-A Aviso de Actualización de Datos o Baja del Establecimiento Médico
+      que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad: A: Rayos X'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/887
+    version_date: 19/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-060-A Aviso de Actualización de Datos o Baja del Establecimiento Médico que
+  Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad: A: Rayos X.. Copiado tal cual de
+  RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

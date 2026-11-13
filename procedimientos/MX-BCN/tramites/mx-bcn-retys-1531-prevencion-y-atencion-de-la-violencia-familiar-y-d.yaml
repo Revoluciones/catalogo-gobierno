@@ -1,0 +1,370 @@
+id: mx-bcn-retys-1531-prevencion-y-atencion-de-la-violencia-familiar-y-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Prevención y Atención de la Violencia Familiar y de Género
+summary: Atender los casos de violencia en mujeres, niños y niñas, de manera oportuna, proporcionando atención médica
+  y psicológica independientemente de su complejidad con la finalidad de reducir la prevalencia y severidad de los
+  daños a la salud por esta causa.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1531
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1531
+  homoclave: BC-ISESALUD-015
+who_can:
+- Interesado
+- Tutor
+when: Cuando se requiera atención médica psicológica en los casos de violencia contra mujeres y niños
+result: Consulta
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Felipa Vda. de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Patzcuaro #S/N, Ejido Patzcuaro, Mexicali, 21706'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Del Sol y De La Luna #S/N, Santa Isabel, Mexicali, 21139'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '27 de Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ignacio Allende #S/N, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '27 de Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Coahuila #S/N, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juarez #128, Hermosillo, Mexicali, 21840'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Granadas y Gardenias #S/N, Poblado  Ing. Francisco Murguia Km 49, Mexicali, 21722'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida Del Hospital #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida 27 de Enero entre Calle Novena y Decima #S/N, Guadalupe Victoria Ej., Guadalupe Victoria, Mexicali,
+    21720'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Carretera San Felipe Km 8.5 #S/N, Ejido Choropo, Mexicali, 21259'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'El Mexicano #S/N, 18 de Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas 2da Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Gral. Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ruta Matamoros y Chichenitza #S/N, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Anemona #S/N, El Florido 4ta Sección, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida Cruz del Sur #226, Sanchez Taboada, Tijuana, 22680'
+- municipality: Tijuana
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Modulo 4 Mesa de Otay, Tijuana, 22390'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ocotlan #Manzana 16, Benito Garcia, Ensenada, 22973'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Al Morro #S/N, Isla de Cedros, Ensenada, 22990'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 21815'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Ensenada, 21137'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Agustín de Iturbide #Lote 2 M4, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #157, Erendira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'H #S/N, Ex-Ejido Ruíz Cortinez, Ensenada, 22810'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Miguel Hidalgo y Costilla #S/N, Heroes de la Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Primera #S/N, Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: '16 de Septiembre #204, Ejido Emiliano Zapata, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Calle Ceilan y España #S/N, Orizaba, Ensenada, 21160'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Carretera Libre Tijuana-Ensenada Km 75 #S/N, Ejido La Misión, Ensenada, 22710'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Calle Primera y C #S/N, Ejido Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Entre Calles Granada y Boulevard General Juan C. Zertuche #S/N, Carlos Pacheco, Ensenada, 22785'
+- municipality: Tecate
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juárez #Lote 108 M, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Hidalgo #S/N, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sin Nombre #S/N, Bahia De Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva (Consulta Externa y Urgencia)
+  address: 'Vicente Guerrero #221, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ing. Luis Alzerrega #S/N, Flores Magon, San Quintín, 22819'
+scenarios:
+- name: Atención a la violación sexual
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario o usaría deberá acudir a la unidad hospitalaria más cercana.
+    - Administración de medicamentos para evitar infecciones de transmisión sexual, vih/sida o un embarazo no deseado.
+    - Seguimiento Médico y Psicológico
+  notes: Brindar atención médica de profilaxis ante una violación sexual con acompañamiento psicológico
+- name: Servicio de interrupción voluntario del embarazo por violación sexual
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El o la usuaria deberá acudir a la unidad hospitalaria más cercana.
+    - Administración de medicamentos para evitar infecciones de transmisión sexual, VIH/Sida o un embarazo no deseado
+    - Seguimiento Médico y Psicológico
+  notes: Brindar servicio médico de aborto legal
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario o usaría deberá acudir a la unidad hospitalaria más cercana.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Administración de medicamentos para evitar infecciones de transmisión sexual, vih/sida o un embarazo no
+    deseado.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seguimiento Médico y Psicológico
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1531: Prevención y Atención de la Violencia Familiar y de Género'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1531
+    version_date: 04/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Acceso para las Mujeres por una Vida Libre de Violencia
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

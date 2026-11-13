@@ -1,0 +1,112 @@
+id: mx-bcn-retys-1398-sucesorio-intestamentario
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Sucesorio Intestamentario
+summary: Proporcionar asesoría jurídica y patrocinio legal a efecto de realizar trámite de sucesorio intestamentario.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1398
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1398
+  homoclave: BC-CJ-018
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando lo solicite
+result: Resolución judicial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 6 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de la Defensoría Pública del Estado y Coordinación Estatal del Área Laboral
+  address: 'Calz. De Los Presidentes #1185, Río Nuevo, Mexicali, 21120'
+- municipality: Mexicali
+  name: Área Civil, Familiar y Administrativa, Guadalupe Victoria, Mexicali
+  address: 'Calle Segunda #699-10, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Área Civil, Familiar y Administrativa, Ciudad Morelos, Mexicali
+  address: 'Calz. Lázaro Cárdenas #501 Local, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Área Civil, Familiar, Administrativa y Laboral, Tijuana
+  address: 'Calle Quinta #7951, Zona Centro, Tijuana, 22000'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: Playas de Rosarito
+  name: Área Civil, Familiar y Administrativa, Rosarito
+  address: 'José Aros Aguilar #2004, Fracc. Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+- municipality: San Felipe
+  name: Área Civil, Familiar, Administrativa y Penal, San Felipe
+  address: 'Mar Cortés #S/N, Mar De Cortés, San Felipe, 21850'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: Acreditar estudio socioeconómico
+    cites:
+    - source: retys
+  - text: Demás requisitos necesarios según señale el defensor público, en su caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del municipio y área correspondiente
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2, Fracciones III y IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del municipio y área correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1398: Sucesorio Intestamentario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1398
+    version_date: 05/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

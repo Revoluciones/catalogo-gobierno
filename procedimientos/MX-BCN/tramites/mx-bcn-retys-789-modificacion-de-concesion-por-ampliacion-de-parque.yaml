@@ -1,0 +1,146 @@
+id: mx-bcn-retys-789-modificacion-de-concesion-por-ampliacion-de-parque
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Modificación de concesión por ampliación de parque vehicular
+summary: Consiste, para una empresa concesionaria, en solicitar la modificación de concesión para poder llevar a
+  cabo la ampliación de su parque vehicular.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 789
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/789
+  homoclave: BC-IMOS-039
+who_can:
+- Representante Legal
+when: Cuando la persona representante legal de una concesionaria busque modificar su concesión para ampliar su parque.
+result: Modificación de concesión por ampliación.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Por 1 a 15 años por unidad autorizada: 110.00 UMAS Por 16 a 30 años por unidad autorizada: 220.00
+    UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Empresas concesionarias del servicio público de transporte
+  requirements:
+  - text: Original y copia del título de concesión
+    cites:
+    - source: retys
+  - text: Presentar los estudios técnicos relativos. deberán ser realizados por profesionales en la materia, debidamente
+      autorizados por el Instituto; o bien, podrán ser solicitados al Instituto
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral y constancia de inscripción en el Registro Público de Propiedad
+      y Comercio
+    cites:
+    - source: retys
+  - text: Poder de representante legal
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente del representante legal
+    cites:
+    - source: retys
+  - text: Cédula de identificación fiscal (RFC)
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales en sentido positivo
+    cites:
+    - source: retys
+  - text: Itinerarios (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Recorridos (Formato "KMZ")
+    cites:
+    - source: retys
+  - text: Inventario del parque vehicular (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Padrón de operadores (Formato EXCEL)
+    cites:
+    - source: retys
+  - text: Ubicación de parques de encierro
+    cites:
+    - source: retys
+  - text: Póliza, constancia o carta cobertura de responsabilidad civil global
+    cites:
+    - source: retys
+  - text: Contratos, convenios, etc., celebrados con terceros, relacionados con la prestación del servicio público
+      de transporte
+    cites:
+    - source: retys
+  - text: Señalar domicilio, número telefónico y correo electrónico para oír y recibir notificaciones
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para modificación de concesión por ampliación de parque
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Apartado L, Inciso 4, Subinciso a, Numeral 3
+- source: ley2
+  pinpoint: Artículo 152, Fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 789: Modificación de concesión por ampliación de parque vehicular'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/789
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Modificación de Concesión por Ampliación de Parque Vehicular.. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

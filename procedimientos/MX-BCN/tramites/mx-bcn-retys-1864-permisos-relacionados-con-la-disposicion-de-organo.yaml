@@ -1,0 +1,476 @@
+id: mx-bcn-retys-1864-permisos-relacionados-con-la-disposicion-de-organo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Permisos Relacionados con la Disposición de Organos, Tejidos y sus Componentes, Células y Cadáveres Humanos
+summary: Autorización del permiso de trámites funerarios
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1864
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1864
+  homoclave: BC-COEPRIS-071
+who_can:
+- Otro
+when: Inhumación antes de las 12 horas o después de las 48 horas de la defunción, cremaciones, internaciones al
+  país, traslados dentro del territorio nac
+result: La autorización del permiso de trámites funerarios
+cost:
+  type: fijo
+  amount_mxn: 1138.0
+  text: 'COSTO: $1138 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: vigencia
+  text: Indeterminada
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: UNIDAD REGIONAL DE PROTECCIÓN CONTRA RIESGOS SANITARIOS MEXICALI
+  address: 'AVENIDA DE LA PATRIA ENTRE CALLE ÁLAMO Y CALLE OCÉANO  #808, CENTRO CIVICO, MEXICALI, Mexicali, 21000'
+- municipality: Tijuana
+  name: UNIDAD REGIONAL DE PROTECCIÓN CONTRA RIESGOS SANITARIOS TIJUANA
+  address: 'BOULEVARD AGUA CALIENTE  #2430, REVOLUCIÓN, TIJUANA, Tijuana, 21060'
+- municipality: Ensenada
+  name: Unidad Regional de Protección Contra Riesgos Sanitarios Ensenada
+  address: 'Calle Séptima entre Miramar Y Gastelum, 561, Local 7 Y 8  #561, ZONA CENTRO, ENSENADA, Ensenada, 22800'
+scenarios:
+- name: Cremación
+  requirements:
+  - text: 3 o 4 copias del formato llenado, según el lugar de la cremación
+    cites:
+    - source: retys
+  - text: Certificado o Acta Defunción
+    cites:
+    - source: retys
+  - text: Copia de identificación del solicitante
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria, se requiere sea un FAMILIAR DIRECTO,
+      en caso de no ser familiar directo presentar Carta Poder del familiar directo a la persona que está realizando
+      la tramitología en la funeraria
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento
+    cites:
+    - source: retys
+  - text: Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la muerte
+    cites:
+    - source: retys
+  - text: Acta Médica del médico forense
+    cites:
+    - source: retys
+  - text: Recibo de pago
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato
+    - Generar recibo de pago en el Distrito de Salud del municipio correspondiente
+    - Realizar el pago en el Distrito de Salud del municipio correspondiente
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su revisión
+    - Autorización del trámite y asignación de número de folio en caso cumplir con todos los requisitos
+  notes: Cremación
+- name: Cremación con condonación de pago
+  requirements:
+  - text: • Oficio de solicitud de la condonación del pago por parte de velatorios DIF y/o SEMEFO
+    cites:
+    - source: retys
+  - text: • 3 o 4 copias del formato llenado, según el lugar de la cremación
+    cites:
+    - source: retys
+  - text: • Certificado o Acta Defunción
+    cites:
+    - source: retys
+  - text: • Copia de identificación del solicitante
+    cites:
+    - source: retys
+  - text: • Original de la Carta Poder del participante hacia la agencia funeraria, se requiere sea un FAMILIAR
+      DIRECTO
+    cites:
+    - source: retys
+  - text: • En caso de no ser familiar directo presentar Carta Poder del familiar directo a la persona que está
+      realizando la tramitología en la funeraria
+    cites:
+    - source: retys
+  - text: • Comprobante de la tesis de embalsamiento
+    cites:
+    - source: retys
+  - text: • Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la
+      muerte
+    cites:
+    - source: retys
+  - text: • Acta Médica del médico forense
+    cites:
+    - source: retys
+  - text: • Recibo de pago en ceros
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Acudir a la Unidad Regional con toda la documentación requerida para su revisión y obtención del oficio de
+      condonación firmado por el Titular de la Unidad Regional del municipio correspondiente.
+    - Generar recibo de pago EN CEROS en el distrito de salud del municipio correspondiente, presentando el oficio
+      de solicitud de condonación de DIF y/o SEMEFO, y el oficio de condonación firmado por el Titular de la Unidad
+      Regional del municipio correspondiente
+    - 4. Acudir a la Unidad Regional del municipio correspondiente con toda la documentación para obtener la autorización
+      del trámite y la asignación del número de folio.
+  notes: Cremación con condonación de pago
+- name: Exhumación
+  requirements:
+  - text: • 3 copias del formato llenado
+    cites:
+    - source: retys
+  - text: • Certificado de Inhumación
+    cites:
+    - source: retys
+  - text: • Copia y Original de Identificación Oficial vigente del solicitante
+    cites:
+    - source: retys
+  - text: • Original de la Carta Poder del participante hacia la agencia funeraria, anexo carta poder con firma
+      de todos los hijos/familiares directos, más copia de INE vigente de todos
+    cites:
+    - source: retys
+  - text: • Especificación del destino de los restos
+    cites:
+    - source: retys
+  - text: • Carta de ubicación, indicando panteón y ubicación del cuerpo en el panteón de donde será exhumado
+    cites:
+    - source: retys
+  - text: • Recibo de pago
+    cites:
+    - source: retys
+  - text: • En caso de exhumación prematura, agregar acta de defunción y orden girada por el ministerio público
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Generar recibo de pago en el distrito de salud del municipio correspondiente.
+    - Realizar el pago en el distrito de salud del municipio correspondiente.
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su revisión.
+    - Autorización del trámite y asignación de número de folio en caso cumplir con todos los requisitos.
+  notes: Exhumación
+- name: Exhumación con condonación de pago
+  requirements:
+  - text: • Oficio de solicitud de la condonación del pago por parte de DIF y/o SEMEFO.
+    cites:
+    - source: retys
+  - text: • 3 copias del formato llenado.
+    cites:
+    - source: retys
+  - text: • Certificado de Inhumación.
+    cites:
+    - source: retys
+  - text: • Copia y Original de Identificación Oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: • Original de la Carta Poder del participante hacia la agencia funeraria, anexo carta poder con firma
+      de todos los hijos/familiares directos, más copia de INE vigente de todos.
+    cites:
+    - source: retys
+  - text: • Especificación del destino de los restos.
+    cites:
+    - source: retys
+  - text: • Carta de ubicación, indicando panteón y ubicación del cuerpo en el panteón de donde será exhumado.
+    cites:
+    - source: retys
+  - text: • Recibo de pago en ceros.
+    cites:
+    - source: retys
+  - text: • En caso de exhumación prematura, agregar acta de defunción y orden girada por el ministerio público.
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Acudir a la Unidad Regional con toda la documentación requerida para su revisión y obtención del oficio de
+      condonación firmado por el Titular de la Unidad Regional del municipio correspondiente.
+    - Generar recibo de pago EN CEROS en el distrito de salud del municipio correspondiente, presentando el oficio
+      de solicitud de condonación de DIF y/o SEMEFO, y el oficio de condonación firmado por el Titular de la Unidad
+      Regional del municipio correspondiente.
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación para obtener la autorización
+      del trámite y la asignación del número de folio.
+  notes: Exhumación con condonación de pago
+- name: Inhumación
+  requirements:
+  - text: 3 copias del formato llenado.
+    cites:
+    - source: retys
+  - text: Certificado o Acta de Defunción.
+    cites:
+    - source: retys
+  - text: Copia y Original de Identificación Oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento.
+    cites:
+    - source: retys
+  - text: Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la muerte.
+    cites:
+    - source: retys
+  - text: Acta Médica del médico forense.
+    cites:
+    - source: retys
+  - text: Recibo de pago.
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Generar recibo de pago en el distrito de salud del municipio correspondiente.
+    - Realizar el pago en el distrito de salud del municipio correspondiente.
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su revisión.
+    - Autorización del trámite y asignación de número de folio en caso cumplir con todos los requisitos
+  notes: Inhumación
+- name: Inhumación con condonación de pago
+  requirements:
+  - text: Oficio de solicitud de la condonación del pago por parte de velatorios DIF y/o SEMEFO.
+    cites:
+    - source: retys
+  - text: 3 copias del formato llenado.
+    cites:
+    - source: retys
+  - text: Certificado o Acta de Defunción.
+    cites:
+    - source: retys
+  - text: Copia y Original de Identificación Oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria.
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento.
+    cites:
+    - source: retys
+  - text: Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la muerte.
+    cites:
+    - source: retys
+  - text: Acta Médica del médico forense
+    cites:
+    - source: retys
+  - text: Recibo de pago en ceros.
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Acudir a la Unidad Regional con toda la documentación requerida para su revisión y obtención del oficio de
+      condonación firmado por el Titular de la Unidad Regional del municipio correspondiente.
+    - Generar recibo de pago EN CEROS en el distrito de salud del municipio correspondiente, presentando el oficio
+      de solicitud de condonación de DIF Y/O SEMEFO, y el oficio de condonación firmado por el Titular de la Unidad
+      Regional del municipio correspondiente.
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación para obtener la autorización
+      del trámite y la asignación del número de folio.
+  notes: Inhumación con condonación de pago
+- name: Internación
+  requirements:
+  - text: 4 copias del formato llenado.
+    cites:
+    - source: retys
+  - text: Certificado o Acta de Defunción traducida al español, certificada por consulados mexicanos y apostillada.
+    cites:
+    - source: retys
+  - text: Copia y Original de Identificación Oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento traducida al español, certificada por consulados mexicanos en
+      el país donde ocurrió el deceso.
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria, misma en la que se debe asentar
+      específicamente la vía de traslado a utilizar (aérea, terrestre, o marítima).
+    cites:
+    - source: retys
+  - text: Copia de permiso de traslado traducido al español.
+    cites:
+    - source: retys
+  - text: Recibo de pago
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Generar recibo de pago en el distrito de salud del municipio correspondiente.
+    - Realizar el pago en el distrito de salud del municipio correspondiente
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su revisión.
+    - Autorización del trámite y asignación de número de folio en caso cumplir con todos los requisitos
+  notes: Internación
+- name: Traslado
+  requirements:
+  - text: 4 copias del formato llenado
+    cites:
+    - source: retys
+  - text: Certificado de Acta de Defunción.
+    cites:
+    - source: retys
+  - text: Copia y Original de Identificación Oficial vigente del solicitante
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento.
+    cites:
+    - source: retys
+  - text: Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la muerte
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria, misma en la que se debe asentar
+      específicamente la vía de traslado a utilizar (aérea, terrestre, o marítima).
+    cites:
+    - source: retys
+  - text: Acta Médica del médico forense.
+    cites:
+    - source: retys
+  - text: Recibo de pago.
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Generar recibo de pago en el distrito de salud del municipio correspondiente.
+    - Realizar el pago en el distrito de salud del municipio correspondiente.
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su revisión.
+    - Autorización del trámite y asignación de número de folio en caso de cumplir con todos los requisitos.
+  notes: Traslado
+- name: Traslado con condonación de pago
+  requirements:
+  - text: Oficio de solicitud de la condonación del pago por parte de DIF y/o SEMEFO.
+    cites:
+    - source: retys
+  - text: 4 copias del formato llenado.
+    cites:
+    - source: retys
+  - text: Certificado de Acta de Defunción.
+    cites:
+    - source: retys
+  - text: Copia y original de identificación oficial vigente del solicitante.
+    cites:
+    - source: retys
+  - text: Comprobante de la tesis de embalsamiento.
+    cites:
+    - source: retys
+  - text: Carta de No Inconveniente de la PGJ en caso de existir alguna investigación jurídica por causa de la muerte.
+    cites:
+    - source: retys
+  - text: Original de la Carta Poder del participante hacia la agencia funeraria, misma en la que se debe asentar
+      específicamente la vía de traslado a utilizar (aérea, terrestre, o marítima).
+    cites:
+    - source: retys
+  - text: Acta Médica del médico forense.
+    cites:
+    - source: retys
+  - text: Recibo de pago en ceros.
+    cites:
+    - source: retys
+  - text: Cumplir con la normatividad vigente, autorización oficial, verificación de los datos del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Realizar el llenado correcto del formato.
+    - Acudir a la Unidad Regional con toda la documentación requerida para su revisión y obtención del oficio de
+      condonación firmado por el Titular de la Unidad Regional del municipio correspondiente.
+    - Generar recibo de pago EN CEROS en el distrito de salud del municipio correspondiente, presentando el oficio
+      de solicitud de condonación de DIF y/o SEMEFO, y el oficio de condonación firmado por el Titular de la Unidad
+      Regional del municipio correspondiente
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación para obtener la autorización
+      del trámite y la asignación del número de folio.
+  notes: Traslado con condonación de pago
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 313 II, 348, 350 BIS, 350 BIS 1, 350 BIS 6 y los Artículos 7,58,60,61,62,63,64,65,66,67,68,69,
+    100,103,104,108,109,
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Realizar el llenado correcto del formato
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Generar recibo de pago en el Distrito de Salud del municipio correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago en el Distrito de Salud del municipio correspondiente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para su
+    revisión
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Autorización del trámite y asignación de número de folio en caso cumplir con todos los requisitos
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1864: Permisos Relacionados con la Disposición de Organos, Tejidos y sus Componentes, Células
+      y Cadáveres Humanos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1864
+    version_date: 18/Junio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud, Reglamento de la Ley General de Salud en materia de control sanitario de la disposición
+      de órganos, tejidos y cadáveres de seres humanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

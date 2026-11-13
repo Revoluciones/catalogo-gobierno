@@ -1,0 +1,117 @@
+id: mx-bcn-retys-1704-inscripcion-a-la-bienal-plastica-de-baja-californi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción a la Bienal Plástica de Baja California
+summary: Que las personas artistas plásticas concursen en la bienal plástica de Baja California y sus obras sean
+  promocionadas y difundidas, con la intención de obtener la oportunidad de ser acreedores a premios económicos
+  de adquisición de obra por el primer lugar en las categorías estipuladas en la convocatoria.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1704
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1704
+  homoclave: BC-SC-015
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera consultar la convocatoria
+result: Premio, mención honorífica o constancia de selección según el caso.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Museos y Galerías
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Artístas plásticos con trayectoría.
+  requirements:
+  - text: Cédula de inscripción vía formato electrónico en la que se adjuntan imágenes, relación de obra y curriculum
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio, no mayor a 3 meses anteriores.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal vigente (RFC)
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Otros requisitos marcados por la convocatoría
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Elabora y envía por correo o entrega en oficinas la ficha de inscripción.
+    - Jurado revisa, dictamina y entrega lista de ganadores.
+    - Realiza evento.
+    - Anuncia ganadores y entrega premios.
+    - Regresa obra.
+  notes: Artístas plásticos con trayectoría comprobable.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 27, fracción III.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Elabora y envía por correo o entrega en oficinas la ficha de inscripción.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Jurado revisa, dictamina y entrega lista de ganadores.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza evento.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Anuncia ganadores y entrega premios.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Regresa obra.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1704: Inscripción a la Bienal Plástica de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1704
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

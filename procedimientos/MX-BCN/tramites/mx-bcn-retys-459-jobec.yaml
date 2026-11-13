@@ -1,0 +1,178 @@
+id: mx-bcn-retys-459-jobec
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: JOBEC
+summary: Otorgar estímulos económicos a las y los jóvenes de nivel media superior y superior entre los 14 y 29 años
+  de edad, con la finalidad de brindar mayores oportunidades para disminuir la deserción escolar.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 459
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/459
+  homoclave: BC-INJUVE-007
+who_can:
+- Interesado
+when: Febrero y agosto
+result: Apoyo económico de $2,000.00 moneda nacional para nivel escolar media superior o $2,500.00 moneda nacional,
+  para nivel escolar superior.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 MES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+- municipality: Tijuana
+  name: Oficina Tijuana
+  address: 'DIF Mariano Matamoros el Sauce #S/N, El Forido 1ra. Y 2da. Secc., Tijuana, 22237'
+- municipality: Ensenada
+  name: Oficina Ensenada
+  address: 'Centro de Gobierno del Edo. Tercer Piso carretera Traspeninsular #6500, Ensenada-La Paz ExEjido Chapultepec,
+    Ensenada, 22785'
+- municipality: Tecate
+  name: Oficina Tecate
+  address: 'Mision Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: San Quintín
+  name: Oficina San Quintín
+  address: 'Oficinas del Ayuntamiento #S/N, Calle Primera, San Quintín, 22940'
+- municipality: San Felipe
+  name: Oficina San Felipe
+  address: 'Av. Mar de Cortes #1025, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: MAYORES DE EDAD
+  requirements:
+  - text: Solicitud de apoyo (escrito libre)
+    cites:
+    - source: retys
+  - text: Identificación oficial (copia)
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio vigente (copia)
+    cites:
+    - source: retys
+  - text: Constancia de estudios actual, credencial vigente (2026), recibo de pago del periodo actual (copia)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Atender la inscripción en línea
+    - Llenar y subir documentación requerida en el portal
+    - Esperar publicación con los listados de beneficiados en las redes sociales de JUVENTUD BC para revisar si
+      fuiste seleccionado
+    - Estar atento a los medios de contacto que proporcionaste en tu solicitud
+    - Si eres beneficiado, asiste a la entrega de apoyos el dia y la hora que el personal del Instituto te indique
+  - name: Presencial
+    steps:
+    - Acudir con los requisitos a la oficina que les corresponda de los diferentes Municipios
+    - Llenar los formatos requeridos
+    - Esperar la publicación de los jóvenes seleccionados
+    - Acudir por el apoyo a los eventos que se programen
+  notes: Para jovenes mayores de edad de 18 a 29
+- name: MENORS DE EDAD
+  requirements:
+  - text: Solicitud de apoyo (escrito libre)
+    cites:
+    - source: retys
+  - text: Identificacion oficial de Madre, Padre o Tutor (copia)
+    cites:
+    - source: retys
+  - text: CURP Madre, Padre o Tutor
+    cites:
+    - source: retys
+  - text: CURP Joven
+    cites:
+    - source: retys
+  - text: Acta de nacimiento Joven
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio vigente (copia)
+    cites:
+    - source: retys
+  - text: Constancia de estudios actual, credencial vigente (2026), recibo de pago del periodo actual (copia)
+    cites:
+    - source: retys
+  modes: []
+  notes: para jovenes menores de edad 12 a 17
+legal_basis:
+- source: ley1
+  pinpoint: 83, Fracción XII y XXII
+- source: ley2
+  pinpoint: 40, Fracción III y VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Atender la inscripción en línea
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar y subir documentación requerida en el portal
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Esperar publicación con los listados de beneficiados en las redes sociales de JUVENTUD BC para revisar
+    si fuiste seleccionado
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Estar atento a los medios de contacto que proporcionaste en tu solicitud
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si eres beneficiado, asiste a la entrega de apoyos el dia y la hora que el personal del Instituto te indique
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 459: JOBEC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/459
+    version_date: 28/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Estímulos Económicos a las y los Jóvenes Estudiantes. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

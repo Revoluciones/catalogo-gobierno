@@ -1,0 +1,60 @@
+id: mx-bcn-retys-1911-departamento-de-atencion-psicologica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Departamento de atención psicológica
+summary: El Departamento de Psicológica brindar atención psicológica a mujeres víctimas de violencia, con el objetivo
+  de proporcionarles herramientas que les permita afrontar crisis emocionales, fortalecer su bienestar psicológico
+  y favorecer la identificación y ruptura del ciclo de violencia en el que se encuentran inmersas. Como parte de
+  los servicios de atención integral, el Departamento cuenta tambíen con el Programa de Área Lúdica, el cual brinda
+  atención y cuidado a las hijas e hijos de las mujeres víctimas de violencia con base en la perspectiva de género,
+  igualdad y respeto.
+authority:
+  name: Centro de Justicia para las Mujeres del Estado de Baja California
+official_ids:
+  retys_id: 1911
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1911
+  homoclave: BC-CEJUM-005
+who_can:
+- Interesado
+when: Cuando la persona interesada lo requiera
+result: Acompañamiento psicológico individual y grupal para mujeres víctimas de violencia
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: CEJUM DELEGACIÓN MEXICALI
+  address: 'CALZADA INDEPENDENCIA #1798, FRACCIONAMIENTO CALAFIA, Mexicali, 21040'
+- municipality: Tijuana
+  name: CEJUM DELEGACIÓN TIJUANA
+  address: 'Avenida Moctezuma #1, Residencial de Cortez, Tijuana, 22190'
+- municipality: San Quintín
+  name: CEJUM DELEGACIÓN SAN QUINTÍN
+  address: 'POPULAR SAN QUINTIN #22930, LÁZARO CÁRDENAS, San Quintín, 22930'
+steps: []
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1911: Departamento de atención psicológica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1911
+    version_date: 20/Octubre /2026
+    accessed: '2026-11-06'
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

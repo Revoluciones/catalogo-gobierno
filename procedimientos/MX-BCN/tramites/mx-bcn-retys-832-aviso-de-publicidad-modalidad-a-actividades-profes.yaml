@@ -1,0 +1,116 @@
+id: mx-bcn-retys-832-aviso-de-publicidad-modalidad-a-actividades-profes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aviso de Publicidad. Modalidad A.- Actividades Profesionales, Técnicas, Auxiliares y Especialidades
+summary: En El Caso De Querer Difundir Publicidad Relacionada a Un Servicio De Salud (actividades Profesionales,
+  Técnicas, Auxiliares Y Especialidades Del Ámbito Salud).
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 832
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/832
+  homoclave: BC-COEPRIS-026
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: Cuando el interesado lo requiera
+result: Aviso de publicidad
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7715
+  - text: Formato “publicidad”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple
+      legible del mismo
+    cites:
+    - source: retys
+  - text: El proyecto de publicidad, en dos tantos (preferentemente a color)
+    cites:
+    - source: retys
+  - text: La documentación que dé sustento a las afirmaciones hechas en la publicidad
+    cites:
+    - source: retys
+  - text: El número de la licencia sanitaria o copia del aviso de funcionamiento, en su caso
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 301
+- source: ley2
+  pinpoint: Artículo 86, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el Centro Integral de Servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 832: Aviso de Publicidad. Modalidad A.- Actividades Profesionales, Técnicas, Auxiliares
+      y Especialidades'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/832
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Publicidad
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-02-002-A Aviso de publicidad. Modalidad A.- Actividades profesionales, técnicas,
+  auxiliares y especialidades .. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

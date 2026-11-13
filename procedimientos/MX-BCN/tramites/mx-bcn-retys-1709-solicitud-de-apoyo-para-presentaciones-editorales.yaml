@@ -1,0 +1,112 @@
+id: mx-bcn-retys-1709-solicitud-de-apoyo-para-presentaciones-editorales
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Apoyo para Presentaciones Editorales
+summary: Que las personas escritoras locales y foráneas reciban apoyo tal como; préstamo de espacio, diseño digital
+  de invitaciones, equipo de sonido (sujeto a disponibilidad del espacio), para la presentación de sus libros.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1709
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1709
+  homoclave: BC-SC-020
+who_can:
+- Interesado
+- Otro
+when: Cuando las personas escritoras requieran apoyo para la presentación de sus libros.
+result: Espacio ideal con requerimientos técnicos y mobiliarios (sujeto a disponibilidad del espacio) para la adecuada
+  presentación de libro
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Del 2 de enero a 30 de diciembre
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Las personas escritoras con obras literarias
+  requirements:
+  - text: Llenar formulario de solicitud
+    cites:
+    - source: retys
+  - text: Fotografía del autor(a) formato 250 dpi, png.
+    cites:
+    - source: retys
+  - text: Fotografía de portada del libro, formato 250 dpi, png.
+    cites:
+    - source: retys
+  - text: Libro a presentar
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en iniciar trámite
+    - Se realiza el llenado del formulario, adjuntando fotogafías y datos de contacto
+    - Personal de la Secretaría de Cultura dará respuesta a la solicitud vía ventanilla digital
+    - Personal de la Secretaría de Cultura de acuerdo a la agenda, organizará la presentación del libro
+  notes: Las personas escritoras con obras literarias
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en iniciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se realiza el llenado del formulario, adjuntando fotogafías y datos de contacto
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura dará respuesta a la solicitud vía ventanilla digital
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura de acuerdo a la agenda, organizará la presentación del libro
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1709: Solicitud de Apoyo para Presentaciones Editorales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1709
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

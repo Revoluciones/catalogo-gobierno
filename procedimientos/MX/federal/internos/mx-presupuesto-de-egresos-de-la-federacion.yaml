@@ -1,0 +1,88 @@
+id: mx-presupuesto-de-egresos-de-la-federacion
+country: MX
+jurisdiction: MX
+level: federal
+branch: varios
+kind: interno
+category: presupuesto
+title: Cómo se decide en qué se gasta el dinero federal (Presupuesto de Egresos)
+summary: >-
+  Cada año el Ejecutivo propone cuánto se va a cobrar (Ley de Ingresos) y en qué se va a gastar (Presupuesto
+  de Egresos). El Congreso aprueba primero los ingresos; después, solo la Cámara de Diputados aprueba el gasto.
+  Al año siguiente la Auditoría Superior revisa cómo se gastó.
+authority:
+  name: Cámara de Diputados
+  url: https://www.diputados.gob.mx
+other_authorities:
+  - name: Secretaría de Hacienda y Crédito Público (prepara el proyecto)
+  - name: Senado (vota la Ley de Ingresos, no el gasto)
+legal_basis:
+  - source: cpeum
+    pinpoint: art. 74, fracción IV
+steps:
+  - n: '1'
+    actor: Ejecutivo Federal, por medio de la Secretaría de Hacienda
+    action: >-
+      Envía a la Cámara de Diputados la propuesta de Ley de Ingresos y el proyecto de Presupuesto de Egresos a
+      más tardar el 8 de septiembre (el 15 de noviembre cuando empieza un nuevo sexenio). La persona titular de
+      Hacienda tiene que presentarse a explicarlo.
+    deadline: 8 de septiembre
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción IV, párrafos segundo y tercero
+  - n: '2'
+    actor: Congreso de la Unión (las dos Cámaras)
+    action: >-
+      Aprueba primero los impuestos y demás ingresos (Ley de Ingresos). Como toca impuestos, empieza en la
+      Cámara de Diputados y luego pasa al Senado.
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción IV, primer párrafo; art. 72, apartado H
+    next:
+      - to: '3'
+      - to: mx-como-se-aprueba-una-ley-federal
+        when: El trámite de la Ley de Ingresos sigue el de cualquier ley
+  - n: '3'
+    actor: Cámara de Diputados (sola)
+    action: >-
+      Examina, discute, puede modificar y aprueba el Presupuesto de Egresos a más tardar el 15 de noviembre.
+      Puede autorizar gastos de varios años para obras de infraestructura. El presupuesto no puede tener
+      partidas secretas.
+    deadline: 15 de noviembre
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción IV, párrafos primero, segundo y cuarto
+  - n: '4'
+    actor: Ejecutivo Federal y todas las dependencias
+    action: Gastan durante el año conforme al presupuesto aprobado.
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI (la revisión compara el gasto con el presupuesto)
+  - n: '5'
+    actor: Auditoría Superior de la Federación
+    action: Al año siguiente revisa si el gasto se ajustó al presupuesto y si los programas cumplieron sus metas.
+    cites:
+      - source: cpeum
+        pinpoint: art. 74, fracción VI
+    next:
+      - to: mx-revision-de-la-cuenta-publica-asf
+related:
+  - mx-como-se-aprueba-una-ley-federal
+  - mx-revision-de-la-cuenta-publica-asf
+glossary: [ley-de-ingresos, presupuesto-de-egresos, partida-secreta]
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+status: borrador
+last_checked: '2026-11-06'
+checked_by: Claude (Compartido)
+notes: >-
+  Pendiente: los pasos internos de Hacienda y de la Comisión de Presupuesto según la Ley Federal de Presupuesto
+  y Responsabilidad Hacendaria (calendario de abril a septiembre, adecuaciones durante el año) y una nota de
+  práctica sobre cuánto se gasta distinto de lo aprobado, con fuente oficial (informes trimestrales de Hacienda).

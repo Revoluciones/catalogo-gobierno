@@ -1,0 +1,147 @@
+id: mx-bcn-retys-1775-certificado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado
+summary: Procedimiento mediante el cual la Universidad Intercultural de Baja California, a través del Departamento
+  de Control Escolar y Servicios Estudiantiles, revisa, coteja y valida el cumplimiento de requisitos académicos
+  y administrativos para expedir el Certificado Digital de Estudios Profesionales, utilizando el Sistema de Certificados
+  Electrónicos ORBIS, conforme a los lineamientos establecidos por la Dirección General de Profesiones (DGP).
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1775
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1775
+  homoclave: BC-UIBC-004
+who_can:
+- Interesado
+when: Al concluir el 100% de los créditos del plan de estudios, haber liberado el servicio social (en caso de licenciatura)
+  y no presentar adeudos documenta
+result: Certificado digital de estudios profesionales, validado ante la Dirección General de Profesiones (DGP).
+cost:
+  type: fijo
+  amount_mxn: 1000.0
+  text: 'COSTO: $1,000 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Departamento de Control Escolar y Servicios Estudiantiles
+  address: 'Calle Sin Nombre, Lote A y fracción del Lote B-1 fracción 5 Manzana 102 #S/N, Fraccionamiento Valle
+    de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Certificación
+  requirements:
+  - text: Tener el 100% de créditos aprobados.
+    cites:
+    - source: retys
+  - text: Servicio social concluido y liberado (para nivel licenciatura).
+    cites:
+    - source: retys
+  - text: No tener adeudos con la institución.
+    cites:
+    - source: retys
+  - text: 'Documentación personal completa y cotejada: Acta de nacimiento, CURP, Certificado de bachillerato o título
+      profesional (según nivel académico).'
+    cites:
+    - source: retys
+  - text: Pago de derechos de certificación.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Entrega de documentación completa y comprobante de pago del certificado.
+    - Revisión y cotejo del expediente académico y documental del estudiante.
+    - Captura del concentrado de calificaciones en el sistema de certificados electrónicos (Orbis).
+    - Elaboración y validación del certificado digital profesional.
+    - Revisión de certificados en formato XML por parte del analista.
+    - Envío de oficio y XML comprimido (.zip) con relación de certificados electrónicos al área coordinadora.
+    - Envío a la Secretaría de Educación para autenticación del certificado electrónico.
+    - Recepción del certificado autenticado por la institución y resguardo en expediente.
+    - Entrega del certificado al estudiante.
+  notes: Escenario administrativo en el que el estudiante, una vez que ha cumplido con los requisitos académicos
+    y administrativos establecidos, solicita la emisión de su certificado digital de estudios a través del Departamento
+    de Control Escolar y Servicios Estudiantiles, conforme a los lineamientos de la Dirección General de Profesiones.
+legal_basis:
+- source: ley1
+  pinpoint: 11 FRACCION XIX, 12 FRACCION XXIV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrega de documentación completa y comprobante de pago del certificado.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisión y cotejo del expediente académico y documental del estudiante.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Captura del concentrado de calificaciones en el sistema de certificados electrónicos (Orbis).
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Elaboración y validación del certificado digital profesional.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Revisión de certificados en formato XML por parte del analista.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Envío de oficio y XML comprimido (.zip) con relación de certificados electrónicos al área coordinadora.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Envío a la Secretaría de Educación para autenticación del certificado electrónico.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Recepción del certificado autenticado por la institución y resguardo en expediente.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Entrega del certificado al estudiante.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1775: Certificado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1775
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Intercultural de Baja California en sus artículos 11 fracción XIX
+      y 12 fracción XXIV.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Certificación de Estudiantes. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

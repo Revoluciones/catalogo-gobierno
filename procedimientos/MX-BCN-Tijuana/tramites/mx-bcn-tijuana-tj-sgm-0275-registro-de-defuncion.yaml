@@ -1,0 +1,209 @@
+id: mx-bcn-tijuana-tj-sgm-0275-registro-de-defuncion
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: Registro de DEFUNCIÓN
+summary: Este trámite permite registrar la defunción de una persona para poder disponer de sus restos a través de
+  inhumación (entierro), cremación o traslado, según corresponda.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0275
+who_can:
+- Interesado
+when: Cuando una persona fallece y es necesario obtener el acta de defunción. · Para cumplir con los requisitos
+  legales antes de proceder con la inhumación, cremación o traslado del cuerpo. · Para inscribir en México una defunción
+  ocurrida en el extranjero.
+result: Constancia
+requirements:
+- text: '**Requisitos Generales (Aplican en la mayoría de los casos).'
+  cites:
+  - source: remutys
+- text: Permiso de salubridad (si han pasado más de 48 horas del fallecimiento).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Certificado médico de defunción o Certificado de óbito fetal (según corresponda).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento e identificación del fallecido.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de matrimonio del fallecido (en caso de haber estado casado). Si el matrimonio ocurrió en el extranjero,
+    se debe presentar el acta apostillada y traducida.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento e identificación oficial del declarante o familiar directo.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Oficios del Ministerio Público, en caso de muerte violenta.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Inhumación de cadáver (mexicano o extranjero).
+  cites:
+  - source: remutys
+- text: Todos los requisitos generales.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'En caso de extranjeros: Acta de nacimiento traducida al español por perito autorizado.'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Cremación de cadáver
+  cites:
+  - source: remutys
+- text: Todos los requisitos generales.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Depósito o traslado de cenizas (particular o funeraria)
+  cites:
+  - source: remutys
+- text: Acta de defunción original.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Oficio de no inconveniente de salubridad.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Destino final de cenizas (dato proporcionado por panteón o iglesia).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Inscripción de Acta de Defunción proveniente del extranjero
+  cites:
+  - source: remutys
+- text: Todos los requisitos generales.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de defunción extranjera apostillada y traducida al español.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Legalización y embalsamado consular.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Permiso de salubridad (si se cambiará el destino final de los restos).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Inhumación o Cremación de Óbito Fetal
+  cites:
+  - source: remutys
+- text: Permiso de salubridad y certificado de óbito fetal.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento e identificación de la madre.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'Si el padre realiza el trámite: Acta de matrimonio e identificación del mismo.'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Exhumación por muerte natural
+  cites:
+  - source: remutys
+- text: Todos los requisitos generales.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Memorándum de exhumación (solicitar en Obras Públicas/Panteón Municipal).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Copia de boleta de inhumación o cremación.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Oficio del Ministerio Público (si el destino es cremación).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Exhumación por muerte violenta (ingreso como individuo desconocido)
+  cites:
+  - source: remutys
+- text: Todos los requisitos generales.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Comprobante de pago de rectificación.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Oficio del Ministerio Público autorizando la exhumación.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Registro en las oficinas en horas hábiles: 0 UMA ($0.00) · Registro en las oficinas en horas inhábiles:
+    2.5 UMA ($293.27) · Derechos por servicio a panteones en horas hábiles: 5 UMA ($586.55) · Derechos por servicio
+    a panteones en horas inhábiles: 7.5 UMA ($879.83) · Inscripción de acta de defunción acaecida fuera del país:
+    15 UMA ($1,759.65) · Orden de traslado de cadáver: 3.75 UMA ($439.91) · Orden de traslado de cadáver al extranjero:
+    18.75 UMA ($2,199.56) · Autorización de exhumación, cremación o reinhumación: 6.25 UMA ($733.19) · Autorización
+    de inhumación a perpetuidad en panteones particulares: 15 UMA ($1,759.65). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0275: Registro de DEFUNCIÓN.'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0275
+    version_date: '2026-10-23'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 1 Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 1 Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18, fracción VI, inciso A) y C) subincisos a), b), c), d), e), f) y g) de la Ley de Ingresos
+      del Municipio de Tijuana, Baja California para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos solicitados'

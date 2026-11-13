@@ -1,0 +1,140 @@
+id: mx-bcn-retys-1689-inspeccion-general
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inspección General
+summary: Atender a petición de usuario, mediante visita domiciliaria inconformidades generales sobre el servicio.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 1689
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1689
+  homoclave: BC-CESPM-041
+who_can:
+- Interesado
+when: CUANDO REQUIERES EL SERVCIO
+result: REPORTE
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Por la Inspección General de Usuarios Domésticos.$ 176.08 Por la inspección General para
+    usuarios Comerciales, Industriales, Gubernamentales y otros No Domésticos. $ 263.99 -De acuerdo a la Ley de
+    Ingresos del Estado de Baja California 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 7 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Recibo de Agua y/o número de cuenta o clave catastral del servicio en cuestión
+    cites:
+    - source: retys
+  - text: Cubrir el costo del servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención de usuarios según la Zona Comercial más cercana.
+    - Efectuar el pago correspondiente
+    - recibir orden de inspección
+  notes: Atender a petición de usuario, mediante visita domiciliaria inconformidades generales sobre el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, 13, 14 BIS
+- source: ley2
+  pinpoint: artículo 9 inciso G, punto 16, incisos a) y b).
+- source: ley3
+  pinpoint: Artículos 66 al 63
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención de usuarios según la Zona Comercial más cercana.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Efectuar el pago correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: recibir orden de inspección
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1689: Inspección General'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1689
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Fiscal del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Reglamenta el Servicio de Agua Potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inspección General para usuarios Domésticos  y no domésticos. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

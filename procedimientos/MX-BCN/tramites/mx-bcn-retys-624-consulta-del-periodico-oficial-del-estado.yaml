@@ -1,0 +1,108 @@
+id: mx-bcn-retys-624-consulta-del-periodico-oficial-del-estado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Consulta del Periódico Oficial del Estado
+summary: Acceder fácilmente a la información publicada en el Periódico Oficial del Estado, como leyes, avisos, acuerdos,
+  etc.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 624
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/624
+  homoclave: BC-SGG-016
+who_can:
+- Interesado
+when: Cuando requieran consultar un ejemplar del Periódico Oficial del Estado.
+result: Ejemplar del Periódico Oficial del Estado
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección del Periódico Oficial
+  address: 'Avenida Francisco I. Madero entre K y L #1981, Nueva , Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección del Periódico Oficial
+  address: 'Juan Ruiz de Alarcón #1572, Zona Rio , Tijuana, 22010'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Conocer la fecha de la publicación de la información a consultar.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Acceder a la liga https://bajacalifornia.gob.mx/Gobierno/Periodico_Oficial.
+    - Seleccionar la fecha de publicación
+    - Obtener la información solicitada
+  notes: Consulta del Periódico Ofcial del Estado
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 31, fracción VIII
+- source: ley2
+  pinpoint: Todos
+- source: ley3
+  pinpoint: Artículo 42
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acceder a la liga https://bajacalifornia.gob.mx/Gobierno/Periodico_Oficial.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar la fecha de publicación
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Obtener la información solicitada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 624: Consulta del Periódico Oficial del Estado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/624
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Periódico Oficial del Estado
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

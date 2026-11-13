@@ -1,0 +1,94 @@
+id: mx-bcn-tijuana-tj-sdtua-0122-certificacion-de-planos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Infraestructura y vivienda
+title: Certificación de Planos
+summary: Verificación, análisis, cálculo y revisión física de un cartograma para su certificación catastral. Este
+  servicio se realiza a través de peritos topográficos externos avalados por la de Catastro. Certificación de planos
+  urgentes pagarán adicionalmente sobre el costo del importe normal, un 200% más.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Catastro
+official_ids:
+  homoclave: TJ-SDTUA-0122
+who_can:
+- Interesado
+when: Cuando se requiera certificar una cuenta catastral.
+result: Plano Certificado
+requirements:
+- text: Planos originales y firmados por el perito deslindador
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Clave catastral
+  cites:
+  - source: remutys
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Predios con superficies mayores 000-50-00 has de hasta 001-00-00 has.: 67.6 UMA ($7,930.16) · Predios con
+    superficies Mayores 001-00-00 de hasta Has. 005-00-00 Has: 79.3 UMA ($9,302.68) · Predios con superficies mayores
+    005-00-00 has de hasta 010-00-00 has.: 96.2 UMA ($11,285.22) · Predios con superficies mayores 010-00-00 has
+    de hasta 025-00-00 has: 114.4 UMA ($13,420.26) · Predios con superficies mayores 025-00-00 has de hasta 050-00-00
+    has.: 146.25 UMA ($17,156.59) · Predios con superficies mayores 050-00-00 has de hasta 075-00-00 has: 175.5
+    UMA ($20,587.90) · Predios con superficies mayores 075-00-00 has de hasta 100-00-00 has: 188.34 UMA ($22,094.17)
+    · Predios con superficies mayores 100-00-00 has de hasta 250-00-00 has.: 205.4 UMA ($24,095.47) · Predios con
+    superficies mayores 250-00-00 has de hasta 500-00-00 has.: 245.7 UMA ($28,823.07) · Predios con superficies
+    mayores 500-00-00 has de hasta 1,000-00-00 has.: 286 UMA ($33,550.66) · Certificación de deslindes y levantamiento
+    menores de 000-50-00 Hectáreas: 6.89 UMA ($808.27). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 mes
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Catastro
+  address: Avenida Independencia 1350, Zona Urbana Río, C. P. 22010 Tijuana, Baja California, México
+  phones: '6649737097'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0122: Certificación de Planos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0122
+    version_date: '2026-04-08'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 33, fracción IV, inciso A), inciso C), Inciso D) de la Ley de Ingresos del Municipio de Tijuana,
+      Baja California para el Ejercicio Fiscal del 2026.
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 38 BIS, 54 del Reglamento de la Ley del Catastro Inmobiliario del Estado de Baja California
+      para el Municipio de Tijuana
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2022614145917564_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos técnicos y legales establecidos para su registro y uso oficial'

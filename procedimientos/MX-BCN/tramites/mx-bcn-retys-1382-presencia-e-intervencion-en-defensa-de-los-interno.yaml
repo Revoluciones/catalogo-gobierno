@@ -1,0 +1,94 @@
+id: mx-bcn-retys-1382-presencia-e-intervencion-en-defensa-de-los-interno
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Presencia e intervención en defensa de los internos en los Comités Técnicos Disciplinarios en los diversos
+  Centros de Reinserción Social
+summary: Presencia e intervención en defensa de los internos en los Comités Técnicos Disciplinarios en los diversos
+  Centros de Reinserción Social.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1382
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1382
+  homoclave: BC-CJ-007
+who_can:
+- Interesado
+when: Cuando lo solicite
+result: Resolución judicial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Ejecución Penal
+  address: 'Calle Sur #S/N, Bellavista, Mexicali, 21150'
+- municipality: Tijuana
+  name: Área Penal, Tijuana
+  address: 'Vía Rápida José Fimbres Moreno #Loc. 41,43, Fracc. San José, Tijuana, 22226'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: No contar con representación jurídica de abogado particular o en su caso solicitar su revocación.
+    cites:
+    - source: retys
+  - text: Contar con sentencia firme emitida por Tribunal de Juicio Oral
+    cites:
+    - source: retys
+  - text: Demás requisitos necesarios según señale el defensor público, en su caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del municipio y área correspondiente
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2, Fracciones IV y VI.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del municipio y área correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1382: Presencia e intervención en defensa de los internos en los Comités Técnicos Disciplinarios
+      en los diversos Centros de Reinserción Social'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1382
+    version_date: 05/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,242 @@
+id: mx-bcn-retys-1411-apoyo-economico-para-el-programa-proteccion-civil
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Apoyo Económico para el Programa Protección Civil
+summary: Apoyo económico por convocatoria a organizaciones inscritas en el Catálogo Estatal 2026 destinado al pago
+  de los dictámenes del Programa Interno de Protección Civil.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 1411
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1411
+  homoclave: BC-SB-021
+who_can:
+- Representante Legal
+- Otro
+when: Cuando se requiera acceder a apoyo económico para el programa de Protección Civil.
+result: Apoyo económico para protección civil
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Instituciones de asistencia privada
+  requirements:
+  - text: Formato de proyecto de apoyo 2026.
+    cites:
+    - source: retys
+  - text: Carta petición dirigida a la gobernadora con atención al titular de la Secretaría
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del representante legal
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al catálogo estatal de osc 2026
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal
+    cites:
+    - source: retys
+  - text: Opinión positiva del servicio de administración tributaria
+    cites:
+    - source: retys
+  - text: Copia de constancia expedida u oficio que se encuentra en vía de cumplimiento expedida por el Instituto
+      de Psiquiatría del Estado (ipebc) de Baja California, del cumplimiento a la norma de la salud NOM-028SSA2-2009,
+      con una antigüedad no mayor a un año
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Revisión de documentación y entrevista para llenado de Formato Único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Representante legal de instituciones de asistencia privada
+- name: Apoyo para instituciones de asistencia social
+  requirements:
+  - text: Formato de trámite de proyecto de apoyo 2026.
+    cites:
+    - source: retys
+  - text: Carta petición dirigida a la Gobernadora con atención al titular de la Secretaría
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al catálogo estatal de OSC 2026.
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal con antigüedad no mayor a un mes.
+    cites:
+    - source: retys
+  - text: Licencia de operación o la constancia que se encuentra en vía de cumplimiento expedida por el Sistema
+      Estatal para el Desarrollo Integral de la Familia, con antigüedad no mayor a un año
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Acceder al enlace: https://baja_california_39446916.urbem.digital/baja_california_39446916/copia_convocatoria_para_proyectos_2024_del_programa_para_organizaciones_de_la_sociedad_civil_4f0b5d53-9f38-48c0-9d37-ee36ffa354bf/start
+      o dando click en iniciar trámite'
+    - Captura y envió de documentos solicitados
+    - Validación por la Secretaría de Bienestar, de los documentos enviados por la OSC
+    - Firma electrónica de los documentos validados por la Secretaría de Bienestar, por la osc solicitante del apoyo
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Revisión de documentación y entrevista para llenado de Formato Único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos para Organizaciones de la Sociedad Civil que soliciten el apoyo para instituciones de asistencia
+    social
+- name: Apoyo para organizaciones que reciban la donación, suministro o distribución de alimentos
+  requirements:
+  - text: Formato de trámite de proyecto de apoyo 2026
+    cites:
+    - source: retys
+  - text: Carta petición dirigida a la gobernadora con atención al titular de la Secretaría
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del representante legal
+    cites:
+    - source: retys
+  - text: Constancia de inscripción o revalidación al catálogo estatal de osc 2026
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal con antigüedad no mayor a un mes.
+    cites:
+    - source: retys
+  - text: Cotizaciones del proyecto a realizar
+    cites:
+    - source: retys
+  - text: Opinión positiva del servicio de administración tributaria
+    cites:
+    - source: retys
+  - text: Copia del comprobante de Aviso de Funcionamientos de Regulación de Servicios de Salud, expedido por la
+      COEPRISBC
+    cites:
+    - source: retys
+  - text: Copia del Comprobante de Aviso de Responsable de Regulación de Servicios de Salud, expedido por la COEPRISBC
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Acceder a la liga: https://baja_california_39446916.urbem.digital/baja_california_39446916/copia_convocatoria_para_proyectos_2024_del_programa_para_organizaciones_de_la_sociedad_civil_4f0b5d53-9f38-48c0-9d37-ee36ffa354bf/start
+      o dar click en iniciar trámite'
+    - Captura y envió de documentos solicitados
+    - Validación por la Secretaría de Bienestar, de los documentos enviados por la OSC
+    - Firma electrónica de los documentos validados por la Secretaría de Bienestar, por la osc solicitante del apoyo
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Revisión de documentación y entrevista para llenado de Formato Único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos para Organizaciones de la Sociedad Civil
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 5, 6 y 12
+- source: ley2
+  pinpoint: Artículos 49 y 49 BIS
+- source: ley3
+  pinpoint: Artículos 24, 30 y 31
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisión de documentación y entrevista para llenado de Formato Único
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1411: Apoyo Económico para el Programa Protección Civil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1411
+    version_date: 04/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: La Ley de Fomento a las Actividades de Bienestar y Desarrollo Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Fomento a las Actividades de Bienestar y Desarrollo Social para el Estado de
+      Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

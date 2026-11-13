@@ -1,0 +1,120 @@
+id: mx-bcn-retys-1726-duplicado-de-certificado-de-estudios-o-parcial-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Duplicado de Certificado de Estudios o Parcial de Estudios
+summary: Entrega de Duplicado del Certificado de Estudios o Certificado Parcial de Estudios a egresadas, egresados,
+  exalumnas o exalumnos de la Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1726
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1726
+  homoclave: BC-UTT-014
+who_can:
+- Interesado
+when: Cuando el interesado lo requiera
+result: Duplicado de certificado de estudios
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $117.42 M.N. en servicio normal $170.98 M.N. en servicio urgente'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Operativa de Servicios Escolares
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+- municipality: Ensenada
+  name: Unidad Académica Ensenada
+  address: 'Avenida de las Flores s/n Carretera 1 a La Bufadora #s/n, Maneadero, Ensenada, 22790'
+scenarios:
+- name: Solicitud de duplicado de certificado de estudios
+  requirements:
+  - text: Original y copia del recibo de pago realizado
+    cites:
+    - source: retys
+  - text: 2 fotografías tamaño infantil en blanco y negro
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+    - Dar clic a Otros trámites y seleccionar el tipo de trámite (Duplicado de Certificado de Estudios).
+    - Ingresar datos requeridos.
+    - Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio de
+      Rectoría con tarjeta de débito o de crédito.
+    - Entregar comprobante de pago a las oficinas de atención.
+  notes: Interesados en obtener su duplicado de certificado de estudios
+legal_basis:
+- source: ley1
+  pinpoint: 5 Fracción IV
+- source: ley2
+  pinpoint: 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar clic a Otros trámites y seleccionar el tipo de trámite (Duplicado de Certificado de Estudios).
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresar datos requeridos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio
+    de Rectoría con tarjeta de débito o de crédito.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entregar comprobante de pago a las oficinas de atención.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1726: Duplicado de Certificado de Estudios o Parcial de Estudios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1726
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Ingresos Propios de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Duplicado de Certificado de Estudios o Certificado Parcial de Estudios. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

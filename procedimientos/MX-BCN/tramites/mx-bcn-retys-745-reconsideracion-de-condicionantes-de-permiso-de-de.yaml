@@ -1,0 +1,135 @@
+id: mx-bcn-retys-745-reconsideracion-de-condicionantes-de-permiso-de-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reconsideración de condicionantes de permiso de descarga de agua residual
+summary: Conocer las causas de los cambios que puede ser por imprevistos fortuitos negligentes o intencionales por
+  cambio de materias primas o de procesos y equipos que modifiquen a las condicionantes y se justifiquen
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 745
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/745
+  homoclave: BC-CESPM-036
+who_can:
+- Representante Legal
+when: Cuando requiera el tramite
+result: Permiso de descarga
+cost:
+  type: variable
+  amount_mxn: 2506.4
+  text: 'COSTO VARIABLE: $ 2,506.40. el costo del servicio variara durante el ejercicio 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Presentar solicitud escrita y/o electrónica informando nombre, domicilio, RFC, giro o actividad de la
+      empresa (copia de poder notarial, acreditando lo solicito como propietario y/o representante legal),
+    cites:
+    - source: retys
+  - text: Justificación detallada que sustente la solicitud
+    cites:
+    - source: retys
+  - text: Nombre de la persona o representante legal a quien saldrá la reconsideración
+    cites:
+    - source: retys
+  - text: No. de cuenta de agua potable.
+    cites:
+    - source: retys
+  - text: Documentos originales que pretende modificar
+    cites:
+    - source: retys
+  - text: Cantidad que producción diaria o mensual (anotar si es por temporadas).
+    cites:
+    - source: retys
+  - text: Recibo de pago del servicio de la reconsideración
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+      de la prorroga
+    - Realizar el pago y presentar copia a la hora de presentar la solicitud de la prorroga.
+    - Presentar la solicitud en ONCA agregando el sustento técnico suficiente para la prórroga.
+    - ONCA recibirá y revisara el documento en caso de ser necesario solicitara información adicional y/o en su
+      caso programara una visita confirmativa de datos.
+    - Una vez que ONCA evalué la información y en su caso verifique los datos técnicos emitirá su dictamen y/o la
+      prórroga.
+    - Se le comunicara al usuario para que pase por su prórroga.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: EL ART 9, PUNTO 8 INCISOS n)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+    de la prorroga
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago y presentar copia a la hora de presentar la solicitud de la prorroga.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en ONCA agregando el sustento técnico suficiente para la prórroga.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: ONCA recibirá y revisara el documento en caso de ser necesario solicitara información adicional y/o en
+    su caso programara una visita confirmativa de datos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez que ONCA evalué la información y en su caso verifique los datos técnicos emitirá su dictamen y/o
+    la prórroga.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se le comunicara al usuario para que pase por su prórroga.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 745: Reconsideración de condicionantes de permiso de descarga de agua residual'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/745
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

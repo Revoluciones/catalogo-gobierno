@@ -1,0 +1,172 @@
+id: mx-bcn-retys-1772-ingreso-al-sistema-escolar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Ingreso al Sistema Escolar
+summary: Llevar a cabo el proceso de registro administrativo y académico de estudiantes de nuevo ingreso que hayan
+  sido admitidos a alguno de los programas educativos de la Universidad Intercultural de Baja California. Este trámite
+  permite la incorporación formal al sistema escolar institucional mediante la integración del expediente estudiantil,
+  la asignación de matrícula, la carga académica inicial y el otorgamiento de los derechos y servicios escolares
+  correspondientes. La inscripción deberá realizarse dentro de los plazos establecidos en la convocatoria oficial
+  y requiere el cumplimiento de requisitos académicos, administrativos y documentales.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1772
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1772
+  homoclave: BC-UIBC-001
+who_can:
+- Interesado
+when: Durante las fechas establecidas en la convocatoria oficial correspondiente al ciclo escolar en curso, emitida
+  por la UIBC.
+result: Incorporación formal como estudiante activo de la Universidad Intercultural de Baja California.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo por concepto de inscripción o reinscripción al programa de Ingeniería en Innovación
+    Agroalimentaria es de $1,800.00 (mil ochocientos pesos 00/100 M.N.); para el programa de Maestría en Educación
+    Intercultural, el costo es de $3,000.00 (tres mil pesos 00/100 M.N.).'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Departamento de Control Escolar y Servicios Estudiantiles
+  address: 'Calle Sin Nombre, Lote A y fracción del Lote B-1 fracción 5 Manzana 102 #S/N, Fraccionamiento Valle
+    de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Nuevo ingreso
+  requirements:
+  - text: Realizar el Examen de Conocimientos Generales en la hora y día indicada (aplica únicamente a nivel licenciatura).
+    cites:
+    - source: retys
+  - text: Acta de nacimiento actualizada. Original y 2 copias.
+    cites:
+    - source: retys
+  - text: Credencial de elector, o Credencial de preparatoria (en caso de ser menores de edad) 2 copias
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población (CURP). Original y 2 copias.
+    cites:
+    - source: retys
+  - text: Certificado de Bachillerato. Original y 2 copias. (En caso de no contar con el certificado, entregar una
+      Constancia de Terminación de Estudios nivel Bachillerato -solo te avala por 6 meses-).
+    cites:
+    - source: retys
+  - text: 4 fotografías tamaño infantil blanco y negro. No instantáneas.
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio. Original y 2 copias.
+    cites:
+    - source: retys
+  - text: Firma de carta de compromiso (formato que se le proporciona al inscribirse).
+    cites:
+    - source: retys
+  - text: Titulo de licenciatura (aplica para posgrado).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Consultar la convocatoria vigente publicada por la UIBC.
+    - Llenar el formulario de solicitud de ingreso en línea o presencialmente, según se indique.
+    - Entregar la documentación requerida en tiempo y forma.
+    - Presentarse a examen diagnostico, en su caso.
+    - Esperar la publicación de resultados y confirmación de inscripción.
+    - Formalizar el proceso de inscripción con la entrega de documentos originales y firma de expediente escolar.
+  notes: Estudiante que solicita por primera vez su incorporación a las ofertas educativas de la Universidad Intercultural
+    de Baja California, en el nivel de licenciatura o posgrado.
+- name: Reinscripción
+  requirements:
+  - text: Haber concluido satisfactoriamente el semestre anterior.
+    cites:
+    - source: retys
+  - text: Realizar el pago de reinscripción al siguiente semestre.
+    cites:
+    - source: retys
+  - text: Llenar el formato de reinscripción con datos personales.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13707
+  modes:
+  - name: Presencial
+    steps:
+    - Concluir satisfactoriamente el semestre anterior, cumpliendo con los requisitos académicos establecidos.
+    - Realizar el pago correspondiente a la reinscripción, mediante deposito bancario.
+    - Reunir y conservar el comprobante de pago como evidencia para el trámite.
+    - Llenar el formato de reinscripción con sus datos personales y académicos.
+    - Solicitar formalmente la reinscripción al semestre actual mediante presentación directa en control escolar.
+    - Departamento de Control registra su reingreso al nuevo ciclo escolar.
+  notes: Proceso mediante el cual un estudiante activo de la Universidad Intercultural de Baja California formaliza
+    su continuidad académica en el siguiente periodo escolar, cumpliendo con los requisitos administrativos y académicos
+    establecidos por la institución.
+legal_basis:
+- source: ley1
+  pinpoint: 12 Fracción X
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Consultar la convocatoria vigente publicada por la UIBC.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar el formulario de solicitud de ingreso en línea o presencialmente, según se indique.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar la documentación requerida en tiempo y forma.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Presentarse a examen diagnostico, en su caso.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Esperar la publicación de resultados y confirmación de inscripción.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Formalizar el proceso de inscripción con la entrega de documentos originales y firma de expediente escolar.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1772: Ingreso al Sistema Escolar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1772
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Intercultural de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro e ingreso a la Universidad Intercultural de BC. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

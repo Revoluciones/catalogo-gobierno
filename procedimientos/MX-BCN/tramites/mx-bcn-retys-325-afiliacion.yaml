@@ -1,0 +1,507 @@
+id: mx-bcn-retys-325-afiliacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Afiliación
+summary: Proporcionar ingreso al sistema de afiliación y vigencia a fin de poder disfruta de los servicios y prestaciones
+  establecidas en la ley que rige a ISSSTECALI.
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 325
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/325
+  homoclave: BC-ISSSTECALI-001
+who_can:
+- Interesado
+when: Cuando sea requerido por el trabajador, pensionado o jubilado
+result: Credencial con fotografía de afiliación y/o constancia, número de afiliación y vigencia
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: TEMPORAL O CONTÍNUO SEGÚN EL TIPO DE AFILIACIÓN
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Afiliación y Trabajo Social
+  address: 'Calle Calafia #1115 , Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Afiliación
+  address: 'Blvd. Díaz Ordaz  #12649, El paraíso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Afiliaciones y Prestaciones Económicas
+  address: 'Calle de las rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+- municipality: Tecate
+  name: Administración
+  address: 'Carretera Federal Número 2 Tecate-Tijuana y Boulevard Los Encinos #S/N, Residencial El Palomino, Tecate,
+    21440'
+- municipality: San Quintín
+  name: Administración
+  address: 'Calle Josefa Ortíz de Domínguez #320, Col. Lazáro Cárdenas, San Quintín, 22930'
+- municipality: San Felipe
+  name: Administración Clínica San Felipe
+  address: 'Avenida Mar Caribe #615, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Afiliación Directa Trabajador (a)
+  requirements:
+  - text: Constancia laboral del trabajador(a) no mayor a 30 días (original)
+    cites:
+    - source: retys
+  - text: Último talón de pago (original)
+    cites:
+    - source: retys
+  - text: CURP del trabajador (a)
+    cites:
+    - source: retys
+  - text: Identificación oficial del trabajador(a) (original y copia)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del trabajador(a)(original y copia)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a ventanilla con documentación
+    - Presentar los documentos originales y sus copias. El funcionario verificará que las copias coincidan con los
+      originales.
+    - El funcionario capturará la información que proporcionaste en el sistema de afiliación y vigencia.
+    - Escanear documentación en el sistema
+    - Tomar foto al interesado
+    - Entregar credencial de afiliación al interesado
+  notes: Afiliación Directa
+- name: Afiliación Directa Esposo (a)
+  requirements:
+  - text: Identificación oficial de esposa(o) (original y copia )
+    cites:
+    - source: retys
+  - text: CURP de esposa(o)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado (a) (original)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento de esposa(o) (original)
+    cites:
+    - source: retys
+  - text: Acta de matrimonio certificada ( vigencia no mayor a 6 meses ) (original)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a ventanilla con documentación trabajador (a) y esposa (o)
+    - Cotejar documentación original y copia solicitada
+    - Capturar los campos en el sistema de afiliación y vigencia
+    - Escanear documentación en el sistema
+    - Tomar foto al interesado(a)
+    - Entregar credencial de afiliación a interesado(a)
+  notes: Afiliación Directa
+- name: Afiliación Directa Hijo(a) menor de edad
+  requirements:
+  - text: CURP del hijo (a)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del hijo (a) (original)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado (a) (original)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: Presencia del menor o fotografía tamaño credencial actualizada
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a ventanilla trabajador(a) con documentación
+    - Cotejar documentación original y copia solicitada
+    - Capturar los campos en el sistema de afiliación y vigencia
+    - Escanear documentación en el sistema
+    - Tomar foto al interesado(a)
+    - Entregar credencial de afiliación al interesado(a)
+  notes: Afiliación Directa
+- name: Afiliación Condicionada Hijo(a) estudiante mayor de 18 años y menor de 25 años
+  requirements:
+  - text: Constancia de trabajo del asegurado(a) (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado(a) e hijo (a) (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado(a) e hijo(a)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado(a) e hijo(a) (original y copia)
+    cites:
+    - source: retys
+  - text: 'Constancia de estudios vigente del hijo(a) estudiante, misma que debe contener: fecha de inicio y término
+      del periódo escolar y firma y sello de la institución educativa incorporada a la SEP o a la SEBS (original
+      y copia)'
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses del asegurado(a) e hijo(a) (original y copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS, ISSSTE y SAT del hijo(a) estudiante (original y copia)
+    cites:
+    - source: retys
+  - text: Presencia de trabajador y estudiante en caso de primera vez y en actualizaciòn de vigencia ùnicamente
+      el estudiante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a ventanilla con documentación
+    - Cotejar documentación original y copia solicitada
+    - Capturar los campos en el sistema de afiliación y vigencia
+    - Integrar el expediente del solicitante
+    - Realizar entrevista a estudiante
+    - Asesorar al interesado(a) en seguimiento de trámite
+    - Turnar trámite al área jurídica
+    - Recibir dictamen jurídico de procedencia de trámite
+    - Informar vía telefónica al asegurado (a) la resolución de su trámite
+    - Tomar foto al interesado(a)
+    - Entregar credencial de afiliación a interesado(a)
+  notes: Afiliación Condicionada
+- name: Afiliación Condicionada Hijo(a) mayor de edad incapacitado
+  requirements:
+  - text: Constancia laboral del asegurado(a) no mayor a 30 días (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado e hijo (a) (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado e hijo(a)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado e hijo (a) (original y copia)
+    cites:
+    - source: retys
+  - text: Croquis del domicilio
+    cites:
+    - source: retys
+  - text: Comprobante de pago expedido por ISSSTECALI para valoración médica (sin costo durante el año 18 del hijo
+      incapacitado)
+    cites:
+    - source: retys
+  - text: Valoración médica expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico del derechohabiente interesado, expedido por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses del trabajador e hijo (a) (original y copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS, ISSSTE y SAT del hijo(a) incapacitado (a)
+    cites:
+    - source: retys
+  - text: El tiempo de respuesta de este trámite es a partir de cumplir con los requisitos indicados
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a ventanilla el trabajador (a) con documentación
+    - Integrar el expediente del solicitante
+    - Realizar visita por parte del área de trabajo social para identificar dependencia económica del solicitante
+      con el hijo (a) incapacitado (a)
+    - Turnar el expediente a la coordinación jurídica para su validación y dictamen
+    - Informar vía telefónica al asegurado (a) la resolución de su trámite
+    - Entregar credencial de afiliación a interesado(a) en el caso que sea procedente
+  notes: Afiliación Condicionada
+- name: Afiliación Condicionada Madre
+  requirements:
+  - text: Constancia laboral del asegurado(a) no mayor a 30 días (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado(a) y de la madre (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado(a) y de la madre
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado(a) y de la madre (original y copia)
+    cites:
+    - source: retys
+  - text: Documento que avale el estado cívil de la madre (acta de matrimonio o inexistencia de matrimonio no mayor
+      a 6 meses de vigencia)
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico del derechohabiente interesado, expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Croquis del domicilio
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio del asegurado(a) y de la madre con vigencia no mayor a 3 meses (original y copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS, ISSSTE y SAT de la madre
+    cites:
+    - source: retys
+  - text: El tiempo de respuesta de este trámite es a partir de cumplir con los requisitos indicados
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir el trabajador(a) a ventanilla con la documentación
+    - Integrar el expediente del solicitante
+    - Realizar estudio socioeconòmico por parte del area de trabajo social para identificar dependencia económica
+      de la madre con el trabajador(a)
+    - Turnar el expediente a la coordinación jurídica para su validación y dictamen
+    - Informar vía telefónica al trabajador (a) la resolución a su trámite
+    - Asistir para la entrega de credencial (en caso de procedencia del trámite)
+    - Entregar credencial de afiliación a interesado(a)
+  notes: Afiliación Condicionada
+- name: Afiliación Condicionada Padre
+  requirements:
+  - text: Constancia laboral del asegurado(a) no mayor a 30 días (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado(a) y del padre (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado(a) y padre
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado(a) y del padre (original y copia)
+    cites:
+    - source: retys
+  - text: Documento que avale el estado cívil del padre (acta de matrimonio o inexistencia de matrimonio no mayor
+      a 6 meses de vigencia)
+    cites:
+    - source: retys
+  - text: Croquis del domicilio
+    cites:
+    - source: retys
+  - text: Valoración médica expedida por ISSSTECALI para padres menores de 65 años
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico del derechohabiente interesado, expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio del asegurado(a) y del padre con vigencia no mayor a 3 meses (original y copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS, ISSSTE y SAT del padre
+    cites:
+    - source: retys
+  - text: El tiempo de respuesta de este trámite es a partir de cumplir con todos los requisitos indicados
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir el trabajador(a) a ventanilla con documentación
+    - Integrar el expediente del solicitante
+    - Realizar estudio socioeconòmico por parte del área de trabajo social para identificar dependencia económica
+      del padre con el trabajador (a)
+    - Turnar el expediente a la coordinación jurídica para su validación y dictamen
+    - Informar vía telefónica al asegurado (a) la resolución de su trámite
+    - Asistir para la entrega de credencial (en caso de procedencia del trámite)
+    - Entregar credencial de afiliación a interesado(a)
+  notes: Afiliación Condicionada
+- name: Afiliación Condicionada Concubina(o)
+  requirements:
+  - text: Constancia laboral del asegurado(a) no mayor a 30 días (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado(a) y concubina(o) (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado y concubina (o)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del concubina (o) (original y copia)
+    cites:
+    - source: retys
+  - text: Documento que avale estado civil y/o certificado de inexistencia de matrimonio
+    cites:
+    - source: retys
+  - text: Croquis del domicilio
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico del derechohabiente interesado, expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Acreditación del concubinato, jurisdicción voluntaria emitida por por un juez(a)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio con vigencia no mayor a 3 meses (original y copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS, ISSSTE y SAT de concubina(o)
+    cites:
+    - source: retys
+  - text: El tiempo de respuesta de este trámite es a partir de cumplir con todos los requisitos indicados
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir el trabajador(a) a ventanilla con documentación
+    - Integrar el expediente del solicitante
+    - Realizar estudio socioeconòmico para comprobar dependencia econòmica del concubino (a) con el trabajador (a)
+    - Turnar trámite al área jurídica para su validaciòn y dictamen
+    - Informar vía telefónica al asegurado (a) la resolución de su tramite
+    - Entregar credencial de afiliación a interesado(a) en el caso que sea procedente
+  notes: Afiliación Condicionada
+- name: Afiliación Condicionada Hermana menor de edad
+  requirements:
+  - text: Constancia laboral del asegurado(a) no mayor a 30 días (original y copia)
+    cites:
+    - source: retys
+  - text: Último talón de pago del asegurado(a) (original y copia )
+    cites:
+    - source: retys
+  - text: Identificación oficial del asegurado(a) y hermana (original y copia)
+    cites:
+    - source: retys
+  - text: CURP del asegurado(a) y hermana menor
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del asegurado(a) y hermana menor (original y copia)
+    cites:
+    - source: retys
+  - text: Croquis del domicilio
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico del derechohabiente interesado, expedida por ISSSTECALI
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio del asegurado(a) y de la hermana con vigencia no mayor a 3 meses (original y
+      copia)
+    cites:
+    - source: retys
+  - text: Constancia de no derechohabiencia ante IMSS e ISSSTE de la hermana menor
+    cites:
+    - source: retys
+  - text: El tiempo de respuesta de este trámite es a partir de cumplir con todos los requisitos indicados
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir el trabajador(a) a ventanilla con documentación
+    - Integrar el expediente del solicitante
+    - Realizar estudio socioeconòmico por parte del área de trabajo social para identificar dependencia económica
+      de la hermana menor y el trabajador (a)
+    - Turnar el expediente a la coordinación jurídica para su validación y dictamen
+    - Informar vía telefónica al asegurado (a) la resolución de su trámite
+    - Entregar credencial de afiliación a interesado(a)
+  notes: Afiliación Condicionada
+legal_basis:
+- source: ley1
+  pinpoint: Acuerdo SO/051/30-09-11 en lo que no se oponga a las previsiones contenidas en la ley de ISSSTECALI
+    publicada en el periódico oficial del estado de 17 febrero de 2015
+- source: ley2
+  pinpoint: 4,8,23 Y 24
+- source: ley3
+  pinpoint: 62 Fracciones V y VII, 64 Fracciones I,II y IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a ventanilla con documentación
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar los documentos originales y sus copias. El funcionario verificará que las copias coincidan con
+    los originales.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El funcionario capturará la información que proporcionaste en el sistema de afiliación y vigencia.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Escanear documentación en el sistema
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar foto al interesado
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Entregar credencial de afiliación al interesado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 325: Afiliación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/325
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: 4TA SESIÓN ORDINARIA DE JUNTA DIRECTIVA DE FECHA DE 30 SEPTIEMBRE 2011
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY DE ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: REGLAMENTO INTERNO DEL ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

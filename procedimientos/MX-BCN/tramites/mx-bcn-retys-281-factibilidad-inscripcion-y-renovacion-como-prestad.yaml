@@ -1,0 +1,368 @@
+id: mx-bcn-retys-281-factibilidad-inscripcion-y-renovacion-como-prestad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Factibilidad, inscripción y renovación como Prestador de Servicios en materia de impacto ambiental
+summary: Inscripción o renovación por convocatoria al Padrón Estatal como Prestador de Servicios especializado en
+  la elaboración de estudios de impacto ambiental.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 281
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/281
+  homoclave: BC-SMADS-048
+who_can:
+- Representante Legal
+when: Cuando desee acreditarse como prestador de servicios en estudios de impacto ambiental
+result: Número de registro o renovación.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Estudio y evaluación: $14,484.60 Moneda Nacional. Inscripción al padrón: $14,848.60 Moneda
+    Nacional. Renovación: $8,690.78 Moneda Nacional. Costos actualizados para el mes de noviembre del 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física factibilidad
+  requirements:
+  - text: Escrito libre con firma autógrafa, en el que se señale el trámite solicitado, debiendo indicar domicilio,
+      teléfono y correo electrónico para oír y recibir notificaciones.
+    cites:
+    - source: retys
+  - text: 'Recibo de pago de derechos por el estudio y evaluación de factibilidad para prestar servicios ambientales:
+      Prestador de servicios en materia de impacto ambiental.'
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Grado de licenciatura o estudios equivalentes, afines a la función por realizar, y currículo vitae.
+    cites:
+    - source: retys
+  - text: Cédula profesional registrada ante el departamento de profesiones del Estado
+    cites:
+    - source: retys
+  - text: Acreditar 80 horas de capacitación y entrenamiento en cursos, talleres, diplomados o posgrados en áreas
+      relacionadas a la prevención y control de la contaminación al ambiente y riesgo ambiental
+    cites:
+    - source: retys
+  - text: Acreditar capacitación y experiencia en el uso de herramientas para la evaluación del impacto ambiental
+      y riesgo ambiental.
+    cites:
+    - source: retys
+  - text: Listado de equipo de monitoreo ambiental y de herramientas para la evaluación de impacto y riesgo ambiental
+    cites:
+    - source: retys
+  - text: Los requisitos que se establezcan en la convocatoria.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona interesada en estar inscrita en el Padrón como Prestador de Servicios en Materia de Impacto Ambiental,
+    que presenta una solicitud conforme a la convocatoria publicada.
+- name: Persona Moral factibilidad
+  requirements:
+  - text: Escrito libre con la firma autógrafa de la persona apoderada o representante legal, en el que se señale
+      el trámite solicitado, debiendo indicar domicilio, teléfono y correo electrónico para oír y recibir notificaciones.
+    cites:
+    - source: retys
+  - text: 'Recibo de pago de derechos por el estudio y evaluación de factibilidad para prestar servicios ambientales:
+      Prestador de servicios en materia de impacto ambiental.'
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: 'Contar entre sus empleados cuando menos con un profesionista titulado que deberá cumplir con: Grado de
+      Licenciatura o estudios equivalentes afines a la función por realizar, currículo vitae, cédula profesional
+      registrada ante el departamento de profesiones del Estado y acreditar 80 horas de capacitación y entrenamiento
+      en cursos, talleres, diplomados o posgrados en áreas relacionadas a la prevención y control de la contaminación
+      al ambiente y riesgo ambiental.'
+    cites:
+    - source: retys
+  - text: Acreditar capacitación y experiencia en el uso de herramientas para la evaluación del impacto ambiental
+      y riesgo ambiental.
+    cites:
+    - source: retys
+  - text: Listado de equipo de monitoreo ambiental y de herramientas para la evaluación de impacto y riesgo ambiental.
+    cites:
+    - source: retys
+  - text: Los requisitos que se establezcan en la convocatoria.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, interesado
+    en estar inscrito en el Padrón como Prestador de Servicios en Materia de Impacto Ambiental, que presenta una
+    solicitud conforme a la convocatoria publicada.
+- name: Persona Física registro
+  requirements:
+  - text: 'Escrito libre, con firma autógrafa, en el que se señale el trámite solicitado y donde se proporcionen
+      los siguientes datos: domicilio, teléfono y correo electrónico, mismos que se publicarán en el Padrón Estatal.'
+    cites:
+    - source: retys
+  - text: 'Recibo de pago de derechos: Por la inscripción al padrón de prestador de servicios en materia de impacto
+      ambiental.'
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que ha obtenido la factibilidad para prestar el servicio en materia de impacto ambiental y requiere
+    ser inscrita en el padrón estatal correspondiente.
+- name: Persona Moral registro
+  requirements:
+  - text: 'Escrito libre, con la firma autógrafa de la persona apoderada o representante legal, en el que se señale
+      el trámite solicitado y donde se proporcionen los siguientes datos: domicilio, teléfono y correo electrónico,
+      mismos que se publicarán en el Padrón Estatal.'
+    cites:
+    - source: retys
+  - text: 'Recibo de pago de derechos: Por la inscripción al padrón de prestador de servicios en materia de impacto
+      ambiental.'
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente, cuando sea persona distinta a la que solicitó el estudio y evaluación de factibilidad.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que ha obtenido
+    la factibilidad para prestar el servicio en materia de impacto ambiental y requiere ser inscrita en el padrón
+    estatal correspondiente.
+- name: Persona Física renovación
+  requirements:
+  - text: Escrito libre con firma autógrafa, en el que se señale el trámite solicitado, debiendo indicar domicilio,
+      teléfono y correo electrónico para oír y recibir notificaciones, así como para publicar en el Padrón Estatal
+      correspondiente.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos por Evaluación para seguir inscrito en el padrón de prestador de servicios
+      en materia de impacto ambiental.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Grado de licenciatura o estudios equivalentes, afines a la función por realizar, y currículo vitae.
+    cites:
+    - source: retys
+  - text: Cédula profesional registrada ante el departamento de profesiones del Estado.
+    cites:
+    - source: retys
+  - text: Listado de equipo de monitoreo ambiental y de herramientas para la evaluación de impacto y riesgo ambiental.
+    cites:
+    - source: retys
+  - text: Describir las acciones de prestación de servicios y actividades realizadas ante la Secretaría, correspondiente
+      al año inmediato anterior.
+    cites:
+    - source: retys
+  - text: Capacitación y entrenamiento en cursos, talleres, diplomados o posgrados de actualización en áreas relacionadas
+      a la prevención y control de la contaminación al ambiente, durante el periodo inscrito al Padrón.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que se encuentra inscrita en el Padrón como Prestador de Servicios en Materia de Impacto Ambiental,
+    con registro vigente y que desea renovarlo.
+- name: Persona Moral renovación
+  requirements:
+  - text: Escrito libre con la firma autógrafa de la persona apoderada o representante legal, en el que se señale
+      el trámite solicitado, debiendo indicar domicilio, teléfono y correo electrónico para oír y recibir notificaciones,
+      así como para publicar en el Padrón Estatal correspondiente.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos por Evaluación para seguir inscrito en el padrón de prestador de servicios
+      en materia de impacto ambiental.
+    cites:
+    - source: retys
+  - text: 'Contar entre sus empleados cuando menos con un profesionista titulado que deberá cumplir con: Grado de
+      Licenciatura o estudios equivalentes afines a la función por realizar, currículo vitae, cédula profesional
+      registrada ante el departamento de profesiones del Estado y acreditar 80 horas de capacitación y entrenamiento
+      en cursos, talleres, diplomados o posgrados en áreas relacionadas a la prevención y control de la contaminación
+      al ambiente y riesgo ambiental.'
+    cites:
+    - source: retys
+  - text: Listado de equipo de monitoreo ambiental y de herramientas para la evaluación de impacto y riesgo ambiental.
+    cites:
+    - source: retys
+  - text: Describir las acciones de prestación de servicios y actividades realizadas ante la secretaría correspondiente
+      al año inmediato anterior.
+    cites:
+    - source: retys
+  - text: Capacitación y entrenamiento en cursos, talleres, diplomados o posgrados de actualización en áreas relacionadas
+      a la prevención y control de la contaminación al ambiente, durante el periodo inscrito al padrón.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente, cuando sea persona distinta a la que solicitó el estudio y evaluación de factibilidad.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, inscrito
+    en el Padrón como Prestador de Servicios en Materia de Impacto Ambiental, con registro vigente y que desea renovarlo.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 1 fracción IX, 8 fracción XXX, 53 y 60 fracción II.
+- source: ley2
+  pinpoint: Artículo 17, fracción III, inciso A) numeral 3, Inciso B) subinciso a) e Inciso C) sub inciso a)
+- source: ley3
+  pinpoint: Artículos 2 fracciones IV y VI, 3, 4, 5, 6, 7, 8, 14, 15, 16, 34, 35, 46, 49 y 50
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de la resolución o solicitud de información adicional.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 281: Factibilidad, inscripción y renovación como Prestador de Servicios en materia de impacto
+      ambiental'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/281
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Auditores
+      Ambientales, Prestadores de Servicios, Laboratorios Ambientales y Peritos en Monitoreo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Factibilidad, inscripción y renovación como Prestador de Servicios en Materia de Impacto
+  Ambiental. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás
+  variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

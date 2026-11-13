@@ -1,0 +1,127 @@
+id: mx-bcn-retys-1257-reinscripcion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reinscripción
+summary: Proceso mediante el cual un alumno renueva y formaliza su permanencia y su relación con el sistema CONALEP.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1257
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1257
+  homoclave: BC-CONALEP-003
+who_can:
+- Interesado
+- Tutor
+when: Al inicio de un nuevo semestre
+result: La reinscripción al plantel
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: Concepto de pago a terceros segundo y cuarto semestre: $
+    840.00 Concepto de pago a terceros tercero y quinto semestre: $ 1000.00 Concepto de pago a terceros sexto semestre:
+    $ 1,435.00 Aportaciones voluntarias plantel Ensenada y Tecate: $ 800.00 Aportaciones voluntarias plantel Tijuana
+    I y plantel Tijuana II: $800.00 Aportaciones voluntarias plantel Mexicali II: $903.00 Aportaciones voluntarias
+    plantel Mexicali I: $700.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Comprobante de domicilio actual
+    cites:
+    - source: retys
+  - text: Historial académico
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Validar información académica en portal http://miportal.conalepbc.edu.mx/
+    - Realizar pago con recibo generado desde portal
+    - Presentarse al plantel que aplique y entregar documentación requerida.
+    - Informar grupo de reinscripción y fecha de reingreso
+  - name: Presencial
+    steps:
+    - Presentar la documentación requerida en el plantel que aplique
+    - Informar grupo de reinscripción y fecha de reingreso
+  notes: Requisitos para revalidar reinscripción
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Validar información académica en portal http://miportal.conalepbc.edu.mx/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar pago con recibo generado desde portal
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentarse al plantel que aplique y entregar documentación requerida.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Informar grupo de reinscripción y fecha de reingreso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1257: Reinscripción'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1257
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

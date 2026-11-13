@@ -1,0 +1,188 @@
+id: mx-bcn-retys-1824-estimulo-fiscal-del-agua
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Estímulo Fiscal del Agua
+summary: Estímulo fiscal a las empresas que operen sistemas o plantas para el tratamiento de aguas residuales
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1824
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1824
+  homoclave: BC-SEI-014
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando una empresa opere un sistema o planta de tratamiento de aguas residuales y las reutilice totalmente.
+result: Exención de hasta el 30% en el pago mensual de los derechos por consumo de agua.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Calzada Independencia  #994, Centro Civico, Mexicali, 21200'
+- municipality: Tijuana
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Carretera Libre, Tijuana-Tecate Km. 26.5 #N/A, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Carretera Transpeninsular #6500, Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Baja California #53,  La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Jose Aros Aguilar #2003, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Benito Juárez #108, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Dirección de Competitividad y Mejora Regulatoria
+  address: 'Mar De Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Persona física con Actividad Empresarial/Persona Moral
+  requirements:
+  - text: Solicitud de Estímulo del Agua.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13835
+  - text: Cédula de Solicitud de Estímulo del Agua.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13836
+  - text: Copia simple del Acta Constitutiva, y Poder vigente del representante legal.
+    cites:
+    - source: retys
+  - text: Documento que acredite la personalidad del solicitante, cuando tramite en representación de otra persona
+      y, en todos los casos, cuando se trate de persona moral.
+    cites:
+    - source: retys
+  - text: Comprobante del último pago efectuado por concepto de suministro de agua.
+    cites:
+    - source: retys
+  - text: Cédula de Identificación Fiscal vigente.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El interesado descarga la Solicitud de Estímulo del Agua y la Cédula de Solicitud.
+    - El interesado recaba la información y documentación.
+    - 'El interesado remite la información (a través de ventanilla única o correo electrónico: igdiaz@baja.gob.mx).'
+    - La SEI tiene 5 días hábiles para realizar alguna observación o validar los documentos.
+    - La SEI remite documentos a la CESP correspondiente.
+    - La CESP correspondiente tiene 15 días hábiles para emitir un dictamen técnico.
+    - La CESP correspondiente remite a la SEI el dictamen técnico.
+    - La SEI tiene 5 días hábiles para emitir opinión técnica.
+    - La SEI remite opinión técnica a la Procuraduría Fiscal.
+    - La Procuraduría Fiscal tiene 20 días hábiles para emitir la resolución.
+  notes: Documentación necesaria para iniciar el trámite.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, fracción II.
+- source: ley2
+  pinpoint: Artículo 178.
+- source: ley3
+  pinpoint: Artículo 21.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado descarga la Solicitud de Estímulo del Agua y la Cédula de Solicitud.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El interesado recaba la información y documentación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'El interesado remite la información (a través de ventanilla única o correo electrónico: igdiaz@baja.gob.mx).'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La SEI tiene 5 días hábiles para realizar alguna observación o validar los documentos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La SEI remite documentos a la CESP correspondiente.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La CESP correspondiente tiene 15 días hábiles para emitir un dictamen técnico.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La CESP correspondiente remite a la SEI el dictamen técnico.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: La SEI tiene 5 días hábiles para emitir opinión técnica.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: La SEI remite opinión técnica a la Procuraduría Fiscal.
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: La Procuraduría Fiscal tiene 20 días hábiles para emitir la resolución.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1824: Estímulo Fiscal del Agua'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1824
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Fomento de la Competitividad y Desarrollo Económico para Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Hacienda del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Fomento de la Competitividad y Desarrollo Económico para Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Estímulo Fiscal por la Operación de Sistemas de Tratamiento de Aguas Residuales. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

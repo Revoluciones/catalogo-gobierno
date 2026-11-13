@@ -1,0 +1,104 @@
+id: mx-bcn-retys-579-servicio-aeroportuario-pernocta
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio Aeroportuario Pernocta
+summary: Servicio prestado asignación de espacio de estacionamiento para aeronave en plataforma general para estancia
+  prolongada.
+authority:
+  name: Secretaría de Turismo
+official_ids:
+  retys_id: 579
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/579
+  homoclave: BC-SECTURE-004
+who_can:
+- Interesado
+when: A solicitud del operador aereo, dos horas antes del servicio solicitado
+result: Un espacio para estacionamiento de la aeronave
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 125 pesos por noche'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Felipe
+  name: Área Administrativa de Aeropuerto
+  address: 'Carretera Aeropuerto #KM 13, San Felipe, San Felipe, 21850'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Realización del pago
+    cites:
+    - source: retys
+  - text: Recepción de comprobante
+    cites:
+    - source: retys
+  - text: Plan de vuelo emitido por la agencia federal de aviación civil
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse a las oficinas
+    - Realizar el pago
+    - Realización de comprobante
+  notes: El servicio se hace efectivo al momento de la realizacion del pago
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 30 fracción XIII y 43 fracción I
+- source: ley2
+  pinpoint: Artículo 24 fracción XI y XIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse a las oficinas
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realización de comprobante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 579: Servicio Aeroportuario Pernocta'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/579
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

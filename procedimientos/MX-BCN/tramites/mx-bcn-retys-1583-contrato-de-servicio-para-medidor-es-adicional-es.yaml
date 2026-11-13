@@ -1,0 +1,308 @@
+id: mx-bcn-retys-1583-contrato-de-servicio-para-medidor-es-adicional-es
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de Servicio para Medidor(es) Adicional(es)
+summary: Contratar medidor o medidores adicionales para un predio que ya cuenta con servicios.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1583
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1583
+  homoclave: BC-CESPT-005
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera de uno o más medidores adicionales
+result: La instalación de uno o varios medidores adicionales
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: De acuerdo al diámetro del medidor requerido'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP Otay Delegación
+  address: 'Calzada Tecnológico #S/N, Fracc. Altabrisa, dentro de la Deleg. Mesa de Otay, Tijuana, 22370'
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Villa Fontana
+  address: 'Av. Aranjuez #S/N, Fracc. Villa Fontana, dentro de la Delegación Villa Fontana, Tijuana, 22205'
+- municipality: Tijuana
+  name: CAP Otay Centenario
+  address: 'Carretera Aeropuerto #1900 Loc 1, Centro Com. Otay, Fracc. Otay Nueva Tijuana, Tijuana, 22425'
+- municipality: Tijuana
+  name: CAP Otay San Miguel
+  address: 'Av. López Portillo #1460, Fracc. Otay Nueva Tijuana, Tijuana, 22435'
+- municipality: Tijuana
+  name: CAP Galerías Revolución
+  address: 'Av. Revolución #868 Loc 9, Centro Com. Galerías Revolución, Zona Centro, Tijuana, 22000'
+- municipality: Tijuana
+  name: CAP Playas de Tijuana
+  address: 'Paseo del Pacífico #901, Secc. Jardines, Playas de Tijuana, Tijuana, 22517'
+- municipality: Tijuana
+  name: CAP Matamoros
+  address: 'Ruta Independencia #21560, Loc. 18, Centro Com. Matamoros, Fracc. Parque Industrial Américas, Tijuana,
+    22206'
+- municipality: Tijuana
+  name: CAP Plaza Carrousel
+  address: 'Blvd. Gustavo Díaz Ordaz #15602, Centro Com. Plaza Carrousel, Fracc. Las Brisas, Tijuana, 22115'
+- municipality: Tijuana
+  name: CAP Florido
+  address: 'Blvd. Paseo de los Laureles #S/N, Fracc. Vista de Palmillas, Tijuana, 22253'
+- municipality: Tijuana
+  name: CAP Cerro de las Abejas
+  address: 'Blvd. El Refugio #9601,Loc 7, Centro Comercial Las Abejas, Fracc. El Florido III Sec., Tijuana, 2237'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Palacio Municipal
+  address: 'Vía Rápida Oriente #10252, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP El Rubí
+  address: 'Ave. Cabo San Lucas  #8651, Fracc. Terrazas del Rubí, dentro de la Delegación SAB, Tijuana, 22626'
+- municipality: Tijuana
+  name: CAP La Gloria
+  address: 'C. Coronado Km 13.4, Carretera Tijuana - Ensenada #S/N, Int. Subdelegación La Gloria, Tijuana, 22703'
+- municipality: Tijuana
+  name: UMS Quinta del Cedro
+  address: 'Paseo Banderas #4410, Urbi Quinta del Cedro, Tijuana, 111111'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: 'Tener listas las preparaciones para la instalación de los medidores adicionales de acuerdo a las especificaciones,
+      según sea el caso, señaladas en: Instructivo de Preparación para la instalación de UN medidor adicional (INS-001),
+      Instructivo de Preparación para la instalación de TRES o MÁS medidores (INS-002).'
+    cites:
+    - source: retys
+  - text: Inspección de factibilidad positiva emitida por CESPT, la puede tramitar llamando al teléfono 073.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio, puede ser UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si la vialidad es de ASFALTO O CONCRETO, se deberá presentar: Permiso de Ruptura de Pavimento vigente
+      expedido por el Ayuntamiento correspondiente'
+    cites:
+    - source: retys
+  - text: En caso de ser comercio o industria, presentar Alta ante la SHCP para efectos de la facturación.
+    cites:
+    - source: retys
+  - text: Hacer el pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: En caso de cambio de tarifa el usuario debe CUBRIR LA DIFERENCIA DE DERECHOS DE CONEXIÓN.
+    cites:
+    - source: retys
+  - text: No tener adeudos con la CESPT
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Reúna los documentos requeridos. Los instructivos los puede encontrar en la sección de Documentos Informativos.
+    - Contrate un plomero, que siga las indicaciones de CESPT, para hacer las preparaciones necesarias para la instalación
+      del medidor o medidores.
+    - Ya que se hayan realizado las preparaciones, llame al 073 para solicitar la inspección de factibilidad.
+    - Si la inspección es positiva, acuda a un Centro de Atención al Público de CESPT (CAP), solicite un turno y
+      espere a ser atendido en el Módulo de Atención Personalizada (MAP).
+    - Cuando sea su turno la persona del MAP revisará los requisitos, si no están completos, le informará que no
+      es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+    - Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+      solicitado.
+    - La persona del MAP le explicará las diferentes alternativas y términos de pago disponibles.
+    - Seleccione la forma de pago que se ajuste a sus posibilidades.
+    - La persona del MAP elaborará el Contrato Administrativo correspondiente, y le hará entrega de éste y del Presupuesto
+      de Obra para que los revise y los firme.
+    - Firme los documentos que le entregó la persona del MAP
+    - 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le entregarán
+      dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra.'
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo.
+- name: Representante legal
+  requirements:
+  - text: 'Tener listas las preparaciones para la instalación de los medidores adicionales de acuerdo a las especificaciones,
+      según sea el caso, señaladas en: Instructivo de Preparación para la instalación de UN medidor adicional (INS-001),
+      Instructivo de Preparación para la instalación de TRES o MÁS medidores (INS-002).'
+    cites:
+    - source: retys
+  - text: Inspección de factibilidad positiva emitida por CESPT, la puede tramitar llamando al teléfono 073.
+    cites:
+    - source: retys
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si la vialidad es de ASFALTO O CONCRETO, se deberá presentar: Permiso de Ruptura de Pavimento vigente
+      expedido por el Ayuntamiento correspondiente'
+    cites:
+    - source: retys
+  - text: 'En caso de ser comercio o industria, presentar: Alta ante la SHCP para efectos de la facturación.'
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: En caso de cambio de tarifa el usuario debe CUBRIR LA DIFERENCIA DE DERECHOS DE CONEXIÓN.
+    cites:
+    - source: retys
+  - text: No tener adeudos con la CESPT
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Reúna los documentos requeridos. Los instructivos los puede encontrar en la sección de Documentos Informativos.
+    - Contrate un plomero, que siga las indicaciones de CESPT, para hacer las preparaciones necesarias para la instalación
+      del medidor o medidores.
+    - Ya que se hayan realizado las preparaciones, llame al 073 para solicitar la inspección de factibilidad.
+    - Si la inspección es positiva, acuda a un Centro de Atención al Público de CESPT (CAP), solicite un turno y
+      espere a ser atendido en el Módulo de Atención Personalizada (MAP).
+    - Cuando sea su turno la persona del MAP revisará los requisitos, si no están completos, le informará que no
+      es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+    - Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+      solicitado.
+    - La persona del MAP le explicará las diferentes alternativas y términos de pago disponibles.
+    - Seleccione la forma de pago que se ajuste a sus posibilidades.
+    - La persona del MAP elaborará el Contrato Administrativo correspondiente, y le hará entrega de éste y del Presupuesto
+      de Obra para que los revise y los firme.
+    - Firme los documentos que le entregó la persona del MAP
+    - 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le entregarán
+      dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra.'
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo
+legal_basis:
+- source: ley1
+  pinpoint: ArtÍculo. 9.
+- source: ley2
+  pinpoint: Artículos. 1, 2 Y 14.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Reúna los documentos requeridos. Los instructivos los puede encontrar en la sección de Documentos Informativos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Contrate un plomero, que siga las indicaciones de CESPT, para hacer las preparaciones necesarias para
+    la instalación del medidor o medidores.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ya que se hayan realizado las preparaciones, llame al 073 para solicitar la inspección de factibilidad.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Si la inspección es positiva, acuda a un Centro de Atención al Público de CESPT (CAP), solicite un turno
+    y espere a ser atendido en el Módulo de Atención Personalizada (MAP).
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cuando sea su turno la persona del MAP revisará los requisitos, si no están completos, le informará que
+    no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+    solicitado.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del MAP le explicará las diferentes alternativas y términos de pago disponibles.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Seleccione la forma de pago que se ajuste a sus posibilidades.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: La persona del MAP elaborará el Contrato Administrativo correspondiente, y le hará entrega de éste y del
+    Presupuesto de Obra para que los revise y los firme.
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Firme los documentos que le entregó la persona del MAP
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le
+    entregarán dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1583: Contrato de Servicio para Medidor(es) Adicional(es)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1583
+    version_date: 05/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

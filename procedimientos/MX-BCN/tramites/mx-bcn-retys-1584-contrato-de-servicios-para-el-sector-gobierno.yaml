@@ -1,0 +1,147 @@
+id: mx-bcn-retys-1584-contrato-de-servicios-para-el-sector-gobierno
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de Servicios para el Sector Gobierno
+summary: Contratación de servicios de agua potable y alcantarillado sanitario para las dependencias de gobierno.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1584
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1584
+  homoclave: BC-CESPT-006
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera del servicio
+result: Servicio de agua potable y alcantarillado sanitario
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: De acuerdo al diámetro del medidor requerido, toma y descarga domiciliaria y lo que resulte
+    de líneas adicionales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: General
+  requirements:
+  - text: 'Original de Petición por escrito, que debe incluir: a. Clave catastral, b. Superficie, c. Domicilio en
+      donde se instalarán los servicios, d. Plano o croquis de localización, e. Tipo de servicio que se solicita,
+      f. Datos de facturación, g. Datos del contacto'
+    cites:
+    - source: retys
+  - text: Inspección de factibilidad positiva emitida por CESPT, la puede solicitar llamando al 073.
+    cites:
+    - source: retys
+  - text: 'Copia de documento para comprobar la propiedad, posesión o titularidad del predio en el que se instalarán
+      los servicios, puede ser UNO de los siguientes: Carta de inscripción del Registro Público de la Propiedad
+      y de Comercio (Escrituras) con fecha de registro no mayor a un año de antigüedad; Juicio de prescripción positiva
+      inscrito en el Registro Público de la Propiedad y de Comercio con fecha de registro no mayor a un año de antigüedad;
+      Recibo del impuesto predial vigente (con fecha de emisión no mayor a un año de antigüedad).'
+    cites:
+    - source: retys
+  - text: 'Copia de documento que otorgue poder para realizar el servicio, puede ser uno de los siguientes: Carta
+      Poder simple otorgada por la dependencia, cuya fecha no exceda los seis meses de antigüedad.'
+    cites:
+    - source: retys
+  - text: 'Original y copia de Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la
+      persona a quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES Y CONTENER EL DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: Al momento de realizar la contratación deberán estar PAGADOS O CONVENIDOS LOS DERECHOS DE CONEXIÓN.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+    - Pasar al área de Archivo y entregar la petición por escrito
+    - La persona de archivo entregará la copia del documento, al cual le imprime la certificación de recibido, que
+      contiene el número de folio para su seguimiento y la fecha de respuesta
+    - En la fecha de respuesta indicada, CESPT remite oficio de respuesta a la dependencia que solicita el servicio,
+      anexando al mismo el costo del servicio e indicando que en la próxima factura se reflejará el cobro de éste
+  notes: General
+legal_basis:
+- source: ley1
+  pinpoint: '9'
+- source: ley2
+  pinpoint: 1, 2 Y 14.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo y entregar la petición por escrito
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona de archivo entregará la copia del documento, al cual le imprime la certificación de recibido,
+    que contiene el número de folio para su seguimiento y la fecha de respuesta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: En la fecha de respuesta indicada, CESPT remite oficio de respuesta a la dependencia que solicita el servicio,
+    anexando al mismo el costo del servicio e indicando que en la próxima factura se reflejará el cobro de éste
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1584: Contrato de Servicios para el Sector Gobierno'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1584
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

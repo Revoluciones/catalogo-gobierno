@@ -1,0 +1,102 @@
+id: mx-bcn-tijuana-tj-sf-0309-devolucion-de-impuesto-predial
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Infraestructura y vivienda
+title: Devolución de Impuesto Predial
+summary: Trámite para solicitar la devolución de pagos duplicados del impuesto predial.
+authority:
+  name: Secretaría de Finanzas / Tesorería (Ayuntamiento de Tijuana)
+  unit: Predial
+official_ids:
+  homoclave: TJ-SF-0309
+who_can:
+- Interesado
+when: Cuando el contribuyente haya realizado un pago duplicado
+result: Cheque
+requirements:
+- text: Identificación oficial del titular de la clave catastral.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Constancia de situación fiscal con cédula de identificación fiscal.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Escrito libre dirigido a la autoridad fiscal, debidamente motivado y fundado, que indique motivo, nombre
+    del solicitante, domicilio, clave catastral , telefono, firma.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta constitutiva y poder notarial del representante legal en caso de ser persona moral.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Documento judicial que acredite al albacea en caso de sucesión.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Recibo de prediales originales
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: RFC con homoclave
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Estado de cuenta (en caso de ser pagado en linea o tarjeta bancaria)1
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 meses
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 5 años
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Predial
+  address: Avenida Independencia 1350, Zona Urbana Río, C.P. 22010 Tijuana, Baja California
+  phones: 6649737000 ext. 7044
+  hours: LUNES A VIERNES DE 08:00 HRS A 14:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SF-0309: Devolución de Impuesto Predial'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SF-0309
+    version_date: '2026-03-30'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Articulo 194 y demás relativos de la Ley de Hacienda Municipal del Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20241104_LEYHAMUN.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Se analiza el escrito libre y anexos para verificar la procedencia de la solicitud. Posteriormente,
+  se revisa la base de datos para comprobar el pago y, en caso de validarse, se autoriza la devolución.'

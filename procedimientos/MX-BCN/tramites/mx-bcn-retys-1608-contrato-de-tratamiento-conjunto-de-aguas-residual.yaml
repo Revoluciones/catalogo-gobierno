@@ -1,0 +1,307 @@
+id: mx-bcn-retys-1608-contrato-de-tratamiento-conjunto-de-aguas-residual
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de Tratamiento Conjunto de Aguas Residuales y/o Reevaluación del Contrato
+summary: Documento en el que se establecen las condiciones de tratamiento conjunto de aguas residuales por excedentes
+  de la demanda bioquímica de oxígeno (DBO5), sólidos suspendidos totales (SST) y demanda química de oxígeno (DQO)
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1608
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1608
+  homoclave: BC-CESPT-030
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo requiera del servicio de tratamiento conjunto de aguas residuales
+result: Contrato de Tratamiento Conjunto de Aguas Residuales
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Recepción y evaluación de la documentación relativa a la firma del contrato de tratamiento
+    conjunto de aguas residuales: $8,266.95 pesos Reevaluación anual de contrato de tratamiento conjunto de aguas
+    residuales: $4,713.29 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Primera vez - persona moral
+  requirements:
+  - text: 'Presentar carpeta con los requisitos, clasificados 8 secciones:'
+    cites:
+    - source: retys
+  - text: Sección 1 .- Documentos de la empresa.
+    cites:
+    - source: retys
+  - text: Original y copia del Solicitud de Contrato de Tratamiento Conjunto de aguas residuales para actividades
+      industriales, comerciales y de servicios (FRM-007), debidamente llenado y firmado por el propietario o representante
+      legal de la empresa
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11547
+  - text: Copia certificada del Acta constitutiva de la empresa
+    cites:
+    - source: retys
+  - text: Copia certificada del Poder legal para actos de administración, vigente, que acredite la personalidad
+      del representante legal, en caso de no estar establecido en el Acta Constitutiva
+    cites:
+    - source: retys
+  - text: 'Copia de identificación oficial con fotografía del representante legal: credencial INE , pasaporte mexicano,
+      licencia de conducir o matrícula consular'
+    cites:
+    - source: retys
+  - text: Copia de Cédula de Inscripción en el Registro Federal de Contribuyentes de la empresa
+    cites:
+    - source: retys
+  - text: 'Los requisitos de las Secciones 2 a la 8 de la carpeta, los puede consultar en el documento: Tratamiento
+      conjunto - Requisitos Personas Morales'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11556
+  - text: Pago de derechos correspondiente
+    cites:
+    - source: retys
+  - text: Los muestreos y análisis deberán ser realizados por laboratorios acreditados ante la Entidad Mexicana
+      de Acreditación, A.C.
+    cites:
+    - source: retys
+  - text: Los informes de laboratorio deberán de haber sido expedidos en una fecha que no exceda los 6 meses previos
+      del ingreso del trámite de Contrato de Tratamiento Conjunto de Aguas Residuales.
+    cites:
+    - source: retys
+  - text: En caso de que haya cambiado el Representante Legal o cualquier otro dato registrado, anotar los datos
+      actualizados en los campos correspondientes del Formulario para Solicitud de Contrato de Tratamiento Conjunto
+      de Aguas Residuales y anexar copia de la identificación oficial con fotografía del nuevo representante legal,
+      así como del poder legal certificado correspondiente.
+    cites:
+    - source: retys
+  - text: Las copias deben ser legibles y contener el documento completo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudda a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT y presentar la carpeta con los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+      se completen, indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento pone sello de revisado
+      al original y copia del formulario Solicitud de Contrato de Tratamiento Conjunto de aguas residuales para
+      actividades industriales, comerciales y de servicios (FRM-007) y los entrega al usuario junto con una Ficha
+      de pago.
+    - Acuda al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona de
+      Cajas le entregará un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de Pago y entregar original y copia del formulario Solicitud
+      de Contrato de Tratamiento Conjunto de aguas residuales para actividades industriales, comerciales y de servicios
+      (FRM-007)
+    - La persona del área de Archivo certifica de recibido original y copia del formulario Solicitud de Contrato
+      de Tratamiento Conjunto de aguas residuales para actividades industriales, comerciales y de servicios (FRM-007)
+      y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Primera vez - persona moral
+- name: Primera vez - persona física
+  requirements:
+  - text: 'Presentar carpeta con los requisitos, clasificados 8 secciones:'
+    cites:
+    - source: retys
+  - text: Sección 1.- Documentos de la empresa
+    cites:
+    - source: retys
+  - text: Original y copia del Solicitud de Contrato de Tratamiento Conjunto de aguas residuales para actividades
+      industriales, comerciales y de servicios (FRM-007), debidamente llenado y firmado por el propietario
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11563
+  - text: 'Copia de identificación oficial con fotografía del propietario: credencial INE , pasaporte mexicano,
+      licencia de conducir o matrícula consular'
+    cites:
+    - source: retys
+  - text: Copia de Cédula de Inscripción en el Registro Federal de Contribuyentes
+    cites:
+    - source: retys
+  - text: 'Los requisitos de las Secciones 2 a la 8 de la carpeta, los puede consultar en el documento: Tratamiento
+      conjunto - Requisitos Personas Físicas'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11572
+  - text: Pago de derechos correspondiente
+    cites:
+    - source: retys
+  - text: Los muestreos y análisis deberán ser realizados por laboratorios acreditados ante la Entidad Mexicana
+      de Acreditación, A.C.
+    cites:
+    - source: retys
+  - text: Los informes de laboratorio deberán de haber sido expedidos en una fecha que no exceda los 6 meses previos
+      del ingreso del trámite de Contrato de Tratamiento Conjunto de Aguas Residuales.
+    cites:
+    - source: retys
+  - text: En caso de que haya cambiado el Representante Legal o cualquier otro dato registrado, anotar los datos
+      actualizados en los campos correspondientes del Formulario para Solicitud de Contrato de Tratamiento Conjunto
+      de Aguas Residuales y anexar copia de la identificación oficial con fotografía del nuevo representante legal,
+      así como del poder legal certificado correspondiente.
+    cites:
+    - source: retys
+  - text: Las copias deben ser legibles y contener el documento completo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Ve a la Coordinación de Servicios de Saneamiento y presenta tus requisitos.
+    - El personal revisará tus requisitos. Si falta algo, te dirán qué necesitas completar.
+    - Si todo está en orden, te sellarán el original y la copia del formulario FRM-007 como revisado y te darán
+      una ficha de pago.
+    - Ve al área de Cajas con la ficha de pago y realiza el pago; te darán un recibo.
+    - En el área de Archivo, entrega el recibo y presenta el formulario original y la copia del FRM-007; el personal
+      certificará el formulario y te entregará una copia.
+    - La Coordinación te contactará para que vayas a firmar el contrato y te hará la entrega del mismo.
+  notes: Las copias deben ser legibles y contener el documento completo
+- name: Revaluación de contrato
+  requirements:
+  - text: Original y copia del Formulario para Solicitud de Contrato de Tratamiento Conjunto de Aguas Residuales
+      (FRM-007)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11579
+  - text: Resultados de análisis fisicoquímicos de la descarga de aguas residuales proveniente de procesos productivos
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Los muestreos y análisis deberán ser realizados por laboratorios acreditados ante la Entidad Mexicana
+      de Acreditación, A.C.
+    cites:
+    - source: retys
+  - text: Los informes de laboratorio deberán de haber sido expedidos en una fecha que no exceda los 6 meses previos
+      del ingreso del trámite de Contrato de Tratamiento Conjunto de Aguas Residuales.
+    cites:
+    - source: retys
+  - text: En caso de que haya cambiado el Representante Legal o cualquier otro dato registrado, anotar los datos
+      actualizados en los campos correspondientes del Formulario para Solicitud de Contrato de Tratamiento Conjunto
+      de Aguas Residuales y anexar copia de la identificación oficial con fotografía del nuevo representante legal,
+      así como del poder legal certificado correspondiente.
+    cites:
+    - source: retys
+  - text: Las copias deben ser legibles y contener el documento completo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Ve a la Coordinación de Servicios de Saneamiento y presenta tus requisitos.
+    - El personal revisará tus requisitos. Si falta algo, te dirán qué necesitas completar.
+    - Si todo está en orden, te sellarán el original y la copia del formulario FRM-007 como revisado y te darán
+      una ficha de pago.
+    - Ve al área de Cajas con la ficha de pago y realiza el pago; te darán un recibo.
+    - En el área de Archivo, entrega el recibo y presenta el formulario original y la copia del FRM-007; el personal
+      certificará el formulario y te entregará una copia.
+    - La Coordinación te contactará para que vayas a firmar el contrato y te hará la entrega del mismo.
+  notes: Las copias deben ser legibles y contener el documento completo
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo: 2.'
+- source: ley2
+  pinpoint: Artículo 9.
+- source: ley3
+  pinpoint: Artículos 1, 2, 14 y 112.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudda a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+    posterior izquierda de Oficinas Centrales de CESPT y presentar la carpeta con los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos,
+    si no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+    se completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento pone sello de
+    revisado al original y copia del formulario Solicitud de Contrato de Tratamiento Conjunto de aguas residuales
+    para actividades industriales, comerciales y de servicios (FRM-007) y los entrega al usuario junto con una Ficha
+    de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acuda al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona
+    de Cajas le entregará un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de Pago y entregar original y copia del formulario Solicitud
+    de Contrato de Tratamiento Conjunto de aguas residuales para actividades industriales, comerciales y de servicios
+    (FRM-007)
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo certifica de recibido original y copia del formulario Solicitud de Contrato
+    de Tratamiento Conjunto de aguas residuales para actividades industriales, comerciales y de servicios (FRM-007)
+    y le entrega al solicitante la copia.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+    para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1608: Contrato de Tratamiento Conjunto de Aguas Residuales y/o Reevaluación del Contrato'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1608
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

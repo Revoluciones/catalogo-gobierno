@@ -1,0 +1,140 @@
+id: mx-bcn-retys-1593-certificado-de-libertad-de-gravamen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Libertad de Gravamen
+summary: Certificado a través del cuál se da constancia de que un bien inmueble se encuentra libre de cargos y multas
+  relativos a los servicios de agua potable y alcantarillado sanitario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1593
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1593
+  homoclave: BC-CESPT-015
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera el servicio
+result: Certificado de libertad de gravamen
+cost:
+  type: variable
+  amount_mxn: 430.84
+  text: 'COSTO VARIABLE: $430.84 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 8 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: GENERAL
+  requirements:
+  - text: Documento de Certificado de Libertad de Gravamen expedido por el H. Ayuntamiento correspondiente.
+    cites:
+    - source: retys
+  - text: Si el predio tiene servicio contratado, presentar comprobante de pago de derechos y/o, obra o ambos acreditando
+      que se encuentra al corriente
+    cites:
+    - source: retys
+  - text: 'Documento para ubicación del predio, que puede ser uno de los siguientes: - Levantamiento topográfico,
+      - Deslinde catastral, - Croquis de ubicación.'
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acuda al Centro de Atención al Público (CAP) en las Oficinas Centrales de CESPT o al CDP CANACO.
+    - Pase al área de Cajas, a pagar el trámite.
+    - La persona de cajas entregará su comprobante de pago.
+    - Pasar a la ventanilla de Certificados de Libertad de Gravamen y entregar los requisitos.
+    - La persona de ventanilla revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta.
+    - Con los requisitos completos, la persona de ventanilla sella de recibido el comprobante de Pago.
+    - Regresar a la ventanilla de Certificados de Libertad de Gravamen a los 5 u 8 días hábiles según corresponda.
+  notes: GENERAL
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acuda al Centro de Atención al Público (CAP) en las Oficinas Centrales de CESPT o al CDP CANACO.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pase al área de Cajas, a pagar el trámite.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona de cajas entregará su comprobante de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pasar a la ventanilla de Certificados de Libertad de Gravamen y entregar los requisitos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La persona de ventanilla revisa que los requisitos estén completos, en caso de no ser así, informa al
+    ciudadano que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de ventanilla sella de recibido el comprobante de Pago.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Regresar a la ventanilla de Certificados de Libertad de Gravamen a los 5 u 8 días hábiles según corresponda.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1593: Certificado de Libertad de Gravamen'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1593
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

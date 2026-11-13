@@ -1,0 +1,145 @@
+id: mx-bcn-retys-807-autorizacion-para-la-operacion-de-una-empresa-de-r
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para la Operación de una Empresa de Redes de Transporte (ERT) dentro de los Límites Territoriales
+  del Estado
+summary: Consiste en solicitar autorización para la operación de una empresa de redes de transporte (ERT) dentro
+  de los límites territoriales del Estado.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 807
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/807
+  homoclave: BC-IMOS-057
+who_can:
+- Representante Legal
+when: Cuando la persona representante legal lo solicite.
+result: Autorización para operar ERT en el Estado.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 2,130.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 90 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Empresas de redes de transporte (ERT)
+  requirements:
+  - text: Formato de solicitud, a tráves del cual se coloque la informacion del domicilio, firmando al final la
+      protesta de decir verdad.
+    cites:
+    - source: retys
+  - text: Documento que acredite que es titular de los derechos de propiedad intelectual (licencia para su uso,
+      contrato de franquicia, o bien, acreditar que es subsidiaria o filial del titular o que se encuentre afiliada
+      a alguno de los anteriores de tal forma que tenga derechos para el aprovechamiento o administración de la
+      aplicación móvil, plataforma tecnológica y/o programa de cómputo)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal (incluye domicilio fiscal)
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales en sentido positivo
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la sociedad mercantil constituida conforme a las leyes mexicanas, cuyo objeto social
+      sea el de operar como empresa de redes de transporte o gestionar servicios de transporte mediante una aplicación
+      móvil o plataforma tecnológica, así como las modificaciones estructurales a la misma y la constancia de inscripción
+      en el Registro Público de la Propiedad y de Comercio. En caso de designacion de apoderado o representante
+      legal, presentará poder notarial que así lo acredite.
+    cites:
+    - source: retys
+  - text: El modelo del contrato de adhesión o del instrumento que contenga los términos y condiciones aplicables
+      a los prestadores del servicio de transporte de pasajeros bajo demanda mediante aplicaciones móviles
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente del representante legal. (Solo cotejo)
+    cites:
+    - source: retys
+  - text: Póliza, constancia o carta cobertura de seguro de responsabilidad solidaria respecto de la totalidad de
+      los vehículos que gestionen sus servicios de transporte a través de la plataforma que administren
+    cites:
+    - source: retys
+  - text: Bases de datos y padrón actualizados; que contenga la información de los vehículos afiliados, sus propietarios
+      y conductores que presten el servicio de transporte de pasajeros bajo demanda mediante aplicaciones móviles
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondientes
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para autorización para la operación de una empresa de redes de transporte (ERT) dentro de los
+    límites territoriales del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso P, numeral 2
+- source: ley2
+  pinpoint: Artículo 215
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 807: Autorización para la Operación de una Empresa de Redes de Transporte (ERT) dentro
+      de los Límites Territoriales del Estado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/807
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Autorización para la Operación de una Empresa de Redes de Transporte (ERT) Dentro de los
+  Límites Territoriales del Estado. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

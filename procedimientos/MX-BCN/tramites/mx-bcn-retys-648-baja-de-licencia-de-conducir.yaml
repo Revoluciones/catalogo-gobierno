@@ -1,0 +1,154 @@
+id: mx-bcn-retys-648-baja-de-licencia-de-conducir
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Baja de licencia de conducir.
+summary: Realizar la baja de la licencia para conducir vehículos, así como de los registros oficiales existenciales
+  del gobierno del Estado de Baja California, a solicitud del ciudadano titular del documento previamente acreditado.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 648
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/648
+  homoclave: BC-SH-001
+who_can:
+- Interesado
+when: Cuándo ya no se requiera tener la licencia de conducir expedida por el Estado de Baja California.
+result: Baja de licencia de conducir del Estado de Baja California
+cost:
+  type: variable
+  amount_mxn: 399.6
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Por baja de licencia de conducir $399.60 *No incluye costo de
+    contribuciones municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 16 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Original y copia de identificación oficial vigente ( INE, pasaporte mexicano, cartilla del servicio militar
+      nacional o matrícula consular)
+    cites:
+    - source: retys
+  - text: Licencia de conducir en original y copia, en caso de robo o extravío presentar presentar el reporte respectivo
+      ante el Ministerio Público que corresponde, o llenar formato de extravío.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14100
+  modes:
+  - name: Presencial
+    steps:
+    - El contribuyente debe acudir a Recaudación de Rentas con los documentos
+    - Solicita el servicio en el módulo de orientación y entrega su licencia de conducir
+    - Pasa al módulo de captura de información
+    - 'Realizar pago de derechos e impuestos correspondientes al trámite, opciones de pago: efectivo,cheque certificado,
+      tarjeta debito/crédito (excepto tarjetas American Express )'
+    - Recibe constancia de baja de la licencia de conducir
+  notes: Garantizar y hacer con calidad el servicio de baja de una licencia para conducir vehículos, por solicitud
+    expresa del usuario, de los registros oficiales del Gobierno del Estado de Baja california
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 10 FRACCIÓN I, INCISO E.
+- source: ley2
+  pinpoint: ARTÍCULO 42.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El contribuyente debe acudir a Recaudación de Rentas con los documentos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicita el servicio en el módulo de orientación y entrega su licencia de conducir
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasa al módulo de captura de información
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'Realizar pago de derechos e impuestos correspondientes al trámite, opciones de pago: efectivo,cheque
+    certificado, tarjeta debito/crédito (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recibe constancia de baja de la licencia de conducir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 648: Baja de licencia de conducir.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/648
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA PARA EL EJERCICIO FISCAL DEL AÑO 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY QUE REGULA LOS SERVICIOS DE CONTROL VEHICULAR EN EL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

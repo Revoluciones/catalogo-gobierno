@@ -1,0 +1,118 @@
+id: mx-bcn-tijuana-tj-sspcm-0231-certificacion-y-revalidacion-de-medidas-de-segurid
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo
+title: Certificación y Revalidación de Medidas de Seguridad
+summary: Documento que certifica que los inmuebles públicos y privados cumplen con las medidas de seguridad contra
+  incendios y siniestros para la protección de vidas y bienes.
+authority:
+  name: Secretaría de Seguridad y Protección Ciudadana Municipal (Ayuntamiento de Tijuana)
+  unit: Dirección de Bomberos
+official_ids:
+  homoclave: TJ-SSPCM-0231
+who_can:
+- Interesado
+when: Obligatorio para cualquier establecimiento comercial.
+result: Certificado
+requirements:
+- text: Solicitud B1
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Dictamen de Uso de Suelo factible
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de ubicación (No captura de Google Maps)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Pago de derechos
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Macro industria de 101 a 500 empleados: 53.3 UMA ($6,252.62) · Macro industria de 501 a 1,000 empleados:
+    89.7 UMA ($10,522.71) · Macro industria de 1,001 empleados en adelante: 107.9 UMA ($12,657.75) · Comercios de
+    51.00 M² a 100.00 M² no especificados: 10.4 UMA ($1,220.02) · Hospitales, clínicas y sanatorios: 46.02 UMA ($5,398.61)
+    · Consultorios: 26 UMA ($3,050.06) · Comercio en pequeño, de hasta 50.00 M² de superficie: 6.5 UMA ($762.51)
+    · Despachos de profesionistas y giros de servicio: 15.6 UMA ($1,830.04) · Billares, expendios, autoservicios,
+    bares, ferreterías, refaccionarias, desmanteladoras, llanteras, taller mecánico, yonkes: 16.9 UMA ($1,982.54)
+    · Loncherías, panaderías, tortillerías, lavanderías, tiendas de ropa, misceláneas, farmacias, papelerías, librerías
+    y templos religiosos: 13 UMA ($1,525.03) · Loncherías, panaderías, tortillerías, lavanderías, tiendas de ropa,
+    misceláneas, farmacias, papelerías, librerías y templos religiosos, menor a 50 M² de construcción: 10.4 UMA
+    ($1,220.02) · Bar turístico, café cantante, restaurante, mercado, supermercado, bodegas de distribución, salón
+    de renta, hospital, salas cinematográficas, teatros: 31.2 UMA ($3,660.07) · Discotecas, tiendas departamentales,
+    plazas y/o centro comercial y clubes deportivos: 36.4 UMA ($4,270.08) · Moteles hasta 10 habitaciones: 20.8
+    UMA ($2,440.05) · Moteles de 11 a 20 habitaciones: 28.6 UMA ($3,355.07) · Moteles de 21 habitaciones en adelante:
+    36.4 UMA ($4,270.08) · Hoteles hasta 30 habitaciones: 36.4 UMA ($4,270.08) · Hoteles de 31 habitaciones en adelante:
+    53.3 UMA ($6,252.62) · Edificios educativos hasta 10 aulas: 15.6 UMA ($1,830.04) · Edificios educativos de 11
+    aulas en adelante: 24.7 UMA ($2,897.56) · Guarderías y estancias Infantiles: 16.9 UMA ($1,982.54) · Distribuidoras
+    de gases, combustibles y lubricantes, oxígenos y acetilenos, polvorines y demás de alto riesgo: 182 UMA ($21,350.42)
+    · Centros de apuestas, apuestas remotas, salas de sorteos de números y/o casinos, Dictamen de Operación: 260
+    UMA ($30,500.60) · Gasolineras, Estaciones de gasolina, Depósitos y/o almacén de distribución de combustible
+    y lubricantes y demás de alto riesgo: 182 UMA ($21,350.42) · Centro de acopio y/o recicladora hasta 400 M² de
+    uso: 52 UMA ($6,100.12) · Centro de acopio y/o recicladora de 400.01 M² a 1,000.00 M² de uso: 130 UMA ($15,250.30)
+    · Centro de acopio y/o recicladora mayor de 1,000.01 M² de uso: 260 UMA ($30,500.60) · Micro industria de 1
+    a 15 empleados: 11.7 UMA ($1,372.53) · Pequeña industria de 16 a 50 empleados: 18.2 UMA ($2,135.04) · Industria
+    mediana de 51 a 100 empleados: 36.4 UMA ($4,270.08). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Bomberos
+  address: Av. Aldrete y Madero, No. 8298, Zona Centro, C.P. 22000
+  phones: '6646885700'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SSPCM-0231: Certificación y Revalidación de Medidas de Seguridad'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SSPCM-0231
+    version_date: '2026-08-07'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 37, fracción II, del inciso A) a la M) de la Ley de Ingresos del Municipio de Tijuana, Baja
+      California para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 13 del Reglamento para la Prevención, Control de los Incendios y Siniestros para la Seguridad
+      Civil en el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2021122916432669_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://pagos.tijuana.gob.mx/PagosEnLinea/index.aspx Criterio para resolver: Cumplir con los requisitos
+  establecidos.'

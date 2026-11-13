@@ -1,0 +1,136 @@
+id: mx-bcn-retys-1605-solicitud-de-puntos-de-conexion-para-los-servicios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Puntos de Conexión para los Servicios de Agua Potable y/o Alcantarillado Sanitario
+summary: Expedición de oficio indicando la ubicación de los puntos de conexión para la obtención de los servicios
+  de agua potable y alcantarillado sanitario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1605
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1605
+  homoclave: BC-CESPT-027
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio.
+result: Oficio de puntos de conexión
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: General
+  requirements:
+  - text: Copia de Opinión Técnica positiva actual para agua potable y alcantarillado, emitida por el Organismo.
+    cites:
+    - source: retys
+  - text: 'Documento que otorgue poder para realizar el trámite, en caso de que la persona que gestiona el servicio
+      sea el proyectista o el representante legal del propietario del predio, que puede ser uno de los siguientes
+      documentos: Carta Poder otorgada por el propietario ante Notario Público o Corredor Público, en caso de que
+      el que gestione el servicio sea representante legal, Carta Poder simple otorgada por el propietario, cuya
+      fecha de expedición no exceda los seis meses de antigüedad, en caso de que el que gestione el servicio sea
+      el proyectista.'
+    cites:
+    - source: retys
+  - text: Original y copia del Formato de Solicitud de Puntos de Conexión (FRM-006) llenado, haciendo referencia
+      al Oficio de la Opinión Técnica positiva vigente otorgada para el predio con clave catastral y superficie
+      de ubicación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11477
+  - text: Las copias deben ser legibles y contener el documento completo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales
+    - Pasar al área de Archivo y entregar la Solicitud de puntos de conexión (FRM-006) y los requisitos
+    - La persona del área de Archivo revisará que cumpla con toda la Documentación Requerida, si no está completa,
+      informará que no es posible realizar el trámite hasta que ésta se complete
+    - Con los requisitos completos, la persona de Archivo imprime certificación de recibido en el formato (FRM-006),
+      proporcionando al usuario un plazo de atención para la respuesta
+    - Una vez realizado el estudio técnico para definir los puntos de conexión, la Coordinación de Proyectos de
+      Obra, se comunica vía telefónica con la persona solicitante para informarle que puede pasar por el documento
+    - La persona solicitante deberá presentarse a la Coordinación de Proyectos de Obra a recoger el Oficio de Puntos
+      de Conexión acompañado de los respectivos anexos
+  notes: General
+legal_basis:
+- source: ley1
+  pinpoint: 1, 2 Y 14.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo y entregar la Solicitud de puntos de conexión (FRM-006) y los requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo revisará que cumpla con toda la Documentación Requerida, si no está completa,
+    informará que no es posible realizar el trámite hasta que ésta se complete
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de Archivo imprime certificación de recibido en el formato (FRM-006),
+    proporcionando al usuario un plazo de atención para la respuesta
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez realizado el estudio técnico para definir los puntos de conexión, la Coordinación de Proyectos
+    de Obra, se comunica vía telefónica con la persona solicitante para informarle que puede pasar por el documento
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona solicitante deberá presentarse a la Coordinación de Proyectos de Obra a recoger el Oficio de
+    Puntos de Conexión acompañado de los respectivos anexos
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1605: Solicitud de Puntos de Conexión para los Servicios de Agua Potable y/o Alcantarillado
+      Sanitario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1605
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

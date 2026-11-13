@@ -1,0 +1,101 @@
+id: mx-bcn-retys-332-solicitud-de-ortesis-y-protesis-para-personas-con
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Órtesis y Prótesis para Personas con Discapacidad
+summary: Apoyos funcionales a través de la elaboración de órtesis y prótesis, a costos accesibles para personas
+  con discapacidad, contribuyendo asi con el proceso de rehabilitación e integración social.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 332
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/332
+  homoclave: BC-DIF-010
+who_can:
+- Interesado
+- Tutor
+when: Cuando su estado físico así lo requiera y se cumpla con los requisitos establecidos
+result: Entrega de apoyo
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Monto a calcularse depende del tipo de aparato que se requiera y de las condiciones socioeconómicas
+    del paciente.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Rehabilitación Integral (CRI Mexicali) DIF Estatal BC
+  address: 'Calzada Cuauhtémoc #384, Fraccionamiento Las Fuentes, Mexicali, 21230'
+- municipality: Tijuana
+  name: Centro de Rehabilitación Integral (CRI Tijuana), DIF Estatal BC
+  address: 'Av. Paseo del Rio esquina Calle Valle  #s/n, Zona del Río 3ra Etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Centro de Rehabilitación Integral (CRI) Ensenada
+  address: 'Av. Francisco González Bocanegra #s/n, Hidalgo, Ensenada, 22880'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Receta médica (original)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Ingresar como paciente al centro de rehabilitación integral
+    - Se requiere ser canalizado por el médico especialista del centro de rehabilitación integral solicitando el
+      apoyo
+    - Acudir al centro de rehabilitación integral a solicitar una cita
+  notes: Recopilación de documentos para el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar como paciente al centro de rehabilitación integral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se requiere ser canalizado por el médico especialista del centro de rehabilitación integral solicitando
+    el apoyo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir al centro de rehabilitación integral a solicitar una cita
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 332: Solicitud de Órtesis y Prótesis para Personas con Discapacidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/332
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

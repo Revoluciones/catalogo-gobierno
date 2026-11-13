@@ -1,0 +1,196 @@
+id: mx-bcn-retys-1650-refrendo-de-tarjeta-de-circulacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Refrendo de Tarjeta de Circulación
+summary: Registrar anualmente en el padrón vehicularel refrendo de las tarjetas de circulación de vehículos.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 1650
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1650
+  homoclave: BC-SH-047
+who_can:
+- Representante Legal
+- Interesado
+when: Vehículos con antigüedad 0 a 9 años de enero a marzo, Vehículos con antigüedad 10 años o más de enero a junio.
+result: El Refrendo de Tarjeta de circulación vigente.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026: Refrendo de Tarjeta de circulación: Automóviles y camiones particulares
+    $1,201.16 Motocicletas $1,201.16 Para demostración $2,261.78 Remolques $527.69 *No incluye costos de contribuciones
+    municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 48 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Variable.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Refrendo de la Tarjeta de Circulación
+  requirements:
+  - text: Licencia de conducir vigente del Estado de Baja California del propietario del vehículo
+    cites:
+    - source: retys
+  - text: Número de la placa a refrendar
+    cites:
+    - source: retys
+  - text: Póliza de seguro de responsabilidad civil
+    cites:
+    - source: retys
+  - text: Realizar el pago
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Acceder al apartado de trámites y servicios haciendo clic en el botón "iniciar trámite" ubicado en la parte
+      inferior derecha
+    - Capturar número de placa
+    - Generar presupuesto
+    - Llenar apartado de datos adicionales
+    - Una vez capturado la información, capturar el código de verificación que se enviará a su teléfono registrado
+    - Capturar datos de póliza de seguro de responsabilidad civil
+    - Realizar el pago ya sea en línea, pago spei o pago referenciado
+    - Recibe correo de pago realizado
+    - 'Se realiza validación del pago, una vez validado recibira correo electrónico con el recibo del pago del refrendo.
+      Nota: si el pago de refrendo incluye años anteriores le llegará correo norificandole que deberá pasar a la
+      Recaudación de Rentas, por su tarjeta de circulación.'
+  notes: Requisitos para obtener el Refrendo de la Tarjeta de Circulación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, Fracción II, Inciso A, Número 1.
+- source: ley2
+  pinpoint: Artículo 29
+- source: ley3
+  pinpoint: Claúsula Primera
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acceder al apartado de trámites y servicios haciendo clic en el botón "iniciar trámite" ubicado en la
+    parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Capturar número de placa
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Generar presupuesto
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Llenar apartado de datos adicionales
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez capturado la información, capturar el código de verificación que se enviará a su teléfono registrado
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Capturar datos de póliza de seguro de responsabilidad civil
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Realizar el pago ya sea en línea, pago spei o pago referenciado
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Recibe correo de pago realizado
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: 'Se realiza validación del pago, una vez validado recibira correo electrónico con el recibo del pago del
+    refrendo. Nota: si el pago de refrendo incluye años anteriores le llegará correo norificandole que deberá pasar
+    a la Recaudación de Rentas, por su tarjeta de circulación.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1650: Refrendo de Tarjeta de Circulación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1650
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del Año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que regula los servicios de control vehicular en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Reglas de carácter general en materia de tarjeta de circulación digital, publicado el 25 de Julio 2022
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

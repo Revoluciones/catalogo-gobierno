@@ -1,0 +1,125 @@
+id: mx-bcn-retys-1529-vacunacion-antirrabica-canina-y-felina
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Vacunación Antirrábica Canina y Felina
+summary: Es la administración de una vacuna para inducir una respuesta inmune protectora en el animal.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1529
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1529
+  homoclave: BC-ISESALUD-013
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Al cumplir los 3 meses de edad del cachorro, al mes de la primera vacuna como refuerzo y cada año para control.
+result: Vacuna, certificado y placa de identificación.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Pasadena #S/N, Bella Vista, Mexicali, 21150'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Calpulli #S/N, Mariano Matamoros Norte, Tijuana, 22234'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Estancia #1105, Valle Dorado, Ensenada, 22850'
+scenarios:
+- name: Vacunación antirrábica canina y felina
+  requirements:
+  - text: La mascota sea mayor de 3 meses
+    cites:
+    - source: retys
+  - text: La mascota no debe estar gestando ni en periodo de lactancia
+    cites:
+    - source: retys
+  - text: La mascota se encuentre sana y no en tratamiento
+    cites:
+    - source: retys
+  - text: Presentar a la mascota con correa y bozal de preferencia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse al puesto de vacunación con la mascota sana para solicitar la vacuna antirrábica canina/felina
+    - Realiza aplicación de la vacuna y expide comprobante de vacunación
+    - Coloca placa de identificación de mascota vacunada vigente
+    - Acudir a la aplicación de la vacuna cada año.
+  notes: Aplicación de vacuna a perros y gatos para la protección de la rabia.
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse al puesto de vacunación con la mascota sana para solicitar la vacuna antirrábica canina/felina
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realiza aplicación de la vacuna y expide comprobante de vacunación
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Coloca placa de identificación de mascota vacunada vigente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la aplicación de la vacuna cada año.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1529: Vacunación Antirrábica Canina y Felina'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1529
+    version_date: 25/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-011-SSA2-2011, Para la Prevención y Control de la Rabia Humana y en los Perros
+      y Gatos.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: 'Programa de Acción Específico: Rabia y Otras Zoonosis'
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

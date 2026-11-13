@@ -1,0 +1,194 @@
+id: mx-bcn-retys-1685-bloqueo-del-nervio-ciatico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Bloqueo del nervio ciático
+summary: Es un procedimiento en el cual, la o el médico especialista realiza una punción para aplicación de analgésico,
+  mediante la cual bloquea el nervio afectado
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1685
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1685
+  homoclave: BC-UNEME-017
+who_can:
+- Interesado
+when: Cuando presente dolor crónico o de larga duración.
+result: Atención médica especializada en analgesia.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el centro de salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: Historia clínica y diagnóstico de dolor crónico expedidos por el centro de salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte o licencia de manejo).
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la intervención
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a consulta médica en el establecimiento que le corresponda
+    - Se miden signos vitales, se realiza exploración física y entrevista médica. Si procede, derivar a UNEME
+    - Contactar al ciudadano, indicando fecha y hora para una consulta de valoración por un especialista en el dolor
+    - Acudir a la UNEME el día de la cita. Identificarse y entregar los documentos
+    - Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. Si procede, se
+      programa la intervención
+    - Contactar al ciudadano, indicándole fecha y hora de la intervención, además de los cuidados previos.
+    - Acudir a UNEME con un acompañante, identificarse y firmar la carta de consentimiento informado.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la intervención, trasladar al quirófano y, después del procedimiento, dar instrucciones
+      para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE e ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Historia clínica y diagnóstico de dolor crónico expedidos por IMSS, ISSSTE o ISSSTECALI, en su caso.
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la intervención
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a consulta médica en el establecimiento que le corresponda
+    - Se miden signos vitales, se realiza exploración física y entrevista médica. Si procede, derivar a UNEME
+    - Contactar al ciudadano, indicando fecha y hora para una consulta de valoración por un especialista en el dolor
+    - Acudir a la UNEME el día de la cita. Identificarse y entregar los documentos
+    - Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. Si procede, se
+      programa la intervención
+    - Contactar al ciudadano, indicándole fecha y hora de la intervención, además de los cuidados previos.
+    - Acudir a UNEME con un acompañante, identificarse y firmar la carta de consentimiento informado.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la intervención, trasladar al quirófano y, después del procedimiento, dar instrucciones
+      para el cuidado y alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: '4'
+- source: ley2
+  pinpoint: '6'
+- source: ley3
+  pinpoint: '7'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a consulta médica en el establecimiento que le corresponda
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se miden signos vitales, se realiza exploración física y entrevista médica. Si procede, derivar a UNEME
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano, indicando fecha y hora para una consulta de valoración por un especialista en
+    el dolor
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la UNEME el día de la cita. Identificarse y entregar los documentos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. Si procede,
+    se programa la intervención
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano, indicándole fecha y hora de la intervención, además de los cuidados previos.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir a UNEME con un acompañante, identificarse y firmar la carta de consentimiento informado.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la intervención, trasladar al quirófano y, después del procedimiento, dar instrucciones
+    para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1685: Bloqueo del nervio ciático'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1685
+    version_date: 20/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Analgesia e inhibición del dolor. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

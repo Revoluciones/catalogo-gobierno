@@ -1,0 +1,216 @@
+id: mx-bcn-retys-1612-contrato-de-dotacion-de-agua-residual-sin-tratar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de Dotación de Agua Residual sin Tratar
+summary: Documento en el que se establecen las condiciones bajo las cuales se realizará la dotación de agua residual
+  sin tratar.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1612
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1612
+  homoclave: BC-CESPT-034
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Ficha de cobro con certificación de pago y contrato de dotación de agua residual sin tratar.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Sin tratar, por cada m³ entregada en planta: $1.43 pesos Sin tratar, por cada m³ entregada
+    en planta para uso agrícola: $1.43 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Primera vez
+  requirements:
+  - text: Original y copia del Formulario para establecimiento de contrato para usuarios de agua residual tratada
+      (FRM-008) debidamente llenado y firmado por el propietario o el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12579
+  - text: Copia del Acta constitutiva
+    cites:
+    - source: retys
+  - text: Copia del poder notariado del Representante Legal, en caso de NO ESTAR ESTABLECIDO en el acta constitutiva
+    cites:
+    - source: retys
+  - text: 'Copia de Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a
+      quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de alta ante la Secretaría de Hacienda y Crédito Público
+    cites:
+    - source: retys
+  - text: Croquis de localización con descripción de las colindancias hacia los cuatro puntos cardinales
+    cites:
+    - source: retys
+  - text: Pago de derechos que correspondan
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio en la parte posterior y a un
+      costado de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento revisará que todos los requisitos sean correctos
+      y estén completos, de no ser así le informará lo que falta y que no se puede realizar el trámite hasta que
+      se completen los requisitos.
+    - Con los requisitos completos personal de la Coordinación de Servicios de Saneamiento sellará y firmará de
+      validación el original y copia del Formulario para establecimiento de contrato para usuarios de agua residual
+      tratada, la cual entregará al solicitante, así como todos los requisitos.
+    - Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago de derechos correspondiente en cajas.
+    - Acudir al área de Cajas con la Ficha de pago que se le entregó y realizar el pago correspondiente.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del Formulario para establecimiento de contrato
+      para usuarios de agua residual tratada con la certificación de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Primera vez
+- name: Revalidación de contrato
+  requirements:
+  - text: Original y copia del Formulario para establecimiento de contrato para usuarios de agua residual tratada
+      (FRM-008) debidamente llenado y firmado por el propietario o el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11715
+  - text: Pagar los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio en la parte posterior y a un
+      costado de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Servicios de Saneamiento revisará que todos los requisitos sean correctos
+      y estén completos, de no ser así le informará lo que falta y que no se puede realizar el trámite hasta que
+      se completen los requisitos.
+    - Con los requisitos completos personal de la Coordinación de Servicios de Saneamiento sellará y firmará de
+      validación el original y copia del Formulario para establecimiento de contrato para usuarios de agua residual
+      tratada, la cual entregará al solicitante, así como todos los requisitos.
+    - Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará al
+      solicitante para que realice el pago de derechos correspondiente en cajas.
+    - Acudir al área de Cajas con la Ficha de pago que se le entregó y realizar el pago correspondiente.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del Formulario para establecimiento de contrato
+      para usuarios de agua residual tratada con la certificación de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Revalidación de contrato
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2
+- source: ley2
+  pinpoint: Artículo 9
+- source: ley3
+  pinpoint: Artículo 2
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio en la parte posterior y a
+    un costado de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento revisará que todos los requisitos sean correctos
+    y estén completos, de no ser así le informará lo que falta y que no se puede realizar el trámite hasta que se
+    completen los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos personal de la Coordinación de Servicios de Saneamiento sellará y firmará
+    de validación el original y copia del Formulario para establecimiento de contrato para usuarios de agua residual
+    tratada, la cual entregará al solicitante, así como todos los requisitos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Servicios de Saneamiento, elaborará la Ficha de pago, la cual entregará
+    al solicitante para que realice el pago de derechos correspondiente en cajas.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir al área de Cajas con la Ficha de pago que se le entregó y realizar el pago correspondiente.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de pago y entregar todos los
+    requisitos.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo entregará al solicitante la copia del Formulario para establecimiento de
+    contrato para usuarios de agua residual tratada con la certificación de recibido.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+    para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1612: Contrato de Dotación de Agua Residual sin Tratar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1612
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,238 @@
+id: mx-bcn-retys-1618-expedicion-de-constancia-de-antecedentes-penales
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Constancia de Antecedentes Penales
+summary: Documento donde se hace constar que el ciudadano cuenta o no, con antecedentes penales de carácter doloso
+  del fuero común en el Estado de Baja California. La constancia expedida en el trámite en línea NO CUENTA FOTOGRAFÍA.
+  Para mayor información comunicarse al teléfono (686) 837 3900 Ext. 15452/15451 o al correo antecedentespenales@seguridadbc.gob.mx
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1618
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1618
+  homoclave: BC-SSCBC-022
+who_can:
+- Interesado
+when: Cuando se requiera, para trámite laboral, personal, migratorio, entre otros
+result: Constancia de Antecedentes Penales
+cost:
+  type: fijo
+  amount_mxn: 284.38
+  text: 'COSTO: $ 284.38 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 MESES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Comercial Plaza Fiesta
+  address: 'Av. Paseo de los Héroes #1C, Centro Cívico, Mexicali, 21100'
+- municipality: Mexicali
+  name: Recaudación de Rentas
+  address: 'Calz. Independencia 944, Centro Cívico #944, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Recaudación de Rentas Guadalupe Victoria
+  address: 'Avenida Miguel Hidalgo y Costilla y Calle Octava #S/N, Ciudad Guadalupe Victoria (KM 43), Mexicali,
+    21720'
+- municipality: Mexicali
+  name: Sub-recaudación Auxiliar de Rentas del Estado Ciudad Morelos
+  address: 'Avenida Leyes de Reforma y José María Morelos y Pavón  #101, Ciudad Morelos, Mexicali, 21966'
+- municipality: Mexicali
+  name: CAP Gonzalez Ortega
+  address: 'Rio Bravo  #300, Gonzalez Ortega, Mexicali, 21399'
+- municipality: Tijuana
+  name: Sub. Recaudación de Rentas
+  address: 'Carretera Libre Tijuana – Tecate Km. 26.5 #S/N, El Florido, Tijuana, 22253'
+- municipality: Tijuana
+  name: Sub. Recaudación de Rentas
+  address: 'Vía Rápida José Fimbres Moreno #12651, 20 de Noviembre, Tijuana, 21100'
+- municipality: Tijuana
+  name: Cámara Nacional De Comercio (CANACO)
+  address: 'Xavier Villaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Ensenada
+  name: Centro de gobierno del Estado 2do. Piso
+  address: 'Carretera traspeninsular Ensenada - La Paz #6500, Ex. Ejido Chapultepec, Ensenada, 646172'
+- municipality: Tecate
+  name: Recaudación de Rentas
+  address: 'Calle Eusebio Kino #s/n, El Decanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Centro de gobierno del Estado 2do. Piso
+  address: 'José Haroz Aguilar #S/N, Fracc. Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Centro General de Gobierno
+  address: 'Avenida A entre 9 y 10 #s/n, Fraccionamiento Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub-recaudación Auxiliar de Rentas del Estado
+  address: 'Avenida Mar Caribe Nte.  #182, Ampliación Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Identificación oficial vigente (credencial de elector, pasaporte mexicano, licencia de conducir del Estado
+      de Baja California, cartilla del servicio militar nacional liberada, cédula profesional con foto, título profesional)
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Para trámite en línea ingresar a la página https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/antecedentespenales/constancia-antecedentes-penales
+      o dar click en el botón "iniciar trámite" ubicado en la parte inferior derecha
+    - Llenar los campos con los datos del solicitante, en caso de capturar incorrectamente el trámite será rechazado.
+    - Subir fotografía del solicitante de cara completa, fondo blanco, cara descubierta, a color, sin retoque, sin
+      lentes y no mayor a 6 meses, en caso contrario el trámite será rechazado.
+    - Subir fotografía de la parte frontal de la identificación en fondo blanco, vigente para cotejo del trámite,
+      en caso contrario el trámite será rechazado.
+    - Pagar los derechos, en el caso de realizar el pago en ventanilla bancaria se verá reflejado en el sistema
+      de CONSULTA DE PAGO DE DERECHOS 48 horas después de su pago
+    - una vez realizado el pago la página va a proporcionar un número de folio de seguimiento, el cual deberá guardar
+      el ciudadano para el seguimiento, y que este será directamente en la página http://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/folioseguimiento,
+      Seguimiento Tramite | Ventanilla BC, en la cual una vez capturado el folio, le mostrara el estatus en el que
+      se encuentra su petición, podrá imprimir su recibo de pago y además de descargar su constancia una vez autorizada.
+    - Los trámites realizados en fin de semana serán atendidos de lunes a viernes
+  - name: Presencial
+    steps:
+    - Acudir a la dependencia o módulo
+    - Presentar identificación oficial vigente
+    - Realizar el pago correspondiente (recaudación rentas del estado, banco, internet)
+    - Entrega de constancia de antecedentes penales
+  notes: Requisitos para obtener la Constancia de no antecedentes penales
+legal_basis:
+- source: ley1
+  pinpoint: artículos 12, fracción XXVII, y 14 fracción XIII
+- source: ley2
+  pinpoint: Artículo 18, fracción I, inciso H
+- source: ley3
+  pinpoint: Artículo 34 fracción XXXVI
+- source: ley4
+  pinpoint: Artículo 27 fracción IV
+- source: ley5
+  pinpoint: artículo 8
+- source: ley6
+  pinpoint: Artículo 8
+- source: ley7
+  pinpoint: .
+- source: ley8
+  pinpoint: artículos 12, fracción XXVII, y 14 fracción XIII
+- source: ley9
+  pinpoint: .
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Para trámite en línea ingresar a la página https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/antecedentespenales/constancia-antecedentes-penales
+    o dar click en el botón "iniciar trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar los campos con los datos del solicitante, en caso de capturar incorrectamente el trámite será rechazado.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Subir fotografía del solicitante de cara completa, fondo blanco, cara descubierta, a color, sin retoque,
+    sin lentes y no mayor a 6 meses, en caso contrario el trámite será rechazado.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir fotografía de la parte frontal de la identificación en fondo blanco, vigente para cotejo del trámite,
+    en caso contrario el trámite será rechazado.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pagar los derechos, en el caso de realizar el pago en ventanilla bancaria se verá reflejado en el sistema
+    de CONSULTA DE PAGO DE DERECHOS 48 horas después de su pago
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: una vez realizado el pago la página va a proporcionar un número de folio de seguimiento, el cual deberá
+    guardar el ciudadano para el seguimiento, y que este será directamente en la página http://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/folioseguimiento,
+    Seguimiento Tramite | Ventanilla BC, en la cual una vez capturado el folio, le mostrara el estatus en el que
+    se encuentra su petición, podrá imprimir su recibo de pago y además de descargar su constancia una vez autorizada.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Los trámites realizados en fin de semana serán atendidos de lunes a viernes
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1618: Expedición de Constancia de Antecedentes Penales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1618
+    version_date: 27/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Seguridad Ciudadana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley Nacional de Ejecución Penal
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley7:
+    type: ley
+    official: true
+    title: Acuerdo delegatorio expedido por el titular de la Secretaría de Seguridad Ciudadana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley8:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Seguridad Ciudadana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley9:
+    type: ley
+    official: true
+    title: Acuerdo Delegatorio expedido por el Titular de la Secretaría de Seguridad Ciudadana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

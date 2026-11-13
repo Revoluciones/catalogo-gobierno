@@ -1,0 +1,114 @@
+id: mx-bcn-retys-736-cofepris-01-006-aviso-sanitario-de-importacion-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-01-006 Aviso Sanitario de Importación de Productos.(Bebidas No Alcohólicas, Cerámica y Loza Vidriada,
+  Juguetes y Artículos Escolares).
+summary: Cuando el ciudadano requiera importar juguetes y artículos escolares.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 736
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/736
+  homoclave: BC-COEPRIS-024
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: En operacion
+result: Aviso de importación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: UNIDAD REGIONAL SAN QUINTIN
+  address: 'Avenida benito juarez #108, Vicente guerrero, San Quintín, 22920'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7621
+  - text: Formato “Avisos”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple legible
+      del mismo
+    cites:
+    - source: retys
+  - text: 'Para juguetes, cerámica destinada a contener alimentos; y artículos escolares: constancia sanitaria o
+      certificado de libre venta o análisis de laboratorio'
+    cites:
+    - source: retys
+  - text: 'Para el resto de los productos: constancia sanitaria o certificado de libre venta'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 286 Bis Fracción I
+- source: ley2
+  pinpoint: Artículo 240
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el centro integral de servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 736: COFEPRIS-01-006 Aviso Sanitario de Importación de Productos.(Bebidas No Alcohólicas,
+      Cerámica y Loza Vidriada, Juguetes y Artículos Escolares).'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/736
+    version_date: 05/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-006 Aviso sanitario de importación de productos.(bebidas no alcohólicas, cerámica
+  y loza vidriada, juguetes y artículos escolares).. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

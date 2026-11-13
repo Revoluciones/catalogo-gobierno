@@ -1,0 +1,138 @@
+id: mx-bcn-retys-1211-orientacion-psicologica-y-asesoria-legal-a-mujeres
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Orientación Psicológica y Asesoria Legal a mujeres en situación de violencia.
+summary: Brindar orientación psicológica y Atención legal a mujeres que se encuentren en situación de violencia
+  en sus diferentes modalidades.
+authority:
+  name: Secretaria de las Mujeres para el Estado de Baja California
+official_ids:
+  retys_id: 1211
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1211
+  homoclave: BC-INMUJER-001
+who_can:
+- Interesado
+when: Cuando se encuentren en situación de violencia
+result: Asesoría legal y psicológica gratuita
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: SECRETARIA DE LAS MUJERES DEL ESTADO DE BAJA CALIFORNIA (MEXICALI)
+  address: 'Calzada Independencia y Anáhuac #1199, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: SECRETARIA DE LAS MUJERES DEL ESTADO DE BAJA CALIFORNIA (TIJUANA)
+  address: 'Av. REVOLUCIÓN #828, ZONA CENTRO, Tijuana, 22000'
+- municipality: Ensenada
+  name: SECRETARIA DE LAS MUJERES DEL ESTADO DE BAJA CALIFORNIA (ENSENADA)
+  address: 'Carr. Transpeninsular  #No. 1600, Ex-Ejido Chapultepec, Ensenada, 22880'
+scenarios:
+- name: MUJERES
+  requirements:
+  - text: Ser mujer
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Haga clic en el botón “Iniciar trámite”
+    - Proporcione sus datos personales y de contacto, como nombre, apellidos y correo electrónico, para recibir
+      las notificaciones relacionadas con su solicitud.
+    - Seleccione el tipo de atención que requiere, ya sea atención psicológica o atención jurídica.
+    - Reciba la notificación de su solicitud. Una vez que su solicitud sea atendida, recibirá un correo electrónico
+      con un enlace para consultar la información de su caso.
+    - Consulte la fecha y hora de su cita. Ingrese al enlace “Ver mi caso” que recibirá en el correo electrónico.
+      Para consultar la información de su cita, deberá ingresar el número de folio de su solicitud y el correo electrónico
+      que registró. Una vez que haya ingresado estos datos, podrá visualizar la fecha y hora asignadas para su cita.
+  - name: Presencial
+    steps:
+    - Asistir a la secretaria del estado de baja california
+    - Solicitar el servicio que se requiera
+    - Se le brinda el servicio
+  notes: MUJERES
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 8
+- source: ley2
+  pinpoint: ARTICULO 8
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haga clic en el botón “Iniciar trámite”
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Proporcione sus datos personales y de contacto, como nombre, apellidos y correo electrónico, para recibir
+    las notificaciones relacionadas con su solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seleccione el tipo de atención que requiere, ya sea atención psicológica o atención jurídica.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Reciba la notificación de su solicitud. Una vez que su solicitud sea atendida, recibirá un correo electrónico
+    con un enlace para consultar la información de su caso.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Consulte la fecha y hora de su cita. Ingrese al enlace “Ver mi caso” que recibirá en el correo electrónico.
+    Para consultar la información de su cita, deberá ingresar el número de folio de su solicitud y el correo electrónico
+    que registró. Una vez que haya ingresado estos datos, podrá visualizar la fecha y hora asignadas para su cita.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1211: Orientación Psicológica y Asesoria Legal a mujeres en situación de violencia.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1211
+    version_date: 24/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: POA-SECRETARIA DE LAS MUJERES DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: REGLAMENTO INTERNO DE LA SECRETARIA DE LAS MUJERES DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

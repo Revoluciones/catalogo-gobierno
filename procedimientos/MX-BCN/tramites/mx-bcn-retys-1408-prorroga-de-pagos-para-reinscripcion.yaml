@@ -1,0 +1,102 @@
+id: mx-bcn-retys-1408-prorroga-de-pagos-para-reinscripcion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Prórroga de Pagos para Reinscripción
+summary: Financiar a estudiantes que requieran realizar su reinscripción y estén en posibilidad de hacer su pago
+  diferido.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1408
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1408
+  homoclave: BC-UPBC-009
+who_can:
+- Interesado
+when: En los periodos establecidos en la convocatoria cada cuatrimestre
+result: Inscripción
+cost:
+  type: fijo
+  amount_mxn: 1750.0
+  text: 'COSTO: $1,750.00 M.N. (Equivale al 50% de inscripción)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único cuatrimestral
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Secretaria Administrativa
+  address: 'Av. de la claridad #S/N, Plutarco elias calles, Mexicali, 21376'
+scenarios:
+- name: Dar prórroga de pago al estudiante para que continúe con sus estudios
+  requirements:
+  - text: Matricula, usuario y contraseña
+    cites:
+    - source: retys
+  - text: Recibo de pago por prórroga de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6127
+  modes:
+  - name: En línea
+    steps:
+    - Entrar a la pagina del SIAAX haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+    - Seleccionar el estudiante prorroga de reinscripcion, del cual el sistema proporcionará un primer recibo el
+      cual debe descargar y realizar su pago en línea o en ventanilla bancaria
+    - Una vez que realiza el primer pago de la reinscripción, el estudiante deberá en un plazo de 40 días volver
+      a descargar el segundo recibo de pago
+    - Transcurrido los 40 días deberá pagar el segundo recibo para que le sea validada su reinscripción
+  notes: El estudiante puede solicitar a través de pagos diferidos su reinscripción
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrar a la pagina del SIAAX haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+    derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el estudiante prorroga de reinscripcion, del cual el sistema proporcionará un primer recibo
+    el cual debe descargar y realizar su pago en línea o en ventanilla bancaria
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que realiza el primer pago de la reinscripción, el estudiante deberá en un plazo de 40 días volver
+    a descargar el segundo recibo de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Transcurrido los 40 días deberá pagar el segundo recibo para que le sea validada su reinscripción
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1408: Prórroga de Pagos para Reinscripción'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1408
+    version_date: 07/Mayo /2025
+    accessed: '2026-11-06'
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

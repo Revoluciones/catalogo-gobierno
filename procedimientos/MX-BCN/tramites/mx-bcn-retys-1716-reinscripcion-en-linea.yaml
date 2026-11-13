@@ -1,0 +1,133 @@
+id: mx-bcn-retys-1716-reinscripcion-en-linea
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reinscripción en Línea
+summary: 'Proceso mediante el cual un alumno renueva y formaliza su permanencia en COBACH BC. Las fechas se publican
+  en la página electrónica: http://www.cobachbc.edu.mx/ (Enero y Julio).'
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1716
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1716
+  homoclave: BC-COBACH-006
+who_can:
+- Interesado
+- Tutor
+when: Cuando el alumno requiera reinscribirse.
+result: Comprobante de reinscripción
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+scenarios:
+- name: Alumno
+  requirements:
+  - text: Contar con matrícula en Colegio de Bachilleres del Estado de Baja California
+    cites:
+    - source: retys
+  - text: Haber estado reinscrito en el periodo anterior al que se pretende reinscribir
+    cites:
+    - source: retys
+  - text: Cumplir con los criterios establecidos para la reinscripción
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a http://alumnos.cobachbc.edu.mx/reinscripcion/ o da click al botón de Iniciar trámite
+    - Seleccionar el municipio donde radica
+    - Leer las instrucciones del proceso
+    - Tener a la mano la matrícula y su fecha de nacimiento para ingresar al trámite
+    - Revisa, modifica y actualiza la información de tus datos personales, de tu padre o tutor sin dejar en blanco
+      los campos requeridos para poder reinscribirte.
+    - Llenar el cuestionario de contexto.
+    - Verifica que estén correctos plantel, semestre y asignaturas a cursar, antes de presionar el botón Registrar.
+      En caso de error acude a tu plantel.
+    - Imprime o genera PDF de tu comprobante de reinscripción
+  notes: Reinscripción en línea
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a http://alumnos.cobachbc.edu.mx/reinscripcion/ o da click al botón de Iniciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el municipio donde radica
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Leer las instrucciones del proceso
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Tener a la mano la matrícula y su fecha de nacimiento para ingresar al trámite
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Revisa, modifica y actualiza la información de tus datos personales, de tu padre o tutor sin dejar en
+    blanco los campos requeridos para poder reinscribirte.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Llenar el cuestionario de contexto.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Verifica que estén correctos plantel, semestre y asignaturas a cursar, antes de presionar el botón Registrar.
+    En caso de error acude a tu plantel.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Imprime o genera PDF de tu comprobante de reinscripción
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1716: Reinscripción en Línea'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1716
+    version_date: 11/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Inscripciones y Reinscripciones
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

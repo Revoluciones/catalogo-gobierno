@@ -1,0 +1,147 @@
+id: mx-bcn-retys-619-expedicion-de-actas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Actas
+summary: Expedir certificaciones de los actos del estado civil de los ciudadanos, como nacimiento, matrimonio y
+  defunción.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 619
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/619
+  homoclave: BC-SGG-011
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se requiera certificar los actos del estado civil de las personas en el Estado
+result: Acta certificada
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Noviembre $255.00 m.n. la consecutiva de la misma persona $128.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 Meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Registro Civil
+  address: 'Avenida Independencia #994, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: 'Presentar copia de acta a certificar, como:'
+    cites:
+    - source: retys
+  - text: '----- Acta de matrimonio'
+    cites:
+    - source: retys
+  - text: '----- Acta de defunción'
+    cites:
+    - source: retys
+  - text: '----- Acta de nacimiento'
+    cites:
+    - source: retys
+  - text: '----- Acta de nacimiento que tenga anotación marginal de reconocimiento'
+    cites:
+    - source: retys
+  - text: '----- Acta de nacimiento con sentencia de adopción inscrita'
+    cites:
+    - source: retys
+  - text: '----- Acta de matrimonio con sentencia de divorcio escrita'
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Dirección de Registro Civil
+    - Brindar copia simple de acta a solicitar
+    - Otorgar datos del registro del acto que va a solicita
+    - Realizar pago de derechos ante la recaudación de rentas del Estado
+  notes: Certificación de actas de estado civil-- En caso de no contar con la copia de acta se solicitará datos
+    registro.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 31
+- source: ley2
+  pinpoint: Artículo 8, fracción XI
+- source: ley3
+  pinpoint: Artículo 18, fracción III
+- source: ley4
+  pinpoint: Artículo 37
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Dirección de Registro Civil
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Brindar copia simple de acta a solicitar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Otorgar datos del registro del acto que va a solicita
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar pago de derechos ante la recaudación de rentas del Estado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 619: Expedición de Actas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/619
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Registro Civil del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos para el Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Certificación de Actas del Estado Civil. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

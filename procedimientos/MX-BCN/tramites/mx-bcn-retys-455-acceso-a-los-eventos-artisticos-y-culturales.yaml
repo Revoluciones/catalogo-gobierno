@@ -1,0 +1,127 @@
+id: mx-bcn-retys-455-acceso-a-los-eventos-artisticos-y-culturales
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a los Eventos Artísticos y Culturales
+summary: Que la ciudadanía acceda a las presentaciones de danza, teatro, recitales musicales, conciertos, recorridos
+  culturales, talleres, cursos, ciclos de cine, festivales, etc., como una alternativa para su desarrollo integral.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 455
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/455
+  homoclave: BC-ICBC-011
+who_can:
+- Interesado
+when: Cuando se requiera consultar la agenda de eventos en la página
+result: Disfrutar de actividades recreativas, artísticas y culturales que le den calidad de vida
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Algunos cursos y conciertos tienen un costo diferente, la mayoría son gratuitos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Teatro Del Estado
+  address: 'Boulevard Adolfo López Mateos #1112, Zona Industrial, Mexicali, 21150'
+- municipality: Mexicali
+  name: Biblioteca Pública Central Estatal
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+- municipality: Mexicali
+  name: Centro Estatal de las Artes Mexicali
+  address: 'Calzada de los Presidentes y Ciudad Victoria #s/n, Zona Río Nuevo, Mexicali, 21120'
+- municipality: Tijuana
+  name: Centro Estatal de las Artes Tijuana
+  address: 'Vía Rápida Oriente #15320, Tercera Etapa Zona Río Tijuana, Tijuana, 22105'
+- municipality: Ensenada
+  name: Teatro y Parque de la Ciudad
+  address: 'Diamente #S/N, Nueva Ensenada, Ensenada, 22880'
+- municipality: Ensenada
+  name: Centro Estatal de las Artes Ensenada
+  address: 'Boulevard Lázaro Cárdenas #1430, Zona Centro, Ensenada, 22880'
+- municipality: Ensenada
+  name: Biblioteca Pública Regional Benito Juárez
+  address: 'Guadalupe #201, Obrera, Ensenada, 22830'
+- municipality: Tecate
+  name: Centro Estatal de las Artes Tecate
+  address: 'Federico Benítez y Boulevard Encinos #s/n, Varios Predios, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Centro Estatal de las Artes Playas de Rosarito
+  address: 'Paseo la Cascada #s/n, La Cascada, Playas de Rosarito, 22701'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: No se requiere
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Consulta la agenda en https://agendacultural.bajacalifornia.gob.mx/ o acude a las instalaciones del Instituto
+      de Servicios Culturales más cercana a tu domicilio
+    - En caso de existir cobro por el evento deseado, realizarlo de acuerdo a las instrucciones e información que
+      le otorguen
+    - Acude al lugar del evento
+  notes: Cuando la persona interesada deseé obtener el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Art[iculo 7, fracción IV
+- source: ley2
+  pinpoint: Artículo 24, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Consulta la agenda en https://agendacultural.bajacalifornia.gob.mx/ o acude a las instalaciones del Instituto
+    de Servicios Culturales más cercana a tu domicilio
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: En caso de existir cobro por el evento deseado, realizarlo de acuerdo a las instrucciones e información
+    que le otorguen
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acude al lugar del evento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 455: Acceso a los Eventos Artísticos y Culturales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/455
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

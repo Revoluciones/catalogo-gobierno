@@ -1,0 +1,151 @@
+id: mx-bcn-retys-468-inscripcion-de-actos-traslativos-de-dominio
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Actos Traslativos de Dominio
+summary: Acto mediante el cual un documento que cumple con las formalidades legales y que conste el derecho real
+  personal, se incorpora en el libro o archivo electrónico correspondiente del Registro público dejando constancia
+  de su existencia.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 468
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/468
+  homoclave: BC-DRPPC-002
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando requiera dar publicidad frente a terceros de los diversos actos celebrados entre el contratante ( compraventa,
+  donaciones, cesiones )
+result: Inscripción
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Tope de compraventa (civil) $12 828 pesos, Tope Contratos Privados $ 1 173,100.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Acudir a nuestras oficinas con el contrato, título o escritura a inscribir y con los requisitos que marcan
+      los lineamientos para su inscripción
+    cites:
+    - source: retys
+  - text: Realizar el pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral o acudir con el notario que el usuario desee
+    - Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+    - Proporcionar en la ventanilla asignada todos los documentos que integran el expediente del acto traslativo
+      a inscribir
+    - Pagar los derechos correspondientes
+    - El trámite se entrega de acuerdo a la fecha que se asigne al volante
+  notes: Para dar publicidad frente a terceros de los actos celebrados entre el contratante ( compraventa, donaciones,
+    cesiones )
+legal_basis:
+- source: ley1
+  pinpoint: '2144'
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 12, Fracción IV, Quinto Transitorio
+- source: ley4
+  pinpoint: 11, Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral o acudir con el notario que el usuario desee
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Proporcionar en la ventanilla asignada todos los documentos que integran el expediente del acto traslativo
+    a inscribir
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pagar los derechos correspondientes
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El trámite se entrega de acuerdo a la fecha que se asigne al volante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 468: Inscripción de Actos Traslativos de Dominio'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/468
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Civil para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos ejercicio 2026 del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

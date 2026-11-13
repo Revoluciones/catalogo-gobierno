@@ -1,0 +1,154 @@
+id: mx-bcn-retys-1592-subsidio-a-instituciones-de-asistencia-social
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Subsidio a instituciones de asistencia social
+summary: Exención del pago correspondiente por servicio de consumo de agua a instituciones de asistencia social.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1592
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1592
+  homoclave: BC-CESPT-014
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera del servicio.
+result: subsidio
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 42 Días Naturales'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: General
+  requirements:
+  - text: Carta Constancia emitida por la Secretaría de Desarrollo Social del Estado
+    cites:
+    - source: retys
+  - text: Acta constitutiva, debidamente inscrita en el Registro Público de la Propiedad y de Comercio
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del representante legal, puede ser UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de nómina o listado de personal y/o habitantes de la institución, la cual debe presentar de forma
+      mensual para mantener vigente el subsidio
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: El trámite lo debe realizar el representante legal
+    cites:
+    - source: retys
+  - text: 'Para que se pueda aplicar el subsidio es necesario que: El saldo de la cuenta de agua se encuentre en
+      ceros, El medidor de agua esté en buenas condiciones, El medidor de agua solo suministre a una vivienda.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+    - Pasar al módulo de Subsidios con todos los requisitos
+    - La persona de atención, revisará que se cumpla con todos los requisitos, si no están completos, informa al
+      ciudadano que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+    - Con los requisitos completos la persona de atención captura la información en el sistema de Subsidios
+    - La persona de atención genera una solicitud de exención de pago proporcionando al usuario el folio y la fecha
+      de atención
+    - Personal del área de Subsidios de CESPT visitará la Institución para realizar una inspección
+    - Al llegar la fecha de atención el usuario se debe comunicar al teléfono 073 para que se le proporcione la
+      respuesta a su trámite
+    - Si el subsidio procede, éste se verá reflejado en la próxima recibo de agua
+  notes: El tramite debe realizarlo un representante legal. Las copias deben ser legibles y contener el documento
+    completo
+legal_basis:
+- source: ley1
+  pinpoint: Sección II del Periódico Oficial del Estado de Baja California el 21 de abril de 2023.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al módulo de Subsidios con todos los requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona de atención, revisará que se cumpla con todos los requisitos, si no están completos, informa
+    al ciudadano que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos la persona de atención captura la información en el sistema de Subsidios
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La persona de atención genera una solicitud de exención de pago proporcionando al usuario el folio y la
+    fecha de atención
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Personal del área de Subsidios de CESPT visitará la Institución para realizar una inspección
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Al llegar la fecha de atención el usuario se debe comunicar al teléfono 073 para que se le proporcione
+    la respuesta a su trámite
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Si el subsidio procede, éste se verá reflejado en la próxima recibo de agua
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1592: Subsidio a instituciones de asistencia social'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1592
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Periódico Oficial del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

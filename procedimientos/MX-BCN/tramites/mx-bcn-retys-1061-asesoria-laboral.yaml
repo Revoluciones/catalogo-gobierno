@@ -1,0 +1,133 @@
+id: mx-bcn-retys-1061-asesoria-laboral
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asesoría Laboral
+summary: '- Proporcionar asesoría gratuita a los trabajadores respecto de sus derechos laborales, así como a los
+  familiares de los trabajadores fallecidos - Auxiliar a los centros de conciliación, en otorgar información y orientación
+  a los trabajadores que acudan a dichas instancias - A solicitud del trabajador, acompañarlo a las audiencias de
+  conciliación'
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1061
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1061
+  homoclave: BC-STPS-001
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se requiera
+result: Asesoría jurídica en materia laboral para la solución de conflictos laborales
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Procuraduría Estatal de la Defensa del Trabajo
+  address: 'Rómulo O´Farril #938, Centro Cívico y Comercial, Mexicali, 21000'
+- municipality: Tijuana
+  name: Procuraduría de la Defensa del Trabajo Oficina Tijuana
+  address: 'Bulevar Gustavo Diaz Ordaz #12649, El Paraiso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Procuraduría de la Defensa del Trabajo Oficina Ensenada
+  address: 'Carretera Transpeninsular #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Procuraduría de la Defensa del Trabajo Oficina Tecate
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Procuraduría de la Defensa del Trabajo Oficina Rosarito
+  address: 'Jose Haro Aguilar #2004, Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Procuraduría de la Defensa del Trabajo Oficina San Quintín
+  address: 'Avenida A #s/n, Centro de Gobierno, San Quintín, 22930'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Llenar datos de registro de atención
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Registro en recepción
+    - Esperar su turno
+    - Atención por un procurador auxiliar
+  notes: Ciudadano que desea recibir asesoría en materia laboral
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 530 Fracción IV, Artículo 534
+- source: ley2
+  pinpoint: Artículo 42
+- source: ley3
+  pinpoint: Artículo 5
+- source: ley4
+  pinpoint: Artículo 13, Artículo 14 Fracciones III y IV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registro en recepción
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Esperar su turno
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Atención por un procurador auxiliar
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1061: Asesoría Laboral'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1061
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Procuraduría Estatal de la Defensa Del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría del Trabajo y Previsión Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Asesoría Laboral a los Trabajadores o sus Beneficiarios. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

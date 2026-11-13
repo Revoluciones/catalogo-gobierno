@@ -1,0 +1,103 @@
+id: mx-bcn-retys-1079-cofepris-09-002-aviso-de-aislamiento-de-ganado-o-p
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-09-002 Aviso de Aislamiento de Ganado o Presencia de ZOONOSIS
+summary: Cuando cualquier ciudadano persona física o moral tenga conocimiento de que el ganado padezca alguna enfermedad
+  que pueda transmitirse al hombre.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1079
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1079
+  homoclave: BC-COEPRIS-067
+who_can:
+- Otro
+when: Cuando se requiera
+result: Aviso de aislado
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: GUÍA DE LLENADO
+  requirements:
+  - text: FORMATO DE AUTORIZACIONES, CERTIFICADOS Y VISITAS, DEBIDAMENTE REQUISITADO
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7788
+  - text: PRESENTAR ESCRITO LIBRE
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - PRESENTARSE EN LAS OFICINAS DE LA COEPRIS.
+    - ENTREGAR REQUISITOS DOCUMENTALES EN EL CENTRO INTEGRAL DE SERVICIOS.
+    - ENTREGA DE LA RESOLUCIÓN.
+  notes: EN LA GUÍA SE ENCUENTRAN LAS INDICACIONES PARA EL INGRESO CORRECTO DEL TRAMITE
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 156, fracción I
+- source: ley2
+  pinpoint: Artículos 47 y 63
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: PRESENTARSE EN LAS OFICINAS DE LA COEPRIS.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: ENTREGAR REQUISITOS DOCUMENTALES EN EL CENTRO INTEGRAL DE SERVICIOS.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: ENTREGA DE LA RESOLUCIÓN.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1079: COFEPRIS-09-002 Aviso de Aislamiento de Ganado o Presencia de ZOONOSIS'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1079
+    version_date: 26/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-09-002 Aviso de Aislamiento de Ganado o Presencia de Zoonosis.. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

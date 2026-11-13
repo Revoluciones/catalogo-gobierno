@@ -1,0 +1,154 @@
+id: mx-bcn-retys-766-anuencia-para-el-traslado-de-sustancias-peligrosas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Anuencia para el traslado de sustancias peligrosas
+summary: Consiste en la expedición de anuencia para trasladar, dentro de los límites del estado, vehículos con residuos
+  peligrosos, sustancias tóxicas, gasolina y/o explosivos, siempre que se cuente con autorización para el manejo
+  de estos.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 766
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/766
+  homoclave: BC-IMOS-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se busque obtener la autorización para el traslado de sustancia peligrosas
+result: Anuencia para el traslado de sustancia peligrosas
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Por una semana: 30.00 UMAS Por un mes: 55.00 UMAS por un año: 137.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Depende del tiempo que se solicite
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios con autorización para la explotación del servicio de carga especializada
+  requirements:
+  - text: Formato de solicitud (original y copia) debidamente llenada y firmada.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14739
+  - text: Copia del recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral y poder notarial o nombramiento debidamente formalizado de los representantes
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (persona física o representante legal según sea el caso)
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales, en sentido Positivo
+    cites:
+    - source: retys
+  - text: Permiso para la operación y explotación del servicio de carga especializada para materiales, residuos,
+      remanentes y desechos peligrosos
+    cites:
+    - source: retys
+  - text: 'Padron de unidades en archivo Excel que describa lo siguiente: número de serie, marca, modelo, tipo,
+      placas, capacidad.'
+    cites:
+    - source: retys
+  - text: Copia de tarjeta de circulación vigente de cada una de las unidades.
+    cites:
+    - source: retys
+  - text: Copia de licencia de conducir tipo ¨D¨ y/o ¨E¨ de cada uno de los choferes asignados a las unidades.
+    cites:
+    - source: retys
+  - text: Copia del dictamen de verificación de condiciones físico-mecánicas de la unidad, expedido por la Secretaría
+      de comunicaciones.
+    cites:
+    - source: retys
+  - text: Original para cotejo y copia de Póliza de seguro que ampare la responsabilidad civil y ecológica de cada
+      una de las unidades.
+    cites:
+    - source: retys
+  - text: Rutas en formato ¨kmz¨ y/o ¨Kml¨(se debería enviar el formato digital al correo electrónico movilidad@imos.gob.mx)
+    cites:
+    - source: retys
+  - text: Original y copia de comprobante de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable
+    - Presentar la documentación requerida
+  notes: Requisitos para permisionarios con autorización para la explotación del servicio de carga especializada
+    para materiales, residuos, remanentes y desechos peligrosos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso I, subinciso 1
+- source: ley2
+  pinpoint: Artículo 4
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 766: Anuencia para el traslado de sustancias peligrosas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/766
+    version_date: 09/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Anuencia para el Traslado de Sustancias Peligrosas. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

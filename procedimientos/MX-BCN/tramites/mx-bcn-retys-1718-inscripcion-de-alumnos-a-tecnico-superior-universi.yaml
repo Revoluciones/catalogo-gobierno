@@ -1,0 +1,144 @@
+id: mx-bcn-retys-1718-inscripcion-de-alumnos-a-tecnico-superior-universi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Alumnos a Técnico Superior Universitario
+summary: Inscribir a las y los alumnos egresados de nivel medio superior interesados en ingresar a estudiar en la
+  Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1718
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1718
+  homoclave: BC-UTT-006
+who_can:
+- Interesado
+when: Una vez que ha sido seleccionado para ingresar a estudiar en la Universidad Tecnológica de Tijuana
+result: Formato de Inscripción de Nuevo Ingreso
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Inscripción normal: $2,565.73 M.N. Inscripción por pronto pago: $2,330.89 M.N. Inscripción normal
+    para TSU en Gastronomía: $4,083.95 M.N. Inscripción pronto pago Gastronomía: $3,849.11 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Por el cuatrimestre al cual se inscribió
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Operativa de Servicios Escolares
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+- municipality: Ensenada
+  name: Unidad Académica Ensenada
+  address: 'Avenida de las Flores s/n Carretera 1 a La Bufadora #s/n, Maneadero, Ensenada, 22790'
+scenarios:
+- name: Aspirante de nuevo ingreso
+  requirements:
+  - text: Acta de nacimiento original
+    cites:
+    - source: retys
+  - text: Certificado de bachillerato original o constancia de terminación de estudios
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Copia del Número de Seguridad Social (NSS)
+    cites:
+    - source: retys
+  - text: Original y copia del recibo de pago realizado
+    cites:
+    - source: retys
+  - text: Llenar el formato de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10582
+  modes:
+  - name: Mixto
+    steps:
+    - 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+    - Dar clic en Inscripciones y seleccionar el tipo de trámite a realizar.
+    - Ingresar datos requeridos.
+    - Generar referencia de pago.
+    - Realizar el pago en línea con tarjeta de débito o en la Caja de Pagos en Edificio de Rectoría con tarjeta
+      de débito o de crédito.
+    - Presentarse en las oficinas de atención en la UTT, según el plantel al que desea pertenecer, para entrega
+      de documentación.
+    - Llenar formatos de inscripción de Nuevo Ingreso.
+  notes: Aspirante de nuevo ingreso que salio seleccionado para ingresar a la UTT
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar clic en Inscripciones y seleccionar el tipo de trámite a realizar.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresar datos requeridos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Generar referencia de pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar el pago en línea con tarjeta de débito o en la Caja de Pagos en Edificio de Rectoría con tarjeta
+    de débito o de crédito.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de atención en la UTT, según el plantel al que desea pertenecer, para entrega
+    de documentación.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Llenar formatos de inscripción de Nuevo Ingreso.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1718: Inscripción de Alumnos a Técnico Superior Universitario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1718
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Ingresos Propios de la Universidad Tecnológica de Tijuana.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,103 @@
+id: mx-bcn-tijuana-tj-sgm-0266-constancia-notorio-arraigo
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Programas y apoyos sociales
+title: Constancia Notorio Arraigo
+summary: Los solicitantes del registro constitutivo de una asociación religiosa deberán acreditar que la iglesia
+  o la agrupación religiosa ha realizado actividades religiosas en la República Mexicana por un mínimo de 5 años
+  y cuenta con notorio arraigo entre la población, además de haber establecido su domicilio en la República (LARCP
+  ART 7 FRACC.II)
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Asuntos Religiosos
+official_ids:
+  homoclave: TJ-SGM-0266
+who_can:
+- Interesado
+when: Registro ante Secretaría de Gobernación como Asociación Religiosa
+result: Constancia
+requirements:
+- text: INE del pastor o representante del grupo religioso
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Recibos de agua, luz o predial (actuales y de años anteriores)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Fotografías (actuales y anteriores)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: INE (5 testigos, vecinos al predio de la iglesia)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Título de propiedad del predio, contrato de arrendamiento y/o comodato
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de la ubicación del templo
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Aviso de apertura ante Secretaría de Gobernación
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Asuntos Religiosos
+  address: Palacio Municipal
+  phones: 6649737000 ext. 7351
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0266: Constancia Notorio Arraigo'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0266
+    version_date: '2026-10-14'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 8 Fracción I, Artículo 9 Fracción III, Artículo 21, Artículo 22 y Artículo 23 de la Ley de Asociaciones
+      Religiosas y Culto Público
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LARCP.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 27, Artículo 29, Artículo 30 y Artículo 33 del Reglamento de la Ley de Asociaciones Religiosas
+      y Culto Público
+    url: https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LARCP.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cubrir requisitos/Inspección'

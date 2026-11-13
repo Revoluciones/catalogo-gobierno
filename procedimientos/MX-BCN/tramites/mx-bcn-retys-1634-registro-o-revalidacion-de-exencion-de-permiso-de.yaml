@@ -1,0 +1,311 @@
+id: mx-bcn-retys-1634-registro-o-revalidacion-de-exencion-de-permiso-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro o Revalidación de Exención de Permiso de Descarga de Aguas Residuales para Comercios y Empresas
+  de Servicios
+summary: Solicitar la exención del trámite de permiso de descargas, debido a que no se generan aguas residuales
+  de procesos de producción de bienes o servicios.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1634
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1634
+  homoclave: BC-CESPT-041
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo se requiera registrar o revalidar la exención de permiso de descarga de aguas residuales para comercios
+  y empresas de servicios
+result: Contrato
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Por expedición: $1,810.69 pesos Por la revalidación anual: $982.80 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Registro Inicial - Personas Morales
+  requirements:
+  - text: Sección 1.- I. Original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales
+      (FRM-022), debidamente llenado y firmado por el propietario o el representante legal de la empresa
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12064
+  - text: Sección 1.- II. Copia certificada del Acta Constitutiva de la empresa.
+    cites:
+    - source: retys
+  - text: Sección 1.- III. Copia certificada del Poder Legal para actos de administración, vigente, que acredite
+      la personalidad del representante legal, en caso de NO ESTAR ESTABLECIDO en el Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: 'Sección 1.- IV. Copia de identificación oficial con fotografía, VIGENTE, del representante legal, del
+      responsable de la información y de la persona autorizada para recibir y oir notificaciones, puede ser UNO
+      de los siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Sección 1.- V. Copia de Constancia de Situación Fiscal de la empresa.
+    cites:
+    - source: retys
+  - text: Sección 1.- VI. Copia del Predial.
+    cites:
+    - source: retys
+  - text: Sección 1.- VII. Copia de croquis de ubicación de la empresa
+    cites:
+    - source: retys
+  - text: Sección 2.- Descripción general de su actividad. Descripción general de su actividad de la empresa, en
+      el caso que utilice agua deberá detallar el papel que desempeña el agua en el proceso, especificando claramente
+      si se generan aguas residuales.
+    cites:
+    - source: retys
+  - text: Sección 3.- Fotografias del interior de la empresa Fotografias a color de las áreas del interior de la
+      empresa, con el objetivo de sustentar su petición y demostrar que no genera descargas de aguas residuales
+      de proceso.
+    cites:
+    - source: retys
+  - text: Sección 4.- Documentales de no generación de descargas de aguas residules de proceso. Documentales de
+      no generación de descargas de aguas residuales de proceso (manifiestos de disposición de residios peligosos,
+      facturas los últimos 6 meses del lavado de ropa de cama, toallas y batas de waffle), mismas que pueden ser
+      enunciativas más no limitativas, que el promovente considere necesarias para sustentar su petición.
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente.
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de oficinas centrales de CESPT y presentar la carpeta con los requisitos.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad pone sello de revisado al
+      original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales (FRM-022).
+    - Acudir a la Coordinación de Servicios de Saneamiento para la elaboración e impresión de la ficha de pago.
+    - Acudir al área de cajas con la ficha de pago y realizar el pago de derechos correspondiente, la persona de
+      cajas le entregará un recibo de pago.
+    - Pasar al área de archivo, presentar el recibo de pago y entregar original y copia de la solicitud de Exención
+      de Permiso de Descarga de Aguas Residuales (FRM-022) y entregar la carpeta.
+    - La persona del Área de Archivo certifica de recibido original y copia de la Solicitud de Exención de Permiso
+      de Descarga de Aguas Residuales (FRM-022) y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Control de Calidad contactará a la persona solicitante para
+      que acuda a las oficinas y hacerle entrega de su Exención de Permiso de Descarga de Aguas Residuales.
+  notes: Presentar carpeta con los requisitos, clasificados en 4 secciones.
+- name: Registro Inicial - Personas Físicas
+  requirements:
+  - text: Sección 1.- I. Original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales
+      (FRM-022), debidamente llenado y firmado por el propietario o representante legal de la empresa.
+    cites:
+    - source: retys
+  - text: 'Sección 1.- II. Copia de Identificación Oficial con fotografía del propietario, del responsable de la
+      información y de la persona autorizada para recibir y oír notificaciones, puede ser UNA de las siguientes:
+      • Credencial del INE. • Pasaporte Mexicano. • Licencia de Conducir. • Matrícula Consular.'
+    cites:
+    - source: retys
+  - text: Sección 1.- III. Copia de Constancia de Situación Fiscal de la empresa.
+    cites:
+    - source: retys
+  - text: Sección 1.- IV. Copia del Predial.
+    cites:
+    - source: retys
+  - text: Sección 1.- V. Copia de croquis de ubicación de la empresa.
+    cites:
+    - source: retys
+  - text: Sección 2.- Descripción general de su actividad. Descripción general de su actividad de la empresa, en
+      el caso que utilice agua deberá detallar el papel que desempeña el agua en el proceso, especificando claramente
+      si se generan aguas residuales.
+    cites:
+    - source: retys
+  - text: Sección 3.- Fotografias del interior de la empresa Fotografias a color de las áreas del interior de la
+      empresa, con el objetivo de sustentar su petición y demostrar que no genera descargas de aguas residuales
+      de proceso.
+    cites:
+    - source: retys
+  - text: Sección 4. Documentales de no generación de descargas de aguas residules de proceso. Documentales de no
+      generación de descargas de aguas residuales de proceso (manifiestos de disposición de residios peligosos,
+      facturas los últimos 6 meses del lavado de ropa de cama, toallas y batas de waffle), mismas que pueden ser
+      enunciativas más no limitativas, que el promovente considere necesarias para sustentar su petición.
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de oficinas centrales de CESPT y presentar la carpeta con los requisitos.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad pone sello de revisado al
+      original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales (FRM-022).
+    - Acudir a la Coordinación de Servicios de Saneamiento para la elaboración e impresión de la ficha de pago.
+    - Acudir al área de cajas con la ficha de pago y realizar el pago de derechos correspondiente, la persona de
+      cajas le entregará un recibo de pago.
+    - Pasar al área de archivo, presentar el recibo de pago y entregar original y copia de la solicitud de Exención
+      de Permiso de Descarga de Aguas Residuales (FRM-022) y entregar la carpeta.
+    - La persona del Área de Archivo certifica de recibido original y copia de la Solicitud de Exención de Permiso
+      de Descarga de Aguas Residuales (FRM-022) y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Control de Calidad contactará a la persona solicitante para
+      que acuda a las oficinas y hacerle entrega de su Exención de Permiso de Descarga de Aguas Residuales.
+  notes: Presentar carpeta con los requisitos, clasificados en 4 secciones.
+- name: Registro de Revalidación
+  requirements:
+  - text: Original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales FRM-022 debidamente
+      llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12111
+  - text: Copia de Constancia de Situación Fiscal de la empresa
+    cites:
+    - source: retys
+  - text: Fotografías a color de las áreas del interior de la empresa
+    cites:
+    - source: retys
+  - text: Copia de documentales de no generación de descargas de aguas residuales de proceso (manifiestos de disposición
+      de residios peligosos, facturas los últimos 6 meses del lavado de ropa de cama, toallas y batas de waffle),
+      mismas que pueden ser enunciativas más no limitativas, que el promovente considere necesarias para sustentar
+      su petición.
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de oficinas centrales de CESPT y presentar la carpeta con los requisitos.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad pone sello de revisado al
+      original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales (FRM-022).
+    - Acudir a la Coordinación de Servicios de Saneamiento para la elaboración e impresión de la ficha de pago.
+    - Acudir al área de cajas con la ficha de pago y realizar el pago de derechos correspondiente, la persona de
+      cajas le entregará un recibo de pago.
+    - Pasar al área de archivo, presentar el recibo de pago y entregar original y copia de la solicitud de Exención
+      de Permiso de Descarga de Aguas Residuales (FRM-022) y entregar la carpeta.
+    - La persona del Área de Archivo certifica de recibido original y copia de la Solicitud de Exención de Permiso
+      de Descarga de Aguas Residuales (FRM-022) y le entrega al solicitante la copia.
+    - Posteriormente, la persona de la Coordinación de Control de Calidad contactará a la persona solicitante para
+      que acuda a las oficinas y hacerle entrega de su Exención de Permiso de Descarga de Aguas Residuales.
+  notes: Registro de Revalidación
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 94 y 109.
+- source: ley2
+  pinpoint: Artículos 1 y 2.
+- source: ley3
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+    izquierda de oficinas centrales de CESPT y presentar la carpeta con los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si
+    no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se
+    completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Control de Calidad pone sello de revisado
+    al original y copia de la Solicitud de Exención de Permiso de Descarga de Aguas Residuales (FRM-022).
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento para la elaboración e impresión de la ficha de pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir al área de cajas con la ficha de pago y realizar el pago de derechos correspondiente, la persona
+    de cajas le entregará un recibo de pago.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Pasar al área de archivo, presentar el recibo de pago y entregar original y copia de la solicitud de Exención
+    de Permiso de Descarga de Aguas Residuales (FRM-022) y entregar la carpeta.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del Área de Archivo certifica de recibido original y copia de la Solicitud de Exención de Permiso
+    de Descarga de Aguas Residuales (FRM-022) y le entrega al solicitante la copia.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Control de Calidad contactará a la persona solicitante
+    para que acuda a las oficinas y hacerle entrega de su Exención de Permiso de Descarga de Aguas Residuales.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1634: Registro o Revalidación de Exención de Permiso de Descarga de Aguas Residuales para
+      Comercios y Empresas de Servicios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1634
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Que Reglamenta El Servicio De Agua Potable En El Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

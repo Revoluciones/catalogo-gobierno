@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1295-programa-estatal-de-reconocimiento-garantia-baja-c
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Estatal de Reconocimiento Garantía Baja California en Pescados y Mariscos
+summary: Reconocer a las empresas que vendan productos del mar, de procedencia pesquera o acuícola de origen bajacaliforniano,
+  promocionando el reconocimiento garantía Baja California en pescados y mariscos a través de las redes sociales
+  de la SEPESCA.
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1295
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1295
+  homoclave: BC-SEPESCA-002
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando lo requiera el ciudadano
+result: Reconocimiento de garantía Baja California
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 5 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Ensenada
+  name: Departamento de Promoción y Comercialización Pesquera y Acuícola
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Ciudadanos en General
+  requirements:
+  - text: Formato de Solicitud
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/2824
+  - text: Identificación Oficial
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal
+    cites:
+    - source: retys
+  - text: Anexo 1
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/9631
+  modes:
+  - name: Mixto
+    steps:
+    - Enviar los documentos que integran el expediente vía correo electrónico o presencial
+    - Dictamen de respuesta a la solicitud
+  notes: Presencial
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 45
+- source: ley2
+  pinpoint: Artículo 8 Fracción I, IV, X, XVI, XVII y 37
+- source: ley3
+  pinpoint: Artículos 5 y 8 Fracción III, IV y XII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Enviar los documentos que integran el expediente vía correo electrónico o presencial
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dictamen de respuesta a la solicitud
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1295: Programa Estatal de Reconocimiento Garantía Baja California en Pescados y Mariscos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1295
+    version_date: 04/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Pesca y Acuacultura Sustentable para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria de Pesca y Acuacultura del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Estatal de Reconocimiento Garantía Baja California en Pescados y Mariscos.. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

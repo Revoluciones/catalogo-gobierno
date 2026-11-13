@@ -1,0 +1,99 @@
+id: mx-bcn-retys-1692-acceso-a-las-actividades-del-festival-de-octubre
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a las actividades del Festival de Octubre
+summary: Disfrute de eventos artísticos y culturales presentados por diferentes grupos locales, regionales, nacionales
+  e internacionales. Desarrollando la convivencia armónica, promoción de valores, recreación y educación para la
+  vida.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1692
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1692
+  homoclave: BC-SC-004
+who_can:
+- Interesado
+when: A partir del mes de septiembre
+result: Convivencia armónica, promoción de valores, recreación y educación para la vida
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Tijuana
+  name: Dirección Artes Escénicas y Festivales
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Consulte la agenda de actividades y elija la de su interés
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en el botón de Iniciar trámite para consultar la agenda de eventos
+    - Elija el evento de su interés
+    - Asista al evento con una anticipación de 15 minutos (por ser gratuito)
+    - Acceda al concierto, foro, presentación, obra de teatro u otro del festival de octubre
+  notes: Toda persona que desee asistir a eventos artisticos y culturales
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 25, fracción VIII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en el botón de Iniciar trámite para consultar la agenda de eventos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elija el evento de su interés
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Asista al evento con una anticipación de 15 minutos (por ser gratuito)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acceda al concierto, foro, presentación, obra de teatro u otro del festival de octubre
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1692: Acceso a las actividades del Festival de Octubre'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1692
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Acceso a las Actividades del Festival de Octubre. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

@@ -1,0 +1,152 @@
+id: mx-bcn-retys-668-supervision-de-obra
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Supervisión de obra
+summary: Supervisar que las obras de agua potable, alcantarillada sanitario y pluvial, que realizan los desarrolladores
+  en los fraccionamientos de nueva creación, se hagan conforme a los proyectos autorizados previamente y que cumplan
+  con lo establecido en las normas de construcción vigentes.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 668
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/668
+  homoclave: BC-CESPM-028
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera el servicio
+result: Factura
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo por revisión de obra en predios hasta de 5,000 M2 de superficies $21,418.12,mas
+    por cada m2 de superficie adicional por red $ 0.04. El costo del servicio variara durante el ejerció 2026 de
+    acuerdo a la Actualización por la variación que tenga el Índice Nacional de Precios y Cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Años'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Sinaloa #1399, Vallarta, Mexicali, 21270'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Oficio de inicio de las obras.
+    cites:
+    - source: retys
+  - text: Presentar un programa de ejecución de las obras (los cambios al programa autorizado serán solo por escrito
+      y previos a la ejecución de las obras).
+    cites:
+    - source: retys
+  - text: Proyecto del fraccionamiento previamente autorizado por la subdirección técnica.
+    cites:
+    - source: retys
+  - text: Presentar el acuerdo de fraccionamientos
+    cites:
+    - source: retys
+  - text: Recibo del pago del costo de la supervisión
+    cites:
+    - source: retys
+  - text: La cesión de los derechos de riego al organismo.
+    cites:
+    - source: retys
+  - text: Entrega de los planos de obra terminada (máximo 2 revisiones).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar la asignación del supervisor vía oficio.
+    - Presentar vía oficio el inicio de los trabajos.
+    - Cumplir con las indicaciones de parte de la supervisión en el transcurso de la obra.
+    - Sesión de los derechos de riego al organismo
+    - Cumplir con los pagos de supervisión.
+    - Entregar planos de obra terminada.
+    - Firmar acta de entrega-recepción
+    - Presentar documentación correspondiente en la subdirección técnica.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 9 INCICO G PUNTO 4
+- source: ley2
+  pinpoint: 41 FRACC. IX
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar la asignación del supervisor vía oficio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar vía oficio el inicio de los trabajos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cumplir con las indicaciones de parte de la supervisión en el transcurso de la obra.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Sesión de los derechos de riego al organismo
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cumplir con los pagos de supervisión.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Entregar planos de obra terminada.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Firmar acta de entrega-recepción
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Presentar documentación correspondiente en la subdirección técnica.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 668: Supervisión de obra'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/668
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: REGLAMENTO INTERNIO
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Supervisión de fraccionamientos. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

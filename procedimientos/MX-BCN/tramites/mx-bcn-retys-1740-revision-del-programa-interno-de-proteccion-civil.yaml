@@ -1,0 +1,256 @@
+id: mx-bcn-retys-1740-revision-del-programa-interno-de-proteccion-civil
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revisión del Programa Interno de Protección Civil
+summary: Verificar que las dependencias, entidades, instituciones y organismos del sector público, privado o social
+  cuenten con un instrumento de planeación y operación para mitigar los riesgos identificados y definir acciones
+  preventivas y de respuesta para estar en condiciones de atender la eventualidad de alguna emergencia o desastre.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 1740
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1740
+  homoclave: BC-SGG-022
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Cuando se cuente con un inmueble en Baja California y que conforme a la legislación estatal en la materia
+  tenga que presentarlo en el Estado.
+result: Oficio de aprobación / aprobación condicionada / devolución / revisión de inmueble
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo depende del tipo de revisión.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 Año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Estatal de Protección Civil
+  address: 'Panfilo Natera #6400,  Francisco Villa, Tijuana, 22615'
+scenarios:
+- name: Propietario/Representante Legal
+  requirements:
+  - text: Solicitud por escrito
+    cites:
+    - source: retys
+  - text: Copia de recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: 'Versión física y digital en USB del PIPC, elaborado conforme a la Guía de Elaboración y Actualización
+      de Programas Internos de Protección Civil. Incluyen:'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11907
+  - text: '--- Acta constitutiva de la UIPC.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen de uso de suelo, emitido por el Municipio correspondiente.'
+    cites:
+    - source: retys
+  - text: '--- Certificación de las medidas de seguridad contra incendios y siniestros, emitido por la Dirección
+      de Bomberos del Municipio correspondiente.'
+    cites:
+    - source: retys
+  - text: '--- Evaluación estructural, expedida por un ingeniero o arquitecto registrado en el Municipio correspondiente.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen/ Opinión técnica de instalación eléctrica, expedido por una unidad verificadora registrada
+      ante la Secretaría de Energía.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen/ opinión técnica de instalación de gas (si aplica), expedido por una unidad verificadora
+      registrada ante la Secretaría de Energía.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen de recipientes sujetos a presión (si aplica), avalado por la Secretaría del Trabajo y Previsión
+      Social.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+    - Entregar carpeta con el contenido del Programa Interno conforme a la Guía y demás requisitos establecidos.
+    - Realizar pago de derechos.
+    - Solicita respuesta en los siguientes 10 días hábiles.
+  notes: Verificar que las dependencias, entidades, instituciones y organismos del sector público, privado o social
+    cuenten con un instrumento de planeación y operación para mitigar los riesgos identificados y definir acciones
+    preventivas y de respuesta para estar en condiciones de atender la eventualidad de alguna emergencia o desastre.
+- name: Casas Hogar
+  requirements:
+  - text: Llenar solicitud
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  - text: Versión física y digital en USB del PIPC, elaborado conforme a la Guía de Elaboración y Actualización
+      de Programas Internos de Protección Civil
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13594
+  modes:
+  - name: En línea
+    steps:
+    - Clic en el botón "iniciar tramite"
+    - Llenar formulario
+    - Cargar requisitos en formato PDF
+    - Personal de Protección civil revisará los requisitos y hará saber su respuesta a través del correo
+    - Una vez aprobado el PIPC, acudir a las oficinas de Protección Civil con el ejemplar físico y digital en USB
+      del documento previamente aprobado, debidamente firmado con firmas autógrafas.
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+    - Entregar carpeta con el contenido del Programa Interno conforme a la Guía y demás requisitos establecidos.
+    - Entregar constancia de bienestar para la excepción de pago, en lo contario realizar pago de derechos
+    - Recoger respuesta en los siguientes 10 días hábiles.
+  notes: Verificar que las dependencias, entidades, instituciones y organismos del sector público, privado o social
+    cuenten con un instrumento de planeación y operación para mitigar los riesgos identificados y definir acciones
+    preventivas y de respuesta para estar en condiciones de atender la eventualidad de alguna emergencia o desastre.
+- name: Escuelas/Empresas
+  requirements:
+  - text: Solicitud por escrito
+    cites:
+    - source: retys
+  - text: Copia de recibo de pago de derechos
+    cites:
+    - source: retys
+  - text: 'Versión física y digital en USB del PIPC, elaborado conforme a la Guía de Elaboración y Actualización
+      de Programas Internos de Protección Civil. Incluyen:'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13605
+  - text: '--- Acta constitutiva de la UIPC.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen de uso de suelo, emitido por el Municipio correspondiente.'
+    cites:
+    - source: retys
+  - text: '--- Certificación de las medidas de seguridad contra incendios y siniestros, emitido por la Dirección
+      de Bomberos del municipio correspondiente'
+    cites:
+    - source: retys
+  - text: '--- Evaluación estructural, expedida por un ingeniero o arquitecto registrado ante el municipio correspondiente.'
+    cites:
+    - source: retys
+  - text: '--- Dictamen/opinión técnica de instalación eléctrica, expedido por una Unidad Verificadora registrada
+      ante la Secretaría de Energía'
+    cites:
+    - source: retys
+  - text: '--- Dictamen/opinión técnica de instalación de gas (si aplica), expedido por una Unidad Verificadora
+      registrada ante la Secretaría de Energía'
+    cites:
+    - source: retys
+  - text: '--- Dictamen de recipientes sujetos a presión (si aplica), avalado por la Secretaría de Trabajo y Previsión
+      Social'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+    - Entregar carpeta con el contenido del Programa Interno conforme a la Guía y demás requisitos establecidos.
+    - Realizar pago de derechos.
+    - Recoger respuesta en los siguientes 10 días hábiles.
+  notes: Verificar que las dependencias, entidades, instituciones y organismos del sector público, privado o social
+    cuenten con un instrumento de planeación y operación para mitigar los riesgos identificados y definir acciones
+    preventivas y de respuesta para estar en condiciones de atender la eventualidad de alguna emergencia o desastre.
+legal_basis:
+- source: ley1
+  pinpoint: '-'
+- source: ley2
+  pinpoint: Artículo 31
+- source: ley3
+  pinpoint: Artículo 18, fracción VI, Incisos A, B y C
+- source: ley4
+  pinpoint: Artículo 67
+- source: ley5
+  pinpoint: Artículo 44
+- source: ley6
+  pinpoint: Artículo 56 y 57
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar carpeta con el contenido del Programa Interno conforme a la Guía y demás requisitos establecidos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar pago de derechos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Solicita respuesta en los siguientes 10 días hábiles.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1740: Revisión del Programa Interno de Protección Civil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1740
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Guía de Elaboración de Programas Internos de Protección Civil la cual fue publicada en el Periódico Oficial
+      el 27 de julio del 2020.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos para el Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno POE 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,128 @@
+id: mx-denuncia-contra-un-servidor-publico
+country: MX
+jurisdiction: MX
+level: federal
+branch: ejecutivo
+kind: interno
+category: quejas
+title: Qué pasa cuando denuncias a un servidor público por una falta administrativa
+summary: >-
+  Cualquier persona puede denunciar, incluso sin dar su nombre. Una autoridad investiga, decide si hubo
+  falta y si es grave o no grave, y otra autoridad distinta lleva el juicio. Las faltas no graves las
+  resuelve el órgano de control de la dependencia; las graves, un tribunal. Esta ley general aplica igual
+  en la federación, los estados y los municipios.
+authority:
+  name: Órgano interno de control de la dependencia, o la Secretaría anticorrupción que corresponda
+other_authorities:
+  - name: Tribunal Federal de Justicia Administrativa o el tribunal de justicia administrativa del estado (faltas graves)
+  - name: Auditoría Superior de la Federación o la del estado (cuando la falta sale de una auditoría)
+who_can:
+  - Cualquier persona, con nombre o de forma anónima
+legal_basis:
+  - source: lgra
+    pinpoint: arts. 10, 74, 91 a 104, 112, 208 y 209
+deadlines:
+  - what: otro
+    text: >-
+      La autoridad puede sancionar una falta no grave hasta 3 años después de cometida; una grave, hasta 7
+      años.
+    cites:
+      - source: lgra
+        pinpoint: art. 74
+steps:
+  - n: '1'
+    actor: Tú (quien denuncia)
+    action: >-
+      Presentas la denuncia con los datos o pistas que muestren la posible falta. Puedes hacerlo en línea si la
+      autoridad lo permite, y puedes no dar tu nombre. Si lo das, la autoridad debe mantenerlo confidencial.
+    cites:
+      - source: lgra
+        pinpoint: arts. 91 y 93
+  - n: '2'
+    actor: Autoridad investigadora (Secretaría anticorrupción u órgano interno de control)
+    action: >-
+      Investiga. Puede pedir información a las dependencias y a las personas investigadas, que tienen de 5 a
+      15 días hábiles para entregarla. La investigación también puede empezar por su cuenta o por una
+      auditoría.
+    cites:
+      - source: lgra
+        pinpoint: arts. 91, 94 a 96
+  - n: '3'
+    actor: Autoridad investigadora
+    action: >-
+      Analiza lo que encontró y decide si hubo falta y si es grave o no grave (calificación). Si no encuentra
+      pruebas suficientes, cierra el caso y archiva el expediente; si eres identificable, te avisa en los 10
+      días hábiles siguientes. El caso puede reabrirse con pruebas nuevas.
+    cites:
+      - source: lgra
+        pinpoint: art. 100
+    next:
+      - to: '4'
+        when: Encontró una falta
+      - to: '3b'
+        when: La calificó como no grave o decidió no sancionar, y no estás de acuerdo
+      - to: fin
+        when: La cerró por falta de pruebas
+  - n: '3b'
+    actor: Tú (quien denuncia)
+    action: >-
+      Puedes impugnar la calificación de no grave, o la decisión de no sancionar, con un escrito llamado
+      recurso de inconformidad. Lo presentas ante la misma autoridad investigadora, que lo manda al tribunal
+      de justicia administrativa. Mientras se resuelve, el caso no avanza.
+    cites:
+      - source: lgra
+        pinpoint: arts. 101 último párrafo, 102 y 104
+  - n: '4'
+    actor: Autoridad investigadora
+    action: >-
+      Escribe un informe con los hechos, la falta y quién la cometió (Informe de Presunta Responsabilidad
+      Administrativa) y lo entrega a otra área, la autoridad substanciadora, que lleva el procedimiento.
+    cites:
+      - source: lgra
+        pinpoint: arts. 10 y 100
+  - n: '5'
+    actor: Autoridad substanciadora
+    action: >-
+      En 3 días decide si admite el informe. Si lo admite, cita a la persona acusada a una primera audiencia,
+      de 10 a 15 días hábiles después, y le explica su derecho a defenderse.
+    cites:
+      - source: lgra
+        pinpoint: arts. 112 y 208, fracciones I a III
+    next:
+      - to: '6a'
+        when: Falta no grave
+      - to: '6b'
+        when: Falta grave
+  - n: '6a'
+    actor: Órgano interno de control o Secretaría
+    action: Resuelve y, si corresponde, sanciona las faltas no graves.
+    cites:
+      - source: lgra
+        pinpoint: arts. 10 y 208
+  - n: '6b'
+    actor: Tribunal de justicia administrativa
+    action: >-
+      Tras la primera audiencia, el expediente pasa al tribunal en 3 días hábiles. El tribunal revisa que la
+      falta sí sea grave y resuelve.
+    cites:
+      - source: lgra
+        pinpoint: art. 209, fracciones I y II
+related:
+  - mx-bcn-retys-1377-quejas-y-denuncias-ciudadanas
+glossary: [servidor-publico, falta-administrativa, organo-interno-de-control, calificacion, recurso-de-inconformidad, dias-habiles]
+sources:
+  lgra:
+    type: ley
+    official: true
+    title: Ley General de Responsabilidades Administrativas
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf
+    version_date: Última reforma DOF 15-12-2025
+    accessed: '2026-11-06'
+status: borrador
+last_checked: '2026-11-06'
+checked_by: Claude (Compartido)
+notes: >-
+  En Baja California la denuncia se presenta ante la Secretaría Anticorrupción y Buen Gobierno (ficha RETyS 1377,
+  importada). Pendiente: nota de práctica con fuente oficial (cuántas denuncias terminan en sanción), por ejemplo
+  con una solicitud de transparencia a esa Secretaría.

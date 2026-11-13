@@ -1,0 +1,146 @@
+id: mx-bcn-retys-1146-certificado-de-situacion-laboral
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Situación Laboral
+summary: Entregar a las personas que se incorporan a prestar sus servicios a la Coordinación de Gabinete, a las
+  dependencias de la administración pública centralizada o a las entidades paraestatales, un documento de carácter
+  oficial que demuestre si actualmente presta o prestó sus servicios en alguna de las mencionadas.
+authority:
+  name: Oficialía Mayor de Gobierno
+official_ids:
+  retys_id: 1146
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1146
+  homoclave: BC-OM-011
+who_can:
+- Interesado
+when: Cuando la persona tenga interés por ingresar a la administración estatal.
+result: Certificado de situación laboral.
+cost:
+  type: variable
+  amount_mxn: 128.72
+  text: 'COSTO VARIABLE: $128.72 Pesos M.N. de conformidad artículo 18, fracción I, Inciso F de la Ley de Ingresos
+    del Estado de Baja California para el Ejercicio Fiscal 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 MESES A PARTIR DE SU FECHA DE EXPEDICIÓN
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento De Administración De Personal (Mexicali)
+  address: 'Calzada Independencia #994, Centro Cívico , Mexicali, 21000'
+- municipality: Tijuana
+  name: Departamento De Administración De Personal (Tijuana)
+  address: 'Paseo Del Parque #18025, Rio Tijuana 3era etapa, Tijuana, Tijuana, 2654'
+- municipality: Ensenada
+  name: Departamento De Administración De Personal (Ensenada)
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Departamento De Administración De Personal (Tecate)
+  address: 'Calle Mision Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Departamento De Administración De Personal (Playas De Rosarito)
+  address: 'Calle Jose Haroz Aguilar #2004, Villa Turística , Playas de Rosarito, 22710'
+scenarios:
+- name: Persona interesada
+  requirements:
+  - text: RFC con homoclave
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Correo electrónico
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Acceder a la liga (trámite en internet)
+    - Habilitar la opción de permitir ventas emergentes (pop ups)
+    - Llenar los campos de la solicitud
+    - Realizar pago en línea con tarjeta bancaria o por referencia bancaria
+    - Recibir certificado en línea
+  - name: Presencial
+    steps:
+    - Realizar el pago correspondiente en la oficina de recaudación de rentas del estado
+    - Con el comprobante de pago acudir al área de credencialización para solicitar el certificado
+    - Proporcionar RFC con homoclave para búsqueda en el sistema correspondiente
+    - Proporcionar el nombre de la institución que requiere el certificado
+    - Recibir el certificado
+  notes: Persona interesada
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 18
+- source: ley2
+  pinpoint: Artículos 7 y 8
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acceder a la liga (trámite en internet)
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Habilitar la opción de permitir ventas emergentes (pop ups)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar los campos de la solicitud
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar pago en línea con tarjeta bancaria o por referencia bancaria
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recibir certificado en línea
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1146: Certificado de Situación Laboral'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1146
+    version_date: 13/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de compatibilidad de funciones, empleos y comisiones para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Certificado de Situación o Vínculo Laboral de Personal que Laboró o Labora para el Poder
+  Ejecutivo Estatal. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las
+  demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,139 @@
+id: mx-bcn-retys-407-indemnizacion-global
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Indemnización Global
+summary: Recepción de trámites de la prestación de indemnización global.
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 407
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/407
+  homoclave: BC-ISSSTECALI-010
+who_can:
+- Interesado
+when: Cuando el trabajador sea dado de baja definitivamente por renuncia o rescisión.
+result: Indemnización equivalente al monto de cuotas contribuidas, conforme a la Ley del ISSSTECALI.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 6 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: EL TRÁMITE PRESCRIBE TRES AÑOS A PARTIR DE LA FECHA DE SEPARACIÓN LABORAL O DEFUNCIÓN DEL ASEGURADO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Otras Prestaciones
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Administración
+  address: 'Blvd. Díaz Ordaz  #12649, El Paraíso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Afiliaciones y Prestaciones Económicas
+  address: 'Calle de Las Rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+- municipality: Tecate
+  name: Administración
+  address: 'Carretera Federal Número 2 Tecate-Tijuana y Boulevard Los Encinos #S/N, Residencial El Palomino, Tecate,
+    21440'
+- municipality: Playas de Rosarito
+  name: Administración
+  address: 'Avenida Caleta #708, Fraccionamiento Angeles, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Administración Clínica San Quintín
+  address: 'Calle Josefa Ortíz de Domínguez #320, Colonia Lazáro Cárdenas, San Quintín, 22930'
+- municipality: San Felipe
+  name: Administración
+  address: 'Avenida Mar Caribe #615, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Indemnización global
+  requirements:
+  - text: Solicitud llena, proporcionada por el instituto.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10976
+  - text: Identificación oficial del trabajador(a) (original y copia).
+    cites:
+    - source: retys
+  - text: Hoja de servicio o constancia de baja expedida por el organismo patrón (deberá contar con sello del organismo
+      patrón, firma, fecha y motivo de baja).
+    cites:
+    - source: retys
+  - text: CURP del trabajador(a).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar el formato de solicitud.
+    - Solicitar en ventanilla el servicio.
+    - El servidor público revisa los documentos recibidos y entrega al ciudadano una copia sellada del trámite
+    - El Servidor Publico captura el trámite en el sistema, realiza el seguimiento a la solicitud y notifica al
+      beneficiario la fecha de pago. Pago sujeto a flujo y disponibilidad de presupuesto
+    - Acudir a cobrar el pago.
+  notes: Asegurado que haya cotizado al fondo de pensiones de issstecali y actualmente este dado de baja
+legal_basis:
+- source: ley1
+  pinpoint: 1,4, 87, 88 Y 89.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar el formato de solicitud.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar en ventanilla el servicio.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público revisa los documentos recibidos y entrega al ciudadano una copia sellada del trámite
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Servidor Publico captura el trámite en el sistema, realiza el seguimiento a la solicitud y notifica
+    al beneficiario la fecha de pago. Pago sujeto a flujo y disponibilidad de presupuesto
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir a cobrar el pago.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 407: Indemnización Global'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/407
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

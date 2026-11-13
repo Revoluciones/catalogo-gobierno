@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1703-inscripcion-a-la-bienal-internacional-de-piano
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción a la Bienal Internacional de Piano
+summary: Las personas pianistas concursen por un premio en efectivo, constancia de participación, placa de reconocimiento
+  a los primeros tres lugares de cada categoría, comentarios por escrito de los jurados.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1703
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1703
+  homoclave: BC-SC-014
+who_can:
+- Representante Legal
+- Interesado
+when: Cada dos años (2025)
+result: Premio y reconocimiento al primer lugar de cada categoría.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección Artes Escénicas y Festivales
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Personas pianistas
+  requirements:
+  - text: Solicitud de inscripción
+    cites:
+    - source: retys
+  - text: Partituras a utilizar
+    cites:
+    - source: retys
+  - text: identificación oficial con fotografía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Atiende los requerimientos de la convocatoria
+    - Llene la ficha de inscripción (disponible en el apartado de documento informativo)
+    - Adjunta copia de acta de nacimiento o identificación oficial a la ficha de inscripción. (Lo que mencione la
+      convocatoria)
+    - Adjunta copia de partitura a ficha de inscripción
+    - Se realiza el evento
+    - Jurado dictamina y entrega al Instituto de Cultura lista de ganadores
+    - Se anuncia a los ganadores
+  notes: Músicos emergentes, trayectoria, entre otros de acuerdo a la convocatoria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 25, fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Atiende los requerimientos de la convocatoria
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llene la ficha de inscripción (disponible en el apartado de documento informativo)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Adjunta copia de acta de nacimiento o identificación oficial a la ficha de inscripción. (Lo que mencione
+    la convocatoria)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Adjunta copia de partitura a ficha de inscripción
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se realiza el evento
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Jurado dictamina y entrega al Instituto de Cultura lista de ganadores
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se anuncia a los ganadores
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1703: Inscripción a la Bienal Internacional de Piano'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1703
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

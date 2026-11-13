@@ -1,0 +1,143 @@
+id: mx-bcn-retys-462-servicio-de-urgencias-psiquiatricas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Urgencias Psiquiátricas
+summary: Brindar atención médica psiquiátrica con carácter de urgencia a personas que presenten alguna condición
+  de salud mental.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 462
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/462
+  homoclave: BC-IPEBC-010
+who_can:
+- Interesado
+when: Cuando se requiera atención médica psiquiátrica con carácter de urgencia.
+result: Atención médica inmediata.
+cost:
+  type: fijo
+  amount_mxn: 345.0
+  text: 'COSTO: $345.00 pesos por consulta'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 40 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Médica
+  address: 'Onceava #1753, Mexicali , Mexicali, 21396'
+scenarios:
+- name: Derechohabiente IMSS, ISSSTE, ISSSTECALI, ISESALUD
+  requirements:
+  - text: Original y copia de Hoja de derivación del Centro de Salud u Hospital General (Requisito indispensable)
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Identificación Oficial (INE, Pasaporte Mexicano, Licencia de Conducir, Cartilla
+      Militar)
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Acta de Nacimiento.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: 2 copias de Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude al área de urgencias para solicitar valoración médica con carácter de urgencia y/o diagnostico.
+    - Toma de signos vitales y valoración médica psicológica
+    - Ingreso o programación de consultas
+  notes: Todos aquellos derechohabiente IMSS, ISSSTE, ISSSTECALI, ISESALUD
+- name: Público en General
+  requirements:
+  - text: Original y copia de Identificación Oficial (INE, Pasaporte Mexicano, Licencia de Conducir, Cartilla Militar)
+    cites:
+    - source: retys
+  - text: 2 copias de Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Acta de Nacimiento.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: Recibo de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude al área de urgencias para solicitar valoración médica con carácter de urgencia y/o diagnostico.
+    - Toma de signos vitales y valoración médica psicológica
+    - Ingreso o programación de consultas
+  notes: Público en General
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 2 y 4
+- source: ley2
+  pinpoint: Artículo 4, fracción IV, 29 y 30
+- source: ley3
+  pinpoint: Artículo 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acude al área de urgencias para solicitar valoración médica con carácter de urgencia y/o diagnostico.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Toma de signos vitales y valoración médica psicológica
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingreso o programación de consultas
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 462: Servicio de Urgencias Psiquiátricas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/462
+    version_date: 04/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Consulta Psiquiátrica de Urgencia. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

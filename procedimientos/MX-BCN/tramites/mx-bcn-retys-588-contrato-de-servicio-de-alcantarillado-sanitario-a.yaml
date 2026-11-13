@@ -1,0 +1,224 @@
+id: mx-bcn-retys-588-contrato-de-servicio-de-alcantarillado-sanitario-a
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de servicio de alcantarillado sanitario a usuarios no domésticos (descarga domiciliaria)
+summary: Proporcionar el servicio de alcantarillado sanitario a los usuarios no domésticos
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 588
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/588
+  homoclave: BC-CESPM-010
+who_can:
+- Representante Legal
+when: Cuando requieres el servicio
+result: Contrato
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Según el tipo de instalación'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Solicitud de servicio
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11114
+  - text: Escrituras del predio o certificado de inscripción ante el registro público de la propiedad y del comercio,
+      expedido por el gobierno del estado, no mayor a seis meses de antigüedad.
+    cites:
+    - source: retys
+  - text: Deslinde catastral expedido por el ayuntamiento.
+    cites:
+    - source: retys
+  - text: Nomenclatura oficial del predio expedida por el ayuntamiento.
+    cites:
+    - source: retys
+  - text: En caso de vialidad con pavimento o concreto, presentar permiso expedido por el ayuntamiento para romperlo.
+    cites:
+    - source: retys
+  - text: Dependiendo del giro mercantil o industrial para cuyo funcionamiento se requiera licencia oficial, deberá
+      exhibirse ésta o una constancia de la oficina facultada para expedirla de que no hay inconveniente en que
+      se proporcione el servicio de agua potable.
+    cites:
+    - source: retys
+  - text: Necesidad de abasto del servicio de agua potable del comercio o empresa solicitante en m3 por mes.
+    cites:
+    - source: retys
+  - text: Deberán garantizar por medio de depósito y antes de la instalación de la toma de agua, el importe del
+      aparato medidor y de las cuotas por servicio de agua correspondientes a tres meses, para cuyo efecto se aplicará
+      la tarifa que establece la ley de ingresos del estado vigente.
+    cites:
+    - source: retys
+  - text: En caso de solicitar el servicio una persona distinta al propietario, deberá exhibir carta poder para
+      actos de dominio notariada o acta constitutiva.
+    cites:
+    - source: retys
+  - text: 'Presentar una identificación oficial: INE, licencia de conducir, matricula consular, cédula profesional
+      o pasaporte mexicano (vigentes).'
+    cites:
+    - source: retys
+  - text: copias de los requisitos y original para cotejar.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente.
+    - Presentar su solicitud de servicios con las copias de los requisitos y original para cotejar.
+    - Recibir el presupuesto.
+    - Cubrir el total o convenir el importe de su presupuesto.
+    - Realizar su contrato de servicio de alcantarillado sanitario.
+    - Recibir su orden de instalación.
+  notes: Acreditar la propiedad
+- name: Posesionario
+  requirements:
+  - text: Solicitud de servicio
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11115
+  - text: Posesión expedida por el comisario ejidal o residencia expedida por el delegado municipal o concesión
+      expedida ante conagua, la secretaria de reforma agraria o el registro agrario nacional.
+    cites:
+    - source: retys
+  - text: Croquis de localización
+    cites:
+    - source: retys
+  - text: En caso de vialidad con pavimento o concreto, presentar permiso expedido por el ayuntamiento para romperlo.
+    cites:
+    - source: retys
+  - text: Dependiendo del giro mercantil o industrial para cuyo funcionamiento se requiera licencia oficial, deberá
+      exhibirse ésta o una constancia de la oficina facultada para expedirla de que no hay inconveniente en que
+      se proporcione el servicio de agua.
+    cites:
+    - source: retys
+  - text: Necesidad de abasto del servicio de agua potable del comercio o empresa solicitante en m3 por mes.
+    cites:
+    - source: retys
+  - text: Deberán garantizar por medio de depósito y antes de la instalación de la toma de agua, el importe del
+      aparato medidor y de las cuotas por servicio de agua correspondientes a tres meses, para cuyo efecto se aplicará
+      la tarifa que establece la ley de ingresos del estado.
+    cites:
+    - source: retys
+  - text: 'Presentar una identificación oficial: credencial federal electoral, licencia de conducir, matricula consular,
+      cédula profesional o pasaporte mexicano (vigentes).'
+    cites:
+    - source: retys
+  - text: Cubrir el total del costo del servicio o pagar mínimo el 50% como anticipo, para acceder a convenir el
+      resto.
+    cites:
+    - source: retys
+  - text: Copias de los requisitos y original para cotejar.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente.
+    - Presentar su solicitud de servicios con las copias de los requisitos y originales para cotejar.
+    - Recibir el presupuesto.
+    - Cubrir el total o convenir el importe de su presupuesto.
+    - Realizar su contrato de servicio de alcantarillado sanitario.
+    - Recibir su orden de instalación.
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: 1, 2, 20, 21 Y 22
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención a usuarios de la zona comercial correspondiente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar su solicitud de servicios con las copias de los requisitos y original para cotejar.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir el presupuesto.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Cubrir el total o convenir el importe de su presupuesto.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar su contrato de servicio de alcantarillado sanitario.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recibir su orden de instalación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 588: Contrato de servicio de alcantarillado sanitario a usuarios no domésticos (descarga
+      domiciliaria)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/588
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE LAS COMISIONES ESTATALES DE SERVICIOS PÚBLICOS DEL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

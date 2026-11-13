@@ -1,0 +1,398 @@
+id: mx-bcn-retys-1591-subsidios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Subsidios
+summary: Exención de parte del pago de agua para personas mayores de 60 años de escasos recursos; personas viudas
+  mayores de 50 años en situación de pobreza, personas discapacitadas, jubiladas y/o pensionadas que no obtengan
+  ingresos mayores a 5 veces la unidad de medida y actualización (UMAS).
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1591
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1591
+  homoclave: BC-CESPT-013
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera de facilidades para pagar su cuenta corriente de agua.
+result: SUBSIDIO
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP Otay Delegación
+  address: 'Calzada Tecnológico #S/N, Fracc. Altabrisa, dentro de la Deleg. Mesa de Otay, Tijuana, 22370'
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Villa Fontana
+  address: 'Av. Aranjuez #S/N, Fracc. Villa Fontana, dentro de la Delegación Villa Fontana, Tijuana, 22205'
+- municipality: Tijuana
+  name: CAP Otay Centenario
+  address: 'Carretera Aeropuerto #1900 Loc 1, Centro Com. Otay, Fracc. Otay Nueva Tijuana, Tijuana, 22425'
+- municipality: Tijuana
+  name: CAP Otay San Miguel
+  address: 'Av. López Portillo #1460, Fracc. Otay Nueva Tijuana, Tijuana, 22435'
+- municipality: Tijuana
+  name: CAP Galerías Revolución
+  address: 'Av. Revolución #868 Loc 9, Centro Com. Galerías Revolución, Zona Centro, Tijuana, 22000'
+- municipality: Tijuana
+  name: CAP Playas de Tijuana
+  address: 'Paseo del Pacífico #901, Secc. Jardines, Playas de Tijuana, Tijuana, 22517'
+- municipality: Tijuana
+  name: CAP Matamoros
+  address: 'Ruta Independencia #21560, Loc. 18, Centro Com. Matamoros, Fracc. Parque Industrial Américas, Tijuana,
+    22206'
+- municipality: Tijuana
+  name: CAP Plaza Carrousel
+  address: 'Blvd. Gustavo Díaz Ordaz #15602, Centro Com. Plaza Carrousel, Fracc. Las Brisas, Tijuana, 22115'
+- municipality: Tijuana
+  name: CAP Florido
+  address: 'Blvd. Paseo de los Laureles #S/N, Fracc. Vista de Palmillas, Tijuana, 22253'
+- municipality: Tijuana
+  name: CAP Cerro de las Abejas
+  address: 'Blvd. El Refugio #9601,Loc 7, Centro Comercial Las Abejas, Fracc. El Florido III Sec., Tijuana, 2237'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Palacio Municipal
+  address: 'Vía Rápida Oriente #10252, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP El Rubí
+  address: 'Ave. Cabo San Lucas  #8651, Fracc. Terrazas del Rubí, dentro de la Delegación SAB, Tijuana, 22626'
+- municipality: Tijuana
+  name: CAP La Gloria
+  address: 'C. Coronado Km 13.4, Carretera Tijuana - Ensenada #S/N, Int. Subdelegación La Gloria, Tijuana, 22703'
+- municipality: Tijuana
+  name: UMS Quinta del Cedro
+  address: 'Paseo Banderas #4410, Urbi Quinta del Cedro, Tijuana, 111111'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Personas mayores de 60 años en situación de pobreza
+  requirements:
+  - text: Número de cuenta de la que se va a solicitar subsidio, el cual puede obtener de la factura que recibe
+      mensualmente.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE con el mismo domicilio que el registrado en la cuenta,
+      del propietario del predio, UNO de los siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir,
+      Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Formato de Solicitud de Subsidio proporcionado por CESPT, firmado.
+    cites:
+    - source: retys
+  - text: Credencial del INAPAM (antes INSEN)
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico, el cual realizará un inspector de CESPT
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: Para que se aplique el subsidio es necesario que el saldo de la cuenta de agua esté en ceros
+    cites:
+    - source: retys
+  - text: El subsidio se otorgará siempre y cuando la persona que solicita No tenga ingresos mayores al equivalente
+      de cinco veces la Unidad de Medida y Actualización.
+    cites:
+    - source: retys
+  - text: El beneficio solo se aplica a un domicilio, que será el establecido como lugar de residencia de la persona
+      a la que se otorga el subsidio.
+    cites:
+    - source: retys
+  - text: No se aplicará el subsidio si el predio además de vivienda se utiliza para actividades comerciales.
+    cites:
+    - source: retys
+  - text: No se aplicará subsidio a predios en los que el medidor de agua suministre a más de una vivienda.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo Atención Personalizada (MAP) y esperar su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumpla con todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite, indicándole que es lo que falta
+    - Con los requisitos completos, la persona del MAP llena en el sistema la Solicitud de Subsidio
+    - La persona del MAP entrega al ciudadano la Solicitud de Subsidio para que la revise y la firme
+    - Revise y firme la solicitud
+    - La persona del MAP entrega al ciudadano una copia de la Solicitud de Subsidio para que en la fecha indicada
+      de atención, marque al teléfono 073 donde se le informará sobre el dictamen de su solicitud.
+    - Si es factible la aplicación del subsidio el ciudadano deberá recibir su factura del agua con el descuento
+      de acuerdo al consumo mensual.
+  notes: Subsidio
+- name: Personas viudas mayores de 50 años en situación de pobreza
+  requirements:
+  - text: Número de cuenta de la que se va a solicitar subsidio, el cual puede obtener de la factura que recibe
+      mensualmente.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE con el mismo domicilio que el registrado en la cuenta,
+      del propietario del predio, UNO de los siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir,
+      Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Formato de Solicitud de Subsidio proporcionado por CESPT, firmado
+    cites:
+    - source: retys
+  - text: Acta de defunción del cónyuge y en su caso acta de matrimonio
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico, el cual realizará un inspector de CESPT
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: Para que se aplique el subsidio es necesario que el saldo de la cuenta de agua esté en ceros
+    cites:
+    - source: retys
+  - text: El subsidio se otorgará siempre y cuando la persona que solicita No tenga ingresos mayores al equivalente
+      de cinco veces la Unidad de Medida y Actualización.
+    cites:
+    - source: retys
+  - text: El beneficio solo se aplica a un domicilio, que será el establecido como lugar de residencia de la persona
+      a la que se otorga el subsidio.
+    cites:
+    - source: retys
+  - text: No se aplicará el subsidio si el predio además de vivienda se utiliza para actividades comerciales.
+    cites:
+    - source: retys
+  - text: No se aplicará subsidio a predios en los que el medidor de agua suministre a más de una vivienda.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo Atención Personalizada (MAP) y esperar su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumpla con todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite, indicándole que es lo que falta
+    - Con los requisitos completos, la persona del MAP llena en el sistema la Solicitud de Subsidio
+    - La persona del MAP entrega al ciudadano la Solicitud de Subsidio para que la revise y la firme
+    - Revise y firme la solicitud
+    - La persona del MAP entrega al ciudadano una copia de la Solicitud de Subsidio para que en la fecha indicada
+      de atención, marque al teléfono 073 donde se le informará sobre el dictamen de su solicitud.
+    - Si es factible la aplicación del subsidio el ciudadano deberá recibir su factura del agua con el descuento
+      de acuerdo al consumo mensual.
+  notes: Subsidio
+- name: Personas jubiladas o pensionadas
+  requirements:
+  - text: Número de cuenta de la que se va a solicitar subsidio, el cual puede obtener de la factura que recibe
+      mensualmente.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE con el mismo domicilio que el registrado en la cuenta,
+      del propietario del predio, UNO de los siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir,'
+    cites:
+    - source: retys
+  - text: Formato de Solicitud de Subsidio proporcionado por CESPT, firmado.
+    cites:
+    - source: retys
+  - text: Credencial de jubilado o pensionado.
+    cites:
+    - source: retys
+  - text: 'Comprobante de ingresos que puede ser UNO de los siguientes: Último talón de cheque emitido por el organismo
+      público que otorga la pensión o jubilación (no será válido el recibo del cajero automático), Informe de pago
+      emitido por el organismo público que otorga la pensión o jubilación.'
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: Para que se aplique el subsidio es necesario que el saldo de la cuenta de agua esté en ceros
+    cites:
+    - source: retys
+  - text: El subsidio se otorgará siempre y cuando la persona que solicita No tenga ingresos mayores al equivalente
+      de cinco veces la Unidad de Medida y Actualización.
+    cites:
+    - source: retys
+  - text: El beneficio solo se aplica a un domicilio, que será el establecido como lugar de residencia de la persona
+      a la que se otorga el subsidio.
+    cites:
+    - source: retys
+  - text: No se aplicará el subsidio si el predio además de vivienda se utiliza para actividades comerciales.
+    cites:
+    - source: retys
+  - text: No se aplicará subsidio a predios en los que el medidor de agua suministre a más de una vivienda.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo Atención Personalizada (MAP) y esperar su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumpla con todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite, indicándole que es lo que falta
+    - Con los requisitos completos, la persona del MAP llena en el sistema la Solicitud de Subsidio
+    - La persona del MAP entrega al ciudadano la Solicitud de Subsidio para que la revise y la firme
+    - Revise y firme la solicitud
+    - La persona del MAP entrega al ciudadano una copia de la Solicitud de Subsidio para que en la fecha indicada
+      de atención, marque al teléfono 073 donde se le informará sobre el dictamen de su solicitud.
+    - Si es factible la aplicación del subsidio el ciudadano deberá recibir su factura del agua con el descuento
+      de acuerdo al consumo mensual.
+  notes: Subsidio
+- name: Personas con discapacidad
+  requirements:
+  - text: Número de cuenta de la que se va a solicitar subsidio, el cual puede obtener de la factura que recibe
+      mensualmente.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE con el mismo domicilio que el registrado en la cuenta,
+      del propietario del predio, UNO de los siguientes: Credencial del INE, Pasaporte mexicano, Licencia de conducir,'
+    cites:
+    - source: retys
+  - text: Formato de Solicitud de Subsidio proporcionado por CESPT, firmado.
+    cites:
+    - source: retys
+  - text: Credencial de la persona con discapacidad otorgada por alguna institución pública, cuyo domicilio debe
+      ser igual al que tiene registrado la cuenta de agua.
+    cites:
+    - source: retys
+  - text: Certificado médico expedido por alguna institución pública, en el que se demuestre la discapacidad permanente
+      para trabajar (no es necesario para renovación de subsidio).
+    cites:
+    - source: retys
+  - text: Estudio socioeconómico, el cual realizará un inspector de CESPT.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: No se aceptarán certificados médicos expedidos por clínicas particulares.
+    cites:
+    - source: retys
+  - text: Para que se aplique el subsidio es necesario que el saldo de la cuenta de agua esté en ceros
+    cites:
+    - source: retys
+  - text: El subsidio se otorgará siempre y cuando la persona que solicita No tenga ingresos mayores al equivalente
+      de cinco veces la Unidad de Medida y Actualización.
+    cites:
+    - source: retys
+  - text: El beneficio solo se aplica a un domicilio, que será el establecido como lugar de residencia de la persona
+      a la que se otorga el subsidio.
+    cites:
+    - source: retys
+  - text: No se aplicará el subsidio si el predio además de vivienda se utiliza para actividades comerciales.
+    cites:
+    - source: retys
+  - text: No se aplicará subsidio a predios en los que el medidor de agua suministre a más de una vivienda.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo Atención Personalizada (MAP) y esperar su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumpla con todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite, indicándole que es lo que falta
+    - Con los requisitos completos, la persona del MAP llena en el sistema la Solicitud de Subsidio
+    - La persona del MAP entrega al ciudadano la Solicitud de Subsidio para que la revise y la firme
+    - Revise y firme la solicitud
+    - La persona del MAP entrega al ciudadano una copia de la Solicitud de Subsidio para que en la fecha indicada
+      de atención, marque al teléfono 073 donde se le informará sobre el dictamen de su solicitud.
+    - Si es factible la aplicación del subsidio el ciudadano deberá recibir su factura del agua con el descuento
+      de acuerdo al consumo mensual.
+  notes: Subsidio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al Módulo Atención Personalizada (MAP) y esperar su turno
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cuando llegue su turno, la persona del MAP revisará que se cumpla con todos los requisitos, si no están
+    completos, le informará que no es posible realizar el trámite, indicándole que es lo que falta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona del MAP llena en el sistema la Solicitud de Subsidio
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La persona del MAP entrega al ciudadano la Solicitud de Subsidio para que la revise y la firme
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Revise y firme la solicitud
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La persona del MAP entrega al ciudadano una copia de la Solicitud de Subsidio para que en la fecha indicada
+    de atención, marque al teléfono 073 donde se le informará sobre el dictamen de su solicitud.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Si es factible la aplicación del subsidio el ciudadano deberá recibir su factura del agua con el descuento
+    de acuerdo al consumo mensual.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1591: Subsidios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1591
+    version_date: 05/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

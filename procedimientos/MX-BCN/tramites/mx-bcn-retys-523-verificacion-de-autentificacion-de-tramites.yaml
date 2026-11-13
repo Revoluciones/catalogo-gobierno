@@ -1,0 +1,116 @@
+id: mx-bcn-retys-523-verificacion-de-autentificacion-de-tramites
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Verificación de Autentificación de Trámites
+summary: Que la persona pueda validar la autenticidad, legalidad de su trámite debidamente inscrito y certificación
+  desde la comodidad de su hogar u oficina, mediante el servicio de autentificación de trámites a través del portal
+  de servicios sin la necesidad de trasladarse a la oficina registral.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 523
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/523
+  homoclave: BC-DRPPC-006
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+- Otro
+when: Cuando desee la legalidad, validez, certeza jurídica de cualquier trámite expedido por el Registro Público
+  de Propiedad y Comercio
+result: La validación de autentificación y legalidad del trámite.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Número de volante y código de autenticidad
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la pagina haciendo clic en el botón "Iniciar Trámite" ubicado en la parte inferior derecha
+    - Conocer el número de volante y tenerlo a la mano
+    - Colocar el número de autenticidad que aparece en la parte inferior del código QR.
+  notes: Que necesiten de la validación de autentificación y legalidad de trámites
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la pagina haciendo clic en el botón "Iniciar Trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Conocer el número de volante y tenerlo a la mano
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Colocar el número de autenticidad que aparece en la parte inferior del código QR.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 523: Verificación de Autentificación de Trámites'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/523
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para el Registro Público de la Propiedad y de Comercio para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

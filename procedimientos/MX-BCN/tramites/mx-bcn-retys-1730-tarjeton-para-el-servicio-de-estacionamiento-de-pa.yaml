@@ -1,0 +1,130 @@
+id: mx-bcn-retys-1730-tarjeton-para-el-servicio-de-estacionamiento-de-pa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Tarjetón para el servicio de estacionamiento de paga UTT
+summary: Solicitud de tarjetón de acceso al estacionamiento para el turno asignado, de acuerdo con la lista de espera.
+  Este tarjetón permite a los usuarios acceder y utilizar el estacionamiento de manera segura y ordenada dentro
+  de las instalaciones.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1730
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1730
+  homoclave: BC-UTT-015
+who_can:
+- Interesado
+when: Cuando las y los estudiantes requieran el servicio
+result: Tarjetón de acceso a estacionamiento de paga.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $224.54 pesos (MXN) por cuatrimestre. $117.42 pesos (MXN) por reposición en caso de extravió.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Por el periodo cuatrimestral que se solicitó
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Departamento de Mantenimiento y Servicios Generales.
+  address: 'Carretera Libre Tijuana-Tecate. #Km.10, Fraccionamiento El Refugio., Tijuana, 22253'
+scenarios:
+- name: Estudiantes
+  requirements:
+  - text: Firmar las Normas de Estacionamiento UTT
+    cites:
+    - source: retys
+  - text: Matrícula de estudiante
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Acudir personalmente al Departamento de Mantenimiento y Servicios Generales en el Edificio de Rectoría para
+      solicitar tarjetón de estacionamiento o enviar solicitud al correo electrónico estacionamientoutt@uttijuana.edu.mx
+      o a la liga https://boton.uttijuana.edu.mx/cliente con la siguiente información: 1. Nombre completo iniciado
+      por apellidos. 2. Matricula de estudiante (en dado caso de que a matricula empiece con el numero 0 debe ser
+      tomada en cuenta y ser anexado junto al número de matrícula). 3. Teléfono de contacto. 4. Turno de interés
+      (Matutino o Vespertino)'
+    - Esperar el tiempo de respuesta, en el cual se informa la disponibilidad vía correo electrónico
+    - Una vez que se haya asignado una cita, es necesario presentarse en el Departamento de Mantenimiento y Servicios
+      Generales en la fecha y hora indicadas, las cuales se indicaran mediante correo electrónico
+    - Llenar y firmar el formato Normas de Estacionamiento
+    - Pagar el costo del trámite en caja de Contabilidad
+    - Recibir Tarjetón en el Departamento de Mantenimiento
+  notes: Estudiantes que requieran el servicio de estacionamiento en las instalaciones de UTT
+legal_basis:
+- source: ley1
+  pinpoint: 26 y 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Acudir personalmente al Departamento de Mantenimiento y Servicios Generales en el Edificio de Rectoría
+    para solicitar tarjetón de estacionamiento o enviar solicitud al correo electrónico estacionamientoutt@uttijuana.edu.mx
+    o a la liga https://boton.uttijuana.edu.mx/cliente con la siguiente información: 1. Nombre completo iniciado
+    por apellidos. 2. Matricula de estudiante (en dado caso de que a matricula empiece con el numero 0 debe ser
+    tomada en cuenta y ser anexado junto al número de matrícula). 3. Teléfono de contacto. 4. Turno de interés (Matutino
+    o Vespertino)'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Esperar el tiempo de respuesta, en el cual se informa la disponibilidad vía correo electrónico
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que se haya asignado una cita, es necesario presentarse en el Departamento de Mantenimiento y
+    Servicios Generales en la fecha y hora indicadas, las cuales se indicaran mediante correo electrónico
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Llenar y firmar el formato Normas de Estacionamiento
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pagar el costo del trámite en caja de Contabilidad
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recibir Tarjetón en el Departamento de Mantenimiento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1730: Tarjetón para el servicio de estacionamiento de paga UTT'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1730
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Ingresos Propios y del Decreto de Creación de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

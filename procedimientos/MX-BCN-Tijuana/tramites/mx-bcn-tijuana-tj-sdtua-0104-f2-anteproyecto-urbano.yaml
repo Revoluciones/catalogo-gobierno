@@ -1,0 +1,158 @@
+id: mx-bcn-tijuana-tj-sdtua-0104-f2-anteproyecto-urbano
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: F2 Anteproyecto Urbano
+summary: Evaluación y revisión del anteproyecto geométrico para predios de 10,000 m² o más. Su objetivo es definir
+  la traza del fraccionamiento, incluyendo la distribución de manzanas, lotes y vialidades, asegurando el cumplimiento
+  de las normativas urbanas y de diseño aplicables.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0104
+who_can:
+- Interesado
+when: Cuando lo requiera.
+result: CONSTANCIA Y PLANOS
+requirements:
+- text: Llenar y firmar solicitud de la dirección de administración urbana (propietario o representante legal).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Firma del director responsable de obra registrado ante esta dirección.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos (conforme a la ley de ingresos).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia del recibo de impuesto predial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Factibilidad de servicios de agua potable y alcantarillado expedido por la comisión estatal de servicios
+    públicos de Tijuana.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Factibilidad de suministro de energía eléctrica expedida por la comisión federal de electricidad.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia del documento de propiedad (escritura pública o título de propiedad del terreno debidamente inscrito
+    en el registro público de la propiedad y comercio).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Plano certificado del polígono desarrollar (vigencia de un año).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Planos del anteproyecto (polígono envolvente, manzanas y ejes viales, lotificación, usos del suelo, rasantes
+    y terracerías, topografía natural, topografía de proyecto, sembrado de vivienda).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Estudio de mecánica de suelos y diseño e pavimentos (formato por el responsable director de proyecto y corresponsable
+    especializado registrado ante esta dirección).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Archivo digital (de la documentación antes mencionada).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Dictamen de uso de suelo favorable.
+  cites:
+  - source: remutys
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Análisis anteproyecto Fraccionamiento social progresivo hasta 5 has dentro del centro de población hasta
+    por 2 revisiones del mismo...: 50.95 UMA ($5,976.94) · Análisis anteproyecto Fracc social progresivo por hectárea
+    excedente a 5 has, dentro del centro de población hasta por 2 revisiones del mismo...: 4.47 UMA ($524.38) ·
+    Análisis anteproyecto Fraccionamiento social progresivo hasta 5 has, fuera centro de población, hasta por 2
+    revisiones del mismo...: 56.3 UMA ($6,604.55) · Análisis anteproyecto Fraccionamiento social progresivo por
+    hectárea excedente a 5 has, fuera centro de población, hasta por 2 revisiones del mismo...: 4.91 UMA ($575.99)
+    · Regularización de análisis anteproyecto Fraccionamiento social progresivo hasta 5 has, dentro centro de población
+    hasta por 2 revisiones del mismo...: 76.41 UMA ($8,963.66) · Regularización de análisis anteproyecto Fraccionamiento
+    social progresivo por hectárea excedente a 5 has, dentro centro de población hasta por 2 revisiones del mismo...:
+    6.7 UMA ($785.98) · Regularización de análisis anteproyecto Fraccionamiento social progresivo hasta 5 has, fuera
+    centro de población hasta por 2 revisiones del mismo...: 85.8 UMA ($10,065.20) · Regularización de análisis
+    anteproyecto Fraccionamiento social progresivo por hectárea excedente a 5 has, fuera centro de población hasta
+    por 2 revisiones del mismo...: 7.44 UMA ($872.79) · Análisis proyecto Fraccionamiento social progresivo nuevo
+    o modificado a proyectos aprobados que requiera de nuevo dictamen hasta 5 has, hasta por 2 revisones del mismo...:
+    45.5 UMA ($5,337.61) · Análisis proyecto Fraccionamiento social progresivo nuevo o modificado a proyectos aprobados
+    que requiera de nuevo dictamen por hectárea excedente a 5 has, hasta por 2 revisiones del mismo...: 6.5 UMA
+    ($762.51) · Análisis de anteproyecto de fraccionamientos u obras de pluviales, áreas verdes, alumbrado público,
+    integración vial, señalamiento vial y/o semáforos, promovidos por particulares, según la superficie total del
+    predio hasta 5 has, dentro del centro de población, hasta 2 revisiones del mismo...: 107.51 UMA ($12,612.00)
+    · Análisis de anteproyecto de fraccionamientos u obras de pluviales, áreas verdes, alumbrado público, integración
+    vial, señalamiento vial y/o semáforos, promovidos por particulares, dentro del centro de población, según la
+    superficie total del predio Por cada Ha. o fracción excedente: 10.4 UMA ($1,220.02) · Análisis de anteproyecto
+    de fraccionamientos u obras de pluviales, áreas verdes, alumbrado público, integración vial, señalamiento vial
+    y/o semáforos, promovidos por particulares hasta 5 has, fuera del centro de población, hasta 2 revisiones del
+    mismo...: 128.38 UMA ($15,060.26) · Análisis de anteproyecto de fraccionamientos u obras de pluviales, áreas
+    verdes, alumbrado público, integración vial, señalamiento vial y/o semáforos, promovidos por particulares por
+    hectárea excedente a 5 has, fuera del centro de población, hasta 2 revisiones del mismo...: 10.4 UMA ($1,220.02)
+    · Análisis proyecto de Fraccionamiento Campestre nuevo o modificación a proyecto aprobado que requiera de nuevo
+    dictamen, hasta 5 has las primeras 2 revisiones...: 38.61 UMA ($4,529.34) · Análisis proyecto de Fraccionamiento
+    Campestre nuevo o modificación a proyecto aprobado que requiera nuevo dictamen, por hectárea excedente a 5 has,
+    las primeras 2 revisiones...: 7.15 UMA ($838.77). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 2 meses
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 2 años
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0104: F2 Anteproyecto Urbano'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0104
+    version_date: '2026-08-17'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de Acciones de Urbanización para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20241227113533997_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Articulo 31, fracción XVI, inciso A), B) y C) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con la normativa vigente.'

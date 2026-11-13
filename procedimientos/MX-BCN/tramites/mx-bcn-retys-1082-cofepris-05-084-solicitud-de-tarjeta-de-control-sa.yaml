@@ -1,0 +1,131 @@
+id: mx-bcn-retys-1082-cofepris-05-084-solicitud-de-tarjeta-de-control-sa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-084 Solicitud de Tarjeta de Control Sanitario de Tatuadores, Micropigmentadores y Perforadores
+summary: Cuando el ciudadano pretenda prestar servicios de modificación a la apariencia física mediante tatuajes,
+  perforaciones o micro-pigmentaciones.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1082
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1082
+  homoclave: BC-COEPRIS-068
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera tarjeta de control sanitario
+result: Tarjeta de control sanitario
+cost:
+  type: fijo
+  amount_mxn: 7544.4
+  text: 'COSTO: $7544.40 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7781
+  - text: Original y dos copias del comprobante de pago de derechos, en términos de la ley federal de derechos
+    cites:
+    - source: retys
+  - text: 'Manual de procedimientos, el cual deberá indicar lo siguiente: » las técnicas de tatuajes, micropigmentaciones
+      o perforaciones que ofrecerá; » descripción detallada de cada procedimiento que utilizará para la presentación
+      de sus servicios, y » el material y equipo que utilizará en la prestación de sus servicios'
+    cites:
+    - source: retys
+  - text: Currículum vitae del solicitante que contenga sus datos generales, estudios y experiencia laboral, relacionados
+      con los procedimientos a realizar
+    cites:
+    - source: retys
+  - text: Documentación que compruebe que el solicitante cuenta con conocimientos sobre primeros auxilios y dominio
+      de las técnicas de higiene y asepsia
+    cites:
+    - source: retys
+  - text: Comprobante de vacunación contra el tétanos y la hepatitis B
+    cites:
+    - source: retys
+  - text: Dos fotografías tamaño infantil (recientes)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17
+- source: ley2
+  pinpoint: Artículo 268 Bis
+- source: ley3
+  pinpoint: Artículo 224 Bis I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el centro integral de servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1082: COFEPRIS-05-084 Solicitud de Tarjeta de Control Sanitario de Tatuadores, Micropigmentadores
+      y Perforadores'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1082
+    version_date: 26/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-084 Solicitud de Tarjeta de Control Sanitario de Tatuadores, Micropigmentadores
+  y Perforadores.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las
+  demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

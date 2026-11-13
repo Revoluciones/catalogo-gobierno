@@ -1,0 +1,110 @@
+id: mx-bcn-retys-1018-cofepris-01-015-b-permiso-sanitario-de-importacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-01-015-B Permiso sanitario de importación de dispositivos médicos que no sean o contengan estupefacientes
+  o psicotrópicos, sin registro o en fase de experimentación. Modalidad b.- importación de dispositivos médicos
+  para uso personal
+summary: Importación de dispositivos médicos para uso personal.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1018
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1018
+  homoclave: BC-COEPRIS-052
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Permiso de importación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15 días
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/8023
+  - text: Receta médica vigente, que incluya número de cédula profesional y que ampare el producto y la cantidad
+      (no se requiere en caso de insumos de libre venta)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario de Importación
+      de Dispositivos Médicos que No sean o Contengan Estupefacientes o Psicotrópicos, Sin Registro o en Fase de
+      Experimentación. Modalidad B: Importación de dispositivos médicos para uso personal.'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 15 y 19
+- source: ley2
+  pinpoint: Artículo 295 y Articulo 375 Fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso Sanitario de
+    Importación de Dispositivos Médicos que No sean o Contengan Estupefacientes o Psicotrópicos, Sin Registro o
+    en Fase de Experimentación. Modalidad B: Importación de dispositivos médicos para uso personal.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1018: COFEPRIS-01-015-B Permiso sanitario de importación de dispositivos médicos que no
+      sean o contengan estupefacientes o psicotrópicos, sin registro o en fase de experimentación. Modalidad b.-
+      importación de dispositivos médicos para uso personal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1018
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal de Procedimiento Administrativo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-01-015-B Permiso sanitario de importación de dispositivos médicos que no sean o
+  contengan estupefacientes o psicotrópicos, sin registro o en fase de experimentación. Modalidad b.- importación
+  de dispositivos médicos para uso personal.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

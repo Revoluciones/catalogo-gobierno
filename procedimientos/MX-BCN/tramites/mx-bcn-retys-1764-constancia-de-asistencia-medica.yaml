@@ -1,0 +1,137 @@
+id: mx-bcn-retys-1764-constancia-de-asistencia-medica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de asistencia médica
+summary: Proporcionar la constancia que indique que el paciente acudió a algún(os) de los servicios de atención
+  médica en salud mental.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 1764
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1764
+  homoclave: BC-IPEBC-023
+who_can:
+- Interesado
+when: Cuando se requiera constancia de asistencia a algún(os) de los servicios de atención médica en salud mental.
+result: Constancia
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 días naturales
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Médica
+  address: 'Onceava #1753, Mexicali , Mexicali, 21396'
+scenarios:
+- name: Derechohabientes IMSS, ISSSTE, ISSSTECALI, ISESALUD
+  requirements:
+  - text: Contar con expediente clínico vigente del IPEBC.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Una vez que termina su consulta ya sea en el área de psicología o psiquiatría (consulta externa o atención
+      psiquiátrica continua), la persona podrá acudir al área de unirecepción ubicadas en consulta externa o atención
+      psiquiátrica continua a solicitar su constancia de asistencia médica.
+    - Se le solicita su carnet de citas, se revisa en el sistema electrónico del expediente clínico, hora de registro
+      de ingreso y salida del servicio.
+    - 'La persona de unirecepción realiza el llenado en el formato correspondiente con los siguientes datos: nombre
+      completo, hora de registro inicial y hora de registro final; se imprime documento y solicita firma del médico
+      en turno.'
+  notes: PRESENCIAL
+- name: Público en General
+  requirements:
+  - text: Contar con expediente clínico vigente del IPEBC.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Una vez que termina su consulta ya sea en el área de psicología o psiquiatría (consulta externa o atención
+      psiquiátrica continua), la persona podrá acudir al área de unirecepción ubicadas en consulta externa o atención
+      psiquiátrica continua a solicitar su constancia de asistencia médica.
+    - Se le solicita su carnet de citas, se revisa en el sistema electrónico del expediente clínico, hora de registro
+      de ingreso y salida del servicio.
+    - 'La persona de unirecepción realiza el llenado en el formato correspondiente con los siguientes datos: nombre
+      completo, hora de registro inicial y hora de registro final; se imprime documento y solicita firma del médico
+      en turno.'
+  notes: PRESENCIAL
+legal_basis:
+- source: ley1
+  pinpoint: 2 y 4
+- source: ley2
+  pinpoint: 4, Fracción IV, 29 al 31 y 31 Bis
+- source: ley3
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Una vez que termina su consulta ya sea en el área de psicología o psiquiatría (consulta externa o atención
+    psiquiátrica continua), la persona podrá acudir al área de unirecepción ubicadas en consulta externa o atención
+    psiquiátrica continua a solicitar su constancia de asistencia médica.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le solicita su carnet de citas, se revisa en el sistema electrónico del expediente clínico, hora de
+    registro de ingreso y salida del servicio.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'La persona de unirecepción realiza el llenado en el formato correspondiente con los siguientes datos:
+    nombre completo, hora de registro inicial y hora de registro final; se imprime documento y solicita firma del
+    médico en turno.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1764: Constancia de asistencia médica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1764
+    version_date: 04/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California, Artículo 4, Fracción IV, Artículos 29 al 31 y
+      31 Bis
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,172 @@
+id: mx-bcn-retys-1614-inspeccion-y-evaluacion-de-redimensionamiento-y-ve
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inspección y Evaluación de Redimensionamiento y Verificación, para el Programa de Atrapa la Grasa y Sólidos
+summary: Inspección para determinar si es posible el redimensionamiento de las instalaciones indicadas en el oficio
+  de dimensionamiento de dispositivo(s), resultado de la inspección inicial, para obtener la constancia de cumplimiento
+  al programa atrapa la grasa y sólidos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1614
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1614
+  homoclave: BC-CESPT-036
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Oficio de redimensionamiento de dispositivo(s)
+cost:
+  type: variable
+  amount_mxn: 1368.98
+  text: 'COSTO VARIABLE: $1,368.98 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: GENERAL
+  requirements:
+  - text: Original y copia de Solicitud de inspección y evaluación de redimensionamiento (FRM-017), debidamente
+      llenado y firmado por el titular de la cuenta, lo proporciona CESPT o lo puede obtener en la página de Internet
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11985
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la coordinación de control de calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de oficinas centrales de CESPT y presentar los requisitos.
+    - Personal de la coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser así,
+      informa a la persona solicitante que no es posible realizar el trámite hasta que se completen.
+    - Con los requisitos completos, personal de la coordinación de Control de Calidad le proporciona una ficha de
+      pago y el original y copia del solicitud de inspección y evaluación de redimensionamiento.
+    - Con la ficha de pago pasar al área de cajas y hacer el pago correspondiente, la persona de cajas le entregará
+      un recibo de pago.
+    - Pasar al área de archivo, presentar el Recibo de Pago y entregar la Solicitud de inspección y evaluación de
+      redimensionamiento.
+    - La persona de archivo imprime una certificación de recibido, en donde se indica la fecha de respuesta, al
+      original y copia de la solicitud de inspección y evaluación de redimensionamiento, y entrega la copia al usuario.
+    - Una persona analista de la coordinación de Control de Calidad acude a la empresa o establecimiento realiza
+      la inspección y evaluación de redimensionamiento.
+    - Si en la inspección se detecta que se requiere una capacidad diferente, cespt emitirá un oficio de redimensionamiento
+      de dispositivo(s), en el que se describirán de forma puntual las nuevas adecuaciones y sistemas de pretratamiento
+      necesarias para el redimensionamiento; de lo contrario se deberán hacer las adecuaciones indicadas en el oficio
+      con el que ya cuenta la empresa o establecimiento.
+  notes: GENERAL
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 9.
+- source: ley2
+  pinpoint: ARTÍCULOS 1 Y 2.
+- source: ley3
+  pinpoint: ARTÍCULOS 94 Y 109.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la coordinación de control de calidad, ubicada en el edificio que se encuentra en la parte posterior
+    izquierda de oficinas centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser
+    así, informa a la persona solicitante que no es posible realizar el trámite hasta que se completen.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, personal de la coordinación de Control de Calidad le proporciona una ficha
+    de pago y el original y copia del solicitud de inspección y evaluación de redimensionamiento.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con la ficha de pago pasar al área de cajas y hacer el pago correspondiente, la persona de cajas le entregará
+    un recibo de pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar al área de archivo, presentar el Recibo de Pago y entregar la Solicitud de inspección y evaluación
+    de redimensionamiento.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona de archivo imprime una certificación de recibido, en donde se indica la fecha de respuesta,
+    al original y copia de la solicitud de inspección y evaluación de redimensionamiento, y entrega la copia al
+    usuario.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Una persona analista de la coordinación de Control de Calidad acude a la empresa o establecimiento realiza
+    la inspección y evaluación de redimensionamiento.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Si en la inspección se detecta que se requiere una capacidad diferente, cespt emitirá un oficio de redimensionamiento
+    de dispositivo(s), en el que se describirán de forma puntual las nuevas adecuaciones y sistemas de pretratamiento
+    necesarias para el redimensionamiento; de lo contrario se deberán hacer las adecuaciones indicadas en el oficio
+    con el que ya cuenta la empresa o establecimiento.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1614: Inspección y Evaluación de Redimensionamiento y Verificación, para el Programa de
+      Atrapa la Grasa y Sólidos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1614
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de das Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inspección y evaluación de redimensionamiento y verificación, para el Programa de Atrapa
+  la Grasa y Sólidos. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,137 @@
+id: mx-bcn-retys-552-revalidacion-de-padron-de-proveedores
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revalidación de Padrón de Proveedores
+summary: Revalidación en el padrón de proveedores a personas físicas o morales interesadas en la convocatoria y
+  contratación de la obra pública y de sus servicios relacionados con la misma, del Estado o Municipios de Baja
+  California y Nacionales con domicilio fiscal en el Estado de Baja California.
+authority:
+  name: Secretaría de Infraestructura, Desarrollo Urbano y Reordenación Territorial de Baja California
+official_ids:
+  retys_id: 552
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/552
+  homoclave: BC-SIDURT-003
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera revalidación en el padrón de proveedores
+result: Revalidación
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Capítulo VIII Artículo 19. Vi.- por el alta en el padrón de contratistas y proveedores
+    con vigencia anual, a quien lo solicité: A). - por el alta o su renovación anual'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Inversión Sectorial, Programación Presupuestal Y Administración De Obras
+  address: 'Calle G #510, Segunda Seccion, Mexicali, 21100'
+scenarios:
+- name: Proveedor
+  requirements:
+  - text: Solicitud escrita de revalidación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/5709
+  - text: Llenado de formato, PADP2, PADP3, PADP4, PADP5, y PADP6
+    cites:
+    - source: retys
+  - text: Manifestación escrita de no existir modificaciones a los documentos presentados en su solicitud de registro
+    cites:
+    - source: retys
+  - text: Copia de la última declaración anual de impuesto federales correspondiente al año anterior; y/o alta en
+      el SAT (si es de nueva creación)
+    cites:
+    - source: retys
+  - text: Copia de la constancia de la situación fiscal expedida por la secretaría de hacienda del estado de baja
+      california, con una antigüedad máxima de 15 días naturales antes de la fecha de la solicitud de revalidación
+    cites:
+    - source: retys
+  - text: Los demás documentos que el propio interesado considere pertinentes
+    cites:
+    - source: retys
+  - text: Pago por concepto de revalidación (según la Ley de Ingresos del Estado vigente).
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Se entrega a la dirección de inversión sectorial, programación presupuestal y administración de obras de SIDURT
+      la documentación solicitada
+    - Revisión técnica de la documentación (plazo de 1 a 15 días hábiles)
+    - Si la resolución no es favorable se le comunica al usuario
+    - Si la resolución es favorable se entrega el documento para efectuar el pago de la revalidación en recaudación
+      de rentas del estado
+    - Con la copia del pago se entrega su revalidación
+  notes: Solamente podrán ser registrados en el padrón de proveedores, las personas físicas o morales que cuentan
+    con domicilio fiscal establecido en el Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo(s): 29 y 16 inciso b del reglamento'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Se entrega a la dirección de inversión sectorial, programación presupuestal y administración de obras
+    de SIDURT la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Revisión técnica de la documentación (plazo de 1 a 15 días hábiles)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Si la resolución no es favorable se le comunica al usuario
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Si la resolución es favorable se entrega el documento para efectuar el pago de la revalidación en recaudación
+    de rentas del estado
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con la copia del pago se entrega su revalidación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 552: Revalidación de Padrón de Proveedores'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/552
+    version_date: 19/Septiembre/2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Obras Públicas, Equipamientos, Suministros y Servicios Relacionados con la misma del Estado de
+      Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

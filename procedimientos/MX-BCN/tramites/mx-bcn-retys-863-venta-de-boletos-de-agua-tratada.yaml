@@ -1,0 +1,112 @@
+id: mx-bcn-retys-863-venta-de-boletos-de-agua-tratada
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Venta de Boletos de Agua Tratada
+summary: Venta de boletos de agua tratada por nuestras plantas de tratamiento para uso agrícola.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 863
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/863
+  homoclave: BC-CESPE-018
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera comprar agua tratada en plantas de tratamiento.
+result: Aprobación
+cost:
+  type: variable
+  amount_mxn: 14.0
+  text: 'COSTO VARIABLE: Costo actualizado al mes de noviembre de 2026 $ 14 M.N. por m3.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Usuario industrial.
+  requirements:
+  - text: Ser usuario industrial o comercial.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas y solicitar boletos de agua tratada.
+    - Realizar el pago correspondiente.
+    - Acudir a la planta con los boletos pagados por la cantidad solicitada de agua tratada.
+  notes: Usuario industrial que requiere aguas tratadas para uso agrícola o construcción.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+- source: ley2
+  pinpoint: Artículos 3, 6, 14, 15, 16, 17, 19, 20, 22, 23, 24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44,
+    45, 47, 48, 49, 51, 52, 53, 54, 56, 59, 60, 63, 64, 65 Y 98.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas y solicitar boletos de agua tratada.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir a la planta con los boletos pagados por la cantidad solicitada de agua tratada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 863: Venta de Boletos de Agua Tratada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/863
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Venta de Boletos de Agua Tratada.. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

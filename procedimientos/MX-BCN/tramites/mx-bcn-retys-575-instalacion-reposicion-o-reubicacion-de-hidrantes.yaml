@@ -1,0 +1,148 @@
+id: mx-bcn-retys-575-instalacion-reposicion-o-reubicacion-de-hidrantes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Instalación, Reposición o Reubicación de Hidrantes
+summary: Instalación en la red de agua potable hidrantes contra incendios
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 575
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/575
+  homoclave: BC-CESPM-008
+who_can:
+- Representante Legal
+when: Cuando requieres el servcio
+result: Instalacion, reposicion o reubicacion de hidrante
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Segun el tipo de instalación, reposición o reubicación'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Presentar solicitud por escrito
+    cites:
+    - source: retys
+  - text: 'Identificación oficial cualquiera de las siguientes: INE, licencia de conducir, matricula consular, cédula
+      profesional, pasaporte mexicano (documentos deben estar vigentes).'
+    cites:
+    - source: retys
+  - text: Especificación técnica de proyecto de edificación.
+    cites:
+    - source: retys
+  - text: Dictamen del H. Cuerpo de Bomberos.
+    cites:
+    - source: retys
+  - text: Cubrir el costo del servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área atención de usuarios según la zona más cercana
+    - Presentar solicitud por escrito en la zona comercial que le corresponda
+    - Cumplir con los requisitos
+    - Recibir presupuesto
+    - Efectuar el pago correspondiente
+    - Recoger su orden de instalación, reposición o reubicación
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 9 INCISO G
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área atención de usuarios según la zona más cercana
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar solicitud por escrito en la zona comercial que le corresponda
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cumplir con los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recibir presupuesto
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Efectuar el pago correspondiente
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recoger su orden de instalación, reposición o reubicación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 575: Instalación, Reposición o Reubicación de Hidrantes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/575
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

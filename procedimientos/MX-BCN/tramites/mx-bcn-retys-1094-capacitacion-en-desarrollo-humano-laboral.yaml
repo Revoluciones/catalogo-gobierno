@@ -1,0 +1,150 @@
+id: mx-bcn-retys-1094-capacitacion-en-desarrollo-humano-laboral
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Capacitación en Desarrollo Humano Laboral
+summary: Servicio que se ofrece a las empresas y organizaciones para capacitar en una forma efectiva a sus trabajadores
+  en desarrollo humano laboral, mejorando y fortaleciendo su desempeño y competitividad, para construir y generar
+  un cambio de actitud al desarrollo de su potencial como personas y así contribuir en la productividad de la empresa.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1094
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1094
+  homoclave: BC-STPS-003
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Cuando se requiera capacitación para contribuir a generar un cambio de actitud en el personal de su empresa
+  u organización
+result: Constancia de capacitación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Previsión Social
+  address: 'Av. Alvaro Obregón #537, Centro Primera Sección, Mexicali, 211000'
+- municipality: Tijuana
+  name: Previsión Social Delegación Tijuana
+  address: 'Bulevar Gustavo Diaz Ordaz #12649, El Paraiso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Previsión Social Delegación Ensenada
+  address: 'Carretera Transpeninsular #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Número mínimo de 20 trabajadores que tomaran la capacitación
+    cites:
+    - source: retys
+  - text: Contar con proyector
+    cites:
+    - source: retys
+  - text: Contar con equipo de cómputo
+    cites:
+    - source: retys
+  - text: Contar con bocina y micrófono (en caso de ser necesario)
+    cites:
+    - source: retys
+  - text: Contar con una sala apropiada para la capacitación
+    cites:
+    - source: retys
+  - text: Reproducción del material de capacitación (impresión)
+    cites:
+    - source: retys
+  - text: Solicitud de registro
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13622
+  modes:
+  - name: Mixto
+    steps:
+    - Solicitar capacitación por medio de llamada o correo electrónico que podrá encontrar dirigiéndose a la pestaña
+      de oficinas, seleccionando la oficina de su interés de acuerdo a su municipio y haciendo clic en el botón
+      de "ver información"
+    - Se realizará una previa revisión de agenda y se hará un registro calendario de capacitación
+    - Buscar transporte para instructor para las fechas calendarizadas
+    - Impartir capacitación
+    - Elaboración de constancias de participación
+    - Entrega de comprobante de recepción de constancias
+  notes: Representante de la empresa que desea capacitación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 42
+- source: ley2
+  pinpoint: Artículo 18 Fracción VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar capacitación por medio de llamada o correo electrónico que podrá encontrar dirigiéndose a la
+    pestaña de oficinas, seleccionando la oficina de su interés de acuerdo a su municipio y haciendo clic en el
+    botón de "ver información"
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se realizará una previa revisión de agenda y se hará un registro calendario de capacitación
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Buscar transporte para instructor para las fechas calendarizadas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Impartir capacitación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Elaboración de constancias de participación
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Entrega de comprobante de recepción de constancias
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1094: Capacitación en Desarrollo Humano Laboral'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1094
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría del Trabajo y Previsión Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

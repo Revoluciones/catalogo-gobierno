@@ -1,0 +1,148 @@
+id: mx-bcn-retys-658-reposicion-de-tarjeta-de-circulacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición de Tarjeta de Circulación
+summary: Reposición de la tarjeta de circulación cuándo lo solicite el usuario, en caso de robo, extravío, deterioro
+  o daños que impida la clara visualización.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 658
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/658
+  homoclave: BC-SH-010
+who_can:
+- Interesado
+when: Cuando se requiera cambiar una tarjeta de circulación, ya sea por modificación de datos, extravío, robo o
+  deterioro que impida su visualización.
+result: Nueva tarjeta de circulación vigente
+cost:
+  type: variable
+  amount_mxn: 402.31
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. $402.31 *No incluye costo de contribuciones municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Variable
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Tijuana
+  name: Oficinas de Gobierno del Estado en Tijuana
+  address: 'Vía rápida oriente #S/N, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Presentar en original y copia Licencia de conducir vigente del Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tratándose de deterioro o daño, presentar el elemento de identificación vehicular que se haya deteriorado
+      o dañado de este ordenamiento o reporte de extravío, según sea el caso.
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de Recaudación de Rentas del Estado
+    - Realizar el pago de derechos e impuestos correspondiente
+    - Recoger el documento expedido
+  notes: Requisitos para obtener la reposición de tarjeta de circulación
+legal_basis:
+- source: ley1
+  pinpoint: '20'
+- source: ley2
+  pinpoint: artículo 10 fracción III, Número 3.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos e impuestos correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recoger el documento expedido
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 658: Reposición de Tarjeta de Circulación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/658
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY QUE REGULA LOS SERVICIOS DE CONTROL VEHICULAR EN EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

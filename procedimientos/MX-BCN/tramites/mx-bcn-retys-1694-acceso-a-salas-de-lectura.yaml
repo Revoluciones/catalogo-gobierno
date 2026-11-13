@@ -1,0 +1,102 @@
+id: mx-bcn-retys-1694-acceso-a-salas-de-lectura
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a Salas de Lectura
+summary: ¿Te gusta leer? ¿Quieres participar en actividades relacionadas con los libros y la lectura? Este servicio
+  te da acceso a salas de lectura en Baja California, disfrutar de una colección de libros para leer en el lugar,
+  unirte a actividades que promueven la lectura y pedir libros prestados para leerlos en tu hogar
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1694
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1694
+  homoclave: BC-SC-006
+who_can:
+- Interesado
+when: Cuando quieras tener participación en actividades de fomento a la lectura, tener acceso actividades tematicas
+  de libro/autores especificos
+result: Acceso gratuito a libros, actividades de lectura y prestamo de libros.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Solicitar el acceso a la sala de lectura (escrito o correo)
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Acude, llama o envía correo a la Dirección Editorial y Fomento a la lectura (direccioneditorialscbc@gmail.com)
+    - Personal de la Secretaría de Cultura atenderá tu solicitud y te otorgará información sobre la sala de lectura
+      más cercana.
+    - Acude y accede a la sala de lectura
+    - Regístrese en la entrada de la sala de lectura
+  notes: Toda persona que desee asistir a las actividades de una Sala de Lectura
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción IV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acude, llama o envía correo a la Dirección Editorial y Fomento a la lectura (direccioneditorialscbc@gmail.com)
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura atenderá tu solicitud y te otorgará información sobre la sala de
+    lectura más cercana.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acude y accede a la sala de lectura
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Regístrese en la entrada de la sala de lectura
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1694: Acceso a Salas de Lectura'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1694
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

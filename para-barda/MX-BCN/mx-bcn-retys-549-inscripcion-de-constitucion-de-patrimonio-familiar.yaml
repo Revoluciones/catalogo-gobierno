@@ -1,0 +1,145 @@
+id: mx-bcn-retys-549-inscripcion-de-constitucion-de-patrimonio-familiar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Constitución de Patrimonio Familiar
+summary: Inscripción que tiene como principal finalidad que la familia proteja los bienes que conforman su patrimonio,
+  a fin de asegurar la atención de sus necesidades esenciales.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 549
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/549
+  homoclave: BC-DRPPC-019
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera la protección de los bienes de su patrimonio familiar
+result: Inscripción para dar publicidad frente a terceros protección Jurídica de los bienes de su patrimonio
+cost:
+  type: variable
+  amount_mxn: 1733.0
+  text: 'COSTO VARIABLE: octubre 2026 el costo de patrimonio familiar es de $ 1,733.00'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Cubrir previamente en la caja recaudadora los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Copia certificada de la resolución Judicial u orginal
+    cites:
+    - source: retys
+  - text: Oficio de remisión que contenga la orden de autoridad judicial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Tomar turno para ser atendido en la ventanilla correspondiente
+    - Realizar el pago en cajas de recaudación de rentas
+    - Ingreso de documentos
+    - Acudir por el trámite en la fecha estipulada en el volante
+  notes: Que ocupen de la protección de los bienes de su patrimonio familiar
+legal_basis:
+- source: ley1
+  pinpoint: 715 y 724
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 12, fracción I, VII, inciso A)
+- source: ley4
+  pinpoint: articulo 12 fracción VII inciso A
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para ser atendido en la ventanilla correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago en cajas de recaudación de rentas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Ingreso de documentos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir por el trámite en la fecha estipulada en el volante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 549: Inscripción de Constitución de Patrimonio Familiar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/549
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Civil para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica para el Poder Ejecutivo para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

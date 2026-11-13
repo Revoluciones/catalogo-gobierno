@@ -1,0 +1,160 @@
+id: mx-bcn-retys-494-casa-fuerte
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Casa Fuerte
+summary: Entrega de materiales para mejorar la calidad de las condiciones y espacios de vivienda de las familias
+  en situación de vulnerabilidad en el Estado
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 494
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/494
+  homoclave: BC-SB-008
+who_can:
+- Interesado
+when: Cuando se requiera apoyo con material, lo puede solicitar durante todo el año.
+result: Paquete de material para mejora de su vivienda
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato Único
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial con fotografía. (credencial para votar, pasaporte mexicano, licencia de
+      conducir emitida en el estado de baja california, vigente y que señale domicilio)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses (agua, energía eléctrica, predial
+      o constancia de posesión emitida por parte de comisariado ejidal)
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Fotografías del lugar a mejorar de la vivienda
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Realizar entrevista, revisión de documentación y llenado de formato único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Solicitud general
+- name: En caso de incendio
+  requirements:
+  - text: Copia de identificación oficial con fotografía. (credencial para votar, pasaporte mexicano, licencia de
+      conducir emitida en el estado de baja california, vigente y que señale domicilio)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses (agua, energía eléctrica, predial
+      o constancia de posesión emitida por parte de comisariado ejidal)
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Copia de constancia de incendio emitido por el Director del H. Cuerpo de Bomberos
+    cites:
+    - source: retys
+  - text: Fotografías del lugar a mejorar de la vivienda
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+    - Realizar entrevista, revisión de documentación y llenado de formato único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos en caso de incendio
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Secretaría de Bienestar con la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista, revisión de documentación y llenado de formato único
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 494: Casa Fuerte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/494
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: ROP (Ley de Desarrollo Social para el Estado de Baja California)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Bienestar para Todas y Todos. Casa Fuerte. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

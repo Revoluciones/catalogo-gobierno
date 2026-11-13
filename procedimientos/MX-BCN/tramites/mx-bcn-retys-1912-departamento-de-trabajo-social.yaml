@@ -1,0 +1,60 @@
+id: mx-bcn-retys-1912-departamento-de-trabajo-social
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Departamento de Trabajo Social
+summary: Brindar atención integral, especializada y con perspectiva de género a mujeres víctimas de violencia por
+  razón de género y a sus hijos e hijas, mediante la aplicación de entrevistas, realizando valoración de riesgo,
+  planes de acción personalizados y acompañamiento continuo, a fin de garantizar el acceso efectivo a la justicia,
+  la restitución de derechos, así como el fortalecimiento de su autonomía y proyecto de vida libre de violencia
+authority:
+  name: Centro de Justicia para las Mujeres del Estado de Baja California
+official_ids:
+  retys_id: 1912
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1912
+  homoclave: BC-CEJUM-006
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando la persona interesada lo requiera
+result: Acompañamiento continuo a traves de canalizaciones y gestiones para fortalecer su autonomía
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: CEJUM DELEGACIÓN MEXICALI
+  address: 'CALZADA INDEPENDENCIA #1798, FRACCIONAMIENTO CALAFIA, Mexicali, 21040'
+- municipality: Tijuana
+  name: CEJUM DELEGACIÓN TIJUANA
+  address: 'Avenida Moctezuma #1, Residencial de Cortez, Tijuana, 22190'
+- municipality: San Quintín
+  name: CEJUM DELEGACIÓN SAN QUINTÍN
+  address: 'POPULAR SAN QUINTIN #22930, LÁZARO CÁRDENAS, San Quintín, 22930'
+steps: []
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1912: Departamento de Trabajo Social'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1912
+    version_date: 21/Octubre /2026
+    accessed: '2026-11-06'
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

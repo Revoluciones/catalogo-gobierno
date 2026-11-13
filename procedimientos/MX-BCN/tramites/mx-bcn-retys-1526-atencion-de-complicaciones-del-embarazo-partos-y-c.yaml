@@ -1,0 +1,146 @@
+id: mx-bcn-retys-1526-atencion-de-complicaciones-del-embarazo-partos-y-c
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención de Complicaciones del Embarazo, Partos y Cesáreas
+summary: Brindar atención médica a la mujer embarazada con complicaciones durante el embarazo, trabajo de parto
+  en su caso cesárea, garantizando el bienestar de la madre y el recién nacido.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1526
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1526
+  homoclave: BC-ISESALUD-011
+who_can:
+- Interesado
+when: Desde el inicio del embarazo
+result: Bienestar materna y neonatal
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Del Hospital #S/N, CENTRO CÍVICO , Mexicali, 21000'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Tijuana
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Tecate
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+scenarios:
+- name: Complicaciones del embarazo, partos y cesáreas
+  requirements:
+  - text: Identificación oficial o en caso de ser menor de edad, presentar certificado de estudios
+    cites:
+    - source: retys
+  - text: CURP.
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a control prenatal en su centro de salud, donde se valorará y en caso de tener un riesgo se referiría
+      a la unidad hospitalaria para la consulta de especialidad.
+    - Acudir a la unidad hospitalaria para programar cita
+    - Presentarse el día de la cita a la consulta externa de especialidad donde el médico realizará la valoración
+      y atención médica correspondiente, así como el seguimiento necesario y canalización al módulo correspondiente.
+  notes: Brindar atención médica a la mujer embarazada con complicaciones durante el embarazo, trabajo de parto
+    o en su caso cesárea
+- name: Urgencia obstétrica
+  requirements:
+  - text: CURP.
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Identificar datos de alarma durante el embarazo
+    - Acudir al servicio de urgencias en caso de presentar algún dato de alarma
+  notes: Brindar atención médica de urgencia a la mujer embarazada
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a control prenatal en su centro de salud, donde se valorará y en caso de tener un riesgo se referiría
+    a la unidad hospitalaria para la consulta de especialidad.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a la unidad hospitalaria para programar cita
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentarse el día de la cita a la consulta externa de especialidad donde el médico realizará la valoración
+    y atención médica correspondiente, así como el seguimiento necesario y canalización al módulo correspondiente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1526: Atención de Complicaciones del Embarazo, Partos y Cesáreas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1526
+    version_date: 30/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-007-SSA2-2016 para la Atención a la mujer durante el embarazo, parto y puerperio
+      y de la Persona recién nacida criterio y procedimientos para la prestación del servicio.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios de Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

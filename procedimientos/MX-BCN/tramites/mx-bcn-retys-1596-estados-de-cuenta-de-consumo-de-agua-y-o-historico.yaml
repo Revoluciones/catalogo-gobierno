@@ -1,0 +1,159 @@
+id: mx-bcn-retys-1596-estados-de-cuenta-de-consumo-de-agua-y-o-historico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Estados de Cuenta de Consumo de Agua y/o Históricos
+summary: Trámite por medio del cuál se pueden obtener estados de cuenta de consumo de agua y/o históricos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1596
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1596
+  homoclave: BC-CESPT-018
+who_can:
+- Representante Legal
+when: Cuando requiera del servicio
+result: Estado de cuenta
+cost:
+  type: variable
+  amount_mxn: 207.67
+  text: 'COSTO VARIABLE: $207.67 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Formulario para Trámites en Archivo (FRM-005), debidamente llenado y firmado por el titular de la cuenta.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11316
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio, puede ser UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+    - Pasar a Cajas a realizar el pago correspondiente
+    - Con el recibo de pago, ingresar a la ventanilla de Archivo los requisitos
+    - La persona de Archivo revisará que se cumpla con todos los requisitos, si no están completos, le informará
+      que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+    - Con la documentación requerida completa, la persona del área de Archivo le hace entrega del documento solicitado
+      al usuario, le sella de despachado el Recibo de Pago por derechos de expedición y la Solicitud del Trámite
+      en Archivo (FRM-005).
+  notes: Propietario
+- name: Representante
+  requirements:
+  - text: Formulario para Trámites en Archivo, (lo proporciona CESPT o lo puede obtener en la página de Internet
+      FRM-005), debidamente llenado y firmado por el titular de la cuenta o por la persona a quien éste le haya
+      otorgado el poder para realizar el trámite.
+    cites:
+    - source: retys
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+    - Pasar a Cajas a realizar el pago correspondiente
+    - Con el recibo de pago, ingresar a la ventanilla de Archivo los requisitos
+    - La persona de Archivo revisará que se cumpla con todos los requisitos, si no están completos, le informará
+      que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+    - Con la documentación requerida completa, la persona del área de Archivo le hace entrega del documento solicitado
+      al usuario, le sella de despachado el Recibo de Pago por derechos de expedición y la Solicitud del
+  notes: Representante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar a Cajas a realizar el pago correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con el recibo de pago, ingresar a la ventanilla de Archivo los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona de Archivo revisará que se cumpla con todos los requisitos, si no están completos, le informará
+    que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con la documentación requerida completa, la persona del área de Archivo le hace entrega del documento
+    solicitado al usuario, le sella de despachado el Recibo de Pago por derechos de expedición y la Solicitud del
+    Trámite en Archivo (FRM-005).
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1596: Estados de Cuenta de Consumo de Agua y/o Históricos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1596
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

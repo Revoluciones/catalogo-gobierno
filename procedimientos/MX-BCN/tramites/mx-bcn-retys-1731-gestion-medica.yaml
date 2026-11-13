@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1731-gestion-medica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Gestión médica
+summary: Este servicio está disponible cuando se requiere de atención médica oportuna o información, pero no se
+  recibe a pesar de haberla solicitado a una institución médica.
+authority:
+  name: Comisión de Arbitraje Medico del Estado de Baja California
+official_ids:
+  retys_id: 1731
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1731
+  homoclave: BC-CAME-006
+who_can:
+- Representante Legal
+- Interesado
+when: En situaciones de urgencia, tratándose del requerimiento de cierta información o determinada atención médica.
+result: Recibir la atención médica que necesiten sin demoras indebidas.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación de Conciliación
+  address: 'Paseo de los Héroes #s/n H9-31, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación de Conciliación
+  address: 'Diego Rivera y Vía Rápida Poniente #S/N, Zona Río, Tijuana, 22320'
+- municipality: Ensenada
+  name: Coordinación de Conciliación
+  address: 'Carretera Transpeninsular Ensenada la Paz #6500, Ex Ejido Chapultepec, Ensenada, 22880'
+- municipality: Tecate
+  name: Coordinación de Conciliación
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Coordinación de Conciliación
+  address: 'Avenida José Haros Aguilar #2000, Villa Turística, Playas de Rosarito, 22710'
+scenarios:
+- name: Gestión inmediata
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  - text: Poder legal en caso de representación.
+    cites:
+    - source: retys
+  - text: Documentos relativa a la atención demorada puede incluir tarjeta de seguro social, numero de afiliacion,
+      hojas de referencia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficina con identificación.
+    - Exponer motivo de queja
+    - Establecer claramente la solicitud que hace para así obtener un resultado especifico.
+    - Se elabora documento de solicitud a institución involucrada.
+    - Espera de aproximadamente 3 dias habiles para obtener respuesta de la institución involucrada.
+  notes: Se realiza en aquellos casos de demora o negativa de servicios médicos y cuando el estado de salud del
+    paciente requiere atención pronta para evitar riesgos adicionales.
+legal_basis:
+- source: ley1
+  pinpoint: 23 PÁRRAFO 1ERO
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a oficina con identificación.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Exponer motivo de queja
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Establecer claramente la solicitud que hace para así obtener un resultado especifico.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se elabora documento de solicitud a institución involucrada.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Espera de aproximadamente 3 dias habiles para obtener respuesta de la institución involucrada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1731: Gestión médica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1731
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE COMISIÓN DE ARBITRAJE MÉDICO DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Gestión Inmediata. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la
+  primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

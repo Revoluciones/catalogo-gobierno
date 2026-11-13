@@ -1,0 +1,271 @@
+id: mx-bcn-retys-1125-elaboracion-de-avaluos-a-particulares
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Elaboración de Avalúos a Particulares.
+summary: Emitir documento en el que consta el proceso de estimar el valor específico de un bien o derecho determinado
+  y debidamente identificado, para un fin específico, A una fecha dada en moneda de curso legal y cuando el bien
+  a valuar sea materia de una operación donde intervenga el gobierno del estado, dependencia de la administración
+  pública.
+authority:
+  name: Secretaría Anticorrupción y Buen Gobierno
+official_ids:
+  retys_id: 1125
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1125
+  homoclave: BC-SHFP-001
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el solicitante requiera documento en el que conste el proceso de estimar el valor de un bien.
+result: Avalúo
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Dentro del centro de población $930.06 pesos (como anticipo) más el 3.00 al millar sobre
+    el valor del bien (al término del trámite) y fuera del centro de población $1,163.56 pesos (como anticipo) más
+    el 3.00 al millar sobre el valor del bien (al término del trámite)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Comisión Estatal de Avalúos
+  address: 'Av. Álvaro Obregón y Calle México #599, Sección Primera , Mexicali, 21100'
+- municipality: Tijuana
+  name: Comisión Estatal de Avalúos
+  address: 'Blvd. Aguacaliente #21939, Fracc. El Paraíso, Tijuana, 22160'
+- municipality: Ensenada
+  name: Comisión Estatal de Avalúos
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: El trámite deberá realizarlo a través de la dependencia y/o entidad paraestatal que lleve a cabo la operación
+      relativa al bien a valuar.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Dirigirse a la oficina de la Comisión Estatal de Avalúos más cercana.
+    - Presentar solicitud de acuerdo a los requisitos establecidos.
+    - Una vez registrada la solicitud, personal del Departamento del Área Técnica procederá al análisis de la documentación,
+      realización de inspección física del bien materia del avalúo,y posterior realización del proyecto de avalúo.
+    - El proyecto de avalúo se somete a consideración del Cuerpo Colegiado de la Comisión durante las sesiones ordinarias
+      y extraordinarias y se procede a la votación.
+    - En caso de aprobación del citado proyecto, se procede a la emisión del avalúo y gestión de firmas.
+    - Una vez que se encuentra debidamente requisitado, se remite mediante oficio al solicitante.
+    - En caso de actualizarse alguno de los supuestos previstos en el párrafo cuarto del artículo 35 de la Ley de
+      Ingresos del Estado de Baja California para el ejercicio fiscal vigente, se notifica la orden de pago por
+      concepto de elaboración de avalúo para la realización del pago correspondiente en cajas de Recaudación de
+      Rentas del Estado.
+    - Una vez realizado el pago de derechos, se deberá exhibir el comprobante por concepto de elaboración de avalúo
+      en las oficinas de la Comisión, debiendo exhibir identificación oficial al momento.
+    - Se entrega avalúo al solicitante.
+  notes: El trámite deberá realizarlo a través de la dependencia y/o entidad paraestatal que lleve a cabo la operación
+    relativa al bien a valuar.
+- name: Avaluó de bienes muebles
+  requirements:
+  - text: REQUISITOS QUE DEBERÁ CONTENER LA SOLICITUD • Dirigido a la persona titular de la CEA. (Directora Daniela
+      Johana Zepeda Aguilar) • Nombre del solicitante. • Fecha de solicitud. • Nombre del propietario del bien.
+      • Propósito del avalúo. • Descripción del bien con número de serie, marca, modelo, tipo, especificando si
+      cuenta o no con catalizador (para el caso de vehículos) y los datos del mismo.
+    cites:
+    - source: retys
+  - text: DOCUMENTOS QUE DEBERÁ ADJUNTAR (EN ORIGINAL O COPIA, INDISTINTAMENTE) PARA MOBILIARIO Y EQUIPO • Listado
+      digital en Excel con los datos de los bienes (descripción, número de inventario, marca, serie, modelo, vida
+      útil remanente). • Factura. PARA VEHÍCULOS Y MAQUINARIAS • Listado digital en Excel con los datos de los equipos
+      (capacidad, número de motor, número económico, placas, número de cilindros, tipo de transmisión). • Dictamen
+      mecánico.
+    cites:
+    - source: retys
+  - text: INSPECCIÓN FÍSICA DE BIENES • Proponer fecha y hora para llevar a cabo la inspección física y toma de
+      memoria fotográfica. • Señalar datos de contacto (Nombre, teléfono, correo electrónico) de la persona que
+      atenderá al personal técnico al momento de la inspección. • Los bienes deberán estar plenamente identificados,
+      en condiciones aptas para la inspección y toma de fotografías.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Dirigirse a la oficina de la Comisión Estatal de Avalúos más cercana.
+    - Presentar solicitud de acuerdo a los requisitos establecidos.
+    - Una vez registrada la solicitud, personal del Departamento del Área Técnica procederá al análisis de la documentación,
+      realización de inspección física del bien materia del avalúo,y posterior realización del proyecto de avalúo.
+    - El proyecto de avalúo se somete a consideración del Cuerpo Colegiado de la Comisión durante las sesiones ordinarias
+      y extraordinarias y se procede a la votación.
+    - En caso de aprobación del citado proyecto, se procede a la emisión del avalúo y gestión de firmas.
+    - Una vez que se encuentra debidamente requisitado, se remite mediante oficio al solicitante.
+    - En caso de actualizarse alguno de los supuestos previstos en el párrafo cuarto del artículo 35 de la Ley de
+      Ingresos del Estado de Baja California para el ejercicio fiscal vigente, se notifica la orden de pago por
+      concepto de elaboración de avalúo para la realización del pago correspondiente en cajas de Recaudación de
+      Rentas del Estado.
+    - Una vez realizado el pago de derechos, se deberá exhibir el comprobante por concepto de elaboración de avalúo
+      en las oficinas de la Comisión, debiendo exhibir identificación oficial al momento.
+  notes: Requisitos para el avaluó de bienes muebles
+- name: Avaluó de bienes inmuebles
+  requirements:
+  - text: REQUISITOS QUE DEBERÁ CONTENER LA SOLICITUD • Dirigido a la persona titular de la CEA. (Directora Daniela
+      Johana Zepeda Aguilar) • Nombre del solicitante. • Fecha de solicitud. • Nombre del propietario del bien.
+      • Propósito del avalúo. • Descripción del bien inmueble (Lote, Manzana, Colonia, Clave Catastral, superficie)
+    cites:
+    - source: retys
+  - text: DOCUMENTOS QUE DEBERÁ ADJUNTAR (EN ORIGINAL O COPIA, INDISTINTAMENTE) RELATIVOS A LA PROPIEDAD DEL INMUEBLE
+      • Título de la propiedad o escritura. • Contrato de compraventa. • Hoja de Inscripción en el Registro Público
+      de la Propiedad y de Comercio (con la última actualización). • Sentencia de adjudicación. • Acta de embargo.
+    cites:
+    - source: retys
+  - text: RELATIVOS A MEDIDAS, COLINDANCIAS, SUPERFICIE Y UBICACIÓN DEL INMUEBLE • Registro Público de la Propiedad
+      y de Comercio. • Deslinde Catastral Certificado vigente. • Deslinde catastral en formato digital DWG. • Levantamiento
+      con cuadro de construcción en formato digital DWG. • Memorias descriptivas firmadas y selladas por la Entidad.
+      (INDIVI, PRODUTSA) • Archivo digital KML o KMZ. • Documento donde aparezca la clave homogénea del predio.
+    cites:
+    - source: retys
+  - text: PARA EL CASO DE DONACIONES A FAVOR DE LAS DEPENDENCIAS Y/O ENTIDADES • Acuerdo de autorización de fraccionamiento
+      incluyendo la portada en donde se indique fecha y número de publicación en el Periódico Oficial del Estado.
+      • Planos del proyecto del fraccionamiento.
+    cites:
+    - source: retys
+  - text: EN CASO DE EXISTIR UNA CONSTRUCCIÓN EN EL TERRENO QUE DEBA CONSIDERARSE EN EL AVALÚO • Planos arquitectónicos
+      y cuadro de superficies de construcción. • Acceso al bien para inspección física y recabar evidencia fotográfica.
+    cites:
+    - source: retys
+  - text: AVALÚO REFERIDO A FECHA ANTERIOR • Contrato de compraventa, escritura, recibo de pago o documentación
+      soporte en el que se desprenda la fecha a la que se referirá el avalúo.
+    cites:
+    - source: retys
+  - text: EN CASOS MÁS ESPECÍFICOS • Permiso de riego (terrenos agrícolas). • Dictamen de límite de la zona marítimo
+      federal (cuando se encuentre en pie de playa). • Plano con superficies, cuadro de construcción y localización
+      de la servidumbre inscrita en el polígono mayor. • Plano de curvas de nivel. • Planos de delimitación de áreas
+      aprovechables.
+    cites:
+    - source: retys
+  - text: INSPECCIÓN FÍSICA DE BIENES • Proponer fecha y hora para llevar a cabo la inspección física y toma de
+      memoria fotográfica. • Señalar datos de contacto (Nombre, cargo, teléfono, correo electrónico) de la persona
+      que atenderá al personal técnico al momento de la inspección. • Los predios deberán estar delimitados físicamente
+      en el terreno. • En casos particulares, se deberá realizar acompañamiento por parte del personal del solicitante.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Dirigirse a la oficina de la Comisión Estatal de Avalúos más cercana.
+    - Presentar solicitud de acuerdo a los requisitos establecidos.
+    - Una vez registrada la solicitud, personal del Departamento del Área Técnica procederá al análisis de la documentación,
+      realización de inspección física del bien materia del avalúo,y posterior realización del proyecto de avalúo.
+    - El proyecto de avalúo se somete a consideración del Cuerpo Colegiado de la Comisión durante las sesiones ordinarias
+      y extraordinarias y se procede a la votación.
+    - En caso de aprobación del citado proyecto, se procede a la emisión del avalúo y gestión de firmas.
+    - Una vez que se encuentra debidamente requisitado, se remite mediante oficio al solicitante.
+    - En caso de actualizarse alguno de los supuestos previstos en el párrafo cuarto del artículo 35 de la Ley de
+      Ingresos del Estado de Baja California para el ejercicio fiscal vigente, se notifica la orden de pago por
+      concepto de elaboración de avalúo para la realización del pago correspondiente en cajas de Recaudación de
+      Rentas del Estado.
+    - Una vez realizado el pago de derechos, se deberá exhibir el comprobante por concepto de elaboración de avalúo
+      en las oficinas de la Comisión, debiendo exhibir identificación oficial al momento.
+  notes: Requisitos para el avaluó de bienes inmuebles
+legal_basis:
+- source: ley1
+  pinpoint: Capítulo VII, Artículo 35
+- source: ley2
+  pinpoint: '38'
+- source: ley3
+  pinpoint: '53'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dirigirse a la oficina de la Comisión Estatal de Avalúos más cercana.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar solicitud de acuerdo a los requisitos establecidos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez registrada la solicitud, personal del Departamento del Área Técnica procederá al análisis de la
+    documentación, realización de inspección física del bien materia del avalúo,y posterior realización del proyecto
+    de avalúo.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El proyecto de avalúo se somete a consideración del Cuerpo Colegiado de la Comisión durante las sesiones
+    ordinarias y extraordinarias y se procede a la votación.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En caso de aprobación del citado proyecto, se procede a la emisión del avalúo y gestión de firmas.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez que se encuentra debidamente requisitado, se remite mediante oficio al solicitante.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: En caso de actualizarse alguno de los supuestos previstos en el párrafo cuarto del artículo 35 de la Ley
+    de Ingresos del Estado de Baja California para el ejercicio fiscal vigente, se notifica la orden de pago por
+    concepto de elaboración de avalúo para la realización del pago correspondiente en cajas de Recaudación de Rentas
+    del Estado.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago de derechos, se deberá exhibir el comprobante por concepto de elaboración de
+    avalúo en las oficinas de la Comisión, debiendo exhibir identificación oficial al momento.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Se entrega avalúo al solicitante.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1125: Elaboración de Avalúos a Particulares.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1125
+    version_date: 06/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del Año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Valuación del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría Anticorrupción y Buen Gobierno del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,102 @@
+id: mx-bcn-retys-1212-servicio-ferroviario-de-carga
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio Ferroviario de Carga
+summary: Servicio ferroviario de carga en la vía corta Tijuana-Tecate. Traslado de la mercancía proveniente de estados
+  unidos por la frontera ferroviaria de Tijuana-San Ysidro, contando con cobertura entre las ciudades de Tijuana
+  y Tecate.
+authority:
+  name: Administradora de la Vía Corta Tijuana-Tecate
+official_ids:
+  retys_id: 1212
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1212
+  homoclave: BC-ADMICARGA-001
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera el servicio ferroviario de carga en la vía corta Tijuana-Tecate
+result: El servicio de traslado de mercancías desde la frontera de Tijuana-san Ysidro en alguna zona de descarga
+  de la vía corta Tijuana-Tecate
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo varía dependiendo del tipo de mercancía y la distancia recorrida'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Subdirección Operativa
+  address: 'Av. Ferrocarril #1, Libertad Parte Baja, Tijuana, 22300'
+- municipality: Tijuana
+  name: Coordinadora Administrativa
+  address: 'Avenida Ferrocarril #1, Libertda parte Baja, Tijuana, 22300'
+scenarios:
+- name: Solicitud de servicio de carga ferroviaria
+  requirements:
+  - text: Presentar solicitud de servicio de carga ferroviaria
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/2598
+  modes:
+  - name: Mixto
+    steps:
+    - Descargar solicitud de servicio ferroviario de carga de la Administradora de la Vía Corta Tijuana - Tecate
+      que se encuentra en los requisitos
+    - Llenar y enviar por correo o presentarla en la dependencia
+  notes: Solicitud con la información requerida para brindar una solución a las necesidades
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 24
+- source: ley2
+  pinpoint: Artículo 66 al Artículo 76
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Descargar solicitud de servicio ferroviario de carga de la Administradora de la Vía Corta Tijuana - Tecate
+    que se encuentra en los requisitos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar y enviar por correo o presentarla en la dependencia
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1212: Servicio Ferroviario de Carga'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1212
+    version_date: 02/Octubre /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Reglamentaria del Servicio Ferroviario
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento del Servicio Ferroviario
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio Público Ferroviario de Carga. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

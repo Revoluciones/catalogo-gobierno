@@ -1,0 +1,176 @@
+id: mx-bcn-retys-484-tarjeta-violeta
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Tarjeta Violeta
+summary: Apoyo bimestral por convocatoria de $2,600 para mujeres jefas de familia o tutoras con menores de 21 años
+  a su cargo.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 484
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/484
+  homoclave: BC-SB-003
+who_can:
+- Interesado
+when: Cuando se requiera apoyo económico.
+result: Tarjeta bancaria
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Madres
+  requirements:
+  - text: Copia de identificación oficial vigente con fotografía del Instituto Nacional Electoral (INE) con domicilio
+      en Baja California.
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Copia de acta de nacimiento de los dependientes económicos menores de 21 años.
+    cites:
+    - source: retys
+  - text: Copia de comprobante de ingreso menor a $15,000.00 mensuales (en caso de tener como comprobar ingresos).
+    cites:
+    - source: retys
+  - text: Copia de comprobante de estudios de los dependientes económicos menores a 21 años.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los espacios asignados para el registro con la documentación solicitada.
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal.
+    - Notificación por teléfono a las solicitantes que se les brindará el apoyo para que acudan a recoger su tarjeta.
+  notes: Requisitos para madres que quieran solicitar la Tarjeta Violeta
+- name: Tutoras de menores
+  requirements:
+  - text: Copia de identificación oficial vigente con fotografía del Instituto Nacional Electoral (INE) con domicilio
+      en Baja California.
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Copia de acta de nacimiento de los dependientes económicos menores de 21 años.
+    cites:
+    - source: retys
+  - text: Copia de comprobante de ingreso menor a $15,000.00 mensuales (en caso de tener como comprobar ingresos).
+    cites:
+    - source: retys
+  - text: Copia de comprobante de estudios de los dependientes económicos menores a 21 años.
+    cites:
+    - source: retys
+  - text: Copia de constancia expedida por autoridad competente como la Procuraduría de la Defensa del Menor del
+      DIF, Juez de lo Familiar, Fiscalía para la Atención de Menores, en caso de que la responsable de los menores
+      y/o jóvenes, no ostente el parentesco consanguíneo (abuela, hermana, tía).
+    cites:
+    - source: retys
+  - text: Copia de constancia del Centro de Adicciones en caso de estar bajo tratamiento para la rehabilitación
+      por adicciones, que contenga firma del encargado y sello de la institución correspondiente.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los espacios asignados para el registro con la documentación solicitada.
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal.
+    - Notificación por teléfono a las solicitantes que se les brindará el apoyo para que acudan a recoger su tarjeta.
+  notes: Requisitos para tutoras que tengan menores de 21 años a su cargo
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a los espacios asignados para el registro con la documentación solicitada.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación por teléfono a las solicitantes que se les brindará el apoyo para que acudan a recoger su
+    tarjeta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 484: Tarjeta Violeta'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/484
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Social del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

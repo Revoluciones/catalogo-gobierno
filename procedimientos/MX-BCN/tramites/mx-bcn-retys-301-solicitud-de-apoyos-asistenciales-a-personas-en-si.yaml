@@ -1,0 +1,141 @@
+id: mx-bcn-retys-301-solicitud-de-apoyos-asistenciales-a-personas-en-si
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Apoyos Asistenciales a Personas en Situación de Vulnerabilidad o en situación de emergencia
+summary: Brindar tanto apoyo asistencial a personas en circunstancias de desamparo, vulnerabilidad, que atraviesen
+  por situaciones extraordinarias o emergentes como ofrecer alternativas de orientación, canalización, servicios
+  y herramientas tendientes al desarrollo humano y social.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 301
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/301
+  homoclave: BC-DIF-002
+who_can:
+- Interesado
+when: Cuando el usuario lo requiera, solicite y cumpla con los requisitos y los lineamientos establecidos por el
+  sistema estatal DIF
+result: Servicio, orientación y apoyo
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 21 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: DIF Estatal BC, Mexicali (Oficinas Generales)
+  address: 'Av. Obregón  #1290, Segunda Sección, Mexicali, 21100'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario DIF PILARES Latinos
+  address: 'Uruguayos  #sn, INFONAVIT LATINOS, Tijuana, 22180'
+- municipality: Ensenada
+  name: Casa de Día Ensenada
+  address: 'Av. Niños Heroes entre 3era y 4ta #3503, Colonia Hidalgo , Ensenada, 22880'
+- municipality: Tecate
+  name: Unidad Básica de Rehabilitación en Tecate
+  address: 'Av. Hidalgo y Profesor Gutiérrez Durán  #s/n, Downey, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Centro de Desarrollo Comunitario DIF PILARES,  Playas de Rosarito
+  address: 'Leonardo Armenta #s/n, Poblado Mazatlán, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Centro de Desarrollo Comunitario DIF PILARES, San Quintín
+  address: 'Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento Popular San Quintín, San Quintín, 22930'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: En caso de apoyo médico presentar receta o historial médico
+    cites:
+    - source: retys
+  - text: CURP (copia)
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía (copia legible)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio, no mayor a 2 meses de antigüedad (copia)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la coordinación de asistencia social
+    - Presentar la documentación requerida, dependiendo tipo de apoyo y/o servicio solicitado
+    - Aplicación de primera entrevista
+    - Realizar estudio socioeconómico
+    - Ser sujeto de asistencia social
+    - Entrega de apoyo
+  notes: Recopilación de documentos para la solicitud de apoyos asistenciales
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la coordinación de asistencia social
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida, dependiendo tipo de apoyo y/o servicio solicitado
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Aplicación de primera entrevista
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar estudio socioeconómico
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Ser sujeto de asistencia social
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Entrega de apoyo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 301: Solicitud de Apoyos Asistenciales a Personas en Situación de Vulnerabilidad o en situación
+      de emergencia'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/301
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Apoyos Asistenciales a Personas en Condición Vulnerable. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

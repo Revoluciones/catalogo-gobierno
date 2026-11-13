@@ -1,0 +1,114 @@
+id: mx-registro-de-nacimiento
+country: MX
+jurisdiction: MX
+level: federal
+branch: varios
+kind: tramite
+category: identidad
+title: Registrar un nacimiento (regla nacional)
+summary: Toda persona tiene derecho a ser registrada en cuanto nace, y la primera copia certificada del acta es
+  gratis. La regla está en la Constitución y vale en todo el país; cada estado o municipio pone la oficina, los
+  requisitos y el horario.
+authority:
+  name: Registro Civil del estado o del municipio donde nace la persona
+who_can:
+- Madre, padre o quien tenga la custodia (cada estado lo detalla en su ley civil)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: El registro y la primera copia certificada del acta de nacimiento son gratuitos, a cualquier edad.
+  as_of: '2026-11-06'
+  cites:
+  - source: cpeum
+    pinpoint: 'art. 4: «La autoridad competente expedirá gratuitamente la primera copia certificada del acta de
+      registro de nacimiento»'
+  - source: imparcial-2026-ai-27
+legal_basis:
+- source: cpeum
+  pinpoint: art. 4
+steps:
+- n: '1'
+  actor: Quien registra a la persona
+  action: Acude al Registro Civil para registrar el nacimiento. La ley dice que el registro debe ser inmediato.
+  cites:
+  - source: cpeum
+    pinpoint: 'art. 4: «Toda persona tiene derecho a la identidad y a ser registrado de manera inmediata a su nacimiento»'
+- n: '2'
+  actor: Registro Civil
+  action: Registra el nacimiento y entrega la primera copia certificada del acta sin cobrar.
+  cites:
+  - source: cpeum
+    pinpoint: 'art. 4: «La autoridad competente expedirá gratuitamente la primera copia certificada del acta de
+      registro de nacimiento»'
+  practice:
+  - text: 'Algunas leyes estatales cobran por registrar. Coahuila cobraba 150 pesos por el registro de nacimiento
+      según su Ley de Hacienda reformada en diciembre de 2025. La Suprema Corte invalidó ese cobro por unanimidad
+      el 15 de junio de 2026 y recordó que la gratuidad no depende de la edad ni de ningún plazo: quien nunca fue
+      registrado puede hacerlo gratis en cualquier momento.'
+    evidence_level: auditoria_o_sentencia
+    observed: Coahuila, 2026 (Acción de Inconstitucionalidad 27/2026)
+    cites:
+    - source: imparcial-2026-ai-27
+      quote: invalidó por unanimidad el cobro de 150 pesos que la Ley de Hacienda de Coahuila establecía
+  - text: En Tijuana el registro de un menor de 5 años aparece como gratuito, pero la lista oficial de requisitos
+      incluye una constancia de inexistencia de registro de nacimiento del Registro Civil del Estado. El Estado
+      cobra $498 por esa constancia en noviembre de 2026. Las dos fuentes son oficiales; falta confirmar si se pide
+      a todas las personas o solo en algunos casos.
+    evidence_level: documento_oficial
+    observed: Tijuana, fichas vigentes al 6 de noviembre de 2026
+    cites:
+    - source: remutys-tj-sgm-0201
+      pinpoint: Requisitos
+      quote: Constancia de inexistencia de registro de nacimiento, expedido por el Registro Civil del Estado de
+        Baja California.
+    - source: retys-618
+      pinpoint: Costo
+      quote: 'COSTO VARIABLE: Noviembre $498.00 m.n.'
+related:
+- mx-bcn-tijuana-tj-sgm-0201-registro-de-nacimiento-ordinario
+- mx-bcn-tijuana-tj-sgm-0200-registro-de-nacimiento-extemporaneo-mayor-de-5-ano
+- mx-bcn-tijuana-tj-sgm-0270-registro-de-nacimiento-extemporaneo-mayor-de-18-an
+- mx-bcn-retys-618-inexistencia-de-registro-de-nacimiento-o-matrimoni
+glossary:
+- copia-certificada
+- registro-civil
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+  imparcial-2026-ai-27:
+    type: periodismo
+    official: false
+    title: 'Mientras en algunos estados cobraban hasta 150 pesos por registrar a un recién nacido, la Constitución
+      obliga a que la primera acta sea totalmente gratis: Esto resolvió la Corte'
+    publisher: El Imparcial (Enya M. Contreras), 19 de junio de 2026
+    url: https://www.elimparcial.com/mexico/2026/06/20/mientras-en-algunos-estados-cobraban-hasta-150-pesos-por-registrar-a-un-recien-nacido-la-constitucion-obliga-a-que-la-primera-acta-sea-totalmente-gratis-esto-resolvio-la-corte/
+    accessed: '2026-11-06'
+  remutys-tj-sgm-0201:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0201: Registro de nacimiento ordinario'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0201
+    accessed: '2026-11-06'
+  retys-618:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 618 (BC-SGG-010): Inexistencia de registro de nacimiento o matrimonio'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/618
+    accessed: '2026-11-06'
+status: borrador
+last_checked: '2026-11-06'
+checked_by: Claude (Compartido)
+notes: Falta la sentencia de la Suprema Corte como fuente primaria (la ficha en transparencia-ciudadana.scjn.gob.mx
+  bloqueó la descarga automática). En Tijuana el registro se hace en las 11 oficialías del Registro Civil que están
+  en las oficinas del Ayuntamiento; según el sitio del Ayuntamiento, la coordinación es del Gobierno del Estado
+  y las oficialías dependen administrativamente del Registro Civil del Estado. El trámite aparece en el registro
+  municipal (REMUTyS) como TJ-SGM-0201 (menores de 5 años), TJ-SGM-0200 (5 a 17) y TJ-SGM-0270 (18 o más), los tres
+  gratuitos.

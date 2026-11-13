@@ -1,0 +1,101 @@
+id: mx-bcn-retys-700-credencial-para-acceso-a-instalaciones-deportivas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Credencial para acceso a Instalaciones Deportivas, Culturales y Biblioteca
+summary: Solicitud de credencial para el acceso de personas externas a la Universidad Tecnológica de Tijuana, para
+  utilizar las instalaciones deportivas, culturales y biblioteca de esta escuela.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 700
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/700
+  homoclave: BC-UTT-002
+who_can:
+- Interesado
+when: Cuando el interesado lo requiera
+result: Credencial de usuario
+cost:
+  type: fijo
+  amount_mxn: 224.54
+  text: 'COSTO: $224.54 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año a partir de que fue expedida
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Extensión Universitaria
+  address: 'Carretera Libre Tijuana-Tecate #Km.11, Fraccionamiento El Refugio, Tijuana, 22254'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Realizar el pago en la caja de contabilidad
+    cites:
+    - source: retys
+  - text: Presentar el recibo de pago
+    cites:
+    - source: retys
+  - text: Fotografía tamaño infantil
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio vigente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al edificio de rectoría de la UTT y realizar el pago en las oficinas de atención
+    - Presentar recibo pagado, fotografía tamaño infantil y comprobante de domicilio en la Dirección de Extensión
+      Universitaria
+  notes: Solicitud de credencial
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al edificio de rectoría de la UTT y realizar el pago en las oficinas de atención
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar recibo pagado, fotografía tamaño infantil y comprobante de domicilio en la Dirección de Extensión
+    Universitaria
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 700: Credencial para acceso a Instalaciones Deportivas, Culturales y Biblioteca'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/700
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de creación de la Universidad Tecnológica de Tijuana, Reglamento de ingresos propios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitar Credencial para Acceso a Instalaciones Deportivas, Culturales y Biblioteca. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

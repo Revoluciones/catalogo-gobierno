@@ -1,0 +1,148 @@
+id: mx-bcn-tijuana-tj-sdtua-0094-licencia-de-construccion-ampliacion-habitacional-c
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Licencia de Construcción, Ampliación Habitacional, Comercial Industrial Mayor 60 mts
+summary: Trámite para obtener la licencia de construcción, aplicable tanto para el inicio de obra como para proyectos
+  en proceso, con una superficie mayor a 60 metros cuadrados.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0094
+who_can:
+- Interesado
+when: Cuando sea necesario realizar una ampliación o llevar a cabo una nueva construcción.
+result: Licencia
+requirements:
+- text: Llenar y firmar solicitud de la dirección de administración urbana.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de la licencia de construcción original.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Juego de planos para certificar.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Nueva de 60m² hasta 90m²: 0.215 UMA ($25.22) · Nueva de 90m² hasta 500m²: 0.29 UMA ($34.02) · Nueva de
+    501m² a 6,000.00m²: 0.44 UMA ($51.62) · Ampliación cualquier superficie de construcción por m²: 0.44 UMA ($51.62)
+    · Nueva mayor a 6,000.00m² por m²: 0.49 UMA ($57.48) · Habitacionales, unifamiliares de 60m² a 90m² por m²:
+    0.24 UMA ($28.15) · Habitacionales, unifamiliares de 90m² a 300m² por m²: 0.36 UMA ($42.23) · Habitacionales,
+    unifamiliares mayor a 300.00m² por m²: 0.43 UMA ($50.44) · Hoteles, moteles, comercios, oficinas por m²: 0.53
+    UMA ($62.17) · Para culto religioso e iglesias por m²: 0.18 UMA ($21.12) · Cementerios y panteones por m²: 0.27
+    UMA ($31.67) · Para educación, guarderias y jardines de niños y primaria por m²: 1.3 UMA ($152.50) · Para educación
+    privada, guarderias, jardines de niños, primaria, secundaria, preparatoria y universidad por m²: 2.6 UMA ($305.01)
+    · Para la cultura, deporte y espectáculos deportivos, recreación y parques de diversiones por m²: 0.33 UMA ($38.71)
+    · Para infraestructura especial para gas por m²: 6.5 UMA ($762.51). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 mes
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0094: Licencia de Construcción, Ampliación Habitacional, Comercial Industrial
+      Mayor 60 mts'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0094
+    version_date: '2026-08-21'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 15, Artículo 27 Fracción II, Artículo 28, Artículo 29 Fracción IV y 30 Fracción I del Reglamento
+      de la Ley de Edificaciones para el Municipio de Tijuana, Baja California.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/RM_Condominios_TJ-BC_20102017.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 31, fracción I, inciso A) y B) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con la normativa vigente y los requisitos para construcciones mayores a 60 m²'

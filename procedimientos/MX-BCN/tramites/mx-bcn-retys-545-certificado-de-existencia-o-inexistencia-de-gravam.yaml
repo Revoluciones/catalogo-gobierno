@@ -1,0 +1,133 @@
+id: mx-bcn-retys-545-certificado-de-existencia-o-inexistencia-de-gravam
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Existencia o Inexistencia de Gravamen Mercantil
+summary: Documento dónde consta que una sociedad se encuentra inscrita en los archivos registrales y que se encuentra
+  libre de gravamen o con gravamen (embargos, hipotecas, créditos, etc.), en los archivos registrales.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 545
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/545
+  homoclave: BC-DRPPC-016
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuándo se requiera hace constar que la sociedad se encuentra inscrita en los archivos registrales
+result: Certificación de los gravámenes mercantiles
+cost:
+  type: variable
+  amount_mxn: 281.0
+  text: 'COSTO VARIABLE: octubre 2026 el costo es de $281.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Llenar la solicitud de certificado mercantil con la información necesaria para su búsqueda
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1926
+  - text: Acudir a las Oficinas de Recaudación para realizar el pago del servicio solicitado
+    cites:
+    - source: retys
+  - text: Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+    cites:
+    - source: retys
+  - text: Recoger el trámite de acuerdo al tiempo asignado para su entrega
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar correctamente el formulario FMO-8.5.1-03 con el nombre de la sociedad y el número del folio mercantil
+    - Pago de los derechos
+    - Recoger el trámite en la fecha estipulada en el volante asignado
+  notes: Cuando requieran de la certificación de los gravámenes mercantiles
+legal_basis:
+- source: ley1
+  pinpoint: 14, Fracción VII, Inciso D
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 11, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar correctamente el formulario FMO-8.5.1-03 con el nombre de la sociedad y el número del folio mercantil
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pago de los derechos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recoger el trámite en la fecha estipulada en el volante asignado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 545: Certificado de Existencia o Inexistencia de Gravamen Mercantil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/545
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del poder Ejecutivo para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

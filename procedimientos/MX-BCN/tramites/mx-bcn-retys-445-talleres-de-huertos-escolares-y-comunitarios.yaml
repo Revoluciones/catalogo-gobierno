@@ -1,0 +1,118 @@
+id: mx-bcn-retys-445-talleres-de-huertos-escolares-y-comunitarios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Talleres de Huertos Escolares y Comunitarios
+summary: Implementar huertos escolares y comunitarios para la producción de alimentos (verdura fresca) como parte
+  de un abordaje integral de la alimentación correcta y fortalecimiento de las acciones de orientación alimentaria
+  de los programas alimentarios. con la finalidad de fomentar una cultura de hábitos alimentarios saludables y sustentable
+  a los grupos de desarrollo y escolares.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 445
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/445
+  homoclave: BC-DIF-023
+who_can:
+- Interesado
+when: Cuando el beneficiario y/o usuario lo requiera, debe formar parte de los programas de asistencia social alimentario
+  y desayunos escolares
+result: Asesoría para la implementación de huertos escolares
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Apoyos Alimentarios y Desarrollo Nutricional Mexicali
+  address: 'Avenida Mineros #345, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección de Alimentación y Desarrollo comunitario, Tijuana.
+  address: 'Avenida Eusebio Kino #17533, Fraccionamiento Garita Otay, Tijuana, 22430'
+- municipality: San Quintín
+  name: Departamento de Apoyos Alimentarios y Desarrollo Nutricional San Quintín
+  address: 'Avenida Lucio Blanco #1221, Nuevo Mexicali, Lázaro Cardenas, San Quintín, 22932'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Pertenecer alguno de los programas de asistencia social alimentaria y desayunos escolares
+    cites:
+    - source: retys
+  - text: En caso de no pertenecer a los programas, se debe hacer una solicitud vía oficio a la jefatura de desarrollo
+      nutricional del servicio orientación y educación alimentaria de las escuelas y/o dependencias que no forman
+      parte del padrón de beneficiarios
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar que se les proporcione el servicio a traves de un oficio dirigido a la Titular del DIF BC.
+    - El departamento de Apoyos Alimentarios y Desarrollo Nutricional, evalua la solicitud.
+    - En caso de autorizar la solicitud, se agenda el servicio.
+    - Se confirma la asistencia con el solicitante del servicio.
+    - Se brinda la capacitación de orientación y educación alimentaria, en la fecha acordada.
+  notes: Recopilación de documentos para el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Art. 3 y 4, Fracción X. Estrategia Integral de Asistencia Social Alimentaria y Desarrollo Comunitario
+    (EIASADC)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar que se les proporcione el servicio a traves de un oficio dirigido a la Titular del DIF BC.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El departamento de Apoyos Alimentarios y Desarrollo Nutricional, evalua la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de autorizar la solicitud, se agenda el servicio.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se confirma la asistencia con el solicitante del servicio.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se brinda la capacitación de orientación y educación alimentaria, en la fecha acordada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 445: Talleres de Huertos Escolares y Comunitarios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/445
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

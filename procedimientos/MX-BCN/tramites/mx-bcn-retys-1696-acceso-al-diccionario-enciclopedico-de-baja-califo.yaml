@@ -1,0 +1,90 @@
+id: mx-bcn-retys-1696-acceso-al-diccionario-enciclopedico-de-baja-califo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso al Diccionario Enciclopédico de Baja California
+summary: Acceso a información histórica de personajes, geografía y recursos del Estado de Baja California.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1696
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1696
+  homoclave: BC-SC-008
+who_can:
+- Interesado
+when: Cuando necesite información específica de Baja California
+result: Información sobre Baja California, para el desarrollo de proyectos académicos, tareas, entre otros
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Contar con un dispositivo electrónico como computadora, smartphone, tablet, etc. Con acceso a internet
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Ingresa a la página web: https://www.bajacalifornia.gob.mx/Cultura/Secciones/DiccionarioBC'
+    - Consulte el diccionario por tema o letra
+    - Lea la información de su interés
+  notes: Toda persona que busque información relevante de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción II.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Ingresa a la página web: https://www.bajacalifornia.gob.mx/Cultura/Secciones/DiccionarioBC'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Consulte el diccionario por tema o letra
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Lea la información de su interés
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1696: Acceso al Diccionario Enciclopédico de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1696
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

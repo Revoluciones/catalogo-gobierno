@@ -1,0 +1,120 @@
+id: mx-bcn-retys-896-cofepris-05-025-a-solicitud-de-modificacion-a-las
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-025-A Solicitud de Modificación a las Condiciones de la Licencia Sanitaria para Establecimiento
+  que utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad A.-Rayos X
+summary: 'Cuando cambian las condiciones en que el ciudadano expidió la licencia como son: cambio de propietario
+  del establecimiento; cambio de razón social; cambio de domicilio; cambio de aplicaciones (equipos); o suspensión
+  de actividades.'
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 896
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/896
+  homoclave: BC-COEPRIS-035
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: En operacion
+result: Modificación
+cost:
+  type: fijo
+  amount_mxn: 7107.12
+  text: 'COSTO: $7107.12 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Original de la licencia sujeta a modificación
+    cites:
+    - source: retys
+  - text: Formato “Servicios de Salud”, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Original y una copia simple legible del comprobante del pago de derechos
+    cites:
+    - source: retys
+  - text: Por cambio, aumento o disminución de equipos o servicios. » Memoria analítica actualizada y levantamiento
+      de niveles de radiación después de la instalación del equipo avalados por un asesor especializado en seguridad
+      radiológica (con croquis de distribución de áreas del establecimiento y ubicación de los equipos dentro del
+      mismo). » Original de la Licencia sujeta a modificación » Cédula de información técnica actualizada
+    cites:
+    - source: retys
+  - text: Por modificación administrativa. » Por cambio en la razón social del establecimiento. Copia simple del
+      acta constitutiva del establecimiento o del alta ante la Secretaría de Hacienda y Crédito Público (presentando
+      original para cotejo) » Copia legible del poder notarial del Representante Legal (presentando original para
+      cotejo). » Actualización de la memoria analítica que contenga la nueva razón social. » Original de la Licencia
+      sujeta a modificación » Cédula de información técnica actualizada
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de Modificación a las Condiciones de la Licencia
+      Sanitaria para Establecimiento que utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 198 Fracción IV
+- source: ley2
+  pinpoint: Articulos 145 y 220 Fracción L
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de Modificación a las Condiciones de la
+    Licencia Sanitaria para Establecimiento que utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 896: COFEPRIS-05-025-A Solicitud de Modificación a las Condiciones de la Licencia Sanitaria
+      para Establecimiento que utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad A.-Rayos
+      X'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/896
+    version_date: 19/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General De Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios y Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-025-A Solicitud de Modificación a las Condiciones de la Licencia Sanitaria Para
+  Establecimiento que utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad A.- Rayos X..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1044-cofepris-02-001-c-permiso-de-publicidad-modalidad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-02-001-C Permiso de Publicidad Modalidad C.- Alimentos y Bebidas No Alcohólicas
+summary: Cuando se pretenda hacer publicidad de alimentos y bebidas no alcohólicas, que deseen publicitase en televisión
+  abierta, televisión restringida y salas de exhibición cinematográfica.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1044
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1044
+  homoclave: BC-COEPRIS-055
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Permiso de publicidad
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 2323.60 pesos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7705
+  - text: Formato “publicidad” debidamente requisitado
+    cites:
+    - source: retys
+  - text: Original y dos copias simples legibles del comprobante del pago de derechos
+    cites:
+    - source: retys
+  - text: Medición de audiencia en la que se acredite que no existe una audiencia superior al 35% de personas entre
+      4 y 12 años de edad en el programa en el cual se publicitará el producto, realizada por una entidad que no
+      esté sujeta a influencia directa o indirecta del anunciante o del medio de difusión en el que se anunciará
+      el producto. Esta medición deberá realizarse a través de una encuesta con representatividad nacional
+    cites:
+    - source: retys
+  - text: El proyecto de publicidad, en dos tantos (preferentemente a color)
+    cites:
+    - source: retys
+  - text: La documentación que dé sustento a las afirmaciones hechas en la publicidad
+    cites:
+    - source: retys
+  - text: El número de la licencia sanitaria o del aviso de funcionamiento, en su caso (preferentemente copia de
+      la licencia o del aviso)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso de Publicidad Modalidad
+      C: Alimentos y Bebidas No Alcohólicas.'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 301
+- source: ley2
+  pinpoint: Artículos 79 y 80
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso de Publicidad
+    Modalidad C: Alimentos y Bebidas No Alcohólicas.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1044: COFEPRIS-02-001-C Permiso de Publicidad Modalidad C.- Alimentos y Bebidas No Alcohólicas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1044
+    version_date: 25/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Publicidad
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-02-001-C Permiso de publicidad modalidad C.- Alimentos y bebidas no alcohólicas..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

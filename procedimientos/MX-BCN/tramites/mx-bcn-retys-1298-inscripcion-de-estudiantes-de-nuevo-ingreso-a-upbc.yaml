@@ -1,0 +1,159 @@
+id: mx-bcn-retys-1298-inscripcion-de-estudiantes-de-nuevo-ingreso-a-upbc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Estudiantes de Nuevo Ingreso a UPBC
+summary: Realizar trámite de inscripción de estudiantes de nuevo ingreso a la institución, cuando haya sido seleccionado
+  y efectuar pago de inscripción en línea.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1298
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1298
+  homoclave: BC-UPBC-003
+who_can:
+- Interesado
+- Tutor
+when: En los periodos establecidos en convocatoria cada cuatrimestre
+result: Ingreso como estudiante
+cost:
+  type: fijo
+  amount_mxn: 3500.0
+  text: 'COSTO: $3,500 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Alumnos de nuevo ingreso
+  requirements:
+  - text: Pago de inscripción validado
+    cites:
+    - source: retys
+  - text: Certificado original de preparatoria
+    cites:
+    - source: retys
+  - text: Acta de nacimiento original
+    cites:
+    - source: retys
+  - text: CURP certificada por el registro civil
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Constancia de vigencia de derechos del IMSS
+    cites:
+    - source: retys
+  - text: Foto infantil reciente
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El alumno deberá realizar el examen de admisión y acreditarlo para su inscripción
+    - Una vez que haya aprobado el examen deberá solicitar su recibo de pago en la página web
+    - Una vez que haya realizado el pago para la inscripción, lo deberá subir al portal para su validación
+    - El alumno de nuevo ingreso deberá presentarse ante el área de gestión escolar con los documentos en original,
+      que subió en la obtención de pre ficha o en la ficha
+    - Gestión escolar recibe al alumno inscrito con documentos para cotejo de información y posterior a ello archiva
+      los documentos
+    - Alumno se presenta a curso de inducción de acuerdo a las fechas que se le indiquen
+    - Puedes acceder a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte
+      inferior derecha
+  notes: Proporcionar un espacio a estudiantes egresados de media superior para continuar con sus estudios
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción III
+- source: ley2
+  pinpoint: Articulo 60, fracción III
+- source: ley3
+  pinpoint: Artículos 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 y 20
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El alumno deberá realizar el examen de admisión y acreditarlo para su inscripción
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Una vez que haya aprobado el examen deberá solicitar su recibo de pago en la página web
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que haya realizado el pago para la inscripción, lo deberá subir al portal para su validación
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El alumno de nuevo ingreso deberá presentarse ante el área de gestión escolar con los documentos en original,
+    que subió en la obtención de pre ficha o en la ficha
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Gestión escolar recibe al alumno inscrito con documentos para cotejo de información y posterior a ello
+    archiva los documentos
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Alumno se presenta a curso de inducción de acuerdo a las fechas que se le indiquen
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Puedes acceder a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte
+    inferior derecha
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1298: Inscripción de Estudiantes de Nuevo Ingreso a UPBC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1298
+    version_date: 24/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Estudios Profesional Asociado y Licenciatura de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

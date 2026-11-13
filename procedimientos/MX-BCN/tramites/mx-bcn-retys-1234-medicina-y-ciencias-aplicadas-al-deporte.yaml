@@ -1,0 +1,104 @@
+id: mx-bcn-retys-1234-medicina-y-ciencias-aplicadas-al-deporte
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Medicina y Ciencias Aplicadas al Deporte
+summary: El INDE otorga el servicio de medicina y ciencias aplicadas al deporte a niñas, niños y jóvenes quienes
+  participan en los programas deportivos del Instituto, brindando los diversos servicios de esta área, como parte
+  de la atención a los practicantes de las diversas disciplinas deportivas que atiende este Instituto.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1234
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1234
+  homoclave: BC-INDEBC-007
+who_can:
+- Interesado
+- Otro
+when: Cuando el deportista requiera del servicio médico
+result: Fisioterapia, tratamiento de lesiones, profilaxia, entre otros
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento Médico Estatal
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Tijuana
+  name: Departamento Médico Estatal
+  address: 'Circuito Vial Sur #s/n, UABC, Universidad Otay, Tijuana, 22427'
+- municipality: Ensenada
+  name: Departamento Médico Estatal
+  address: 'Boulevard de los lagos #s/n, Fraccionamiento Valle Dorado, Ensenada, 22890'
+scenarios:
+- name: Niñas, niños y jóvenes deportistas
+  requirements:
+  - text: Participar en los programas deportivos del Instituto
+    cites:
+    - source: retys
+  - text: Pertenecer a alguna liga, club o agrupación deportiva que participen en los programas del Instituto
+    cites:
+    - source: retys
+  - text: Estar inscrito en el Registro Estatal del Deporte
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de medicina en el momento que sean requeridos
+    - Solicitar el servicio
+  notes: Servicio de medicina y ciencias aplicadas al deporte a niñas, niños y jóvenes quienes participan en los
+    programas deportivos del Instituto
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 140
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de medicina en el momento que sean requeridos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar el servicio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1234: Medicina y Ciencias Aplicadas al Deporte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1234
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

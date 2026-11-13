@@ -1,0 +1,107 @@
+id: mx-bcn-tijuana-tj-sgm-0190-inscripcion-de-registro-de-nacimiento-ocurrido-en
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: Inscripción de registro de NACIMIENTO ocurrido en el extranjero
+summary: Trámite que permite registrar en México el nacimiento de una persona ocurrido en otro país, otorgándole
+  validez oficial ante las autoridades mexicanas.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0190
+who_can:
+- Interesado
+- Representante_legal
+when: Cuando la persona solicitante haya nacido en el extranjero, sea descendiente de padres mexicanos y desee obtener
+  la nacionalidad mexicana · Cuando al menos uno de los padres es mexicano y desea registrar el nacimiento de su
+  hijo/a en México. · Para realizar trámites legales en México que requieran un acta de nacimiento nacional.
+result: Certificado
+requirements:
+- text: Solicitud de inscripción
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Constancia de inexistencia de registro de nacimiento, expedido por el Registro Civil del Estado de Baja
+    California.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento de los padres mexicanos.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial vigente de los padres o de la persona interesada en caso de ser mayor de edad.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento extranjera, apostillada o legalizada según el país de origen.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Traducción oficial al español del acta de nacimiento, realizada por un perito autorizado por el Tribunal
+    Superior de Justicia del Estado.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: En caso de ser mayor de edad y no pueda presentarse, podrá ser representado mediante carta poder otorgada
+    ante Notario Público.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 día
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0190: Inscripción de registro de NACIMIENTO ocurrido en el extranjero.'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0190
+    version_date: '2026-10-22'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 52 y 55 de la Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 18, fracción I, inciso A), subinciso d) de la Ley de Ingresos del municipio de Tijuana, Baja
+      California del Ejercicio Fiscal de 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Para inscribir el nacimiento ocurrido en el extranjero, al menos uno de los padres debe ser de
+  nacionalidad mexicana y cumplir con los requisitos establecidos.'

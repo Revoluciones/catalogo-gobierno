@@ -1,0 +1,468 @@
+id: mx-bcn-retys-1346-reclutamiento-y-preseleccion-de-aspirantes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reclutamiento y Preseleccion de Aspirantes
+summary: 'Reclutamiento y preselección de aspirantes a las siguientes modalidades: a) Fuerza Estatal de Seguridad
+  Ciudadana y Escuadrón Violeta. b) Policia Municipal Preventivo. c) Agente Estatal de Investigación. d) Fuerza
+  Estatal de Seguridad y Custodia Penitenciaria.'
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1346
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1346
+  homoclave: BC-SSCBC-006
+who_can:
+- Interesado
+when: Cuando se encuentre interesado en integrarse a la modalidad solicitada.
+result: Iniciar proceso como candidato a la modalidad solicitada.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Reclutamiento y Vinculación Ciudadana
+  address: 'Avenida Madero #537, Zona Centro, Mexicali, 21100'
+- municipality: Tijuana
+  name: Departamento de Reclutamiento y Vinculación Ciudadana
+  address: 'Av. de la Amistad #SN , Zona Río Tijuana, Plaza Viva Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Departamento de Reclutamiento y Vinculación Ciudadana
+  address: 'Prolongacion Blvd Zertuche #6474, Praderas del cipres, Ensenada, 22785'
+scenarios:
+- name: Convocatoria para ingresar a la Fuerza Estatal de Seguridad Ciudadana
+  requirements:
+  - text: Ser ciudadano mexicano en pleno ejercicio de sus derechos políticos y civiles
+    cites:
+    - source: retys
+  - text: Tener una edad mínima de 21 años y máxima de 40 años
+    cites:
+    - source: retys
+  - text: Tener una estatura mínima de 1.60 metros en hombres y 1.55 metros en mujeres, a excepción de las determinaciones
+      que, previa autorización de la Secretaría de Seguridad Ciudadana del Estado, se determinen para casos particulares;
+    cites:
+    - source: retys
+  - text: Contar con peso adecuado a la altura, con un índice de masa corporal (IMC) maximo de 34 kg/m2.
+    cites:
+    - source: retys
+  - text: Contar con estudios mínimos de educación media superior o equivalente
+    cites:
+    - source: retys
+  - text: En su caso, tener acreditado el Servicio Militar Nacional, y presentar baja voluntaria del ejército cuando
+      así aplique;
+    cites:
+    - source: retys
+  - text: Ser de notoria buena conducta, no haber sido condenado por sentencia irrevocable por delito doloso relacionado
+      con las funciones a desempeñar;
+    cites:
+    - source: retys
+  - text: No tener antecedentes penales por delito doloso en el país o por aquellos que se consideren como tales
+      en el extranjero, ni estar sujeto a proceso penal por delito doloso;
+    cites:
+    - source: retys
+  - text: No estar sujeto a investigación penal, bajo averiguación previa y/o carpeta de investigación;
+    cites:
+    - source: retys
+  - text: No tener sentencia firme por la comisión intencional de delitos contra la vida y la integridad corporal;
+      contra la libertad y seguridad sexuales, el normal desarrollo piscosexual; por violencia familiar, violencia
+      familiar equiparada o doméstica, violación a la intimidad sexual; por violencia política contra las mujeres
+      en razón de género, en cualquiera de sus modalidades y tipos;
+    cites:
+    - source: retys
+  - text: No haber participado, favorecido o encubierto, de ninguna forma, la comisión de violaciones graves a los
+      derechos humanos, no contar con historial o antecedentes de ningun tipo como victimario de violencia contra
+      las mujeres, niñas, niños, adolescentes, o personas adultas mayores, ni haber cometido abuso o maltrato animal;
+    cites:
+    - source: retys
+  - text: No estar declarada persona deudora alimentaria morosa;
+    cites:
+    - source: retys
+  - text: No contar con Enfermedades Cronico Degenerativas (ECD), discapacidad, padecimiento o impedimento físico
+      o piscológico que limite o ponga en riesgo su propia integridad física durante el desarrollo de la función
+      policial;
+    cites:
+    - source: retys
+  - text: Abstenerse de consumir sustancias psicotrópicas, estupefacientes, ú otras que produzcan efectos similares;
+    cites:
+    - source: retys
+  - text: No contar con tatuajes antisociales en ninguna parte del cuerpo;
+    cites:
+    - source: retys
+  - text: No utilizar accesorios en perforaciones cutáneas visibles portando el uniforme;
+    cites:
+    - source: retys
+  - text: No estar suspendido o inhabilitado, ni haber sido destituido por resolución firme como servidor público;
+    cites:
+    - source: retys
+  - text: No haber sido inhabilitado, separado o removido del cargo de la misma u otra institución policial;
+    cites:
+    - source: retys
+  - text: Someterse a exámenes para comprobar la ausencia de abuso de sustancias que alteren el estado físico y
+      mental, como el alcohol, sustancias psicotrópicas, estupefacientes u otras que produzcan efectos similares,
+      y aprobar los procesos de Evaluaciones de Control de Confianza.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Revisar se cumpla con todos los requisitos
+    - Imprimir y llenar la solicitud de trámite con tinta azul
+    - 'Acudir al Departamento de Reclutamiento con los siguientes documentos en original y dos copias por ambos
+      lados: Acta de nacimiento certificada (código QR), Cartilla militar liberada (varones), certificado de preparatoria,
+      currículum vitae, carta de exposición de motivos, licencia de manejo tipo C (en caso de no contar con ella,
+      se le entregará carta compromiso siempre y cuando sepa conducir), constancia de situación fiscal, carta de
+      no inhabilitación, comprobante de domicilio vigente, 2 fotografías tamaño infantil, INE vigente, CURP, ex
+      militares la carta de baja del ejército'
+    - Seguir instrucciones por parte del personal de reclutamiento que le indicarán todos los pasos y tiempos de
+      reclutamiento para el seguimiento del proceso
+  notes: Dirigida a todas aquellas personas que deseen ingresar a la Fuerza Estatal de Seguridad Ciudadana
+- name: Convocatoria para ingresar a la Fuerza Estatal de Seguridad y Custodia Penitenciaria
+  requirements:
+  - text: Ser ciudadano mexicano en pleno ejercicio de sus derechos políticos y civiles
+    cites:
+    - source: retys
+  - text: Tener una edad mínima de 18 y máxima de 45 años.
+    cites:
+    - source: retys
+  - text: Tener una estatura mínima de 1.60 metros en hombres y 1.55 metros en mujeres, a excepción de las determinaciones
+      que, previa autorización de la Secretaría de Seguridad Ciudadana del Estado, se determinen para casos particulares;
+    cites:
+    - source: retys
+  - text: Contar con peso adecuado a la altura, con un índice de masa corporal (IMC) maximo de 34 kg/m2.
+    cites:
+    - source: retys
+  - text: Contar con estudios mínimos de educación media básica o equivalente
+    cites:
+    - source: retys
+  - text: En su caso, tener acreditado el Servicio Militar Nacional, y presentar baja voluntaria del ejército cuando
+      así aplique;
+    cites:
+    - source: retys
+  - text: Ser de notoria buena conducta, no haber sido condenado por sentencia irrevocable por delito doloso relacionado
+      con las funciones a desempeñar;
+    cites:
+    - source: retys
+  - text: No tener antecedentes penales por delito doloso en el país o por aquellos que se consideren como tales
+      en el extranjero, ni estar sujeto a proceso penal por delito doloso;
+    cites:
+    - source: retys
+  - text: No estar sujeto a investigación penal, bajo averiguación previa y/o carpeta de investigación;
+    cites:
+    - source: retys
+  - text: No tener sentencia firme por la comisión intencional de delitos contra la vida y la integridad corporal;
+      contra la libertad y seguridad sexuales, el normal desarrollo piscosexual; por violencia familiar, violencia
+      familiar equiparada o doméstica, violación a la intimidad sexual; por violencia política contra las mujeres
+      en razón de género, en cualquiera de sus modalidades y tipos;
+    cites:
+    - source: retys
+  - text: No haber participado, favorecido o encubierto, de ninguna forma, la comisión de violaciones graves a los
+      derechos humanos, no contar con historial o antecedentes de ningun tipo como victimario de violencia contra
+      las mujeres, niñas, niños, adolescentes, o personas adultas mayores, ni haber cometido abuso o maltrato animal;
+    cites:
+    - source: retys
+  - text: No estar declarada persona deudora alimentaria morosa;
+    cites:
+    - source: retys
+  - text: No contar con Enfermedades Cronico Degenerativas (ECD), discapacidad, padecimiento o impedimento físico
+      o piscológico que limite o ponga en riesgo su propia integridad física durante el desarrollo de la función
+      policial;
+    cites:
+    - source: retys
+  - text: Abstenerse de consumir sustancias psicotrópicas, estupefacientes, ú otras que produzcan efectos similares;
+    cites:
+    - source: retys
+  - text: No contar con tatuajes antisociales en ninguna parte del cuerpo;
+    cites:
+    - source: retys
+  - text: No utilizar accesorios en perforaciones cutáneas visibles portando el uniforme;
+    cites:
+    - source: retys
+  - text: No estar suspendido o inhabilitado, ni haber sido destituido por resolución firme como servidor público;
+    cites:
+    - source: retys
+  - text: No haber sido inhabilitado, separado o removido del cargo de la misma u otra institución policial;
+    cites:
+    - source: retys
+  - text: Someterse a exámenes para comprobar la ausencia de abuso de sustancias que alteren el estado físico y
+      mental, como el alcohol, sustancias psicotrópicas, estupefacientes u otras que produzcan efectos similares,
+      y aprobar los procesos de Evaluaciones de Control de Confianza.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Revisar se cumpla con todos los requisitos
+    - Imprimir y llenar la solicitud de trámite con tinta azul
+    - 'Acudir al Departamento De Reclutamiento con los siguientes documentos en original y dos copias por ambos
+      lados: Acta de nacimiento, Cartilla militar liberada (varones), certificado de secundaria, licencia de manejo
+      tipo A (en caso de no contar con ella, se le entregará carta compromiso siempre y cuando sepa conducir), constancia
+      de situación fiscal, INE vigente, CURP, ex militares la carta de baja del ejército'
+    - Seguir instrucciones por parte del personal de reclutamiento que le indicarán todos los pasos y tiempos de
+      reclutamiento para el seguimiento del proceso
+  notes: Dirigida a todas aquellas personas que deseen ingresar a la Fuerza Estatal de Seguridad y Custodia Penitenciaria
+- name: Convocatoria para ingresar a la Polícia Municipal Preventiva
+  requirements:
+  - text: Ser ciudadano mexicano en pleno ejercicio de sus derechos políticos y civiles
+    cites:
+    - source: retys
+  - text: Tener una edad mínima de 18 años y máxima de 35 años
+    cites:
+    - source: retys
+  - text: Tener una estatura mínima de 1.60 metros en hombres y 1.55 metros en mujeres, a excepción de las determinaciones
+      que, previa autorización de la Secretaría de Seguridad Ciudadana del Estado, se determinen para casos particulares;
+    cites:
+    - source: retys
+  - text: Contar con peso adecuado a la altura, con un índice de masa corporal (IMC) maximo de 34 kg/m2.
+    cites:
+    - source: retys
+  - text: Contar con estudios mínimos de educación media superior o equivalente
+    cites:
+    - source: retys
+  - text: En su caso, tener acreditado el Servicio Militar Nacional, y presentar baja voluntaria del ejército cuando
+      así aplique;
+    cites:
+    - source: retys
+  - text: Ser de notoria buena conducta, no haber sido condenado por sentencia irrevocable por delito doloso relacionado
+      con las funciones a desempeñar;
+    cites:
+    - source: retys
+  - text: No tener antecedentes penales por delito doloso en el país o por aquellos que se consideren como tales
+      en el extranjero, ni estar sujeto a proceso penal por delito doloso;
+    cites:
+    - source: retys
+  - text: No estar sujeto a investigación penal, bajo averiguación previa y/o carpeta de investigación;
+    cites:
+    - source: retys
+  - text: No tener sentencia firme por la comisión intencional de delitos contra la vida y la integridad corporal;
+      contra la libertad y seguridad sexuales, el normal desarrollo piscosexual; por violencia familiar, violencia
+      familiar equiparada o doméstica, violación a la intimidad sexual; por violencia política contra las mujeres
+      en razón de género, en cualquiera de sus modalidades y tipos;
+    cites:
+    - source: retys
+  - text: No haber participado, favorecido o encubierto, de ninguna forma, la comisión de violaciones graves a los
+      derechos humanos, no contar con historial o antecedentes de ningun tipo como victimario de violencia contra
+      las mujeres, niñas, niños, adolescentes, o personas adultas mayores, ni haber cometido abuso o maltrato animal;
+    cites:
+    - source: retys
+  - text: No estar declarada persona deudora alimentaria morosa;
+    cites:
+    - source: retys
+  - text: No contar con Enfermedades Cronico Degenerativas (ECD), discapacidad, padecimiento o impedimento físico
+      o piscológico que limite o ponga en riesgo su propia integridad física durante el desarrollo de la función
+      policial;
+    cites:
+    - source: retys
+  - text: Abstenerse de consumir sustancias psicotrópicas, estupefacientes, ú otras que produzcan efectos similares;
+    cites:
+    - source: retys
+  - text: No contar con tatuajes antisociales en ninguna parte del cuerpo;
+    cites:
+    - source: retys
+  - text: No utilizar accesorios en perforaciones cutáneas visibles portando el uniforme;
+    cites:
+    - source: retys
+  - text: No estar suspendido o inhabilitado, ni haber sido destituido por resolución firme como servidor público;
+    cites:
+    - source: retys
+  - text: No haber sido inhabilitado, separado o removido del cargo de la misma u otra institución policial;
+    cites:
+    - source: retys
+  - text: Someterse a exámenes para comprobar la ausencia de abuso de sustancias que alteren el estado físico y
+      mental, como el alcohol, sustancias psicotrópicas, estupefacientes u otras que produzcan efectos similares,
+      y aprobar los procesos de Evaluaciones de Control de Confianza.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Revisar que cumpla con todos los requisitos (convocatoria en zona Tijuana se encuentra cerrada por el momento)
+    - Imprimir y llenar la solicitud de trámite con tinta azul
+    - 'Acudir al Departamento De Reclutamiento con los siguientes documentos en original y dos copias por ambos
+      lados: Acta de nacimiento, Cartilla militar liberada (varones), certificado de preparatoria, currículum vitae,
+      licencia de manejo tipo C (en caso de no contar con ella, se le entregará carta compromiso siempre y cuando
+      sepa conducir), constancia de situación fiscal, INE vigente, CURP, ex militares la carta de baja del ejército'
+    - Seguir instrucciones por parte del personal de reclutamiento que le indicarán todos los pasos y tiempos de
+      reclutamiento para el seguimiento del proceso
+  notes: Diriga a todas aquellas personas que deseen ingresar a la Policia Municipal Preventiva
+- name: Convocatoria para ingresar a la Agencia Estatal de Investigación
+  requirements:
+  - text: Ser ciudadano mexicano en pleno ejercicio de sus derechos políticos y civiles
+    cites:
+    - source: retys
+  - text: Tener una edad mínima de 21 años y máxima de 40 años
+    cites:
+    - source: retys
+  - text: Tener una estatura mínima de 1.60 metros en hombres y 1.55 metros en mujeres, a excepción de las determinaciones
+      que, previa autorización de la Secretaría de Seguridad Ciudadana del Estado, se determinen para casos particulares;
+    cites:
+    - source: retys
+  - text: Contar con peso adecuado a la altura, con un índice de masa corporal (IMC) maximo de 34 kg/m2.
+    cites:
+    - source: retys
+  - text: Contar con estudios mínimos de educación superior o equivalente;
+    cites:
+    - source: retys
+  - text: En su caso, tener acreditado el Servicio Militar Nacional, y presentar baja voluntaria del ejército cuando
+      así aplique;
+    cites:
+    - source: retys
+  - text: Ser de notoria buena conducta, no haber sido condenado por sentencia irrevocable por delito doloso relacionado
+      con las funciones a desempeñar;
+    cites:
+    - source: retys
+  - text: No tener antecedentes penales por delito doloso en el país o por aquellos que se consideren como tales
+      en el extranjero, ni estar sujeto a proceso penal por delito doloso;
+    cites:
+    - source: retys
+  - text: No estar sujeto a investigación penal, bajo averiguación previa y/o carpeta de investigación;
+    cites:
+    - source: retys
+  - text: No tener sentencia firme por la comisión intencional de delitos contra la vida y la integridad corporal;
+      contra la libertad y seguridad sexuales, el normal desarrollo piscosexual; por violencia familiar, violencia
+      familiar equiparada o doméstica, violación a la intimidad sexual; por violencia política contra las mujeres
+      en razón de género, en cualquiera de sus modalidades y tipos;
+    cites:
+    - source: retys
+  - text: No haber participado, favorecido o encubierto, de ninguna forma, la comisión de violaciones graves a los
+      derechos humanos, no contar con historial o antecedentes de ningun tipo como victimario de violencia contra
+      las mujeres, niñas, niños, adolescentes, o personas adultas mayores, ni haber cometido abuso o maltrato animal;
+    cites:
+    - source: retys
+  - text: No estar declarada persona deudora alimentaria morosa;
+    cites:
+    - source: retys
+  - text: No contar con Enfermedades Cronico Degenerativas (ECD), discapacidad, padecimiento o impedimento físico
+      o piscológico que limite o ponga en riesgo su propia integridad física durante el desarrollo de la función
+      policial;
+    cites:
+    - source: retys
+  - text: Abstenerse de consumir sustancias psicotrópicas, estupefacientes, ú otras que produzcan efectos similares;
+    cites:
+    - source: retys
+  - text: No contar con tatuajes antisociales en ninguna parte del cuerpo;
+    cites:
+    - source: retys
+  - text: No utilizar accesorios en perforaciones cutáneas visibles portando el uniforme;
+    cites:
+    - source: retys
+  - text: No estar suspendido o inhabilitado, ni haber sido destituido por resolución firme como servidor público;
+    cites:
+    - source: retys
+  - text: No haber sido inhabilitado, separado o removido del cargo de la misma u otra institución policial;
+    cites:
+    - source: retys
+  - text: Someterse a exámenes para comprobar la ausencia de abuso de sustancias que alteren el estado físico y
+      mental, como el alcohol, sustancias psicotrópicas, estupefacientes u otras que produzcan efectos similares,
+      y aprobar los procesos de Evaluaciones de Control de Confianza.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Revisar se cumpla con todos los requisitos.
+    - Imprimir y llenar la Solicitud de Trámite con tinta azul.
+    - 'Acudir al Departamento de Reclutamiento y Vinculación Ciudadana con los siguientes documentos en original
+      y dos copias por ambos lados: Acta de nacimiento, Cartilla militar liberada (varones), Título, certificado
+      de estudios, carta pasante o cédula profesional, currículum vitae, licencia de manejo tipo C (en caso de no
+      contar con ella, se le entregará carta compromiso siempre y cuando sepa conducir), constancia de situación
+      fiscal, 1 fotografía tamaño credencial/infantil cualquier color, INE vigente, CURP, ex militares la carta
+      de baja del ejército'
+    - Seguir instrucciones por parte del personal de reclutamiento que le indicarán todos los pasos y tiempos de
+      reclutamiento para el seguimiento del proceso
+  notes: Digida a todas aquellas personas que deseen ingresar a la Agencia Estatal de Investigación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 21
+- source: ley2
+  pinpoint: Artículo 47, fracciones VI, X y XII, 78, 86 y 87
+- source: ley3
+  pinpoint: Artículo 34 fracción XX
+- source: ley4
+  pinpoint: Artículos 28, 29 fracciones XI y XIII,116 Apartado A
+- source: ley5
+  pinpoint: Artículo 41 fracciones X y XII
+- source: ley6
+  pinpoint: Artículos 39, 40, 41 y 53
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Revisar se cumpla con todos los requisitos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Imprimir y llenar la solicitud de trámite con tinta azul
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'Acudir al Departamento de Reclutamiento con los siguientes documentos en original y dos copias por ambos
+    lados: Acta de nacimiento certificada (código QR), Cartilla militar liberada (varones), certificado de preparatoria,
+    currículum vitae, carta de exposición de motivos, licencia de manejo tipo C (en caso de no contar con ella,
+    se le entregará carta compromiso siempre y cuando sepa conducir), constancia de situación fiscal, carta de no
+    inhabilitación, comprobante de domicilio vigente, 2 fotografías tamaño infantil, INE vigente, CURP, ex militares
+    la carta de baja del ejército'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Seguir instrucciones por parte del personal de reclutamiento que le indicarán todos los pasos y tiempos
+    de reclutamiento para el seguimiento del proceso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1346: Reclutamiento y Preseleccion de Aspirantes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1346
+    version_date: 27/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General del Sistema Nacional de Seguridad Pública
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Seguridad Ciudadana del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: reglamento
+    official: true
+    title: Reglamento de la Academia de Seguridad Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Reclutamiento y Preselección de Aspirantes en materia de Seguridad Ciudadana. Copiado tal
+  cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

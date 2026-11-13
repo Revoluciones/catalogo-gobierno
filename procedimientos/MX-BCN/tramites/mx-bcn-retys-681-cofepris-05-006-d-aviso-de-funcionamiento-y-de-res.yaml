@@ -1,0 +1,110 @@
+id: mx-bcn-retys-681-cofepris-05-006-d-aviso-de-funcionamiento-y-de-res
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-006-D Aviso de Funcionamiento y de Responsable Sanitario de Establecimientos de Insumos para
+  la Salud. Farmacia Alopática o Farmacia Homeopática o Botica
+summary: Cuando se quiera tener una farmacia en donde puedan vender medicamentos alopáticos y/o medicamentos homeopáticos
+  (sin preparar ningún medicamento) o una botica (en donde solo se venden medicamentos).
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 681
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/681
+  homoclave: BC-COEPRIS-005
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Aviso de funcionamiento
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Original y copia legible del acta constitutiva o poder notarial que acredite al representante legal
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial del representante legal
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial de las personas autorizadas
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en la
+      parte inferior derecha
+    - Elegir la modalidad del trámite de interés
+    - Llenar formato requerido
+    - Firmar resolución de trámite enviado vía correo
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 200, Artículo 200 BIS y Artículo 259
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en
+    la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elegir la modalidad del trámite de interés
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar formato requerido
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar resolución de trámite enviado vía correo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 681: COFEPRIS-05-006-D Aviso de Funcionamiento y de Responsable Sanitario de Establecimientos
+      de Insumos para la Salud. Farmacia Alopática o Farmacia Homeopática o Botica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/681
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-006-D Aviso de Funcionamiento y de Responsable Sanitario de Establecimientos
+  de Insumos para la Salud. Farmacia Alopática o Farmacia Homeopática (sin preparación de especialidades farmacéuticas)
+  o Botica.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás
+  variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

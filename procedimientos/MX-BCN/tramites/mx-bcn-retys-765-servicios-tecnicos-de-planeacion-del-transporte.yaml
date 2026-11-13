@@ -1,0 +1,160 @@
+id: mx-bcn-retys-765-servicios-tecnicos-de-planeacion-del-transporte
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicios técnicos de planeación del transporte
+summary: Comprende aquellos servicios técnicos de planeación del transporte, como lo pueden ser la digitalización,
+  la copia impresa o digital de rutas.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 765
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/765
+  homoclave: BC-IMOS-015
+who_can:
+- Interesado
+when: Cuando la persona interesada solicite los servicios técnicos de planeación del transporte
+result: Copias de la traza de rutas (impresa o digital) o la digitalización de las mismas
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Por copia impresa de la traza de rutas: 25.00 UMAS Por copia digital en disco magnético de la traza
+    de rutas: 50.00 UMAS Por digitalización de rutas de transporte en cualquiera de sus modalidades por unidad:
+    3.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios, representantes legales, gremios, asociaciones relacionadas con el transporte público
+  requirements:
+  - text: Presentar escrito libre en original y copia debidamente firmada completando todos los campos que sean
+      requeridos
+    cites:
+    - source: retys
+  - text: Presentar original y copia de identificación oficial vigente (INE y/o pasaporte)
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral acreditando su personalidad con poder notarial y copia de la identificación
+      oficial vigente (personas morales)
+    cites:
+    - source: retys
+  - text: Entregar copia del comprobante de pago de derechos por el trámite solicitado
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para copia impresa de la traza de rutas.
+- name: Permisionarios, representantes legales, gremios, asociaciones relacionadas con el transporte público
+  requirements:
+  - text: Acta constitutiva de la persona moral acreditando su personalidad con poder notarial e identificación
+      oficial vigente (personas morales)
+    cites:
+    - source: retys
+  - text: Presentar escrito libre en original y copia debidamente firmada completando todos los campos que sean
+      requeridos
+    cites:
+    - source: retys
+  - text: Unidad USB (nueva)
+    cites:
+    - source: retys
+  - text: Entregar copia del comprobante de pago de derechos por el trámite solicitado
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para copia en disco magnético de la traza de rutas
+- name: Permisionarios, representantes legales, gremios, asociaciones relacionadas con el transporte público
+  requirements:
+  - text: Presentar escrito libre en original y copia debidamente firmada completando todos los campos que sean
+      requeridos
+    cites:
+    - source: retys
+  - text: Presentar original y copia de identificación oficial vigente (ine y/o pasaporte)
+    cites:
+    - source: retys
+  - text: Copia del derrotero expedido por la direccion de transporte municipal o el instituto de movilidad sustentable
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral acreditando su personalidad con poder notarial e identificación
+      oficial vigente (personas morales)
+    cites:
+    - source: retys
+  - text: Entregar copia del comprobante de pago de derechos por el trámite solicitado
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para digitalización de rutas de transporte en cualquiera de sus modalidades por unidad
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso H, incisos 1,2 y 3
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 765: Servicios técnicos de planeación del transporte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/765
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicios Técnicos de Planeación del Transporte. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

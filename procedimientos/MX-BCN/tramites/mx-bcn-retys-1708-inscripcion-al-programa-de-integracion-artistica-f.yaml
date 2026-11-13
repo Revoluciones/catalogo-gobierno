@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1708-inscripcion-al-programa-de-integracion-artistica-f
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Programa de Integración Artística "Forjadores de Sueños"
+summary: Que niñas, niños y jóvenes concursen anualmente por una beca de talleres, las cuales pueden ser música,
+  danza, teatro y artes plásticas. Los jóvenes recibirán beca económica con monto fijo y asesoramiento en las mismas
+  disciplinas con el propósito de desarrollar y potencializar su habilidad artística.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1708
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1708
+  homoclave: BC-SC-019
+who_can:
+- Interesado
+- Tutor
+when: Entre abril y junio (se lanza convocatoría)
+result: Beca académica o apoyo económico
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subsecretaría de Cultura Comunitaria para el Bienestar
+  address: 'Álvaro Obregón #1209, Nueva, Mexicali, 21100'
+scenarios:
+- name: Niñas, niños y jóvenes (8 a 18 años)
+  requirements:
+  - text: Ficha de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10491
+  - text: Carta compromiso
+    cites:
+    - source: retys
+  - text: Cumplir con lo solicitado en la convocatoria de acuerdo a la expresión artística a participar
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Descarga solicitud de inscripción y carta compromiso
+    - Entrega requisitos de conformidad con la convocatoria vigente
+    - Consejo Colegiado dictamina los proyectos beneficiados
+    - Personal de la Secretaría de Cultura anuncia y entrega becas a los concursantes beneficiados
+  notes: Niñas, niños y jóvenes (8 a 18 años)
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 32, fracción IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Descarga solicitud de inscripción y carta compromiso
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega requisitos de conformidad con la convocatoria vigente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Consejo Colegiado dictamina los proyectos beneficiados
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura anuncia y entrega becas a los concursantes beneficiados
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1708: Inscripción al Programa de Integración Artística "Forjadores de Sueños"'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1708
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

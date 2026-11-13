@@ -1,0 +1,120 @@
+id: mx-bcn-retys-1399-asignacion-de-defensor-publico-a-personas-detenida
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asignación de defensor público a personas detenidas, sujetas a investigación o en proceso.
+summary: La Asignación de defensor público a personas detenidas, sujetas a investigación o en proceso penal es el
+  trámite mediante el cual una persona que ha sido detenida, investigada o acusada de un delito puede solicitar
+  que se le designe un abogado de la Defensoría Pública para que la asesore y la represente legalmente. Se utiliza
+  cuando alguien no cuenta con un abogado particular y necesita defensa jurídica para proteger sus derechos y recibir
+  acompañamiento durante todo el procedimiento ante las autoridades.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1399
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1399
+  homoclave: BC-CJ-019
+who_can:
+- Interesado
+when: Cuando lo requiera
+result: Representación jurídica
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Área Penal, Guadalupe Victoria, Mexicali
+  address: 'Calle Gizel Y Cerrada De Las Orquídeas #S/N, Fracc. Valle De Guadalupe, Mexicali, 21720'
+- municipality: Mexicali
+  name: Área Penal, Ciudad Morelos, Mexicali
+  address: 'Av. Leonardo Guillén Y General Rodolfo Sánchez Taboada #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Área Penal, Mexicali
+  address: 'Calzada de los Presidentes #1185, Zona Río Nuevo, Mexicali, 21120'
+- municipality: Tijuana
+  name: Área Penal, Tijuana
+  address: 'Vía Rápida José Fimbres Moreno #Loc. 41,43, Fracc. San José, Tijuana, 22226'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: Playas de Rosarito
+  name: Área Penal, Rosarito
+  address: 'Calle General Juan Vicario #S/N, Ampl. Benito Juárez, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+- municipality: San Felipe
+  name: Área Civil, Familiar, Administrativa y Penal, San Felipe
+  address: 'Mar Cortés #S/N, Mar De Cortés, San Felipe, 21850'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: En caso de haber contado con abogado particular; presentar escrito de revocación del abogado particular.
+    cites:
+    - source: retys
+  - text: En su caso, notificación que ejerce el juez solicitando la defensa pública.
+    cites:
+    - source: retys
+  - text: En su caso, solicitud de ministerio público para solicitar defensor público.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir y solicitar el trámite a la oficina del municipio en donde resida
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, Inciso B), Fracción 8.
+- source: ley2
+  pinpoint: Artículo 2, Fracciones I y IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir y solicitar el trámite a la oficina del municipio en donde resida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1399: Asignación de defensor público a personas detenidas, sujetas a investigación o en
+      proceso.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1399
+    version_date: 13/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

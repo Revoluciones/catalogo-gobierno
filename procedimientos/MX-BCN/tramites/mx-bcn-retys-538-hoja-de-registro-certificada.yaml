@@ -1,0 +1,146 @@
+id: mx-bcn-retys-538-hoja-de-registro-certificada
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Hoja de Registro Certificada
+summary: Documento en dónde se hace constar que una sociedad se encuentra inscrita.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 538
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/538
+  homoclave: BC-DRPPC-010
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuándo se requiera la constancia de Inscripción de una sociedad mercantil
+result: Certificación de la hoja de registro
+cost:
+  type: variable
+  amount_mxn: 556.0
+  text: 'COSTO VARIABLE: Octubre 2026 $556.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas morales
+  requirements:
+  - text: Llenar la solicitud de certificado mercantil con la información necesaria para su búsqueda
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1940
+  - text: Cubrir previamente en la caja recaudadora los derechos correspondientes
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Llenar por formato FMO-8.5.1-03
+    - Solicitar el volante de pago
+    - Acudir a las Oficinas de Recaudación para realizar el pago del servicio solicitado
+    - Tomar turno para presentar el volante de pago con el Formato FMO-8.5.1-03
+  notes: Cuando se necesite de la certificación de la hoja de registro
+legal_basis:
+- source: ley1
+  pinpoint: 20, 21 Y 21 BIS.
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 14, Fracción VII, Inciso D
+- source: ley4
+  pinpoint: 11 fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar por formato FMO-8.5.1-03
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Solicitar el volante de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a las Oficinas de Recaudación para realizar el pago del servicio solicitado
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para presentar el volante de pago con el Formato FMO-8.5.1-03
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 538: Hoja de Registro Certificada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/538
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código de Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal de año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Certificado de Hoja de Registro de Sociedades Mercantiles. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

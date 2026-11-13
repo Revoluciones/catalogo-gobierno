@@ -1,0 +1,133 @@
+id: mx-bcn-tijuana-tj-sdtua-0107-f5-entrega-recepcion-de-fraccionamientos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: F5 Entrega - Recepción de Fraccionamientos
+summary: Permite al urbanizador solicitar la entrega-recepción de las obras de urbanización concluidas, conforme
+  a los proyectos aprobados, ya sea de forma parcial o total.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0107
+who_can:
+- Interesado
+when: Al concluir parcial o totalmente las obras de urbanización conforme a los proyectos aprobados.
+result: Acta
+requirements:
+- text: Llenar y firmar solicitud de la dirección de administración urbana (propietario o representante legal).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de los contratos de donaciones inscritos en el registro público de la propiedad y comercio.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Reporte fotográfico del estado actual de la urbanización.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Relación de compra – venta realizada de la lotificación resultante.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Garantía por vicios ocultos de las obras de urbanización.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Expediente integrado, será enviado a DOIUM y DSPM (2 juegos copias de acuerdo publicado, planos de obra
+    terminada y planos autorizados, planos digitalizados en archivos DWG AutoCAD.)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Archivo digital de la información antes mencionada.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Inspección y acta para Fraccionamientos finalizados con fin de la entrega-recepción parcial o total al
+    Municipio, dentro del centro de población...: 78.65 UMA ($9,226.43) · Inspección y acta para Fraccionamientos
+    finalizados con fin de la entrega-recepción parcial o total al Municipio, fuera del centro de población...:
+    125.13 UMA ($14,679.00) · Inspección y dictamen de no inconveniente de entrega de alumbrado publico para Fraccionamientos
+    finalizados con fin de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA
+    ($2,516.30) · Inspección y dictamen de no inconveniente de entrega de areás verdes para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA ($2,516.30)
+    · Inspección y dictamen de no inconveniente de entrega de ingenieria de transito para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA ($2,516.30)
+    · Inspección y dictamen de no inconveniente de entrega de rehabilitacion y mantenimiento Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA ($2,516.30)
+    · Inspección y dictamen de no inconveniente de entrega de señalamiento vial para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA ($2,516.30)
+    · Inspección y dictamen de no inconveniente de entrega de pluviales para Fraccionamientos finalizados con fin
+    de entrega-recepción parcial o total al Municipio las primeras 2 revisiones...: 21.45 UMA ($2,516.30) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de alumbrado publico para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de areas verdes para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de ing. de transito para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de rehabilitacio y mantenimint para Fracc finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de señalaminto vial para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de pluviales para Fraccionamientos finalizados
+    con fin de entrega-recepción parcial o total al Municipio para mantenimiento...: 35.75 UMA ($4,193.83) · Insp
+    y reconsideracion de dictamen de no inconveniente de entrega de poligono envolvente y puntos de control...:
+    35.75 UMA ($4,193.83). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0107: F5 Entrega - Recepción de Fraccionamientos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0107
+    version_date: '2026-11-04'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de Acciones de Urbanización para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20241227113533997_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Articulo 31, fracción XVII, inciso J) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2025/LI-TJBC_E-2025.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con lo que indica el reglamento y normativa vigente.'

@@ -1,0 +1,158 @@
+id: mx-bcn-retys-699-cofepris-05-007-b-aviso-de-modificacion-o-baja-al
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-007-B Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable Sanitario del Establecimiento
+  de Insumos para la Salud. Modalidad B.- Almacén de Depósito y/o Distribución de Dispositivos Médicos o Remedios
+  Herbolarios o Medicamentos No Controlados o Materia Prima para Medicamentos No Controlados
+summary: Cuando el ciudadano haya realizado algún cambio en el establecimiento dedicado al almacenamiento y/o distribución
+  de dispositivos médicos o remedios herbolarios o medicamentos no controlados o materia prima para medicamentos
+  no controlados.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 699
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/699
+  homoclave: BC-COEPRIS-011
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Se encuentra en proceso de apertura operación o proceso modificacion o de cierre
+result: Aviso de modificacion o baja y/o responsable sanitario
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Original y copia simple legible del formato “Aviso de funcionamiento, de responsable sanitario y de modificación
+      o baja”, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial del propietario (credencial del instituto nacional electoral (INE)
+      o pasaporte vigente o cartilla del servicio militar nacional o licencia de manejo)
+    cites:
+    - source: retys
+  - text: 'Para cambio de persona autorizada: copia legible de identificación oficial con fotografía de la(s) persona(s)
+      autorizada(s) (credencial del instituto nacional electoral (INE) o pasaporte vigente o cartilla del servicio
+      militar nacional o licencia de manejo)'
+    cites:
+    - source: retys
+  - text: 'En caso de persona moral: original y copia legible del acta constitutiva y/o poder otorgado ante notario
+      o corredor público de (los) representante (s) legal (es) (artículo 15, ley federal de procedimiento administrativo),
+      copia legible de identificación oficial del representante legal. (credencial del instituto nacional electoral
+      (ine) o pasaporte vigente o cartilla del servicio militar nacional o licencia de manejo)'
+    cites:
+    - source: retys
+  - text: 'Para cambio de responsable sanitario: no se requiere documentación anexa'
+    cites:
+    - source: retys
+  - text: 'Para baja de responsable sanitario: aviso de responsable original'
+    cites:
+    - source: retys
+  - text: 'Para suspensión de actividades, reinicio de actividades y baja definitiva del establecimiento: no se
+      requiere documentación anexa'
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial de personas autorizadas (credencial del instituto nacional electoral
+      (INE) o pasaporte vigente o cartilla del servicio militar nacional o licencia de manejo)
+    cites:
+    - source: retys
+  - text: 'Para el caso de instituciones públicas adjuntar la documentación conforme a lo siguiente: documento que
+      acredite la personalidad juridica del representante legal de la institución (que indique sus atribuciones
+      y facultades)'
+    cites:
+    - source: retys
+  - text: 'Para el caso de instituciones públicas adjuntar la documentación conforme a lo siguiente: copia legible
+      del nombramiento o gaceta o reglamento interno de la institución que representa'
+    cites:
+    - source: retys
+  - text: 'Para el caso de instituciones públicas adjuntar la documentación conforme a lo siguiente: copia legible
+      de identificación oficial del representante legal (credencial del instituto nacional electoral (INE) o pasaporte
+      vigente o cartilla del servicio militar nacional o licencia de manejo)'
+    cites:
+    - source: retys
+  - text: 'Para el caso de instituciones públicas adjuntar la documentación conforme a lo siguiente: copia legible
+      de identificación oficial de personas autorizadas (credencial del instituto nacional electoral (INE) o pasaporte
+      vigente o cartilla del servicio militar nacional o licencia de manejo)'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en la
+      parte inferior derecha
+    - Elegir la modalidad del trámite de interés
+    - Llenar formato requerido
+    - Firmar resolución de trámite enviado vía correo
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 200, 200 BIS y 259
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la liga de la plataforma de DIGIPRIS haciendo clic en el botón "Iniciar Trámite" ubicado en
+    la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elegir la modalidad del trámite de interés
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar formato requerido
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar resolución de trámite enviado vía correo
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 699: COFEPRIS-05-007-B Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable
+      Sanitario del Establecimiento de Insumos para la Salud. Modalidad B.- Almacén de Depósito y/o Distribución
+      de Dispositivos Médicos o Remedios Herbolarios o Medicamentos No Controlados o Materia Prima para Medicamentos
+      No Controlados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/699
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-007-B Aviso de Modificación o Baja al Aviso de Funcionamiento y/o Responsable
+  Sanitario del Establecimiento de Insumos para la Salud. Almacén de Depósito y/o Distribución de Dispositivos M..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

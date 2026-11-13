@@ -1,0 +1,122 @@
+id: mx-bcn-tijuana-tj-sedeti-0079-sistema-de-apertura-rapida-de-empresas-sare
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Sistema de Apertura Rápida de Empresas (SARE)
+summary: Sistema que simplifica el proceso para obtener la licencia de operación para negocios de bajo y mediano
+  impacto ambiental de forma rápida y sencilla en solo 3 días hábiles. De acuerdo con el Artículo 10 del Reglamento
+  del SARE, una vez transcurrido el plazo de resolución de 3 días hábiles, el solicitante contará con un término
+  máximo de 90 días hábiles para finalizar su trámite en el Portal Electronico del SARE. En caso de no cumplirse
+  este plazo, el trámite se dará por cancelado automáticamente.
+authority:
+  name: Secretaría de Desarrollo Económico (Ayuntamiento de Tijuana)
+  unit: Centro de Atención al Emprendedor
+official_ids:
+  homoclave: TJ-SEDETI-0079
+who_can:
+- Interesado
+when: Cuando un emprendedor o empresario local desea obtener la licencia de operación de forma ágil y sencilla
+result: Dictamen de Uso de Suelo, Certificado de Medidas de Seguridad, Registro de Residuos Sólidos Urbanos y Licencia
+  de Operación
+requirements:
+- text: Licencia de construcción y terminación de obra del local, si éste tiene menos de 5 años de haber sido construido,
+    de lo contrario, recibo de agua o luz.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Si usted no contratara el servicio de recolección de basura del Ayuntamiento, deberá anexar contrato, manifiesto
+    o última factura del servicio de recolección con la empresa autorizada por la Dirección de Protección al Ambiente
+    de su elección.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Fotografías: 4 del exterior y fachada completa, y 4 del interior del local en diferentes ángulos, además
+    de las que incluyan sanitario, extintor, señalamientos preventivos, fachada exterior completa y depósito de
+    basura y/o contenedor'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Carta poder simple, en caso de ser persona distinta la que realice el trámite (solicitada por la Dirección
+    de Protección al Ambiente).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: De ser persona moral, acta constitutiva y poderes legales.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Identificaciones oficiales (propietario-solicitante, arrendador-arrendatario y/o comodante-comodatario,
+    según sea el caso).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Documento que acredite la propiedad o posesión del inmueble (escrituras, título de propiedad, contrato de
+    compraventa, contrato de arrendamiento y/o contrato de comodato, según sea el caso).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 4514.09
+  text: 'Sistema de Apertura Rápida de Empresas: 38.48 UMA ($4,514.09). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+offices:
+- municipality: Tijuana
+  name: Centro de Atención al Emprendedor
+  address: Avenida Independencia 1350, 1er nivel, Zona Urbana Rio
+  phones: 6649737036 ext. 76
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEDETI-0079: Sistema de Apertura Rápida de Empresas (SARE)'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEDETI-0079
+    version_date: '2026-11-05'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 1, Artículo 7, Artículo 8 Fracciones II, III y V, Artículo 9, Artículo 10, Artículo 28 Fracciones
+      I, II, III, X, XIII y XIV, Artículo 31, Artículo 32 Fracciones V, VII, VIII, IX y XI, Artículo 34, Artículo
+      37 y Artículo 40 del Reglamento del Sistema de Apertura Rápida de Empresas del Municipio de Tijuana, Baja
+      California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/RM_SistemadeAperturaRapidadeEmpresas_TJ-BC_23082019.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 39, fracción III de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal del 2026
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://pagos.tijuana.gob.mx/PagosEnLinea/index.aspx Criterio para resolver: Para ser elegible para el
+  Sistema de Apertura Rápida de Empresas (SARE), el giro comercial debe estar incluido en el Catálogo de Giros SARE,
+  operar en un inmueble completamente edificado y habilitado para tal fin sin exceder de 100 metros cuadrados, y
+  no contemplar la venta ni el consumo de bebidas alcohólicas en ninguna de sus presentaciones.'

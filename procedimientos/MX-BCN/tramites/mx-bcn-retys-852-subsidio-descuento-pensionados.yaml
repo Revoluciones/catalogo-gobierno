@@ -1,0 +1,116 @@
+id: mx-bcn-retys-852-subsidio-descuento-pensionados
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Subsidio Descuento Pensionados
+summary: Los usuarios pensionados tienen derecho a descuentos según su consumo de agua, y este descuento se otorgará
+  a los usuarios que presenten su acreditación como pensionados en nuestras oficinas.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 852
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/852
+  homoclave: BC-CESPE-015
+who_can:
+- Interesado
+when: Cuando se solicite el descuento
+result: Aprobación para el descuento
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Pensionada o pensionado
+  requirements:
+  - text: Carta de resolución
+    cites:
+    - source: retys
+  - text: Informe de pago
+    cites:
+    - source: retys
+  - text: Copia del talón de cheque por ambos lados (ISSSTE, ISSSTECALI, ISSFAM, PEMEX, ETC.)
+    cites:
+    - source: retys
+  - text: Pensionados por aseguradora, carta de ingresos de la aseguradora
+    cites:
+    - source: retys
+  - text: Copia credencial de pensión de la dependencia a la que pertenezcan o "cartilla citas del IMSS" vigente
+    cites:
+    - source: retys
+  - text: Copia de la credencial de elector vigente
+    cites:
+    - source: retys
+  - text: Ingresos no mayores al equivalente a cinco veces UMA vigente.
+    cites:
+    - source: retys
+  - text: Recibo de agua
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas con la documentacion solicitada
+  notes: El pensionado deberá acreditarse con la carta resolución otorgada por el IMSS.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas con la documentacion solicitada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 852: Subsidio Descuento Pensionados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/852
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Subsidio Descuento Pensionados.. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

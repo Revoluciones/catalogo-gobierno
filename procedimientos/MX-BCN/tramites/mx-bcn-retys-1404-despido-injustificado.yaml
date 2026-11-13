@@ -1,0 +1,102 @@
+id: mx-bcn-retys-1404-despido-injustificado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Despido Injustificado
+summary: Se brinda asesoría y representación jurídica a todas y todos los trabajadores, así como a sus beneficiarios,
+  para llevar a cabo la defensa de sus derechos ante el tribunal laboral, siempre y cuando no cuente con un abogado
+  particular.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1404
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1404
+  homoclave: BC-CJ-024
+who_can:
+- Interesado
+when: Cuando se requiera
+result: Resolución jurídica
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de la Defensoría Pública del Estado y Coordinación Estatal del Área Laboral
+  address: 'Calz. De Los Presidentes #1185, Río Nuevo, Mexicali, 21120'
+- municipality: Tijuana
+  name: Área Civil, Familiar, Administrativa y Laboral, Tijuana
+  address: 'Calle Quinta #7951, Zona Centro, Tijuana, 22000'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: Constancia de no conciliación
+    cites:
+    - source: retys
+  - text: Demás requisitos necesarios según señale el defensor público, en su caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina correspondiente para solicitar la asesoría jurídica.
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 685 BIS.
+- source: ley2
+  pinpoint: Artículo 2, Fracciones IV y VII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina correspondiente para solicitar la asesoría jurídica.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1404: Despido Injustificado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1404
+    version_date: 30/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

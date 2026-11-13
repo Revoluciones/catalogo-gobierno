@@ -1,0 +1,114 @@
+id: mx-bcn-retys-1235-deteccion-y-seguimiento-de-talentos-deportivos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Detección y Seguimiento de Talentos Deportivos
+summary: Evaluar niñas, niños y jóvenes prospecto a talentos deportivos a través de visorias técnicas realizadas
+  en el Sistema Educativo Escolar, Centros de Alto Rendimiento del Estado y en ciudad deportiva Mexicali para llevar
+  a cabo la valoración y detección para ingresar al programa de talentos deportivos.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1235
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1235
+  homoclave: BC-INDEBC-008
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: De acuerdo al programa de evaluación realizado por la Dirección de Desarrollo de Talentos Deportivos
+result: Visorias técnicas realizadas para evaluar niñas, niños y jóvenes prospecto a talentos deportivos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Años'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Talentos Deportivos
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Tijuana
+  name: Departamento de Talentos Deportivos
+  address: 'Circuito Vial Sur #s/n, UABC, Universidad Otay, Tijuana, 22427'
+- municipality: Ensenada
+  name: Departamento de Talentos Deportivos
+  address: 'Boulevard de los lagos #s/n, Fraccionamiento Valle Dorado, Ensenada, 22890'
+scenarios:
+- name: Niñas, niños y jóvenes
+  requirements:
+  - text: Ser seleccionado como prospecto a talento
+    cites:
+    - source: retys
+  - text: Acreditar su nacionalidad mexicana
+    cites:
+    - source: retys
+  - text: Tener domicilio en el Estado de Baja California
+    cites:
+    - source: retys
+  - text: Tener las características somatotipicas adecuadas y de acuerdo a sus capacidades y cualidades (edad, estatura
+      y peso) documentos
+    cites:
+    - source: retys
+  - text: Copia del acta de nacimiento
+    cites:
+    - source: retys
+  - text: Examen médico con fecha de expedición no mayor a 14 días
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Cumplir con las características del somatotipo que se requiera para alguna de las disciplinas que cubren los
+      programas deportivos del INDE
+    - Acudir a las instalaciones deportivas del instituto a los entrenamientos de acuerdo a la disciplina deportiva
+      asignada
+  notes: Visorias técnicas realizadas para evaluar niñas, niños y jóvenes prospecto a talentos deportivos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción XXIV y 96 fracción XIV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Cumplir con las características del somatotipo que se requiera para alguna de las disciplinas que cubren
+    los programas deportivos del INDE
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones deportivas del instituto a los entrenamientos de acuerdo a la disciplina deportiva
+    asignada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1235: Detección y Seguimiento de Talentos Deportivos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1235
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

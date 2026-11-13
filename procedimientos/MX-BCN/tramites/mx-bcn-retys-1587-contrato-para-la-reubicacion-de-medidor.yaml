@@ -1,0 +1,286 @@
+id: mx-bcn-retys-1587-contrato-para-la-reubicacion-de-medidor
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato para la Reubicación de Medidor
+summary: Contratar una reubicación de medidor de un predio determinado que ya cuenta con los servicios, cumpliendo
+  con las especificaciones correspondientes.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1587
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1587
+  homoclave: BC-CESPT-009
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera del servicio
+result: Reubicación de medidor
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: De acuerdo con el presupuesto que previamente formule el organismo'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP Otay Delegación
+  address: 'Calzada Tecnológico #S/N, Fracc. Altabrisa, dentro de la Deleg. Mesa de Otay, Tijuana, 22370'
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Villa Fontana
+  address: 'Av. Aranjuez #S/N, Fracc. Villa Fontana, dentro de la Delegación Villa Fontana, Tijuana, 22205'
+- municipality: Tijuana
+  name: CAP Otay Centenario
+  address: 'Carretera Aeropuerto #1900 Loc 1, Centro Com. Otay, Fracc. Otay Nueva Tijuana, Tijuana, 22425'
+- municipality: Tijuana
+  name: CAP Otay San Miguel
+  address: 'Av. López Portillo #1460, Fracc. Otay Nueva Tijuana, Tijuana, 22435'
+- municipality: Tijuana
+  name: CAP Galerías Revolución
+  address: 'Av. Revolución #868 Loc 9, Centro Com. Galerías Revolución, Zona Centro, Tijuana, 22000'
+- municipality: Tijuana
+  name: CAP Playas de Tijuana
+  address: 'Paseo del Pacífico #901, Secc. Jardines, Playas de Tijuana, Tijuana, 22517'
+- municipality: Tijuana
+  name: CAP Matamoros
+  address: 'Ruta Independencia #21560, Loc. 18, Centro Com. Matamoros, Fracc. Parque Industrial Américas, Tijuana,
+    22206'
+- municipality: Tijuana
+  name: CAP Plaza Carrousel
+  address: 'Blvd. Gustavo Díaz Ordaz #15602, Centro Com. Plaza Carrousel, Fracc. Las Brisas, Tijuana, 22115'
+- municipality: Tijuana
+  name: CAP Florido
+  address: 'Blvd. Paseo de los Laureles #S/N, Fracc. Vista de Palmillas, Tijuana, 22253'
+- municipality: Tijuana
+  name: CAP Cerro de las Abejas
+  address: 'Blvd. El Refugio #9601,Loc 7, Centro Comercial Las Abejas, Fracc. El Florido III Sec., Tijuana, 2237'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Palacio Municipal
+  address: 'Vía Rápida Oriente #10252, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP El Rubí
+  address: 'Ave. Cabo San Lucas  #8651, Fracc. Terrazas del Rubí, dentro de la Delegación SAB, Tijuana, 22626'
+- municipality: Tijuana
+  name: CAP La Gloria
+  address: 'C. Coronado Km 13.4, Carretera Tijuana - Ensenada #S/N, Int. Subdelegación La Gloria, Tijuana, 22703'
+- municipality: Tijuana
+  name: UMS Quinta del Cedro
+  address: 'Paseo Banderas #4410, Urbi Quinta del Cedro, Tijuana, 111111'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Preparación lista según el Instructivo de Instalación de medidor adicional (INS-001) o el Instructivo
+      para instalación de tres o más medidores (INS-002), disponible en la sección Documentos Informativos.
+    cites:
+    - source: retys
+  - text: Inspección de factibilidad positiva emitida por CESPT, la puede tramitar llamando al teléfono 073.
+    cites:
+    - source: retys
+  - text: La cuenta no debe presentar adeudos
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio, UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en original y copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+    - Pasar al Módulo de Información e indicar a la persona del módulo que desea realizar una reubicación de medidor
+    - Si no lo obtuvo de Internet, solicitar a la persona del Módulo de Información las especificaciones de las
+      preparaciones que debe hacer el usuario para la reubicación del medidor, antes de pagar el trámite (INS-001
+      o INS-002)
+    - Contratar a un plomero para que realice las preparaciones necesarias para que sea posible realizar la reubicación
+    - Una vez realizadas las preparaciones llamar al 073 para solicitar una Inspección de Factibilidad de Servicios
+    - Ya que cuente con la inspección de factibilidad POSITIVA, acudir a cualquier Centro de Atención al Público
+      de CESPT con los requisitos, tomar un número y esperar a ser atendido por personal de Módulo de Atención Personalizada
+      (MAP)
+    - Cuando llegue su turno, la persona del MAP revisará que los requisitos estén completos, en caso de no ser
+      así, le informará que no es posible realizar el trámite hasta que éstos se completen, indicándole lo que falta
+    - Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+      solicitado
+    - El usuario debe firmar de conformidad los documentos que le entrega la persona del MAP
+    - 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le entregarán
+      dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra'
+  notes: Propietario
+- name: Representante
+  requirements:
+  - text: Preparación lista según el Instructivo de Instalación de medidor adicional (INS-001) o el Instructivo
+      para instalación de tres o más medidores (INS-002), disponible en la sección Documentos Informativos.
+    cites:
+    - source: retys
+  - text: Inspección de factibilidad positiva emitida por CESPT, la puede tramitar llamando al teléfono 073.
+    cites:
+    - source: retys
+  - text: La cuenta no debe presentar adeudos
+    cites:
+    - source: retys
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta Poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses, si la persona que
+      gestiona no es el propietario'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en original y copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+    - Pasar al Módulo de Información e indicar a la persona del módulo que desea realizar una reubicación de medidor
+    - Si no lo obtuvo de Internet, solicitar a la persona del Módulo de Información las especificaciones de las
+      preparaciones que debe hacer el usuario para la reubicación del medidor, antes de pagar el trámite (INS-001
+      o INS-002)
+    - Contratar a un plomero para que realice las preparaciones necesarias para que sea posible realizar la reubicación
+    - Una vez realizadas las preparaciones llamar al 073 para solicitar una Inspección de Factibilidad de Servicios
+    - Ya que cuente con la inspección de factibilidad POSITIVA, acudir a cualquier Centro de Atención al Público
+      de CESPT con los requisitos, tomar un número y esperar a ser atendido por personal de Módulo de Atención Personalizada
+      (MAP)
+    - Cuando llegue su turno, la persona del MAP revisará que los requisitos estén completos, en caso de no ser
+      así, informa al ciudadano que no es posible realizar el trámite hasta que éstos se completen, indicándole
+      lo que falta
+    - Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+      solicitado
+    - El usuario debe firmar de conformidad los documentos que le entrega la persona del MAP
+    - 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le entregarán
+      dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra'
+  notes: Representante
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo: 9.'
+- source: ley2
+  pinpoint: 'Artículos: 1, 2 y 14.'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al Módulo de Información e indicar a la persona del módulo que desea realizar una reubicación de
+    medidor
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Si no lo obtuvo de Internet, solicitar a la persona del Módulo de Información las especificaciones de
+    las preparaciones que debe hacer el usuario para la reubicación del medidor, antes de pagar el trámite (INS-001
+    o INS-002)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Contratar a un plomero para que realice las preparaciones necesarias para que sea posible realizar la
+    reubicación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez realizadas las preparaciones llamar al 073 para solicitar una Inspección de Factibilidad de Servicios
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Ya que cuente con la inspección de factibilidad POSITIVA, acudir a cualquier Centro de Atención al Público
+    de CESPT con los requisitos, tomar un número y esperar a ser atendido por personal de Módulo de Atención Personalizada
+    (MAP)
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Cuando llegue su turno, la persona del MAP revisará que los requisitos estén completos, en caso de no
+    ser así, le informará que no es posible realizar el trámite hasta que éstos se completen, indicándole lo que
+    falta
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona del MAP elaborará el Presupuesto de Obra que corresponda al servicio
+    solicitado
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: El usuario debe firmar de conformidad los documentos que le entrega la persona del MAP
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le
+    entregarán dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1587: Contrato para la Reubicación de Medidor'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1587
+    version_date: 05/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que reglamenta el servicio de agua potable en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

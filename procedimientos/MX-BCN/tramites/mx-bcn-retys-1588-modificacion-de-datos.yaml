@@ -1,0 +1,359 @@
+id: mx-bcn-retys-1588-modificacion-de-datos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Modificación de Datos
+summary: Solicitar que se realice el cambio de alguno de los datos que aparecen registrados en la cuenta de CESPT.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1588
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1588
+  homoclave: BC-CESPT-010
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando requiera modificar los datos registrados en su cuenta de CESPT
+result: Modificación de datos
+cost:
+  type: variable
+  amount_mxn: 226.4
+  text: 'COSTO VARIABLE: $226.40 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP Otay Delegación
+  address: 'Calzada Tecnológico #S/N, Fracc. Altabrisa, dentro de la Deleg. Mesa de Otay, Tijuana, 22370'
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Villa Fontana
+  address: 'Av. Aranjuez #S/N, Fracc. Villa Fontana, dentro de la Delegación Villa Fontana, Tijuana, 22205'
+- municipality: Tijuana
+  name: CAP Otay Centenario
+  address: 'Carretera Aeropuerto #1900 Loc 1, Centro Com. Otay, Fracc. Otay Nueva Tijuana, Tijuana, 22425'
+- municipality: Tijuana
+  name: CAP Otay San Miguel
+  address: 'Av. López Portillo #1460, Fracc. Otay Nueva Tijuana, Tijuana, 22435'
+- municipality: Tijuana
+  name: CAP Galerías Revolución
+  address: 'Av. Revolución #868 Loc 9, Centro Com. Galerías Revolución, Zona Centro, Tijuana, 22000'
+- municipality: Tijuana
+  name: CAP Playas de Tijuana
+  address: 'Paseo del Pacífico #901, Secc. Jardines, Playas de Tijuana, Tijuana, 22517'
+- municipality: Tijuana
+  name: CAP Matamoros
+  address: 'Ruta Independencia #21560, Loc. 18, Centro Com. Matamoros, Fracc. Parque Industrial Américas, Tijuana,
+    22206'
+- municipality: Tijuana
+  name: CAP Plaza Carrousel
+  address: 'Blvd. Gustavo Díaz Ordaz #15602, Centro Com. Plaza Carrousel, Fracc. Las Brisas, Tijuana, 22115'
+- municipality: Tijuana
+  name: CAP Florido
+  address: 'Blvd. Paseo de los Laureles #S/N, Fracc. Vista de Palmillas, Tijuana, 22253'
+- municipality: Tijuana
+  name: CAP Cerro de las Abejas
+  address: 'Blvd. El Refugio #9601,Loc 7, Centro Comercial Las Abejas, Fracc. El Florido III Sec., Tijuana, 2237'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Palacio Municipal
+  address: 'Vía Rápida Oriente #10252, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP El Rubí
+  address: 'Ave. Cabo San Lucas  #8651, Fracc. Terrazas del Rubí, dentro de la Delegación SAB, Tijuana, 22626'
+- municipality: Tijuana
+  name: CAP La Gloria
+  address: 'C. Coronado Km 13.4, Carretera Tijuana - Ensenada #S/N, Int. Subdelegación La Gloria, Tijuana, 22703'
+- municipality: Tijuana
+  name: UMS Quinta del Cedro
+  address: 'Paseo Banderas #4410, Urbi Quinta del Cedro, Tijuana, 111111'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Domicilio registrado
+  requirements:
+  - text: 'Si es Persona Física, documento que confiera poder y facultades para realizar el trámite, otorgado por
+      el titular de la cuenta, si la persona que realiza el trámite no es el titular, puede ser UNO de los siguientes:
+      Poder Notarial; Carta poder ante Notario Público, Corredor Público o Fedatario público; Carta Poder simple
+      firmada por el titular de la cuenta y por dos testigos, que incluya copia de las identificaciones oficiales
+      de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Si es persona física, identificación oficial con fotografía, VIGENTE, del propietario del predio, y de
+      la persona a quien se le haya otorgado el poder para realizar el trámite, si es el caso, puede ser UNO de
+      los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, documento que confiera poder y facultades para realizar el trámite, puede ser UNO
+      de los siguientes: Acta constitutiva de la empresa que incluya otorgamiento de poder con facultad para realizar
+      el trámite; Poder ante Notario Público o ante Corredor Público, que detalle las facultades de quien la represente
+      para realizar el trámite, en caso de que el acta constitutiva de la empresa no lo establezca.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, identificación oficial con fotografía vigente del representante legal, puede ser
+      UNO de los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula
+      consular.'
+    cites:
+    - source: retys
+  - text: 'Presentar UNO de los siguientes documentos: Constancia del número oficial emitida por el Ayuntamiento
+      correspondiente, que contenga la información que se desea modificar o registrar; Recibo del impuesto predial,
+      con vigencia no mayor a un año de antigüedad y que contenga la información que se desea modificar o registrar.'
+    cites:
+    - source: retys
+  - text: Todos los documentos se deben entregar en copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: La cuenta deberá estar al corriente (no presentar saldos vencidos)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo de Atención Personalizada (MAP) y esperar su turno.
+    - La persona del MAP revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que se completen.
+    - Pasar a cajas a realizar el pago correspondiente y regresar al MAP.
+    - La persona del MAP realiza las modificaciones correspondientes e indica a la persona solicitante que estas
+      se reflejarán en su próximo recibo.
+  notes: Modificación de domicilio registrado
+- name: RFC o Razón social
+  requirements:
+  - text: 'Si es Persona Física, documento que confiera poder y facultades para realizar el trámite, otorgado por
+      el titular de la cuenta, si la persona que realiza el trámite no es el titular, puede ser UNO de los siguientes:
+      Poder Notarial; Carta poder ante Notario Público, Corredor Público o Fedatario público; Carta Poder simple
+      firmada por el titular de la cuenta y por dos testigos, que incluya copia de las identificaciones oficiales
+      de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Si es persona física, identificación oficial con fotografía, VIGENTE, del propietario del predio, y de
+      la persona a quien se le haya otorgado el poder para realizar el trámite, si es el caso, puede ser UNO de
+      los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, documento que confiera poder y facultades para realizar el trámite, puede ser UNO
+      de los siguientes: Acta constitutiva de la empresa que incluya otorgamiento de poder con facultad para realizar
+      el trámite; Poder ante Notario Público o ante Corredor Público, que detalle las facultades de quien la represente
+      para realizar el trámite, en caso de que el acta constitutiva de la empresa no lo establezca.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, identificación oficial con fotografía vigente del representante legal, puede ser
+      UNO de los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula
+      consular.'
+    cites:
+    - source: retys
+  - text: Presentar UNO de los siguientes documentos; RFC; Alta de la Secretaría de Hacienda y Crédito Público;
+      Acta constitutiva.
+    cites:
+    - source: retys
+  - text: Todos los documentos se deben entregar en copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: La cuenta deberá estar al corriente (no presentar saldos vencidos)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo de Atención Personalizada (MAP) y esperar su turno.
+    - La persona del MAP revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que se completen.
+    - La persona del MAP realiza las modificaciones correspondientes.
+  notes: Modificación RFC o Razón social
+- name: Clave catastral
+  requirements:
+  - text: 'Si es Persona Física, documento que confiera poder y facultades para realizar el trámite, otorgado por
+      el titular de la cuenta, si la persona que realiza el trámite no es el titular, puede ser UNO de los siguientes:
+      Poder Notarial; Carta poder ante Notario Público, Corredor Público o Fedatario público; Carta Poder simple
+      firmada por el titular de la cuenta y por dos testigos, que incluya copia de las identificaciones oficiales
+      de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'SI es persona física, identificación oficial con fotografía, VIGENTE, del propietario del predio, y de
+      la persona a quien se le haya otorgado el poder para realizar el trámite, si es el caso, puede ser UNO de
+      los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, documento que confiera poder y facultades para realizar el trámite, puede ser UNO
+      de los siguientes: Acta constitutiva de la empresa que incluya otorgamiento de poder con facultad para realizar
+      el trámite; Poder ante Notario Público o ante Corredor Público, que detalle las facultades de quien la represente
+      para realizar el trámite, en caso de que el acta constitutiva de la empresa no lo establezca.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, identificación oficial con fotografía vigente del representante legal, puede ser
+      UNO de los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula
+      consular.'
+    cites:
+    - source: retys
+  - text: 'Presentar uno de los siguientes documentos: Avalúo y notificación de impuesto predial emitido por el
+      Ayuntamiento correspondiente; Constancia de datos catastrales expedida por el Ayuntamiento correspondiente.
+      Si se trata de una subdivisión, también debe presentar: Inspección de Factibilidad de Servicios para verificación
+      de datos en campo emitida por CESPT y Acta de Levantamiento emitida por el Ayuntamiento correspondiente.'
+    cites:
+    - source: retys
+  - text: Todos los documentos se deben entregar en copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: Todos los documentos se deben entregar en copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO COMPLETO.
+      La cuenta deberá estar al corriente (no presentar saldos vencidos)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo de Atención Personalizada (MAP) y esperar su turno.
+    - La persona del MAP revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+      que no es posible realizar el trámite hasta que se completen.
+    - La persona del MAP realiza las modificaciones correspondientes.
+  notes: Modificación de clave catastral registrada
+- name: Nombre del propietario
+  requirements:
+  - text: 'Si es Persona Física, documento que confiera poder y facultades para realizar el trámite, otorgado por
+      el titular de la cuenta, si la persona que realiza el trámite no es el titular, puede ser UNO de los siguientes:
+      Poder Notarial; Carta poder ante Notario Público, Corredor Público o Fedatario público; Carta Poder simple
+      firmada por el titular de la cuenta y por dos testigos, que incluya copia de las identificaciones oficiales
+      de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Si es persona física, identificación oficial con fotografía, VIGENTE, del propietario del predio, y de
+      la persona a quien se le haya otorgado el poder para realizar el trámite, si es el caso, puede ser UNO de
+      los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, documento que confiera poder y facultades para realizar el trámite, puede ser UNO
+      de los siguientes: Acta constitutiva de la empresa que incluya otorgamiento de poder con facultad para realizar
+      el trámite;'
+    cites:
+    - source: retys
+  - text: 'Si es persona moral, identificación oficial con fotografía vigente del representante legal, puede ser
+      UNO de los siguientes documentos: Credencial del INE; Pasaporte mexicano; Licencia de conducir; Matrícula
+      consular.'
+    cites:
+    - source: retys
+  - text: 'Documentos para acreditar la propiedad o titularidad del predio, puede ser UNA de las siguientes OPCIONES:'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 1: Escritura Pública de compraventa, de donación, de permuta, de sucesión, de dación en pago,
+      etc. y Constancia de su inscripción en el Registro Público de la Propiedad y Comercio, vigente, y Recibo de
+      predial cuyo nombre y domicilio coincidan con los documentos anteriores.'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 2: Título de propiedad, y Constancia de su inscripción en el Registro Público de la Propiedad
+      y Comercio, vigente, y Recibo de impuesto predial cuyo nombre y domicilio coincidan con los documentos anteriores.'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 3: Sentencia firme emitida por autoridad jurisdiccional en la cual se le otorgue la propiedad
+      del inmueble por prescripción, por adjudicación, por remate, etc. y Constancia de su inscripción en el Registro
+      Público de la Propiedad y Comercio, vigente y Recibo de impuesto predial cuyo nombre y domicilio coincidan
+      con los documentos anteriores.'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 4: Contrato Privado ratificado ante el Registro Público de la Propiedad y Comercio, y Constancia
+      de su inscripción en el Registro Público de la Propiedad y Comercio, vigente, y Recibo de impuesto predial
+      cuyo nombre y domicilio coincidan con los documentos anteriores.'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 5: Contrato Privado de compraventa o de cesión de derechos o de donación o de dación en pago,
+      etc., y Copias legibles de las identificaciones oficiales de las partes que intervinieron en el contrato y
+      Recibo de pago de servicios, de energía eléctrica o de gas por tubería o de teléfono fijo, etc., con fecha
+      de emisión no mayor a un año de antigüedad y cuyo domicilio coincida con el señalado en el contrato; Recibo
+      del impuesto predial cuyo nombre y domicilio coincidan con los que indica en el contrato.'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 6: Copia de Información Ad Perpetuam inscrita en el Registro Público de la Propiedad'
+    cites:
+    - source: retys
+  - text: 'OPCIÓN 7: Tratándose de posesión de predios ejidales, uno de los siguientes documentos; Certificado Parcelario
+      y/o de Derechos Comunes; Sentencia del Tribunal Agrario; Constancia de Posesión o Acta de Asamblea Ejidal;
+      Cesión Legal de Derechos.'
+    cites:
+    - source: retys
+  - text: Todos los documentos se deben entregar en copia, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  - text: La cuenta deberá estar al corriente (no presentar saldos vencidos)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+    - Pasar al Módulo de Atención Personalizada (MAP) y esperar su turno.
+    - Al llegar su turno, la persona del MAP revisa que los requisitos estén completos, en caso de no ser así, informa
+      al ciudadano que no es posible realizar el trámite hasta que se completen.
+    - La persona del MAP realiza las modificaciones correspondientes.
+  notes: Modificación del nombre del propietario
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier Centro de Atención al Público (CAP) de CESPT.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al Módulo de Atención Personalizada (MAP) y esperar su turno.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona del MAP revisa que los requisitos estén completos, en caso de no ser así, informa al ciudadano
+    que no es posible realizar el trámite hasta que se completen.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pasar a cajas a realizar el pago correspondiente y regresar al MAP.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La persona del MAP realiza las modificaciones correspondientes e indica a la persona solicitante que estas
+    se reflejarán en su próximo recibo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1588: Modificación de Datos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1588
+    version_date: 05/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

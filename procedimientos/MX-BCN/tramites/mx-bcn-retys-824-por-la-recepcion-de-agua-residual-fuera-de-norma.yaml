@@ -1,0 +1,119 @@
+id: mx-bcn-retys-824-por-la-recepcion-de-agua-residual-fuera-de-norma
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Por la recepción de agua residual fuera de norma
+summary: Conocer las características y concentraciones de los contaminantes y las afectaciones que causan el sistema
+  para que se sometan a cumplimiento.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 824
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/824
+  homoclave: BC-CESPM-039
+who_can:
+- Representante Legal
+when: Cuando requieres el servicio
+result: Recibo de pago por incumplimiento
+cost:
+  type: variable
+  amount_mxn: 2.0
+  text: 'COSTO VARIABLE: por m3 $ 2.00. el costo del servicio variara durante el ejerció 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Que se detecte flagrancia de violación a alguno de los parámetros de la NOM-002-SEMARNAT-1996
+    cites:
+    - source: retys
+  - text: Que se haga del conocimiento a la empresa o representante legal a quien se le notificará
+    cites:
+    - source: retys
+  - text: No. de cuenta de agua potable.
+    cites:
+    - source: retys
+  - text: Que nos proporcioné el volumen de agua descargada
+    cites:
+    - source: retys
+  - text: Cantidad que producción diaria o mensual (anotar si es por temporadas).
+    cites:
+    - source: retys
+  - text: Recibo de pago del servicio. Pago verter contaminantes o los que tienen convenio de tratamiento conjunto.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario por si propio o por un responsable se le informa que violo la NOM-002-SEMARNAT-1996.
+    - Que envié los volumen de agua para hacer efectivo el cobro.
+    - De ser necesario se envía a tratamiento conjunto.
+    - En su defecto se envía a inspección.
+    - Se programas monitoreo e inspección hasta que cumpla.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: 9, PUNTO 8 INCISO m )
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario por si propio o por un responsable se le informa que violo la NOM-002-SEMARNAT-1996.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Que envié los volumen de agua para hacer efectivo el cobro.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: De ser necesario se envía a tratamiento conjunto.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: En su defecto se envía a inspección.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se programas monitoreo e inspección hasta que cumpla.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 824: Por la recepción de agua residual fuera de norma'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/824
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

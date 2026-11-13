@@ -1,0 +1,120 @@
+id: mx-bcn-retys-1233-tramite-deducible-de-impuestos-para-patrocinadores
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Trámite Deducible de Impuestos para Patrocinadores
+summary: Brindar a los deportistas el apoyo para realizar el trámite deducible de impuestos para los patrocinadores,
+  cuando participen en determinados eventos,avalado por la asociación deportiva que pertenece.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1233
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1233
+  homoclave: BC-INDEBC-006
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+- Otro
+when: Cuando el deportista lo requiera
+result: Apoyo para obtener un comprobante deducible de impuestos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Contabilidad
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+scenarios:
+- name: Deportista
+  requirements:
+  - text: Presentar por escrito la solicitud de autorización para apoyo, dirigida al Director General del INDE
+    cites:
+    - source: retys
+  - text: Presentar copia de la convocatoria del evento deportivo a asistir
+    cites:
+    - source: retys
+  - text: Presentar el presupuesto que contenga la distribución de los recursos que se pretenden obtener
+    cites:
+    - source: retys
+  - text: En caso de otorgar el recurso en cheque, este debe estar certificado a nombre de Gobierno del Estado de
+      Baja California
+    cites:
+    - source: retys
+  - text: Presentar copia de credencial del INDE y clabe interbancaria de 18 dígitos para la devolución del recurso
+      mediante transferencia bancaria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la solicitud de recibo deducible de impuesto en el Instituto
+    - El titular del Instituto analizá la solicitud y da respuesta
+    - Solicitar la respuesta a la solictud presentada
+    - Realizar el depósito del recurso a nombre del Gobierno del Estado de Baja California
+    - Solicitar al Instituto el recibo deducible de impuesto
+  notes: Apoyo para realizar el trámite deducible de impuestos para los patrocinadores
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 45, fracción VII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud de recibo deducible de impuesto en el Instituto
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El titular del Instituto analizá la solicitud y da respuesta
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Solicitar la respuesta a la solictud presentada
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el depósito del recurso a nombre del Gobierno del Estado de Baja California
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Solicitar al Instituto el recibo deducible de impuesto
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1233: Trámite Deducible de Impuestos para Patrocinadores'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1233
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

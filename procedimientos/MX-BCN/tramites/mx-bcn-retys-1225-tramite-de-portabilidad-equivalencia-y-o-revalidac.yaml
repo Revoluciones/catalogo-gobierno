@@ -1,0 +1,179 @@
+id: mx-bcn-retys-1225-tramite-de-portabilidad-equivalencia-y-o-revalidac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Trámite de Portabilidad, Equivalencia y/o Revalidación parcial de Estudios
+summary: Trámite donde se reconocen los estudios realizados en otros Subsistemas de Educación Media Superior o en
+  el extranjero, y desea ingresar a continuar sus estudios en COBACH BC. Las fechas establecidas para dicho trámite
+  se publican en http://www.cobachbc.edu.mx/ (Enero y Julio).
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1225
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1225
+  homoclave: BC-COBACH-004
+who_can:
+- Interesado
+- Tutor
+when: Cuando el estudiante de otros Subsistemas de Educación Media Superior quiera continuar sus estudios en COBACH
+  BC
+result: Dictamen
+cost:
+  type: fijo
+  amount_mxn: 619.0
+  text: 'COSTO: * $619.00 mxn'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 MESES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Departamento de Registro y Control Escolar
+  address: 'Blvd. Anáhuac #936, Centro Civico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación Zona Costa
+  address: 'Vía Rápida Oriente #S/N, Tercera Etapa del Río, Delegación Cerro Colorado, Tijuana, 22226'
+scenarios:
+- name: Solicitante
+  requirements:
+  - text: Llenar solicitud https://apps.cobachbc.edu.mx/SolicitudDictamen/
+    cites:
+    - source: retys
+  - text: Certificado de Educación Secundaria o Documento Legal Equivalente (Extranjeros)
+    cites:
+    - source: retys
+  - text: Certificado Parcial de Estudios o Comprobante Oficial de Estudios de las asignaturas que se pretenda hacer
+      equivalentes o revalidar, en el que se expongan las calificaciones finales de cada una
+    cites:
+    - source: retys
+  - text: Acta de Nacimiento o documento legal equivalente (Extranjeros)
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Traducción de los documentos que se encuentren en idioma diferente al español
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar para realizar la solicitud dando click al botón "Iniciar trámite"
+    - Leer las instrucciones en la página dela solicitud
+    - Llenar la solicitud
+    - Subir los archivos que se mencionan en los requisitos
+    - Realizar el pago del trámite en línea
+    - Revisión de documentos
+    - Autorización/Rechazo del trámite
+    - Ingresar de para revisar estatus del trámite (10 días hábiles)
+    - En caso de trámite aprobado acudir al Plantel/CEMSAD/TBC para Reinscribirse por Dictamen
+  notes: Solicitud de trámite de portabilidad, equivalencia o revalidación parcial de estudios
+legal_basis:
+- source: ley1
+  pinpoint: '286'
+- source: ley2
+  pinpoint: .
+- source: ley3
+  pinpoint: Todos
+- source: ley4
+  pinpoint: .
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar para realizar la solicitud dando click al botón "Iniciar trámite"
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Leer las instrucciones en la página dela solicitud
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar la solicitud
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir los archivos que se mencionan en los requisitos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar el pago del trámite en línea
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Revisión de documentos
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Autorización/Rechazo del trámite
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Ingresar de para revisar estatus del trámite (10 días hábiles)
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: En caso de trámite aprobado acudir al Plantel/CEMSAD/TBC para Reinscribirse por Dictamen
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1225: Trámite de Portabilidad, Equivalencia y/o Revalidación parcial de Estudios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1225
+    version_date: 11/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo Secretarial
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Criterios para la convalidación, equivalencia y revalidación parcial de estudios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Decreto de Creación del Colegio de Bachilleres del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Manual por el que se establecen las cuotas de recuperación del Colegio de Bachilleres del Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Portabilidad, Equivalencia y/o Revalidación parcial de Estudios. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

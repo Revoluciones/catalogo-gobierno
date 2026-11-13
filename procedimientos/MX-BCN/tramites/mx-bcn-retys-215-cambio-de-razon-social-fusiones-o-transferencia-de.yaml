@@ -1,0 +1,274 @@
+id: mx-bcn-retys-215-cambio-de-razon-social-fusiones-o-transferencia-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cambio de razón social, fusiones o transferencia de derechos
+summary: Reconocimiento de derechos y obligaciones por cambios de razón social, fusiones o cesión de derechos en
+  autorizaciones, licencias y/o permisos.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 215
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/215
+  homoclave: BC-SMADS-035
+who_can:
+- Representante Legal
+when: Dentro de los 3 días hábiles siguientes a que acontezca el cambio
+result: Oficio de reconocimiento de titularidad.
+cost:
+  type: variable
+  amount_mxn: 6009.39
+  text: 'COSTO VARIABLE: $6,009.39 Moneda Nacional. Costo actualizado para el mes de noviembre de 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 60 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Gestión Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Gestión Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Gestión Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física cesionaria
+  requirements:
+  - text: Formato de solicitud debidamente requisitado, o escrito libre que proporcione la misma información requerida
+      en el formato, que contenga la firma autógrafa de la persona interesada o de la persona apoderada o representante
+      legal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14829
+  - text: Pago de derechos correspondiente, a nombre del promovente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona cesionaria, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del contrato de cesión de derechos y obligaciones emanadas de las autorizaciones, permisos,
+      licencias y/o registros que le fueron otorgadas al cedente, o que se encuentran en trámite, celebrado o ratificado
+      ante fedatario público.
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC) de la persona cesionaria para la actividad pretendida.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, presentar copia simple de
+      la documental idónea, completa y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, presentar copia simple de
+      la identificación oficial de esta, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del documento que acredite el legal uso del predio (contrato de arrendamiento, comodato,
+      escrituras, etc.) a nombre de la persona cesionaria.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Capturar la información solicitada.
+    - Realizar el pago de derechos correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  notes: Persona que busca ceder los derechos y obligaciones registrados
+- name: Persona moral cesionaria
+  requirements:
+  - text: Escrito libre en el que se señale el trámite solicitado, debiendo hacer mención a las autorizaciones,
+      permisos, licencias y/o registros otorgados por la dependencia y/o de los trámites que se encuentren en proceso
+      de evaluación, con firma autógrafa plasmada en el escrito de solicitud.
+    cites:
+    - source: retys
+  - text: Copia simple del Acta Constitutiva de la empresa a la que se le cede los derechos y obligaciones.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes (RFC) de la persona cesionaria para la actividad pretendida.
+    cites:
+    - source: retys
+  - text: Copia simple del contrato de cesión de derechos y obligaciones emanadas de las autorizaciones, permisos,
+      licencias y/o registros que le fueron otorgadas al cedente, o que se encuentran en trámite, celebrado o ratificado
+      ante fedatario público.
+    cites:
+    - source: retys
+  - text: Copia simple de la documental idónea vigente, completa y nítida, mediante la cual se acredite a la persona
+      firmante como apoderada o representante legal de la cesionaria.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona apoderada o representante legal, legible y con
+      vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del documento que acredite el legal uso del predio (contrato de arrendamiento, comodato,
+      escrituras, etc.) a nombre de la persona cesionaria.
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondiente, a nombre del promovente.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Capturar la información solicitada.
+    - Realizar el pago de derechos correspondiente.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS, revisar los requisitos y costo aplicable.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Realizar el pago de derechos y obtener el comprobante correspondiente.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación y comprobante de pago correspondiente.
+    - Recepción y evaluación de la solicitud recibida.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Recoger la notificación de resolución administrativa, una vez que la razón social aparezca disponible en el
+      listado. La notificación deberá ser recibida por el representante legal o apoderado legal quien deberá acreditar
+      su personalidad jurídica conforme a la normatividad aplicable.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que busca
+    ceder los derechos y obligaciones registrados
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17 fracción IV, inciso a)
+- source: ley2
+  pinpoint: Artículos 14 fracción I y 15 BIS 3
+- source: ley3
+  pinpoint: Artículos 4 fracción I, 27 y 31
+- source: ley4
+  pinpoint: Artículos 42 y 45
+- source: ley5
+  pinpoint: Artículo 27
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Capturar la información solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Subir los documentos solicitados vigentes.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+    notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+    por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la normatividad
+    aplicable.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 215: Cambio de razón social, fusiones o transferencia de derechos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/215
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Prevención y Gestión Integral de Residuos para el Estado de Baja California, de aplicación supletoria
+      a la LPGIECR de conformidad con el transitorio CUARTO.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Procedimiento para los Actos de Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Impacto
+      Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,126 @@
+id: mx-bcn-retys-1713-baja-definitiva
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Baja definitiva
+summary: Estudiante solicita su baja definitiva cuando lo requiera de la Universidad Politécnica de Baja California,
+  ante el Departamento de Gestión Escolar
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1713
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1713
+  homoclave: BC-UPBC-013
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando lo requiera
+result: Baja definitiva
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaria Administrativa
+  address: 'Av. de la claridad #S/N, Plutarco elias calles, Mexicali, 21376'
+scenarios:
+- name: estudiante solicita baja en el sistema SIAA
+  requirements:
+  - text: formato de baja, generado por el SIAA
+    cites:
+    - source: retys
+  - text: recabar sellos de no adeudos por las areas de finanzas y directores de cada programa academico
+    cites:
+    - source: retys
+  - text: entregar formato al depto. de gestión escolar para su baja y entrega de documento.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - estudiante ingresa al sistema SIAA para solicitar baja, del cual se genera una hoja de no adeudo
+    - estudiante imprime documento de baja para recabar sellos de no adeudos, por parte del depto. de finanzas y
+      drectores de area academico que corresponde
+    - depto de finanzas recibe solicitud de baja y revisa en el sistema que no cuente con algún adeudo, si no cuenta
+      procede a sellar documento
+    - depto. de finanzas, si estudiante cuenta con adeudo se le notifica para que proceda a pagarlo y proceder a
+      sellar.
+    - estudiante, se presenta con el director de su programa academico para el sello correspondiente de talleres
+      y laboratorio
+    - estudiante procede a presentar hoja al depto. de gestión escolar para su baja y entrega de documento.
+  notes: estudiante solicita su baja ante el sistema SIAA, pero deberá reunir requisitos
+legal_basis:
+- source: ley1
+  pinpoint: 40 y 41
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: estudiante ingresa al sistema SIAA para solicitar baja, del cual se genera una hoja de no adeudo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: estudiante imprime documento de baja para recabar sellos de no adeudos, por parte del depto. de finanzas
+    y drectores de area academico que corresponde
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: depto de finanzas recibe solicitud de baja y revisa en el sistema que no cuente con algún adeudo, si no
+    cuenta procede a sellar documento
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: depto. de finanzas, si estudiante cuenta con adeudo se le notifica para que proceda a pagarlo y proceder
+    a sellar.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: estudiante, se presenta con el director de su programa academico para el sello correspondiente de talleres
+    y laboratorio
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: estudiante procede a presentar hoja al depto. de gestión escolar para su baja y entrega de documento.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1713: Baja definitiva'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1713
+    version_date: 24/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

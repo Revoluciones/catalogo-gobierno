@@ -1,0 +1,138 @@
+id: mx-bcn-retys-761-anuencia-de-impacto-a-la-movilidad-de-zonas-de-tra
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Anuencia de Impacto a la Movilidad de Zonas de Transporte
+summary: 'Consiste en solicitar el permiso o autorización con respecto de las zonas de transporte que se utilizarán:
+  cierres de circuito, lanzaderas, bases, encierros, terminales, zonas de ascenso y descenso y zonas de carga y
+  descarga para empresas o agrupaciones.'
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 761
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/761
+  homoclave: BC-IMOS-012
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la persona representante legal busque obtener la anuencia para zonas de transporte
+result: Anuencia de impacto a la movilidad de zonas de transporte
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 27.50 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios, representantes legales de concesionarias, gremios, asociaciones, etc
+  requirements:
+  - text: Presentar formato de solicitud en original y copia debidamente firmada completando todos los campos que
+      sean requeridos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14733
+  - text: Copia de Identificación oficial vigente del solcitante.
+    cites:
+    - source: retys
+  - text: Autorización vigente emitida por parte de la autoridad competente para la operación de la zona de transporte.
+    cites:
+    - source: retys
+  - text: Copia del recibo de pago de derechos municipales vigente por concepto de ocupación de la vía pública.
+    cites:
+    - source: retys
+  - text: Croquis de localización legible, (Si se ubica en vía pública, indicar la direccion completa y calles colindantes,
+      si se ubica en propiedad privada, indicar ubicación de cajones asignados)
+    cites:
+    - source: retys
+  - text: Fotografías del espacio tomadas a distancia, en las que se observe la operación del servicio de transporte.
+    cites:
+    - source: retys
+  - text: 'Padrón vehicular que va a operar en el espacio solicitado (Debe contener: número de permiso municipal,
+      número de permiso estatal, nombre del permisionario, modalidad en permiso)'
+    cites:
+    - source: retys
+  - text: Anuencia por escrito donde se manifieste la autorización para el uso de servicios sanitarios. (Antigüedad
+      no mayor a 90 días)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable
+    - Presentar la documentación requerida
+  notes: Representantes legales de concesionarias, gremios, asociaciones, etc
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso D
+- source: ley2
+  pinpoint: Artículo 49
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 761: Anuencia de Impacto a la Movilidad de Zonas de Transporte'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/761
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Anuencia de Impacto a la Movilidad de Zonas de Transporte.. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

@@ -1,0 +1,165 @@
+id: mx-bcn-retys-1879-programa-estatal-de-apoyo-para-componente-motores
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Estatal de Apoyo para COMPONENTE MOTORES
+summary: Trámite para la Recepción de Solicitudes para aplicar a los beneficios del Programa Estatal de Apoyo para
+  el Sector de Pesca y Acuacultura, enfocado permisionarios del Sector para la SUSTITUCIÓN DE MOTORES DE BORDA a
+  través de apoyo subsidiario en apoyo a equipamiento, mantenimiento, ordenamiento, sanidad y particularmente para
+  eficientizar la operación con énfasis en el incremento o mejora de la producción, servicios y/o su comercialización.
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1879
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1879
+  homoclave: BC-SEPESCA-004
+who_can:
+- Representante Legal
+- Interesado
+when: 'Para año actual el periodo de Recepción de Solicitud a Cerrado, para más información consultar en: https://www.bajacalifornia.gob.mx/sepesca/Servicios'
+result: Apoyo subsidiario a la inversión en bienes de capital estratégico para ordenamiento acuícola.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: En el periodo que permanezca abierta la Ventanilla de Recepción de Solicitudes; en Lineamientos.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Departamento de Fomento Pesquero
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Subcomponente Sustitución de Motores Fuera de Borda
+  requirements:
+  - text: 'Escrito libre con fecha y firma mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del PROGRAMA ante la Dependencia, cuenta actualmente con los poderes
+      legales necesarios. Liga para descarga del formato correspondiente en Portal Oficial: https://www.bajacalifornia.gob.mx/sepesca/Servicios/ProgApoyo'
+    cites:
+    - source: retys
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado legal o representante legal) con una vigencia no mayor
+      a 3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Cotización vigente a nombre del o la SOLICITANTE, emitida por el proveedor en donde se señalen las características
+      del bien o servicio solicitado.
+    cites:
+    - source: retys
+  - text: Permiso o concesión vigente o en trámite de renovación (SAP CONAPESCA) o Permiso de aprovechamiento extractivo
+      (SEMARNAT).
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  - text: 'Carta compromiso del proveedor donde se compromete a surtir el equipo dentro del ejercicio fiscal vigente.
+      Liga para descarga del formato correspondiente en Portal Oficial: https://www.bajacalifornia.gob.mx/sepesca/Servicios/ProgApoyo'
+    cites:
+    - source: retys
+  - text: 'Firma de Formato de Carta de Adhesión del representante legal o persona física al PROGRAMA y Modalidad
+      MOTORES FUERA DE BORDA. Liga para descarga del formato correspondiente en Portal Oficial: https://www.bajacalifornia.gob.mx/sepesca/Servicios/ProgApoyo'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Cargar Documentos Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: Sustitución de Motores Fuera de Borda El Apoyo podrá utilizarse para destinarse a la adquisición de motor
+    fuera de borda, nuevo, con Potencia Nominal de hasta 115 HP, en sustitución de un motor que se encuentre en
+    uso actualmente. El Motor a adquirir deberá ser nuevo, de 4 tiempos, coincidir con el caballaje autorizado en
+    el permiso presentado y con la solicitud presentada. No se aceptará aumento en caballaje, con la única excepción
+    que alguna marca específica descontinuó la potencia; en este caso, podrá revisarse si se autoriza el caballaje
+    inmediato superior, esto será a Consideración del Comité Técnico del Programa.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30 fracción XV, 45 fracción I, XII y XIII
+- source: ley2
+  pinpoint: Artículo 8 fracción I y XVIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registro de Solicitud en Línea
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cargar Documentos Requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Validación de Expediente para Asignación de Folio Estatal del Programa
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Dictaminación de Expediente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1879: Programa Estatal de Apoyo para COMPONENTE MOTORES'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1879
+    version_date: 29/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Pesca y Acuacultura Sustentables para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Estatal de Apoyo para el Sector de Pesca y Acuacultura, COMPONENTE MOTORES. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,82 @@
+id: mx-bcn-tijuana-tj-semovis-0219-devolucion-de-garantia
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Movilidad y transporte
+title: Devolución de Garantía
+summary: Trámite para recuperar Licencia de conducir u otro documento retenido como garantía al recibir una multa
+  de tránsito.
+authority:
+  name: Secretaría de Movilidad Urbana Sustentable (Ayuntamiento de Tijuana)
+  unit: Dirección de Transporte Público
+official_ids:
+  homoclave: TJ-SEMOVIS-0219
+who_can:
+- Interesado
+when: Cuando una persona ha recibido una infracción y, como garantía de pago, se le retuvo la licencia de conducir.
+result: Licencia
+requirements:
+- text: Boleta de infracción original, firmada y sellada por el Juez Calificador.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Comprobante de pago de la infracción.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: En caso de extravío o daño de la boleta de infracción se debe solicitar un cotejo de la infracción para
+    validar la información.
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Transporte Público
+  address: Prolongación Paseo de los Heroes s/n, Los Santos, 22104 Tijuana, B.C.
+  phones: 6646088400 ext. 8400
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEMOVIS-0219: Devolución de Garantía'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEMOVIS-0219
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 269 fracción II inciso C, ultimo párrafo del Reglamento de Transporte Público para el Municipio
+      de Tijuana, Baja California.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/RM_TransportePublico_TJ-BC_03042020.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 105 fracción I, inciso g del Reglamento de Tránsito y Control Vehicular del Municipio de Tijuana,
+      Baja California.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20241227113612075_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Una vez verificado el pago de la infracción, se entregará la licencia de conducir o el documento
+  retenido.'

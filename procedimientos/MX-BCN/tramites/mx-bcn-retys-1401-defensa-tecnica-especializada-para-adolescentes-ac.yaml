@@ -1,0 +1,130 @@
+id: mx-bcn-retys-1401-defensa-tecnica-especializada-para-adolescentes-ac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Defensa técnica especializada para adolescentes acusados
+summary: Proporcionar asesoría y representación legal a personas que tengan entre 12 años cumplidos y menos de 18
+  años de edad que se les atribuya la realización de conductas tipificadas como delitos en el código penal de baja
+  california y no cuenten con defensor particular, cuando ellos o el juez respectivo los designe para tal fin. De
+  igual manera, se brinda asesoría jurídica a sus padres o tutor en su caso.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1401
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1401
+  homoclave: BC-CJ-021
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando lo requiera
+result: Resolución judicial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de la Defensoría Pública del Estado y Coordinación Estatal del Área Laboral
+  address: 'Calz. De Los Presidentes #1185, Río Nuevo, Mexicali, 21120'
+- municipality: Mexicali
+  name: Área Penal, Guadalupe Victoria, Mexicali
+  address: 'Calle Gizel Y Cerrada De Las Orquídeas #S/N, Fracc. Valle De Guadalupe, Mexicali, 21720'
+- municipality: Mexicali
+  name: Área Penal, Ciudad Morelos, Mexicali
+  address: 'Av. Leonardo Guillén Y General Rodolfo Sánchez Taboada #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Área Penal, Tijuana
+  address: 'Vía Rápida José Fimbres Moreno #Loc. 41,43, Fracc. San José, Tijuana, 22226'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: Playas de Rosarito
+  name: Área Penal, Rosarito
+  address: 'Calle General Juan Vicario #S/N, Ampl. Benito Juárez, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+scenarios:
+- name: Adolescente
+  requirements:
+  - text: En caso de haber contado con abogado particular; presentar escrito de revocación del abogado particular.
+    cites:
+    - source: retys
+  - text: En su caso, notificación que ejerce el juez solicitando la defensa pública.
+    cites:
+    - source: retys
+  - text: En su caso, solicitud de ministerio público para solicitar defensor público.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir A la defensoría pública cada 10 días o cuando se lo indique el defensor público asignado
+    - Aportar los elementos para defenderlo en la averiguación previa que se integra.
+    - Dar seguimiento al desarrollo de la averiguación previa.
+  notes: De 12 A 17 años de edad
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, Inciso B), Fracción 8.
+- source: ley2
+  pinpoint: Artículo 2, Fracciones II y IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir A la defensoría pública cada 10 días o cuando se lo indique el defensor público asignado
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Aportar los elementos para defenderlo en la averiguación previa que se integra.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Dar seguimiento al desarrollo de la averiguación previa.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1401: Defensa técnica especializada para adolescentes acusados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1401
+    version_date: 04/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

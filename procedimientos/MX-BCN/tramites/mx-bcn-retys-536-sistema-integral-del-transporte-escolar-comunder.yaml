@@ -1,0 +1,159 @@
+id: mx-bcn-retys-536-sistema-integral-del-transporte-escolar-comunder
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Sistema Integral del Transporte Escolar (COMUNDER)
+summary: Se beneficia a las y los jóvenes estudiantes de nivel Media Superior y Superior que residan en zonas alejadas,
+  brindándole un servicio de trasporte escolar, el cuál garantiza movilidad digna, gratuita y segura a sus diferentes
+  centros educativos en el estado dando las herramientas necesarias para que las juventudes continúen con sus estudios.
+  .
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 536
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/536
+  homoclave: BC-INJUVE-011
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: febrero y agosto
+result: Servicio de Transporte
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sistema de Transporte Escolar
+  address: 'Calzada Robledo entre carretera a San Felipe Blvd. Robledo #S/N, Col. Robledo, Mexicali, 21384'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Copia de Comprobante de domicilio de residencia no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: 'Imprimir comprobante de estudios vigente puede ser lo siguiente: constancia, credencial de estudiante,
+      comprobante de pago o inscripción, boleta de calificaciones)'
+    cites:
+    - source: retys
+  - text: 'Copia legible de la Identificación oficial con fotografía vigente puede ser cualquiera de los siguientes
+      documentos: credencial de elector INE, pasaporte mexicano o licencia de conducir (de padre, madre o tutor
+      en caso de ser menor de edad)'
+    cites:
+    - source: retys
+  - text: Copia legible del CURP
+    cites:
+    - source: retys
+  - text: En caso de ser menor de edad imprimir carta de exoneración/en caso de ser mayor de edad carta de exoneracion
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12719
+  - text: Imprimir formato de aviso de privacidad (se optiene en la página de registro y/o de la página RETyS)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12720
+  - text: Imprimir formato de estudio socioeconómico (se obtiene en la pagina del registro y/o de la pagina RETyS)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12723
+  - text: Imprimir carta de obligaciones (se obtiene en la página del registro y/o de la pagina RETyS)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12725
+  - text: Imprimir solicitud de inscripción al programa (se obtiene en la página del registro y/o de la página RETyS)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12726
+  modes:
+  - name: Mixto
+    steps:
+    - Atender la inscripción en línea
+    - Llenar y entregar documentación requerida en oficina central del INJUVE y oficinas del SITE
+    - El calendario de visita se les notificará a través de las redes sociales y la página de juventudbc
+    - Acudir a las jornadas de recepción de documentos en los centros educativos o acudir a las oficinas de INJUVE
+      del departamento correspondiente cuando se establezca el calendario de visita
+    - Al momento de quedar seleccionado se otorga una credencial electrónica
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 83,85,86, 87, Fracción II,III, XL, XII y XXII.
+- source: ley2
+  pinpoint: '41'
+- source: ley3
+  pinpoint: 2 Y 3.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Atender la inscripción en línea
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar y entregar documentación requerida en oficina central del INJUVE y oficinas del SITE
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El calendario de visita se les notificará a través de las redes sociales y la página de juventudbc
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a las jornadas de recepción de documentos en los centros educativos o acudir a las oficinas de
+    INJUVE del departamento correspondiente cuando se establezca el calendario de visita
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Al momento de quedar seleccionado se otorga una credencial electrónica
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 536: Sistema Integral del Transporte Escolar (COMUNDER)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/536
+    version_date: 29/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Reglas de operación para la ejecución del sistema integral del transporte escolar (COMUNDER)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

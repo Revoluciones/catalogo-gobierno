@@ -1,0 +1,111 @@
+id: mx-bcn-retys-1884-solicitud-de-informacion-publica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de información pública
+summary: 'Te permite solicitar, consultar y recibir información pública de esta institución. Puedes preguntar sobre
+  el uso de los recursos del presupuesto y las actas de nuestras reuniones. Ejercer tu derecho a saber es muy sencillo:
+  no es necesario que justifiques los motivos de tu solicitud ni el uso que le darás a los datos.'
+authority:
+  name: Instituto de Capacitación en Alta Tecnología del Estado de Baja California
+official_ids:
+  retys_id: 1884
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1884
+  homoclave: BC-ICATBC-002
+who_can:
+- Interesado
+when: En cualquier momento
+result: Información pública
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección General
+  address: 'Carretera San Luis Río Colorado, Km 10.5 #6, Parque Industrial Las Californias, Mexicali, 21394'
+scenarios:
+- name: Entrega Total de Información
+  requirements:
+  - text: Solicitud de acceso a la Información
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps: []
+  notes: El ciudadano pide información que es pública, la Unidad de Transparencia la localiza en los archivos de
+    la institución y se le entrega completa dentro de los 10 días hábiles
+- name: Prevención (Aclaración)
+  requirements:
+  - text: Solicitud de acceso a la Información
+    cites:
+    - source: retys
+  modes: []
+  notes: Ocurre cuando la solicitud es confusa, no se entiende qué archivo está pidiendo, o los datos son insuficientes
+    para buscar el documento, por lo que se le notifican 5 días hábiles al ciudadano para que aclare su pregunta..
+- name: Prórroga (Ampliación de Plazo)
+  requirements: []
+  modes: []
+  notes: Se presenta cuando la información sí existe y es pública, pero el volumen de documentos es gigantesco o
+    recopilarla requiere un esfuerzo extraordinario que satura al área encargada. El Comité de Transparencia aprueba
+    extender el plazo hasta por 10 días hábiles más. Se le debe avisar formalmente al ciudadano antes de que venza
+    el plazo original.
+- name: Incompetencia
+  requirements: []
+  modes: []
+  notes: La Unidad de Transparencia tiene 5 días hábiles para responderle al ciudadano que esa institución no es
+    la encargada de esos datos y, de ser posible, orientarlo señalando qué autoridad sí los tiene.
+- name: Inexistencia o Información Reservada/Confidencial
+  requirements: []
+  modes: []
+  notes: 'Inexistencia: Tras buscar exhaustivamente en todas las áreas, el documento no se encuentra porque nunca
+    se generó o no hay obligación legal de tenerlo. Reservada o Confidencialidad La información existe pero no se
+    puede entregar porque contiene datos personales de terceros (confidencial) o pone en riesgo la seguridad, auditorías
+    en curso o estrategias legales (reservada).Se le entrega al ciudadano una respuesta negativa justificada con
+    el acta del Comité, o bien, una versión pública'
+legal_basis:
+- source: ley1
+  pinpoint: '6'
+- source: ley2
+  pinpoint: '1'
+steps: []
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1884: Solicitud de información pública'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1884
+    version_date: 25/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Transparencia y Acceso a la Información Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de acceso a la Información. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

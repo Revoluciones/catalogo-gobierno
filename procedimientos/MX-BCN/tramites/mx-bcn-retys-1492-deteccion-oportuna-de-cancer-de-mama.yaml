@@ -1,0 +1,476 @@
+id: mx-bcn-retys-1492-deteccion-oportuna-de-cancer-de-mama
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Detección Oportuna de Cáncer de Mama
+summary: Proporcionar atención con enfoque preventivo para la aplicación de las pruebas de tamizaje necesarias para
+  el diagnóstico temprano, tratamiento efectivo y seguimiento adecuado de las mujeres afectadas para cáncer de mama,
+  con la cual podamos disminuir el porcentaje de población enferma y el porcentaje de mortalidad por la causa de
+  esta enfermedad.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1492
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1492
+  homoclave: BC-ISESALUD-007
+who_can:
+- Interesado
+- Otro
+when: La exploración clínica de mamas debe realizarse una vez al año en la unidad de salud y el estudio de mastografía
+  se realiza de manera bianual.
+result: Resultado de prueba de Cáncer de Mama
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'A #S/N, Los Algodones, Mexicali, 21970'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Felipa Vda. de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Candelilla #S/N, Rivera Campestre, Mexicali, 21387'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Patzcuaro #21760, Ejido Patzcuaro, Mexicali, 21706'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'José Espinoza Lote 16 Manzana13 #S/N, Fundadores, Mexicali, 21478'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Del Sol y De La Luna #S/N, Santa Isabel, Mexicali, 21139'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: '27 de Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Mexicali, 21137'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Prolongacion Socorro Garcia #S/N, Veracruz Dos, Mexicali, 21821'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Gral. Martin Cabrera #S/N, Vicente Guerrero, Mexicali, 21320'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Ignacio Allende #S/N, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Coahuila #21050, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Benito Juarez #128, Hermosillo, Mexicali, 21840'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva (Consulta Externa)
+  address: 'Del Hospital #S/N, Centro Cívico , Mexicali, 21000'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva (Urgencias)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Avenida Ayuntamiento  y 27 de Septiembre #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Granadas y Gardenias #S/N, Poblado  Ing. Francisco Murguia Km 49, Mexicali, 21722'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Carretera San Felipe Km 8.5 #S/N, Ejido Choropo, Mexicali, 21259'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Eucalipto #1, 3 de Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Eucalipto #1, 3 de Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'El Mexicano #S/N, 18 de Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Mexicali 1986 #S/N, Hacienda Las Fuentes, Tijuana, 22245'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: '7 #22, Reforma, Tijuana, 22183'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Ley Federal del Trabajo #S/N, Flores Magon, Tijuana, 22606'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas 2da. Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Gral. Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'San Rafael entre Las Delicias y Santa Maria #19811, Terrazas Del Valle Segunda Sección, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Ruta Matamoros y Chichenitza #S/N, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Del Peñon #2980, Valle Verde, Tijuana, 22204'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Fundadores #S/N, Rubi Sur, Tijuana, 22626'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Anemona #S/N, El Florido 4ta Sección, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Fuentes de Mexicali #S/N, Hacienda Las Fuentes, La Presa, Tijuana, 22245'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Modulo 4 Mesa de Otay, Tijuana, 22390'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22150'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Ocotlan #Manzana 16, Benito Garcia, Ensenada, 22793'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Agustín Iturbide Lote 2 Manzana 4 #S/N, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Lázaro Cárdenas #S/N, Real del Castillo, Ensenada, 22770'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Al Morro #S/N, Isla de Cedros, Ensenada, 22990'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Ensenada, 22705'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Libre Rosarito-Ensenada Km 56 #S/N, La Mision, Ensenada, 22765'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Guillermo Prieto #213, Villa de Juarez (San Antonio de las Minas), Ensenada, 22766'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Niños Héroes #S/N, San Vicente, Ensenada, 22900'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Km. 76 Carretera Ensenada a Tecate #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 22815'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Pedro Terraza #S/N, Valle de la Trinidad, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Agustín De Iturbide, Lote 2 Manzana 4 #S/N, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'H #S/N, Ex-Ejido Ruíz Cortinez, Ensenada, 22810'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: '27 de Enero #9410, Guadalupe Victoria, Ensenada, 21720'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Tercera #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Miguel Hidalgo y Costilla #S/N, Heroes de la Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Lic. Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Primera #S/N, Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Avenida 27 de Enero entre Calle Novena y Decima #S/N, Guadalupe Victoria Ej., Guadalupe Victoria, Ensenada,
+    21720'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Calle Emiliano Zapata #157, Ejido Eréndira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Avenida Vicente Guerrero y Santo Domingo #221, Vicente Guerrero, Ensenada, 22920'
+- municipality: Tecate
+  name: Departamento de Medicina Preventiva
+  address: 'Benito Juarez #S/N, Valle De Las Palmas, Tecate, 21500'
+- municipality: Tecate
+  name: Departamento de Medicina Preventiva
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Tecate
+  name: Departamento de Medicina Preventiva (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Departamento de Medicina Preventiva
+  address: 'Benito Juárez #22706, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Departamento de Medicina Preventiva
+  address: 'Hidalgo #S/N, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: Playas de Rosarito
+  name: Departamento de Medicina Preventiva (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Sin Nombre #S/N, Bahia De Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Francisco Mujica #S/N, Ruben Jaramillo, San Quintín, 22915'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Departamento de Medicina Preventiva
+  address: 'Ing. Luis Alzerrega #S/N, Flores Magon, San Quintín, 22819'
+- municipality: San Felipe
+  name: Departamento de Medicina Preventiva
+  address: 'Mar Berjmejo #174, Ampliacion Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Exploración clínica de mamas
+  requirements:
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar cita para consulta médica directamente en la unidad de salud y acudir a la hora y fecha programada
+    - Médico realiza técnica de la exploración clínica de mamas e indica al ciudadano el seguimiento correspondiente
+  notes: Atención con enfoque preventivo para la aplicación de las pruebas de tamizaje necesarias para la detección
+    y diagnóstico temprano
+- name: Mastografía
+  requirements:
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación Oficial
+    cites:
+    - source: retys
+  - text: Asistir A su cita con aseo normal de la región axilar y mamaria
+    cites:
+    - source: retys
+  - text: No utilizar desodorante, talco en polvo, crema o loción debajo de los brazos o en las mamas el día del
+      examen
+    cites:
+    - source: retys
+  - text: De preferencia y para su comodidad, use ropa de dos piezas ya que se le pedirá que se quite la ropa de
+      la cintura para arriba
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar Cita Previa a Los Teléfonos del Programa en Mexicali (686) 554-31-38 y 554-51-44, al Whats App (686)
+      164-22-74 , Tijuana 664) 688 -38 -04 Ext 2149, 2150, 2133, Ensenada (646) 178.67.30, Vicente Guerrero (616)
+      166.39.56 Ext. 6107
+    - Presentarse a su cita en la fecha y hora programada
+    - Médico radiólogo le explicará y realizará el procedimiento de la toma de la mastografía
+    - Al finalizar el procedimiento, el personal de salud le informará cuánto tiempo tardará su resultado, y en
+      donde lo recibirá
+    - De los 40 a los 69 años, las mujeres deben realizar su mastografía bianual, solicitala en tu unidad de salud,
+      hospital más cercano o directamente al programa.
+  notes: Es el estudio radiográfico mediante el uso de equipo especializado llamado mastógrafo, se utiliza para
+    buscar anormalidades en la mama, ayuda A detectar el cáncer en sus etapas iniciales, cuando aún no es palpable
+    por el personal médico o por usted misma
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar cita para consulta médica directamente en la unidad de salud y acudir a la hora y fecha programada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Médico realiza técnica de la exploración clínica de mamas e indica al ciudadano el seguimiento correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1492: Detección Oportuna de Cáncer de Mama'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1492
+    version_date: 13/Marzo /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-041-SSA2-2011, Para la Prevención, Diagnóstico, Tratamiento, Control y Vigilancia
+      Epidemiológica del Cáncer de Mama
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios de Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

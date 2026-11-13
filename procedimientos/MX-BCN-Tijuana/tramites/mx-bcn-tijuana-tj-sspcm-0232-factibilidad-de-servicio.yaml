@@ -1,0 +1,93 @@
+id: mx-bcn-tijuana-tj-sspcm-0232-factibilidad-de-servicio
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Factibilidad de Servicio
+summary: Análisis de inmuebles públicos y privados para determinar su viabilidad en la prestación de servicios de
+  emergencia.
+authority:
+  name: Secretaría de Seguridad y Protección Ciudadana Municipal (Ayuntamiento de Tijuana)
+  unit: Dirección de Bomberos
+official_ids:
+  homoclave: TJ-SSPCM-0232
+who_can:
+- Interesado
+when: Cuando lo solicita otra dependencia o para evaluar el tiempo de respuesta ante una emergencia.
+result: Certificado
+requirements:
+- text: Solicitud B1
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Dictamen de Uso de Suelo factible
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de localización con señalamiento de los hidrantes más cercanos (no captura de Google Maps)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Pago de derechos
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Factibilidad de Servicio de Emergencia en: Desarrollo habitacional: 57.2 UMA ($6,710.13) · Factibilidad
+    de Servicio de Emergencia en: Desarrollo industrial y comercial con hasta 5,000.00 M² de superficie: 36.4 UMA
+    ($4,270.08) · Factibilidad de Servicio de Emergencia en: Desarrollo industrial y comercial mayor de 5,000.00
+    M² de superficie: 54.6 UMA ($6,405.13). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Bomberos
+  address: Av. Aldrete y Madero, No. 8298, Zona Centro, C.P. 22000
+  phones: '6646885700'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SSPCM-0232: Factibilidad de Servicio'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SSPCM-0232
+    version_date: '2026-08-18'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 9 del Reglamento para la Prevención, Control de los Incendios y Siniestros para la Seguridad
+      Civil en el Municipio de Tijuana, Baja California.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2021122916432669_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 37, fracción III, inciso A) y B) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://pagos.tijuana.gob.mx/requisitos/bomberos.aspx Criterio para resolver: Cumpir con los resquisitos
+  establecidos. En caso de modificaciones en el inmueble, se deberá actualizar el trámite y cubrir el pago correspondiente.'

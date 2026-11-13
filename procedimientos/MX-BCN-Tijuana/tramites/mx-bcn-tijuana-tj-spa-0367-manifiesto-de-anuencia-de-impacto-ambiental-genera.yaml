@@ -1,0 +1,166 @@
+id: mx-bcn-tijuana-tj-spa-0367-manifiesto-de-anuencia-de-impacto-ambiental-genera
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Medio ambiente
+title: Manifiesto de Anuencia de Impacto Ambiental General (MIAG)
+summary: Aquellos giros de a partir de 500 m2, que produzcan más de un tipo de residuos, catalogados de mediano
+  impacto
+authority:
+  name: Secretaría de Protección al Ambiente (Ayuntamiento de Tijuana)
+  unit: Dirección de Protección al Ambiente
+official_ids:
+  homoclave: TJ-SPA-0367
+who_can:
+- Interesado
+- Representante_legal
+when: 'La MIA es obligatoria cuando: Se realizan actividades de alto impacto ambiental, cuando se realizan modificaciones
+  al medio físico natural, y cuando la obra o actividad no sea considerada de bajo impacto.'
+result: Resolución
+requirements:
+- text: Plan General de Prevención y Respuesta a Emergencias y Contingencias Ambientales.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Exención de licencia de descargas y/o Licencia de descargas emitido por CESPT
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de aviso de funcionamiento y control sanitario emitido por (COFEPRIS) (SI APLICA).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Contrato con empresa autorizada para la recolección de residuos peligrosos (si aplica) 1.1 fotografías de
+    los contenedores de residuos peligrosos y rotulados (SI APLICA).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Contrato con empresa autorizada para la recolección de residuos peligrosos (si aplica) 1.1 fotografías de
+    los contenedores de residuos peligrosos y rotulados (SI APLICA).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia simple de contrato de empresa autorizada para la recolección, transporte y destino final de residuos
+    sólidos urbanos. 1.1Fotografías del contenedor y/o bote de basura exterior e interno
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Contrato y/o factibilidades de servicios CFE y CESPT (en construcción.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia del certificado de fumigación vigente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: si es persona física, y la persona tiene un representante legal, deberá integrar la carta poder simple y
+    copia de su identificación oficial.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: 'Si es persona moral: copia simple del acta constitutiva de la empresa. En caso de que la misma no incluya
+    al representante legal actual deberá incluir copia del poder notariado del mismo y la Cédula del SAT donde describa
+    la actividad en el domicilio solicitado'
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Croquis y fotografías de distribución de la actividad y /u obra.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Croquis y fotografías de localización del predio (colindancias norte, sur, este y oeste.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de la última boleta predial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de la Cédula Profesional del Responsable Técnico del Estudio.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Contrato compra venta y/o arrendamiento.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de identificación oficial del Promovente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: 'Solicitud de anuencia contestada y firmada por el promovente. En caso de ser persona moral, deberá firmarse
+    por el representante legal: en ambos casos deberá tener firma del responsable técnico.'
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Pago de derechos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Dictamen Uso de suelo.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia certificada del acta del levantamiento topográfico y deslinde catastral (si aplica).
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'hasta 150 m2: 56 UMA ($6,569.36) · de 150.01m2 a 500 m2: 72 UMA ($8,446.32) · de 500.01m2 a 1000m2: 85
+    UMA ($9,971.35) · mayor a 1000m2: 130 UMA ($15,250.30). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 20 días habiles
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 60 días habiles
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Protección al Ambiente
+  phones: 6649737000 ext. 7582
+  hours: Lunes A Viernes DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SPA-0367: Manifiesto de Anuencia de Impacto Ambiental General (MIAG)'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SPA-0367
+    version_date: '2026-06-26'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de protección al ambiente para el municipio de Tijuana, baja california
+  fund2:
+    type: ley
+    official: true
+    title: Fundamento Capítulo XI, Articulo 34 de la ley de ingresos del municipio de Tijuana, baja california
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://pagos.tijuana.gob.mx/PagosEnLinea/index.aspx Criterio para resolver: De acuerdo con la información
+  presentada, se determina la factibilidad o en su caso, la no autorización del trámite en cuestión. Se analizan
+  los anexos presentados, así como la documentación adjunta.'

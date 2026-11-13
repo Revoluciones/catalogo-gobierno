@@ -1,0 +1,124 @@
+id: mx-bcn-tijuana-tj-sf-0318-baja-y-o-traspaso-de-permiso-de-operaciones-munici
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Baja y/o Traspaso de Permiso de Operaciones Municipal
+summary: Este trámite permite dar de baja un negocio del padrón de comercio establecido o transferir el permiso
+  de operaciones a otra persona.
+authority:
+  name: Secretaría de Finanzas / Tesorería (Ayuntamiento de Tijuana)
+  unit: Recaudación Municipal
+official_ids:
+  homoclave: TJ-SF-0318
+who_can:
+- Interesado
+when: Cuando el titular del permiso decide cerrar su negocio o cederlo a otra persona.
+result: Recibo
+requirements:
+- text: Número de cuenta de la licencia de operación.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial del titular del permiso.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Documento de alta,baja o cambio en el SAT, según corresponda.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Pago de revalidación del año en curso.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta constitutiva y poderes notariales en caso de ser personal moral.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Comercio básico pequeño, impulsado por programas de gobierno hasta de 35.00 M² de superficie.: 5.36 UMA
+    ($628.78) · Despachos de profesionistas y oficinas administrativas hasta 100 M2: 14.3 UMA ($1,677.53) · Expendios,
+    abarrotes, talleres de servicio, llanteras, loncherías, panaderías, tortillería, lavanderías, laboratorios,
+    ópticas, ferreterías, refaccionarias, tiendas de ropa, misceláneas, farmacias, estéticas, papelería, librería,
+    vidriera, florería, casas de cambio, venta de agua purificada (llenado de garrafón), casetas telefónicas, consultorios
+    médicos, venta de alimentos preparados, cerrajerías, agencias de viajes, café internet, cafetería, curiosidades
+    o artesanías, dulcerías, equipo de comunicación, frutería, fumigadoras, gimnasio, imprenta, joyería, granero,
+    veterinaria, renta de autos, tiendas de segunda, videos, venta de celulares, zapaterías, auto lavado, mueblerías,
+    despachos de profesionistas y oficinas administrativas menores a 100.00 M2: 17.88 UMA ($2,097.50) · Expendios,
+    abarrotes, talleres de servicio, llanteras, loncherías, panaderías, tortillería, lavanderías, laboratorios,
+    ópticas, ferreterías, refaccionarias, tiendas de ropa, misceláneas, farmacias, estéticas, papelería, librería,
+    vidriera, florería, casas de cambio, venta de agua purificada (llenado de garrafón), casetas telefónicas, consultorios
+    médicos, venta de alimentos preparados, cerrajerías, agencias de viajes, café internet, cafetería, curiosidades
+    o artesanías, dulcerías, equipo de comunicación, frutería, fumigadoras, gimnasio, imprenta, joyería, granero,
+    veterinaria, renta de autos, tiendas de segunda, videos, venta de celulares, zapaterías, auto lavado, mueblerías,
+    despachos de profesionistas y oficinas administrativas mayores a 100.00 M2: 26.51 UMA ($3,109.89) · Billares,
+    bar, restaurante, mercado, supermercado, sub-agencia, bodegas de distribución, salón para eventos temporales,
+    hospital, clínicas médicas, bancos, estacionamientos públicos, funerarias, teatros, limpiaduría, lotes de carros,
+    madererías, máquinas de video juego, autoservicios, casa de empeño: 32.18 UMA ($3,775.04) · Discotecas, tiendas
+    departamentales y clubes deportivos café cantante, centro de espectáculos y salas cinematográficas: 39.33 UMA
+    ($4,613.80) · Moteles con ocupación de: a) Hasta 10 habitaciones: 21.45 UMA ($2,516.30) · Moteles con ocupación
+    de: b) 11 y hasta 20 habitaciones: 30.38 UMA ($3,563.88) · Moteles con ocupación de: c) 21 habitaciones o más:
+    39.33 UMA ($4,613.80) · Hoteles con ocupación de: a) Hasta 30 habitaciones: 39.33 UMA ($4,613.80) · Hoteles
+    con ocupación de: b) 31 habitaciones o más: 57.2 UMA ($6,710.13) · Edificios educativos con: a) Hasta 5 aulas6:
+    16.08 UMA ($1,886.34) · Edificios educativos con: b) 6 aulas o más: 26.81 UMA ($3,145.08) · Giros de alto riesgo
+    tales como, distribuidoras de gases, combustible y lubricantes, oxígenos y acetilenos, estaciones de carburación
+    de diésel, polvorines, gasolineras, lubricantes y demás de alto riesgo: 214.5 UMA ($25,162.99) · Yonkes, recicladoras
+    y centros de acopio de material metálico: 48.62 UMA ($5,703.61) · ndustriales: a) Industrial hasta 1,000.00
+    M² (maquiladoras, fábricas, bodegas, almacenes, empacadoras, procesadoras: 45.5 UMA ($5,337.61) · Edificios
+    industriales: b) Industrial mayor a 1,000.00 M² (maquiladoras, fábricas, bodegas, almacenes, empacadoras, procesadoras):
+    105.3 UMA ($12,352.74) · Giros con apuestas (casinos, libros foráneos, palenques, etc.): 78.65 UMA ($9,226.43)
+    · Otros giros no especificados: a) Con superficie hasta 200.00 M²: 17.88 UMA ($2,097.50) · Otros giros no especificados:
+    b)Con superficie mayor a 200.00 M²: 32.5 UMA ($3,812.58) · Corrección en documento oficial expedido(por error
+    en expedición imputable al solicitante): 1.95 UMA ($228.75) · Copia certificada de licencia de operación por
+    hoja: 2.93 UMA ($343.72). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Recaudación Municipal
+  address: Av. Independencia 1350, Zona Urbana Río, C.P. 22010 Tijuana, Baja California
+  phones: 6649737000 ext. 7647
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SF-0318: Baja y/o Traspaso de Permiso de Operaciones Municipal'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SF-0318
+    version_date: '2026-06-26'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artítuclo 31 fracción XXVIII de la Ley de Ingresos del municipio de Tijuana, Baja California para el
+      Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Se otorga a solicitud del titular del permiso o su representante legal, cumpliendo con los requisitos.'

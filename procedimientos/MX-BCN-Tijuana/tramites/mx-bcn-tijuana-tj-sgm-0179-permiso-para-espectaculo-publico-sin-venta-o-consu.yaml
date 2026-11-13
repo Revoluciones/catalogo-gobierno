@@ -1,0 +1,122 @@
+id: mx-bcn-tijuana-tj-sgm-0179-permiso-para-espectaculo-publico-sin-venta-o-consu
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Permiso para Espectáculo Público SIN Venta o Consumo de Alcohol
+summary: Permiso para la realización de espectáculos públicos sin venta y/o consumo de alcohol en el Municipio de
+  Tijuana, Baja California
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Gobierno / Correspondencia
+official_ids:
+  homoclave: TJ-SGM-0179
+who_can:
+- Interesado
+when: Cuándo se desee realizar espectaculos públicos en el Municipio de Tijuana, Baja California
+result: Permiso Provisional
+requirements:
+- text: Solicitud especificando la cantidad de asistentes
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Escrito solicitando el permiso
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Identificación oficial vigente con fotografía
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contrato donde se llevará a cabo el evento
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de la Dirección de Policía Comercial
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Comprobante de fianza
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Anuencia de Protección Civil Municipal cuando sean hasta 499 asistentes
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Anuencia de Protección Civil Estatal cuando sean 500 o más asistentes
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Espectáculos o eventos públicos y masivos con fines de lucro y asistencia de 1000 o más personas: 65 UMA
+    ($7,625.15) · Espectáculos o eventos públicos y masivos con fines de lucro y asistencia de 999 o menos personas:
+    39 UMA ($4,575.09) · Espectáculos o eventos públicos y masivos sin fines de lucro y asistencia de 1000 o más
+    personas: 26 UMA ($3,050.06) · Espectáculos o eventos públicos y masivos sin fines de lucro y asistencia de
+    999 o menos personas: 26 UMA ($3,050.06) · Carreras, caminatas, rallys, maratones y eventos deportivos con fines
+    de lucro para 500 o más personas: 45.5 UMA ($5,337.61) · Carreras, caminatas, rallys, maratones y eventos deportivos
+    con fines de lucro para 499 o menos personas: 32.5 UMA ($3,812.58) · Carreras, caminatas, rallys, maratones
+    y eventos deportivos sin fines de lucro para 500 o más personas: 32.5 UMA ($3,812.58) · Carreras, caminatas,
+    rallys, maratones y eventos deportivos sin fines de lucro para 499 o menos personas: 19.5 UMA ($2,287.55) ·
+    Encuestas, inauguraciones, conferencias de prensa, filmaciones, exhibiciones y otros: 16.25 UMA ($1,906.29)
+    · Filmaciones documentales, comerciales, películas, series con una participación de más de 100 personas: 50
+    UMA ($5,865.50) · Filmaciones documentales, comerciales, películas, series con una participación de 99 o menos
+    personas: 25.5 UMA ($2,991.41) · Cierre total o parcial de la vía pública en otros eventos no especificados:
+    5.53 UMA ($648.72) · En general por la recepción y expedición de permisos para espectáculos y eventos urgentes
+    (en menos de 72 horas) se cobrará el doble de la tarifa: 0 UMA ($0.00). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 2 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Gobierno / Correspondencia
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737113 ext. 7195
+  hours: LUNES A VIERNES DE 08:00 HRS A 14:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0179: Permiso para Espectáculo Público SIN Venta o Consumo de Alcohol'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0179
+    version_date: '2026-10-20'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Gobierno Municipal de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/REGLAMENTO%20INTERNO%20DE%20LA%20SECRETARIA%20DE%20GOBIERNO%20MUNICIPAL%20DE%20TIJUANA%20BAJA%20CALIFORNIA_21092021.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 19, fracción I, inciso A), B) y C) de la Ley de Ingresos para el Municipio de Tijuana, Baja
+      California para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplimiento de toda la documentación requerida.'

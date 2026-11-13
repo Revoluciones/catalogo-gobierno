@@ -1,0 +1,103 @@
+id: mx-bcn-retys-1540-registros-de-planes-de-prevision-social
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registros de Planes de Previsión Social
+summary: Promover el bienestar físico social, cultural y deportivo de los trabajadores y sus familias con el registro
+  de plan de previsión social.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1540
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1540
+  homoclave: BC-STPS-012
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la empresa lo requiera
+result: un registro del plan de previsión social
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Un año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Previsión Social
+  address: 'Av. Alvaro Obregón #537, Centro Primera Sección, Mexicali, 211000'
+scenarios:
+- name: Interesado/a
+  requirements:
+  - text: Presentar plan de previsión social
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - La empresa presenta el plan de previsión social
+    - Validación del plan de previsión social
+    - Registro del plan de previsión social
+  notes: Representante legal de la empresa
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 123, 132 fracción XXV, 143, 735 y demas relativos a la Ley Federa del Trabajo
+- source: ley2
+  pinpoint: Artículo 18 fracción V
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: La empresa presenta el plan de previsión social
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Validación del plan de previsión social
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Registro del plan de previsión social
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1540: Registros de Planes de Previsión Social'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1540
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría del Trabajo y Previsión Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

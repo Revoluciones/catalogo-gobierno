@@ -1,0 +1,196 @@
+id: mx-bcn-retys-516-premio-estatal-a-la-juventud
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Premio Estatal a la Juventud
+summary: Reconocer públicamente a las y los jóvenes por su trayectoria, participación destacada en acciones de transformación
+  Social, Política y Económica del Estado.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 516
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/516
+  homoclave: BC-INJUVE-010
+who_can:
+- Interesado
+when: En el mes de agosto y septiembre
+result: Apoyo económico de $10,000.00 m.n.Y , $ 15,000.00 m.n.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 vez al año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Copia comprobante de domicilio con antigüedad no mayor a 3 meses (agua, luz, teléfono fijo o predial)
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial con fotografía vigente (credencial para votar INE vigente, cartilla de
+      identidad del servicio militar, pasaporte o cédula profesional)
+    cites:
+    - source: retys
+  - text: Original carta de Postulación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12735
+  - text: Original carta de autopostulacion para menores de edad
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12736
+  - text: Original carta de representación, en caso de que el registro sea en grupo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12737
+  - text: Solicitud de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12734
+  - text: Original Currículum Vitae del candidato
+    cites:
+    - source: retys
+  - text: Evidencias adicionales (fotos, vídeos, escritos, artículos, cartas de recomendación, etc.).
+    cites:
+    - source: retys
+  - text: Video no mayor a dos minutos dónde los candidatos presenten y expresen brevemente sus logros más destacados
+    cites:
+    - source: retys
+  - text: Los formatos se publican el día de la convocatoria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de INJUVE
+    - Entregar y llenar documentación requerida en ese momento
+    - Acudir al evento de entrega una vez que sea notificado (a), por medio de llamada telefónica y correo electrónico
+      a cada uno de los participantes
+    - El día del evento se da a conocer el nombre de los ganadores
+  notes: Jóvenes
+- name: Menores de edad
+  requirements:
+  - text: Comprobante de domicilio reciente (agua, luz, teléfono fijo o predial).
+    cites:
+    - source: retys
+  - text: CURP (solo si el candidato es menor de edad).
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía vigente del tutor (INE/IFE, cartilla de identidad, pasaporte o cédula
+      profesional),
+    cites:
+    - source: retys
+  - text: Carta con datos del padre, madre o tutor para la entrega de estímulos económicos, con copia de su identificación
+      oficial
+    cites:
+    - source: retys
+  - text: Currículum Vitae del candidato.
+    cites:
+    - source: retys
+  - text: Evidencias adicionales (fotos, vídeos, escritos, artículos, cartas de recomendación, etc.).
+    cites:
+    - source: retys
+  - text: Video de presentación de no más de dos minutos sobre logros destacados
+    cites:
+    - source: retys
+  - text: Original carta de autorización por padre, madre o tutor para menores de edad
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12743
+  - text: Original carta de auto-postulación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12739
+  - text: Original carta de postulación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12740
+  - text: Original carta de representación, solo en caso de que el registro sea en grupo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12741
+  - text: Formato de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12742
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de INJUVE
+    - Entregar y llenar documentación requerida en ese momento
+    - Acudir al evento de entrega una vez que sea notificado (a), por medio de llamada telefónica y correo electrónico
+      a cada uno de los participantes
+    - El dia del evento se le notifica a las personas quienes son los ganadores
+  notes: Jóvenes menores de edad
+legal_basis:
+- source: ley1
+  pinpoint: 83, Fracción XIII
+- source: ley2
+  pinpoint: 37, Fracción XIV, Artículo 39 fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de INJUVE
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar y llenar documentación requerida en ese momento
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir al evento de entrega una vez que sea notificado (a), por medio de llamada telefónica y correo electrónico
+    a cada uno de los participantes
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El día del evento se da a conocer el nombre de los ganadores
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 516: Premio Estatal a la Juventud'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/516
+    version_date: 29/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

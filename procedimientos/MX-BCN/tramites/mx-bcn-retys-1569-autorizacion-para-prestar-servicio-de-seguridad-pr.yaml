@@ -1,0 +1,262 @@
+id: mx-bcn-retys-1569-autorizacion-para-prestar-servicio-de-seguridad-pr
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para prestar servicio de seguridad privada en Protección y Vigilancia de Bienes
+summary: Trámite para la validación de la prestación del servicio de seguridad privada en protección y vigilancia
+  de bienes por parte de empresas de seguridad privada con giro comercial especializado en dicho ramo
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1569
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1569
+  homoclave: BC-SSCBC-013
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: Cuando se desee prestar el servicio de seguridad privada
+result: Autorización para prestar servicios de seguridad privada
+cost:
+  type: fijo
+  amount_mxn: 22936.75
+  text: 'COSTO: $22,936.75 pesos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: UN AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Seguridad Privada (Edificio Museo del Agua)
+  address: 'Av. Álvaro Obregón #514, Sección Primera, Mexicali, 21100'
+scenarios:
+- name: Autorización para Protección y vigilancia de bienes Persona Moral y Física
+  requirements:
+  - text: Solicitud de autorización por escrito para prestar los servicios de seguridad privada en el Estado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6821
+  - text: Acta Constitutiva ( cuyo objeto social esté relacionado con la prestación de servicios de seguridad privada),
+      Acta de Nacimiento, CURP o Carta de Naturalización
+    cites:
+    - source: retys
+  - text: Constancia de empadronamiento del RFC al Registro Estatal de Causantes
+    cites:
+    - source: retys
+  - text: Permiso para la instalación y uso del equipo de radiocomunicación y/o telecomunicaciones
+    cites:
+    - source: retys
+  - text: Relación del equipo de radiocomunicación y/o telecomunicaciones con características específicas
+    cites:
+    - source: retys
+  - text: El manual de operaciones del personal operativo, por cada modalidad de las previstas en el artículo 4
+      del reglamento que se solicite
+    cites:
+    - source: retys
+  - text: Documentación que acredite su domicilio legal, sucursales y planos de ubicación
+    cites:
+    - source: retys
+  - text: 'Relación del propietario cuando se trate de persona física y de los socios y representante o apoderado
+      (s) legal (es) de la negociación cuando se trate de persona moral. (Anexos de cada uno: Acta de nacimiento,
+      identificación oficial con fotografía vigente, domicilio)'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6808
+  - text: Relación del equipo de protección personal con características. (Marca, Tipo, Modelo y Serie)
+    cites:
+    - source: retys
+  - text: Relación de vehículos y anexos (fotografías legibles 4 lados, tarjeta de circulación vigente y seguro
+      vehícular)
+    cites:
+    - source: retys
+  - text: Licencia vigente para la portación y registro de cada una de las armas de fuego
+    cites:
+    - source: retys
+  - text: Fotografía a color de las insignias y cualquier aditamento que se utilice o pretenda utilizar
+    cites:
+    - source: retys
+  - text: Una fotografía frontal, trasera lateral izquierda y lateral derecha, a color, de cuerpo entero del uniforme
+      que utilizará el personal operativo con accesorios y la leyenda "SEGURIDAD PRIVADA" visible conforme al artículo
+      85 del Reglamento de Seguridad Privada (Legibles y tamaño carta)
+    cites:
+    - source: retys
+  - text: Programa permanente de capacitación por cada modalidad solicitada, (artículo 4 Reglamento Seguridad Privada)
+      y dictamen satisfactorio
+    cites:
+    - source: retys
+  - text: Permiso de uso de suelo para local comercial, específicamente del domicilio legal de la empresa
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6803
+  - text: Constancia de No Antecedentes Penales del propietario, socios, representantes o apoderados legales
+    cites:
+    - source: retys
+  - text: Modelo de gafete o credencial de identificación que expedirán para uso obligatorio del personal operativo
+      (Requisitos artículo 77 del Reglamento de Seguridad Privada)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6820
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano acreditará los requisitos para su modalidad o modalidades
+    - El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+    - El servidor público revisará que cumpla con la totalidad de los requisitos
+    - El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+      solventar
+    - Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los requisitos
+      del establecimiento
+    - Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+    - El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+      privada
+    - El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe cumplir
+  notes: Aquellas actividades realizadas por los prestadores, dirigidas primordialmente a la salvaguarda y protección
+    de los bienes muebles e inmuebles dados en custodia por parte de los prestatarios. Original y dos copias de
+    los siguientes documentos
+- name: Revalidación para Protección y vigilancia de bienes para Persona Moral y Física
+  requirements:
+  - text: Solicitud de Revalidación por escrito para prestar los servicios de seguridad privada en el Estado
+    cites:
+    - source: retys
+  - text: Acta constitutiva, Acta de Nacimiento, CURP o Carta de Naturalización
+    cites:
+    - source: retys
+  - text: Permiso para la instalación y uso de equipo de radiocomunicación y/o telecomunicaciones
+    cites:
+    - source: retys
+  - text: Relación del equipo de radiocomunicación y/o telecomunicaciones con características específicas
+    cites:
+    - source: retys
+  - text: Manual de operaciones del personal operativo, (Uno por cada modalidad, Art. 4)
+    cites:
+    - source: retys
+  - text: 'Relación del propietario cuando se trate de persona física y de los socios y representante o apoderado
+      (s) legal (es) de la negociación cuando se trate de persona moral (Anexos de cada uno: Acta de nacimiento,identificación
+      oficial vigente con fotografía, domicilio)'
+    cites:
+    - source: retys
+  - text: Relación del personal operativo y la documentación que acredite que satisface con los requisitos previstos
+      en el Art.74 del reglamento en la materia
+    cites:
+    - source: retys
+  - text: Relación del equipo de protección personal con características. (Marca, Tipo, Modelo y Serie)
+    cites:
+    - source: retys
+  - text: Relación de vehículos y anexos (fotografías legibles 4 lados, tarjeta de circulación vigente y seguro
+      vehicular)
+    cites:
+    - source: retys
+  - text: Licencia vigente para la portación y registro de cada una de las armas de fuego
+    cites:
+    - source: retys
+  - text: Fotografía a color de las insignias y cualquier aditamento que se utilice o pretenda utilizar
+    cites:
+    - source: retys
+  - text: Fotografía frontal, trasera, lateral izquierda y lateral derecha, a color, de cuerpo entero del uniforme
+      que utilizara el personal operativo con accesorios, y la leyenda "SEGURIDAD PRIVADA" visible, (Art. 85). (Legibles,
+      en tamaño carta)
+    cites:
+    - source: retys
+  - text: Programa permanente de capacitación por cada modalidad solicitada, (Art.4) y dictamen satisfactorio
+    cites:
+    - source: retys
+  - text: Constancia de NO antecedentes penales del propietario, socios, representantes o apoderados legales
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps: []
+  notes: Aquellas actividades realizadas por los prestadores, dirigidas primordialmente a la salvaguarda y protección
+    de los bienes muebles e inmuebles dados en custodia por parte de los prestatarios. Original y dos copias de
+    los siguientes documentos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 22 fracción I, inciso A)
+- source: ley2
+  pinpoint: 4, 9, 22, 25, 36, 42 BIS Y 67 TER
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano acreditará los requisitos para su modalidad o modalidades
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público revisará que cumpla con la totalidad de los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+    solventar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los
+    requisitos del establecimiento
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+    privada
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe
+    cumplir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1569: Autorización para prestar servicio de seguridad privada en Protección y Vigilancia
+      de Bienes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1569
+    version_date: 13/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Seguridad Privada para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Trámite para Obtener la Autorización de la Prestación de Servicios de Seguridad Privada
+  en el Ramo de Protección y Vigilancia de Bienes. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

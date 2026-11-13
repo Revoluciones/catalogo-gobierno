@@ -1,0 +1,153 @@
+id: mx-bcn-retys-1266-renta-de-espacios-y-servicios-adicionales-para-eve
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Renta de Espacios y Servicios Adicionales para Eventos
+summary: Renta de metros cuadrados de piso y servicios adicionales para el desarrollo de eventos tales como ferias,
+  exposiciones, exhibiciones, conferencias, congresos, convenciones y demás eventos análogos. Así mismo se brindan
+  servicios adicionales tales como renta de pantallas varias, pista de baile, estrados/tarimas, publicidad en fachadas
+  entre otros
+authority:
+  name: Centro Metropolitano de Convenciones
+official_ids:
+  retys_id: 1266
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1266
+  homoclave: BC-BAJACENTER-001
+who_can:
+- Interesado
+when: Cuando el interesado lo requiera
+result: Contrato de arrendamiento.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Tarifa congreso $50.00 pesos por metro cuadrado, Tarifa expo $34.00 pesos por metro cuadrado.
+    Costo de renta de espacio y/o servicios adicionales varía según lo que se requiera'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Playas de Rosarito
+  name: Comercialización y Ventas
+  address: 'Carretera Escénica Tijuana – Ensenada #Ejido 1029, Mazatlán, Playas de Rosarito, 22710'
+scenarios:
+- name: Interesado persona física
+  requirements:
+  - text: Solicitud de eventos
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13636
+  - text: Comprobante domicilio menor a tres meses
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal menor a tres meses
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Solicitar y entregar formato de solicitud de eventos debidamente requisitado
+    - Aceptar y firmar la cotización final del evento
+    - Entregar la documentación que acredite su personalidad
+    - Firmar contrato
+    - Liquidar la totalidad del evento con 15 días previos al ingreso al montaje del evento
+  notes: Interesado en realizar un evento
+- name: Interesado persona moral
+  requirements:
+  - text: Solicitud de eventos
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13637
+  - text: Acta constitutiva
+    cites:
+    - source: retys
+  - text: Poder notarial
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial del representante legal vigente
+    cites:
+    - source: retys
+  - text: Comprobante del domicilio fiscal menor a tres meses
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal menor a tres meses
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Solicitar el formato de solicitud de eventos debidamente requisitado
+    - Emisión del presupuesto por parte de la persona servidora pública
+    - Entrega de los documentos que acrediten su personalidad
+    - Aceptación y firma de la cotización del evento
+    - Firma del contrato
+    - Liquidar la totalidad del evento con 15 días previos al ingreso al montaje del evento
+  notes: Interesado en realizar un evento
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 3 y 4
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar y entregar formato de solicitud de eventos debidamente requisitado
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Aceptar y firmar la cotización final del evento
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar la documentación que acredite su personalidad
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar contrato
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Liquidar la totalidad del evento con 15 días previos al ingreso al montaje del evento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1266: Renta de Espacios y Servicios Adicionales para Eventos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1266
+    version_date: 01/Julio /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Centro Metropolitano de Convenciones Tijuana-Playas de Rosarito-Tecate
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

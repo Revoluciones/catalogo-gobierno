@@ -1,0 +1,127 @@
+id: mx-bcn-retys-554-legalizacion-de-documentos-oficiales
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Legalización de Documentos Oficiales
+summary: Certificación de autenticidad de firma en un documento expedido por servidores públicos o quienes tienen
+  fe pública en el estado, para que tenga efectos legales en todo el país.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 554
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/554
+  homoclave: BC-SGG-001
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando el ciudadano requiera la certificación de firmas en documentos oficiales y de fe pública a fin de que
+  sean reconocidos por autoridades locales
+result: Certificación de documento para su validez en el Estado o en el país
+cost:
+  type: variable
+  amount_mxn: 168.0
+  text: 'COSTO VARIABLE: Noviembre $168.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Minutos'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subsecretaría de Servicios Gubernamentales y Jurídicos
+  address: 'Avenida Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Subsecretaría de Gobierno Zona Metropolitana
+  address: 'Juan Ruiz de Alarcón #1572, Zona Urbana Río Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Subsecretaría de Gobierno Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Playas de Rosarito
+  address: 'Calle José Haros Aguilar #2004, Colonia Villa Turística, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Subsecretaría de Gobierno San Quintín
+  address: 'Avenida A entre 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar de Cortez y Manzanillo #s/n, San Felipe, San Felipe, 21850'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Presentar documento a legalizar
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Secretaría General de Gobierno con el documento original
+    - Solicitar el servicio y realizar el pago de derechos recaudación de rentas del Estado
+    - Recibir el documento ya legalizado
+  notes: Ciudadano
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 31, fracción XX
+- source: ley2
+  pinpoint: Artículo 18, fracción I, Inciso A
+- source: ley3
+  pinpoint: Artículo 35, fracción XIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Secretaría General de Gobierno con el documento original
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar el servicio y realizar el pago de derechos recaudación de rentas del Estado
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir el documento ya legalizado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 554: Legalización de Documentos Oficiales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/554
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Legalización de Documentos Oficiales y de Fe Pública. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

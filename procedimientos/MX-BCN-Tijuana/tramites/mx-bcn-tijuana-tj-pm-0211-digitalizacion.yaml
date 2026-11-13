@@ -1,0 +1,89 @@
+id: mx-bcn-tijuana-tj-pm-0211-digitalizacion
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Digitalización
+summary: Trámite complementario de digitalización de predio si no obra en la base de datos de IMPLAN
+authority:
+  name: Presidencia Municipal (Ayuntamiento de Tijuana)
+  unit: Instituto Metropolitano de Planeación Tijuana (IMPLAN)
+official_ids:
+  homoclave: TJ-PM-0211
+who_can:
+- Interesado
+when: Cuando se requiera identificar un predio en el municipio y no se encuentra digitalizado en la base de datos
+  del Instituto Metropolitano de Planeación de Tijuana
+result: Mapa
+requirements:
+- text: Oficio de solicitud firmada por el usuario
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Cuadro de construcción
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Cédula fiscal, si requiere factura
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Recibo de impuesto predial
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Por digitalización de predio: 5 UMA ($586.55) · Por archivo digital en PDF del Plan o Programa de Desarrollo
+    Urbano: 34.9 UMA ($4,094.12). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Metropolitano de Planeación Tijuana (IMPLAN)
+  address: Canadá No. 7171, Río Tijuana 3a. Etapa, Tercera etapa Rio, 22226 Tijuana, B.C.
+  phones: '6646866241'
+  hours: LUNES A VIERNES DE 08:00 HRS A 16:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-PM-0211: Digitalización'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-PM-0211
+    version_date: '2026-08-14'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 17, Fracc. II Reglamento Interior Instituto Metropolitano de Planeación de Tijuana
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2022214164818351_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 49, Inciso AG) y AH) de la Ley de Ingresos del Municipio de Tijuana, Baja California para el
+      Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: N/A'

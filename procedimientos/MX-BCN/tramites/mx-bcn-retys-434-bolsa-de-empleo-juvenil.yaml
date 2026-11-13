@@ -1,0 +1,126 @@
+id: mx-bcn-retys-434-bolsa-de-empleo-juvenil
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Bolsa de Empleo Juvenil
+summary: Conecta el talento de las juventudes con las empresas de Baja California en colaboración con el Servicio
+  Nacional del Empleo (SNE). Inscríbete para buscar oportunidades laborales.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 434
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/434
+  homoclave: BC-INJUVE-006
+who_can:
+- Interesado
+when: Cuando busques trabajo o una oportunidad laboral.
+result: Canalización y vinculación a oportunidades de empleo.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+scenarios:
+- name: Busco Empleo (Para juventudes)
+  requirements:
+  - text: 'INICIA SESIÓN Y COMPLETA TU SOLICITUD (botón "Iniciar trámite"): Ingresa a la Ventanilla Digital con
+      tu cuenta de Llave BC y llena el formulario. (Si aún no tienes cuenta, el sistema te guiará para crearla en
+      ese momento).'
+    cites:
+    - source: retys
+  - text: 'SUBE TU IDENTIFICACIÓN: Si tienes 18 años o más, adjunta tu identificación oficial con fotografía (como
+      tu INE o pasaporte).'
+    cites:
+    - source: retys
+  - text: 'SUBE TU CURRÍCULUM: Adjunta tu Currículum Vitae (CV) actualizado en formato PDF para que las empresas
+      puedan conocer tu perfil, experiencia y habilidades.'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'CONSULTA LAS VACANTES DISPONIBLES: Revisa el Catálogo de Vacantes (archivo PDF) disponible en esta página.
+      Anota el "Número de Vacante" o los números de las opciones a las que deseas postularte.'
+    - 'INICIA TU SOLICITUD EN LÍNEA: Ingresa a la Ventanilla Digital (botón "Iniciar trámite) utilizando tu cuenta
+      de Llave BC y completa el breve formulario con tus datos y los números de vacante que elegiste.'
+    - 'SUBE TUS DOCUMENTOS: Dentro de la plataforma, adjunta tu Currículum Vitae (CV) en formato PDF y tu identificación
+      oficial con fotografía (esta última solo si tienes 18 años o más).'
+    - 'ESPERA EL CONTACTO DE LA EMPRESA O DEL SERVICIO NACIONAL DE EMPLEO: Tu perfil será enviado a las empresas
+      de tu elección para que te contacten. Además, compartiremos tu información con el Servicio Nacional de Empleo,
+      quienes podrán informarte sobre otras opciones de trabajo y vacantes disponibles.'
+  notes: Para las juventudes que buscan integrarse al mercado laboral. Consulta nuestro catálogo quincenal de vacantes,
+    sube tu currículum y aplica a las opciones de tu interés.
+legal_basis:
+- source: ley1
+  pinpoint: 35 y 83 Fracción XV, XXXII.
+- source: ley2
+  pinpoint: 40, Fracción X y XI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'CONSULTA LAS VACANTES DISPONIBLES: Revisa el Catálogo de Vacantes (archivo PDF) disponible en esta página.
+    Anota el "Número de Vacante" o los números de las opciones a las que deseas postularte.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'INICIA TU SOLICITUD EN LÍNEA: Ingresa a la Ventanilla Digital (botón "Iniciar trámite) utilizando tu
+    cuenta de Llave BC y completa el breve formulario con tus datos y los números de vacante que elegiste.'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'SUBE TUS DOCUMENTOS: Dentro de la plataforma, adjunta tu Currículum Vitae (CV) en formato PDF y tu identificación
+    oficial con fotografía (esta última solo si tienes 18 años o más).'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'ESPERA EL CONTACTO DE LA EMPRESA O DEL SERVICIO NACIONAL DE EMPLEO: Tu perfil será enviado a las empresas
+    de tu elección para que te contacten. Además, compartiremos tu información con el Servicio Nacional de Empleo,
+    quienes podrán informarte sobre otras opciones de trabajo y vacantes disponibles.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 434: Bolsa de Empleo Juvenil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/434
+    version_date: 29/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro de Juventudes en la Bolsa de Empleo. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

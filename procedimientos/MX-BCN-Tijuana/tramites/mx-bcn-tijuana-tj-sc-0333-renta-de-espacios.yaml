@@ -1,0 +1,203 @@
+id: mx-bcn-tijuana-tj-sc-0333-renta-de-espacios
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Educación, deporte y cultura, Otros
+title: Renta De Espacios
+summary: El instituto Municipal de Arte y Cultura (IMAC) cuenta con diferentes espacios como teatro, salones y jardines
+  en los diferentes edificios (Casas de Cultura), disponibles para rentar para diferentes eventos. El costo de las
+  clases de equitación y escaramuza se calcula con base en el valor vigente de la UMA, conforme a lo establecido
+  en el artículo 52, inciso "D) Casa de Cultura Playas", subinciso "f) Lienzo Charro", numeral "7) Curso por convenio
+  70% Maestro - 30% IMAC", de la Ley de Ingresos del Municipio de Tijuana, Baja California, para el Ejercicio Fiscal
+  de 2026. Del importe a pagar, el 70% del costo corresponde al maestro y el 30% del costo al Instituto Municipal
+  de Arte y Cultura (IMAC).
+authority:
+  name: Secretaría de Cultura (Ayuntamiento de Tijuana)
+  unit: Instituto Municipal de Arte y Cultura (IMAC)
+official_ids:
+  homoclave: TJ-SC-0333
+who_can:
+- Interesado
+when: 'Casa de la Cultura Tijuana (Av. París y Lisboa #5, Col. Altamira), Tel. (664) 687 2604; Correo: admoncct2022.altamira@gmail.com
+  · Casa de la Cultura Playas Av. Del Agua #777, Secc. Jardines, Playas de Tijuana Tel. (664) 630 1825; Correo:
+  ccplayas.admon@gmail.com · Casa de la Cultura El Pípila Calle Décima #7828, Col. El Pípila, Tel. (664) 629 4264;
+  Correo: ccpipila24.imac@gmail.com · Casa de la Cultura San Antonio de los Buenos Av. Miraflores #7001, Fracc.
+  El Rubí, Tel. (664) 637 0941; Correo: info.paolalozano@gmail.com'
+result: Convenio Firmado
+requirements:
+- text: Realizar el pago del arrendamiento
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: comprobante de domicilio
+  cites:
+  - source: remutys
+- text: identificación oficial
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Llenar la solicitud de la renta del espacio
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'A) Feria del libro - a) Módulo de 3 x 3 Mt.: 73.58 UMA ($8,631.67) · A) Feria del libro - b) Módulo de
+    3 x 3 Mt. con giro comercial afín al evento: 100.69 UMA ($11,811.94) · A) Feria del libro - c) Módulo de 3 x
+    3 Mt. a proyectos culturales: 73.58 UMA ($8,631.67) · A) Feria del libro - d) Módulo de 3 x 3 Mt. a integrantes
+    de la unión de libreros: 20.66 UMA ($2,423.62) · A) Feria del libro - e) Universidades y librerías independientes:
+    73.58 UMA ($8,631.67) · A) Feria del libro - g) Renta de sala audiovisual Rubén Vizcaino: 14.46 UMA ($1,696.30)
+    · A) Feria del libro - h) 1) Arrendamiento de espacios de las instalaciones de IMAC 3 x 3 con fines de lucro:
+    10.6 UMA ($1,243.49) · A) Feria del libro - h) 2) Arrendamiento de espacios de las instalaciones de IMAC 3 x
+    3 sin fines de lucro: 4.68 UMA ($549.01) · B) Renta mensual del Pasaje 5 y 10 - a) Renta mensual del Pasaje
+    5 y 10: 1583.8 UMA ($185,795.58) · C) Casa de Cultura Tijuana - a) Renta de espacio para verbena popular: 4.68
+    UMA ($549.01) · C) Casa de Cultura Tijuana - b) Renta de teatro por evento: 47.76 UMA ($5,602.73) · C) Casa
+    de Cultura Tijuana - b) 1) Cuota por recuperación energía eléctrica: 3.86 UMA ($452.82) · C) Casa de Cultura
+    Tijuana - b) 2) Deposito en garantía: 13.43 UMA ($1,575.47) · C) Casa de Cultura Tijuana - c) Renta de teatro
+    por hora: 7.96 UMA ($933.79) · C) Casa de Cultura Tijuana - d) Servicio de limpieza por renta de teatro por
+    evento: 4 UMA ($469.24) · C) Casa de Cultura Tijuana - e) Servicio técnico de audio y luces extra por renta
+    de teatro por evento: 4 UMA ($469.24) · C) Casa de Cultura Tijuana - f) Servicio de tramoyista por renta de
+    teatro por evento: 4 UMA ($469.24) · C) Casa de Cultura Tijuana - g) Renta de Café Foro Galería por evento:
+    33.56 UMA ($3,936.92) · C) Casa de Cultura Tijuana - g) 1) Cuota recuperación energía eléctrica: 6.66 UMA ($781.28)
+    · C) Casa de Cultura Tijuana - h) Renta de cajón de estacionamiento por evento: 0.27 UMA ($31.67) · C) Casa
+    de Cultura Tijuana - i) Renta de salón 104 por hora: 4 UMA ($469.24) · C) Casa de Cultura Tijuana - j) Renta
+    de salón 104 por evento: 10.72 UMA ($1,257.56) · C) Casa de Cultura Tijuana - k) Renta de salón en general por
+    evento: 4 UMA ($469.24) · C) Casa de Cultura Tijuana - l) Renta de fachada, escalinata y jardines por hora:
+    4.68 UMA ($549.01) · C) Casa de Cultura Tijuana - m) Renta de fachada, escalinata y jardines por evento: 47.76
+    UMA ($5,602.73) · C) Casa de Cultura Tijuana - m) 1) Cuota recuperación energía eléctrica: 3.86 UMA ($452.82)
+    · C) Casa de Cultura Tijuana - n) Deposito en Garantía de renta de fachada, escalinata y jardines: 13.43 UMA
+    ($1,575.47) · C) Casa de Cultura Tijuana - o) Renta de espacio de 3 x 3 metros para venta de alimentos y bebidas:
+    16.78 UMA ($1,968.46) · C) Casa de Cultura Tijuana - p) Renta de espacio de 3 x 3 metros para venta de artículos
+    promocionales: 7 UMA ($821.17) · D) Casa de Cultura Playas - a) 1) Café Literario - Renta mensual: 33.56 UMA
+    ($3,936.92) · D) Casa de Cultura Playas - a) 2) Café Literario - Cuota mensual de energía eléctrica: 6.66 UMA
+    ($781.28) · D) Casa de Cultura Playas - b) Renta de espacio 3x3 Mt. para venta de productos en festivales en
+    general: 16.78 UMA ($1,968.46) · D) Casa de Cultura Playas - c) 1) Renta de cajón de estacionamiento - Por evento:
+    0.67 UMA ($78.60) · D) Casa de Cultura Playas - d) Renta de espacio publicitario: 33.56 UMA ($3,936.92) · D)
+    Casa de Cultura Playas - e) Renta de espacio para verbena popular por evento: 3.34 UMA ($391.82) · D) Casa de
+    Cultura Playas - f) 1) i) Lienzo Charro - Renta por evento a escuelas y asociaciones civiles de lunes a jueves:
+    27.11 UMA ($3,180.27) · D) Casa de Cultura Playas - f) 1) ii) Lienzo Charro - Renta por evento al público en
+    general, de lunes a jueves: 40.02 UMA ($4,694.75) · D) Casa de Cultura Playas - f) 1) iii) Lienzo Charro - Renta
+    por evento al público en general, de viernes a domingo: 67.13 UMA ($7,875.02) · D) Casa de Cultura Playas -
+    f) 2) Lienzo Charro - Renta por hora extra: 6.66 UMA ($781.28) · D) Casa de Cultura Playas - f) 3) Lienzo Charro
+    - Renta de ruedo por hora: 1.07 UMA ($125.52) · D) Casa de Cultura Playas - f) 4) Lienzo Charro - Renta de manga
+    por hora: 1.07 UMA ($125.52) · D) Casa de Cultura Playas - f) 5) Lienzo Charro - Renta de corrales y toriles
+    por hora: 0.67 UMA ($78.60) · D) Casa de Cultura Playas - f) 6) Lienzo Charro - Renta de cojines por evento:
+    0.27 UMA ($31.67) · D) Casa de Cultura Playas - f) 8) Lienzo Charro - Depósito en garantía: 6.66 UMA ($781.28)
+    · D) Casa de Cultura Playas - f) 9) Lienzo Charro - Cuota de limpieza: 6.66 UMA ($781.28) · D) Casa de Cultura
+    Playas - g) 1) i) Patio Kiosco - Renta por evento a escuelas y asociaciones civiles, de lunes a jueves: 13.43
+    UMA ($1,575.47) · D) Casa de Cultura Playas - g) 1) ii) Patio Kiosco - Renta por evento al público en general:
+    33.56 UMA ($3,936.92) · D) Casa de Cultura Playas - g) 2) Patio Kiosco - Servicio de limpieza: 8 UMA ($938.48)
+    · D) Casa de Cultura Playas - g) 3) Patio Kiosco - Renta de mobiliario (equipales): 6.66 UMA ($781.28) · D)
+    Casa de Cultura Playas - g) 4) Patio Kiosco - Depósito en garantía: 13.43 UMA ($1,575.47) · D) Casa de Cultura
+    Playas - h) 1) Patio Andaluz - Renta por evento: 20.66 UMA ($2,423.62) · D) Casa de Cultura Playas - h) 2) Patio
+    Andaluz - Servicio de limpieza: 4 UMA ($469.24) · D) Casa de Cultura Playas - h) 3) Patio Andaluz - Depósito
+    en garantía: 6.66 UMA ($781.28) · D) Casa de Cultura Playas - i) 1) i) Teatro Griego - Renta por evento a escuelas
+    y asociaciones civiles, de lunes a jueves: 4 UMA ($469.24) · D) Casa de Cultura Playas - i) 1) ii) Teatro Griego
+    - Renta por evento al público en general, de lunes a jueves: 13.43 UMA ($1,575.47) · D) Casa de Cultura Playas
+    - i) 1) iii) Teatro Griego - Renta por evento al público en general, de viernes a domingo: 20.66 UMA ($2,423.62)
+    · D) Casa de Cultura Playas - i) 2) Teatro Griego - Servicio de limpieza: 4 UMA ($469.24) · D) Casa de Cultura
+    Playas - i) 3) Teatro Griego - Depósito en garantía: 13.43 UMA ($1,575.47) · D) Casa de Cultura Playas - j)
+    1) i) Salón los Arcos - Renta por evento a escuelas y asociaciones civiles, de lunes a jueves: 38.73 UMA ($4,543.42)
+    · D) Casa de Cultura Playas - j) 1) ii) Salón los Arcos - Renta por evento al público en general, de lunes a
+    jueves: 49.06 UMA ($5,755.23) · D) Casa de Cultura Playas - j) 1) iii) Salón los Arcos - Renta por evento al
+    público en general, de viernes a domingo: 80.04 UMA ($9,389.49) · D) Casa de Cultura Playas - j) 1) iv) Salón
+    los Arcos - Renta de sonido: 13.43 UMA ($1,575.47) · D) Casa de Cultura Playas - j) 1) v) Salón los Arcos -
+    Renta de mobiliario: 24.52 UMA ($2,876.44) · D) Casa de Cultura Playas - j) 1) vi) Salón los Arcos - Cuota energía
+    eléctrica: 3.86 UMA ($452.82) · D) Casa de Cultura Playas - j) 2) Salón los Arcos - Servicio de limpieza: 9.43
+    UMA ($1,106.23) · D) Casa de Cultura Playas - j) 3) Salón los Arcos - Depósito en garantía: 20.66 UMA ($2,423.62)
+    · D) Casa de Cultura Playas - k) 1) i) Jardín del Arte - Renta por evento a escuelas y asociaciones civiles,
+    de lunes a jueves: 34.86 UMA ($4,089.43) · D) Casa de Cultura Playas - k) 1) ii) Jardín del Arte - Renta por
+    evento al público en general, de lunes a jueves: 40.02 UMA ($4,694.75) · D) Casa de Cultura Playas - k) 1) iii)
+    Jardín del Arte - Renta por evento al público en general, de viernes a domingo: 60.67 UMA ($7,117.20) · D) Casa
+    de Cultura Playas - k) 1) iv) Jardín del Arte - Cuota de energía eléctrica: 3.86 UMA ($452.82) · D) Casa de
+    Cultura Playas - k) 2) Jardín del Arte - Servicio de limpieza: 6.66 UMA ($781.28) · D) Casa de Cultura Playas
+    - k) 3) Jardín del Arte - Depósito en garantía: 13.43 UMA ($1,575.47) · D) Casa de Cultura Playas - l) Renta
+    de espacio para verbena sevillana: 20.66 UMA ($2,423.62) · D) Casa de Cultura Playas - m) Renta mensual de espacio
+    individual de caballeriza: 7.34 UMA ($861.06) · D) Casa de Cultura Playas - n) 1) i) Salón La Tasca - Renta
+    por evento a escuelas y asociaciones civiles, de lunes a jueves: 20.66 UMA ($2,423.62) · D) Casa de Cultura
+    Playas - n) 1) ii) Salón La Tasca - Renta por evento al público en general, de lunes a jueves: 27.11 UMA ($3,180.27)
+    · D) Casa de Cultura Playas - n) 1) iii) Salón La Tasca - Renta por evento al público en general, de viernes
+    a domingo: 40.02 UMA ($4,694.75) · D) Casa de Cultura Playas - n) 2) Salón La Tasca - Servicio de limpieza:
+    4 UMA ($469.24) · D) Casa de Cultura Playas - n) 3) Salón La Tasca - Renta de mobiliario: 16.78 UMA ($1,968.46)
+    · D) Casa de Cultura Playas - n) 4) Salón La Tasca - Depósito en garantía: 13.43 UMA ($1,575.47) · D) Casa de
+    Cultura Playas - n) 5) Salón La Tasca - Cuota recuperación energía eléctrica: 3.86 UMA ($452.82) · D) Casa de
+    Cultura Playas - o) Renta de tarima: 8 UMA ($938.48) · D) Casa de Cultura Playas - p) 1) Renta de estacionamiento
+    para evento de salón La Tasca - Renta por evento: 65.84 UMA ($7,723.69) · D) Casa de Cultura Playas - p) 2)
+    Renta de estacionamiento para evento de salón La Tasca - Servicio de limpieza: 6.54 UMA ($767.21) · D) Casa
+    de Cultura Playas - q) 1) Renta de explanada exterior - Renta por evento: 32.27 UMA ($3,785.59) · D) Casa de
+    Cultura Playas - q) 2) Renta de explanada exterior - Servicio de limpieza: 6.54 UMA ($767.21) · D) Casa de Cultura
+    Playas - q) 3) Renta de explanada exterior - Deposito en garantía: 9.64 UMA ($1,130.87) · D) Casa de Cultura
+    Playas - r) Renta de espacios de 3x3 metros para guarda o almacenamiento de equipo de montura por mes: 16.78
+    UMA ($1,968.46) · D) Casa de Cultura Playas - s) Renta mensual de espacio individual para estacionar remolques
+    para transportar caballos: 4.34 UMA ($509.13) · E) Casa de Cultura Pípila - a) Renta de espacio 3 x 3 M² para
+    verbena popular: 2.67 UMA ($313.22) · E) Casa de Cultura Pípila - b) Renta de sala de usos múltiples: 13.43
+    UMA ($1,575.47) · E) Casa de Cultura Pípila - d) Contratación de la Orquesta Sinfónica Infantil-Juvenil del
+    IMAC por evento: 20.66 UMA ($2,423.62) · E) Casa de Cultura Pípila - e) Renta de Anfiteatro por 4 horas: 13.43
+    UMA ($1,575.47) · E) Casa de Cultura Pípila - f) Renta de Aula por 2 horas: 2.67 UMA ($313.22) · E) Casa de
+    Cultura Pípila - g) Renta de explanada por 2 horas: 2.67 UMA ($313.22) · F) Coordinación de Galerías - a) Renta
+    de Galería de la Ciudad para presentaciones de danza, teatro, música o conferencias: 10.07 UMA ($1,181.31) ·
+    F) Coordinación de Galerías - b) Renta de Galerías Benjamín Serrano y Álvarez Malo para presentaciones de danza,
+    teatro, música o conferencias: 6.01 UMA ($705.03) · F) Coordinación de Galerías - c) Renta de espacios en festivales
+    internos (jardín del arte, mercados artesanales y artísticos): 2.01 UMA ($235.79) · G) Venta de obras de arte
+    - a) Obras en espacios galerísticos del IMAC: 4.52 UMA ($530.24) · G) Venta de obras de arte - b) Obras en espacios
+    externos (mercados de arte, jardín del Arte): 0.9 UMA ($105.58) · H) Casa de la Cultura San Antonio de los Buenos
+    - a) Renta de aula por hora: 1.45 UMA ($170.10) · H) Casa de la Cultura San Antonio de los Buenos - b) Renta
+    de espacio 3x3 metros para verbena popular: 3.12 UMA ($366.01) · H) Casa de la Cultura San Antonio de los Buenos
+    - c) 1) Renta de sala de usos múltiples por 4 horas - Por evento: 17.83 UMA ($2,091.64) · H) Casa de la Cultura
+    San Antonio de los Buenos - c) 2) Renta de sala de usos múltiples por 4 horas - Depósito en Garantía: 11.57
+    UMA ($1,357.28) · H) Casa de la Cultura San Antonio de los Buenos - c) 3) Renta de sala de usos múltiples por
+    4 horas - Servicio de Limpieza: 4.82 UMA ($565.43) · H) Casa de la Cultura San Antonio de los Buenos - d) 1)
+    Renta de Jardín trasero por 4 horas - Por evento: 8.68 UMA ($1,018.25) · H) Casa de la Cultura San Antonio de
+    los Buenos - d) 1) Renta de Jardín trasero por 4 horas - Por evento: 3.86 UMA ($452.82) · H) Casa de la Cultura
+    San Antonio de los Buenos - d) 3) Renta de Jardín trasero por 4 horas - Servicio de Limpieza: 4.82 UMA ($565.43)
+    · D) Casa de Cultura Playas - f) Lienzo Charro - 7).- Curso por convenio 70 % Maestro - 30 % IMAC: 0 UMA ($0.00).
+    UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 mes
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Municipal de Arte y Cultura (IMAC)
+  address: C. Segunda, Zona Centro. C.P.22000
+  phones: 6646881721 ext. 117
+  hours: LUNES A VIERNES DE 08:00 HRS A 17:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SC-0333: Renta De Espacios'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SC-0333
+    version_date: '2026-06-30'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL MUNICIPIO DE TIJUANA, BAJA CALIFORNIA PARA EL EJERCICIO FISCAL DEL 2026 Artículo
+      52
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20251230_LEYINGRESOTIJUANA2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: Disponibilidad del espacio'

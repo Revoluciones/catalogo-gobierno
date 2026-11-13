@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1275-historial-academico
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Historial Académico
+summary: Documento reconocido por las instituciones educativas, que permiten el tránsito de los alumnos entre los
+  diferentes subsistemas de educación superior. El documento contiene la información relativa a los módulos cursados
+  que fueron aprobados y no aprobados, se encuentra avalado con el sello y firma autógrafa del director del plantel,
+  jefe de servicios escolares del plantel y jefe de servicios escolares de la Dirección Estatal.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1275
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1275
+  homoclave: BC-CONALEP-006
+who_can:
+- Interesado
+- Tutor
+when: Cuando el interesado lo requiera
+result: Historial académico
+cost:
+  type: fijo
+  amount_mxn: 210.0
+  text: 'COSTO: Costo valido durante el 2026: $ 210.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Presentar fotografía
+    cites:
+    - source: retys
+  - text: Presentar comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar documentación requerida al plantel correspondiente
+    - Entregar historial académico
+  notes: Requisitos para obtener historial académico
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar documentación requerida al plantel correspondiente
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar historial académico
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1275: Historial Académico'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1275
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

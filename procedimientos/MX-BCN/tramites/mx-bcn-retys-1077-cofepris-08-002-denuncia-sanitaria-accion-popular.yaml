@@ -1,0 +1,128 @@
+id: mx-bcn-retys-1077-cofepris-08-002-denuncia-sanitaria-accion-popular
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-08-002 Denuncia Sanitaria (Acción popular)
+summary: Te permite señalar los hechos, actos u omisiones que representen un riesgo o provoquen un daño a la salud.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1077
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1077
+  homoclave: BC-COEPRIS-066
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo se quiera presentar una denuncia sanitaria.
+result: Atención a la denuncia.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: 'Para Modo de Ingreso Presencial (previa cita): Formato “Denuncia Sanitaria (Acción Popular)” debidamente
+      requisitado. Copia simple de identificación oficial vigente. Adjuntar información relacionada con la denuncia
+      (ticket de compra, muestra de producto, medio publicitario, etiqueta de producto, etc.)'
+    cites:
+    - source: retys
+  - text: 'Para Modo de Ingreso Telefónico, comuníquese al 800-033-5050 y deberá contar con: Información relacionada
+      con la denuncia (ticket de compra, muestra de producto, medio publicitario, etiqueta de producto, domicilio
+      completo del establecimiento, etc.) Información del denunciante.'
+    cites:
+    - source: retys
+  - text: 'Para el Modo de Ingreso Electrónico, deberá ingresar a: https://www.gob.mx/cofepris/acciones-y-programas/denuncias-sanitarias
+      y capturar la información siguiente: Información relacionada con la denuncia (ticket de compra, muestra de
+      producto, medio publicitario, etiqueta de producto, domicilio completo del establecimiento, etc.) Información
+      del denunciante.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de COEPRIS
+    - Entregar denuncia debidamente llenada
+    - El personal verificador realiza la visita de verificación a fin de atender la denuncia y se da el seguimiento
+      hasta finalizar el proceso
+  notes: Presentación denuncia sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 60
+- source: ley2
+  pinpoint: Artículo 6
+- source: ley3
+  pinpoint: Artículo 5
+- source: ley4
+  pinpoint: Artículo 109
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar denuncia debidamente llenada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El personal verificador realiza la visita de verificación a fin de atender la denuncia y se da el seguimiento
+    hasta finalizar el proceso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1077: COFEPRIS-08-002 Denuncia Sanitaria (Acción popular)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1077
+    version_date: 26/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Insumos Para la Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en materia de publicidad
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-08-002 Denuncia Sanitaria (Acción popular).. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

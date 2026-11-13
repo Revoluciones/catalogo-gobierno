@@ -1,0 +1,137 @@
+id: mx-bcn-retys-1668-capacitacion-para-bares-y-restaurantes-bar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Capacitacion para bares y restaurantes bar
+summary: Atender e inscribir al personal que labora en establecimientos de venta de bebida alcohólica en envase
+  abierto, para que obtenga su constancia de capacitación, una vez que concluya el curso otorgado por el Instituto.
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1668
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1668
+  homoclave: BC-SSCBC-023
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Constancia
+cost:
+  type: fijo
+  amount_mxn: 8003.34
+  text: 'COSTO: $8,003.34 Pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Servicios Especiales en Protección y Seguridad Privada
+  address: 'Paseo de los Héroes Y de la Libertad #399, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Dirección de Servicios Especiales en Protección y Seguridad Privada
+  address: 'Antigua carretera libre Tijuana - Tecate lote 153 Manzana #477, Piedras Blancas, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Servicios Especiales en Protección y Seguridad Privada
+  address: 'Prolongación Zertuche #6474, Praderas del Cipres, Ensenada, 22785'
+scenarios:
+- name: Presentación de solicitud
+  requirements:
+  - text: Presentar solicitud de capacitación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/9697
+  - text: Original y copia Acta de nacimiento para su cotejo
+    cites:
+    - source: retys
+  - text: Una identificación oficial vigente con fotografía.
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar solicitud requisitada
+    - Se revisa la solicitud y documentación; posteriores a 3 días hábiles se da respuesta para seguimiento
+    - Se entrega oficio y ficha de pago
+    - Entregar recibo de pago
+    - Se inscribe al interesado para tomar el curso (aprobación de curso 90% asistencia y acreditar exámenes)
+    - Una vez terminado el curso se expide constancia acreditación
+  notes: El establecimiento presenta solicitud de inscripción del empleado que tomará el curso, acompañado de acta
+    de nacimiento, identificación oficial con fotografía y curp.
+legal_basis:
+- source: ley1
+  pinpoint: 22 fracción II inciso G
+- source: ley2
+  pinpoint: 71 Y 75
+- source: ley3
+  pinpoint: 18 BIS, 18 TER, 27, 28 Y 29
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar solicitud requisitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se revisa la solicitud y documentación; posteriores a 3 días hábiles se da respuesta para seguimiento
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se entrega oficio y ficha de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entregar recibo de pago
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se inscribe al interesado para tomar el curso (aprobación de curso 90% asistencia y acreditar exámenes)
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez terminado el curso se expide constancia acreditación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1668: Capacitacion para bares y restaurantes bar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1668
+    version_date: 13/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley para la venta , almacenaje y consumo público de bebidas alcohólicas del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Capacitación para establecimientos de venta de bebida alcohólica en envase abierto. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

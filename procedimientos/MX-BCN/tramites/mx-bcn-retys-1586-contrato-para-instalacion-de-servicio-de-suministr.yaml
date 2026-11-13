@@ -1,0 +1,232 @@
+id: mx-bcn-retys-1586-contrato-para-instalacion-de-servicio-de-suministr
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato para Instalación de Servicio de Suministro en Tomas Fijas (Conocidas como Garzas)
+summary: Contratación para la instalación de una toma fija para suministro de agua potable para su distribución
+  en camiones cisterna, exclusivamente para usuarios cuyo giro sea el desarrollo de vivienda o industrial.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1586
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1586
+  homoclave: BC-CESPT-008
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando requiera del servicio
+result: Contrato
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo del medidor de acuerdo al diámetro requerido, toma y descarga domiciliaria y lo
+    que resulte de líneas adicionales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: General
+  requirements:
+  - text: 'NOTA: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener
+      el documento completo.'
+    cites:
+    - source: retys
+  - text: 1. Inspección de factibilidad de servicios positiva emitida por la CESPT
+    cites:
+    - source: retys
+  - text: 2. Solicitud debidamente llenada y firmada por el propietario y/o representante legal de la empresa. (FRM-003)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10606
+  - text: '3. Documento para comprobar la propiedad, posesión o titularidad del predio en el que se instalarán los
+      servicios, puede ser uno de los siguientes:'
+    cites:
+    - source: retys
+  - text: '----- Carta de inscripción del Registro Público de la Propiedad y de Comercio (Escrituras) con fecha
+      de registro no mayor a un año de antigüedad'
+    cites:
+    - source: retys
+  - text: '----- Constancia de posesión emitida por el Comisariado Ejidal'
+    cites:
+    - source: retys
+  - text: '----- Carta de residencia vigente emitida por el Ayuntamiento, si se trata de posesionarios'
+    cites:
+    - source: retys
+  - text: '----- Juicio de prescripción positiva inscrito en el Registro Público de la Propiedad y de Comercio con
+      fecha de registro no mayor a un año de antigüedad'
+    cites:
+    - source: retys
+  - text: '----- Recibo del impuesto predial vigente (con fecha de emisión no mayor a un año de antigüedad)'
+    cites:
+    - source: retys
+  - text: '4. Documento que otorgue poder para realizar el trámite, en caso de que la persona que gestiona el servicio
+      no sea el propietario del predio, puede ser uno de los siguientes:'
+    cites:
+    - source: retys
+  - text: '----- Carta Poder otorgada por el propietario ante Notario Público o Corredor Público'
+    cites:
+    - source: retys
+  - text: '----- Carta Poder simple otorgada por el propietario, cuya fecha no exceda los seis meses de antigüedad'
+    cites:
+    - source: retys
+  - text: '----- Acta constitutiva en la que se acredite la personalidad de quien gestiona el servicio'
+    cites:
+    - source: retys
+  - text: '5. Identificación oficial con fotografía del propietario del predio, y de la persona a quien éste le
+      haya otorgado el poder para gestionar el servicio si es el caso, puede ser uno de los siguientes:'
+    cites:
+    - source: retys
+  - text: '----- Credencial para votar vigente expedida por el Instituto Nacional Electoral'
+    cites:
+    - source: retys
+  - text: '----- Pasaporte mexicano vigente'
+    cites:
+    - source: retys
+  - text: '----- Licencia de conducir vigente'
+    cites:
+    - source: retys
+  - text: '----- Matrícula consular vigente'
+    cites:
+    - source: retys
+  - text: '----- Cédula Profesional emitida por la Secretaría de Educación Pública'
+    cites:
+    - source: retys
+  - text: 6. Depósito en garantía por el importe del consumo estimado de agua de 3 meses. Esto con base en el artículo
+      57 de la Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California, vigente
+    cites:
+    - source: retys
+  - text: 7. Hacer el pago correspondiente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales de CESPT al área de Archivo
+    - Si no lo obtuvo de Internet, solicitar a la persona de archivo el formato para la Instalación de Toma Fija
+      para Suministro de Agua Potable para distribución en camiones cisterna (conocida comúnmente como garza) (FRM-003),
+      y llenarlo
+    - Entregar a la persona de Archivo el formato para la Instalación de Toma Fija para Suministro de Agua Potable
+      para distribución en camiones cisterna (conocida comúnmente como garza) y los requisitos
+    - La persona de archivo revisará que se cumpla con todos los requisitos, si no están completos, informa al ciudadano
+      que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+    - Con los requisitos completos la persona de archivo, imprime certificación de recibido a la copia del formato
+      de solicitud, así como la fecha de respuesta
+    - Personal de la Coordinación de Desarrolladores y Gobierno se comunicarán con el ciudadano para el seguimiento
+      de su solicitud, informándole que debe pasar por el recibo para el pago de depósito en garantía
+    - Una vez realizado el pago del depósito en garantía, la persona de la Coordinación de Desarrolladores y Gobierno
+      elaborará el Presupuesto de Obra y el Contrato Administrativo que corresponda al servicio solicitado, y le
+      hará entrega de ambos documentos para su revisión y firma
+    - El usuario debe firmar de conformidad los documentos que se le entregan
+    - 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le entregarán
+      dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra'
+  notes: General
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo: 9.'
+- source: ley2
+  pinpoint: 'Artículos: 1, 2, 14 y 58.'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales de CESPT al área de Archivo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Si no lo obtuvo de Internet, solicitar a la persona de archivo el formato para la Instalación de Toma
+    Fija para Suministro de Agua Potable para distribución en camiones cisterna (conocida comúnmente como garza)
+    (FRM-003), y llenarlo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar a la persona de Archivo el formato para la Instalación de Toma Fija para Suministro de Agua Potable
+    para distribución en camiones cisterna (conocida comúnmente como garza) y los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona de archivo revisará que se cumpla con todos los requisitos, si no están completos, informa
+    al ciudadano que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos la persona de archivo, imprime certificación de recibido a la copia del formato
+    de solicitud, así como la fecha de respuesta
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Desarrolladores y Gobierno se comunicarán con el ciudadano para el seguimiento
+    de su solicitud, informándole que debe pasar por el recibo para el pago de depósito en garantía
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago del depósito en garantía, la persona de la Coordinación de Desarrolladores y
+    Gobierno elaborará el Presupuesto de Obra y el Contrato Administrativo que corresponda al servicio solicitado,
+    y le hará entrega de ambos documentos para su revisión y firma
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: El usuario debe firmar de conformidad los documentos que se le entregan
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: 'Una vez firmados los documentos deberá pasar a cajas a realizar el pago correspondiente, en donde le
+    entregarán dos documentos: 1) Comprobante de pago y 2) Convenio de liquidación de obra'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1586: Contrato para Instalación de Servicio de Suministro en Tomas Fijas (Conocidas como
+      Garzas)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1586
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

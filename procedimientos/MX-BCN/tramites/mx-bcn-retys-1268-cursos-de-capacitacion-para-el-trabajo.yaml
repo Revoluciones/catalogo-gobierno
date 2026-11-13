@@ -1,0 +1,117 @@
+id: mx-bcn-retys-1268-cursos-de-capacitacion-para-el-trabajo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cursos de Capacitación para el Trabajo
+summary: En el Instituto de Capacitación en Alta Tecnología te preparamos para los retos del futuro. Ofrecemos cursos
+  de capacitación especializados en los sectores estratégicos más demandados en el Estado; están diseñados para
+  obtener las habilidades prácticas y necesarias que las empresas buscan. Estamos autorizados para emitir constancia
+  con validez oficial por la Secretaría de Educación Pública.
+authority:
+  name: Instituto de Capacitación en Alta Tecnología del Estado de Baja California
+official_ids:
+  retys_id: 1268
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1268
+  homoclave: BC-ICATBC-001
+who_can:
+- Interesado
+when: Cuando se requiera un curso de capacitación
+result: Constancia con validez oficial por la Secretaría de Educación Pública Pública
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo del curso es según las necesidades o requerimientos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 7 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Dirección General
+  address: 'Carretera San Luis Río Colorado, Km 10.5 #6, Parque Industrial Las Californias, Mexicali, 21394'
+scenarios:
+- name: Inscripción
+  requirements:
+  - text: 15 años cumplidos o más
+    cites:
+    - source: retys
+  - text: Identificación Oficial vigente
+    cites:
+    - source: retys
+  - text: Curp
+    cites:
+    - source: retys
+  - text: Recibo de Pago del Curso
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - El interesado envía los documentos que se indican en los requisitos al correo icatbc@baja.gob.mx
+    - El interesado realiza el pago de inscripción al curso de capacitación por transferencia o en internet en la
+      página http://http://www.icatbc.gob.mx/cursos.html
+    - El interesado recibe la confirmación de su inscripción a curso mediante en su correo electrónico
+    - El interesado realiza su registro a curso a través de formulario Google
+  notes: Requisitos para inscripción a cursos de capacitación
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 1 y 3
+- source: ley2
+  pinpoint: Artículo 83
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El interesado envía los documentos que se indican en los requisitos al correo icatbc@baja.gob.mx
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El interesado realiza el pago de inscripción al curso de capacitación por transferencia o en internet
+    en la página http://http://www.icatbc.gob.mx/cursos.html
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El interesado recibe la confirmación de su inscripción a curso mediante en su correo electrónico
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El interesado realiza su registro a curso a través de formulario Google
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1268: Cursos de Capacitación para el Trabajo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1268
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Capacitación en Alta Tecnología
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Educación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

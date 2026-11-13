@@ -1,0 +1,145 @@
+id: mx-bcn-retys-625-publicacion-de-documentos-en-el-periodico-oficial
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Publicación de Documentos en el Periódico Oficial del Estado
+summary: Publicar en el Periódico Oficial del Estado los documentos de carácter oficial que remiten las dependencias,
+  entidades paraestatales u organismos de los distintos ámbitos de gobierno, así como de los particulares que lo
+  soliciten.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 625
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/625
+  homoclave: BC-SGG-017
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando desee publicar un documento en el Periódico Oficial del Estado
+result: Publicación del documento con carácter oficial
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Noviembre Organismos Descentralizados (por plana) $4,188.98 m.n., Empresas Particulares
+    (por plana) $6,058.48 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección del Periódico Oficial
+  address: 'Avenida Francisco I. Madero entre K y L #1981, Nueva , Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección del Periódico Oficial
+  address: 'Juan Ruiz de Alarcón #1572, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Subsecretaría de Gobierno Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Playas de Rosarito
+  address: 'Calle José Haros Aguilar #2004, Colonia Villa Turística, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Subsecretaría de Gobierno San Quintín
+  address: 'Avenida A entre 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22940'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Solicitud de publicación y documento a publicar, en original
+    cites:
+    - source: retys
+  - text: Recibo de pago de la oficina de Recaudación de Rentas del Estado en copia
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la coordinación del Periódico Oficial del Estado en Mexicali y/o encargado en delegación, con solicitud
+      de publicación para revisión de documentación a publicar y entrega de pre-recibo de pago por parte de la coordinación
+      del Periódico Oficial del Estado en Mexicali y/o encargado en delegación. (Sector público en sus diferentes
+      ámbitos - Federal, Estatal o Municipal y Particulares)
+    - Realizar el pago correspondiente en la oficina de Recaudación de Rentas del Estado. (Sector público en sus
+      diferentes ámbitos – Federal, Estatal o Municipal y Particulares)
+    - Enviar oficio a la Secretaría General de Gobierno, para autorización de publicación, acompañado de solicitud
+      y documento a publicar, ambos en original y copia. (Sector público en sus diferentes ámbitos - Federal, Estatal
+      o Municipal y Particulares)
+  notes: Ciudadano
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 31, fracción VIII
+- source: ley2
+  pinpoint: Artículo 18, fracción IV Inciso A y B
+- source: ley3
+  pinpoint: Artículos 2 y 3
+- source: ley4
+  pinpoint: Artículo 42, fracción I y II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la coordinación del Periódico Oficial del Estado en Mexicali y/o encargado en delegación, con
+    solicitud de publicación para revisión de documentación a publicar y entrega de pre-recibo de pago por parte
+    de la coordinación del Periódico Oficial del Estado en Mexicali y/o encargado en delegación. (Sector público
+    en sus diferentes ámbitos - Federal, Estatal o Municipal y Particulares)
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente en la oficina de Recaudación de Rentas del Estado. (Sector público en
+    sus diferentes ámbitos – Federal, Estatal o Municipal y Particulares)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Enviar oficio a la Secretaría General de Gobierno, para autorización de publicación, acompañado de solicitud
+    y documento a publicar, ambos en original y copia. (Sector público en sus diferentes ámbitos - Federal, Estatal
+    o Municipal y Particulares)
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 625: Publicación de Documentos en el Periódico Oficial del Estado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/625
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Periódico Oficial del Estado
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

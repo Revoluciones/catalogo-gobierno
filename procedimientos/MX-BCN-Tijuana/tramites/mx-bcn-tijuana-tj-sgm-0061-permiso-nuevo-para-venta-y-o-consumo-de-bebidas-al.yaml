@@ -1,0 +1,169 @@
+id: mx-bcn-tijuana-tj-sgm-0061-permiso-nuevo-para-venta-y-o-consumo-de-bebidas-al
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo
+title: Permiso Nuevo para Venta y/o Consumo de Bebidas alcohólicas
+summary: Este trámite se solicita para obtener el permiso para la venta y/o consumo de bebidas alcohólicas en un
+  establecimiento
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Bebidas Alcohólicas
+official_ids:
+  homoclave: TJ-SGM-0061
+who_can:
+- Interesado
+when: Cuando se pretenda llevar acabo la venta de bebidas alcohólicas en un establecimiento
+result: Licencia
+requirements:
+- text: Formato de solicitud expedido por la Dirección de Bebidas Alcohólicas, debidamente llenado, bajo protesta
+    de decir verdad.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Ser mayor de edad y estar en pleno goce y ejercicio de sus derechos, y en caso de ser una persona moral,
+    estar debidamente constituida conforme a las leyes de los Estados Unidos Mexicanos.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: En caso de que el solicitante sea persona física presentar identificación oficial, y si es representada
+    por Apoderado Legal, deberá acreditar la personalidad con la que comparece conforme a los lineamientos establecidos
+    por el derecho común para la
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: En caso de que el solicitante sea persona moral presentar Acta Constitutiva, además acompañar de Poder Notarial
+    si el trámite se realiza mediante Apoderado Legal distinto al autorizado en el Acta Constitutiva de la Sociedad;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Cédula de Registro Federal de Contribuyentes;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Croquis o plano en que se indique, en forma clara y precisa, la ubicación del establecimiento y los nombres
+    de las calles que corresponden a la manzana o área de ubicación del establecimiento;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial con fotografía del interesado, representante o apoderado legal.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Dictamen factible de uso del suelo, cuando proceda;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Fotografías, tanto del exterior como del interior del local, que muestren la totalidad del mismo, incluyendo
+    sus instalaciones sanitarias;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Presentar original y copia de la licencia o permiso definitivo de operación municipal, expedido por la Dirección
+    de Administración Urbana y la Tesorería Municipal, en los giros que aplique, acompañando además en caso que
+    corresponda la licencia de anu
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Certificado de Medidas de seguridad, emitido por la Dirección de Bomberos;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Recibo del impuesto predial, u oficio expedido por la Dirección de Administración Urbana, donde se especifique
+    la(s) causa(s) de la no asignación de la clave catastral, para su valoración;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Certificado de no adeudo o libertad de gravámenes municipal vigente a nombre del solicitante expedido por
+    la Tesorería Municipal;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Carta de no antecedentes penales y constancia de residencia por 6 meses;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Presentar el Aviso Público a que se hace referencia en el artículo 27 de este ordenamiento, cuando se trate
+    de solicitud de permiso en envase abierto;
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: El pago de los derechos correspondientes de acuerdo a la ley de ingresos vigente para el municipio de Tijuana,
+    y
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Recepción, análisis, evaluación e inspección de solicitudes de permisos para operar la venta de bebidas
+    alcohólicas, así como la emisión de los estudios y/o autorización que según la reglamentación aplicable sean
+    necesarios: 130 UMA ($15,250.30) · Recepción, análisis, evaluación de solicitudes y expedición de opinión técnica:
+    130 UMA ($15,250.30) · Abarrotes: 2101.06 UMA ($246,475.35) · Mercados: 3151.66 UMA ($369,721.23) · Supermercado:
+    6999.46 UMA ($821,106.65) · Tienda de autoservicio y licorería: 6999.46 UMA ($821,106.65) · Agencias, sub-agencias
+    y depósitos: 4811.69 UMA ($564,459.35) · Bodega: 4374.18 UMA ($513,135.06) · Fonda o lonchería: 3062.46 UMA
+    ($359,257.18) · Restaurante: 3936.93 UMA ($461,841.26) · Restaurante-Bar: 9266.66 UMA ($1,087,071.88) · Bar
+    Turístico y Bar Terraza: 9844.43 UMA ($1,154,850.08) · Billares: 4374.18 UMA ($513,135.06) · Expendio de cerveza
+    y vino: 6562.27 UMA ($769,819.89) · Hotel y motel: 10936.4 UMA ($1,282,945.56) · Café cantante, centro de espectáculos
+    y discoteca: 12030.5 UMA ($1,411,294.44) · Sala de degustación de cerveza artesanal en envase abierto y/o cerrado:
+    472.42 UMA ($55,419.59) · Boutique de cerveza artesanal en envase cerrado: 472.42 UMA ($55,419.59) · Micro cervecería:
+    472.42 UMA ($55,419.59) · Restaurante con venta para consumo de vinos de mesa de producción nacional: 0 UMA
+    ($0.00). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 9 meses
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Bebidas Alcohólicas
+  address: Blvd Independencia 1350 Zona Urbana Rio CP 22010 Tijuana, Baja California
+  phones: 6649737000 ext. 7063
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0061: Permiso Nuevo para Venta y/o Consumo de Bebidas alcohólicas'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0061
+    version_date: '2026-10-13'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 23 del Reglamento para la Venta, Almacenaje y Consumo Público de Bebidas Alcohólicas en el Municipio
+      de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20235109274113_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 15, 16 y 22, fracciones I, II y III inciso A) de la Ley de Ingresos del Municipio de Tijuana,
+      Baja Calfornia para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: El negocio debe estar a al menos 100 metros de otros negocios similares, excepto si se trata de
+  restaurantes o zonas que el Ayuntamiento determine como como hoteleras, turísticas o comerciales. Si el giro principal
+  es la venta de alcohol, debe estar a 150 metros de escuelas, hospitales, iglesias o centros deportivos. Asimismo
+  se deberá cumplir con los requisitos marcados en el Reglamento.'

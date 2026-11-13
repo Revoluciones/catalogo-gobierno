@@ -1,0 +1,116 @@
+id: mx-bcn-retys-717-cofepris-05-030-aviso-de-actualizacion-de-datos-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-030 Aviso de Actualización de Datos del Establecimiento que Opera con Licencia Sanitaria para
+  Servicios Urbanos de Fumigación, Desinfección y Control de Plagas, Establecimiento que Fabrica o Formula, Mezcla
+  o Envasa Plaguicidas y/o Nutrientes Vegetales o Establecimiento que Fabrica Sustancias Tóxicos o Peligrosas
+summary: Este trámite sirve para que el ciudadano informe a la autoridad sobre cambios administrativos que no afectan
+  los datos de la licencia sanitaria, como por ejemplo personas autorizadas, domicilio fiscal etc., también te permite
+  dar de baja las actividades del establecimiento entregando la licencia sanitaria emitida.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 717
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/717
+  homoclave: BC-COEPRIS-018
+who_can:
+- Representante Legal
+- Interesado
+when: 'Se realiza cuando una empresa se encuentra en: operaciónproceso de cierre'
+result: Aviso de actualizacion de datos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7770
+  - text: Formato “Avisos”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple legible
+      del mismo
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial de representante legal
+    cites:
+    - source: retys
+  - text: Original y copia legible para cotejo del acta constitutiva o poder notarial que acredite al representante
+      legal
+    cites:
+    - source: retys
+  - text: Para baja - Original de licencia sanitaria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 202
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el centro integral de servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 717: COFEPRIS-05-030 Aviso de Actualización de Datos del Establecimiento que Opera con
+      Licencia Sanitaria para Servicios Urbanos de Fumigación, Desinfección y Control de Plagas, Establecimiento
+      que Fabrica o Formula, Mezcla o Envasa Plaguicidas y/o Nutrientes Vegetales o Establecimiento que Fabrica
+      Sustancias Tóxicos o Peligrosas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/717
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-030 Aviso de Actualización de Datos del Establecimiento que Opera con Licencia
+  Sanitaria para Servicios Urbanos de Fumigación, Desinfección y Control de Plagas, Establecimiento que Fabrica
+  o Formula, Mezcla o Envasa Plaguicidas y/o Nutrientes Vegetales o Establecimiento que Fabrica Sustancias Tóxicos
+  o Peligrosas.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás
+  variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

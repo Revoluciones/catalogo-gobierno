@@ -1,0 +1,66 @@
+id: mx-bcn-tijuana-tj-sf-0311-recibo-en-ceros
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Pagos, Infraestructura y vivienda
+title: Recibo en Ceros
+summary: Recibo de impuesto predial que se solicita si se realizó actualización catastral
+authority:
+  name: Secretaría de Finanzas / Tesorería (Ayuntamiento de Tijuana)
+  unit: Predial
+official_ids:
+  homoclave: TJ-SF-0311
+who_can:
+- Interesado
+when: Unicamente cuando el contribuyente haya realizado actualización catastral y requiera constancia del padron
+  predial.
+result: Recibo
+requirements:
+- text: Identificación con fotografía del titular de la clave catastral
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Presentación de escrito libre por el contribuyente dirigido a la autoridad fiscal debidamente fundado
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: En caso de personas morales acta constitutiva y poderes notariales
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Documento judicial que acredite ser albacea de la sucesión si el contribuyente ha fallecido
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SF-0311: Recibo en Ceros'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SF-0311
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://www.tijuana.gob.mx/recibo/ Criterio para resolver: Se entrega cuando ha sido solicitado algún
+  movimiento a la clave catastral (cambio de nombre, rectificación de superficie, etc.) y no exista adeudo en la
+  clave catastral'

@@ -1,0 +1,188 @@
+id: mx-bcn-retys-373-registro-ciudadano
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro Ciudadano
+summary: Expedir títulos de marca de herrar de señal de sangre y patente ganadera y revalidación de patente ganadera.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 373
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/373
+  homoclave: BC-SADER-005
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera acreditar la legal propiedad del ganado
+result: Certificado de registro ganadero y credencial de patente ganadera
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Expedición de Credencial de Registro $581.06 * Expedición de duplicado de patente ganadera
+    y comerciante $402.35 * Expedición de duplicado de certificado de registro ganadero, marca de herrar y señal
+    de sangre: $741.15 *Expedición de duplicado de patente ganadera $404.19'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Ganadería
+  address: 'Carretera Mexicali- San Luis Rio Colorado Km 22.5 #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Diego  Rivera #33, Zona Urbana Rio Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Subdelegación Zona Sur
+  address: 'Carretera Transpeninsular Punta Prieta Guerrero Nego Km 124+800 #S/N, Ejido El Costeño, Villa Jesús
+    María, Ensenada, 22991'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Calle 10 #130, Fraccionamiento San Quintín, San Quintín, 22940'
+scenarios:
+- name: Expedir registros ganaderos
+  requirements:
+  - text: Patente original
+    cites:
+    - source: retys
+  - text: Revalidar registro ganadero acreditar legal propiedad o usufructo en favor del solicitante del uso del
+      terreno donde se desarrolla la actividad ganadera
+    cites:
+    - source: retys
+  - text: Acta constitutiva y nombramiento del representante legal (vigente)
+    cites:
+    - source: retys
+  - text: Acreditar nacionalidad mexicana (identificación oficial con fotografía, ife, ine, pasaporte mexicano)
+    cites:
+    - source: retys
+  - text: Acto de verificación
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Comprobar legal propiedad del ganado (remisión y/o factura)
+    cites:
+    - source: retys
+  - text: R.F.C.
+    cites:
+    - source: retys
+  - text: Formato de solicitud de trámite ganadero de marca de herrar y señal de sangre
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1985
+  modes:
+  - name: Presencial
+    steps:
+    - La Unión Ganadera Regional envía oficio petitorio, dirigido al titular de la Dirección de Ganadería de la
+      SADER
+    - Se revisa que la documentación esté completa y consulta el sistema de trámites y servicios ganaderos con la
+      finalidad de comprobar que no exista registro previo del mismo solicitante para su captura
+    - Se diseña la marca de herrar y señal de sangre
+    - Genera el certificado de registro y la patente para firma del titular de la Dirección de Ganadería
+    - Se elabora oficio de acreditación para entrega al solicitante
+  notes: Expedir registros ganaderos, marca de herrar, señal de sangre y patente ganadera
+- name: Revalidar registros ganaderos, marca de herrar, señal de sangre y patente ganadera
+  requirements:
+  - text: Patente original
+    cites:
+    - source: retys
+  - text: Solicitud de registro debidamente requisitada (datos del solicitante y su predio)
+    cites:
+    - source: retys
+  - text: Credencial ganadera (vigente y patente ganadera actualizado)
+    cites:
+    - source: retys
+  - text: Formato de solicitud de trámite ganadero de marca de herrar y señal de sangre
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1986
+  modes:
+  - name: Presencial
+    steps:
+    - La unión ganadera regional envía oficio petitorio, dirigido al titular de ganadería de la sader
+    - Se revisa que la documentación esté completa y consulta el sistema de trámites y servicios ganaderos con la
+      finalidad de comprobar que no exista registro previo del mismo solicitante para su captura
+    - Se diseña la marca de herrar y señal de sangre
+    - Genera el certificado de registro y la patente para firma del director
+    - Se elabora oficio de acreditación para entrega al solicitante
+  notes: Revalidar registros ganaderos, marca de herrar, señal de sangre y patente ganadera
+legal_basis:
+- source: ley1
+  pinpoint: Capitulo 1, Artículo 4 y Capitulo IV, Artículos 51 al 55
+- source: ley2
+  pinpoint: Articulo 20, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: La Unión Ganadera Regional envía oficio petitorio, dirigido al titular de la Dirección de Ganadería de
+    la SADER
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se revisa que la documentación esté completa y consulta el sistema de trámites y servicios ganaderos con
+    la finalidad de comprobar que no exista registro previo del mismo solicitante para su captura
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se diseña la marca de herrar y señal de sangre
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Genera el certificado de registro y la patente para firma del titular de la Dirección de Ganadería
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se elabora oficio de acreditación para entrega al solicitante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 373: Registro Ciudadano'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/373
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Agropecuario del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedir y Revalidar Registros Ganaderos, Marca de Herrar, Señal de Sangre y Patente Ganadera.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

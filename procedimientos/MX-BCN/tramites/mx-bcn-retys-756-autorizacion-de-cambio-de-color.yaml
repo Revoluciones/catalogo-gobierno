@@ -1,0 +1,129 @@
+id: mx-bcn-retys-756-autorizacion-de-cambio-de-color
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización de cambio de color
+summary: Consiste en la expedición de la anuencia o autorización para el cambio de color de los vehículos de transporte
+  masivo o taxi.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 756
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/756
+  homoclave: BC-IMOS-008
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se busque obtener la autorización para cambio de color
+result: Autorización para cambio de color
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 10.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios o concesionarios del servicio público de transporte
+  requirements:
+  - text: Formato de solicitud original, debidamente firmad por el permisionario, completando todos los campos que
+      sean requeridos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14752
+  - text: Original y copia del permiso de transporte en la modalidad correspondiente
+    cites:
+    - source: retys
+  - text: Copia de la tarjeta de circulación vigente
+    cites:
+    - source: retys
+  - text: Copia de la licencia de conducir (tipo "D")
+    cites:
+    - source: retys
+  - text: Copia de la última hoja de revisión mecánica del Instituto de Movilidad Sustentable
+    cites:
+    - source: retys
+  - text: Copia del tarjetón de digitalización
+    cites:
+    - source: retys
+  - text: Anuencia dónde se conste la integración del nuevo número económico al sitio u agrupación. Deberá estar
+      debidamente firmada y contener copia de la identificación oficial del firmante. (Antigüedad no mayor a 90
+      días)
+    cites:
+    - source: retys
+  - text: Cuatro (4) fotografías, de las que deberá apreciarse la cromática distintiva de la agrupación a incorporarse
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondientes
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del instituto de movilidad sustentable y presentar la documentación requerida
+  notes: Requisitos para autorización de cambio de color
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso a, subinciso 10
+- source: ley2
+  pinpoint: Artículo 58
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del instituto de movilidad sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 756: Autorización de cambio de color'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/756
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Autorización de Cambio de Color. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

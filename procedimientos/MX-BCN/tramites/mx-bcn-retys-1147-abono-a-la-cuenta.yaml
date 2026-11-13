@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1147-abono-a-la-cuenta
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Abono a la Cuenta
+summary: El usuario puede abonar a la cuenta de agua o bien cubrir el total de su adeudo antes del vencimiento del
+  recibo correspondiente.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 1147
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1147
+  homoclave: BC-CESPE-024
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el usuario requiera abonar a su cuenta
+result: La posibilidad de abonar en la cuenta
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Depende del consumo de agua del usuario'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Tener el número de cuenta donde se le realizara el abono.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página de la comisión de agua https://www.cespe.gob.mx/multipagos/login.php ó dar click en el
+      botón de iniciar trámite para realizar el abono
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas
+    - Presentar el número de cuenta
+    - Realizar el pago del abono
+  notes: Abono a la cuenta
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III
+- source: ley2
+  pinpoint: Artículos 2, 20, 21 Y 22.
+- source: ley3
+  pinpoint: Artículos 3, 6, 14, 15, 16, 17, 19, 20, 22, 23, 24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44,
+    45, 47, 48, 49, 51, 52, 53, 54, 56, 59, 60 Y 64
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página de la comisión de agua https://www.cespe.gob.mx/multipagos/login.php ó dar click
+    en el botón de iniciar trámite para realizar el abono
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1147: Abono a la Cuenta'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1147
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de las Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Abono a la Cuenta.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y
+  la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

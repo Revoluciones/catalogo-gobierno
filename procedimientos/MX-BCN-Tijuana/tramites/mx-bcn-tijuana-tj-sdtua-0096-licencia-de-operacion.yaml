@@ -1,0 +1,287 @@
+id: mx-bcn-tijuana-tj-sdtua-0096-licencia-de-operacion
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Licencia de Operación
+summary: Trámite permanente que permite a personas físicas o morales solicitar la licencia de operación para realizar
+  diversos procesos, como revisión, análisis, verificación, certificación y otorgamiento, así como cambios de domicilio,
+  propietario, superficie, actividad, denominación u horario en giros comerciales, industriales y de servicios,
+  sujetos al pago de derechos
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0096
+who_can:
+- Interesado
+when: En caso de que se le requiera por trámites de actividad mercantil.
+result: Licencia
+requirements:
+- text: Llenar la solicitud de la dirección de administración urbana. (Verificar la información)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia de documento que acredite la propiedad. (Escrituras, Título de Propiedad, Contrato de Compra – Venta,
+    Arrendamiento o Comodato; Notariado y/o Sentencia de Juicio de Prescripción, contrato de un empresa regularizadora)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia de identificación oficial del propietario del predio, solicitante y/o arrendatario.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Para personas morales: presentar copia de acta constitutiva y poderes legales.'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia del recibo Predial Vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia del Dictamen de Uso de Suelo Factible para la Actividad Solicitada.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Licencia de construcción y terminación de obra si la construcción es menor a los 5 años. (En caso de ser
+    mayor presentar comprobante de recibo de luz, agua o teléfono)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de localización detallado con referencias.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Fotografías del exterior e interior del local incluyendo fachada tomada a distancia, baño y estacionamiento.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Certificado de medidas de seguridad emitido por la Dirección de Bomberos.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Factibilidad de Servicios de Bomberos.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Programa interno autorizado por Protección Civil
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Certificado de Fumigación Vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Proyecto de Integración Vial Autorizado
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Autorización Municipal de la Dirección de Protección al Ambiente. (ECOLOGIA)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Autorización de la Dirección General de Ecología del Estado. (Industria ligera y mediana)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de impacto ambiental emitida por la Dirección de Protección al Ambiente. (Talleres, servicio y
+    mantenimiento)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Autorización de SAGARPA
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Autorización de SEMARNAT
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia y aviso de apertura de COFEPRIS.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Aviso de funcionamiento de la Comisión Federal para la Protección contra Riesgos Sanitarios. (Farmacias,
+    clínicas, consultorios, laboratorios clínicos)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Aviso de médico responsable expedido por ISESALUD. (Clínicas, consultorios, laboratorios clínicos)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia del contrato de la Comisión Estatal de Servicio Públicos de Tijuana. (CESPT)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Certificado de la unidad Verificadora de instalación de GAS. (Tortillerías, restaurantes y fábricas)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contrato de recolección de Basura
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contrato de recolección o reciclaje de materiales peligrosos o infecciosos. (Llanteras, laboratorios y hospitales)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contrato de recolección de aceites vegetales o animales y grasas. (Venta de alimentos preparados)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Presentar evidencia de área de estacionamiento para el local comercial.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Pago de Anuncios existentes y solicitud de licencias para anuncios nuevos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'or tercera revisión, inspección y/o análisis documental para seguimiento de la obtención de la licencia
+    de operación: 3.25 UMA ($381.26) · Por cuarta y/o subsecuente inspección, revisión, y/o análisis documental
+    para seguimiento de la obtención de la licencia de operación: 3.25 UMA ($381.26) · Por revalidación anual de
+    licencia de operación para giros comerciales, industriales y de servicios, señalados en la Fracción XXVIII del
+    presente artículo, misma que deberá realizarse del 1º de enero al 30 de junio: 5.2 UMA ($610.01) · Por revision,
+    analisis, verificacion, para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Comercio
+    peq. de promg. de gob. hasta 35 M2....: 5.36 UMA ($628.78) · Por revision, analisis, verificacion, para otorgamiento
+    de licencia de operacion p/giros com., ind. y de servicios. Despachos de profesionistas y oficinas administrativas
+    hasta 100 m2...: 14.3 UMA ($1,677.53) · Por rev, analisis, verif, para otorgamiento de licencia de op p/giros
+    com., ind. y de serv. Abarrotes, llantera, lavanderia, loncherias, panaderias, lavanderias, llenado de garrafon,
+    etc. despacho of. mayor 100 m2...: 17.88 UMA ($2,097.50) · Por otorgamiento de permisos de operacion p/giros
+    com., ind. y de servicios. Billares, bares, cafe cantante, restaurante, mercado, bodegas, salon, cines, etc...:
+    32.18 UMA ($3,775.04) · Por revision, analisis, verificacion, para otorgamiento de licencia de operacion p/giros
+    com., ind. y de servicios. Tiendas departamentales, clubes deportivos, salas cines,centro espectaculos....:
+    39.33 UMA ($4,613.80) · Por revision, analisis, verificacion, para otorgamiento de licencia de operacion p/giros
+    com., ind. y de servicios. Moteles hasta 10 habitaciones...: 21.45 UMA ($2,516.30) · Por revision, analisis,
+    verificacion, para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Moteles desde 11
+    hasta 20 habitaciones....: 30.38 UMA ($3,563.88) · Por revision, analisis, verificacion, para otorgamiento de
+    licencia de operacion p/giros com., ind. y de servicios. Moteles desde 21 habitaciones o mas....: 39.33 UMA
+    ($4,613.80) · Por revision, analisis, verificacion, para otorgamiento de licencia de operacion p/giros com.,
+    ind. y de servicios. Hoteles hasta 30 habitaciones....: 39.33 UMA ($4,613.80) · Por revision, analisis, verificacion,
+    para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Hoteles 31 o mas habitaciones....:
+    57.2 UMA ($6,710.13) · Por revision, analisis, verificacion, para otorgamiento de licencia de operacion p/giros
+    com., ind. y de servicios. Edificios educativos hasta 5 aulas....: 16.08 UMA ($1,886.34) · Por revision, analisis,
+    verificacion, para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Edificios educativos
+    desde 6 aulas o mas....: 26.81 UMA ($3,145.08) · Por otorgamiento de licencia de operacion p/giros com., ind.
+    y de servicios. Giros de alto riesgo, gasolineras, distribuidoras de gases, combustibles, etc....: 214.5 UMA
+    ($25,162.99) · Por revisión, análisis, revisión para otorgamiento de licencia de operacion p/giros com., ind.
+    y de servicios. Yonkes, recicladoras y centros de acopio de metales....: 48.62 UMA ($5,703.61) · Por revisión,
+    análisis, revisión para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Ed. Ind. hasta
+    1000 m2 (maquiladoras, fabricas, bodegas, etc.)...: 45.5 UMA ($5,337.61) · Por revisión, análisis, revisión
+    para otorgamiento de licencia de operacion p/giros com., ind. y de servicios. Ed. Ind. mayor de 1000 m2 (maquiladoras,
+    fabricas, bodegas, etc.)...: 105.3 UMA ($12,352.74) · Por revisión, análisis, revisión para otorgamiento de
+    licencia de operacion p/giros com., ind. y de servicios. Giros con apuestas (Casinos, Libros Foraneos, Palenques,etc)...:
+    78.65 UMA ($9,226.43) · Por revisión, análisis, revisión para otorgamiento de licencia de operacion p/giros
+    com., ind. y de servicios. Otros giros no especificados con superficie hasta 200 m2: 17.88 UMA ($2,097.50) ·
+    Por revisión, análisis, revisión para otorgamiento de licencia de operacion p/giros com., ind. y de servicios.
+    Otros giros no especificados con superficie mayor 200 m2: 32.5 UMA ($3,812.58) · or segunda inspección, revisión
+    y/o análisis documental para seguimiento de la obtención de la licencia de operación: 3.25 UMA ($381.26). UMA
+    2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 7 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0096: Licencia de Operación'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0096
+    version_date: '2026-10-29'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 11, 15 y 16 del Reglamento para el Funcionamiento de Giros Comerciales, Industriales y de Prestación
+      de Servicios para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20260722155452586_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 31, fracción XXVIII, inciso A) a la M), Fracción XXIX y Fracción XXX de la Ley de Ingresos del
+      Municipio de Tijuana, Baja California para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://www.tijuana.gob.mx/dependencias/sdue/dau/mercantiles.aspx Criterio para resolver: Para el otorgamiento
+  o revalidación de la Licencia de Operación para giros comerciales, industriales y/o servicios, el solicitante
+  debe presentar el pago del impuesto predial correspondiente al domicilio del establecimiento, salvo que sea arrendatario,
+  y cumplir con los requisitos establecidos y la normativa vigente'

@@ -1,0 +1,154 @@
+id: mx-bcn-retys-1541-atencion-medica-de-urgencias
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención Médica de Urgencias
+summary: Brindar atención médica inmediata al usuario o usuaria con enfermedades crónicas que requieran estabilización,
+  así como enfermedades o lesiones en estado grave con riesgo de comprometer la vida.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1541
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1541
+  homoclave: BC-ISESALUD-019
+who_can:
+- Interesado
+- Tutor
+when: Cuando la situación médica del paciente lo requiera
+result: La restauración de su salud e integridad
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales
+  address: '27 De Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Coordinación Estatal De Hospitales (Urgencias)
+  address: 'Del Hospital #S/N, Centro Cívico , Mexicali, 21000'
+- municipality: Mexicali
+  name: Coordinación Estatal De Hospitales (Urgencias)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Tijuana
+  name: Coordinación Estatal De Hospitales (Urgente)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Tijuana
+  name: Atención Médica de Urgencias
+  address: 'Avenida Maclavio Herrera y Toribio Ortega #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Coordinación Estatal De Hospitales (Urgencias)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Tecate
+  name: Coordinación Estatal De Hospitales (Urgencias)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Coordinación Estatal De Hospitales (Urgencias)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+scenarios:
+- name: Consulta de urgencias
+  requirements:
+  - text: Identificación oficial con fotografía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - En caso de requerir consulta de urgencias un familiar del enfermo o lesionado deberá acudir a la ventanilla
+      del área de urgencias a solicitar el servicio.
+    - Personal de salud en el área de triage, determinará el grado de riesgo de acuerdo al clasificador de prioridades
+      de atención y dará acceso al enfermo o lesionado al área de observación, a efecto de que el médico proporcione
+      atención inmediata.
+    - Dependiendo de la clasificación que se haya determinado en el área de triage el paciente ingresará al área
+      de urgencias para recibir atención inmediata por el personal médico.
+  notes: Atención médica inmediata al usuario o usuaria con enfermedades crónicas que requieran estabilización,
+    así como enfermedades o lesiones en estado grave con riesgo de comprometer la vida.
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+- source: ley3
+  pinpoint: Aplica de manera general
+- source: ley4
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: En caso de requerir consulta de urgencias un familiar del enfermo o lesionado deberá acudir a la ventanilla
+    del área de urgencias a solicitar el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de salud en el área de triage, determinará el grado de riesgo de acuerdo al clasificador de prioridades
+    de atención y dará acceso al enfermo o lesionado al área de observación, a efecto de que el médico proporcione
+    atención inmediata.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Dependiendo de la clasificación que se haya determinado en el área de triage el paciente ingresará al
+    área de urgencias para recibir atención inmediata por el personal médico.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1541: Atención Médica de Urgencias'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1541
+    version_date: 12/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: NOM-027-SSA3-2013, Regulación de los servicios de salud. Que establece los criterios de funcionamiento
+      y atención en los servicios de urgencias de los establecimientos para la atención médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: NOM-034-SSA3-2013, Regulación de los servicios de salud. Atención médica prehospitalaria
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

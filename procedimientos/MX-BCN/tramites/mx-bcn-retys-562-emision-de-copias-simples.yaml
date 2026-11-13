@@ -1,0 +1,142 @@
+id: mx-bcn-retys-562-emision-de-copias-simples
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Emisión de Copias Simples
+summary: Servicio de emisión de copias simples de instrumentos públicos, contratos privados y todo aquel documento
+  que obra en los archivos registrales de la dependencia, desde la comodidad de su hogar u oficina mediante el servicio
+  de emisión de copias simples a través del portal de servicios sin la necesidad de trasladarse a la oficina registral.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 562
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/562
+  homoclave: BC-DRPPC-025
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando requiera de copias simples de algún documento de los archivos registrales
+result: Copias Simples
+cost:
+  type: variable
+  amount_mxn: 13.0
+  text: 'COSTO VARIABLE: Octubre la copia simple civil 15 m.n. hasta 15 hojas, copia mercantil $ 13 hasta 15 hojas'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Llenar el Formulario con los datos que se le solicite (partida vieja o nueva, municipio, número de partida,
+      nombre a las cuales se expide el recibo de pago para la presentación del servicio
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1960
+  - text: Cubrir los derechos correspondientes
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página https://rppcweb.ebajacalifornia.gob.mx/PORTALBC/PRODUCCION/PORTALAPP/INDEX.HTML o dar
+      clic en "iniciar tramite" en la parte inferior derecha
+    - Seleccionar emisión de copias simples
+    - Pago de derechos cubiertos
+    - Recibe el usuario por correo electrónico las copias
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Llenar el formato FMO-8.5.1-01 de información registral
+    - Tomar turno para entregar a la ventanilla asignada el pago y el formato de información
+    - Pago de derechos cubiertos
+    - El usuario recibe su trámite de acuerdo a la fecha que se asigne a su volante
+  notes: Para el servicio de emisión de copias simples
+legal_basis:
+- source: ley1
+  pinpoint: 14, fracción VII, Inciso F)
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 11, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página https://rppcweb.ebajacalifornia.gob.mx/PORTALBC/PRODUCCION/PORTALAPP/INDEX.HTML o
+    dar clic en "iniciar tramite" en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar emisión de copias simples
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pago de derechos cubiertos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recibe el usuario por correo electrónico las copias
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 562: Emisión de Copias Simples'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/562
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal de año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

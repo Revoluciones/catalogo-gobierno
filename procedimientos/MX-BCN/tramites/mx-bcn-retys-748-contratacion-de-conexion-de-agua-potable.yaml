@@ -1,0 +1,135 @@
+id: mx-bcn-retys-748-contratacion-de-conexion-de-agua-potable
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contratación de Conexión de Agua Potable
+summary: Instalación de una toma con conexión a la red de agua potable operadas por parte de CESPE.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 748
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/748
+  homoclave: BC-CESPE-003
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera contar con el servicio
+result: Calidad de vida al tener servicio de agua en la casa habitación o local comercial
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Toma tipo 3/4" (hasta 10 metros de longitud): tierra $7,037 moneda nacional asfalto, $9,954
+    moneda nacional concreto, $11,839 moneda nacional más medidor 1/2 ": Sin registro: $ 1,435 Con registro: $ 1,728
+    más derechos de conexión aguas blancas, costo dependiendo de la clasificación de la colonia y tipo de servicio.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Propietario del predio a contratar
+  requirements:
+  - text: Factibilidad de servicios positiva (se solicita y se resuelve en CESPE)
+    cites:
+    - source: retys
+  - text: Documentos de propiedad oficiales
+    cites:
+    - source: retys
+  - text: Identificación Oficial
+    cites:
+    - source: retys
+  - text: Deslinde reciente del predio
+    cites:
+    - source: retys
+  - text: Carta poder (si no es el propietario)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3824
+  - text: Formato de contratación
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3826
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse a la oficina
+    - Llevar los requisitos
+  notes: El propietario deberá acreditar su personalidad con identificación oficial
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+- source: ley2
+  pinpoint: Artículos 2, 20, 21 y 22.
+- source: ley3
+  pinpoint: Artículos 3, 6, 14, 15, 16, 17, 19, 20, 22, 23, 24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44,
+    45, 47, 48, 49, 51, 52, 53, 54, 56, 59, 60 y 64.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse a la oficina
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llevar los requisitos
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 748: Contratación de Conexión de Agua Potable'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/748
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de las Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Contratación de Conexión de Agua Potable.. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

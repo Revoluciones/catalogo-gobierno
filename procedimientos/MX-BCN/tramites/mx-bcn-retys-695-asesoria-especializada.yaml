@@ -1,0 +1,133 @@
+id: mx-bcn-retys-695-asesoria-especializada
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asesoría Especializada
+summary: En este servicio se le ayuda a conocer dónde, cuándo, cómo, para qué y por qué presentar una queja por
+  la atención médica recibida, también se le informa sobre los derechos y obligaciones tanto de su persona como
+  de la persona prestadora del servicio de salud.
+authority:
+  name: Comisión de Arbitraje Medico del Estado de Baja California
+official_ids:
+  retys_id: 695
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/695
+  homoclave: BC-CAME-002
+who_can:
+- Representante Legal
+- Interesado
+when: Se puede solicitar una asesoría en cualquier momento si se tiene duda o preocupación sobre la atención médica
+  recibida.
+result: Asesoría especializada por un Médico Conciliador.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación de Conciliación
+  address: 'Paseo de los Héroes #s/n H9-31, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación de Conciliación
+  address: 'Diego Rivera y Vía Rápida Poniente #S/N, Zona Río, Tijuana, 22320'
+- municipality: Ensenada
+  name: Coordinación de Conciliación
+  address: 'Carretera Transpeninsular Ensenada la Paz #6500, Ex Ejido Chapultepec, Ensenada, 22880'
+- municipality: Tecate
+  name: Coordinación de Conciliación
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Coordinación de Conciliación
+  address: 'Avenida José Haros Aguilar #2000, Villa Turística, Playas de Rosarito, 22710'
+scenarios:
+- name: Asesoría especializada
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a oficina.
+    - Exponer su queja a Médico Conciliador.
+    - El Médico Conciliador evalúa y decide si la queja procede.
+    - Si la queja es válida, el Médico Conciliador le informa sobre los requisitos para seguir adelante con el proceso
+      de la queja.
+    - Si la queja no es válida, el Médico Conciliador le orientará sobre a que entidad se debe de acudir.
+  notes: Este servicio le ayuda a conocer sobre dónde, cuándo, cómo, por qué y para qué presentar una queja por
+    atención médica recibida, también se le informa sobre los derechos y obligaciones, tanto de la persona paciente
+    como de la persona prestadora del servicio de salud.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7
+- source: ley2
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a oficina.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Exponer su queja a Médico Conciliador.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El Médico Conciliador evalúa y decide si la queja procede.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Si la queja es válida, el Médico Conciliador le informa sobre los requisitos para seguir adelante con
+    el proceso de la queja.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si la queja no es válida, el Médico Conciliador le orientará sobre a que entidad se debe de acudir.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 695: Asesoría Especializada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/695
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Comisión de Arbitraje Médico del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Comisión de Árbitraje Médico del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Asesoría. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

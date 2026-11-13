@@ -1,0 +1,130 @@
+id: mx-bcn-retys-906-cofepris-05-026-a-solicitud-de-permiso-de-responsa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-026-A Solicitud de Permiso de Responsable de la Operación y Funcionamiento del Establecimiento
+  que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico Modalidad A.- Rayos X
+summary: Cuando se trate del ciudadano responsable del funcionamiento de equipos y establecimientos de diagnóstico
+  médico que utilicen equipos generadores de radiación ionizante (rayos x) en unidades fijas o móviles para su aplicación
+  en seres humanos, quedando incluidos los estudios panorámicos dentales y excluidas las aplicaciones odontológicas
+  convencionales y densitometría ósea.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 906
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/906
+  homoclave: BC-COEPRIS-037
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Permiso de responsable
+cost:
+  type: fijo
+  amount_mxn: 4040.13
+  text: 'COSTO: $4040.13 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato “Servicios de Salud”, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Comprobante del pago de derechos en original y dos copias simples legibles
+    cites:
+    - source: retys
+  - text: Original y copia para cotejo del acta constitutiva o poder notarial que acredite al representante legal
+    cites:
+    - source: retys
+  - text: Copia de la Identificación del Representante Legal o Propietario
+    cites:
+    - source: retys
+  - text: Copia legible simple del título de médico cirujano
+    cites:
+    - source: retys
+  - text: Copia legible simple del diploma de especialidad en radiología expedido por una institución de salud o
+      académica reconocida o cédula profesional de especialidad en radiología e imagen
+    cites:
+    - source: retys
+  - text: Copia legible simple del certificado o re-certificación vigente de especialidad, expedido por el Consejo
+      Mexicano de Radiología e Imagen, A. C.
+    cites:
+    - source: retys
+  - text: Tener permanencia mínima en el establecimiento del 25% del horario de atención al público. En caso de
+      unidades médicas con turnos continuos deberá cubrir el turno con mayor carga de trabajo o bien se puede designar
+      a varios responsables de la operación y funcionamiento
+    cites:
+    - source: retys
+  - text: Dos fotografías recientes tamaño infantil (con nombre al reverso)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de Permiso de Responsable de la Operación
+      y Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Esperar resolución dentro de los primeros 60 dias habiles
+    - Resolución definitiva
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 375 Fracción II
+- source: ley2
+  pinpoint: Articulo 224, Fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de Permiso de Responsable de la Operación
+    y Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 906: COFEPRIS-05-026-A Solicitud de Permiso de Responsable de la Operación y Funcionamiento
+      del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico Modalidad A.- Rayos
+      X'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/906
+    version_date: 19/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios y Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-026-A Solicitud de Permiso de Responsable de la Operación y Funcionamiento del
+  Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. Modalidad A.- Rayos X..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

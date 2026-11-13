@@ -1,0 +1,94 @@
+id: mx-bcn-retys-1206-solicitud-de-credencial-de-exentos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Credencial de Exentos
+summary: Emitir credencial a los residentes permanentes y temporales del poblado rumorosa y el ejido jacume, para
+  que no realicen pago alguno en las casetas de cobro del FIARUM
+authority:
+  name: Fideicomiso Público de Administración de Fondos e Inversión del Tramo Carretero Centinela Rumorosa
+official_ids:
+  retys_id: 1206
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1206
+  homoclave: BC-FIARUM-003
+who_can:
+- Interesado
+when: Cuando sea residente permanente o temporal del poblado rumorosa y el ejido jacume
+result: Credencial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 AÑOS
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tecate
+  name: Operación
+  address: 'La Rumorosa Km 62 +900 #S/N, Carretera Centinela Rumorosa, Tecate, 21510'
+scenarios:
+- name: Solicitud de credencial de exentos
+  requirements:
+  - text: Carta de residencia
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/5965
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Credencial del elector
+    cites:
+    - source: retys
+  - text: Licencia de conducir
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas, presentar los requisitos y recoger credencial.
+  notes: Emitir credencial a los residentes permanentes y temporales del poblado rumorosa y el ejido jacume, para
+    que no realicen pago alguno en las casetas del cobro de la autopista centinela-la rumorosa.
+legal_basis:
+- source: ley1
+  pinpoint: '12'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas, presentar los requisitos y recoger credencial.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1206: Solicitud de Credencial de Exentos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1206
+    version_date: 30/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del FIARUM
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,122 @@
+id: mx-bcn-retys-1681-registro-de-artistas-y-creadores-de-baja-californi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de Artistas y Creadores de Baja California
+summary: Inscripción en el directorio de artistas y creadores con información organizada sobre disciplinas, actividades
+  y trayectoria para fines de comunicación institucional, planeación, programación, vinculación y participación
+  en convocatorias y actividades culturales.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1681
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1681
+  homoclave: BC-SC-002
+who_can:
+- Interesado
+when: Cuando la personas artistas y/o el creadoras lo requieran
+result: Registro en el directorio de artistas, creadores y agentes culturales de Baja California.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Del 18 de marzo al 19 de diciembre del 2025
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Ensenada
+  name: Coordinación de Industrias Culturales
+  address: 'Boulevar Lázaro Cárdenas #1430, Zona Centro, Ensenada, 22880'
+scenarios:
+- name: Personas artistas o creadoras de Baja California
+  requirements:
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: 1 fotografía reciente
+    cites:
+    - source: retys
+  - text: Curriculum vital o reseña
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar click en iniciar trámite
+    - Llene los campos del formulario
+    - Carge los documentos
+    - Personal de la Secretaría de Cultura revisara y validara los documentos
+    - Personal de la dependencia envíara el archivo en PDF del registro para su descarga
+  notes: Registro de personas artistas y creadores de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, fracción XXXI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar click en iniciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llene los campos del formulario
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Carge los documentos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultura revisara y validara los documentos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Personal de la dependencia envíara el archivo en PDF del registro para su descarga
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1681: Registro de Artistas y Creadores de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1681
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

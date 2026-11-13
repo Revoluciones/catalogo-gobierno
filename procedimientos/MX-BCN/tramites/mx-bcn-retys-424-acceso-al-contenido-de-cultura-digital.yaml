@@ -1,0 +1,99 @@
+id: mx-bcn-retys-424-acceso-al-contenido-de-cultura-digital
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso al Contenido de Cultura Digital
+summary: Acceso a conciertos, conferencias, charlas, presentaciones literarias, danza, teatro, mesas de análisis
+  sobre historia y patrimonio cultural a través de plataformas digitales, redes sociales oficiales del ISCBC.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 424
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/424
+  homoclave: BC-ICBC-006
+who_can:
+- Interesado
+when: Cuando la ciudadanía esté interesada en consultar el material disponible, o cuando el Instituto programe estrenos
+  de material audiovisual
+result: Acceso a expresiones culturales bajacalifornianas y de otras latitudes
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Unidad de Promoción y Vinculación Cultural (Comunicación)
+  address: 'Álvaro Obregón #1209, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: No se requieren
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Consulta la agenda ingresando al boton de inciar trámite
+    - Selecciona el contenido disponible o accesa a redes sociales del ISCBC
+    - Accede al contenido elegido
+  notes: Cuando la persona interesada desee conocer la egenda cultural
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 23, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Consulta la agenda ingresando al boton de inciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Selecciona el contenido disponible o accesa a redes sociales del ISCBC
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Accede al contenido elegido
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 424: Acceso al Contenido de Cultura Digital'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/424
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

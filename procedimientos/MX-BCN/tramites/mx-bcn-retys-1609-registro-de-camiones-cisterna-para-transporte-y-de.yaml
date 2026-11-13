@@ -1,0 +1,255 @@
+id: mx-bcn-retys-1609-registro-de-camiones-cisterna-para-transporte-y-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de camiones-cisterna para transporte y descarga de aguas residuales de fosa séptica
+summary: Registro de camión-cisterna para la descarga de aguas residuales domésticas, provenientes de fosa séptica,
+  en sitios autorizados.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1609
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1609
+  homoclave: BC-CESPT-031
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Ficha de cobro con certificación de pago y contrato
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Registro de transporte de camión-cisterna para fosa séptica $2,361.09 pesos Revalidación
+    anual de transporte de camión-cisterna para fosa séptica $2,217.27 pesos Registro de camión adicional $895.31
+    pesos Permiso para descargar domingos del mes $1,193.22 pesos Recepción de aguas residuales sanitarias vertida
+    por camiones Cisterna (pipa) por m³: $15.05 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Registro por primera vez
+  requirements:
+  - text: Original y copia del formulario Solicitud de registro de camiones cisterna para transporte y descarga
+      de aguas residuales sanitarias de fosa séptica (FRM-019) debidamente llenado y firmado por el propietario
+      o representante legal de la empresa
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11611
+  - text: Copia del Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: Copia certificada del Poder legal para actos de administración, vigente, que acredite la personalidad
+      del representante legal, en caso de NO ESTAR ESTABLECIDO en el Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: 'Copia de identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a
+      quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de alta ante la Secretaría de Hacienda y Crédito Público.
+    cites:
+    - source: retys
+  - text: Copia de Tarjeta de circulación vigente del camión-cisterna que se utilizará.
+    cites:
+    - source: retys
+  - text: Copia de Póliza de aseguranza vigente del camión-cisterna que se utilizará.
+    cites:
+    - source: retys
+  - text: Copia de Licencia de manejo vigente de chofer que operará el camión-cisterna.
+    cites:
+    - source: retys
+  - text: Presentar el camión cisterna para reconocimiento.
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondientes.
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+    - La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+      se completen, indicándole que es lo que falta.
+    - La persona de la Coordinación de Servicios de Saneamiento, hará una inspección del camión cisterna para registrar
+      la capacidad de almacenamiento del mismo.
+    - Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+      de validación el original y copia del formulario Solicitud de registro de camiones cisterna para transporte
+      y descarga de aguas residuales sanitarias de fosa séptica (FRM-019), los cuales entregará al solicitante,
+      así como los requisitos presentados.
+    - La persona encargada de la Coordinación de Servicios de Saneamiento, elaborará una Ficha de pago, y la entregará
+      al solicitante para que realice el pago de derechos correspondiente.
+    - Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de cajas le entregará
+      un Recibo de Pago.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud de registro de camiones
+      cisterna para transporte y descarga de aguas residuales sanitarias de fosa séptica (FRM-019) con la certificación
+      de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Registro por primera vez
+- name: Revalidación de contrato
+  requirements:
+  - text: Original y copia del formulario Solicitud de registro de camiones cisterna para transporte y descarga
+      de aguas residuales sanitarias de fosa séptica (FRM-019) debidamente llenado y firmado por el propietario
+      o representante legal de la empresa
+    cites:
+    - source: retys
+  - text: Copia de Tarjeta de circulación vigente del camión-cisterna que se utilizará.
+    cites:
+    - source: retys
+  - text: Copia de Póliza de aseguranza vigente del camión-cisterna que se utilizará
+    cites:
+    - source: retys
+  - text: Pago de derechos correspondientes.
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+    - La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos, si
+      no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+      se completen, indicándole que es lo que falta.
+    - La persona de la Coordinación de Servicios de Saneamiento, hará una inspección del camión cisterna para registrar
+      la capacidad de almacenamiento del mismo.
+    - Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+      de validación el original y copia del formulario Solicitud de registro de camiones cisterna para transporte
+      y descarga de aguas residuales sanitarias de fosa séptica (FRM-019), los cuales entregará al solicitante,
+      así como los requisitos presentados.
+    - La persona encargada de la Coordinación de Servicios de Saneamiento, elaborará una Ficha de pago, y la entregará
+      al solicitante para que realice el pago de derechos correspondiente.
+    - Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de cajas le entregará
+      un Recibo de Pago.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar todos los requisitos.
+    - La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud de registro de camiones
+      cisterna para transporte y descarga de aguas residuales sanitarias de fosa séptica (FRM-019) con la certificación
+      de recibido.
+    - Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+      para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  notes: Revalidación de contrato
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2.
+- source: ley2
+  pinpoint: Artículo 9.
+- source: ley3
+  pinpoint: Artículos 1, 2 y 14.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+    posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento revisa que se cumpla con todos los requisitos,
+    si no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos
+    se completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Servicios de Saneamiento, hará una inspección del camión cisterna para
+    registrar la capacidad de almacenamiento del mismo.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Servicios de Saneamiento sellará y firmará
+    de validación el original y copia del formulario Solicitud de registro de camiones cisterna para transporte
+    y descarga de aguas residuales sanitarias de fosa séptica (FRM-019), los cuales entregará al solicitante, así
+    como los requisitos presentados.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: La persona encargada de la Coordinación de Servicios de Saneamiento, elaborará una Ficha de pago, y la
+    entregará al solicitante para que realice el pago de derechos correspondiente.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir al área de cajas con la Ficha de pago y hacer el pago correspondiente, la persona de cajas le entregará
+    un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar todos los
+    requisitos.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo entregará al solicitante la copia del formulario Solicitud de registro
+    de camiones cisterna para transporte y descarga de aguas residuales sanitarias de fosa séptica (FRM-019) con
+    la certificación de recibido.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Posteriormente, la persona de la Coordinación de Servicios de Saneamiento contactará a la persona solicitante
+    para que acuda a las oficinas a firmar el contrato y hacerle entrega del mismo.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1609: Registro de camiones-cisterna para transporte y descarga de aguas residuales de fosa
+      séptica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1609
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

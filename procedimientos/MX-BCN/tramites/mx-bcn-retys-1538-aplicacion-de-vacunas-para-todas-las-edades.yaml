@@ -1,0 +1,460 @@
+id: mx-bcn-retys-1538-aplicacion-de-vacunas-para-todas-las-edades
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aplicación de Vacunas para todas las Edades
+summary: Proteger a la población mediante la aplicación del esquema completo de vacunación, con el propósito de
+  controlar, eliminar y erradicar las enfermedades prevenibles por vacunación.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1538
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1538
+  homoclave: BC-ISESALUD-018
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: Cuando el usuario requiera de las vacunas de acuerdo a su programa de vacunación
+result: Aplicación de vacunas.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'A #S/N, Los Algodones, Mexicali, 21970'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Felipa Vda. de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Candelilla #S/N, Rivera Campestre, Mexicali, 21387'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'José Espinoza Lote 16 Manzana13 #S/N, Fundadores, Mexicali, 21478'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Del Sol y De La Luna #S/N, Santa Isabel, Mexicali, 21139'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: '27 de Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Mexicali, 21137'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Prolongacion Socorro Garcia #S/N, Veracruz Dos, Mexicali, 21821'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Gral. Martin Cabrera #S/N, Vicente Guerrero, Mexicali, 21320'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Departamento de Enfermería
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Ignacio Allende #S/N, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: '27 de Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: 'Coahuila #S/N, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Departamento De Enfermería
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'Del Hospital #S/N, Centro Cívico , Mexicali, 21000'
+- municipality: Mexicali
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Granadas y Gardenias #SN, Ing. Francisco Murguia Km 49, Mexicali, 21722'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Carretera San Felipe Km 8.5 #S/N, Ejido Choropo, Mexicali, 21259'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Gastelum Y Calle 14 #S/N, Primera Sección o Zona Centro, Mexicali, 22800'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Avenida 27 de Enero #S/N, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Avenida Ayuntamiento y 27 de Septiembre #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Enfermeria
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Tijuana
+  name: Departamento De Enfermería
+  address: 'Eucalipto #1, 3 De Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento De Enfermería
+  address: 'El Mexicano #S/N, 18 de Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Departamento De Enfermería
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Departamento De Enfermería
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Agustín Iturbide Lote 2 Manzana 4 #S/N, Centro Artesanal, Tijuana, 22785'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Mexicali 1986 #S/N, Hacienda Las Fuentes, Tijuana, 22245'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: '7 #22, Reforma, Tijuana, 22183'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Ley Federal del Trabajo #S/N, Flores Magon, Tijuana, 22606'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas 2da Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Gral. Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'San Rafael entre Las Delicias y Santa Maria #19811, Terrazas Del Valle Segunda Sección, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Ruta Matamoros y Chichenitza #S/N, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Del Peñon #2980, Valle Verde, Tijuana, 22204'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Enfemería
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Tijuana
+  name: Departamento de Enfermeria
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Módulo 4 Mesa de Otay, Tijuana, 22390'
+- municipality: Tijuana
+  name: Departamento de Enfermeria
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22150'
+- municipality: Tijuana
+  name: Departamento de Enfermería
+  address: 'Anemona #S/N, Fraccionamiento El Florido 4ta Sección, Tijuana, 22245'
+- municipality: Tijuana
+  name: Departamento de Enfermeria
+  address: 'Avenida Cruz del Sur #226, Sánchez Taboada, Tijuana, 22680'
+- municipality: Tijuana
+  name: Departamento de Enfermeria
+  address: 'Avenida Maclavio Herrera y Toribio Ortega #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Departamento de Enfermeria
+  address: 'Sonora #S/N, Ejido Patzcuaro, Tijuana, 21720'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Ocotlan #Manzana 16, Benito Garcia, Ensenada, 22793'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Lázaro Cárdenas #S/N, Real del Castillo, Ensenada, 22770'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Al Morro #SIN NÚMERO, Isla de Cedros, Ensenada, 22990'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Libre Rosarito-Ensenada Km 56 #S/N, La Mision, Ensenada, 22765'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Guillermo Prieto #213, Villa de Juarez (San Antonio de las Minas), Ensenada, 22766'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Niños Héroes #S/N, San Vicente, Ensenada, 22900'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Km. 76 Carretera Ensenada a Tecate #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento De Enfermería
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 22815'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Pedro Terraza #S/N, Valle de la Trinidad, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Fundadores #S/N, Rubi Sur, Ensenada, 22626'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Agustín de Iturbide #Lote 2 M.4, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Emiliano Zapata #157, Erendira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'H #S/N, Ex-Ejido Ruíz Cortinez, Ensenada, 22810'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Tercera  #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Benito Juarez #128, Hermosillo, Ensenada, 21840'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Sin número #S/N, Heroes de la Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Departamento de Enfermería
+  address: 'Primera #S/N, Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Enfermeria
+  address: '16 de Septiembre #204, Ejido Emiliano Zapata, Ensenada, 22920'
+- municipality: Tecate
+  name: Departamento de Enfermería
+  address: 'Benito Juarez #S/N, Valle De Las Palmas, Tecate, 21500'
+- municipality: Tecate
+  name: Departamento de Enfermería
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Tecate
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Departamento de Enfermería
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Playas de Rosarito, 22705'
+- municipality: Playas de Rosarito
+  name: Departamento de Enfermería
+  address: 'Benito Juárez #Lote 108 M, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Departamento de Enfermería
+  address: 'Hidalgo #S/N, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: Playas de Rosarito
+  name: Departamento de Enfermería (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Sin Nombre #S/N, Bahía de Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Francisco Mujica #S/N, Ruben Jaramillo, San Quintín, 22915'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Vicente Guerrero #221, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Departamento de Enfermería
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Departamento de Enfemería (Consulta Externa y Urgencias)
+  address: 'Vicente Guerrero #221, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Enfermeria
+  address: 'Entre Agustín Iturbide  y Nicolas Bravo Lazaro Cardenas #S/N, Lázaro Cárdenas, San Quintín, 22930'
+- municipality: San Felipe
+  name: Departamento de Enfermeria
+  address: 'Mar Berjmejo #173, Ampliacion Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Aplicación de vacunas
+  requirements:
+  - text: Cartilla nacional de vacunación preferentemente.
+    cites:
+    - source: retys
+  - text: Cumplir con las edades y no tener contraindicaciones para la aplicación de vacuna.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la unidad de salud, solicitar el servicio, entregar la cartilla nacional de salud preferentemente
+      y esperar su turno.
+    - Personal de salud aplicará la vacuna, sellará cartilla nacional de salud y registrará la fecha en que se aplicará
+      la próxima dosis.
+    - Usuario(a) recibirá su cartilla nacional de salud con el registro de la aplicación y las recomendaciones para
+      cada vacuna aplicada y fecha de la próxima cita
+  notes: Aplicación de vacunas para todas las edades
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 39, Fracción XVI, Inciso 13
+- source: ley2
+  pinpoint: Aplica de manera general
+- source: ley3
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la unidad de salud, solicitar el servicio, entregar la cartilla nacional de salud preferentemente
+    y esperar su turno.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de salud aplicará la vacuna, sellará cartilla nacional de salud y registrará la fecha en que
+    se aplicará la próxima dosis.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Usuario(a) recibirá su cartilla nacional de salud con el registro de la aplicación y las recomendaciones
+    para cada vacuna aplicada y fecha de la próxima cita
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1538: Aplicación de Vacunas para todas las Edades'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1538
+    version_date: 30/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Manual de Vacunación 2008 y 2009 Interinstitucional
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana, NOM-036-SSA2-2012 Prevención y Control de Enfermedades. Aplicación de Vacunas,
+      Toxoides, Faboterápicos (sueros) E Inmunoglobulinas en el Humano.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios de Atención Médica.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Vacunación. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

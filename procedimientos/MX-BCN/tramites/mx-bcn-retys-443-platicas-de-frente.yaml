@@ -1,0 +1,157 @@
+id: mx-bcn-retys-443-platicas-de-frente
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pláticas de Frente
+summary: Desarrollar habilidades socioemocionales en las adolescencias a través de la impartición de pláticas enfocadas
+  en la prevención de problemas tipo conductual, social y de salud.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 443
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/443
+  homoclave: BC-DIF-022
+who_can:
+- Tutor
+- Interesado
+- Otro
+when: Cuando el usuario lo requiera y cumpla con los requisitos
+result: Pláticas dirigidas a las adolescencias y juventudes
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 días hábiles
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Mexicali
+  address: 'Calzada Cuahtémoc #384, Las Fuentes, Mexicali, 21230'
+- municipality: Tijuana
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Tijuana
+  address: 'Ruta Mariano Matamoros #22239-2228, Fraccionamiento Mariano Matamoros, Tijuana, 22234'
+- municipality: Ensenada
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Ensenada
+  address: 'Francisco González Bocanegra #2075, Colonia Hidalgo, Ensenada, 22880'
+- municipality: San Quintín
+  name: Departamento de Desarrollo de Habilidades Socioemocionales San Quintín
+  address: 'Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento San Quintín, San Quintín, 22931'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Llenar lista de asistencia (cuando se reciba el servicio)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en la dependencia o comunicarse via telefónica para solicitar la atención
+    - Dar conocer los temas del catálogo de Pláticas de Frente por medio de visita presencial, llamadas telefónicas
+      o vía correo electrónico.
+    - En caso de mostrar interés sugiere fecha y hora probable para recibir el servicio.
+    - Coteja con la agenda comprometida para verificar disponibilidad.
+    - Una vez confirmada disponibilidad en agenda se pacta fecha y hora de inicio y se establece cronograma de atención
+      de acuerdo con la cantidad de sesiones y asistentes.
+    - Se acuerda el espacio donde se brindará el servicio, mismo que deberá contar preferentemente con corriente
+      eléctrica que permita conectar cañón y equipo de cómputo, así mismo mobiliario adecuado a fin de que los adolescentes
+      y jóvenes permanezcan sentados.
+    - Brinda el servicio en la fecha y horarios acordados.
+    - Terminada la platica lleva a cabo la firma y sello de documentos probatorios de haber recibido el servicio.
+    - Concluido el servicio, se retira del lugar
+  notes: Recopilación de documentos para el servicio
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo(s): 1'
+- source: ley2
+  pinpoint: 'Artículo(s): 3'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en la dependencia o comunicarse via telefónica para solicitar la atención
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar conocer los temas del catálogo de Pláticas de Frente por medio de visita presencial, llamadas telefónicas
+    o vía correo electrónico.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de mostrar interés sugiere fecha y hora probable para recibir el servicio.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Coteja con la agenda comprometida para verificar disponibilidad.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez confirmada disponibilidad en agenda se pacta fecha y hora de inicio y se establece cronograma
+    de atención de acuerdo con la cantidad de sesiones y asistentes.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se acuerda el espacio donde se brindará el servicio, mismo que deberá contar preferentemente con corriente
+    eléctrica que permita conectar cañón y equipo de cómputo, así mismo mobiliario adecuado a fin de que los adolescentes
+    y jóvenes permanezcan sentados.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Brinda el servicio en la fecha y horarios acordados.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Terminada la platica lleva a cabo la firma y sello de documentos probatorios de haber recibido el servicio.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Concluido el servicio, se retira del lugar
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 443: Pláticas de Frente'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/443
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de asistencia social para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la protección de los derechos de niñas, niños y adolescentes.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

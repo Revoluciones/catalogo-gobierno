@@ -1,0 +1,104 @@
+id: mx-bcn-retys-565-atencion-a-la-ciudadania
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención a la Ciudadanía
+summary: Atención de la ciudadanía que solicita del Gobernador del Estado o del Secretario General de Gobierno,
+  apoyo para la solución de un problema o la atención a una petición o planteamiento, a efecto de obtener una respuesta.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 565
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/565
+  homoclave: BC-SGG-003
+who_can:
+- Interesado
+when: Cuando se requiera la atención de la Oficina del Gobernador o de la Secretaría General de Gobierno.
+result: Oficio de canalización
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Asistencia a Organizaciones de la Sociedad Civil
+  address: 'Avenida Independencia #994, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: Acudir ante la Oficina de la Secretaría General, a efecto de que reciba atención personalizada por parte
+      del área de Atención Ciudadana del centro que corresponda.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - La persona solicita el apoyo directo
+    - Se recaban datos personales de la persona solicitante
+    - Expone sus motivos
+    - Se canaliza a la dependencia o área según el caso expuesto.
+    - Espera la resolución.
+  notes: Apoyo de la Gobernadora del Estado o Secretario General de Gobierno
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 19
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: La persona solicita el apoyo directo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se recaban datos personales de la persona solicitante
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Expone sus motivos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se canaliza a la dependencia o área según el caso expuesto.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Espera la resolución.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 565: Atención a la Ciudadanía'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/565
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

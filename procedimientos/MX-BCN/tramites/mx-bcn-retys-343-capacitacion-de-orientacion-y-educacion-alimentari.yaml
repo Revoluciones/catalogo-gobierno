@@ -1,0 +1,136 @@
+id: mx-bcn-retys-343-capacitacion-de-orientacion-y-educacion-alimentari
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Capacitación de Orientación y Educación Alimentaria
+summary: A través de pláticas formativas y participativas con perspectiva familiar, comunitaria, de género y regional,
+  se busca promover la integración de una alimentación correcta y la toma de decisiones saludables.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 343
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/343
+  homoclave: BC-DIF-011
+who_can:
+- Interesado
+when: Cuando el beneficiario y/o usuario lo requiera, debe formar parte de los programas de asistencia social alimentario
+  y desayunos escolares.
+result: Sesiones de orientación alimentaria y educación alimentaria
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Apoyos Alimentarios y Desarrollo Nutricional, Mexicali
+  address: 'Av. Mineros  #345, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección de Apoyo a Población en Vulnerabilidad Social, Tijuana
+  address: 'Av. Eusebio Kino #17533, Fraccionamiento Garita Otay, Tijuana, 22430'
+- municipality: San Quintín
+  name: Dirección de Apoyo a Población en Vulnerabilidad Social, San Quintín
+  address: 'Lucio Blanco  #1221, Nuevo Mexicali, Lázaro Cardenas, San Quintín, 22932'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: En caso de no pertenecer a los programas, se debe hacer una solicitud vía oficio a la jefatura de desarrollo
+      nutricional del servicio orientación y educación alimentaria de las escuelas y/o dependencias que no forman
+      parte del padrón de beneficiarios.
+    cites:
+    - source: retys
+  - text: Cuando el beneficiario y/o usuario lo requiera, debe formar parte de los programas de asistencia social
+      alimentario y desayunos escolares. de lo contrario, se evaluará para aplicar el servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Brindar capacitaciones y/o sesiones de orientación y educación alimentaria a beneficiarios de los Programas
+      de Atención Alimentaria durante entrega de apoyos
+    - Si el beneficiario requiere una capacitación de orientación y educación alimentaria de un tema específico
+      no brindado durante la entrega de los apoyos alimentarios, deberá realizar una solicitud.
+    - Si el solicitante requiere una capacitación de orientación y educación alimentaria, no pertenece al padrón
+      de beneficiarios, el servidor público analizará su petición y se dará prioridad a los beneficiarios de los
+      Programas de Atención Alimentaria.
+    - El servidor público se coordina con el beneficiario y/o solicitante para agendar la capacitación de orientación
+      y educación alimentaria
+    - El servidor público asiste y proporciona capacitación al beneficiario y/o solicitante del tema solicitado
+      de orientación y educación alimentaria
+    - El beneficiario y/o solicitante recibe la capacitación por parte del servidor público del tema solicitado
+      de orientación y educación alimentaria
+  notes: Recopilación de documentos para el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4 fracción X
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Brindar capacitaciones y/o sesiones de orientación y educación alimentaria a beneficiarios de los Programas
+    de Atención Alimentaria durante entrega de apoyos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Si el beneficiario requiere una capacitación de orientación y educación alimentaria de un tema específico
+    no brindado durante la entrega de los apoyos alimentarios, deberá realizar una solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Si el solicitante requiere una capacitación de orientación y educación alimentaria, no pertenece al padrón
+    de beneficiarios, el servidor público analizará su petición y se dará prioridad a los beneficiarios de los Programas
+    de Atención Alimentaria.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público se coordina con el beneficiario y/o solicitante para agendar la capacitación de orientación
+    y educación alimentaria
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El servidor público asiste y proporciona capacitación al beneficiario y/o solicitante del tema solicitado
+    de orientación y educación alimentaria
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: El beneficiario y/o solicitante recibe la capacitación por parte del servidor público del tema solicitado
+    de orientación y educación alimentaria
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 343: Capacitación de Orientación y Educación Alimentaria'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/343
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,156 @@
+id: mx-bcn-retys-1561-apoyo-para-el-galardon-de-la-juventud
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Apoyo para el Galardón de la Juventud
+summary: Premio para jóvenes de 12 a 29 años en Baja California, destacados en categorías específicas, gestionado
+  por el Instituto de Juventud.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 1561
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1561
+  homoclave: BC-SB-030
+who_can:
+- Interesado
+- Tutor
+when: Cuando se requiera apoyo económico, lo puede solicitar durante todo el año.
+result: Estímulo económico
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Jóvenes Mayores de edad
+  requirements:
+  - text: Copia de identificación oficial ( INE, pasaporte mexicano o licencia de conducir)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses (agua, energía eléctrica, predial
+      u otros) o carta de residencia emitida por autoridad municipal
+    cites:
+    - source: retys
+  - text: Copia de CURP
+    cites:
+    - source: retys
+  - text: Carta de postulación y/o auto-postulación
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones del Instituto de la Juventud del Estado con la documentación solicitada
+    - Realizar entrevista, revisión de documentación y llenado de formato único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos a presentar en el Instituto de la Juventud (INJUVE)
+- name: Menores de edad
+  requirements:
+  - text: Copia de identificación oficial del padre. madre o tutor
+    cites:
+    - source: retys
+  - text: Carta de autorización por el padre, madre o tutor
+    cites:
+    - source: retys
+  - text: Carta de postulación y/o auto-postulación
+    cites:
+    - source: retys
+  - text: Copia de CURP
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses (agua, energía eléctrica, predial
+      u otros) o carta de residencia emitida por autoridad municipal
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones del Instituto de la Juventud del Estado con la documentación solicitada
+    - Realizar entrevista, revisión de documentación y llenado de formato único
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos a presentar en el Instituto de la Juventud (INJUVE)
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4, 6, 14, 91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones del Instituto de la Juventud del Estado con la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista, revisión de documentación y llenado de formato único
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1561: Apoyo para el Galardón de la Juventud'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1561
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Reglas de Operación (Ley de Desarrollo Social para el Estado de Baja California)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Bienestar para todas y todos. Apoyo para el Galardón de la Juventud. Copiado tal cual de
+  RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

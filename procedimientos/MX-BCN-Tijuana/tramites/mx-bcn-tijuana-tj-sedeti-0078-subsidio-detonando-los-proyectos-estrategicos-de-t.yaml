@@ -1,0 +1,114 @@
+id: mx-bcn-tijuana-tj-sedeti-0078-subsidio-detonando-los-proyectos-estrategicos-de-t
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Subsidio Detonando los Proyectos Estratégicos de Tijuana del Fideicomiso Fondos Tijuana
+summary: Subsidio para organismos empresariales, clústeres, universidades, instituciones y asociaciones sin fines
+  de lucro, legalmente constituidas, que necesiten apoyos para la realización de proyectos o eventos que promuevan
+  la ciudad de Tijuana.
+authority:
+  name: Secretaría de Desarrollo Económico (Ayuntamiento de Tijuana)
+  unit: Centro de Atención al Emprendedor
+official_ids:
+  homoclave: TJ-SEDETI-0078
+who_can:
+- Interesado
+when: Cuando un organismo no gubernamental necesite el apoyo para realizar un evento o proyecto que detone el desarrollo
+  económico del Municipio de Tijuana
+result: Subsidio
+requirements:
+- text: Cédula del proyecto (Proforma Fondos Tijuana y aviso de privacidad)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Solicitud en hoja membretada en la que se describa el Evento o Proyecto a realizar, incluyendo el monto
+    solicitado, así como el costo total, firmado por el Representante o Apoderado Legal del Organismo Ejecutor
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta Constitutiva con inscripción en el Registro Público de la Propiedad y Comercio
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Poder General para pleitos y Cobranza, Actos de Administración y para suscribir, endosar y firmar todo título
+    de Crédito, así como identificación oficial vigente (INE, Pasaporte o Cédula Profesional), del Representante
+    o Apoderado Legal del Organismo
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Constancia de Situación Fiscal del Organismo Ejecutor, no mayor a (2) meses
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Comprobante de domicilio (agua luz o teléfono), del domicilio fiscal del Organismo Ejecutor, no mayor a
+    dos (2) meses
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Proyecto Ejecutivo del Evento o Proyecto firmado por el Representante Legal del Organismo Ejecutor en todas
+    las hojas que lo integren
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Carta compromiso de que conoce las reglas de operación vigentes y lineamentos para su correcta aplicación
+    y comprobación
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Presentar cotización de los conceptos para lo que solicita el subsidio y/o evento. En caso de aplicar para
+    la elaboración del proyecto deberá presentar tres (3) cotizaciones no mayores a 30 días (en hoja membretada
+    y con sello o firma del proveedor)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 45 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Centro de Atención al Emprendedor
+  address: Blvd. Independencia 1350 1er Nivel, Zona Urbana Río Tijuana
+  phones: '6649737125'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEDETI-0078: Subsidio Detonando los Proyectos Estratégicos de Tijuana del
+      Fideicomiso Fondos Tijuana'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEDETI-0078
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Reglas de Operación del Fideicomiso Fondos Tijuana
+    url: https://sedeti.tijuana.gob.mx/docs/pdf/ReglamentoDeOperacion/Fondos/Reglas.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: programa de apoyo. Para empezar: https://www.tijuana.gob.mx/dependencias/SEDETI/fondo.aspx Criterio
+  para resolver: Que comprueben tener un impacto directo en el desarrollo económico en el Municipio de Tijuana'

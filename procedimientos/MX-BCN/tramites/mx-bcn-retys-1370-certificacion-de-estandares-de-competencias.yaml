@@ -1,0 +1,159 @@
+id: mx-bcn-retys-1370-certificacion-de-estandares-de-competencias
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificación de Estándares de Competencias
+summary: Proceso a través del cual se apoya a las personas para que demuestren los conocimientos, habilidades y
+  destrezas necesarias para cumplir una función, de acuerdo con lo definido en un estándar validado a través de
+  los procesos del programa CONCER.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1370
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1370
+  homoclave: BC-CONALEP-009
+who_can:
+- Interesado
+when: Cuando el interesado lo requiera
+result: Certificado de competencias
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: EC0043 $2,850.00 EC0052 $3,600.00 EC0076 $5,450.00 Y SIN
+    CURSO $3,650.00 EC0081 $3,100.00 EC0118 $3,100.00 EC0740 $ 2,850.00 EC0127 $3,100.00 EC0435 $5,450.00 Y SIN
+    CURSO $3,850.00 COSTOS MINIMOS Y VARIABLES. PREGUNTAR POR EL LISTADO COMPLETO DE CERTIFICACIONES.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 6 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Copia de credencial de elector
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar certificación
+    - Validar factibilidad de impartir la certificación
+    - En caso de ser factible, presentar documentación requerida
+    - Impartir curso de alineación
+    - Realizar actividades de certificación
+    - Evaluar los resultados del ciudadano
+    - Si la evaluación es satisfactoria, se entrega certificación
+  notes: Requisitos para solicitar una certificación de estándar
+legal_basis:
+- source: ley1
+  pinpoint: CE1049-EC013-10
+- source: ley2
+  pinpoint: '25'
+- source: ley3
+  pinpoint: EC0076
+- source: ley4
+  pinpoint: EC0435
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar certificación
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Validar factibilidad de impartir la certificación
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de ser factible, presentar documentación requerida
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Impartir curso de alineación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar actividades de certificación
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Evaluar los resultados del ciudadano
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Si la evaluación es satisfactoria, se entrega certificación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1370: Certificación de Estándares de Competencias'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1370
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Cédula de acreditación por parte de conocer como Centro de Evaluación del Estándar EC0217 impartición
+      de curso de formación del capital humano de manera presencial grupal
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Decreto de Creación del Colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Estándar Evaluación de la Competencia de Candidatos con Base en Estándares de Competencia
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Estándar de competencia prestación de servicios para la atención, cuidado y desarrollo integral de las
+      niñas y los niños en centros de atención infantil.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

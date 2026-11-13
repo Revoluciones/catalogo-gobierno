@@ -1,0 +1,72 @@
+id: mx-bcn-tijuana-tj-sdh-0342-capacitacion-por-sesion-por-persona
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Educación, deporte y cultura
+title: Capacitación por sesión por persona
+summary: Capacitación sobre adicciones a personal de instituciones especializadas. Sesiones personalizadas que se
+  adaptan a las necesidades de cada profesional, cubriendo temas como prevención, intervención y tratamiento.
+authority:
+  name: Secretaría de Desarrollo Humanista (Ayuntamiento de Tijuana)
+  unit: Instituto Municipal contra las Adicciones (IMCAD)
+official_ids:
+  homoclave: TJ-SDH-0342
+who_can:
+- Interesado
+when: Cuando un profesional de una institución especializada requiera fortalecer sus competencias en prevención,
+  intervención y tratamiento de adicciones
+result: Recibo
+requirements:
+- text: Sin requisitos
+  cites:
+  - source: remutys
+cost:
+  type: fijo
+  amount_mxn: 339.03
+  text: 'Capacitación por sesión por persona: 2.89 UMA ($339.03). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Instituto Municipal contra las Adicciones (IMCAD)
+  address: 'Avenida Vía Rápida Poniente # 12693, Col. 20 de noviembre, Tijuana, B.C. C.P. 22100'
+  phones: '6641042525'
+  hours: LUNES A VIERNES DE 08:00 HRS A 16:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDH-0342: Capacitación por sesión por persona'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDH-0342
+    version_date: '2026-08-07'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 54, inciso D) de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Reglamento Interior del Instituto Municipal contra las Adicciones en el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20230921092226974_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Adquisición de conocimientos y herramientas prácticas para mejorar el desempeño en la prevención,
+  intervención y tratamiento de las adicciones en istituciones de adicción'

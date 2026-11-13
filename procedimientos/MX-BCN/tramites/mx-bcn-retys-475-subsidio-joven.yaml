@@ -1,0 +1,122 @@
+id: mx-bcn-retys-475-subsidio-joven
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Subsidio Joven
+summary: Otorgar subsidios para los diferentes intereses y/o requerimientos a los jóvenes de 18 a 29 años que deseen
+  realizar trámites para la Superación Profesional, así como viajes para competencias Nacionales, en el ámbito académico,
+  del deporte, la Cultura y la Ciemcia.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 475
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/475
+  homoclave: BC-INJUVE-008
+who_can:
+- Tutor
+- Interesado
+- Otro
+when: A partir de Marzo
+result: Apoyo económico de hasta 10,000.00 pesos moneda nacional
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: de abril a noviembre
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Copia de INE vigente por ambos lados
+    cites:
+    - source: retys
+  - text: Clave única de registro de población (CURP)
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio, luz o agua (no mayor a tres meses)
+    cites:
+    - source: retys
+  - text: Carta de invitación que acredite asistencia o convocatoria a dicho evento
+    cites:
+    - source: retys
+  - text: Carta solicitud hecha por el jovén en la cual especifique el motivo de la necesidad del apoyo
+    cites:
+    - source: retys
+  - text: En el caso de viajes para competencias nacionales, presentar la cotización de vuelos u hospedajes (mediante
+      una agencia de viajes dirigida a Gobierno del Estado de Baja California)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del INJUVE a entregar la documentación solicitada
+    - En caso de ser seleccionado, personal del Instituto se comunicará vía telefónica con el beneficiado
+    - El apoyo se le entrega personalmente en cheque en las oficinas del INJUVE
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 40, Fracción III
+- source: ley2
+  pinpoint: 83, Fracción XXXV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del INJUVE a entregar la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: En caso de ser seleccionado, personal del Instituto se comunicará vía telefónica con el beneficiado
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El apoyo se le entrega personalmente en cheque en las oficinas del INJUVE
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 475: Subsidio Joven'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/475
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Subsidio Joven, Gastos para Arte,Cultura y Esparcimiento. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

@@ -1,0 +1,373 @@
+id: mx-bcn-retys-1613-registro-para-obtener-la-constancia-de-cumplimient
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro para Obtener la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos
+summary: Obtener la constancia de cumplimiento al programa atrapa la grasa y sólidos, para usuarios no domésticos
+  con procesos productivos que generen desecho de grasas y sólidos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1613
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1613
+  homoclave: BC-CESPT-035
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Inspección y evaluación para expedición de constancia de cumplimiento: $2,421.82 pesos
+    Visita adicional de verificación: $1,184.11 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Registro inicial - Persona Moral
+  requirements:
+  - text: Original y copia del Formulario para el Registro al Programa Atrapa La Grasa y Sólidos (FRM-009), debidamente
+      llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11727
+  - text: 'Copia de documento para cotejar clave catastral con la registrada en la cuenta en CESPT: Recibo del impuesto
+      predial del predio en el que se encuentra ubicada la empresa o establecimiento, con fecha de emisión no mayor
+      a un año de antigüedad.'
+    cites:
+    - source: retys
+  - text: Copia del documento de Alta ante la Secretaría de Hacienda.
+    cites:
+    - source: retys
+  - text: Copia del Acta Constitutiva de la empresa.
+    cites:
+    - source: retys
+  - text: Copia del Poder General notariado para actos de administración vigente, que acredite la personalidad del
+      representante legal, en caso de NO ESTAR ESTABLECIDO en el Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: 'Copia de identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a
+      quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de un croquis de ubicación de la empresa.
+    cites:
+    - source: retys
+  - text: Pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO-
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - INCLUYE 2 INSPECCIONES, siempre y cuando se cumpla con los plazos establecidos en el Oficio de dimensionamiento
+      de dispositivo(s).
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser así,
+      informa a la persona solicitante que no es posible realizar el trámite hasta que se completen.
+    - Con los requisitos completos, personal de la Coordinación de Control de Calidad le proporciona una Ficha de
+      Pago y el original y copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+    - Con la Ficha de pago pasar al área de Cajas y hacer el pago correspondiente.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y
+      copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+    - El personal de Archivo imprime la certificación de recibido al original y copia del Formulario para el Registro
+      al Programa Atrapa la Grasa y Sólidos, en donde se indica la fecha de respuesta, y entrega la copia a la persona
+      solicitante.
+    - En fecha posterior, una persona Analista de la Coordinación de Control de Calidad realiza la inspección inicial.
+    - Con el resultado de la inspección inicial, personal de la Coordinación de Control de Calidad elabora oficio
+      de Dimensionamiento de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento
+      que debe realizar y el plazo para realizarlas.
+    - Personal de la Coordinación de Control de Calidad se comunica con la persona solicitante para que pase por
+      el oficio de Dimensionamiento de dispositivo(s).
+    - Realizar lo indicado en el oficio de Dimensionamiento de dispositivo(s), dentro del plazo establecido.
+    - 'Una vez que se cumpla con lo indicado en el oficio de Dimensionamiento de dispositivo(s), SI ESTÁ EN EL PLAZO
+      ESTABLECIDO: Solicitar la visita de verificación, utilizando el formulario Solicitud de visita de verificación
+      al Programa Atrapa la Grasa y Sólidos (FRM-014), a la Coordinación de Control de Calidad y continuar en el
+      siguiente paso. Si NO ESTÁ DENTRO DEL PLAZO ESTABLECIDO: Solicitar una Visita Adicional de Verificación (ver
+      requisitos y procedimiento en este mismo documento) a la Coordinación de Control de Calidad.'
+    - 'Una persona Analista de la Coordinación de Control de Calidad acude al domicilio de la empresa o establecimiento
+      y realiza la visita de verificación, SE CUMPLE CON LO INDICADO en el oficio de Dimensionamiento de dispositivo(s):
+      Ir al siguiente paso. NO SE CUMPLE con lo requerido por el Programa: La persona Analista de la Coordinación
+      de Control de Calidad le hará saber lo que incumple y le indicará que debe solicitar una Visita Adicional
+      de Verificación (ver requisitos y procedimiento en este mismo documento), cuando haya cumplido.'
+    - CESPT emite la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos, y contacta a la persona solicitante
+      para que pase a recoger el documento.
+    - Acudir a CESPT por la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  notes: Registro inicial - Persona Moral
+- name: Registro inicial - Persona física
+  requirements:
+  - text: Original y copia del Formulario para el Registro al Programa Atrapa La Grasa y Sólidos (FRM-009), debidamente
+      llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11784
+  - text: 'Copia de documento para cotejar clave catastral con la registrada en la cuenta en CESPT: Recibo del impuesto
+      predial, con fecha de emisión no mayor a un año de antigüedad.'
+    cites:
+    - source: retys
+  - text: Copia del documento de Alta ante la Secretaría de Hacienda.
+    cites:
+    - source: retys
+  - text: 'Copia de documento que otorgue poder para realizar el trámite, en caso de que la persona que gestiona
+      el servicio no sea el propietario del predio: Carta Poder simple otorgada por el propietario, cuya fecha no
+      exceda los seis meses de antigüedad.'
+    cites:
+    - source: retys
+  - text: 'Copia de Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a
+      quien éste le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial
+      del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de Croquis de Ubicación de la empresa
+    cites:
+    - source: retys
+  - text: Pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - INCLUYE 2 INSPECCIONES, siempre y cuando se cumpla con los plazos establecidos en el Oficio de dimensionamiento
+      de dispositivo(s).
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser así,
+      informa a la persona solicitante que no es posible realizar el trámite hasta que se completen.
+    - Con los requisitos completos, personal de la Coordinación de Control de Calidad le proporciona una Ficha de
+      Pago y el original y copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+    - Con la Ficha de pago pasar al área de Cajas y hacer el pago correspondiente.
+    - Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y
+      copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+    - El personal de Archivo imprime la certificación de recibido al original y copia del Formulario para el Registro
+      al Programa Atrapa la Grasa y Sólidos, en donde se indica la fecha de respuesta, y entrega la copia a la persona
+      solicitante.
+    - En fecha posterior, una persona Analista de la Coordinación de Control de Calidad realiza la inspección inicial.
+    - Con el resultado de la inspección inicial, personal de la Coordinación de Control de Calidad elabora oficio
+      de Dimensionamiento de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento
+      que debe realizar y el plazo para realizarlas.
+    - Personal de la Coordinación de Control de Calidad se comunica con la persona solicitante para que pase por
+      el oficio de Dimensionamiento de dispositivo(s).
+    - Realizar lo indicado en el oficio de Dimensionamiento de dispositivo(s), dentro del plazo establecido.
+    - 'Una vez que se cumpla con lo indicado en el oficio de Dimensionamiento de dispositivo(s), SI ESTÁ EN EL PLAZO
+      ESTABLECIDO: Solicitar la visita de verificación, utilizando el formulario Solicitud de visita de verificación
+      al Programa Atrapa la Grasa y Sólidos (FRM-014), a la Coordinación de Control de Calidad y continuar en el
+      siguiente paso. Si NO ESTÁ DENTRO DEL PLAZO ESTABLECIDO: Solicitar una Visita Adicional de Verificación (ver
+      requisitos y procedimiento en este mismo documento) a la Coordinación de Control de Calidad.'
+    - 'Una persona Analista de la Coordinación de Control de Calidad acude al domicilio de la empresa o establecimiento
+      y realiza la visita de verificación, SE CUMPLE CON LO INDICADO en el oficio de Dimensionamiento de dispositivo(s):
+      Ir al siguiente paso. NO SE CUMPLE con lo requerido por el Programa: La persona Analista de la Coordinación
+      de Control de Calidad le hará saber lo que incumple y le indicará que debe solicitar una Visita Adicional
+      de Verificación (ver requisitos y procedimiento en este mismo documento), cuando haya cumplido.'
+    - CESPT emite la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos, y contacta a la persona solicitante
+      para que pase a recoger el documento.
+    - Acudir a CESPT por la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  notes: Registro inicial - Persona física
+- name: Visita adicional de verificación
+  requirements:
+  - text: Original y copia de Solicitud de visita adicional de verificación del Programa Atrapa la Grasa.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15366
+  - text: Evidencia fotográfica de las adecuaciones o modificaciones realizadas para el pretratamiento de aguas
+      residuales generadas por la empresa o establecimiento.
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - Personal de la Coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser así,
+      le informa que no es posible realizar el trámite hasta que se completen.
+    - Con los requisitos completos, personal de la Coordinación Control de Calidad le proporciona una Ficha de Pago.
+    - Con la Ficha de Pago pasar al área de Cajas y hacer el pago correspondiente, la persona de Cajas le entregará
+      un Recibo de Pago.
+    - Una vez realizado el pago, pasar al Área de Archivo a presentar el Recibo de Pago y entregar el Escrito libre
+      de solicitud de visita adicional de verificación.
+    - La persona de Archivo imprime una certificación de recibido, en donde se indica la fecha de respuesta, al
+      Escrito libre de solicitud de visita adicional de verificación y se lo entrega.
+    - 'En fecha posterior, una persona Analista de la Coordinación de Control de Calidad acude a la empresa o establecimiento
+      y realiza la Visita Adicional de Verificación: SE CUMPLE con lo indicado en el oficio de Dimensionamiento
+      de dispositivo(s): Ir al siguiente paso. NO SE CUMPLE con lo indicado en el oficio de Dimensionamiento de
+      dispositivo(s): La persona Analista de la Coordinación de Control de Calidad le hará saber lo que incumple
+      y le indicará que debe solicitar una Visita Adicional de Verificación, cuando haya cumplido.'
+    - Personal de la Coordinación de Control de Calidad elabora la Constancia de Cumplimiento al Programa Atrapa
+      la Grasa y Sólidos y contacta a la persona solicitante para que pase a recoger el documento.
+    - Acudir a CESPT por la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  notes: Visita adicional de verificación
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 94 y 109.
+- source: ley2
+  pinpoint: Artículos 1 y 2.
+- source: ley3
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: INCLUYE 2 INSPECCIONES, siempre y cuando se cumpla con los plazos establecidos en el Oficio de dimensionamiento
+    de dispositivo(s).
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+    izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Control de Calidad, revisa que los requisitos estén completos, de no ser
+    así, informa a la persona solicitante que no es posible realizar el trámite hasta que se completen.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, personal de la Coordinación de Control de Calidad le proporciona una Ficha
+    de Pago y el original y copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con la Ficha de pago pasar al área de Cajas y hacer el pago correspondiente.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago, pasar al área de Archivo, presentar el Recibo de Pago y entregar el original
+    y copia del Formulario para el Registro al Programa Atrapa la Grasa y Sólidos.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: El personal de Archivo imprime la certificación de recibido al original y copia del Formulario para el
+    Registro al Programa Atrapa la Grasa y Sólidos, en donde se indica la fecha de respuesta, y entrega la copia
+    a la persona solicitante.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: En fecha posterior, una persona Analista de la Coordinación de Control de Calidad realiza la inspección
+    inicial.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Con el resultado de la inspección inicial, personal de la Coordinación de Control de Calidad elabora oficio
+    de Dimensionamiento de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento
+    que debe realizar y el plazo para realizarlas.
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Control de Calidad se comunica con la persona solicitante para que pase
+    por el oficio de Dimensionamiento de dispositivo(s).
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: Realizar lo indicado en el oficio de Dimensionamiento de dispositivo(s), dentro del plazo establecido.
+  cites:
+  - source: retys
+- n: '12'
+  actor: tú (según RETyS)
+  action: 'Una vez que se cumpla con lo indicado en el oficio de Dimensionamiento de dispositivo(s), SI ESTÁ EN
+    EL PLAZO ESTABLECIDO: Solicitar la visita de verificación, utilizando el formulario Solicitud de visita de verificación
+    al Programa Atrapa la Grasa y Sólidos (FRM-014), a la Coordinación de Control de Calidad y continuar en el siguiente
+    paso. Si NO ESTÁ DENTRO DEL PLAZO ESTABLECIDO: Solicitar una Visita Adicional de Verificación (ver requisitos
+    y procedimiento en este mismo documento) a la Coordinación de Control de Calidad.'
+  cites:
+  - source: retys
+- n: '13'
+  actor: tú (según RETyS)
+  action: 'Una persona Analista de la Coordinación de Control de Calidad acude al domicilio de la empresa o establecimiento
+    y realiza la visita de verificación, SE CUMPLE CON LO INDICADO en el oficio de Dimensionamiento de dispositivo(s):
+    Ir al siguiente paso. NO SE CUMPLE con lo requerido por el Programa: La persona Analista de la Coordinación
+    de Control de Calidad le hará saber lo que incumple y le indicará que debe solicitar una Visita Adicional de
+    Verificación (ver requisitos y procedimiento en este mismo documento), cuando haya cumplido.'
+  cites:
+  - source: retys
+- n: '14'
+  actor: tú (según RETyS)
+  action: CESPT emite la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos, y contacta a la persona
+    solicitante para que pase a recoger el documento.
+  cites:
+  - source: retys
+- n: '15'
+  actor: tú (según RETyS)
+  action: Acudir a CESPT por la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1613: Registro para Obtener la Constancia de Cumplimiento al Programa Atrapa la Grasa y
+      Sólidos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1613
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Que Reglamenta El Servicio De Agua Potable En El Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro para obtener la constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

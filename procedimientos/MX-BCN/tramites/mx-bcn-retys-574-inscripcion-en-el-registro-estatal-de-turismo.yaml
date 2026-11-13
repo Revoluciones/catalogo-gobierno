@@ -1,0 +1,163 @@
+id: mx-bcn-retys-574-inscripcion-en-el-registro-estatal-de-turismo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción en el Registro Estatal de Turismo
+summary: Registro que integra a los prestadores de Servicios Turísticos de Salud y Bienestar.
+authority:
+  name: Secretaría de Turismo
+official_ids:
+  retys_id: 574
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/574
+  homoclave: BC-SECTURE-001
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera inscribirse como prestador de servicios turísticos de Salud y Bienestar
+result: Constancia de inscripción como prestador de servicios turísticos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 2 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Playas de Rosarito
+  name: Dirección De Asistencia al Turista
+  address: 'Carretera Escenica Tijuana - Ensenada #1029, Ejido Mazatlan, Playas de Rosarito, 22710'
+scenarios:
+- name: Registro para establecimientos
+  requirements:
+  - text: Contar con REPSSABI en formato pdf
+    cites:
+    - source: retys
+  - text: Identificación Oficial con fotografía del representante legal
+    cites:
+    - source: retys
+  - text: Cédula Profesional del Responsable Sanitario del Establecimiento
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal
+    cites:
+    - source: retys
+  - text: Acta constitutiva (personas morales)
+    cites:
+    - source: retys
+  - text: Aviso de funcionamiento o licencia sanitaria (según corresponda)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Ingresar al enlace: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/ec84c2d96e1015df75e1d21b9c7ed8f9/0'
+    - Cargar documentación en formato PDF
+    - Evaluación y revisión
+    - Emisión de resultado
+    - Emisión de Constancia de Inscripción al Registro Estatal de Turismo (RET) de Salud y Bienestar.
+  notes: Establecimientos - Representante legal
+- name: Registro para médicos especialistas
+  requirements:
+  - text: Identificación Oficial con fotografía del Solicitante en formato pdf
+    cites:
+    - source: retys
+  - text: Comprobante de Domicilio en que se prestaran los servicios en formato pdf. CFE (Comisión Federal de Electricidad),
+      no mayor a tres meses* CESPT (Comisión Estatal de Servicios Públicos de Tijuana), no mayor a tres meses
+    cites:
+    - source: retys
+  - text: Titulo y Cédula Profesional del Responsable en formato pdf
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (actualizada)
+    cites:
+    - source: retys
+  - text: Aviso de Funcionamiento en formato pdf
+    cites:
+    - source: retys
+  - text: Aviso de Responsable Sanitario en formato pdf
+    cites:
+    - source: retys
+  - text: Cédula de especialidad médica del solicitante en formato pdf
+    cites:
+    - source: retys
+  - text: Constancia de la Certificación de su Especialidad, emitida por El Comité Normativo Nacional De Consejos
+      De Especialidades Médicas (CONACEM) en formato pdf
+    cites:
+    - source: retys
+  - text: REPSSABI vigente en formato pdf (en caso de contar con el)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Ingresa a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/ec84c2d96e1015df75e1d21b9c7ed8f9/0'
+    - Cargar documentación en formato PDF
+    - Evaluación y revisión
+    - Emisión de resultado
+    - Emisión de Constancia de Inscripción al Registro Estatal de Turismo (RET) de Salud y Bienestar.
+  notes: Médicos especialistas
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 46 Fracción III, Artículo 72 y 73
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Ingresar al enlace: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/ec84c2d96e1015df75e1d21b9c7ed8f9/0'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cargar documentación en formato PDF
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación y revisión
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Emisión de resultado
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Emisión de Constancia de Inscripción al Registro Estatal de Turismo (RET) de Salud y Bienestar.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 574: Inscripción en el Registro Estatal de Turismo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/574
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Turismo del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción al Registro Estatal de Turismo de Salud y Bienestar. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

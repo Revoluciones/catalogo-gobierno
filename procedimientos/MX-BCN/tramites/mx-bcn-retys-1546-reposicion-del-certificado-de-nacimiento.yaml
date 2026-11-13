@@ -1,0 +1,164 @@
+id: mx-bcn-retys-1546-reposicion-del-certificado-de-nacimiento
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición del Certificado de Nacimiento
+summary: Obtener una copia del documento que hace constar el nacimiento de un producto vivo y las circunstancias
+  que acompañaron el hecho, en caso de extravío o robo del certificado de nacimiento original. Asistir A la clínica
+  o servicios de salud a solicitar la copia del certificado de nacimiento.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1546
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1546
+  homoclave: BC-ISESALUD-022
+who_can:
+- Tutor
+when: Cuando se requiera una copia del documento que hace constar el nacimiento de un producto vivo.
+result: Copia certificada
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Información en Salud (Consulta Externa)
+  address: 'De la Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Tijuana
+  name: Departamento de Información en Salud
+  address: 'Camino Vecinal, Manzana 9, Lote 19 #S/N, Zona Rio Tijuana 3ra. Etapa, Tijuana, 22226'
+- municipality: Tijuana
+  name: Departamento de Información en Salud (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Ensenada
+  name: Departamento de Información en Salud (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Tecate
+  name: Departamento de Información en Salud (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Departamento de Información en Salud (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+scenarios:
+- name: Por daño o extravío hasta los seis meses del nacimiento
+  requirements:
+  - text: Identificación oficial del padre o tutor
+    cites:
+    - source: retys
+  - text: Denuncia de hechos por daño o extravío ante el ministerio público.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar los documentos requeridos en la Unidad Hospitalaria del lugar de nacimiento
+    - Personal de la Unidad Hospitalaria realizara la entrega de certificado de nacimiento
+  notes: Reposición de certificado de nacimiento por daño o extravío hasta los seis meses del nacimiento
+- name: Por robo hasta los seis meses del nacimiento
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  - text: En caso de robo del documento original presentar una denuncia de hechos emitida por el ministerio público.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar los documentos requeridos en la Unidad Hospitalaria del lugar de nacimiento
+    - Personal de la Unidad Hospitalaria realizara la entrega de certificado de nacimiento
+  notes: Reposición de certificado de nacimiento por robo hasta los seis meses del nacimiento
+- name: Por robo después de los seis meses del nacimiento
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  - text: En caso de robo del documento original presentar una denuncia de hechos emitida por el ministerio público
+    cites:
+    - source: retys
+  - text: Constancia de no registro en el estado ( registro civil)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar los documentos requeridos en la Unidad Hospitalaria del lugar de nacimiento
+    - Personal de la Unidad Hospitalaria realizara la entrega de certificado de nacimiento
+  notes: Reposición de certificado de nacimiento por robo después de los seis meses del nacimiento
+- name: Por daño o extravío después de los seis meses del nacimiento
+  requirements:
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  - text: Constancia de no registro en el estado (registro civil)
+    cites:
+    - source: retys
+  - text: En caso de extravío del documento original presentar una denuncia de hechos emitida por el ministerio
+      público
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar los documentos requeridos en la Unidad Hospitalaria del lugar de nacimiento
+    - Personal de la Unidad Hospitalaria realizara la entrega de certificado de nacimiento
+  notes: Reposición de certificado de nacimiento por daño o extravío después de los seis meses del nacimiento
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción 10
+- source: ley2
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar los documentos requeridos en la Unidad Hospitalaria del lugar de nacimiento
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal de la Unidad Hospitalaria realizara la entrega de certificado de nacimiento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1546: Reposición del Certificado de Nacimiento'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1546
+    version_date: 20/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: 'Norma Oficial Mexicana: NOM-035-SSA3-2012, En Materia De Información en Salud'
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,147 @@
+id: mx-bcn-retys-469-inscripcion-al-registro-para-establecimientos-resi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Registro para Establecimientos Residenciales Especializados en el Tratamiento de las Adicciones
+  (EETA´S)
+summary: Inscripción al registro de establecimientos especializados en el tratamiento de las adicciones para asegurar
+  el cumplimiento de estándares y calidad del servicio en cumplimiento a la NOM-028-SSA2-2009.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 469
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/469
+  homoclave: BC-IPEBC-012
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera el reconocimiento del establecimiento.
+result: Registro
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Promoción y Prevención de la Salud Mental y Adicciones
+  address: 'Onceava #1753, Mexicali, Mexicali, 21396'
+scenarios:
+- name: Personas Morales
+  requirements:
+  - text: Acta Constitutiva del EETA
+    cites:
+    - source: retys
+  - text: Aviso de funcionamiento o Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Solicitud de cédula de evaluación
+    cites:
+    - source: retys
+  - text: Fotografías del croquis del Establecimiento
+    cites:
+    - source: retys
+  - text: Antidoping del encargado del Establecimiento
+    cites:
+    - source: retys
+  - text: Manual de Procedimientos del EETA
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes del EETA
+    cites:
+    - source: retys
+  - text: Llenar el formato de solicitud de registro
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10429
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas para presentar la solicitud
+    - Entrega documentos para el registro de inscripción.
+    - Revisión y validación de la documentación del Establecimiento
+    - Visita de inspección. Si acredita con más del 85% cumple con el trámite para registro en el padrón. En caso
+      de no contar con el porcentaje, se entregará un diagnóstico situacional de las áreas de oportunidad para ser
+      solventadas.
+    - Entrega de reconocimiento.
+  notes: Son los Establecimiento Especializado en el Tratamiento de las Adicciones (EETA´S)
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 2 y 4
+- source: ley2
+  pinpoint: Artículo 4, Fracción IV, Artículos 29 y 30
+- source: ley3
+  pinpoint: Artículo 36
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas para presentar la solicitud
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega documentos para el registro de inscripción.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisión y validación de la documentación del Establecimiento
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Visita de inspección. Si acredita con más del 85% cumple con el trámite para registro en el padrón. En
+    caso de no contar con el porcentaje, se entregará un diagnóstico situacional de las áreas de oportunidad para
+    ser solventadas.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entrega de reconocimiento.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 469: Inscripción al Registro para Establecimientos Residenciales Especializados en el Tratamiento
+      de las Adicciones (EETA´S)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/469
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción al registro para Establecimientos Residenciales Especializados en el Tratamiento
+  de las Adicciones (EETA´S). Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

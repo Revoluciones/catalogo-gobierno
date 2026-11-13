@@ -1,0 +1,447 @@
+id: mx-bcn-retys-1530-toma-de-la-prueba-del-tamiz-neonatal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Toma de la Prueba del Tamiz Neonatal
+summary: Detectar defectos al nacimiento en la persona recién nacida, para brindar tratamiento médico oportuno.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1530
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1530
+  homoclave: BC-ISESALUD-014
+who_can:
+- Representante Legal
+- Tutor
+when: 3-5 días de nacido
+result: Estudio del Tamiz Neonatal
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'A #S/N, Los Algodones, Mexicali, 22970'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Felipa Vda. de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Candelilla #S/N, Rivera Campestre, Mexicali, 21387'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Patzcuaro #S/N, Ejido Patzcuaro, Mexicali, 21706'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'José Espinoza Lote 16 Manzana 13 #S/N, Fundadores, Mexicali, 21478'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Del Sol y De La Luna #S/N, Santa Isabel, Mexicali, 21139'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '27 de Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Prolongacion Socorro Garcia #S/N, Veracruz Dos, Mexicali, 21821'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Gral. Martin Cabrera #S/N, Vicente Guerrero, Mexicali, 21320'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ignacio Allende #S/N, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '27 de Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Coahuila #S/N, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juarez #128, Hermosillo, Mexicali, 21840'
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Granadas y Gardenias #S/N, Poblado  Ing. Francisco Murguia Km 49, Mexicali, 21722'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Claridad #S/N, Plutarco Elías, Mexicali, 21376'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida 27 de Enero entre Calle Novena y Decima #S/N, Guadalupe Victoria Ej., Guadalupe Victoria, Mexicali,
+    21720'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Carretera San Felipe Km 8.5 #S/N, Ejido Choropo, Mexicali, 21259'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Eucalipto #1, 3 De Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'El Mexicano #S/N, 18 de Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '7 #22, Reforma, Tijuana, 22183'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ley Federal del Trabajo #S/N, Flores Magon, Tijuana, 22606'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas 2da Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Gral. Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'San Rafael entre Las Delicias y Santa Maria #19811, Terrazas Del Valle Segunda Sección, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ruta Matamoros y Chichenitza #S/N, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Del Peñon #2980, Valle Verde, Tijuana, 22204'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Fundadores #S/N, Rubi Sur, Tijuana, 22626'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Anemona #S/N, El Florido 4ta Sección, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Centro de Salud Francisco Villa
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22150'
+- municipality: Tijuana
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida Centenario #10851, Zona Rio, Centro, Tijuana, 22010'
+- municipality: Tijuana
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Modulo 4 Mesa de Otay, Tijuana, 22390'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ocotlan #Manzana 16, Benito Garcia, Ensenada, 22973'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Lázaro Cárdenas #S/N, Real del Castillo, Ensenada, 22770'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Al Morro #S/N, Isla de Cedros, Ensenada, 22990'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Libre Rosarito-Ensenada Km 56 #S/N, La Mision, Ensenada, 22765'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Guillermo Prieto #213, Villa de Juarez (San Antonio de las Minas), Ensenada, 22766'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Niños Héroes #S/N, San Vicente, Ensenada, 22900'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Km. 76 Carretera Ensenada a Tecate #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Pedro Terraza #S/N, Valle de la Trinidad, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 21815'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Ensenada, 21137'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Agustín de Iturbide #Lote 2 M4, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #157, Erendira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'H #S/N, Ex-Ejido Ruíz Cortinez, Ensenada, 22810'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Tercera  #S/N, Francisco Villa, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Miguel Hidalgo y Costilla #S/N, Heroes de la Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Primera #S/N, Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: '16 de Septiembre #204, Ejido Emiliano Zapata, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Tecate
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juarez #S/N, Valle De Las Palmas, Tecate, 21500'
+- municipality: Tecate
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Tecate
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Guillermo Prieto y Quinta Avenida #S/N, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Playas de Rosarito, 22705'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Benito Juárez #Lote 108 M, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Hidalgo #S/N, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Genero y Salud Reproductiva
+  address: 'Galilea #2200, Villa Turistica, Centro, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sin Nombre #S/N, Bahia De Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Francisco Mujica #S/N, Ruben Jaramillo, San Quintín, 22915'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva (Consulta Externa y Urgencia)
+  address: 'Vicente Guerrero #221, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Ing. Luis Alzerrega #S/N, Flores Magon, San Quintín, 22819'
+- municipality: San Quintín
+  name: Centro de Salud Flores Magón
+  address: 'Entre Agustín Iturbide  y Nicolas Bravo Lazaro Cardenas #S/N, San, San Quintín, 22930'
+scenarios:
+- name: Toma de tamiz metabólico
+  requirements:
+  - text: CURP de la madre
+    cites:
+    - source: retys
+  - text: Identificación oficial de la madre
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse a la unidad de salud, centro de salud y/o hospitales para la toma de prueba
+    - Se le notificará resultados en un plazo de 30 días vía telefónica a la persona responsable del recién nacido,
+      pudiendo agendar cita para acudir físicamente por los resultados si así lo desea
+  notes: Toma de tamiz metabólico del tercer al quinto día de nacido
+- name: Notificar sospecha de enfermedad
+  requirements:
+  - text: CURP de la madre
+    cites:
+    - source: retys
+  - text: Identificación oficial de la madre
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Presentarse a la unidad de salud, centro de salud y/o hospitales para la toma de prueba.
+    - Se le notificará resultados en un plazo de 30 días vía telefónica a la persona responsable del recién nacido
+    - Si es sospechoso se le localizará de acuerdo a los datos que proporciona el familiar, como; domicilio y teléfono
+      para toma de estudios confirmatorios
+  notes: Notificar sospecha de enfermedad en el recién nacido
+legal_basis:
+- source: ley1
+  pinpoint: Aplica de manera general
+- source: ley2
+  pinpoint: Aplica de manera general
+- source: ley3
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse a la unidad de salud, centro de salud y/o hospitales para la toma de prueba
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le notificará resultados en un plazo de 30 días vía telefónica a la persona responsable del recién
+    nacido, pudiendo agendar cita para acudir físicamente por los resultados si así lo desea
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1530: Toma de la Prueba del Tamiz Neonatal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1530
+    version_date: 12/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana, NOM 007-SSA2-2016 Para la Atención de la Mujer Durante el Embarazo, Parto, Puerperio
+      y de la Persona Recién Nacida.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana, NOM 034- SSA2-2013 Para la Prevención y Control de los Defectos al Nacimiento
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios de Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Toma de Tamiz Metabólico. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

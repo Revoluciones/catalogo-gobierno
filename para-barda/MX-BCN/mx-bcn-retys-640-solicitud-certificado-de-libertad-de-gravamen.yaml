@@ -1,0 +1,128 @@
+id: mx-bcn-retys-640-solicitud-certificado-de-libertad-de-gravamen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud Certificado de Libertad de Gravamen
+summary: Hacer constar que el bien inmueble que se describe, no existe saldo, importe y/o contribuciones pendientes
+  por pagar ante la Junta de Urbanización del Estado de Baja California.
+authority:
+  name: Junta de Urbanización del Estado de Baja California
+official_ids:
+  retys_id: 640
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/640
+  homoclave: BC-JUEBC-001
+who_can:
+- Interesado
+when: Cuando se requiera comprobar que no existen adeudo
+result: Certificado de libertad de gravamen fiscal
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Noviembre 2026 Mexicali, Tecate, Rosarito, Ensenada $295.11 pesos, para Tijuana $590.23
+    pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 7 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recaudación JUEBC Mexicali
+  address: 'Blvd. Benito Juárez #1298 A, Jardines del Valle, Mexicali, 21270'
+- municipality: Tijuana
+  name: Recaudación JUEBC Tijuana
+  address: 'Salvador Novo #1020 - 5A, Edificio Casino Río Desarrollo Urbano, Tijuana, 22320'
+- municipality: Ensenada
+  name: Recaudación JUEBC Ensenada
+  address: 'Centro de Gobierno Ensenada Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec,
+    Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación JUEBC Tecate
+  address: 'Recaudación de Rentas de Gobierno del Estado Eusebio Kino #s/n, Fraccionamiento El Descanso, Tecate,
+    21478'
+- municipality: Playas de Rosarito
+  name: Recaudación JUEBC Rosarito
+  address: 'Centro de Gobierno Playas de Rosarito José Haros Aguilar #2000, Villa Turística Parcela 39, Playas de
+    Rosarito, 22710'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Certificado de libertad de gravamen fiscal que expiden los ayuntamientos del Estado
+    cites:
+    - source: retys
+  - text: Realizar el pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar el certificado de libertad de gravamen fiscal en nuestra oficina del municipio correspondiente para
+      su debido sello
+    - En caso de tener algún gravamen es necesario regularizar dicho gravamen para poder continuar con su trámite.
+      En caso de no tener adeudo, continua con el siguiente paso
+    - Cubrir el importe de derechos
+    - Se expide la certificación libre de gravamen
+  notes: Se presenta el ciudadano en ventanilla, paga el importe de derechos correspondiente y se expide la certificación
+    libre de gravamen
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 18, Fracción I, Inciso K y Séptimo Transitorio Capítulo VII
+- source: ley2
+  pinpoint: Artículo 13
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar el certificado de libertad de gravamen fiscal en nuestra oficina del municipio correspondiente
+    para su debido sello
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: En caso de tener algún gravamen es necesario regularizar dicho gravamen para poder continuar con su trámite.
+    En caso de no tener adeudo, continua con el siguiente paso
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cubrir el importe de derechos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se expide la certificación libre de gravamen
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 640: Solicitud Certificado de Libertad de Gravamen'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/640
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Urbanización del Estado
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

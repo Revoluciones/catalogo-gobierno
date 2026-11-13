@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1607-factibilidad-de-pavimentacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Factibilidad de Pavimentación
+summary: Solicitud de dictamen técnico, mediante el cual se describe el estado físico de las redes de agua potable
+  y alcantarillado sanitario, así como la ubicación de líneas de agua, pozos de visita, registros y tapas de válvulas,
+  con el fin de proceder a la pavimentación de la calle correspondiente.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1607
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1607
+  homoclave: BC-CESPT-029
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio.
+result: Factibilidad de Pavimentación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: General
+  requirements:
+  - text: Original y copia de escrito dirigido al director general de CESPT, debidamente firmado por Dependencias
+      o Delegaciones, en el cual solicita se dictamine de la factibilidad de pavimentación para una vialidad o un
+      conjunto de vialidades.
+    cites:
+    - source: retys
+  - text: Croquis de localización en el cual indique las vialidades o los tramos de ellas que se pretende pavimentar,
+      así como la colonia correspondiente de cada una de ellas
+    cites:
+    - source: retys
+  - text: Las copias deben ser legibles y contener el documento completo
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+    - Pasar al área de Archivo y explicar a la persona encargada el trámite que quiere realizar y entregar los requisitos
+    - La persona de Archivo revisa que los requisitos estén completos, de no ser así, informa a la persona solicitante
+      que no es posible realizar el trámite hasta que éstos se completen
+    - Con los requisitos completos, la persona de Archivo certifica original y copia de la petición, en el que se
+      indica el plazo de atención para la respuesta a su trámite
+    - Cumplido el plazo de atención la persona solicitante debe acudir nuevamente al área de Archivo por el documento
+      de Factibilidad de Pavimentación resultante
+  notes: General
+legal_basis:
+- source: ley1
+  pinpoint: '81'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Rosarito Floresta del Mar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo y explicar a la persona encargada el trámite que quiere realizar y entregar los
+    requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona de Archivo revisa que los requisitos estén completos, de no ser así, informa a la persona solicitante
+    que no es posible realizar el trámite hasta que éstos se completen
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de Archivo certifica original y copia de la petición, en el que
+    se indica el plazo de atención para la respuesta a su trámite
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cumplido el plazo de atención la persona solicitante debe acudir nuevamente al área de Archivo por el
+    documento de Factibilidad de Pavimentación resultante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1607: Factibilidad de Pavimentación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1607
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Urbanización del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

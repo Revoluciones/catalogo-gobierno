@@ -1,0 +1,178 @@
+id: mx-bcn-retys-1336-cirugia-de-hernioplastia-inguinal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cirugía de Hernioplastia Inguinal
+summary: Procedimiento quirúrgico utilizado para reparar una hernia en la ingle. Comúnmente se utiliza una malla
+  especial.
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1336
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1336
+  homoclave: BC-UNEME-009
+who_can:
+- Interesado
+when: Cuando el médico lo recomiende al localizar un tejido que sobresale por un punto débil en la pared abdominal
+result: Atención médica especializada en cirugía general
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Olimpus #S/N, Plutarco Elías Calles, Mexicali, 21376'
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el centro de salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: Identificación oficial (credencial INE, pasaporte mexicano, licencia de conducir)
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Historia clínica, exámenes de laboratorio, reporte de la valoración cardiopulmonar cuando proceda y demás
+      estudios de gabinete que procedan de acuerdo a la intervención quirúrgica, que le proporcionan en el centro
+      de salud y/u Hospital General
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario se
+      deriva a la UNEME
+    - Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a la UNEME con una persona acompañante, presentar los requisitos solicitados e identificarse.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la intervención (incluyendo vendaje y suero), trasladar al quirófano y, después
+      del procedimiento, dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE E ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Nota médica de referencia de la unidad de origen que incluya resultados de laboratorio o los exámenes
+      de laboratorio de respaldo
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario se
+      deriva a la UNEME
+    - Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a la UNEME con una persona acompañante, presentar los requisitos solicitados e identificarse.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la intervención (incluyendo vendaje y suero), trasladar al quirófano y, después
+      del procedimiento, dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Artículo 6
+- source: ley3
+  pinpoint: Artículo 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta médica del establecimiento que le corresponda.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario
+    se deriva a la UNEME
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la UNEME con una persona acompañante, presentar los requisitos solicitados e identificarse.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la intervención (incluyendo vendaje y suero), trasladar al quirófano y, después
+    del procedimiento, dar instrucciones para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1336: Cirugía de Hernioplastia Inguinal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1336
+    version_date: 21/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Genral de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Hernioplastia Inguinal. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

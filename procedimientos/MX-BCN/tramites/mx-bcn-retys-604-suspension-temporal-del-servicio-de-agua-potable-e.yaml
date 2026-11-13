@@ -1,0 +1,137 @@
+id: mx-bcn-retys-604-suspension-temporal-del-servicio-de-agua-potable-e
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Suspensión temporal del servicio de agua potable en servicio doméstico y no doméstico.
+summary: Suspensión temporal del suministro de agua potable a petición del titular de la cuenta.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 604
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/604
+  homoclave: BC-CESPM-019
+who_can:
+- Representante Legal
+when: Cuando no requiera el servicio
+result: Suspension
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: SUSPENSIÓN TEMPORAL $ 359.26 Activación del servicio $ 577.12. Inspección general, domestico
+    $ 176.08 y no domestico $ 263.99. El costo del servicio variara durante el ejercicio 2026 de acuerdo a la actualización
+    de la variación que tenga el índice de precios y cotizaciones (NPC) ejercicio 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: El usuario deberá llenar solicitud de suspensión temporal del servicio de agua potable.
+    cites:
+    - source: retys
+  - text: Que la suspensión sea por un periodo no menor a 30 días.
+    cites:
+    - source: retys
+  - text: Que el inmueble se encuentre deshabitado.
+    cites:
+    - source: retys
+  - text: Presentar documentos que acrediten la propiedad del terreno
+    cites:
+    - source: retys
+  - text: Recibo del pago total del costo de la suspensión del servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente.
+    - Presentar su solicitud de suspensión del servicio con los requisitos necesarios.
+    - Cubrir el total del costo de la suspensión del servicio.
+    - Entrega la orden de suspensión
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 9 PÁRRAFO VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención a usuarios de la zona comercial correspondiente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar su solicitud de suspensión del servicio con los requisitos necesarios.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cubrir el total del costo de la suspensión del servicio.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega la orden de suspensión
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 604: Suspensión temporal del servicio de agua potable en servicio doméstico y no doméstico.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/604
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

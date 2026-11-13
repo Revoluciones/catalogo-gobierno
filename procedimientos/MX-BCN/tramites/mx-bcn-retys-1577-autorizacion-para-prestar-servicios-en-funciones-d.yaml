@@ -1,0 +1,171 @@
+id: mx-bcn-retys-1577-autorizacion-para-prestar-servicios-en-funciones-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para prestar servicios en funciones de Vigilancia Interna
+summary: Trámite en el cual se solicitan los requisitos necesarios para la validación de la prestación del servicio
+  de seguridad privada en funciones de vigilancia interna, específicamente en vigilancia interna de empresas y negocios.
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1577
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1577
+  homoclave: BC-SSCBC-021
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: Cuando se desee prestar el servicio de seguridad privada
+result: Autorización para prestar servicios de seguridad privada
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: UN AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Seguridad Privada (Edificio Museo del Agua)
+  address: 'Av. Álvaro Obregón #514, Sección Primera, Mexicali, 21100'
+scenarios:
+- name: Funciones de vigilancia interna persona moral
+  requirements:
+  - text: Solicitud de autorización
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12474
+  - text: Poder notarial del Representante o Apoderado Legal, así como de su acta de nacimiento o carta de naturalización
+      e identificación oficial con fotografía vigente.
+    cites:
+    - source: retys
+  - text: Una fotografía frontal, trasera, lateral izquierda y lateral derecha, a color, de cuerpo entero, del uniforme
+      que utilizará el Personal Operativo para la prestación de los Servicios de Seguridad Privada, incluyendo sus
+      accesorios, mismo que deberá cumplir con las especificaciones establecidas en al Artículo 85 del presente
+      Reglamento.
+    cites:
+    - source: retys
+  - text: Exhibir la licencia para la portación de armas de fuego, expedido por la autoridad competente, en caso
+      de utilizarlas para la prestación del servicio.
+    cites:
+    - source: retys
+  - text: La relación del equipo de comunicación que se utilizará para la prestación del servicio.
+    cites:
+    - source: retys
+  - text: Manual de capacitación interno sobre las funciones que desarrolle el Personal Operativo
+    cites:
+    - source: retys
+  - text: La relación de vehículos que contenga la marca, tipo, modelo, serie o número de identificación vehicular,
+      número de placas y tarjeta de circulación vigente, que serán utilizados para la prestación de los servicios
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano acreditará los requisitos para su modalidad o modalidades
+    - El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+    - El servidor público revisará que cumpla con la totalidad de los requisitos
+    - El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+      solventar
+    - Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los requisitos
+      del establecimiento
+    - Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+    - El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+      privada
+    - El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe cumplir
+  notes: Las funciones de naturaleza similar y auxiliar relacionadas con la seguridad privada en el estado, realizadas
+    por las personas físicas contratadas para llevar a cabo la guardia o custodia de bienes o de valores en industrias,
+    establecimientos fabriles o comerciales, conjuntos habitacionales, centros turísticos, de esparcimiento o de
+    espectáculos y demás similares o para el transporte de bienes o valores, cuando dichas personas tienen una relación
+    de subordinación directa de carácter laboral con la persona física o moral, para la cual desempeñan tales funciones.
+legal_basis:
+- source: ley1
+  pinpoint: '34'
+- source: ley2
+  pinpoint: 4, 9, 22, 25, 36, 42 BIS Y 67 TER
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano acreditará los requisitos para su modalidad o modalidades
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público revisará que cumpla con la totalidad de los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+    solventar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los
+    requisitos del establecimiento
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+    privada
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe
+    cumplir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1577: Autorización para prestar servicios en funciones de Vigilancia Interna'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1577
+    version_date: 13/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Seguridad Privada para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Trámite para Obtener la Autorización de la Prestación de Servicios de Seguridad Privada
+  en Funciones de Vigilancia Interna. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

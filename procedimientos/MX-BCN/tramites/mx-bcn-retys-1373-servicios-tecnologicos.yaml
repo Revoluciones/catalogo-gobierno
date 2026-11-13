@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1373-servicios-tecnologicos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicios Tecnológicos
+summary: Conjunto de actividades que buscan conocer o comprobar el cumplimiento con las especificaciones de un material
+  o producto del cliente.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1373
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1373
+  homoclave: BC-CONALEP-012
+who_can:
+- Interesado
+when: Cuando el interesado lo requiera
+result: Resultados del servicio
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: VIGENCIA AL 2026: PRUEBAS POR PIEZA TENSIÓN $650.00 COMPRESIÓN $650.00 FLEXIÓN $650.00
+    DUREZA $345.00 RUGOSIDAD $345.00 SERVICIOS DIMENSIONADO: *SOBRE COTIZACIÓN IMPRESIÓN EN LÁSER Y 3D (PIEZAS):
+    $20.00 CORTE Y GRABADO EN ROUTER CNC: *SOBRE COTIZACIÓN MAQUINADO DE PARTES Y FIXTURAS: *SOBRE COTIZACIÓN El
+    costo presentado es el monto mínimo, el costo varia por servicio'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 6 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAST
+  address: 'Avenida Ermita Norte #3600-B, Río Tijuana, 3ra Etapa, Tijuana, 22226'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Contar con factibilidad por parte de nuestra institución para realizar el servicio
+    cites:
+    - source: retys
+  - text: Fotografía y plano
+    cites:
+    - source: retys
+  - text: Entregar orden de compra o comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Solicitar el servicio al cast
+    - Realizar factibilidad
+    - En caso de ser factible, enviar fotografías y planos
+    - Enviar cotización
+    - Enviar orden de compra o comprobante de pago
+    - Se realiza el servicio
+    - Se envián los resultados
+  notes: Requisitos para la solicitud de un servicio tecnológico
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar el servicio al cast
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar factibilidad
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de ser factible, enviar fotografías y planos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Enviar cotización
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Enviar orden de compra o comprobante de pago
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se realiza el servicio
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se envián los resultados
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1373: Servicios Tecnológicos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1373
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

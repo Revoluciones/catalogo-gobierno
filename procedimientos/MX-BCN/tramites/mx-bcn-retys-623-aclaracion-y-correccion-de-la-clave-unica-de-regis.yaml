@@ -1,0 +1,116 @@
+id: mx-bcn-retys-623-aclaracion-y-correccion-de-la-clave-unica-de-regis
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aclaración y Corrección de la Clave Única de Registro de Población (CURP)
+summary: Aclaración y corrección de la Clave Única de Registro de Población (CURP).
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 623
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/623
+  homoclave: BC-SGG-015
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando la ciudadanía requiera aclarar o corregir la Clave Única del Registro de Población
+result: Clave Única de Registro de Población (CURP)
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Registro Civil
+  address: 'Avenida Independencia #994, Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Aclaración y Corrección CURP
+  requirements:
+  - text: 'Presentar original o copia de alguno de los siguientes documentos: INE o Acta de nacimiento'
+    cites:
+    - source: retys
+  - text: 'Nota: Para la aclaración o corrección por primera vez presentar original o copia acta de nacimiento o
+      en su caso datos del acta.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Dirección de Registro Civil
+    - Solicitar aclaración y modificación del CURP
+    - Presentar requisitos
+    - 15 días hábiles para poder ver corrección en el Portal
+  notes: Aclaración y Corrección de la Clave Única de Registro de Población (CURP)
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 36
+- source: ley2
+  pinpoint: Artículo 31
+- source: ley3
+  pinpoint: Artículo 37
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Dirección de Registro Civil
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar aclaración y modificación del CURP
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 15 días hábiles para poder ver corrección en el Portal
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 623: Aclaración y Corrección de la Clave Única de Registro de Población (CURP)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/623
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

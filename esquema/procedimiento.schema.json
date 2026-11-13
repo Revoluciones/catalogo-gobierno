@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://compartido.org/catalogo/esquema/procedimiento.schema.json",
+  "title": "Procedimiento (versión oficial)",
+  "description": "Un procedimiento del gobierno tal como lo describen la ley y las fuentes oficiales. Lo que la gente vive se guarda aparte, en reportes (reporte.schema.json). Cada paso cita su fuente.",
+  "type": "object",
+  "required": ["id", "country", "jurisdiction", "level", "kind", "title", "summary", "authority", "steps", "sources", "status", "last_checked"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "Estable. Empieza con el código de jurisdicción en minúsculas: mx-bcn-..."},
+    "country": {"type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alfa-2. Hoy solo MX."},
+    "jurisdiction": {"type": "string", "description": "Mismo formato que Barda: MX, MX-BCN (ISO 3166-2), MX-BCN-Tijuana."},
+    "inegi_code": {"type": "string", "description": "Clave INEGI de la entidad o municipio, si aplica (Tijuana = 02004)."},
+    "level": {"enum": ["federal", "estatal", "municipal"]},
+    "branch": {"enum": ["ejecutivo", "legislativo", "judicial", "autonomo", "varios"]},
+    "kind": {"enum": ["tramite", "interno"], "description": "tramite = lo pide una persona; interno = cómo funciona el gobierno por dentro."},
+    "category": {"type": "string", "description": "Para internos: leyes, presupuesto, contrapesos, personal, quejas, transparencia, elecciones. Para trámites: el tema del registro oficial."},
+    "title": {"type": "string"},
+    "summary": {"type": "string", "description": "Una o dos frases en palabras de todos los días."},
+    "authority": {"$ref": "#/$defs/authority"},
+    "other_authorities": {"type": "array", "items": {"$ref": "#/$defs/authority"}},
+    "official_ids": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "homoclave": {"type": "string", "description": "Clave del trámite en el registro oficial (CNARTyS o RETyS)."},
+        "cnartys_url": {"type": "string"},
+        "retys_id": {"type": "integer"},
+        "retys_url": {"type": "string"}
+      }
+    },
+    "who_can": {"type": "array", "items": {"type": "string"}},
+    "when": {"type": "string", "description": "Cuándo hacerlo."},
+    "result": {"type": "string", "description": "Qué obtienes."},
+    "requirements": {"type": "array", "items": {"$ref": "#/$defs/requirement"}},
+    "cost": {"$ref": "#/$defs/cost"},
+    "deadlines": {"type": "array", "items": {"$ref": "#/$defs/deadline"}},
+    "positive_silence": {"type": ["boolean", "null"], "description": "Afirmativa ficta: si la autoridad no contesta a tiempo, la respuesta cuenta como un sí."},
+    "requires_inspection": {"type": ["boolean", "null"]},
+    "channels": {"type": "array", "items": {"enum": ["presencial", "en_linea", "telefono", "correo"]}},
+    "offices": {"type": "array", "items": {"$ref": "#/$defs/office"}},
+    "scenarios": {"type": "array", "items": {"$ref": "#/$defs/scenario"}, "description": "Variantes del mismo trámite (por ejemplo nacimiento o matrimonio), cada una con sus requisitos y pasos."},
+    "legal_basis": {"type": "array", "items": {"$ref": "#/$defs/cite"}, "description": "Fundamento jurídico del procedimiento completo."},
+    "steps": {"type": "array", "items": {"$ref": "#/$defs/step"}},
+    "related": {"type": "array", "items": {"type": "string"}, "description": "ids de otros procedimientos (el siguiente, el anterior, el recurso si te dicen que no)."},
+    "glossary": {"type": "array", "items": {"type": "string"}, "description": "Términos de glosario.yaml que usa este procedimiento."},
+    "sources": {"type": "object", "additionalProperties": {"$ref": "#/$defs/source"}, "description": "Fuentes citadas, por clave corta."},
+    "status": {"enum": ["importado", "borrador", "revisado", "desactualizado"], "description": "importado = copiado tal cual de un registro oficial; borrador = escrito por el proyecto, falta revisión; revisado = alguien lo cotejó con las fuentes."},
+    "last_checked": {"type": "string", "format": "date"},
+    "checked_by": {"type": "string"},
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "cite": {
+      "type": "object",
+      "required": ["source"],
+      "additionalProperties": false,
+      "description": "Una cita: la fuente y el lugar exacto dentro de ella.",
+      "properties": {
+        "source": {"type": "string", "description": "Clave en sources."},
+        "pinpoint": {"type": "string", "description": "Artículo, fracción, párrafo, página o sección. Ej.: 'art. 72, apartado C'."},
+        "quote": {"type": "string", "description": "Texto corto copiado de la fuente, para poder cotejarla."}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["type", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {"enum": [
+          "constitucion", "ley", "reglamento", "acuerdo_o_lineamiento", "periodico_oficial",
+          "manual_organizacion", "manual_procedimientos", "registro_oficial", "portal_oficial",
+          "solicitud_transparencia", "auditoria", "sentencia", "informe_oficial",
+          "investigacion", "periodismo", "reportes_ciudadanos"
+        ]},
+        "official": {"type": "boolean", "description": "true si la emite la autoridad (ley, manual, registro, portal, respuesta de transparencia, auditoría). false para periodismo, investigación y reportes."},
+        "title": {"type": "string"},
+        "publisher": {"type": "string"},
+        "url": {"type": "string"},
+        "archived_url": {"type": "string"},
+        "version_date": {"type": "string", "description": "Última reforma de la ley, fecha del manual o de la respuesta."},
+        "accessed": {"type": "string", "format": "date"},
+        "folio": {"type": "string", "description": "Para solicitudes de transparencia: folio de la Plataforma Nacional de Transparencia."},
+        "report_ids": {"type": "array", "items": {"type": "string"}, "description": "Para reportes_ciudadanos: los reportes que respaldan la nota."}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "unit": {"type": "string", "description": "Unidad administrativa (dirección, departamento)."},
+        "url": {"type": "string"}
+      }
+    },
+    "requirement": {
+      "type": "object",
+      "required": ["text"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {"type": "string"},
+        "form_url": {"type": "string"},
+        "original_or_copy": {"type": "string"},
+        "cites": {"type": "array", "items": {"$ref": "#/$defs/cite"}}
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {"enum": ["gratuito", "fijo", "variable", "desconocido"]},
+        "amount_mxn": {"type": ["number", "null"]},
+        "text": {"type": "string", "description": "Tal como lo publica la fuente."},
+        "as_of": {"type": "string"},
+        "cites": {"type": "array", "items": {"$ref": "#/$defs/cite"}}
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "required": ["what", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "what": {"enum": ["respuesta_autoridad", "vigencia", "para_presentar", "para_prevenir", "para_corregir", "otro"]},
+        "text": {"type": "string"},
+        "cites": {"type": "array", "items": {"$ref": "#/$defs/cite"}}
+      }
+    },
+    "office": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "municipality": {"type": "string"},
+        "name": {"type": "string"},
+        "address": {"type": "string"},
+        "phones": {"type": "string"},
+        "hours": {"type": "string"}
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "notes": {"type": "string"},
+        "requirements": {"type": "array", "items": {"$ref": "#/$defs/requirement"}},
+        "modes": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "properties": {"name": {"type": "string"}, "steps": {"type": "array", "items": {"type": "string"}}}
+        }}
+      }
+    },
+    "step": {
+      "type": "object",
+      "required": ["n", "actor", "action", "cites"],
+      "additionalProperties": false,
+      "properties": {
+        "n": {"type": "string", "description": "Número o etiqueta estable: '1', '2', '3a'."},
+        "actor": {"type": "string", "description": "Quién lo hace: tú, la Cámara de Diputados, el Ejecutivo..."},
+        "action": {"type": "string", "description": "Lo que dice la versión oficial, en palabras de todos los días."},
+        "deadline": {"type": "string"},
+        "cites": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/cite"}, "description": "Todo paso cita al menos una fuente."},
+        "next": {"type": "array", "items": {
+          "type": "object", "required": ["to"], "additionalProperties": false,
+          "properties": {"to": {"type": "string", "description": "n del siguiente paso, 'fin' o el id de otro procedimiento."}, "when": {"type": "string"}}
+        }, "description": "Ramas. Si falta, sigue el paso siguiente. Sirve para exportar a BPMN (el formato de Barda)."},
+        "practice": {"type": "array", "items": {"$ref": "#/$defs/practice"}, "description": "Dónde la práctica no coincide con la ley. Cada nota trae sus propias fuentes."}
+      }
+    },
+    "practice": {
+      "type": "object",
+      "required": ["text", "cites", "evidence_level"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {"type": "string", "description": "Lo que pasa en la práctica."},
+        "evidence_level": {"enum": ["documento_oficial", "auditoria_o_sentencia", "periodismo_o_investigacion", "varios_reportes", "un_reporte"], "description": "Qué tan sólida es la evidencia, de más a menos."},
+        "observed": {"type": "string", "description": "Cuándo y dónde se observó."},
+        "cites": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/cite"}}
+      }
+    }
+  }
+}

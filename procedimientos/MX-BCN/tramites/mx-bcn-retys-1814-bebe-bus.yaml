@@ -1,0 +1,154 @@
+id: mx-bcn-retys-1814-bebe-bus
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Bebé Bus
+summary: Proyecto de atención itinerante a primera infancia enfocado en la población en contexto de migración y
+  vulnerabilidad. Brinda sesiones de juego no estructuradas para niñas y niños de 0 a 3 años a fin de promover la
+  estimulación temprana, así mismo se imparten platicas con enfoque en crianza respetuosa y apego seguro a los cuidadores.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 1814
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1814
+  homoclave: BC-DIF-029
+who_can:
+- Interesado
+- Otro
+when: Cuando el usuario lo requiera y cumpla los requisitos.
+result: Sesiones de juego no estructuradas para niñas y niños de 0 a 3 años y pláticas de crianza para cuidadores.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Mexicali
+  address: 'Calzada Cuahtémoc #384, Las Fuentes, Mexicali, 21230'
+scenarios:
+- name: Requisitos
+  requirements:
+  - text: Presentar menor de edad de 0 a 3 años con 11 meses de edad, acompañado de padre, madre o cuidador.
+    cites:
+    - source: retys
+  - text: Fungir como persona cuyas condiciones sociales, económicas o familiares los colocan en situación de vulnerabilidad,
+      riesgo o desventaja social.
+    cites:
+    - source: retys
+  - text: Llenar ficha de inscripción para recibir el servicio.
+    cites:
+    - source: retys
+  - text: Firmar la lista de asistencia, concluida la plática.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en la dependencia ó comunicarse vía telefónica a solicitar la atención.
+    - Proponer fecha de interés para recibir el servicio.
+    - Cotejar agenda comprometida con la fecha solicitada.
+    - Confirmar o descartar la fecha solicitada.
+    - Identificar que el lugar cuente con el espacio adecuado para estacionar el autobús
+    - Presentarse el día y hora acordada para brindar el servicio, con un minimo de dos infancias acompañadas de
+      su padre, madre y/o cuidador.
+    - Llenar ficha de inscripción.
+    - Brindar el servicio.
+    - Firmar y sellar lista de asistencia
+    - En caso de tratarse de una institución, solicitar firma y el sello en la lista de asistencia.
+  notes: 'El servicio no requiere requisitos documentales, sin embargo, es necesario cumplir con lo siguiente:'
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 1
+- source: ley2
+  pinpoint: Articulo 3
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en la dependencia ó comunicarse vía telefónica a solicitar la atención.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Proponer fecha de interés para recibir el servicio.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cotejar agenda comprometida con la fecha solicitada.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Confirmar o descartar la fecha solicitada.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Identificar que el lugar cuente con el espacio adecuado para estacionar el autobús
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentarse el día y hora acordada para brindar el servicio, con un minimo de dos infancias acompañadas
+    de su padre, madre y/o cuidador.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Llenar ficha de inscripción.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Brindar el servicio.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Firmar y sellar lista de asistencia
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: En caso de tratarse de una institución, solicitar firma y el sello en la lista de asistencia.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1814: Bebé Bus'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1814
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la protección de los Derechos de niñas, niños y adolescentes
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

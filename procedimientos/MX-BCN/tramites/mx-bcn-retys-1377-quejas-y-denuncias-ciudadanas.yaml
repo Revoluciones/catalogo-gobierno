@@ -1,0 +1,218 @@
+id: mx-bcn-retys-1377-quejas-y-denuncias-ciudadanas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Quejas y Denuncias Ciudadanas
+summary: Proporcionar al ciudadano la atención oportuna, para presentar quejas o denuncias en contra de las personas
+  servidoras públicas de la Administración Pública Estatal.
+authority:
+  name: Secretaría Anticorrupción y Buen Gobierno
+official_ids:
+  retys_id: 1377
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1377
+  homoclave: BC-SHFP-004
+who_can:
+- Representante Legal
+- Tutor
+- Interesado
+when: 'Cuando el ciudadano se siente objeto de: mal trato, mala prestación y negativa injustificada de un servicio
+  público, corrupción y por negligencia.'
+result: Acuse de recibo de queja.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 90 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Contraloría Social
+  address: 'Av. Álvaro Obregón y Calle México #599, Sección Primera , Mexicali, 21100'
+- municipality: Mexicali
+  name: Dirección de Contraloría Social
+  address: '"Calz. Independencia y Paseo  de los Héroes" #S/N, CENTRO CIVICO, Mexicali, 21000'
+- municipality: Tijuana
+  name: Dirección de Contraloría Social
+  address: 'Blvd. Aguacaliente #21939, Fracc. El Paraíso, Tijuana, 22160'
+- municipality: Ensenada
+  name: Dirección de Contraloría Social
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Presencial
+  requirements:
+  - text: Proporcionar correo electrónico y/o teléfono para dar seguimiento a su queja o denuncia.
+    cites:
+    - source: retys
+  - text: Adjuntar documentos como evidencia que den soporte a la descripción de la narración de los hechos de la
+      queja o denuncia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano acude a las oficinas de la Secretaría de Anticorrupción y Buen Gobierno, donde la persona servidora
+      pública del Departamento de Atención Ciudadana y Denuncias que atiende al ciudadano le solicita escrito de
+      queja o denuncia, o en su caso le proporciona formato para la narración de los hechos que describen la queja
+      o denuncia.
+    - La persona servidora pública del Departamento de Atención Ciudadana y Denuncias ingresa al sistema de atención
+      a quejas y denuncias para registrar los datos y hechos de la queja o denuncia, el cual genera número de folio
+      y claves, que son proporcionadas al ciudadano por medio de un acuse junto con la liga de acceso al sistema
+      de atención a quejas y denuncias para el seguimiento de la queja.
+    - El ciudadano con el folio y las claves de acceso, le da seguimiento a su queja y/o denuncia a través del portal
+      institucional de la Secretaría Anticorrupción y Buen Gobierno, hace clic en el botón "Sistema de Quejas y
+      Denuncias”, después da clic en “seguimiento a queja y/o denuncia” e ingresa usuario y contraseña.
+  notes: Presencial es uno de los medios por el cual el ciudadano puede presentar queja o denuncia con relación
+    a las obras, servicios y personas servidoras públicas del Gobierno del Estado.
+- name: Vía telefónica
+  requirements:
+  - text: Proporcionar correo electrónico y/o teléfono para dar seguimiento a su queja o denuncia.
+    cites:
+    - source: retys
+  - text: Adjuntar documentos como evidencia que den soporte a la descripción de la narración de los hechos de la
+      queja o denuncia.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El ciudadano se contacta al número telefónico Tijuana(664)979-2920 ext.2568; Mexicali(686) 555-4922, ext.8204;
+      Ensenada (646)172-3034, ext.3251, o a nivel nacional 800-466-3786 (HONESTO).
+    - El ciudadano al ser atendido explica el motivo de la queja o denuncia, y también proporciona los datos que
+      solicite la persona servidora pública del Departamento de Atención Ciudadana y Denuncias.
+    - La persona servidora pública del Departamento de Atención Ciudadana y Denuncias le asigna un número de folio
+      y claves de acceso para ingresar al sistema de atención a quejas y denuncias.
+    - El ciudadano ingresa al portal institucional de la Secretaría Anticorrupción y Buen Gobierno, hace clic en
+      el botón "Sistema de Quejas y Denuncias”, después da clic en “seguimiento a queja y/o denuncia”.
+  notes: Vía telefónica es uno de los medios por el cual el ciudadano puede presentar queja o denuncia con relación
+    a las obras, servicios y personas servidoras públicas del Gobierno del Estado.
+- name: Línea
+  requirements:
+  - text: Proporcionar correo electrónico y/o teléfono para dar seguimiento a su queja o denuncia.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - El ciudadano ingresa al portal institucional de la Secretaría de Anticorrupción y Buen Gobierno, hace clic
+      en el botón "Sistema de Quejas y Denuncias”, después da clic en “capture su queja” donde deberá cargar la
+      información correspondiente, y también se recomienda incluir los datos personales para proporcionar una solución
+      más efectiva.
+    - El sistema de atención a quejas y denuncias le asigna al ciudadano un número de folio y claves de acceso para
+      el seguimiento de la queja.
+  notes: Línea es uno de los medios por el cual el ciudadano puede presentar queja o denuncia con relación a las
+    obras, servicios y personas servidoras públicas del Gobierno del Estado.
+- name: Comités de contraloría social, unidad móvil y código QR
+  requirements:
+  - text: Proporcionar correo electrónico y/o teléfono para dar seguimiento a su queja o denuncia.
+    cites:
+    - source: retys
+  - text: Adjuntar documentos como evidencia que den soporte a la descripción de la narración de los hechos de la
+      queja o denuncia.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - El ciudadano es atendido por la persona servidora pública, quien captura por medio de un formato de queja
+      y/o denuncia los hechos narrados por la persona ciudadana. Se le solicita para mejor atención y seguimiento
+      un correo electrónico y/o número telefónico.
+    - La persona titular del Departamento de Atención Ciudadana y Denuncias, captura en el Sistema de Atención a
+      Quejas y Denuncias, el formato previamente llenado por la persona ciudadana.
+    - La persona servidora pública del Departamento de Atención Ciudadana y Denuncias le asigna un número de folio
+      y claves de acceso para ingresar al sistema de atención a quejas y denuncias.
+    - El ciudadano ingresa al portal institucional de la Secretaría Anticorrupción y Buen Gobierno, hace clic en
+      el botón "Sistema de Quejas y Denuncias”,después da clic en “seguimiento a queja y/o denuncia”.
+  notes: Los comités de contraloría social, unidad móvil y código QR es uno de los medios por el cual el ciudadano
+    puede presentar queja o denuncia con relación a las obras, servicios y personas servidoras públicas del Gobierno
+    del Estado, los cuales comparten los mismo pasos para llevar a cabo el trámite.
+- name: Oficio y correo electrónico
+  requirements:
+  - text: Proporcionar correo electrónico y/o teléfono para dar seguimiento a su queja o denuncia.
+    cites:
+    - source: retys
+  - text: Adjuntar documentos como evidencia que den soporte a la descripción de la narración de los hechos de la
+      queja o denuncia.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El ciudadano envía por medio de oficio o correo electrónico escrito libre con la narración de los hechos que
+      describen la queja o denuncia, adjuntando documentos como evidencia que den soporte a la descripción de la
+      narración de los hechos. Se recomienda agregar nombre y correo electrónico.
+    - La persona servidora pública del Departamento de Atención Ciudadana y Denuncias ingresa al sistema de atención
+      a quejas y denuncias para capturar la queja o denuncia del ciudadano, la cual se envía al correo electrónico
+      proporcionado usuario, número de folio y claves de acceso para el seguimiento de la queja.
+    - El ciudadano con el folio y las claves de acceso, le da seguimiento a su queja o denuncia a través del portal
+      institucional de la Secretaría Anticorrupción y Buen Gobierno, hace clic en el botón "Sistema de Quejas y
+      Denuncias”, y posteriormente da clic en “seguimiento a queja y/o denuncia”.
+  notes: Oficio y correo electrónico es uno de los medios por el cual el ciudadano puede presentar queja o denuncia
+    con relación a las obras, servicios y personas servidoras públicas del Gobierno del Estado.
+legal_basis:
+- source: ley1
+  pinpoint: 48, Fracción XXIII
+- source: ley2
+  pinpoint: 28 y 31, fracciones II y III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano acude a las oficinas de la Secretaría de Anticorrupción y Buen Gobierno, donde la persona
+    servidora pública del Departamento de Atención Ciudadana y Denuncias que atiende al ciudadano le solicita escrito
+    de queja o denuncia, o en su caso le proporciona formato para la narración de los hechos que describen la queja
+    o denuncia.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona servidora pública del Departamento de Atención Ciudadana y Denuncias ingresa al sistema de
+    atención a quejas y denuncias para registrar los datos y hechos de la queja o denuncia, el cual genera número
+    de folio y claves, que son proporcionadas al ciudadano por medio de un acuse junto con la liga de acceso al
+    sistema de atención a quejas y denuncias para el seguimiento de la queja.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El ciudadano con el folio y las claves de acceso, le da seguimiento a su queja y/o denuncia a través del
+    portal institucional de la Secretaría Anticorrupción y Buen Gobierno, hace clic en el botón "Sistema de Quejas
+    y Denuncias”, después da clic en “seguimiento a queja y/o denuncia” e ingresa usuario y contraseña.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1377: Quejas y Denuncias Ciudadanas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1377
+    version_date: 02/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría Anticorrupción y Buen Gobierno
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Atención a Quejas y Denuncias Ciudadanas. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

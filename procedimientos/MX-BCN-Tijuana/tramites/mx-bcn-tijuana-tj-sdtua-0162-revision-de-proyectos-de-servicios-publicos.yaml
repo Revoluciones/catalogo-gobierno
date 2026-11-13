@@ -1,0 +1,85 @@
+id: mx-bcn-tijuana-tj-sdtua-0162-revision-de-proyectos-de-servicios-publicos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Servicios públicos municipales
+title: Revisión de Proyectos de Servicios Públicos
+summary: Evaluación técnica y normativa de proyectos de desarrollo urbano relacionados con obras públicas y fraccionamientos,
+  los cuales incluyen la planificación y ejecución de trabajos en áreas como alumbrado público, forestación, señalización
+  vial, y sistemas de recolección de residuos sólidos urbanos.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Servicios Públicos Municipales
+official_ids:
+  homoclave: TJ-SDTUA-0162
+who_can:
+- Interesado
+when: Cuando se presenta un proyecto de desarrollo urbano que incluyan obra pública, como alumbrado público, forestación,
+  señalización vial y recolección
+result: Dictamen
+requirements:
+- text: Solicitud por escrito del Departamento de Acciones de Urbanización de la Dirección de Administración Urbana,
+    indicando nombre, domicilio, teléfono y correo electrónico del solicitante.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Lo señalado en los formatos SP1 al 13
+  cites:
+  - source: remutys
+  original_or_copy: 2 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 762.51
+  text: 'Para inspeccionar fraccionamientos en proceso de entrega-recepción al Ayuntamiento de Tijuana: 6.5 UMA
+    ($762.51). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 7 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Servicios Públicos Municipales
+  address: Av. Independencia 1350, Zona Río
+  phones: 6649737100 ext. 7423
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0162: Revisión de Proyectos de Servicios Públicos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0162
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Desarrollo Territorial Urbano y Ambiental del Municipio de Tijuana,
+      Baja California
+    url: https://apps.tijuana.gob.mx/normatividadPublico/Documentos/MostrarDocumentos/40
+  fund2:
+    type: ley
+    official: true
+    title: Capitulo VII, Articulo 29, Fracción VII, Inciso D) de la Ley de Ingresos para el Municipio de Tijuana,
+      Baja California Ejercicio Fiscal 2025, Pág.67
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con la normativa vigente.'

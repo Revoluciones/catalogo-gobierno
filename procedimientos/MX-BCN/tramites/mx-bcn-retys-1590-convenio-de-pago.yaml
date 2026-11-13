@@ -1,0 +1,244 @@
+id: mx-bcn-retys-1590-convenio-de-pago
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Convenio de Pago
+summary: Trámite para que aquellos usuarios que tengan adeudos, celebren un convenio en donde se comprometan a liquidar
+  su adeudo mediante el pago en parcialidades.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1590
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1590
+  homoclave: BC-CESPT-012
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera facilidades de pago para su adeudo
+result: Convenio de pago en parcialidades
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Lo que corresponda al pago inicial del convenio'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CDP Otay Delegación
+  address: 'Calzada Tecnológico #S/N, Fracc. Altabrisa, dentro de la Deleg. Mesa de Otay, Tijuana, 22370'
+- municipality: Tijuana
+  name: CDP CANACO
+  address: 'Xavier VIillaurrutia #1271, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Villa Fontana
+  address: 'Av. Aranjuez #S/N, Fracc. Villa Fontana, dentro de la Delegación Villa Fontana, Tijuana, 22205'
+- municipality: Tijuana
+  name: CAP Otay Centenario
+  address: 'Carretera Aeropuerto #1900 Loc 1, Centro Com. Otay, Fracc. Otay Nueva Tijuana, Tijuana, 22425'
+- municipality: Tijuana
+  name: CAP Otay San Miguel
+  address: 'Av. López Portillo #1460, Fracc. Otay Nueva Tijuana, Tijuana, 22435'
+- municipality: Tijuana
+  name: CAP Galerías Revolución
+  address: 'Av. Revolución #868 Loc 9, Centro Com. Galerías Revolución, Zona Centro, Tijuana, 22000'
+- municipality: Tijuana
+  name: CAP Playas de Tijuana
+  address: 'Paseo del Pacífico #901, Secc. Jardines, Playas de Tijuana, Tijuana, 22517'
+- municipality: Tijuana
+  name: CAP Matamoros
+  address: 'Ruta Independencia #21560, Loc. 18, Centro Com. Matamoros, Fracc. Parque Industrial Américas, Tijuana,
+    22206'
+- municipality: Tijuana
+  name: CAP Plaza Carrousel
+  address: 'Blvd. Gustavo Díaz Ordaz #15602, Centro Com. Plaza Carrousel, Fracc. Las Brisas, Tijuana, 22115'
+- municipality: Tijuana
+  name: CAP Florido
+  address: 'Blvd. Paseo de los Laureles #S/N, Fracc. Vista de Palmillas, Tijuana, 22253'
+- municipality: Tijuana
+  name: CAP Cerro de las Abejas
+  address: 'Blvd. El Refugio #9601,Loc 7, Centro Comercial Las Abejas, Fracc. El Florido III Sec., Tijuana, 2237'
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CDP Palacio Municipal
+  address: 'Vía Rápida Oriente #10252, Zona Urbana Río, Tijuana, 22010'
+- municipality: Tijuana
+  name: CAP El Rubí
+  address: 'Ave. Cabo San Lucas  #8651, Fracc. Terrazas del Rubí, dentro de la Delegación SAB, Tijuana, 22626'
+- municipality: Tijuana
+  name: CAP La Gloria
+  address: 'C. Coronado Km 13.4, Carretera Tijuana - Ensenada #S/N, Int. Subdelegación La Gloria, Tijuana, 22703'
+- municipality: Tijuana
+  name: UMS Quinta del Cedro
+  address: 'Paseo Banderas #4410, Urbi Quinta del Cedro, Tijuana, 111111'
+- municipality: Playas de Rosarito
+  name: CAP Rosarito Floresta del Mar
+  address: 'Blvd. Benito Juárez #385, Fracc. Hacienda Floresta del Mar, Playas de Rosarito, 22703'
+scenarios:
+- name: Usuarios Residenciales
+  requirements:
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta Poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses, si la persona que
+      gestiona no es el propietario'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Hacer el pago inicial del convenio
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: En aquellos casos en los que no sea posible obtener carta poder e identificación del propietario, se podrá
+      hacer Convenio como obligado solidario, siempre y cuando la identificación oficial de éste tenga el mismo
+      domicilio que el registrado en la cuenta sobre la que se hará el convenio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+    - Pasar al área de Módulos de Atención Personalizada (MAP) y esperar su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumplan todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+    - La persona del MAP verifica la información de la cuenta en el sistema y le informa, la opciones del importe
+      de pago inicial y las mensualidades
+    - Seleccione la opción de pago inicial y mensualidades que mejor se ajusten a sus posibilidades
+    - La persona del MAP elabora el Convenio de pago y lo entrega al ciudadano para que pase a pagar a cajas
+    - Pase a cajas a realizar el pago inicial del convenio
+    - 'La persona de cajas le entregará dos documentos: 1) convenio y 2) recibo de pago'
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo
+- name: Usuarios Comerciales o Industriales
+  requirements:
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta Poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses, si la persona que
+      gestiona no es el propietario'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Fianza en los casos que la autoridad fiscal lo requiera
+    cites:
+    - source: retys
+  - text: Hacer el pago inicial del convenio
+    cites:
+    - source: retys
+  - text: En aquellos casos en los que no sea posible obtener carta poder e identificación del propietario, se podrá
+      hacer Convenio como obligado solidario, siempre y cuando la identificación oficial de éste tenga el mismo
+      domicilio que el registrado en la cuenta sobre la que se hará el convenio.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acuda a cualquier Centro de Atención al Público (CAP) de CESPT
+    - Pase al área de Módulos de Atención Personalizada (MAP) y espere su turno
+    - Cuando llegue su turno, la persona del MAP revisará que se cumplan todos los requisitos, si no están completos,
+      le informará que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+    - La persona del MAP verifica la información de la cuenta en el sistema y le informa, la opciones del importe
+      de pago inicial y las mensualidades
+    - Seleccione la opción de pago inicial y mensualidades que mejor se ajusten a sus posibilidades
+    - La persona del MAP elabora el Convenio de pago y lo entrega al ciudadano para que pase a pagar a cajas
+    - Pase a cajas a realizar el pago inicial del convenio
+    - 'La persona de cajas entregará dos documentos: 1) convenio y 2) recibo de pago'
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo.
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo: 25.'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquier Centro de Atención al Público (CAP) de CESPT
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de Módulos de Atención Personalizada (MAP) y esperar su turno
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Cuando llegue su turno, la persona del MAP revisará que se cumplan todos los requisitos, si no están completos,
+    le informará que no es posible realizar el trámite hasta que éstos se completen, indicando lo que falta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona del MAP verifica la información de la cuenta en el sistema y le informa, la opciones del importe
+    de pago inicial y las mensualidades
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Seleccione la opción de pago inicial y mensualidades que mejor se ajusten a sus posibilidades
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona del MAP elabora el Convenio de pago y lo entrega al ciudadano para que pase a pagar a cajas
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Pase a cajas a realizar el pago inicial del convenio
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: 'La persona de cajas le entregará dos documentos: 1) convenio y 2) recibo de pago'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1590: Convenio de Pago'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1590
+    version_date: 05/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código fiscal del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

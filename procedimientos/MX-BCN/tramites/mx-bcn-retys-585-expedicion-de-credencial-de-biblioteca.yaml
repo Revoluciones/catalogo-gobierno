@@ -1,0 +1,140 @@
+id: mx-bcn-retys-585-expedicion-de-credencial-de-biblioteca
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Credencial de Biblioteca
+summary: Las personas Interesadas en acceder a los servicios y actividades que se desarrollan dentro de las bibliotecas
+  públicas adscritas al Instituto de Servicios Culturales de Baja California.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 585
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/585
+  homoclave: BC-ICBC-021
+who_can:
+- Interesado
+when: En el momento que lo desee dentro del horario laboral de la biblioteca
+result: Credencial de biblioteca para el acceso al desarrollo de la habilidad lectora y servicios culturales
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Biblioteca Pública Central Estatal
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+- municipality: Ensenada
+  name: Biblioteca Pública Regional Benito Juárez
+  address: 'Guadalupe #201, Obrera, Ensenada, 22830'
+scenarios:
+- name: Personas mayores de 18 años
+  requirements:
+  - text: identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio, no mayor a 3 meses anteriores
+    cites:
+    - source: retys
+  - text: Correo electrónico funcional
+    cites:
+    - source: retys
+  - text: Número telefónico
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía de un aval (original y copia)
+    cites:
+    - source: retys
+  - text: Número telefónico del Aval
+    cites:
+    - source: retys
+  - text: Correo electrónico funcional del Aval
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Usuario acude a la biblioteca pública y solicita la credencial de biblioteca
+    - Biblioteca pública expide y entrega credencial
+    - Usuario accede a los servicios bibliotecarios
+  notes: Cuando la persona interesada desee obtener el servicio
+- name: Niñas, niños y jóvenes menores de edad
+  requirements:
+  - text: Identificación oficial vigente con fotografía del padre, madre o tutor
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio no anterior a tres meses
+    cites:
+    - source: retys
+  - text: Número de teléfono
+    cites:
+    - source: retys
+  - text: Correo electrónico de padre, madre o tutor responsable
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Usuario acude a la biblioteca pública y solicita la credencial de biblioteca
+    - Biblioteca pública expide y entrega credencial
+    - Usuario accede a los servicios bibliotecarios
+  notes: Cuando la persona interesada desee obtener el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 32, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Usuario acude a la biblioteca pública y solicita la credencial de biblioteca
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Biblioteca pública expide y entrega credencial
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Usuario accede a los servicios bibliotecarios
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 585: Expedición de Credencial de Biblioteca'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/585
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

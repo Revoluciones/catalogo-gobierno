@@ -1,0 +1,154 @@
+id: mx-bcn-retys-548-inscripcion-de-constitucion-de-sociedades-y-las-ac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Constitución de Sociedades y las Actas de Asamblea Mercantiles
+summary: Trámite mediante el cual se otorga publicidad frente a terceros respecto de la forma en que se constituyen
+  las sociedades mercantiles, así como de las personas que intervienen dentro de las mismas.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 548
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/548
+  homoclave: BC-DRPPC-018
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera del registro de inscripción o modificación
+result: Inscripción Registral para la constitución y/o modificación de una Sociedad Mercantil
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Octubre 2026 hasta la cantidad de $50,000 …. el costo es de $5,194.00, para Protocolización
+    de Acta de Asamblea Mercantil'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+scenarios:
+- name: Personas morales
+  requirements:
+  - text: Escritura Pública
+    cites:
+    - source: retys
+  - text: La forma precodificada
+    cites:
+    - source: retys
+  - text: Permiso de la Secretaria de Relaciones Exteriores
+    cites:
+    - source: retys
+  - text: Cubrir previamente en la caja recaudadora los derechos correspondientes
+    cites:
+    - source: retys
+  - text: La escritura en un medio digital y en formato word
+    cites:
+    - source: retys
+  - text: Recoger el trámite el día asignado a su volante
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Tomar turno para la emisión del recibo
+    - Presentar acta constitutiva para el recibo de pago, en caso de ser mercantil traer USB y hojas precodificadas
+    - Realizar el pago correspondiente en la oficina recaudadora
+    - Tomar turno para ingresar la escritura
+    - Recoger el trámite en el tiempo en que se asigne el volante
+  notes: Para el registro de inscripción o modificación de sociedades mercantiles
+legal_basis:
+- source: ley1
+  pinpoint: 14, fracción I, II, Inciso C), Párrafo 1,
+- source: ley2
+  pinpoint: 20, 21, 21 BIS, 22 Y 25
+- source: ley3
+  pinpoint: '50'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para la emisión del recibo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar acta constitutiva para el recibo de pago, en caso de ser mercantil traer USB y hojas precodificadas
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente en la oficina recaudadora
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para ingresar la escritura
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Recoger el trámite en el tiempo en que se asigne el volante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 548: Inscripción de Constitución de Sociedades y las Actas de Asamblea Mercantiles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/548
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Código de Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

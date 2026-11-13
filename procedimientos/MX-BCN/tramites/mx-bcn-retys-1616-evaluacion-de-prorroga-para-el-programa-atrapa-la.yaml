@@ -1,0 +1,172 @@
+id: mx-bcn-retys-1616-evaluacion-de-prorroga-para-el-programa-atrapa-la
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Evaluación de Prórroga para el Programa Atrapa la Grasa y Sólidos
+summary: Solicitar tiempo adicional, al plazo establecido en el oficio de dimensionamiento de dispositivo(s), para
+  realizar las adecuaciones y sistemas de pretratamiento, necesarias para obtener la constancia de cumplimiento
+  al programa atrapa la grasa y sólidos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1616
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1616
+  homoclave: BC-CESPT-038
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Oficio de solicitud de plazo
+cost:
+  type: variable
+  amount_mxn: 331.89
+  text: 'COSTO VARIABLE: $331.89 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: GENERAL
+  requirements:
+  - text: Solicitar la prórroga dentro del plazo otorgado, para realizar las adecuaciones y sistemas de pretratamiento
+      en la empresa o establecimiento, en el Oficio de dimensionamiento de dispositivo(s).
+    cites:
+    - source: retys
+  - text: NO TENER más de un Oficio de prórroga aprobada, otorgado anteriormente.
+    cites:
+    - source: retys
+  - text: Original y copia del Solicitud de prórroga para las adecuaciones para el Programa Atrapa la Grasa (FRM-018),
+      debidamente llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15374
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad le entrega una Ficha de
+      pago.
+    - Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona de
+      Cajas le entregará un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y copia de la Solicitud de prórroga
+      para las adecuaciones para el Programa Atrapa la Grasa.
+    - La persona del área de Archivo certifica de recibido el original y copia de la Solicitud de prórroga para
+      las adecuaciones para el Programa Atrapa la Grasa y entrega la copia al solicitante.
+    - Personal de la Coordinación de Control de Calidad elabora el Oficio de prórroga aprobada y se comunica con
+      la persona solicitante para que pase a recogerlo.
+    - Acudir a CESPT y recoger el Oficio de prórroga aprobada.
+  notes: GENERAL
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 1 y 2.
+- source: ley2
+  pinpoint: Artículo 9.
+- source: ley3
+  pinpoint: Artículos 94 y 109.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+    izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si
+    no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se
+    completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Control de Calidad le entrega una Ficha
+    de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona
+    de Cajas le entregará un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y copia de la Solicitud de
+    prórroga para las adecuaciones para el Programa Atrapa la Grasa.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo certifica de recibido el original y copia de la Solicitud de prórroga para
+    las adecuaciones para el Programa Atrapa la Grasa y entrega la copia al solicitante.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Personal de la Coordinación de Control de Calidad elabora el Oficio de prórroga aprobada y se comunica
+    con la persona solicitante para que pase a recogerlo.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Acudir a CESPT y recoger el Oficio de prórroga aprobada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1616: Evaluación de Prórroga para el Programa Atrapa la Grasa y Sólidos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1616
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

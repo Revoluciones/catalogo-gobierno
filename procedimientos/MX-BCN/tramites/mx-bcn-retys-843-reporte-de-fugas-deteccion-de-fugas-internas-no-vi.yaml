@@ -1,0 +1,111 @@
+id: mx-bcn-retys-843-reporte-de-fugas-deteccion-de-fugas-internas-no-vi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reporte de Fugas/Deteccion de fugas internas no visibles
+summary: Recepción de llamadas y reportes por los usuarios de la cespe para reportar desperfectos en los sistemas
+  de agua potable y alcantarillado sanitario. Al llamar vía telefónica al 073 se registran los datos que proporciona
+  el usuario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 843
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/843
+  homoclave: BC-CESPE-011
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+- Tutor
+when: Cuando se detecte una fuga de agua o de drenaje
+result: Registro de llamada para atención y un numero de reporte para su seguimiento
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Ciudadanos en General
+  requirements:
+  - text: Tener el numero de cuenta o la dirección exacta en la cual se suscita la emergencia
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina
+    - Realizar el reporte
+    - Llevar el número de cuenta o la dirección exacta de la fuga
+  notes: Servicio de carácter general al que puede acceder cualquier ciudadano vía telefónica.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3, 33, 60,64 Y 74 Fracciones, II, IV y V
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el reporte
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llevar el número de cuenta o la dirección exacta de la fuga
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 843: Reporte de Fugas/Deteccion de fugas internas no visibles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/843
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

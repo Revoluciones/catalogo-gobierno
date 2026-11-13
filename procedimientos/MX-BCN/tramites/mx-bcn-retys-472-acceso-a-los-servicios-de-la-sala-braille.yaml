@@ -1,0 +1,99 @@
+id: mx-bcn-retys-472-acceso-a-los-servicios-de-la-sala-braille
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a los Servicios de la Sala Braille
+summary: Que la persona cuya debilidad visual, ceguera o discapacidad física les dificulta leer material impreso
+  haga uso del acervo y equipo en la sala braille la cual cuenta con capacidad para 15 personas, 1 computadora,
+  1 impresora de braille, 1 máquina de escribir braille y 1 magnificador de texto.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 472
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/472
+  homoclave: BC-ICBC-013
+who_can:
+- Interesado
+when: Cuando requiera capacitarse para escribir o leer braille
+result: El desarrollo de la capacidad de leer y/o escribir braille
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Biblioteca Pública Central Estatal
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Personas con debilidad visual
+  requirements:
+  - text: Credencial de biblioteca o identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude a la biblioteca pública
+    - Presenta credencial o identificación oficial
+    - La persona accede a los servicios de la sala braille
+  notes: Cuando la persona interesada desee obtener el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 32, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acude a la biblioteca pública
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presenta credencial o identificación oficial
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: La persona accede a los servicios de la sala braille
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 472: Acceso a los Servicios de la Sala Braille'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/472
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

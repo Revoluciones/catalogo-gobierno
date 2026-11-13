@@ -1,0 +1,107 @@
+id: mx-bcn-retys-1707-inscripcion-al-concurso-premios-estatales-de-liter
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción al Concurso Premios Estatales de Literatura
+summary: Que las personas escritores bajacalifornianos de los géneros de poesía, cuento, novela, teatro, ensayo,
+  periodismo cultural, cuento y teatro para niños concursen por un premio y edición de su obra.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1707
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1707
+  homoclave: BC-SC-018
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando lo establezca la convocatoria
+result: La inscripción en el Concurso y la posibilidad de premio en efectivo y publicación del libro.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Editorial y Fomento a la Lectura
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+scenarios:
+- name: Personas escritores locales, regionales, nacionales y extranjeros
+  requirements:
+  - text: Formato de inscripción
+    cites:
+    - source: retys
+  - text: 4 ejemplares originales del proyecto de literatura
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar ficha de inscripción
+    - Enviar por correo o entregar en oficinas el proyecto de literatura (4 ejemplares en original)
+    - Jurado revisa, dictamina y entrega lista de ganadores a la Secretaría de Cultura
+    - Se anuncian a los ganadores en redes sociales de la Secretaría
+    - Realiza evento y se entregan premios de acuerdo a convocatoria
+  notes: Para inscribirse en el Concurso y la posibilidad de premio en efectivo y publicación del libro
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28, fracción IV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar ficha de inscripción
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Enviar por correo o entregar en oficinas el proyecto de literatura (4 ejemplares en original)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Jurado revisa, dictamina y entrega lista de ganadores a la Secretaría de Cultura
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se anuncian a los ganadores en redes sociales de la Secretaría
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realiza evento y se entregan premios de acuerdo a convocatoria
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1707: Inscripción al Concurso Premios Estatales de Literatura'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1707
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

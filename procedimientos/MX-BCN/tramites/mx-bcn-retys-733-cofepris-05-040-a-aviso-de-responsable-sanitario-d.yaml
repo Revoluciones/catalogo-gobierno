@@ -1,0 +1,108 @@
+id: mx-bcn-retys-733-cofepris-05-040-a-aviso-de-responsable-sanitario-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-040-A Aviso de Responsable Sanitario del Establecimiento de Plaguicidas, Nutrientes Vegetales
+  y Sustancias Toxicas o Peligrosas que Opera con Licencia Sanitaria. Modalidad A- Para Servicios Urbanos de Fumigacion,
+  Desinfeccion y Control de Plagas
+summary: Cuando el ciudadano requiera obtener el aviso de responsable sanitario para un establecimiento de servicios
+  de control de plagas el cual te servirá como requisito para la solicitud de licencia sanitaria.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 733
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/733
+  homoclave: BC-COEPRIS-021
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Proceso de apertura-operación
+result: Aviso de responsable sanitario
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7771
+  - text: Formato “Avisos”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple legible
+      del mismo
+    cites:
+    - source: retys
+  - text: Copia legible del documento que avale la calificación aprobatoria del examen de conocimientos presentado
+      ante la autoridad sanitaria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 200 y 200 Bis
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el centro integral de servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 733: COFEPRIS-05-040-A Aviso de Responsable Sanitario del Establecimiento de Plaguicidas,
+      Nutrientes Vegetales y Sustancias Toxicas o Peligrosas que Opera con Licencia Sanitaria. Modalidad A- Para
+      Servicios Urbanos de Fumigacion, Desinfeccion y Control de Plagas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/733
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-040-A Aviso de Responsable Sanitario del Establecimiento de Plaguicidas, Nutrientes
+  Vegetales y Sustancias Toxicas o Peligrosas que Opera con Licencia Sanitaria. Modalidad A- Para Servicios Urbanos
+  de Fumigacion, Desinfeccion y Control de Plagas.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

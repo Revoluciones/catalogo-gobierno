@@ -1,0 +1,198 @@
+id: mx-bcn-retys-705-aviso-al-registro-estatal-de-causantes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aviso al Registro Estatal de Causantes
+summary: Mantener el padrón de contribuyentes congruente y actualizado (altas, bajas, cambios) con la población
+  que tenga como actividad preponderante la venta de bienes y/o prestación de servicios acorde con los diferentes
+  movimientos que deban realizar ante la Recaudación de Rentas del Estado de Baja California.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 705
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/705
+  homoclave: BC-SH-020
+who_can:
+- Interesado
+when: Cuando el ciudadano requiera hacer un cambio en su Registro Estatal de Causantes
+result: La actualización de su registro ante el Padrón de Causantes
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Llenar el formato de aviso al registro estatal de causantes RE-01 por duplicado, llenando solo los recuadros
+      que correspondan al alta.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10446
+  - text: Presentar constancia de situación fiscal expedida por el SAT.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia identificacion oficial, como puede ser INE vigente, pasaporte mexicano vigente,
+      cédula profesional o licencia de conducir vigente)
+    cites:
+    - source: retys
+  - text: Croquis del domicilio fiscal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10450
+  modes:
+  - name: Presencial
+    steps:
+    - El contribuyente debe acudir a las oficinas de Recaudación de Rentas y dirigirse al área de cajas o ventanilla
+      única.
+    - El asesor de recaudación de rentas atenderá al contribuyente o interesado para realizar cualquier movimiento
+      o actualización en el Registro Estatal de Causantes.
+    - El asesor solicitará al contribuyente los documentos para iniciar el trámite solicitado, que será procesado
+      mediante el sistema ventanilla única, donde realizará la actualización solicitada.
+    - Una vez procesado el trámite, el asesor sellará y firmará el formato estatal para validar el trámite realizado,
+      y entregará al contribuyente o interesado la hoja original del formato adjuntando en copia los documentos
+      solicitados para el trámite.
+    - Terminado lo anterior el contribuyente se retira de la Recaudación de Rentas.
+  notes: Recibir de las personas físicas que cuenten con establecimientos comerciales, industriales, de servicios
+    e inclusive los de arrendamiento y los de actividades agropecuarias, los avisos al registro estatal de causantes
+    a efecto de incorporarlos al padrón estatal de contribuyentes.
+- name: Persona Moral
+  requirements:
+  - text: Llenar el formato de aviso al registro estatal de causantes RE-01 por duplicado, llenando solo los recuadros
+      que correspondan al alta.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10451
+  - text: Constancia de situación fiscal expedida por el SAT.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia del acta constitutiva, y/o acta de asamblea y/o poder notarial donde acredite
+      el carácter de representante legal y/o apoderado legal.
+    cites:
+    - source: retys
+  - text: Presentar comprobante de domicilio fiscal a nombre de la empresa.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia identificacion oficial, como puede ser INE vigente, pasaporte mexicano vigente,
+      cédula profesional o licencia de conducir vigente)
+    cites:
+    - source: retys
+  - text: Presentar croquis del domicilio fiscal.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10456
+  modes:
+  - name: Presencial
+    steps:
+    - El contribuyente debe acudir a las oficinas de Recaudación de Rentas y dirigirse al área de cajas o ventanilla
+      única.
+    - Un asesor de recaudación de rentas atenderá al contribuyente o interesado para realizar cualquier movimiento
+      o actualización en el Registro Estatal de Causantes.
+    - El asesor solicitará al contribuyente los documentos para iniciar el trámite solicitado, que será procesado
+      mediante el sistema ventanilla única, donde realizará la actualización solicitada.
+    - Una vez procesado el trámite, el asesor sellará y firmará el formato estatal para validar el trámite realizado,
+      y entregará al contribuyente o interesado la hoja original del formato adjuntando en copia los documentos
+      solicitados para el trámite.
+    - Terminado lo anterior el contribuyente se retira de la Recaudación de Rentas.
+  notes: Recibir de las personas morales que cuenten con establecimientos comerciales, industriales, de servicios
+    e inclusive los de arrendamiento y los de actividades agropecuarias, los avisos al registro estatal de causantes
+    a efecto de incorporarlos al padrón estatal de contribuyentes.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 23
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El contribuyente debe acudir a las oficinas de Recaudación de Rentas y dirigirse al área de cajas o ventanilla
+    única.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El asesor de recaudación de rentas atenderá al contribuyente o interesado para realizar cualquier movimiento
+    o actualización en el Registro Estatal de Causantes.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El asesor solicitará al contribuyente los documentos para iniciar el trámite solicitado, que será procesado
+    mediante el sistema ventanilla única, donde realizará la actualización solicitada.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez procesado el trámite, el asesor sellará y firmará el formato estatal para validar el trámite realizado,
+    y entregará al contribuyente o interesado la hoja original del formato adjuntando en copia los documentos solicitados
+    para el trámite.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Terminado lo anterior el contribuyente se retira de la Recaudación de Rentas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 705: Aviso al Registro Estatal de Causantes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/705
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

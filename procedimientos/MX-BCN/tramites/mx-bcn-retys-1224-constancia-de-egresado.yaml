@@ -1,0 +1,127 @@
+id: mx-bcn-retys-1224-constancia-de-egresado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de Egresado
+summary: Documento oficial con el cual el Colegio de Bachilleres del Estado de Baja California, hace constar que
+  un alumno concluyó sus estudios de bachillerato, con base al Plan de Estudios.
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1224
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1224
+  homoclave: BC-COBACH-003
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: Cuando el estudiante haya concluido su plan de estudios
+result: Constancia
+cost:
+  type: fijo
+  amount_mxn: 193.0
+  text: 'COSTO: $193.00 mxn'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 MESES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+scenarios:
+- name: Egresado
+  requirements:
+  - text: Acta de nacimiento
+    cites:
+    - source: retys
+  - text: Certificado de Educación Secundaria
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Fotografía digital
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Asiste a ventanilla
+    - Entrega documentos
+    - Realiza el pago de los derechos y proporciona el recibo.
+    - Entregan el documento solicitado
+  notes: Cuando el estudiante haya concluido su plan de estudios podrá solicitar su Constancia de Egresado
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+- source: ley2
+  pinpoint: .
+- source: ley3
+  pinpoint: .
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Asiste a ventanilla
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega documentos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza el pago de los derechos y proporciona el recibo.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entregan el documento solicitado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1224: Constancia de Egresado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1224
+    version_date: 16/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Colegio de Bachilleres del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Manual por el que se establecen las cuotas de recuperación del Colegio de Bachilleres del Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Acreditación, Regularización y Certificación del Colegio de Bachilleres del Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

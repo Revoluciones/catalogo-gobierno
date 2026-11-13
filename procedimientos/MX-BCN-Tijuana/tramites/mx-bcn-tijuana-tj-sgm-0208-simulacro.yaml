@@ -1,0 +1,108 @@
+id: mx-bcn-tijuana-tj-sgm-0208-simulacro
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Simulacro
+summary: Solicitud para la evaluación de simulacros de emergencia en el centro de trabajo o institución solicitante.
+  El objetivo es evaluar el desempeño, la coordinación, la comunicación y la efectividad de la Unidad Interna de
+  Protección Civil (UIPC) ante una situación de emergencia o desastre, garantizando que todos estén preparados y
+  que las acciones sean efectivas. La evaluación puede ser solicitada para Simulacro de Gabinete o bien, Simulacro
+  de Evacuación.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Protección Civil
+official_ids:
+  homoclave: TJ-SGM-0208
+who_can:
+- Interesado
+when: Cuando el Solicitante desee revalidar su Programa de Protección Civil, ya que dentro de los requisitos se
+  encuentra la resolución aprobatoria de por lo menos 2 simulacros para asegurarse que el plan de emergencia sigue
+  siendo efectivo y actualizado. · Cuando el usuario desee conocer la efectividad de sus procedimientos y recursos
+  frente a una emergencia.
+result: Resolución
+requirements:
+- text: Oficio de solicitud dirigido al Director de Protección Civil del municipio, firmada por el representante
+    legal.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Recibo de pago de derechos CERTIFICADO
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Hipótesis del simulacro y planteamiento del simulacro (como se realizará y quienes participan).
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Simulacros de gabinete: 26 UMA ($3,050.06) · Simulacro de evacuación total de hasta 100 participantes:
+    5 UMA ($586.55) · Simulacro de evacuación total de hasta 250 participantes: 10 UMA ($1,173.10) · Simulacro de
+    evacuación total de hasta 500 participantes: 15 UMA ($1,759.65) · Simulacro de evacuación total de hasta 750
+    participantes: 20 UMA ($2,346.20) · Simulacro de evacuación total de hasta 1,000 participantes: 30 UMA ($3,519.30)
+    · Simulacro de evacuación total de hasta 2,000 participantes: 40 UMA ($4,692.40) · Simulacro de evacuación total
+    de 2,000 participantes en adelante: 52 UMA ($6,100.12). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días habiles
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Protección Civil
+  address: Segunda Sur y Guadalupe Ramírez, S/N, Col. Del Rio Parte Alta, Delegación Municipal Otay Centenario
+  phones: 6646839131 ext. 1701
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0208: Simulacro'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0208
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículos 58 quater fracciones V, VI y VII del Reglamento de Protección Civil del Municipio de Tijuana,
+      Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2022613145039692_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 39 Bis, fracción II, incisos A) y B) de la Ley de Ingreso del municio de Tijuana, Baja California
+      del Ejercicio Fiscal 2025
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2025/LI-TJBC_E-2025.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: El simulacro debe cumplir con las normativas y directrices vigentes
+  en materia de protección civil, esto con el objetivo de garantizar que la empresa o institución esté preparada
+  para enfrentar alguna emergencia o desastre. La evaluación será realizada de manera presencial por un Verificador
+  Técnico de esta dirección, quien usará como método evaluador la Cédula Interna Para Evaluación de Simulacros.
+  La empresa o institución debe cumplir con un mínimo de 70 puntos de los 100 posibles que marca la Cédula para
+  acreditar la evaluación de su simulacro. En caso de contar con una evaluación de simulacro no aprobatoria, el
+  solicitante puede pedir una segunda evaluación sin costo adicional. En caso de que la segunda evaluación de simulacro
+  nuevamente resulte no aprobatoria, el solicitante debe pagar una nueva la solicitud de evaluación.'

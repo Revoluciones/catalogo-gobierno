@@ -1,0 +1,134 @@
+id: mx-bcn-retys-1341-estudiante-de-upbc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Estudiante de UPBC
+summary: Otorgar constancia de estudios, cuando lo solicite el interesado, misma donde se especifica que está inscrito
+  en la Universidad Politécnica de Baja California.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1341
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1341
+  homoclave: BC-UPBC-005
+who_can:
+- Interesado
+when: Cuando el solicitante requiera la información
+result: Constancia de estudio
+cost:
+  type: fijo
+  amount_mxn: 100.0
+  text: 'COSTO: $100.00 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 días
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: CONSTANCIA DE ESTUDIOS
+  requirements:
+  - text: pagina del SIAA alumnos con su numero de matricula
+    cites:
+    - source: retys
+  - text: pago de la constancia de estudios
+    cites:
+    - source: retys
+  - text: obtener en el mismo momento y una vez que se descargue debera imprimir y/o guardarla,ya que cuenta cn
+      24 horas despues deabrir el documento.,
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Podrá solicitar la constancia en el horario que se requiera
+    - Deberá contar con tarjeta bancaria para realizar el trámite
+    - En el caso de que no cuente con tarjeta bancaria deberá imprimir recibo de pago para presentarse en ventanilla
+      del banco y proceder al pago
+    - Deberá subir el recibo de pago para continuar con el trámite de obtención de constancia
+    - Si en el caso de que presente un problema para obtener la constancia, presentarse en el área de recursos financieros
+      de la UPBC
+    - Una vez que haya abierto el archivo de la constancia de estudios, tendrá 24 horas para grabar o archivar el
+      documento
+  notes: CONSTANCIA DE ESTUDIOS PARA ESTUDIANTES QUE LO SOLICITEN, EL CUAL LO PUEDEN OBTENER DE LA PAGINA DE SIAA
+    ALUMNOS, TIENEN UN PLAZO DE 24 HRS. PARA SU IMPRESION Y UNA VEZ ABIERTO DEBERAN DESCARGARLO
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción III
+- source: ley2
+  pinpoint: Artículo 68, fracción III, X y XI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Podrá solicitar la constancia en el horario que se requiera
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Deberá contar con tarjeta bancaria para realizar el trámite
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En el caso de que no cuente con tarjeta bancaria deberá imprimir recibo de pago para presentarse en ventanilla
+    del banco y proceder al pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Deberá subir el recibo de pago para continuar con el trámite de obtención de constancia
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si en el caso de que presente un problema para obtener la constancia, presentarse en el área de recursos
+    financieros de la UPBC
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez que haya abierto el archivo de la constancia de estudios, tendrá 24 horas para grabar o archivar
+    el documento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1341: Estudiante de UPBC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1341
+    version_date: 22/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de creación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Constancia de Estudios. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

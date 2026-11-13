@@ -1,0 +1,141 @@
+id: mx-bcn-retys-208-aviso-para-realizar-aprovechamiento-de-aves-silves
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Aviso para realizar Aprovechamiento de Aves Silvestres Migratorias en Predios distintos a donde se lleva
+  a cabo la Conservación
+summary: Se otorgará el visto bueno del aviso para realizar aprovechamiento de aves silvestres migratorias en predios
+  distintos a donde se lleva a cabo la conservación. Solamente se otorgara el visto bueno para las especies migratorias
+  que son sujetas al aprovechamiento extractivo.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 208
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/208
+  homoclave: BC-SMADS-032
+who_can:
+- Representante Legal
+- Interesado
+when: Aviso para realizar aprovechamiento de aves silvestres migratorias en predios distintos a donde se lleva a
+  cabo la conservación, (excepto cuando se tr
+result: Autorización de aprovechamiento de aves silvestres migratorias
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recursos Naturales
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Recursos Naturales
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: PERSONA FISICA
+  requirements:
+  - text: Formato de aviso de aprovechamiento para aves migratorias
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3785
+  - text: Original o copia certificada y copia simple para cotejo del acta constitutiva para personas morales
+    cites:
+    - source: retys
+  - text: Copia de los documentos que acrediten la personalidad del solicitante (credencial de elector, pasaporte
+      o cédula profesional)
+    cites:
+    - source: retys
+  - text: Original o copia certificada y copia simple para cotejo del documento con el que se acredita la representación
+      legal del promovente
+    cites:
+    - source: retys
+  - text: Documento donde conste el consentimiento del legítimo propietario o poseedor del predio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la información que se requisita en el formato
+    - Evaluar el tramite y generar un oficio de respuesta
+  notes: personas fisicas
+- name: PERSONA MORAL
+  requirements:
+  - text: Formato de aviso de aprovechamiento para aves migratorias
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12751
+  - text: Original o copia certificada y copia simple para cotejo del acta constitutiva para personas morales
+    cites:
+    - source: retys
+  - text: Copia de los documentos que acrediten la personalidad del solicitante (credencial de elector, pasaporte
+      o cédula profesional)
+    cites:
+    - source: retys
+  - text: Original o copia certificada y copia simple para cotejo del documento con el que se acredita la representación
+      legal del promovente
+    cites:
+    - source: retys
+  - text: Documento donde conste el consentimiento del legítimo propietario o poseedor del predio
+    cites:
+    - source: retys
+  modes: []
+  notes: UNA SOCIEDAD QUE OSTENTA EL PODER SOBRE LA UMA
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 96
+- source: ley2
+  pinpoint: Artículo 120
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la información que se requisita en el formato
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Evaluar el tramite y generar un oficio de respuesta
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 208: Aviso para realizar Aprovechamiento de Aves Silvestres Migratorias en Predios distintos
+      a donde se lleva a cabo la Conservación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/208
+    version_date: 20/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

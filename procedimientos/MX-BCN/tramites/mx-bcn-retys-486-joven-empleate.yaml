@@ -1,0 +1,134 @@
+id: mx-bcn-retys-486-joven-empleate
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Joven Empleate
+summary: Impulsar el Emprendimiento de las y los Jóvenes de Baja California a través de un apoyo en especies.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 486
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/486
+  homoclave: BC-INJUVE-009
+who_can:
+- Interesado
+when: A partir del mes de marzo hasta el mes de agosto
+result: Apoyo económico en especie de $ 25,000.00 M.N
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 MES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+- municipality: Tijuana
+  name: Oficina Tijuana
+  address: 'DIF Mariano Matamoros el Sauce #S/N, El Forido 1ra. Y 2da. Secc., Tijuana, 22237'
+- municipality: Ensenada
+  name: Oficina Ensenada
+  address: 'Centro de Gobierno del Edo. Tercer Piso carretera Traspeninsular #6500, Ensenada-La Paz ExEjido Chapultepec,
+    Ensenada, 22785'
+- municipality: Tecate
+  name: Oficina Tecate
+  address: 'Mision Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: San Quintín
+  name: Oficina San Quintín
+  address: 'Oficinas del Ayuntamiento #S/N, Calle Primera, San Quintín, 22940'
+scenarios:
+- name: Jóvenes
+  requirements:
+  - text: Copia de la INE vigente y actualizada con la dirección del comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Cotización original con antigüedad no mayor a un mes (a nombre de GOBIERNO DEL ESTADO DE BAJA CALIFORNIA,
+      el proveedor debe de aceptar cheque y la cotización debe de estar firmada en tinta azul y sellada)
+    cites:
+    - source: retys
+  - text: Copia de comprobante de domicilio con antigüedad no mayor a 3 meses (en caso de estar a nombre de los
+      padres, copia del acta de nacimiento, en caso de estar a nombre de otra persona se requiere una carta en hoja
+      blanca escrita a mano en tinta azul en donde la persona le de autorización al solicitante de emprender su
+      negocio en su domicilio; especificando el domicilio y copia de la INE de la persona cuyo nombre aparece en
+      el comprobante)
+    cites:
+    - source: retys
+  - text: Copia del CURP
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal del Proveedor (no se acepta el Régimen Simplificado de Confianza)
+    cites:
+    - source: retys
+  - text: NO estar registrado en HACIENDA
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de INJUVE
+    - Llenar y entregar documentación requerida
+    - Se le agenda una cita al beneficiario para la entrega de su equipo, indicando fecha, hora y lugar de entrega
+  notes: Jóvenes
+legal_basis:
+- source: ley1
+  pinpoint: 83, Fracción XXIX.
+- source: ley2
+  pinpoint: 30, Fracción VI.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de INJUVE
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar y entregar documentación requerida
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se le agenda una cita al beneficiario para la entrega de su equipo, indicando fecha, hora y lugar de entrega
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 486: Joven Empleate'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/486
+    version_date: 28/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento interno del Instituto de la Juventud del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

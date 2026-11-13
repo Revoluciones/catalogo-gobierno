@@ -1,0 +1,152 @@
+id: mx-bcn-retys-379-patente-de-introductor-compra-venta-de-ganado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Patente de Introductor Compra - Venta de Ganado
+summary: Otorgar registros y revalidaciones de patente de introductor compra - venta de ganado, a todo aquel que
+  se dedique a la introducción compra - venta de ganado.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 379
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/379
+  homoclave: BC-SADER-006
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando un ganadero requiere introducir al Estado ganado para engorda y/o sacrificio
+result: Registro de la Patente de Introductor, compra-venta de ganado
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Ganadería
+  address: 'Carretera Mexicali- San Luis Rio Colorado Km 22.5 #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Diego  Rivera #33, Zona Urbana Rio Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Subdelegación Zona Sur
+  address: 'Carretera Transpeninsular Punta Prieta Guerrero Nego Km 124+800 #S/N, Ejido El Costeño, Villa Jesús
+    María, Ensenada, 22991'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Calle 10 #130, Fraccionamiento San Quintín, San Quintín, 22940'
+scenarios:
+- name: Expedir registros de introductor compra-venta de ganado
+  requirements:
+  - text: Acreditar legal propiedad o usufructo en favor del solicitante del uso del terreno donde se desarrolla
+      la actividad ganadera (copia)
+    cites:
+    - source: retys
+  - text: Registro federal del contribuyente (copia)
+    cites:
+    - source: retys
+  - text: Solicitud de registro de patente comercial, patente introductor compra-venta de ganado (original
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la empresa (en caso de persona moral / original y copia)
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía (ine, pasaporte mexicano / original y copia)
+    cites:
+    - source: retys
+  - text: Nombramiento del representante legal vigente (original y copia)
+    cites:
+    - source: retys
+  - text: Formato de solicitud de registro de introductor, compra-venta de ganado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1995
+  modes:
+  - name: Presencial
+    steps:
+    - El ganadero solicita directamente su patente o revalidación a la sección de registros de la SADER
+    - Se revisa que la documentación este completa y se captura dentro del sistema de trámites y servicios
+    - Se entrega patente de introductor compra-venta de ganado
+  notes: Expedir registros de introductor compra-venta de ganado
+- name: Revalidar registros de introductor compra-venta de ganado
+  requirements:
+  - text: Presentar la patente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ganadero solicita directamente su patente o revalidación a la sección de registros de la SADER
+    - Se revisa que la documentación este completa y se captura dentro del sistema de trámites y servicios
+    - Se entrega patente de introductor compra-venta de ganado
+  notes: Revalidar registros de introductor compra-venta de ganado
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4 y Artículos 51 al 55
+- source: ley2
+  pinpoint: 56, fraccón XVI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ganadero solicita directamente su patente o revalidación a la sección de registros de la SADER
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se revisa que la documentación este completa y se captura dentro del sistema de trámites y servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se entrega patente de introductor compra-venta de ganado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 379: Patente de Introductor Compra - Venta de Ganado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/379
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Agropecuario del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria De Agricultura Y Desarrollo Rural De B.C.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedir y Revalidar Registros de Introductor Compra - Venta de Ganado. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

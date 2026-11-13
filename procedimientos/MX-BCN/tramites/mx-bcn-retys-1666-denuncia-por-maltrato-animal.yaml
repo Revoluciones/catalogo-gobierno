@@ -1,0 +1,117 @@
+id: mx-bcn-retys-1666-denuncia-por-maltrato-animal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Denuncia por Maltrato Animal
+summary: Recepción y canalización de denuncias a las autoridades competentes por faltas administrativas o penales
+  contra animales domésticos.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 1666
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1666
+  homoclave: BC-SMADS-063
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera realizar una denuncia de maltrato animal.
+result: El ingreso formal de la denuncia por maltrato animal
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Derecho y Bienestar Animal
+  address: 'Dos Oriente #16, Ciudad Industrial , Tijuana, 22444'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de denuncia por maltrato animal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/9678
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al enlace https://www.bajacalifornia.gob.mx/medio_ambiente/ y presentar denuncia por maltrato animal
+    - Se recibe la denuncia, se analiza y se turna a vía oficio a la autoridad correspondiente
+    - Se emite una resolución para atender el caso de maltrato animal
+  - name: Presencial
+    steps:
+    - Presentar solicitud en instalaciones de la Secretaria de Medio Ambiente y Desarrollo Sustentable
+    - Se analiza la denuncia y se turna a vía oficio a la autoridad correspondiente
+    - Se emite una resolución para atender el caso de maltrato animal
+  notes: Promover la denuncia ciudadana de cualquier acto de maltrato o crueldad injustificada que puedan afectar
+    el bienestar de los animales domésticos
+legal_basis:
+- source: ley1
+  pinpoint: Articulo IV, Parráfo 5
+- source: ley2
+  pinpoint: Artículo 46, Fracción 5
+- source: ley3
+  pinpoint: Artículo 1 al 66
+- source: ley4
+  pinpoint: Artículo 39 Quintus - Fracción V
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al enlace https://www.bajacalifornia.gob.mx/medio_ambiente/ y presentar denuncia por maltrato
+    animal
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se recibe la denuncia, se analiza y se turna a vía oficio a la autoridad correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se emite una resolución para atender el caso de maltrato animal
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1666: Denuncia por Maltrato Animal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1666
+    version_date: 02/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Protección a los Animales Domésticos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Medio Ambiente y Desarrollo Sustentable
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

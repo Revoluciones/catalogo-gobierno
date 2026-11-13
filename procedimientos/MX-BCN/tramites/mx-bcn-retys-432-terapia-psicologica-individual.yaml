@@ -1,0 +1,154 @@
+id: mx-bcn-retys-432-terapia-psicologica-individual
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Terapia Psicológica Individual
+summary: Terapia psicológica a niñas, niños, adolescentes y adultos para la promoción de cambios o modificaciones
+  en el comportamiento, integración de la identidad y bienestar de la persona y su familia.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 432
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/432
+  homoclave: BC-IPEBC-005
+who_can:
+- Interesado
+- Tutor
+when: Cuando se requiera atención psicológica.
+result: Terapia psicológica
+cost:
+  type: fijo
+  amount_mxn: 250.0
+  text: 'COSTO: $250.00 pesos por sesión.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 dias
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección Médica
+  address: 'Onceava #1753, Mexicali , Mexicali, 21396'
+- municipality: Tijuana
+  name: Dirección Médica
+  address: 'Maclovio Herrera #S/N, Francisco Villa , Tijuana, 22000'
+- municipality: Ensenada
+  name: Dirección Médica
+  address: 'Floresta, Locales 15 y 16, Plaza Elva #321, Obrera, Ensenada, 22830'
+scenarios:
+- name: Derechohabiente IMSS, ISSSTE, ISSSTECALI, ISESALUD
+  requirements:
+  - text: Original y copia de Hoja de Derivación del Centro de Salud u Hospital General (Requisito Indispensable)
+    cites:
+    - source: retys
+  - text: 2 copias de la Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  - text: Original y 2 copias del acta de nacimiento.
+    cites:
+    - source: retys
+  - text: Original y 2 copias del comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Identificación Oficial vigente (INE, Pasaporte Mexicano, Licencia de Conducir,
+      Cartilla Militar)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de urgencias para apertura de expediente.
+    - Realiza intervención y canaliza a filtro de grupo (familiar o individual)
+    - Acude a programación de cita subsecuente.
+  notes: Cualquier derechohabiente del IMSS, ISSSTE, ISSSTECALI, ISESALUD
+- name: Público en General
+  requirements:
+  - text: Original y 2 copias de Identificación Oficial (INE, Pasaporte Mexicano, Licencia de Conducir, Cartilla
+      Militar)
+    cites:
+    - source: retys
+  - text: Original y 2 copias de Acta de Nacimiento.
+    cites:
+    - source: retys
+  - text: Original y 2 copias de comprobante de domicilio.
+    cites:
+    - source: retys
+  - text: 2 copias de Clave Única de Registro de Población (CURP).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude para apertura de historia clínica en el área de urgencias con su Hoja de Derivación del Centro de Salud
+      u Hospital General canalizado por el médico o terapeuta tratante.
+    - Realiza intervención y canaliza a terapia familiar individual.
+    - Realiza pago correspondiente.
+    - Acude a programación de cita.
+  notes: Público en General
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 2 y 4
+- source: ley2
+  pinpoint: Artículo 4, Fracción IV, Artículos 29 y 30
+- source: ley3
+  pinpoint: Artículo 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de urgencias para apertura de expediente.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realiza intervención y canaliza a filtro de grupo (familiar o individual)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acude a programación de cita subsecuente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 432: Terapia Psicológica Individual'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/432
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Sesión de Terapia Psicológica Individual. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

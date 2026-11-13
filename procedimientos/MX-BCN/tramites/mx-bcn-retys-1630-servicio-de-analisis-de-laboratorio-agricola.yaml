@@ -1,0 +1,128 @@
+id: mx-bcn-retys-1630-servicio-de-analisis-de-laboratorio-agricola
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Análisis de Laboratorio Agrícola
+summary: Análisis de fertilidad y salinidad en suelos agrícolas Análisis de salinidad en agua de riego agrícola
+  Análisis de humedad y proteina en grano
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 1630
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1630
+  homoclave: BC-SADER-010
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Se recomienda realizar el análisis previo al periodo de siembra para la fertilidad y salinidad en suelo agrícola
+  y agua
+result: Informe de resultados
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Costos *Análisis de Fertilidad y Salinidad $2,534.12. Salinidad $882.36 Fertilidad $882.36
+    Agua para riego $1,176.47 Calidad de granos de trigo $352.94 *Laboratorio de microbiología: $4,4434.72 Salmonella:
+    $886.94 Coliformes: $633.53 Coliformes totales: $633.53 E. coli 0157H7: $886.94 Mesofílicos:$633.53 Hongos y
+    levaduras:$633.53 Estafilococo:$633.53 Listeria:$886.94 Los costos pueden variar de mes a mes.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 7 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 dias naturales
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: C.C.I.I.A.A.
+  address: 'Parcela 29 #s/n, Ejido Sinaloa, Mexicali, 21620'
+scenarios:
+- name: Solicitud de servicio informe de resultados
+  requirements:
+  - text: Contar con la documentación necesaria para recibir las muestras
+    cites:
+    - source: retys
+  - text: Cumplir con las especificaciones establecidos por el laboratorio para la entrega de muestras
+    cites:
+    - source: retys
+  - text: Entrega de informe de resultados de forma física o electrónica
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar pago de laboratorio
+    - Presentar muestra
+  notes: Solicitud de servicio informe de resultados
+- name: Solicitud de servicio de laboratorio
+  requirements:
+  - text: Revisión de catálogo de servicios
+    cites:
+    - source: retys
+  - text: Pago de servicio de analista de laboratorio
+    cites:
+    - source: retys
+  - text: Solicitud de servicio de analisis
+    cites:
+    - source: retys
+  - text: Recepción de muestras
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar ficha de pago de servicio
+    - Presentar muestra de acuerdo a analisis a realizar
+  notes: Solicitud de servicio de laboratorio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, fracción II, Inciso F
+- source: ley2
+  pinpoint: Articulo 21, Fracción VII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar pago de laboratorio
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar muestra
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1630: Servicio de Análisis de Laboratorio Agrícola'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1630
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno De La Secretaria De Agricultura y Desarrollo Rural de B.C.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

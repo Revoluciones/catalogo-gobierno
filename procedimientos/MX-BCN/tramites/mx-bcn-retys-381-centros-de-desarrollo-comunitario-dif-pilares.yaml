@@ -1,0 +1,203 @@
+id: mx-bcn-retys-381-centros-de-desarrollo-comunitario-dif-pilares
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Centros de Desarrollo Comunitario DIF PILARES.
+summary: 'Brindar talleres, cursos y servicios en los distintos centros comunitarios con el objetivo de impulsar
+  una política educativa, comunitaria e integral para regenerar el tejido social a través de 5 Ejes principales:
+  Educación, Deporte, Economía, Salud, Cultura y Paz, los cuales abordan aspectos fundamentales para el Desarrollo
+  Integral de la Comunidad y la Familia.'
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 381
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/381
+  homoclave: BC-DIF-016
+who_can:
+- Interesado
+- Tutor
+when: Cuando se aperturen las inscripciones a los cursos y talleres
+result: Constancia
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Los cursos pueden variar dependiendo, no tienen costo de inscripción; sin embargo, si hay
+    una cuota de recuperación para el pago de los instructores que va de los $88.00 a $165.00 pesos en base a las
+    Reglas de Operación 2026 del Departamento de Desarrollo Comunitario y Asistencia Social en atención al Programa
+    de Centros de Desarrollo Comunitario DIF Pilares 2026. En algunos CDC´s DIF PILARES son gratuitos.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES Baja California
+  address: 'Avenida San Luis Potosí #2000, Baja California, Mexicali, 21130'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, Josefa Ortiz de Dominguez
+  address: 'Av. Gildardo Magaña y Francisco Ortiz de Dominguez #s/n, Josefa Ortiz de Dominguez, Mexicali, 21220'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, Constitución
+  address: 'Av. Manuel Payno Flores  #2188, Constitución, Mexicali, 21250'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, Valle de Puebla
+  address: 'De la Ceramica y Av. Tlaxcalteca #s/n, Valle de Puebla, Mexicali, 21395'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, Salinas
+  address: 'Bahía Lucerna y Av. Rosario  #s/n, Carlos Salinas de Gortari , Mexicali, 21854'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, Colonial
+  address: 'Av. Villa Granada y Av. Villa Santa Lucia  #s/n, El colonial, Mexicali, 21137'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario, DIF PILARES Robledo
+  address: 'Calzada robledo entre Av. Granados y Cerezos  #s/n, Robledo, Mexicali, 21384'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario, DIF PILARES Orizaba
+  address: 'Av. España esq. Birmania  #s/n, Conjunto Urbano , Mexicali, 21160'
+- municipality: Mexicali
+  name: Centro de Desarrollo Comunitario DIF PILARES, 18 de Marzo
+  address: 'Av. Cabildo y Río Acaponeta  #s/n, Col, Nueva 18 de marzo, Mexicali, 21390'
+- municipality: Mexicali
+  name: Centro de DEsarrollo Comunitario DIF PILARES, Imperial
+  address: 'Av. imperio romano #s/n, Colonia imperial , Mexicali, 21220'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario DIF PILARES, Camino Verde
+  address: 'Av. Baja California #s/n, Camino Verde, Tijuana, 22190'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario DIF PILARES, Mariano Matamoros
+  address: 'Sauce #s/n, El Florido 1 y 2, Tijuana, 22237'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario DIF PILARES Latinos
+  address: 'Uruguayos  #sn, INFONAVIT LATINOS, Tijuana, 22180'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario, DIF PILARES Mariano Matamoros
+  address: 'Chichimeca y palenque  #s/n, Col. Mariano Matamoros Norte, Tijuana, 22206'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario, DIF PILARES Altiplano
+  address: 'Jesus Maria y Jorge Villaseñor  #s/n, Col. Altiplano, Tijuana, 22204'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario, DIF PILARES Mariano Matamoros Sur
+  address: 'Calle Anemona entre Av. Principal y Calla Azafran  #s/n, El Florido IV, Tijuana, 22245'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario, DIF PILARES El Pipila
+  address: 'Av. de la Torres y Av. de las Californias  #s/n, El Pipila , Tijuana, 22206'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitario, DIF PILARES Insurgentes
+  address: 'Av. Libertad y Mexicanidad  #2029, Col. Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Centro de Desarrollo Comunitariol, DIF PILARES Florido
+  address: 'Calle Sauce entre Av. Principal y Calle Umbela  #s/n, Col. El Florido 1, Tijuana, 22237'
+- municipality: Playas de Rosarito
+  name: Centro de Desarrollo Comunitario DIF PILARES,  Playas de Rosarito
+  address: 'Leonardo Armenta #s/n, Poblado Mazatlán, Playas de Rosarito, 22707'
+- municipality: Playas de Rosarito
+  name: Centro de Desarrollo Comunitario, DIF PILARES Lucio Blanco
+  address: 'Calle Quintana Roo y Av. Poliducto  #s/n, Col. Ampliación Lucio Blanco, Playas de Rosarito, 22706'
+- municipality: San Quintín
+  name: Centro de Desarrollo Comunitario DIF PILARES, San Quintín
+  address: 'Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento Popular San Quintín, San Quintín, 22930'
+- municipality: San Quintín
+  name: Centro de Desarrollo Comunitario, DIF PILARES Nueva Era
+  address: 'Av. Cesar Flores Ruiz y Calle Los Ostiones #s/n, Col. Nueva Era , San Quintín, 22930'
+- municipality: San Quintín
+  name: Centro de Desarrollo Comunitario DIF PILARES, Bahia de los Ángeles
+  address: 'Carretera Estatal, parcela #26  #26, Poblado Bahia de los Ángeles, San Quintín, 22980'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE o pasaporte vigente)
+    cites:
+    - source: retys
+  - text: Comprobante de Domicilio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Desarrollo Comunitario DIF PILARES más cercano.
+    - Solicitar información sobre los días y horario en que se imparten los cursos.
+    - Asistir en el horario y días indicados.
+    - Se explica al ciudadano los cursos con los que cuenta el Centro de Desarrollo Comunitario DIF PILARES.
+    - Se inscribe al ciudadano en el curso que solicite
+    - El ciudadano realiza el pago correspondiente (en caso de requerirse).
+    - Se entrega constancia de finalización del curso.
+  notes: Recopilación de documentos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 1
+- source: ley2
+  pinpoint: Artículo 33
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Desarrollo Comunitario DIF PILARES más cercano.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar información sobre los días y horario en que se imparten los cursos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Asistir en el horario y días indicados.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se explica al ciudadano los cursos con los que cuenta el Centro de Desarrollo Comunitario DIF PILARES.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se inscribe al ciudadano en el curso que solicite
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: El ciudadano realiza el pago correspondiente (en caso de requerirse).
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se entrega constancia de finalización del curso.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 381: Centros de Desarrollo Comunitario DIF PILARES.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/381
+    version_date: 15/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

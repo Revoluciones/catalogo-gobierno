@@ -1,0 +1,196 @@
+id: mx-bcn-retys-1606-revision-y-aprobacion-de-proyectos-de-agua-potable
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revisión y Aprobación de Proyectos de Agua Potable y/o Alcantarillado Sanitario
+summary: Revisión técnica de los proyectos de agua potable, alcantarillado sanitario y obras complementarias (líneas
+  de conducción, tanques, bombeos, acueductos, colectores etc.), elaborados por particulares y/u otros Organismos
+  para autorización de su construcción. Este trámite consta de 2 etapas, la primera es la revisión del proyecto
+  que consiste en analizar el mismo las veces que sean necesarias hasta que el proyecto no presente errores técnicos
+  para posteriormente pasar a la segunda etapa de la aprobación.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1606
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1606
+  homoclave: BC-CESPT-028
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo requiera del servicio
+result: Oficio de Autorización de proyecto y planos firmados
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: En predios de hasta 5,000 m² de superficie, por plano: $1,903.34 pesos más, por cada m²
+    de superficie adicional, por proyecto: $0.06 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: GENERAL
+  requirements:
+  - text: 'PRIMERA ETAPA - REVISIÓN:'
+    cites:
+    - source: retys
+  - text: Presentar solicitud firmada por el propietario del terreno o representante legal en donde se especifique
+      quien será el proyectista que dará seguimiento al trámite
+    cites:
+    - source: retys
+  - text: Opinión técnica de agua potable y/o alcantarillado sanitario, vigente y Puntos de Conexión
+    cites:
+    - source: retys
+  - text: Carpeta que contenga memoria descriptiva, memoria de cálculo de agua potable y alcantarillado sanitario
+      y sus respectivos catálogos de conceptos
+    cites:
+    - source: retys
+  - text: Planos en papel bond de los proyectos de las redes de agua potable y alcantarillado sanitario
+    cites:
+    - source: retys
+  - text: 'SEGUNDA ETAPA - APROBACIÓN:'
+    cites:
+    - source: retys
+  - text: Dos juegos de planos autorizados en papel plástico o herculene
+    cites:
+    - source: retys
+  - text: CD con archivos digitalizados de los planos elaborados en el programa AutoCAD
+    cites:
+    - source: retys
+  - text: Recibo de pago por la aprobación de proyectos según la Ley de Ingresos para el Estado de Baja California
+      vigente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales.
+    - Pasar al área de Archivo a solicitar la revisión de proyectos de agua potable o alcantarillado sanitario y
+      presentar los requisitos solicitados
+    - Archivo realiza una orden foliada y la entrega al solicitante
+    - Posteriormente se realizan las revisiones correspondientes a los proyectos para saber si cumple técnicamente
+      conforme a la normatividad (SIDURT)
+    - Si no cumple con la Normatividad, la Coordinación de Proyectos de Obra emite un escrito con las observaciones
+      y le notifica a la persona solicitante vía telefónica para que pase por su proyecto.
+    - La persona solicitante deberá realizar las correcciones indicadas y reingresar el proyecto a la Coordinación
+      de Proyectos de Obra para una nueva revisión.
+    - Si cumple con la normatividad, la Coordinación de Proyectos de Obra emite Orden de Pago por los derechos de
+      revisión, conforme a la Ley de Ingresos del Estado de Baja California vigente y le notifica a la persona solicitante
+      vía telefónica que pase por la Orden de Pago.
+    - La persona solicitante debe acudir por la orden de pago y pasar a las cajas a realizar el pago del trámite.
+    - Una vez realizado el pago, la persona solicitante debe acudir a la Coordinación de Proyectos de Obra a entregar
+      copia del recibo de pago, dos juegos de planos en plástico para la obtención de firmas y CD con archivos digitales
+      (dwg)
+    - La Coordinación de Proyectos de Obra elabora el oficio de respuesta y se comunica nuevamente con la persona
+      solicitante para que pase a recoger los documentos
+    - La persona solicitante debe acudir al Departamento de Obras a recoger el oficio de aprobación y los planos
+      firmados.
+  notes: 'El tramite consiste en dos etapas; la primera es de revisión y la segunda de aprobación. En cada una se
+    requiere los siguientes requisitos:'
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo a solicitar la revisión de proyectos de agua potable o alcantarillado sanitario
+    y presentar los requisitos solicitados
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Archivo realiza una orden foliada y la entrega al solicitante
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Posteriormente se realizan las revisiones correspondientes a los proyectos para saber si cumple técnicamente
+    conforme a la normatividad (SIDURT)
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si no cumple con la Normatividad, la Coordinación de Proyectos de Obra emite un escrito con las observaciones
+    y le notifica a la persona solicitante vía telefónica para que pase por su proyecto.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona solicitante deberá realizar las correcciones indicadas y reingresar el proyecto a la Coordinación
+    de Proyectos de Obra para una nueva revisión.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Si cumple con la normatividad, la Coordinación de Proyectos de Obra emite Orden de Pago por los derechos
+    de revisión, conforme a la Ley de Ingresos del Estado de Baja California vigente y le notifica a la persona
+    solicitante vía telefónica que pase por la Orden de Pago.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: La persona solicitante debe acudir por la orden de pago y pasar a las cajas a realizar el pago del trámite.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Una vez realizado el pago, la persona solicitante debe acudir a la Coordinación de Proyectos de Obra a
+    entregar copia del recibo de pago, dos juegos de planos en plástico para la obtención de firmas y CD con archivos
+    digitales (dwg)
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: La Coordinación de Proyectos de Obra elabora el oficio de respuesta y se comunica nuevamente con la persona
+    solicitante para que pase a recoger los documentos
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: La persona solicitante debe acudir al Departamento de Obras a recoger el oficio de aprobación y los planos
+    firmados.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1606: Revisión y Aprobación de Proyectos de Agua Potable y/o Alcantarillado Sanitario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1606
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

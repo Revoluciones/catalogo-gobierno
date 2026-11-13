@@ -1,0 +1,180 @@
+id: mx-bcn-retys-1735-expedicion-revalidacion-de-registro-de-agente-cons
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición / Revalidación de Registro de Agente Consultor Capacitador.
+summary: Se reciben y revisan los documentos conforme a los requisitos establecidos y en el caso de revalidación
+  haber cumplido requerimientos establecidos en la normatividad vigente. Si cumple se le otorga un número de registro.
+  El presente registro es mediante convocatoria en el mes de junio.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 1735
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1735
+  homoclave: BC-SGG-020
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando quieran ejercer actividades de asesoría, capacitación, estudios de vulnerabilidad y riesgos en materia
+  de Protección Civil.
+result: Oficio de aprobación y número de registro.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Expedición $4,538.00 Revalidación: $2,269.00'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 2 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Estatal de Protección Civil
+  address: 'Panfilo Natera #6400,  Francisco Villa, Tijuana, 22615'
+scenarios:
+- name: Registro de Agente Consultor Capacitador en Protección Civil
+  requirements:
+  - text: Solicitud por medio de escrito libre, anexando el formato autorizado y publicado en la página electrónica
+      oficial de la Coordinación Estatal, donde se incluyan los datos generales de la persona física solicitante.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11574
+  - text: Copia del pago de derechos del registro y presentar recibo original para cotejo.
+    cites:
+    - source: retys
+  - text: Original y una copia simple una identificación oficial.
+    cites:
+    - source: retys
+  - text: Currículum vitae en un máximo de 2 cuartillas
+    cites:
+    - source: retys
+  - text: Copia de Registro Federal de Contribuyentes.
+    cites:
+    - source: retys
+  - text: Original y una copia de comprobante de domicilio con una antigüedad de 90 días naturales, anteriores a
+      la solicitud y/o original y copia de contrato de arrendamiento vigente que indiquen que el solicitante reside
+      en el Estado.
+    cites:
+    - source: retys
+  - text: Original y copia del certificado de curso formación de instructores (as) expedido por una institución
+      reconocida u originales y copias de documentos que comprueben una experiencia mínima de tres años como docente
+      en una institución educativa de nivel medio superior, técnico o superior; u original y copia de la constancia
+      del Consejo Nacional de Normalización y Certificación de Competencias Laborales del curso Formación de Capital
+      Humano.
+    cites:
+    - source: retys
+  - text: 'Original y copia de alguno de los documentos siguientes: - Constancia o certificado vigente de la Escuela
+      Nacional de Protección Civil (ENAPROC) del curso Técnico Básico en Gestión Integral de Riesgo (TBGIR), o similar
+      equivalente. - Certificado de acreditación en la materia emitido por una institución educativa de nivel superior
+      o por el organismo nacional de normalización de competencia laboral en materia de protección civil. - Constancia
+      del Diplomado en Protección Civil emitido por una Universidad reconocida por la Coordinación Estatal.'
+    cites:
+    - source: retys
+  - text: Carta descriptiva de los cursos a impartir, incluyendo desglose de temas, duración y método para la evaluación
+      del aprovechamiento.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11531
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Coordinación Estatal de Protección Civil cuando la convocatoria lo indique.
+    - Presentar originales y copia de los requisitos establecidos.
+    - Realizar pago de derechos.
+    - Recoger respuesta entre los siguientes 5 a 10 días hábiles.
+  notes: Particulares que quieran ejercer actividades de asesoría, capacitación, así como elaboración de programas
+    internos de protección civil, estudios de vulnerabilidad y riesgos en materia de protección civil.
+legal_basis:
+- source: ley1
+  pinpoint: '-'
+- source: ley2
+  pinpoint: Artículo 31
+- source: ley3
+  pinpoint: Artículo 18, fracción VI, Inciso E, numeral 1 y 2
+- source: ley4
+  pinpoint: Artículo 90
+- source: ley5
+  pinpoint: Artículo 44
+- source: ley6
+  pinpoint: Artículos 86 y 87
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Coordinación Estatal de Protección Civil cuando la convocatoria lo indique.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar originales y copia de los requisitos establecidos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar pago de derechos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recoger respuesta entre los siguientes 5 a 10 días hábiles.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1735: Expedición / Revalidación de Registro de Agente Consultor Capacitador.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1735
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Guía para el Registro y Actividades de Agentes Consultores Capacitadores en Protección Civil, la cual
+      fue publicada en el Periódico Oficial el 14 de junio del 2019.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California POE 06-diciembre-2021
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos para el Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno POE 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro de Agente Consultor Capacitador en Protección Civil. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

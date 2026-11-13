@@ -1,0 +1,138 @@
+id: mx-bcn-retys-819-analisis-de-solicitud-para-exencion-de-tramite-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Análisis de Solicitud para Exención de Trámite de Permiso de Descarga de Agua Residuales
+summary: Este trámite evalúa si puedes obtener una exención del permiso de descarga de agua residual. Se revisa
+  el manejo del agua y el estado de la planta de tratamiento, considerando posibles retrasos por problemas imprevistos
+  o fallos en el manejo, y se asegura que se cumpla con las normativas antes de permitir la descarga a la red de
+  alcantarillado.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 819
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/819
+  homoclave: BC-CESPM-038
+who_can:
+- Representante Legal
+when: Cuando requiera el trámite
+result: Reporte de análisis
+cost:
+  type: variable
+  amount_mxn: 1458.75
+  text: 'COSTO VARIABLE: $ 1,458.75 el costo del servicio variará durante el ejercicio 2026 de acuerdo A la actualización
+    por la variación que tenga el Índice Nacional de Precios y Cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Presentar solicitud escrita y/o electrónica informando nombre, domicilio, RFC, giro o actividad de la
+      empresa (copia de poder notarial, solo si es diferente al que lo solicito inicialmente), y justificación que
+      sustente la solicitud de la prorroga
+    cites:
+    - source: retys
+  - text: Nombre de la persona o representante legal a quien saldrá la prorroga
+    cites:
+    - source: retys
+  - text: No. de cuenta de agua potable.
+    cites:
+    - source: retys
+  - text: No. de empelados
+    cites:
+    - source: retys
+  - text: Cantidad que producción diaria o mensual (anotar si es por temporadas).
+    cites:
+    - source: retys
+  - text: Pago del servicio. Pago por la prórroga.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+      de la prorroga
+    - Realizar el pago y presentar copia a la hora de presentar la solicitud de la exención
+    - Presentar la solicitud en ONCA agregando el sustento el usuario por si propio o por un responsable técnico,
+      debe recabar los datos para sustentar la solicitud de la prorroga
+    - Técnico suficiente para la exención
+    - ONCA recibirá y revisara el documento en caso de ser necesario solicitara información adicional y/o en su
+      caso programara una visita confirmativa de datos.
+    - Una vez que ONCA evalué la información y en su caso verifique que os datos técnico emitirá su dictamen y/o
+      la exención le comunicara al usuario para que pase por su exención.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: Art. 9, Punto 8 Inciso u)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+    de la prorroga
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago y presentar copia a la hora de presentar la solicitud de la exención
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en ONCA agregando el sustento el usuario por si propio o por un responsable técnico,
+    debe recabar los datos para sustentar la solicitud de la prorroga
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Técnico suficiente para la exención
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: ONCA recibirá y revisara el documento en caso de ser necesario solicitara información adicional y/o en
+    su caso programara una visita confirmativa de datos.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez que ONCA evalué la información y en su caso verifique que os datos técnico emitirá su dictamen
+    y/o la exención le comunicara al usuario para que pase por su exención.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 819: Análisis de Solicitud para Exención de Trámite de Permiso de Descarga de Agua Residuales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/819
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Análisis de Solicitud para Exención de Trámite de Permiso de Descarga de Agua Residual.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

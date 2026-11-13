@@ -1,0 +1,223 @@
+id: mx-bcn-retys-652-revalidacion-de-licencia-de-conducir
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revalidación de Licencia de Conducir
+summary: Efectuar la revalidación con o sin cambio de datos de licencias para conducir vehículos.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 652
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/652
+  homoclave: BC-SH-005
+who_can:
+- Interesado
+when: Cuando haya expirado o este por vencer su vigencia (máximo 90 días de anticipación).
+result: Licencia de conducir
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Octubre de 2026. De automovilista con vigencia: 3 años $1,000.68 5 años $1,334.24
+    Motociclista con vigencia: 3 años $1,000.68 5 años $1,334.24 Chofer "C" con vigencia: 3 años $1,159.74 5 años
+    $1,546.33 Chofer "A", "B" Y "D $1,994.51 Licencia de conducir de Automovilista o Motocicletas (16 años) $675.60
+    *Los costos pueden variar dependiendo de la fecha de cumpleaños del solicitante.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: De 3 a 5 Años.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Volanta CESPM Calle Novena
+  address: 'Calle Novena y Palmira #SN, Calles (Poblado Compuertas), Mexicali, 21226'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Tijuana
+  name: Oficinas de Gobierno del Estado en Tijuana
+  address: 'Vía rápida oriente #S/N, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Presentar en original y copia la licencia vencida o por vencer (90 días antes), y en caso de extravío
+      una identificación oficial con fotografía vigente (INE, pasaporte mexicano vigente, cédula profesional, matrícula
+      consular, cartilla militar ).
+    cites:
+    - source: retys
+  - text: En caso de cambio de domicilio, presentar en original y copia comprobante de domicilio actual.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia certificado médico, expedido por institución pública o privada de salud
+      (aplica para personas de 60 años en adelante).
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita en https://citas.ebajacalifornia.gob.mx/
+    - Acudir a las oficinas de Recaudación de Rentas del Estado con previa cita (agendar cita en el portal)
+    - Pasa a módulo de captura de datos
+    - Captura y confirma datos
+    - Pasa a cajas para realizar el pago correspondiente
+    - Pasa al módulo de entrega de licencias a recoger su licencia de conducir
+    - Revisa y confirma que los datos son correctos, firmar el documento una vez que válida los datos
+  notes: Requisitos para obtener la revalidación de licencia de conducir
+- name: Licencias de conducir para choferes.
+  requirements:
+  - text: Cita
+    cites:
+    - source: retys
+  - text: Presentar en original y copia la licencia vencida o por vencer (90 días antes), y en caso de extravío
+      una identificación oficial con fotografía vigente (INE, pasaporte mexicano vigente, cédula profesional, matrícula
+      consular, cartilla militar ).
+    cites:
+    - source: retys
+  - text: En caso de cambio de domicilio, presentar en original y copia comprobante (no mayor a tres meses de antigúedad)
+      de domicilio actual
+    cites:
+    - source: retys
+  - text: Presentar en original y copia certificado médico, expedido por institución pública o privada de salud.
+    cites:
+    - source: retys
+  - text: Acreditar no haber sido condenado por sentencia ejecutoriada por manejar vehículo de motor en estado de
+      ebriedad o bajo el influjo de drogas o enervantes en los últimos cinco años
+    cites:
+    - source: retys
+  - text: Presentar examen antidoping
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita en https://citas.ebajacalifornia.gob.mx/
+    - Acudir a las oficinas de Recaudación de Rentas del Estado con previa cita (agendar cita en el portal)
+    - Pasa a módulo de captura de datos
+    - Captura y confirma datos
+    - Pasa a cajas para realizar el pago correspondiente
+    - Pasa al módulo de entrega de licencias a recoger su licencia de conducir
+    - Revisa y confirma que los datos son correctos, firmar el documento una vez que válida los datos
+  notes: Revalidación de licencias de conducir para choferes.
+legal_basis:
+- source: ley1
+  pinpoint: 10, Fracción I, Inciso B
+- source: ley2
+  pinpoint: Artículo 46
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haz tu cita en https://citas.ebajacalifornia.gob.mx/
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado con previa cita (agendar cita en el portal)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasa a módulo de captura de datos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Captura y confirma datos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasa a cajas para realizar el pago correspondiente
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Pasa al módulo de entrega de licencias a recoger su licencia de conducir
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Revisa y confirma que los datos son correctos, firmar el documento una vez que válida los datos
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 652: Revalidación de Licencia de Conducir'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/652
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA PARA EL EJERCICIO FISCAL 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que regula los servicios de control vehicular en el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

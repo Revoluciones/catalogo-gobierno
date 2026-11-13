@@ -1,0 +1,233 @@
+id: mx-bcn-retys-1881-programa-estatal-de-apoyo-para-pesca-deportiva
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Estatal de Apoyo para PESCA DEPORTIVA
+summary: Trámite para la Recepción de Solicitudes para aplicar a los beneficios del Programa Estatal de Apoyo para
+  el Sector de Pesca y Acuacultura, enfocado en la PESCA DEPORTIVA a través del apoyo subsidiario a la inversión
+  en bienes de capital estratégico para equipamiento, mantenimiento y particularmente para eficientizar la operación
+  con énfasis en el incremento o mejora de servicios.
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1881
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1881
+  homoclave: BC-SEPESCA-006
+who_can:
+- Representante Legal
+- Interesado
+when: 'Para año actual el periodo de Recepción de Solicitud a Cerrado, para más información consultar en: https://www.bajacalifornia.gob.mx/sepesca/Servicios'
+result: Apoyo subsidiario a la inversión en bienes de capital estratégico para equipamiento, mantenimiento y ordenamiento.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: En el periodo que permanezca abierta la Ventanilla de Recepción de Solicitudes; en Lineamientos.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Departamento de Pesca Deportiva
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Subcomponente Adquisición de Equipamiento
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del PROGRAMA ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Permiso de Turismo Náutico.
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: El Apoyo podrá ser destinado para la adquisición de artes de pesca deportiva, equipo de seguridad en el
+    mar, equipo de navegación, equipo de conservación y/o remolque.
+- name: Subcomponente Servicio de Mantenimiento
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del PROGRAMA ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Permiso de Turismo Náutico.
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: El Apoyo podrá ser destinado a reparaciones menores de embarcaciones, motores dentro y fuera de borda y/o
+    remolques.
+- name: Subcomponente Ordenamiento y/o Reconversión
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del PROGRAMA ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: El recurso deberá ser destinado para el pago de trámites del permiso de turismo náutico (modalidad de Pesca
+    Deportiva).
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30 fracción XV, 45 fracción I, XII y XIII
+- source: ley2
+  pinpoint: Artículo 8 fracción I y XVIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registro de Solicitud en Línea
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Carga de Documentos de Requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Validación de Expediente para Asignación de Folio Estatal del Programa
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Dictaminación de Expediente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1881: Programa Estatal de Apoyo para PESCA DEPORTIVA'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1881
+    version_date: 29/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Pesca y Acuacultura Sustentables para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Estatal de Apoyo para el Sector de Pesca y Acuacultura, COMPONENTE PESCA DEPORTIVA.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

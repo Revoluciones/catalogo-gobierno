@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://compartido.org/catalogo/esquema/reporte.schema.json",
+  "title": "Reporte: cómo te fue de verdad",
+  "description": "Lo que una persona vivió al hacer un procedimiento, con evidencia. Vive en reportes/<id-del-procedimiento>/ y nunca se mezcla con la versión oficial. Se publica sin datos personales.",
+  "type": "object",
+  "required": ["id", "procedure_id", "official_version_checked", "started", "outcome", "steps", "evidence", "review"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "description": "<fecha>-<6 caracteres al azar>, por ejemplo 2026-11-06-k3f9qa"},
+    "procedure_id": {"type": "string"},
+    "official_version_checked": {"type": "string", "format": "date", "description": "last_checked de la versión oficial que la persona tenía enfrente."},
+    "jurisdiction": {"type": "string"},
+    "office": {"type": "string", "description": "Oficina o canal donde lo hiciste (nombre de la oficina, no de la persona que te atendió)."},
+    "started": {"type": "string", "format": "date"},
+    "finished": {"type": ["string", "null"], "format": "date"},
+    "outcome": {"enum": ["lo_obtuve", "me_lo_negaron", "sigo_esperando", "lo_deje"]},
+    "visits": {"type": "integer"},
+    "total_paid_mxn": {"type": ["number", "null"]},
+    "paid_with_receipt_mxn": {"type": ["number", "null"]},
+    "steps": {"type": "array", "items": {
+      "type": "object", "required": ["n", "matched"], "additionalProperties": false,
+      "properties": {
+        "n": {"type": "string", "description": "Paso de la versión oficial, o 'extra' si te pidieron algo que no está."},
+        "matched": {"enum": ["igual", "distinto", "no_paso", "extra"]},
+        "what_happened": {"type": "string"},
+        "waited": {"type": "string"}
+      }
+    }},
+    "extra_requirements": {"type": "array", "items": {"type": "string"}, "description": "Lo que te pidieron y no está en la lista oficial. La lista inscrita en el catálogo oficial obliga a la autoridad."},
+    "irregular_requests": {"type": "array", "items": {"enum": ["pago_sin_recibo", "gestor_obligado", "cita_vendida", "documento_no_previsto", "otro"]}},
+    "evidence": {"type": "array", "items": {
+      "type": "object", "required": ["type", "redacted"], "additionalProperties": false,
+      "properties": {
+        "type": {"enum": ["recibo", "acuse", "folio", "foto", "captura", "correo_oficial", "resolucion", "otro"]},
+        "file": {"type": "string", "description": "Ruta del archivo ya sin datos personales."},
+        "describes_step": {"type": "string"},
+        "redacted": {"type": "boolean", "description": "true solo cuando se taparon nombres, CURP, firmas, caras y domicilios."}
+      }
+    }},
+    "review": {
+      "type": "object", "required": ["state"], "additionalProperties": false,
+      "properties": {
+        "state": {"enum": ["pendiente", "publicado", "rechazado"]},
+        "reviewed_on": {"type": "string", "format": "date"},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}

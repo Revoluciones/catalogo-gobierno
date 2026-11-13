@@ -1,0 +1,130 @@
+id: mx-bcn-tijuana-tj-sgm-0199-registro-de-matrimonio
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: Registro de MATRIMONIO
+summary: Es el trámite mediante el cual dos personas formalizan legalmente su unión ante el Registro Civil, cumpliendo
+  con los requisitos establecidos por la ley.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0199
+who_can:
+- Interesado
+when: Cuando dos personas desean casarse de manera legal.
+result: Certificado
+requirements:
+- text: 'Certificado de Platicas Prematrimoniales (agendar en SDIF al teléfono: 664 382 6262).'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de nacimiento de ambas personas. (Si son extranjeras, debe estar apostillada, legalizada y traducida
+    al español por un perito autorizado).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial vigente de ambas personas. (Si son extranjeras, toda la documentación debe estar
+    traducida por perito autorizado, excepto el pasaporte estadounidense).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: CURP (solo para personas con ciudadanía mexicana).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'Personas divorciadas o viudas: presentar acta de divorcio o de defunción, según el caso. (Si son extranjeras,
+    deben estar apostilladas, legalizadas y traducidas al español por perito autorizado).'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Solicitud de matrimonio, que se obtiene en el Registro Civil al presentar la documentación requerida.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Convenio sobre el régimen patrimonial (separación de bienes o sociedad conyugal), incluido en la solicitud.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Análisis prenupciales (HIV y VDRL) y certificados médicos con vigencia no mayor a 15 días.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Certificados médicos, incluidos en la solicitud. Deben ser firmados y sellados por un laboratorio y médico
+    autorizado.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Cuatro testigos con identificación oficial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Solicitud y formatos para los certificados médicos prenupciales.: 2 UMA ($234.62) · Celebración dentro
+    de las oficinas en horas hábiles.: 5 UMA ($586.55) · Celebración dentro de las oficinas en día inhábil (Sábado):
+    8.75 UMA ($1,026.46) · Celebración a domicilio en horas hábiles.: 22 UMA ($2,580.82) · Celebración a domicilio
+    en horas inhábiles (Lunes a Sábado).: 40 UMA ($4,692.40) · Celebración a domicilio en horas inhábiles (Domingo).:
+    50 UMA ($5,865.50) · Celebración urgente dentro de la oficina en horas hábiles.: 30 UMA ($3,519.30) · Celebración
+    urgente dentro de la oficina en horas inhábiles: 40 UMA ($4,692.40) · Celebración en Instituciones de Salud
+    Pública o Privada: $0.00 · Honorarios por servicio a domicilio en horas hábiles.: 8 UMA ($938.48) · Honorarios
+    por servicio a domicilio en horas inhábiles (Lunes a Sábado): 10 UMA ($1,173.10) · Honorarios por servicio a
+    domicilio (Domingoi): 12 UMA ($1,407.72). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0199: Registro de MATRIMONIO.'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0199
+    version_date: '2026-10-28'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 35 y 94 del Código Civil para el Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20230421_CODCIVIL-2.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículo1 de la Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18, fracción IV de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio
+      Fiscal 2026
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20251230_LEYINGRESOTIJUANA2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos solicitados.'

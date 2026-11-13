@@ -1,0 +1,143 @@
+id: mx-bcn-retys-384-servicios-integrales-de-rehabilitacion-a-personas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicios Integrales de Rehabilitación a Personas con Discapacidad
+summary: Brindar servicio de diagnóstico y tratamiento oportuno a personas con discapacidad y aquellas con riesgo
+  de padecerla a través de un equipo multidisciplinario médico y para-médico.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 384
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/384
+  homoclave: BC-DIF-017
+who_can:
+- Interesado
+- Tutor
+when: Cuando el usuario lo requiera y cumpla con los requisitos
+result: Servicio
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Monto a calcularse. depende del tipo de servicio que se requiera y la condición socioeconómica
+    del paciente.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro de Rehabilitación Integral (CRI Mexicali) DIF Estatal BC
+  address: 'Calzada Cuauhtémoc #384, Fraccionamiento Las Fuentes, Mexicali, 21230'
+- municipality: Tijuana
+  name: Centro de Rehabilitación Integral (CRI Tijuana), DIF Estatal BC
+  address: 'Av. Paseo del Rio esquina Calle Valle  #s/n, Zona del Río 3ra Etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Centro de Rehabilitación Integral (CRI) Ensenada
+  address: 'Av. Francisco González Bocanegra #s/n, Hidalgo, Ensenada, 22880'
+- municipality: Tecate
+  name: Unidad Básica de Rehabilitación en Tecate
+  address: 'Av. Hidalgo y Profesor Gutiérrez Durán  #s/n, Downey, Tecate, 21450'
+- municipality: San Quintín
+  name: Unidad Básica Rehabilitación, San Quintín
+  address: 'Ing. Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento Popular San Quintín, San Quintín, 22340'
+- municipality: San Quintín
+  name: Unidad Básica de Rehabilitación Camalú
+  address: 'Av. Cochimi  #s/n, Ejido Capricornio Camalú, San Quintín, 22910'
+- municipality: San Felipe
+  name: Unidad Básica de Rehabilitación, San Felipe
+  address: 'Av. Bermejo entre Chetumal y Ensenada #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Acta de nacimiento (Copia).
+    cites:
+    - source: retys
+  - text: CURP (copia)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (Copia)
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos (Copia)
+    cites:
+    - source: retys
+  - text: Número de afiliación médica (Si se tiene)(Copia)
+    cites:
+    - source: retys
+  - text: INE (Copia)
+    cites:
+    - source: retys
+  - text: Estudios previos (resumen clínico, radiografías, diagnóstico) en caso de contar con ellos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a alguno de los centros de rehabilitación integral a solicitar el servicio.
+    - Recibir consulta de prevaloración para determinar si es apto para su atención en el centro de rehabilitación
+      integral.
+    - En caso de ser apto para brindarle las terapias el ciudadano agenda cita para consulta con especialista.
+    - Deberá de seguir el plan de tratamiento asignado por el médico especialista.
+    - Se realizará estudio socioeconómico por parte de la institución.
+  notes: Recopilación de documentos para el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4, fracciones I y IX
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a alguno de los centros de rehabilitación integral a solicitar el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recibir consulta de prevaloración para determinar si es apto para su atención en el centro de rehabilitación
+    integral.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de ser apto para brindarle las terapias el ciudadano agenda cita para consulta con especialista.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Deberá de seguir el plan de tratamiento asignado por el médico especialista.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se realizará estudio socioeconómico por parte de la institución.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 384: Servicios Integrales de Rehabilitación a Personas con Discapacidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/384
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

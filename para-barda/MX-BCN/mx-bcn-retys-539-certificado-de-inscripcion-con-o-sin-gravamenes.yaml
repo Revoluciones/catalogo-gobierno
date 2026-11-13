@@ -1,0 +1,148 @@
+id: mx-bcn-retys-539-certificado-de-inscripcion-con-o-sin-gravamenes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Inscripción con o sin Gravámenes
+summary: Documento en donde consta la descripción de un predio, departamento o local que se encuentra inscrito en
+  los archivos registrales, en el que se detalla si este se encuentra libre o con gravamen (embargos, hipotecas,
+  crédito. etc.)
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 539
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/539
+  homoclave: BC-DRPPC-011
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera hacer contar que un predio, departamento o local se encuentra con o sin gravamen
+result: Certificado de Inscripción con o sin gravámenes
+cost:
+  type: variable
+  amount_mxn: 516.0
+  text: 'COSTO VARIABLE: Octubre 2026 $516.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Persona físicas
+  requirements:
+  - text: Llenar formato de solicitud de certificaciones correctamente FMO-8.5.1-02
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/1942
+  - text: Cubrir previamente los derechos
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+    - Seleccionar la opción certificado de libertad de gravámenes
+    - Seleccionar el tipo de consulta
+    - Generar recibo para pago en línea, se coloca el correo electrónico
+    - En un plazo de 5 días el trámite llegara vía correo electrónico
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Llenar el formato FM0-8.5.1-02
+    - Solicitar el volante de pago
+    - Acudir a las oficinas de recaudación para realizar el pago del servicio solicitado
+    - Presentarse con el volante pagado el día que el servidor público haya señalado como fecha de entrega
+  notes: Para la obtención del Certificado de Inscripción con o sin gravamenes
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: 12, fracción IX, inciso A
+- source: ley3
+  pinpoint: 42, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar la opción certificado de libertad de gravámenes
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seleccionar el tipo de consulta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Generar recibo para pago en línea, se coloca el correo electrónico
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En un plazo de 5 días el trámite llegara vía correo electrónico
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 539: Certificado de Inscripción con o sin Gravámenes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/539
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,126 @@
+id: mx-bcn-retys-568-registro-de-avisos-de-testamento
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de Avisos de Testamento
+summary: Realizar la revisión, resguardo y registro de avisos de otorgamiento de disposición testamentaria, protocolizada
+  ante las Notarías del Estado de Baja California.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 568
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/568
+  homoclave: BC-SGG-006
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Siempre que se otorgue un testamento público abierto, los notarios lo harán saber al archivo de notarías dentro
+  de los siguientes 10 días hábiles, exp
+result: Registro en el Sistema Estatal de Testamentos así como en el Sistema Nacional de Testamentos.
+cost:
+  type: variable
+  amount_mxn: 399.39
+  text: 'COSTO VARIABLE: Noviembre $399.39 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección del Archivo General de Notarías
+  address: 'Avenida Villahermosa Esquina Navolato #s/n, Fraccionamiento Guajardo, Mexicali, 21050'
+- municipality: Tijuana
+  name: Subsecretaría de Gobierno Zona Metropolitana
+  address: 'Juan Ruiz de Alarcón #1572, Zona Urbana Río Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Subsecretaría de Gobierno Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Playas de Rosarito
+  address: 'Calle José Haros Aguilar #2004, Colonia Villa Turística, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Subsecretaría de Gobierno San Quintín
+  address: 'Avenida A entre 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22940'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Formato de aviso de registro
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/2339
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar el formato de aviso de testamento dentro de los 10 días posteriores al otorgamiento
+    - Presentar el pago de derecho correspondiente
+  notes: Ciudadano
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 31
+- source: ley2
+  pinpoint: Artículo 24, Inciso B
+- source: ley3
+  pinpoint: Artículos 2, 6, 143 y 169, fracción V
+- source: ley4
+  pinpoint: Artículo 38
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar el formato de aviso de testamento dentro de los 10 días posteriores al otorgamiento
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar el pago de derecho correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 568: Registro de Avisos de Testamento'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/568
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Notariado para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Revisión y Resguardo de Avisos de Otorgamiento de Disposición Testamentaria. Copiado tal
+  cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,174 @@
+id: mx-bcn-retys-1725-titulacion-de-egresados
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Titulación de egresados
+summary: Tramitar los títulos y registro del mismo ante la Dirección General de Profesiones de las y los egresados
+  de Técnico Superior Universitario, Ingeniería o Licenciatura de la Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1725
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1725
+  homoclave: BC-UTT-013
+who_can:
+- Interesado
+when: 'Al egresar del nivel de: Técnico Superior Universitario Ingeniería o Licenciatura'
+result: Título profesional
+cost:
+  type: fijo
+  amount_mxn: 1464.66
+  text: 'COSTO: $1,464.66 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 8 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Operativa de Servicios Escolares
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+- municipality: Ensenada
+  name: Unidad Académica Ensenada
+  address: 'Avenida de las Flores s/n Carretera 1 a La Bufadora #s/n, Maneadero, Ensenada, 22790'
+scenarios:
+- name: Egresados de TSU, Licenciatura e Ingeniería
+  requirements:
+  - text: Acta de nacimiento original
+    cites:
+    - source: retys
+  - text: Certificado de Bachillerato o su equivalente
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: 4 fotografías tamaño título y 5 fotos tamaño infantil con enfoques de 2 pulgadas de acercamiento a la
+      cámara, usar ropa clara (blusa o camisa lisa, sin lentes, sin barba) papel mate
+    cites:
+    - source: retys
+  - text: Pago por concepto de trámite de titulación y derechos federales
+    cites:
+    - source: retys
+  - text: Liberación de memoria de Estadía
+    cites:
+    - source: retys
+  - text: Copia del formato de recibo de documento recepcional
+    cites:
+    - source: retys
+  - text: 'Constancias de no adeudo de: Administración, Biblioteca, Vinculación y Coordinación Operativa de Servicios
+      Escolares'
+    cites:
+    - source: retys
+  - text: Toma de protesta firmada
+    cites:
+    - source: retys
+  - text: Para Carreras de Técnico Superior Universitario en Modalidad BIS deberán acreditar el Certificado ITEP
+      de acuerdo al nivel requerido
+    cites:
+    - source: retys
+  - text: Contar con firma electrónica del Sistema de Administración Tributaria (e. Firma)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+    - Dar clic a Titulaciones y seleccionar el tipo de trámite.
+    - Ingresar datos requeridos.
+    - Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio de
+      Rectoría con tarjeta de débito o de crédito.
+    - Elaborar recibo de trabajo recepcional.
+    - Obtener los sellos correspondientes en el recibo de trabajo recepcional.
+    - Entregar el recibo de trabajo recepcional y a las oficinas de atención.
+    - Presentarse en las oficinas de atención de la UTT para entrega de documentación.
+  notes: Egresados de TSU, Licenciatura e Ingeniería que quieren titularse
+legal_basis:
+- source: ley1
+  pinpoint: '64'
+- source: ley2
+  pinpoint: '7'
+- source: ley3
+  pinpoint: '69'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar clic a Titulaciones y seleccionar el tipo de trámite.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresar datos requeridos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio
+    de Rectoría con tarjeta de débito o de crédito.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Elaborar recibo de trabajo recepcional.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Obtener los sellos correspondientes en el recibo de trabajo recepcional.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Entregar el recibo de trabajo recepcional y a las oficinas de atención.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de atención de la UTT para entrega de documentación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1725: Titulación de egresados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1725
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: La Ley General de Educación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Lineamiento de Titulación de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Académico de Alumnos de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,141 @@
+id: mx-bcn-retys-1409-egresado-de-upbc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: EGRESADO DE UPBC
+summary: Obtener título una vez que haya concluido íntegramente con los tres ciclos de formación, obteniendo el
+  cien por ciento de los créditos.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1409
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1409
+  homoclave: BC-UPBC-010
+who_can:
+- Interesado
+when: Cuando el solicitante requiera la información
+result: Título
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 1) Certificado de estudio $350.00 M.N. 2) Título $2,000.00 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 14 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Obtención de Título egresados de la Universidad Politécnica de Baja California
+  requirements:
+  - text: Ser egresado de la UPBC y haber concluido satisfactoriamente la carrera
+    cites:
+    - source: retys
+  - text: Presentacion de documnetacion de acuerdo "paquete Informativo" para iniciar la obtención de certificado
+      y/o titulo
+    cites:
+    - source: retys
+  - text: Generar a traves del "SIIAX", el recibo de pago de certificado y/o titulo
+    cites:
+    - source: retys
+  - text: Efectuar el pago del recibo ya sea en linea o en ventanilla
+    cites:
+    - source: retys
+  - text: debera imprimir formato de no adeudo para recabar sellos ante el depto. de finanzas y direccion de programa
+      academico que le corresponde
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Ingresar a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+      derecha
+    - Una vez que ingresa seleccionar el tipo de pago a realizar si es certificado de estudio o titulación
+    - Una vez que selecciona el tipo de trámite se genera el recibo de pago el cual deberá descargar
+    - Una vez que descarga el recibo de pago el egresado, deberá proceder a su pago en línea bancaria o imprimir
+      y acudir a ventanilla bancaria
+    - egresado deberá a su vez descargar documento para recabar sello de no adeudos a la UPBC, los cuales corresponde
+      al depto. de finanzas y la direccion de programa académico.
+    - una vez que se realiza el pago y con formato con sellos de no adeudo, se presenta al área de gestión escolar
+      para que inicie el trmite
+    - gestion escolar inicia el tramite de certificado y titulo del egresado, al cual en su momento se le notificara
+      para que asista a reoger.
+  notes: Que el egresado pueda obtener su título o certificado de estudio
+legal_basis:
+- source: ley1
+  pinpoint: Título décimo segundo, de las constancias y del título de profesiones; capítulo II, título profesional
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página web de la UPBC haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+    derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Una vez que ingresa seleccionar el tipo de pago a realizar si es certificado de estudio o titulación
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que selecciona el tipo de trámite se genera el recibo de pago el cual deberá descargar
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez que descarga el recibo de pago el egresado, deberá proceder a su pago en línea bancaria o imprimir
+    y acudir a ventanilla bancaria
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: egresado deberá a su vez descargar documento para recabar sello de no adeudos a la UPBC, los cuales corresponde
+    al depto. de finanzas y la direccion de programa académico.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: una vez que se realiza el pago y con formato con sellos de no adeudo, se presenta al área de gestión escolar
+    para que inicie el trmite
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: gestion escolar inicia el tramite de certificado y titulo del egresado, al cual en su momento se le notificara
+    para que asista a reoger.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1409: EGRESADO DE UPBC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1409
+    version_date: 22/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de estudios profesional asociado y licenciatura de la UPBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Proceso de Obtención Certificado de Estudio y Titulación. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

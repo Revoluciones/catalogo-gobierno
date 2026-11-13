@@ -1,0 +1,150 @@
+id: mx-bcn-tijuana-tj-sspcm-0243-servicios-extraordinarios
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Otros
+title: Servicios Extraordinarios
+summary: Solicitud de vigilancia y seguridad para eventos masivos ya sean públicos o privados, incluyendo patrullas
+  con elementos de seguridad y motocicletas para auxilio vial.
+authority:
+  name: Secretaría de Seguridad y Protección Ciudadana Municipal (Ayuntamiento de Tijuana)
+  unit: Dirección de Servicios de Protección Comercial y de Vigilancia Auxiliar
+official_ids:
+  homoclave: TJ-SSPCM-0243
+who_can:
+- Interesado
+- Representante_legal
+when: Conciertos · Eventos Masivos Deportivos (Baseball, Futbol, Maratones, BOX, Luchas libre, carreras, etc) ·
+  Corridas de Toros · Eventos Públicos (Verbenas, Eventos gastronómicos, ferias, degustaciones, etc.) · Eventos
+  Religiosos, Culturales y Sociales
+result: Recibo
+requirements:
+- text: Si se ocupa el cierre de calles, avenidas y parque públicos solicitar a la delegación correspondiente la
+    anuencia o factibilidad de no inconveniencia emitida por el delegado.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Poder Notarial vigente del Representante legal (Persona moral)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta Constitutiva de la empresa o sociedad de que se trate (Persona moral)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis, mapa o plano de la ubicación y distribución del lugar donde se llevará acabo el evento.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Contrato de arrendamiento del lugar donde se llevará acabo el evento.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Constancia de Situación Fiscal actualizada, con estatus activo a nombre de la persona física solicitante
+    del servicio.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Comprobante de domicilio (agua, luz, teléfono), con vigencia no mayor a tres meses.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Identificación oficial vigente (INE/PASAPORTE).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Escrito de petición dirigido al Maestro José Alejandro Avilés Amezcua, en su carácter de Secretario de Seguridad
+    y Protección Ciudadana Municipal del H. XXV Ayuntamiento de Tijuana, Baja California en el que se precise motivo
+    del trámite y todos los datos relacionados con el evento, nombre, tipo (social, cultural, deportivo, religioso,
+    etc.), fecha, horario de inicio y termino, dirección completa, número aproximado de asistentes, especificar
+    si habrá venta y consumo de bebidas alcoholica, especificar si se requiere apoyo con elementos, indicando el
+    horario del servicio de vigilancia, nombre completo y datos de contacto (número telefónico y correo electrónico)
+    del responsable o solicitante, si se cuenta con elementos de seguridad privada, especificar el número de elementos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Servicios de protencción y vigilancia en puntos fijos por elemento operativo en zonas habitacioales e instituciones
+    gubernamentales por turno de 8 horas: 6.5 UMA ($762.51) · Servicios de protección y seguridad a particulares
+    por elemento operativo por turno de 8 horas: 9 UMA ($1,055.79) · Servicios de renta de unidad patrulla con un
+    elemento operativo por turno de 6 horas: 31.25 UMA ($3,665.94) · Servicio de renta de unidad motocicleta Por
+    servicios de vigilancia y control de tránsito en vía pública, para eventos culturales, sociales, deportivos,
+    religiosos y/o artísticos por turno de 6 horas: 21.5 UMA ($2,522.16) · Servicios extraordinarios por elemento
+    operativo para servicio de protección y vigilancia para eventos masivos o no masivos culturales, sociales, 154
+    deportivos, religiosos y/o artísticos por turno de 6 horas: 9.32 UMA ($1,093.33). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días habiles
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Servicios de Protección Comercial y de Vigilancia Auxiliar
+  address: Blvd. Cuauhtémoc Sur y Río Suschiate No. 2141, Col. Marrón. C.P. 22015, Tijuana, Baja California.
+  phones: 6646885541 ext. 5522
+  hours: Lunes A Viernes DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+- source: fund4
+- source: fund5
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SSPCM-0243: Servicios Extraordinarios'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SSPCM-0243
+    version_date: '2026-07-07'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 36 de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio Fiscal
+      2026
+    url: https://wsextbc.ebajacalifornia.gob.mx/CdnBc/api/Imagenes/ObtenerImagenDeSistema?sistemaSolicitante=PeriodicoOficial/2025/Diciembre&nombreArchivo=Periodico-78-CXXXII-20251230-N%C3%9AMERO%20ESPECIAL%20-%20SECCI%C3%93N%20II.pdf&descargar=false
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículo 63 Fracción XIII , Artículo 75 Fracción VI, Artículo 78 Fracción V, Artículo 84 Fracción II,
+      Artículo 84 Fracción II, Artículo 98 Fracción III del Reglamento Interno de la Secretaría de Seguridad y Protección
+      Ciudadana del Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20260120105759475_wp.pdf
+  fund3:
+    type: reglamento
+    official: true
+    title: Artículo 4, Artículo 5, Artículo20, Artículo 22 y Artículo 37 del Reglamento para el Funcionamiento de
+      Giros Comerciales, Industriales y de Prestación de Servicios para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20250604103740727_wp.pdf
+  fund4:
+    type: reglamento
+    official: true
+    title: Artículo 1 BIS Artículo 4, Artículo 18 Fracción II, Artículo 21 BIS, Artículo 23 Fracciones VIII, X,
+      XI y XIII, Artículo 37, Artículo 40, Artículo 41, Artículo 46, Artículo 46 BIS, Artículo 46 TER, Artículo
+      46 QUARTER, y Artículo 48 del Reglamento para la Venta, Almacenaje y Consumo Público de Bebidas Alcohólicas
+      en el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20235109274113_wp.pdf
+  fund5:
+    type: reglamento
+    official: true
+    title: Artículo 63 del Reglamento de Espectáculos Públicos de la Ciudad de Tijuana, B.C.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20250117093301455_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: Cumplir con los requisitos solicitados.'

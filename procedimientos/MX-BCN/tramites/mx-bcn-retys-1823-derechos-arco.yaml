@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1823-derechos-arco
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Derechos ARCO
+summary: Este servicio tiene como finalidad brindar acompañamiento y guía a la comunidad universitaria y al público
+  en general, para que conozcan los procedimientos, requisitos y plazos establecidos por la legislación aplicable,
+  así como para resolver dudas relacionadas con el uso, resguardo y tratamiento de los datos personales en posesión
+  de la institución.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1823
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1823
+  homoclave: BC-UIBC-007
+who_can:
+- Otro
+when: Cuando a la persona interesada desee resolver sus dudas relacionadas sobre el uso, el resguardo y el tratamiento
+  de sus datos personales
+result: Servicio de orientación y asesoría a las personas interesadas en conocer y ejercer sus derechos ARCO (Acceso,
+  Rectificación, Cancelación y Oposición)
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 8 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: San Quintín
+  name: Unidad de Transparencia de la UIBC
+  address: 'S/N #Lote B-1 , Fraccion 5, Manzana 102, San Quintin, San Quintín, 22930'
+scenarios:
+- name: Derechos ARCO
+  requirements:
+  - text: Presentar solicitud indicando el derecho ARCO que se desea ejercer
+    cites:
+    - source: retys
+  - text: Los datos personales sobre los que se solicita acción
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - TENER USUARIO PARA INICIAR SESION EN LA PAGINA DE TRANSPARENCIA
+    - INGRESAR CON EL USUARIO
+    - SELECCIONAR EL APARTADO DE SOLICITUD DE DATOS PERSONALES PARA EJERCER EL DERECHO DE RECTIFICACION, CANCELACION,
+      OPOSICION Y PORTABILIDAD
+    - SELECCIONA LA INSTITUCION DE LA QUE SE REQUIERE INFORNACION, EN ESTE CASO LA UNIVERSIDAD INTERCULTURAL DE
+      BAJA CALIFORNIA(UIBC)
+    - REDACTAR LA SOLICITUD DE INFORMACION PARA POSTERIORMENTE ENVIARLA Y UNA VEZ FINALIZADO RECIBIRA UN ACUSE DE
+      LA SOLICITUD FORMULADA
+  notes: La Universidad, a través de su Unidad de Transparencia, ofrece el servicio de orientación y asesoría a
+    las personas interesadas en conocer y ejercer sus derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)
+    en materia de protección de datos personales.
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 16
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: TENER USUARIO PARA INICIAR SESION EN LA PAGINA DE TRANSPARENCIA
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: INGRESAR CON EL USUARIO
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: SELECCIONAR EL APARTADO DE SOLICITUD DE DATOS PERSONALES PARA EJERCER EL DERECHO DE RECTIFICACION, CANCELACION,
+    OPOSICION Y PORTABILIDAD
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: SELECCIONA LA INSTITUCION DE LA QUE SE REQUIERE INFORNACION, EN ESTE CASO LA UNIVERSIDAD INTERCULTURAL
+    DE BAJA CALIFORNIA(UIBC)
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: REDACTAR LA SOLICITUD DE INFORMACION PARA POSTERIORMENTE ENVIARLA Y UNA VEZ FINALIZADO RECIBIRA UN ACUSE
+    DE LA SOLICITUD FORMULADA
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1823: Derechos ARCO'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1823
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

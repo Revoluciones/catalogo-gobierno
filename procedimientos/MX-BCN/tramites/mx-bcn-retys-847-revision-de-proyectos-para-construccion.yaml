@@ -1,0 +1,95 @@
+id: mx-bcn-retys-847-revision-de-proyectos-para-construccion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revisión de Proyectos para Construcción
+summary: Revisar los proyectos que pretendan llevar a cabo los desarrolladores de los sistemas de agua potable y
+  alcantarillado sanitario para que cumplan con la normatividad vigente.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 847
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/847
+  homoclave: BC-CESPE-013
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el desarrollador requiera la autorización del proyecto
+result: Aprobación del proyecto
+cost:
+  type: variable
+  amount_mxn: 5096.0
+  text: 'COSTO VARIABLE: Costo actualizado al mes de noviembre 2026. $ 5,096 moneda nacional.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Constructoras
+  requirements:
+  - text: Oficio de solicitud
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la subdirección técnica
+    - Presentar solicitud
+  notes: Representante legal de constructoras que requieren redes de aguas blancas y alcantarillado sanitario para
+    su funcionamiento
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III
+- source: ley2
+  pinpoint: .
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la subdirección técnica
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar solicitud
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 847: Revisión de Proyectos para Construcción'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/847
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Normas Vigentes para Elaboración de Proyectos de Sistemas de Agua Potable y Alcantarillado Sanitario
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Revisión de Proyectos para Construcción.. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

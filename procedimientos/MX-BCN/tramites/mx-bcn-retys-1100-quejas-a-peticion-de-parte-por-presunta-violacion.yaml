@@ -1,0 +1,115 @@
+id: mx-bcn-retys-1100-quejas-a-peticion-de-parte-por-presunta-violacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Quejas a Petición de Parte por Presunta Violación a Normas Laborales
+summary: Atender las solicitudes de trabajadores, cuando en un caso concreto se considera que existen violaciones
+  a la Ley Federal del Trabajo, tales como, no contar con imss, infonavit, fonacot, que no se le pague ptu(pago
+  de utilidades), horas extras, aguinaldo,asi como que no se le otorguen las vacaciones, dias de descanso obligatorios,
+  ni contar con contratos de trabajo.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1100
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1100
+  homoclave: BC-STPS-006
+who_can:
+- Interesado
+- Tutor
+when: Cuando se presente un presunta violación a las normas laborales
+result: Se emite una orden de visita de inspección al centro de trabajo
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Años'
+  cites:
+  - source: retys
+- what: vigencia
+  text: UN AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Inspección del Trabajo
+  address: 'Rómulo O´Farril #938, Centro Cívico y Comercial, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación en Tijuana
+  address: 'Bulevar Gustavo Diaz Ordaz #12649, El Paraiso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Inspección del Trabajo Delegación Ensenada
+  address: 'Carretera Transpeninsular #6500, Ex Ejido Chapultepec , Ensenada, 22785'
+scenarios:
+- name: Cualquier Ciudadano
+  requirements:
+  - text: Presentar razón social de la empresa
+    cites:
+    - source: retys
+  - text: Presentar dirección de la empresa
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llama para solicitar orientación a los números disponibles en las oficinas.
+    - Se registra la queja y se pide información sobre la empresa, como su dirección, razón social y el puesto,
+      además de los datos personales del quejoso.
+    - Se genera la inspección para investigar el problema reportado.
+    - Se coordina el envío de inspectores para que revisen la situación.
+  notes: Cualquier ciudadano que sean vulnerados sus derechos laborales
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 18 y 28
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llama para solicitar orientación a los números disponibles en las oficinas.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se registra la queja y se pide información sobre la empresa, como su dirección, razón social y el puesto,
+    además de los datos personales del quejoso.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se genera la inspección para investigar el problema reportado.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se coordina el envío de inspectores para que revisen la situación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1100: Quejas a Petición de Parte por Presunta Violación a Normas Laborales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1100
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento General de Inspecciones
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Quejas a Petición de Parte. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

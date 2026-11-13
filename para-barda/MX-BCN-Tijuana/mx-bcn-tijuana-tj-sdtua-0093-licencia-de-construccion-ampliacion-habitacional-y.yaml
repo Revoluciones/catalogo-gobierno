@@ -1,0 +1,162 @@
+id: mx-bcn-tijuana-tj-sdtua-0093-licencia-de-construccion-ampliacion-habitacional-y
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Licencia de Construcción, Ampliación Habitacional y Comercial menor 60 mts
+summary: Trámite para obtener la licencia de construcción, ya sea para el inicio de obra o para proyectos en proceso
+  de hasta 60 metros cuadrados.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0093
+who_can:
+- Interesado
+when: Cuando sea necesario realizar una ampliación o llevar a cabo una nueva construcción.
+result: Licencia
+requirements:
+- text: Solicitud firmada por el propietario (en caso de existir representante legal presentar documentación oficial
+    que lo acredite como tal), por el director responsable de obra y corresponsable.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de impuesto predial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Documento que acredite la propiedad.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contrato de asociación en participación, cuando el condominio se conforme por lotes de diferentes propietarios
+    o cuando las personas se unan con mismo fin (uno aporta tierra y otro dinero).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Memoria descriptiva.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Factibilidad de servicios (CESPT Y CFE) o contrato de servicios (recibos).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copia de INE del propietario
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de vecinos colindantes.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Nueva hasta 60m² de construcción por m²: 0.43 UMA ($50.44) · Habitacionales, unifamiiares con fines de
+    comercialización hasta 60m²: 0.07 UMA ($8.21) · Ampliación en cualquier superficie de construcción por m²: 0.44
+    UMA ($51.62) · Casas móviles en cualquier superficie, por casa tipo por m²: 0.27 UMA ($31.67). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 18 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 09:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0093: Licencia de Construcción, Ampliación Habitacional y Comercial
+      menor 60 mts'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0093
+    version_date: '2026-08-31'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 31, fracción I, inciso A), subinciso a) y e), inciso B), subinciso a) apartado 1) y subinciso
+      b) de la Ley de Ingresos del Municipio de Tijuana, Baja California para el Ejercicio Fiscal del 2025
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 15, Artículo 197, fracción I, II y IX
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20250716114815106_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con la normativa vigente y los requisitos para construcciones menores a 60 m²'

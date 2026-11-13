@@ -1,0 +1,139 @@
+id: mx-bcn-retys-1034-solicitud-de-presentacion-de-la-banda-de-musica-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Presentación de la Banda de Música del Estado
+summary: Que la población disfrute de las presentaciones didácticas y formales de la Banda de Música del Estado
+  en eventos cívicos y culturales para su recreación.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 1034
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1034
+  homoclave: BC-ICBC-036
+who_can:
+- Interesado
+when: Cuando la ciudadanía tenga interés en las actividades culturales
+result: Recrearse con los conciertos y aprender con las audiciones didácticas
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Coordinación Operativa de la Escuela de Música Auka
+  address: 'Calzada de los Presidentes y Ciudad Victoria #s/n, Zona Río Nuevo, Mexicali, 21120'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: En caso de presentaciones fuera de Mexicali, se solicitarán viáticos, traslado y hospedaje de ser necesario
+    cites:
+    - source: retys
+  - text: Solicitud por escrito (2 semanas antes del evento mínimo)
+    cites:
+    - source: retys
+  - text: Fotografías y cantidad de público atendido
+    cites:
+    - source: retys
+  - text: 25 sillas, agua, sonido de acuerdo al lugar y sombra para los músicos
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en el botón iniciar trámite.
+    - Registrar datos en LlaveBC y dar continuar
+    - Aparecerá formulario para solicitar la presentación de la Banda, confirmar datos de contacto
+    - Adjuntar solicitud por escrito (al menos 2 semanas antes del evento)
+    - El Instituto recibe y otorga respuesta
+    - Banda de música se presenta al evento
+    - Reporta información de público atendido y fotografías
+  notes: Cuando la persona interesada desee acceder a las presentaciones didácticas de la banda
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 44 fracción IV y V.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en el botón iniciar trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrar datos en LlaveBC y dar continuar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Aparecerá formulario para solicitar la presentación de la Banda, confirmar datos de contacto
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Adjuntar solicitud por escrito (al menos 2 semanas antes del evento)
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El Instituto recibe y otorga respuesta
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Banda de música se presenta al evento
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Reporta información de público atendido y fotografías
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1034: Solicitud de Presentación de la Banda de Música del Estado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1034
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,104 @@
+id: mx-bcn-retys-1009-cofepris-01-010-d-permiso-sanitario-de-importacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-01-010-D Permiso sanitario de importación de medicamentos que no sean o contengan estupefacientes
+  o psicotrópicos, que no cuenten con registro sanitario. Modalidad D.- Permiso sanitario de importación de medicamentos
+  destinados a uso personal.
+summary: Permiso sanitario de importación de médica.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1009
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1009
+  homoclave: BC-COEPRIS-049
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera permiso de importacion
+result: Permiso sanitario de importación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15 días
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7597
+  - text: Receta médica, vigente, que incluya número de cédula profesional y que ampare el producto y la cantidad.
+      (no se requiere en caso de insumos de libre venta)
+    cites:
+    - source: retys
+  - text: Copia de la Identificación Oficial vigente del promovente.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso sanitario de importación
+      de medicamentos que no sean o contengan estupefacientes o psicotrópicos, que no cuenten con registro sanitario.
+      Modalidad D: permiso sanitario de importación de médica.'
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 295 y Articulo 375 Fracción VIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de Permiso sanitario de
+    importación de medicamentos que no sean o contengan estupefacientes o psicotrópicos, que no cuenten con registro
+    sanitario. Modalidad D: permiso sanitario de importación de médica.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1009: COFEPRIS-01-010-D Permiso sanitario de importación de medicamentos que no sean o
+      contengan estupefacientes o psicotrópicos, que no cuenten con registro sanitario. Modalidad D.- Permiso sanitario
+      de importación de medicamentos destinados a uso personal.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1009
+    version_date: 24/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

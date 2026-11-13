@@ -1,0 +1,135 @@
+id: mx-bcn-retys-743-cambios-de-razon-social-funciones-transferencias-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cambios de Razón Social, Funciones, Transferencias de Derechos y Obligaciones Respecto a Resoluciones o Trámites
+  en General
+summary: Conocer las causas de los cambios que puede ser por imprevistos fortuitos negligentes o intencionales por
+  cambio de propietarios, representantes legales.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 743
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/743
+  homoclave: BC-CESPM-035
+who_can:
+- Representante Legal
+when: Cuando requiera el trámite
+result: Cambio de datos en el padrón
+cost:
+  type: variable
+  amount_mxn: 4191.94
+  text: 'COSTO VARIABLE: $ 4,191.94 el costo del servicio variable durante el ejercicio 2026 de acuerdo a la actualización
+    por la variación que tenga el Índice Nacional de Precios y Cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Presentar solicitud escrita y/o electrónica informando nombre, domicilio, RFC, giro o actividad de la
+      empresa (copia de poder notarial, acreditando lo solicito como propietario y/o representante legal), y justificación
+      que sustente la solicitud
+    cites:
+    - source: retys
+  - text: Nombre de la persona o representante legal a quien saldrá la prorroga
+    cites:
+    - source: retys
+  - text: No. de cuenta de agua potable.
+    cites:
+    - source: retys
+  - text: Documentos originales que pretende modificar
+    cites:
+    - source: retys
+  - text: Cantidad de producción diaria o mensual (anotar si es por temporadas)
+    cites:
+    - source: retys
+  - text: Pago del servicio. La modificación.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+      de la prorroga
+    - Realizar el pago y presentar copia a la hora de presentar la solicitud de la prorroga
+    - Presentar la solicitud en onca agregando el sustento técnico suficiente para la prórroga
+    - ONCA recibirá y revisara el documento en caso de ser necesario solicitará información adicional y/o en su
+      caso programará una visita confirmativa de datos
+    - Una vez que onca evalué la información y en su caso verifique los datos técnicos emitirá su dictamen y/o la
+      prórroga
+    - Se le comunicará al usuario para que pase por su modificación
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: Art 9, Punto 8 Inciso r
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario por si propio o por un responsable técnico, debe recabar los datos para sustentar la solicitud
+    de la prorroga
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago y presentar copia a la hora de presentar la solicitud de la prorroga
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en onca agregando el sustento técnico suficiente para la prórroga
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: ONCA recibirá y revisara el documento en caso de ser necesario solicitará información adicional y/o en
+    su caso programará una visita confirmativa de datos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Una vez que onca evalué la información y en su caso verifique los datos técnicos emitirá su dictamen y/o
+    la prórroga
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se le comunicará al usuario para que pase por su modificación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 743: Cambios de Razón Social, Funciones, Transferencias de Derechos y Obligaciones Respecto
+      a Resoluciones o Trámites en General'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/743
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,87 @@
+id: mx-bcn-tijuana-tj-sgm-0277-busqueda-de-datos-para-expedicion-de-copia-certifi
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Identidad, Oficialía civil
+title: BÚSQUEDA DE DATOS para expedición de copia certificada de acta de Nacimiento, Matrimonio, Defunción, Divorcio,
+  Adopción y Reconocimiento
+summary: Este trámite permite localizar los datos de un acta (Nacimiento, Matrimonio, Defunción, Divorcio, Adopción
+  o Reconocimiento) cuando no se encuentra fácilmente en los registros.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0277
+who_can:
+- Interesado
+when: Cuando el acta solicitada no puede ser localizada de manera inmediata en el sistema o archivos del Registro
+  Civil.
+result: Constancia
+requirements:
+- text: Nombre completo de la persona cuyo acta se busca.
+  cites:
+  - source: remutys
+- text: Fecha de nacimiento o fecha aproximada del registro del acta.
+  cites:
+  - source: remutys
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0277: BÚSQUEDA DE DATOS para expedición de copia certificada de acta de
+      Nacimiento, Matrimonio, Defunción, Divorcio, Adopción y Reconocimiento.'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0277
+    version_date: '2026-10-14'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Código Civil para el Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20260605_CODCIVIL.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/30112018_LEYORRCI.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18 Fracción VII Inciso C) subincisos a) y b) de la Ley de Ingresos del Municipio de Tijuana,
+      Baja California para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos solicitados'

@@ -1,0 +1,156 @@
+id: mx-bcn-retys-1548-servicio-de-aborto-seguro
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Aborto Seguro
+summary: Atender las solicitudes de interrupción del embarazo, de la mujer, niña, adolescente o persona con capacidad
+  de gestar, de manera oportuna, proporcionando atención médica integral.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1548
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1548
+  homoclave: BC-ISESALUD-024
+who_can:
+- Interesado
+- Tutor
+when: Cuando la mujer, niña, adolescente o persona con capacidad de gestar solicite la interrupción del embarazo.
+result: Consulta.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Tijuana
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Playas de Rosarito
+  name: Departamento de Equidad de Género y Salud Reproductiva
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Playas de Rosarito, 22705'
+scenarios:
+- name: Servicio de aborto seguro
+  requirements:
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las unidades que cuentan con el servicio.
+    - Médico brindar consulta, consejería y asesoría.
+    - Confirmar condiciones para practicar un procedimiento seguro.
+    - Elección de tratamiento.
+    - Sigue indicaciones médicas.
+    - Acudir a cita de seguimiento.
+    - Médico oferta método anticonceptivo.
+    - Médico administra método anticonceptivo elegido.
+  notes: Atención de las solicitudes de interrupción del embarazo
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Artículo 132 al 136
+- source: ley3
+  pinpoint: Artículo 25, 50 Nonies, 50 Decies
+- source: ley4
+  pinpoint: Artículo 30 y 33
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las unidades que cuentan con el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Médico brindar consulta, consejería y asesoría.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Confirmar condiciones para practicar un procedimiento seguro.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Elección de tratamiento.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Sigue indicaciones médicas.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a cita de seguimiento.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Médico oferta método anticonceptivo.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Médico administra método anticonceptivo elegido.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1548: Servicio de Aborto Seguro'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1548
+    version_date: 25/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Código Penal para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Publica para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley de Victimas para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

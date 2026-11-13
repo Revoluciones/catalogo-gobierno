@@ -1,0 +1,154 @@
+id: mx-bcn-retys-1717-cambios-de-plantel-de-cobach-bc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cambios de plantel de COBACH BC
+summary: Trámite para realizar Cambios de Plantel, o para continuar tus estudios cuando dejaste de estudiar más
+  de 1 semestre (Reingreso) o cuando te alcanza un nuevo plan de estudios (Convalidación) de COBACH BC, en las fechas
+  establecidas que son publicadas en http://www.cobachbc.edu.mx/ (Enero y Julio).
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1717
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1717
+  homoclave: BC-COBACH-007
+who_can:
+- Interesado
+- Tutor
+when: Cuando el estudiante requiera continuar sus estudios
+result: Comprobante de movilidad
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: * Cambio de plantel: $463.00 mxn * Reingreso: $494.00 mxn * Convalidación por cambio de
+    Plan de Estudios: $619.00mxn'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Registro y Control Escolar
+  address: 'Blvd. Anáhuac #936, Centro Civico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación Zona Costa
+  address: 'Vía Rápida Oriente #S/N, Tercera Etapa del Río, Delegación Cerro Colorado, Tijuana, 22226'
+scenarios:
+- name: Cambio de Plantel
+  requirements:
+  - text: Contar con matrícula
+    cites:
+    - source: retys
+  - text: Contar con aviso de baja del plantel anterior
+    cites:
+    - source: retys
+  - text: Realizar pago por concepto de la movilidad
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar baja en el plantel anterior
+    - Acudir al Plantel donde desean ingresar
+    - Entregar aviso de baja del plantel anterior en el plantel que desea ingresar
+    - Se revisa su cardex y se procede a realizar recibo de pago
+    - Recibo de Pago por concepto de movilidad
+  notes: El alumno que cuenta con matrícula en COBACH BC. El cambio de plantel está sujeto a la disponibilidad en
+    el plantel al que desee ingresar.
+- name: Reingreso
+  requirements:
+  - text: Contar con matrícula
+    cites:
+    - source: retys
+  - text: Realizar el pago por concepto de la movilidad
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Plantel donde desean ingresar
+    - Se revisa su cardex y se procede a realizar recibo de pago
+    - Recibo de Pago por concepto de movilidad
+  notes: El alumno cuenta con matrícula en COBACH BC y desea continuar sus estudios. El reingreso está sujeto a
+    la disponibilidad en el plantel al que desee.
+- name: Convalidación por Cambio de Plan de Estudios
+  requirements:
+  - text: Contar con matrícula
+    cites:
+    - source: retys
+  - text: Realizar el pago por concepto de la movilidad
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Plantel donde desean ingresar
+    - Se revisa su cardex y se procede a realizar recibo de pago
+    - Recibo de Pago por concepto de movilidad
+  notes: El alumno que cuenta con matrícula en COBACH BC y quiera continuar sus estudios pero el plan de estudios
+    vigente es diferente al último que cursó. La convalidación está sujeta a la disponibilidad en el plantel al
+    que desee ingresar.
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar baja en el plantel anterior
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir al Plantel donde desean ingresar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar aviso de baja del plantel anterior en el plantel que desea ingresar
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se revisa su cardex y se procede a realizar recibo de pago
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recibo de Pago por concepto de movilidad
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1717: Cambios de plantel de COBACH BC'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1717
+    version_date: 11/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Inscripciones y Reinscripciones
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Movilidad entre Planteles de COBACH BC. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

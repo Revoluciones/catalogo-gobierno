@@ -1,0 +1,126 @@
+id: mx-bcn-retys-670-tratamiento-en-conjunto-de-aguas-residuales-empres
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Tratamiento en conjunto de aguas residuales (empresas-CESPM).
+summary: Tratar las aguas residuales para que el usuario cumpla con la normatividad en los parámetros que descarga
+  en forma excedida a los límites establecidos por la NOM-002-SEMARNAT-1996, en sus descargas de agua residual
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 670
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/670
+  homoclave: BC-CESPM-029
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el tramite
+result: Constancia
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo de cada servicio será variable según la ley de ingresos del estado de baja california.
+    2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Años'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Presentar identificación oficial del representante legal o registro del sat.
+    cites:
+    - source: retys
+  - text: Plantilla de personal.
+    cites:
+    - source: retys
+  - text: Cantidad que se produce de acuerdo al giro.
+    cites:
+    - source: retys
+  - text: Visita al usuario del servicio ya sea a través de una carta amistosa o visita de inspección.
+    cites:
+    - source: retys
+  - text: Recibo de pago del servicio.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Se solicita factibilidad de convenio a CESPM
+    - CESPM solicita información para emitir dictamen
+    - Se emite dictamen a usuario
+    - Si el dictamen en aprobatorio, se formaliza convenio de tratamiento conjunto.
+    - Se da seguimiento mensual a las condiciones de la descarga a través de muestreos del laboratorio de CESPM.
+    - Se calcula cobro por contaminantes excedidos considerando el análisis de laboratorio previos y los costos
+      fijados en la ley de ingresos vigente
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ART 9 PUNTO 7 INCISO A) Y 8 A), B), C) Y D).
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Se solicita factibilidad de convenio a CESPM
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: CESPM solicita información para emitir dictamen
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se emite dictamen a usuario
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Si el dictamen en aprobatorio, se formaliza convenio de tratamiento conjunto.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se da seguimiento mensual a las condiciones de la descarga a través de muestreos del laboratorio de CESPM.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se calcula cobro por contaminantes excedidos considerando el análisis de laboratorio previos y los costos
+    fijados en la ley de ingresos vigente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 670: Tratamiento en conjunto de aguas residuales (empresas-CESPM).'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/670
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Tratamiento en conjunto de aguas residuales (Empresas-CESPM).. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

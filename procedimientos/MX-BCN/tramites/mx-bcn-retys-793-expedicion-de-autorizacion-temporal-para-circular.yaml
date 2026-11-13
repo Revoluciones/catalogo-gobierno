@@ -1,0 +1,115 @@
+id: mx-bcn-retys-793-expedicion-de-autorizacion-temporal-para-circular
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de autorización temporal para circular sin placas
+summary: Consiste en solicitar la expedición de autorización temporal para circular sin placas. Por única vez, vigente
+  por 30 días.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 793
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/793
+  homoclave: BC-IMOS-043
+who_can:
+- Interesado
+when: Cuando la persona interesada lo solicite
+result: Autorización temporal para circular sin placas
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 10.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 DÍAS
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios del servicio público de transporte
+  requirements:
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Licencia de conducir vigente
+    cites:
+    - source: retys
+  - text: Permiso de transporte público vigente, original.
+    cites:
+    - source: retys
+  - text: Revisión de serie del vehículo
+    cites:
+    - source: retys
+  - text: Revisión físico-mecánica de la unidad
+    cites:
+    - source: retys
+  - text: Comprobante de propiedad de la unidad
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para autorización temporal
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Inciso M, Numeral 3
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 793: Expedición de autorización temporal para circular sin placas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/793
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Autorización Temporal para Circular Sin Placas.. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

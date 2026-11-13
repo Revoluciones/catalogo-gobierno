@@ -1,0 +1,118 @@
+id: mx-bcn-retys-1095-solicitud-de-presentacion-del-ballet-folklorico-eh
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Presentación del Ballet Folklórico Ehécatl
+summary: Que las personas usuarias soliciten las presentaciones y audiciones didácticas de danza folclórica en eventos
+  cívicos y/o culturales para la preservación del patrimonio cultural.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 1095
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1095
+  homoclave: BC-ICBC-037
+who_can:
+- Interesado
+when: Cuando la ciudadanía tenga interés en la presentación de actividades culturales
+result: Disfrutar y aprender con las estampas folclóricas de varios Estados de la República Mexicana.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 2 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Estatal de las Artes Mexicali
+  address: 'Calzada de los Presidentes y Ciudad Victoria #s/n, Zona Río Nuevo, Mexicali, 21120'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: Llenar el formulario de ventanilla digital
+    cites:
+    - source: retys
+  - text: Contar con templete de madera
+    cites:
+    - source: retys
+  - text: En caso de presentaciones fuera de Mexicali, se solicitarán viáticos, traslado y hospedaje de ser necesario
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dar clic en el botón de Iniciar trámite
+    - Llenar el formulario de ventanilla digital
+    - Personal del Instituto recibe y da respuesta al solicitante
+    - Reporta información de público atendido y fotografías
+  notes: Cuando la persona interesada desee obtener el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 29, fracción VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en el botón de Iniciar trámite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar el formulario de ventanilla digital
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal del Instituto recibe y da respuesta al solicitante
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Reporta información de público atendido y fotografías
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1095: Solicitud de Presentación del Ballet Folklórico Ehécatl'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1095
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,476 @@
+id: mx-bcn-retys-1543-consulta-medica-general
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Consulta Médica General
+summary: Proporcionar atención médica orientada a la prevención, detección, diagnóstico y tratamiento de enfermedades,
+  con el propósito de restaurar la salud de la población.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1543
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1543
+  homoclave: BC-ISESALUD-021
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Como medicina preventiva, revisión médica de rutina por lo menos una vez al año, por detección de factores
+  de riesgo y/o factores de sintomatología.
+result: Consulta preventiva de detección y curativa, con diagnóstico temprano y tratamiento oportuno.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'A #S/N, Los Algodones, Mexicali, 21970'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Felipa Viuda de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Candelilla #S/N, Rivera Campestre, Mexicali, 21387'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Patzcuaro #S/N, Ejido Patzcuaro, Mexicali, 21706'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'José Espinoza Lote 16 Manzana 13 #S/N, Fundadores, Mexicali, 21478'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: '27 De Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Mexicali, 21137'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Prolongacion Socorro Garcia #S/N, Veracruz Dos, Mexicali, 21821'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'General Martin Cabrera #S/N, Vicente Guerrero, Mexicali, 21320'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Ignacio Allende #S/N, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: '27 De Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Coahuila #S/N, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Benito Juarez #128, Hermosillo, Mexicali, 21840'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Del Sol y La Luna #S/N, Santa Isabel, Mexicali, 21138'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Carretera San Felipe Km 8.5 #S/N, Ejido Choropo, Mexicali, 21259'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Universidad Michoacana #S/N, Ejido El Indiviso, Mexicali, 21810'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Del Hospital #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida 27 de Enero entre Calle Novena y Decima #S/N, Guadalupe Victoria Ejido, Guadalupe Victoria,
+    Mexicali, 21720'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Ayuntamiento y 27 de Septiembre #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Mexicali
+  name: Departamento de Atención Primer Nivel
+  address: 'Plutarco Elías Calles Claridad #S/N, Mexicali, Mexicali, 21376'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Eucalipto #1, 3 De Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Eucalipto #1, 3 De Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'El Mexicano #S/N, 18 De Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: '7 #22, Reforma, Tijuana, 22183'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Mexicali 1986 #S/N, Hacienda Las Fuentes, Tijuana, 22245'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Ley Federal del Trabajo #S/N, Flores Magon, Tijuana, 22606'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas Segunda Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'General Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'San Rafael entre Las Delicias y Santa Maria #19811, San Rafael entre Las Delicias y Santa Maria, Tijuana,
+    22330'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Ruta Matamoros y Chichenitza #S/N, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Del Peñon #2980, Valle Verde, Tijuana, 22204'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Fundadores #S/N, Rubi Sur, Tijuana, 22626'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Anemona #S/N, El Florido Cuarta Sección, Tijuana, 22254'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Maclavio Herrera y Toribio Ortega #3424, Francisco Villa , Mesa de Otay, Tijuana, 22615'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Modulo 4 Mesa de Otay, Tijuana, 22390'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Centenario #10851, Zona Rio, Centro, Tijuana, 22010'
+- municipality: Tijuana
+  name: Departamento de Atención Primer Nivel
+  address: 'Cruz del Sur #226, Sanchez Taboada, Tijuana, 22185'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Ocotlan #Manzana 19, Benito Garcia, Ensenada, 22793'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Lázaro Cárdenas #S/N, Real del Castillo, Ensenada, 22770'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Al Morro #S/N, Isla de Cedros, Ensenada, 22420'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Libre Rosarito-Ensenada Km 56 #S/N, La Mision, Ensenada, 22765'
+- municipality: Ensenada
+  name: Departamento De Atención Primer Nivel
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Departamento De Atención Primer Nivel
+  address: 'Guillermo Prieto #213, Villa De Juarez (San Antonio De Las Minas), Ensenada, 22766'
+- municipality: Ensenada
+  name: Departamento De Atención Primer Nivel
+  address: 'Niños Héroes #S/N, San Vicente, Ensenada, 22900'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Km. 76 Carretera Ensenada a Tecate #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Pedro Terraza #S/N, Valle de la Trinidad, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 22815'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Agustín De Iturbide, Lote 2 Manzana 4 #S/N, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Departamento De Atención Primer Nivel
+  address: 'Emiliano Zapata #157, Erendira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'H #S/N, Ex-Ejido Ruíz Cortines, Ensenada, 22810'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Tercera  #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Miguel Hidalgo y Costilla #S/N, Heroes De La Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Primera #S/N, Esteban Cantu, Ensenada, 22794'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Calle Agustin Iturbide #S/N, Fraccionamiento Centro Artesanal, Maneadero, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Vicente Guerrero y Santo Domingo #221, Vicente Guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Calle 16 de Septiembre #204, Ejido Emiliano, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Entre Calles Granada y Boulevard General Juan C. Zertuche #S/N, Carlos Pacheco, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Guillermo Prieto y Quinta Avenida #S/N, Benito Juarez, Centro, Ensenada, 21480'
+- municipality: Ensenada
+  name: Departamento de Atención Primer Nivel
+  address: 'Granadas y Gardenias #S/N, Poblado Ingeniero Francisco Murguia Km 49, Ensenada, 21722'
+- municipality: Ensenada
+  name: Departamento De Atención Primer Nivel
+  address: 'Avenida Vicente Guerrero Y Santo Domingo #221, Vicente Guerrero, Ensenada, 22920'
+- municipality: Tecate
+  name: Departamento De Atención Primer Nivel
+  address: 'Benito Juarez #S/N, Valle De Las Palmas, Tecate, 21500'
+- municipality: Tecate
+  name: Departamento de Atención Primer Nivel
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Playas de Rosarito
+  name: Departamento De Atención Primer Nivel
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Playas de Rosarito, 22705'
+- municipality: Playas de Rosarito
+  name: Departamento de Atención Primer Nivel
+  address: 'Benito Juárez #Lote 108 M, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Departamento De Atención Primer Nivel
+  address: 'Hidalgo #Sin Número, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: Playas de Rosarito
+  name: Departamento de Atención Primer Nivel
+  address: 'Galilea #2200, Villa Turistica, Centro, Playas De Rosarito, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Sin Nombre #S/N, Bahia De Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Francisco Mujica #S/N, Ruben Jaramillo, San Quintín, 22915'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Departamento de Atención Primer Nivel
+  address: 'Ing. Luis Alcerrega #S/N, Flores Magon, San Quintín, 22819'
+- municipality: San Felipe
+  name: Departamento de Atención Primer Nivel
+  address: 'Mar Berjmejo #173, Ampliacion Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Consulta Médica General
+  requirements:
+  - text: Cualquier ciudadano puede solicitar el servicio de consulta médica general, sin requerir algún tipo de
+      documento de requisito
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar programación de cita en el área de recepción, recibirá carnet de cita con la fecha y hora registrada.
+    - Presentarse en consultorio el día de su cita y esperar su turno.
+    - Recibir la consulta por parte del médico, para que este determine si el paciente se refiera a un servicio
+      de la unidad médica, o a atención de segundo nivel (hospital), o en su caso, puede disponer para retirarse
+      de la consulta dependiendo del diagnóstico, pudiendo o no generarse receta médica
+  notes: Proporcionar atención médica orientada a la prevención, detección, diagnóstico y tratamiento de enfermedades
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Aplica de manera general
+- source: ley3
+  pinpoint: Artículo 39
+- source: ley4
+  pinpoint: Aplica de manera general
+- source: ley5
+  pinpoint: APLICA DE MANERA GENERAL
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar programación de cita en el área de recepción, recibirá carnet de cita con la fecha y hora registrada.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentarse en consultorio el día de su cita y esperar su turno.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir la consulta por parte del médico, para que este determine si el paciente se refiera a un servicio
+    de la unidad médica, o a atención de segundo nivel (hospital), o en su caso, puede disponer para retirarse de
+    la consulta dependiendo del diagnóstico, pudiendo o no generarse receta médica
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1543: Consulta Médica General'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1543
+    version_date: 12/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política De Los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana, NOM-005-SSA3-2010 Que Establece Los Requisitos Mínimos De Infraestructura Y Equipamiento
+      De Establecimientos Para La Atención Médica De Pacientes Ambulatorios.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana, que Establece Los Requisitos Mínimos De Infraestructura Y Equipamiento.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

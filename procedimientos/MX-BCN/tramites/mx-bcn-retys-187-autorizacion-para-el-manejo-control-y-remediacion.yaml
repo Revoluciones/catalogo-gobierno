@@ -1,0 +1,115 @@
+id: mx-bcn-retys-187-autorizacion-para-el-manejo-control-y-remediacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para el manejo, control y remediación de problemas asociados a ejemplares o poblaciones que
+  se tornen perjudiciales
+summary: Autorización para controlar y remediar problemas de especies perjudiciales que afectan al ambiente, otras
+  especies o la población humana.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 187
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/187
+  homoclave: BC-SMADS-015
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera implementar medidas de control o remediación en poblaciones nocivas.
+result: Autorización para implementar medidas de control
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 18 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recursos Naturales
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Recursos Naturales
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física y moral
+  requirements:
+  - text: Formato de autorizacion para el manejo, control y remedicacion de problemas asociados a ejemplares o poblaciones
+      perjudiciales
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3754
+  - text: Copia de la identificación oficial vigente del solicitante (credencial de elector, pasaporte mexicano
+      o cédula profesional
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la solicitud en las oficinas de la dependencia
+    - Presentar la informacion que se requisita en el formato
+    - Evaluar el tramite y generar un oficio de respuesta
+  notes: Persona, sociedad civil o mercantil, organismo gubernamental, ejido interesada en implementar medidas de
+    control o remedicación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 72 y 79
+- source: ley2
+  pinpoint: Artículo 80
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en las oficinas de la dependencia
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar la informacion que se requisita en el formato
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluar el tramite y generar un oficio de respuesta
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 187: Autorización para el manejo, control y remediación de problemas asociados a ejemplares
+      o poblaciones que se tornen perjudiciales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/187
+    version_date: 30/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

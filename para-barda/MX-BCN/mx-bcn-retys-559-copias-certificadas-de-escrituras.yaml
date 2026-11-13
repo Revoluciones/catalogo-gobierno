@@ -1,0 +1,144 @@
+id: mx-bcn-retys-559-copias-certificadas-de-escrituras
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Copias Certificadas de Escrituras
+summary: Certificación de los instrumentos públicos, contratos privados y todo aquel documento que obra en los archivos
+  registrales de la dependencia.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 559
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/559
+  homoclave: BC-DRPPC-023
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+- Otro
+when: Cuando se requiera la certificación de algún documento del archivo registral
+result: Copias certificadas de escrituras
+cost:
+  type: variable
+  amount_mxn: 556.0
+  text: 'COSTO VARIABLE: Octubre 2026 hasta 15 hojas el costo es de $ 556.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Realizar el pago de derechos correspondientes
+    cites:
+    - source: retys
+  - text: Llenar el formato FMO-8.5.1-02 con la Información correspondiente
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la página https://rppcweb.ebajacalifornia.gob.mx/portalbc/produccion/portalapp/index.html o dar
+      clic en "iniciar trámite" en la parte inferior derecha
+    - Seleccionar la opción de copias certificadas
+    - Pagar los derechos correspondientes
+    - El usuario recibe sus copias certificadas por correo electrónico
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Tomar turno para la elaboración del recibo
+    - Llenar la solicitud debidamente en el formato FMO-8.5.1-02
+    - Realizar el pago en cajas de recaudación de rentas
+    - Tomar turno para ingresar la solicitud
+    - Recoger el trámite en el tiempo en que se asigne el volante
+  notes: Para la certificación de algún documento del archivo registral
+legal_basis:
+- source: ley1
+  pinpoint: 14, fracción VII, inciso C
+- source: ley2
+  pinpoint: '50'
+- source: ley3
+  pinpoint: 11, fracción
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la página https://rppcweb.ebajacalifornia.gob.mx/portalbc/produccion/portalapp/index.html o
+    dar clic en "iniciar trámite" en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar la opción de copias certificadas
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pagar los derechos correspondientes
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El usuario recibe sus copias certificadas por correo electrónico
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 559: Copias Certificadas de Escrituras'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/559
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Copias Certificadas de Escrituras. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

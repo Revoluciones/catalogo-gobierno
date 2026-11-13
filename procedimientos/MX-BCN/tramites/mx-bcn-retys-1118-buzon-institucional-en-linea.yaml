@@ -1,0 +1,127 @@
+id: mx-bcn-retys-1118-buzon-institucional-en-linea
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Buzón Institucional en Línea
+summary: Medio por el cual el usuario puede enviar comentarios, dudas, quejas y sugerencias a CECyTE BC.
+authority:
+  name: Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California
+official_ids:
+  retys_id: 1118
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1118
+  homoclave: BC-CECYTE-012
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+- Otro
+when: Cuando el ciudadano requiera consultar sobre algún tema con CECyTE BC..
+result: Atención personalizada de forma telefónica y en línea.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 48 Horas'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Departamento de Organización y Fortalecimiento Institucional
+  address: 'Panamá  #199, Cuauhtémoc Sur, Mexicali, 21200'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: No se requiere
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Usuario envía comentario o sugerencia a través de buzón web haciendo clic en el botón "iniciar trámite" ubicado
+      en la parte inferior derecha, vía teléfono o presencial en Dirección General
+    - Proporciona la información detallada sobre el tema que desea que se le brinde atención o respuesta
+    - Proporciona información de contacto vigente para que se le envíe una respuesta
+    - Se recibe, verifica y canaliza la información recibida al departamento que corresponda según el tema
+    - Se brinda seguimiento con el departamento que recibió la información asegurándose que sea en un periodo no
+      mayor a 48 horas
+    - Se asegura que el departamento haya atendido al usuario y envie respuesta por el medio indicado
+    - Se envía respuesta y/o atención al usuario antes de las 48 horas
+    - Se da por concluida la atención al usuario
+  notes: Persona que ha realizado algún trámite o solicitado un servicio de los que se ofrecen en CECyTE BC
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 26 fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Usuario envía comentario o sugerencia a través de buzón web haciendo clic en el botón "iniciar trámite"
+    ubicado en la parte inferior derecha, vía teléfono o presencial en Dirección General
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Proporciona la información detallada sobre el tema que desea que se le brinde atención o respuesta
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Proporciona información de contacto vigente para que se le envíe una respuesta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se recibe, verifica y canaliza la información recibida al departamento que corresponda según el tema
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se brinda seguimiento con el departamento que recibió la información asegurándose que sea en un periodo
+    no mayor a 48 horas
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se asegura que el departamento haya atendido al usuario y envie respuesta por el medio indicado
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se envía respuesta y/o atención al usuario antes de las 48 horas
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Se da por concluida la atención al usuario
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1118: Buzón Institucional en Línea'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1118
+    version_date: 02/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de CECyTE BC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

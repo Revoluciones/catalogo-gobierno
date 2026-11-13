@@ -1,0 +1,152 @@
+id: mx-bcn-retys-613-pagos-en-linea-por-internet-de-los-servicios-factu
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pagos en línea por internet de los servicios facturados. (consultar procedimiento para darse de alta en portal
+  de CESPM)
+summary: Con este servicio de CESPM puedes pagar tu recibo de agua por internet de manera rápida y fácil. Solo necesitas
+  una tarjeta de crédito o débito, y puedes hacerlo desde casa sin tener que ir a una oficina.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 613
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/613
+  homoclave: BC-CESPM-023
+who_can:
+- Interesado
+when: Cuando requieres el servicio
+result: Registro
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Naturales'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: El usuario debe estar dado de alta en el sistema.
+    cites:
+    - source: retys
+  - text: Factura y dirección de correo electrónico.
+    cites:
+    - source: retys
+  - text: Tener a la mano su tarjeta con la cual realizará el pago
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Dale click al botón iniciar tramite. Regístrate si aún no tienes usuario y contraseña.
+    - Proporciona nombre de usuario, contraseña, nombre del contacto, teléfono y correo electrónico.
+    - Captura la fecha de vencimiento, número de cuenta y número de factura (debe ser de este mes o el anterior).
+    - Usa el botón "Agregar cuenta" para registrar múltiples cuentas.
+    - Presiona "Ingresar a servicios en línea" para acceder a tu información.
+    - Selecciona "Pago por Internet" o "Consulta de factura" y procede a pagar. Puedes usar tarjetas Visa, Mastercard
+      o American Express.
+    - Introduce los datos de tu tarjeta y confirma el pago. Imprime el comprobante si lo deseas.
+  notes: Realiza el pago
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 9
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dale click al botón iniciar tramite. Regístrate si aún no tienes usuario y contraseña.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Proporciona nombre de usuario, contraseña, nombre del contacto, teléfono y correo electrónico.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Captura la fecha de vencimiento, número de cuenta y número de factura (debe ser de este mes o el anterior).
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Usa el botón "Agregar cuenta" para registrar múltiples cuentas.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presiona "Ingresar a servicios en línea" para acceder a tu información.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Selecciona "Pago por Internet" o "Consulta de factura" y procede a pagar. Puedes usar tarjetas Visa, Mastercard
+    o American Express.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Introduce los datos de tu tarjeta y confirma el pago. Imprime el comprobante si lo deseas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 613: Pagos en línea por internet de los servicios facturados. (consultar procedimiento
+      para darse de alta en portal de CESPM)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/613
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

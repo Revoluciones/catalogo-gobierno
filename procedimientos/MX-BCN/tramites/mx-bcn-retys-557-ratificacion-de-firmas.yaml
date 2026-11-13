@@ -1,0 +1,160 @@
+id: mx-bcn-retys-557-ratificacion-de-firmas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Ratificación de Firmas
+summary: Procedimiento mediante el cual las personas que intervienen en un contrato externan su voluntad, confirmando
+  el acto jurídico celebrado ante la presencia del Registrador.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 557
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/557
+  homoclave: BC-DRPPC-022
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera ratificar un documento
+result: Ratificación de Firmas
+cost:
+  type: variable
+  amount_mxn: 1.0
+  text: 'COSTO VARIABLE: Octubre 2026 costo es de $ 1 286.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Persona interesada
+  requirements:
+  - text: Que el valor del inmueble objeto del contrato no exceda de las 10,000 veces el valor de UMA vigente
+    cites:
+    - source: retys
+  - text: Anexar los documentos, fotocopia de las identificaciones oficiales con fotografía de cada una de las partes
+      que intervienen en el contrato
+    cites:
+    - source: retys
+  - text: Si alguna de estas personas es apoderado legal, exhibirá el testimonio notarial original con el cual se
+      acredite su personalidad
+    cites:
+    - source: retys
+  - text: Ingresar en la ventanilla correspondiente los documentos para su análisis, el contrato a ratificar deberá
+      presentarse en ( 3 originales) que deberán acompañarse por los documentos establecidos en el artículo 38 de
+      la Ley del Registro Público de la Propiedad y del Comercio
+    cites:
+    - source: retys
+  - text: Pagar los derechos correspondientes y posteriormente comparecer en compañía de los testigos de las partes
+      contratantes, el día asignado para tal efecto
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la oficina registral
+    - Tomar turno para la emisión del recibo y generar el volante
+    - Presentar la documentación a inscribir junto con los lineamientos para ratificación
+    - Realizar el pago correspondiente en la oficina recaudadora
+    - Tomar turno para ingresar el contrato con los requisitos establecidos de acuerdo a los lineamientos emitidos
+      por la DRPPC
+  notes: Cualquier persona física
+legal_basis:
+- source: ley1
+  pinpoint: '2191'
+- source: ley2
+  pinpoint: 12, fracción XI
+- source: ley3
+  pinpoint: 11 Fracción I
+- source: ley4
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina registral
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar turno para la emisión del recibo y generar el volante
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la documentación a inscribir junto con los lineamientos para ratificación
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente en la oficina recaudadora
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar turno para ingresar el contrato con los requisitos establecidos de acuerdo a los lineamientos emitidos
+    por la DRPPC
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 557: Ratificación de Firmas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/557
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código civil para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal de año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y del Comercio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Lineamientos para ratificación de contratos ante el Registro Público de la Propiedad y del Comercio del
+      Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

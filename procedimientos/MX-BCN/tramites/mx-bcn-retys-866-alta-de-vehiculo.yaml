@@ -1,0 +1,227 @@
+id: mx-bcn-retys-866-alta-de-vehiculo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Alta de Vehículo
+summary: Alta de vehículo ante Registro Estatal Vehicular
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 866
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/866
+  homoclave: BC-SH-044
+who_can:
+- Representante Legal
+- Interesado
+when: Se deberá realizar el alta de un vehículo dentro de los 5 días hábiles siguientes a la adquisición o importación
+  correspondiente.
+result: El registro del vehículo ante el Registro Estatal Vehicular, Expedicción de tarjeta y placas de circulación
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026: Expedición de Tarjeta de circulación: Automóviles y camiones
+    particulares $1,861.72 Motocicletas $1,861.72 Para demostración $4,448.77 Remolques $1,712.14 Expedición de
+    placas de circulación: Automóviles y camiones particulares $1,960.86 Motocicletas $393.50 Para demostración
+    $4,423.47 Remolques $1,421.68 Para vehículo de persona discapacitada $1,960.86 *No incluye costos de contribuciones
+    municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Estarán vigentes durante el año que fueron expedidas
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Contar con cita (solo aplica si el trámite es en Recaudación de Rentas del Estado en Tijuana Vía Rápida,IMOS,Cerro
+      Colorado y Mexicali)
+    cites:
+    - source: retys
+  - text: Presentar el vehículo de que se trate para su verificación (este trámite se realiza hasta las 16:00 hrs.)
+    cites:
+    - source: retys
+  - text: Factura de origen expedida por el fabricante, ensamblador, distribuidor autorizado o empresas comerciales
+      dedicadas a la compra y venta de vehículos usados; salvo en el caso en que haya sido importado directamente
+      por un particular, en los términos de las disposiciones legales vigentes.
+    cites:
+    - source: retys
+  - text: Presentar pedimento de legal importación en caso de ser vehículo extranjero
+    cites:
+    - source: retys
+  - text: Formato electrónico de registro de comerciantes de autos, excepto en los vehículos importados directamente
+      por el interesado, así como los adquiridos fuera del Estado
+    cites:
+    - source: retys
+  - text: 'Tratándose de personas físicas: presentar en original y copia licencia de conducir vigente del Estado
+      de Baja California, en caso de que se cuente con alguna discapacidad o impedimento para conducir, presentar
+      la licencia de conducir vigente del Estado de Baja California de la persona que autorice para conducir'
+    cites:
+    - source: retys
+  - text: Tratándose de personas morales, presentar en original y copia comprobante de domicilio no mayor a tres
+      meses de antigüedad, escritura constitutiva, cédula de identificación fiscal del registro federal de contribuyentes,
+      identificación oficial con fotografía vigente del representanten legal y documentación en la que conste la
+      personalidad de quién comparece
+    cites:
+    - source: retys
+  - text: Tratándose de vehículos foráneos deberá presentar registro y pagos de la Entidad Federativa de Origen.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia el seguro de responsabilidad civil vigente que ampare los conceptos y el
+      monto señalado en el artículo 18 bis de este ordenamiento (el seguro de responsabilidad civil al que se refiere
+      este ordenamiento, debe amparar por lo menos, en concepto de daños a terceros en su persona y en sus bienes,
+      el monto de cuatro mil trescientos cincuenta veces el valor diario de la unidad de medida y actualización
+      vigente)
+    cites:
+    - source: retys
+  - text: 'Efectuar el pago de derechos correspondiente, opciones de pago: efectivo,cheque certificado, tarjeta
+      debito/crédito (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en la oficina de recaudación correspondiente con el vehículo para verificación de número de serie
+    - Se revisa el vehículo, si el dictamen es favorable, se procede con la toma de fotografías o se le entrega
+      formato
+    - Tratándose de vehículo foráneo al ciudadano se le entregará solicitud de su trámite para lo que deberá esperar
+      la validación de su factura o pedimento que acredita la legal estancia y el registro del vehículo de la Entidad
+      Federativa de origen. (El tiempo de validación puede ser hasta 10 días hábiles) una vez validado, se le notificará
+      vía correo electrónico al correo que señale el ciudadano en su solicitud. Una vez que se le notifique por
+      correo deberá regresar para continuar con el trámite.
+    - Acudir al módulo de revisión de requisitos y entrega de documentación
+    - Revisa la documentación; en caso de que no proceda el trámite, el ciudadano podrá regresar una vez que cumpla
+      con la obtención total de los requisitos
+    - Si procede el trámite, el ciudadano deberá realizar el pago de derechos e impuestos correspondientes
+    - Realiza el cobro correspondiente y entrega la tarjeta de circulación
+    - Pasa a la ventanilla de entrega de placas a recoger sus láminas correspondientes
+  notes: Registrar en el padrón vehicular del Estado de Baja California, toda clase de vehículos con domicilio en
+    la entidad
+legal_basis:
+- source: ley1
+  pinpoint: 10, Fracción II, Inciso A
+- source: ley2
+  pinpoint: '7'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en la oficina de recaudación correspondiente con el vehículo para verificación de número de
+    serie
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se revisa el vehículo, si el dictamen es favorable, se procede con la toma de fotografías o se le entrega
+    formato
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Tratándose de vehículo foráneo al ciudadano se le entregará solicitud de su trámite para lo que deberá
+    esperar la validación de su factura o pedimento que acredita la legal estancia y el registro del vehículo de
+    la Entidad Federativa de origen. (El tiempo de validación puede ser hasta 10 días hábiles) una vez validado,
+    se le notificará vía correo electrónico al correo que señale el ciudadano en su solicitud. Una vez que se le
+    notifique por correo deberá regresar para continuar con el trámite.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir al módulo de revisión de requisitos y entrega de documentación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Revisa la documentación; en caso de que no proceda el trámite, el ciudadano podrá regresar una vez que
+    cumpla con la obtención total de los requisitos
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Si procede el trámite, el ciudadano deberá realizar el pago de derechos e impuestos correspondientes
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Realiza el cobro correspondiente y entrega la tarjeta de circulación
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Pasa a la ventanilla de entrega de placas a recoger sus láminas correspondientes
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 866: Alta de Vehículo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/866
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado para el ejercicio fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Regula los Servicios de Control Vehicular en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Alta ante Registro Estatal Vehicular. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

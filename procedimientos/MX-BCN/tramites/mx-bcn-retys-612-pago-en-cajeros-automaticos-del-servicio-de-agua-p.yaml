@@ -1,0 +1,116 @@
+id: mx-bcn-retys-612-pago-en-cajeros-automaticos-del-servicio-de-agua-p
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pago en cajeros automáticos del servicio de agua potable.
+summary: Poder cubrir el costo de la factura las 24 horas del día los 365 días del año en Zonas Comerciales
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 612
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/612
+  homoclave: BC-CESPM-022
+who_can:
+- Interesado
+when: Una vez por cada factura
+result: Comprobante de pago emitido por el cajero automático
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 2 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Factura por consumo de agua para escanear, ó
+    cites:
+    - source: retys
+  - text: 'Capturar los datos solicitados como: número de cuenta, teléfono o clave catastral.'
+    cites:
+    - source: retys
+  - text: Cubrir el total del adeudo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a cualquiera de las tres ubicaciones de los cajeros automáticos.
+    - Deslizar el código de barras de factura por el lector o registrar en pantalla los datos solicitados por el
+      cajero automático
+    - Seleccionar el trámite a realizar (pago semestral, pago anual, pago de factura o estado de cuenta).
+    - Realizar el pago correspondiente; introduciendo los billetes o monedas como se indica en pantalla.
+    - Tomar su comprobante de pago emitido por el cajero automático.
+  notes: Cualquiera que realice el pago
+legal_basis:
+- source: ley1
+  pinpoint: ART 9. ARTÍCULO
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a cualquiera de las tres ubicaciones de los cajeros automáticos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Deslizar el código de barras de factura por el lector o registrar en pantalla los datos solicitados por
+    el cajero automático
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seleccionar el trámite a realizar (pago semestral, pago anual, pago de factura o estado de cuenta).
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente; introduciendo los billetes o monedas como se indica en pantalla.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Tomar su comprobante de pago emitido por el cajero automático.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 612: Pago en cajeros automáticos del servicio de agua potable.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/612
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,129 @@
+id: mx-bcn-retys-314-atencion-integral-a-personas-mayores-en-casas-y-cl
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención Integral a Personas Mayores en Casas y Clubes de Día
+summary: Brindar pláticas y talleres a personas mayores que promueven su desarrollo humano integral, procurando
+  así un envejecimiento saludable y la salvaguarda de sus derechos.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 314
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/314
+  homoclave: BC-DIF-007
+who_can:
+- Interesado
+when: Cuando el usuario lo requiera y cumpla con los requisitos
+result: Habilidades y destrezas a través del aprendizaje continuo, así como herramientas en materia de salud física
+  y mental
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Casa de Día Mexicali
+  address: 'Ave. Bahía de Todos los Santos y Ave. San Luis Potosí #2000, Baja California , Mexicali, 21100'
+- municipality: Tijuana
+  name: Casa de Día Tijuana
+  address: 'Av. Paseo del Rio esquina Calle Valle  #s/n, Zona del Río 3ra Etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Casa de Día Ensenada
+  address: 'Av. Niños Heroes entre 3era y 4ta #3503, Colonia Hidalgo , Ensenada, 22880'
+scenarios:
+- name: Adultos mayores
+  requirements:
+  - text: INE o CURP (Original)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio
+    cites:
+    - source: retys
+  - text: Solicitud de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11298
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de las casas de día.
+    - Solicitar información sobre los días y horarios en que se imparten talleres, cursos, pláticas psicoeducativas
+      y atenciones especializadas en salud.
+    - Se proporciona información sobre los días y horarios que se imparten los servicios solicitados.
+    - Entrega documentación solicitada para inscribirse al servicio requerido, con el promotor de la casa de día
+      al taller o curso de su elección, así como para integrarse al padrón de beneficiarios para la consulta gratuita
+      de especialidad.
+    - Recibe y revisa los documentos solicitados para la inscripción.
+    - Se imparte curso, taller, plática o atención especailizada solicitada.
+  notes: 'Recopilación de documentos para el servicio:'
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4 Fracción I.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de las casas de día.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar información sobre los días y horarios en que se imparten talleres, cursos, pláticas psicoeducativas
+    y atenciones especializadas en salud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se proporciona información sobre los días y horarios que se imparten los servicios solicitados.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega documentación solicitada para inscribirse al servicio requerido, con el promotor de la casa de
+    día al taller o curso de su elección, así como para integrarse al padrón de beneficiarios para la consulta gratuita
+    de especialidad.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recibe y revisa los documentos solicitados para la inscripción.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se imparte curso, taller, plática o atención especailizada solicitada.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 314: Atención Integral a Personas Mayores en Casas y Clubes de Día'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/314
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de asistencia social para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

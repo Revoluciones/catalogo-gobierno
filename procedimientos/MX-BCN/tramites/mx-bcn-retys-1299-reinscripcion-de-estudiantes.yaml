@@ -1,0 +1,134 @@
+id: mx-bcn-retys-1299-reinscripcion-de-estudiantes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reinscripción de Estudiantes
+summary: Reinscripción de estudiantes que continúan con sus estudios en la Universidad Politécnica de Baja California.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1299
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1299
+  homoclave: BC-UPBC-004
+who_can:
+- Interesado
+- Tutor
+when: En los periodos establecidos en la convocatoria
+result: Continuar como estudiante
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $3,500.00 M.N. TEMPORANEO (INSCRIPCION EN TIEMPO) $4,000.00 M.N. EXTEMPORANEO (INSCRIPCION TARDIA)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único cuatrimestral
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Porcentaje de atención a la demanda educativa en educación superior por parte de la UPBC
+  requirements:
+  - text: Recibo de pago de reinscripción
+    cites:
+    - source: retys
+  - text: Pago en linea o en ventanilla
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Entrar a la página del sistema Siaax haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+      derecha
+    - Ingresar con su número de matrícula y contraseña
+    - Seleccionar tipo de trámite
+    - Generar recibo de pago, para realizar el pago en línea o imprimir para pago en ventanilla
+    - Subir el recibo de pago en formato pdf, para que sea validado por el área de recursos financieros
+    - Una vez validado por el área de recursos financieros, se le indica a gestión escolar por medio del Siaax que
+      se reinscribió el estudiante
+  notes: Subir de manera digital el recibo de pago en portal para su reinscripción
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, fracción III
+- source: ley2
+  pinpoint: Artículos, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 y 68, fracción III
+- source: ley3
+  pinpoint: Artículos 13, 14, 15, 16, 17, 18 y 19
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Entrar a la página del sistema Siaax haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior
+    derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar con su número de matrícula y contraseña
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seleccionar tipo de trámite
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Generar recibo de pago, para realizar el pago en línea o imprimir para pago en ventanilla
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Subir el recibo de pago en formato pdf, para que sea validado por el área de recursos financieros
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez validado por el área de recursos financieros, se le indica a gestión escolar por medio del Siaax
+    que se reinscribió el estudiante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1299: Reinscripción de Estudiantes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1299
+    version_date: 07/Mayo /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de creación de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Estudios Profesionales Asociado y Licenciatura de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

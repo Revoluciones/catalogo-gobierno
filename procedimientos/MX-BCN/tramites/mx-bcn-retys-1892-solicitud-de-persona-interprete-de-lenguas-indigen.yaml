@@ -1,0 +1,113 @@
+id: mx-bcn-retys-1892-solicitud-de-persona-interprete-de-lenguas-indigen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Persona Intérprete de Lenguas Indígenas (LI)
+summary: Conecta a personas que necesitan comunicarse dentro de alguna institución publica en alguna Lengua Indígena
+  (LI) con personas intérpretes y traductoras de Baja California. Podrás consultar el Directorio Estatal disponible
+  o solicitar apoyo institucional a la Secretaría de Inclusión Social (SIS) para contactar a una persona intérprete
+  y traductora.
+authority:
+  name: Secretaría de Inclusión Social
+official_ids:
+  retys_id: 1892
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1892
+  homoclave: BC-SIS-002
+who_can:
+- Interesado
+when: Cuando requiera el servicio.
+result: Vinculación con personas intérpretes y traductoras.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Oficinas Mexicali
+  address: 'José María Morelos #221, Zona Centro , Mexicali, 21100'
+- municipality: Tijuana
+  name: Oficinas Tijuana
+  address: 'Paseo de los Héroes #1020, Zona Río, Tijuana, 22010'
+- municipality: Ensenada
+  name: Oficinas Ensenada
+  address: 'Prolongación Boulevard Zertuche #6474, Ex Ejido Chapultepec , Ensenada, 22785'
+- municipality: San Quintín
+  name: Oficinas San Quintín
+  address: 'Carretera Transpeninsular Km.190  #1311, Plaza Tartani II , San Quintín, 22940'
+scenarios:
+- name: Solicitud de Vinculación
+  requirements:
+  - text: 'CUENTA ACTIVA DE LLAVE BC: Indispensable para iniciar sesión en la Ventanilla Digital, autenticar tu
+      identidad y poder llenar tu formulario de solicitud.'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'INICIA SESIÓN: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave BC.'
+    - 'COMPLETA TU SOLICITUD: Llena el breve formulario indicando la Lengua Indígena requerida y el tipo de apoyo
+      que necesitas.'
+    - 'ESPERA LA VINCULACIÓN: El personal de la Secretaría de Inclusión Social recibirá tu solicitud y se pondrá
+      en contacto contigo para canalizarte con el perfil adecuado.'
+  notes: Utiliza esta opción si necesitas el acompañamiento de la Secretaría de Inclusión Social para buscar y contactar
+    a una persona intérprete de Lengua Indígena.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, fracción XV y 22, fracción XIII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'INICIA SESIÓN: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave BC.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'COMPLETA TU SOLICITUD: Llena el breve formulario indicando la Lengua Indígena requerida y el tipo de
+    apoyo que necesitas.'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'ESPERA LA VINCULACIÓN: El personal de la Secretaría de Inclusión Social recibirá tu solicitud y se pondrá
+    en contacto contigo para canalizarte con el perfil adecuado.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1892: Solicitud de Persona Intérprete de Lenguas Indígenas (LI)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1892
+    version_date: 13/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Inclusión Social.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Directorio Estatal y Vinculación con Personas Intérpretes y Traductoras de Lenguas Indígenas..
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

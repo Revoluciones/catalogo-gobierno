@@ -1,0 +1,439 @@
+id: mx-bcn-retys-1448-atencion-de-sugerencias-felicitaciones-y-quejas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención de Sugerencias, Felicitaciones y Quejas
+summary: Es un servicio que se ofrece al ciudadano de Baja California, para la atención de sus quejas, sugerencias
+  o felicitaciones relacionadas con los servicios de salud.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1448
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1448
+  homoclave: BC-ISESALUD-002
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando se desee presentar una queja, sugerencia o felicitaciones relacionada con los servicios de salud
+result: Seguimiento de su solicitud
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'A #S/N, Los Algodones, Mexicali, 21970'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Galeana #S/N, Benito Juarez, Mexicali, 21900'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ignacio Zaragoza #S/N, Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Constituyentes de Queretaro #S/N, Ejido Queretaro, Mexicali, 21620'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Felipa Vda.de Arellano #S/N, Carranza, Mexicali, 21394'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Candelilla #S/N, Rivera Campestre, Mexicali, 21387'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Patzcuaro #S/N, Ejido Patzcuaro, Mexicali, 21706'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'José Espinoza Lote 16 Manzana 13 #S/N, Fundadores, Mexicali, 21478'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Gardenias #S/N, El Cipres, Mexicali, 21348'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Cuba #S/N, Coahuila, Mexicali, 21800'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ayuntamiento #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Del Sol y De La Luna #S/N, Santa Isabel, Mexicali, 21139'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Continente Europeo #S/N, Los Santorales, Mexicali, 21138'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: '27 de Enero #S/N, Sonora, Mexicali, 21738'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Principal #S/N, Toluca, Mexicali, 21820'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Francisco Zarco #S/N, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Mecanicos #S/N, Industrial, Mexicali, 21010'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Bahia Lucerna #S/N, Carlos Salinas De Gortari, Mexicali, 21137'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Prolongacion Socorro Garcia #S/N, Veracruz Dos, Mexicali, 21821'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Gral. Martin Cabrera #S/N, Vicente Guerrero, Mexicali, 21320'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Calle Rio Culiacan #S/N, Pro-Hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Abelardo L Rodriguez #S/N, Progreso, Mexicali, 21326'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Sin Nombre #S/N, Compuertas, Mexicali, 21210'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'España #S/N, Orizaba, Mexicali, 21160'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ignacio Allende #21700, Estacion Delta, Mexicali, 21700'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Bernardo Reyes #S/N, Flores Magon, Mexicali, 21220'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Rio Nazas #S/N, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: '27 de Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Coahuila #S/N, Guajardo, Mexicali, 21050'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Benito Juarez #128, Hermosillo, Mexicali, 21840'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: '58 #S/N, Hidalgo, Mexicali, 21389'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Agustin Iturbide  #S/N, Fracc. Centro Artesanal, Mexicali, 22785'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Gastelum y Calle 14 #S/N, Zona Centro, Mexicali, 22800'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Del Hospital #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Avenida 27 de Enero entre Calle Novena y Decima #S/N, Guadalupe Victoria Ej., Guadalupe Victoria, Mexicali,
+    21720'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Ayuntamiento y 27 de Septiembre #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Mexicali
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Unidad Habitacional Luis Rodríguez Aviña El Vergel #S/N, Vicente Guerrero, Mexicali, 22930'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Eucalipto #1, 3 de Octubre, Tijuana, 22126'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'El Mexicano #S/N, 18 de Marzo, Tijuana, 22120'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Choix #5, Murua Martinez, Tijuana, 22520'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Amacuzac #224, Emiliano Zapata, Tijuana, 22170'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Mexicanidad #41069, Insurgentes, Tijuana, 22420'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: '7 #22, Reforma, Tijuana, 22183'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Mexicali 1986 #S/N, Hacienda Las Fuentes, Tijuana, 22645'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Mexicali #8, Tecolote, Tijuana, 22644'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Del Canal #S/N, Durango La Mesa, Tijuana, 22117'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ley Federal del Trabajo #S/N, Flores Magon, Tijuana, 22606'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Tijuana-Tecate Km.16 1/2 #S/N, Tona, Tijuana, 22124'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Cruz del Sur #226, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Constructores #S/N, Sánchez Taboada, Tijuana, 22185'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Manuel M. Dieguez #1516, Lazaro Cardenas 2da. Mesa, Tijuana, 22510'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Gral. Lázaro Cárdenas #100, Alfonzo Garzon Santibañez, Tijuana, 22410'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'San Rafael entre Las Delicias y Santa Maria #19811, Terrazas Del Valle Segunda Sección, Tijuana, 22330'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ruta Matamoros y Chichenitza #22234, Mariano Matamoros, Tijuana, 22234'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Del Peñon #2980, Valle Verde, Tijuana, 22204'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'María Antonieta Ponds #3791, Miramar, Tijuana, 22526'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Fundadores #S/N, Rubi Sur, Tijuana, 22626'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Osa Menor #S/N, Nueva Aurora, Tijuana, 22604'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Las Torres #S/N, El Pípila, Tijuana, 22206'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Emiliano Zapata #S/N, Ojo de Agua, Tijuana, 22254'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'El Niño #S/N, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Anemona #S/N, El Florido 4ta Sección, Tijuana, 22254'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Maclovio Herrera #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Citlaltepec #1150, Santa Rosa, Tijuana, 22106'
+- municipality: Tijuana
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Tijuana
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Cruz del Sur #226, Sanchez Taboada, Tijuana, 22680'
+- municipality: Tijuana
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Maclavio Herrera y Toribio Ortega #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Tijuana
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Centenario  #10851, Zona Rio, Centro, Playas De Rosarito, Tijuana, 22320'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ocotlan #Manzana 1, Benito Garcia, Ensenada, 22793'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Lázaro Cárdenas #S/N, Real del Castillo, Ensenada, 22770'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Al Morro #S/N, Isla de Cedros, Ensenada, 22990'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Libre Rosarito-Ensenada Km 56 #S/N, La Mision, Ensenada, 22765'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Guillermo Prieto #213, Villa de Juarez (San Antonio de las Minas), Ensenada, 22766'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Niños Héroes #S/N, San Vicente, Ensenada, 22900'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Km. 76 Carretera Ensenada a Tecate #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Pedro Terraza #S/N, Valle de la Trinidad, Ensenada, 22917'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Zocolow #S/N, Lomitas Indeco, Ensenada, 22815'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Floresta #S/N, Obrera, Ensenada, 22830'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Heriberto Jara #459, Loma Linda, Ensenada, 22890'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Agustín De Iturbide, Lote 2 Manzana 4 #S/N, Centro Artesanal, Ensenada, 22785'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Crisantemos #S/N, El Sauzal de Rodriguez, Ensenada, 22760'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Emiliano Zapata #157, Erendira, Ensenada, 22904'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'H #S/N, Ex-Ejido Ruíz Cortinez, Ensenada, 22810'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Isla Montague #S/N, Mar, Ensenada, 22813'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Tercera  #S/N, Francisco Zarco, Ensenada, 22750'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Miguel Hidalgo y Costilla #S/N, Heroes de la Independencia, Ensenada, 22917'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Atención al Público)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Benito Juarez #S/N, Privada Emiliano Zapata, Ensenada, 22842'
+- municipality: Ensenada
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Primera #S/N, Esteban Cantú, Ensenada, 22794'
+- municipality: Ensenada
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Calle 16 de Septiembre #204, Ejido Emiliano Zapata, Ensenada, 22920'
+- municipality: Tecate
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Benito Juarez #S/N, Valle De Las Palmas, Tecate, 21500'
+- municipality: Tecate
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Tecate-Ensenada Km.-13 #Poste #409, Nueva Colonia Hindu, Tecate, 21507'
+- municipality: Tecate
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Tecate
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Manuel M. Carpio y Salvador Diaz Miron #S/N, Modulo 4 Mesa de Otay, Tecate, 22390'
+- municipality: Playas de Rosarito
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Las Lomas Altas #S/N, Lomas De Rosarito, Playas de Rosarito, 22705'
+- municipality: Playas de Rosarito
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Benito Juárez #Lote 108 M, Ejido Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Hidalgo #S/N, Ejido Primo Tapia, Playas de Rosarito, 22740'
+- municipality: Playas de Rosarito
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+- municipality: Playas de Rosarito
+  name: Unidad de Gestion de Calidad de Servicios de Salud
+  address: 'Benito Juarez #S/N, Ejido Plan Libertador , Playas De Rosarito, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Sin Nombre #S/N, Bahia De Los Angeles, San Quintín, 22980'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Sinaloa #S/N, Benito Juarez, San Quintín, 22910'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Francisco Mujica #S/N, Ruben Jaramillo, San Quintín, 22915'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Domicilio Conocido #S/N, La Providencia, San Quintín, 22910'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Emiliano Zapata #S/N, Maclovio Rojas, San Quintín, 22920'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud (Consulta Externa y Urgencias)
+  address: 'Vicente Guerrero #221, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Paseo de las Aguilas #S/N, Nueva Era, San Quintín, 22940'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Transpeninsular Km 56 #S/N, Transpeninsular Km. 56, San Quintín, 22960'
+- municipality: San Quintín
+  name: Unidad de Gestión de Calidad de Servicios de Salud
+  address: 'Ing. Luis Alzerrega #S/N, Flores Magon, San Quintín, 22819'
+scenarios:
+- name: Queja, sugerencia o felicitación
+  requirements:
+  - text: Llenar el formato de quejas, sugerencias y felicitaciones
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a los módulos de atención del sistema unificado de gestión (SUG) en las unidades de salud
+    - Solicitar y llenar el formato de quejas, sugerencias y felicitaciones (FUSA-Formato Único de Solicitud de
+      Atención)
+    - Depositar la hoja en el buzón y esperar a que la unidad de calidad se comunique vía telefónica con el usuario
+      (a) para informar la solución al comentario que presentó
+    - El gestor de calidad registra, clasifica y prioriza la severidad y urgencia de la solicitud. Gestiona, investiga,
+      resuelve y notifica al usuario la resolución de cada solicitud.
+  notes: Papeleta para escribir queja, sugerencia o felicitación/ formato FUSA (Formato Unificado de Solicitud de
+    Atención)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a los módulos de atención del sistema unificado de gestión (SUG) en las unidades de salud
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar y llenar el formato de quejas, sugerencias y felicitaciones (FUSA-Formato Único de Solicitud
+    de Atención)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Depositar la hoja en el buzón y esperar a que la unidad de calidad se comunique vía telefónica con el
+    usuario (a) para informar la solución al comentario que presentó
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El gestor de calidad registra, clasifica y prioriza la severidad y urgencia de la solicitud. Gestiona,
+    investiga, resuelve y notifica al usuario la resolución de cada solicitud.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1448: Atención de Sugerencias, Felicitaciones y Quejas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1448
+    version_date: 14/Agosto /2024
+    accessed: '2026-11-06'
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

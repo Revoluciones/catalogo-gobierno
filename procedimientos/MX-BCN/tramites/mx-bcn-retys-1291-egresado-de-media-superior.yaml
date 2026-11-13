@@ -1,0 +1,139 @@
+id: mx-bcn-retys-1291-egresado-de-media-superior
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Egresado de media superior
+summary: Solicitar ficha de ingreso a la Universidad previo a reunir los requisitos establecidos para estar en posibilidad
+  de presentar examen, según la carrera a escoger.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1291
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1291
+  homoclave: BC-UPBC-001
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: En los periodos de convocatoria
+result: Derecho a examen
+cost:
+  type: fijo
+  amount_mxn: 300.0
+  text: 'COSTO: $300.00 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Por convocatoria
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Proporcionar espacios educativos superiores
+  requirements:
+  - text: Preficha de la página web de UPBC
+    cites:
+    - source: retys
+  - text: Constancia de estudios de terminación de educación media superior (bachillerato)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento
+    cites:
+    - source: retys
+  - text: Curp
+    cites:
+    - source: retys
+  - text: Inscripción o registro ante el Institito Mexicano del Seguro Social (Imss)
+    cites:
+    - source: retys
+  - text: Ficha de la página web de la UPBC
+    cites:
+    - source: retys
+  - text: contar con un correo electronico personal
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Alumno egresado de media superior, deberá buscar en la página web de la UPBC, información de fechas para prefichas
+      y fichas haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+    - El alumno deberá conocer previamente la información relativa a los programas educativos que ofrece la UPBC,
+      para seleccionar la carrera a cursar
+    - Una vez que obtenga la preficha, deberá subir al sistema la información que se requiere; constancia de terminación
+      de estudios de media superior, CURP, acta de nacimientos y número de afiliación de IMSS
+    - Una vez que se dé la fecha para la obtención de la ficha, estará en posibilidad de realizar el examen para
+      ingresar a la UPBC y realizará el examen de admisión según las indicaciones que se establecen en la ficha
+      obtenida
+  notes: Atender a los estudiantes egresados de media superior asi como a la población en general que solicite su
+    ingreso para continuar con estudios superiores
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 4, 5, 6, 7, 8 y 9
+- source: ley2
+  pinpoint: Artículos 4, 5, 6, y 7 fracciones I, II, III, IV, V y VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Alumno egresado de media superior, deberá buscar en la página web de la UPBC, información de fechas para
+    prefichas y fichas haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El alumno deberá conocer previamente la información relativa a los programas educativos que ofrece la
+    UPBC, para seleccionar la carrera a cursar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que obtenga la preficha, deberá subir al sistema la información que se requiere; constancia de
+    terminación de estudios de media superior, CURP, acta de nacimientos y número de afiliación de IMSS
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez que se dé la fecha para la obtención de la ficha, estará en posibilidad de realizar el examen
+    para ingresar a la UPBC y realizará el examen de admisión según las indicaciones que se establecen en la ficha
+    obtenida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1291: Egresado de media superior'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1291
+    version_date: 22/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Estudios de Profesional Asociado Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Ficha para ingreso a UPBC. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

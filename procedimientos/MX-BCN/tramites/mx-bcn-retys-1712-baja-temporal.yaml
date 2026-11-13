@@ -1,0 +1,132 @@
+id: mx-bcn-retys-1712-baja-temporal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Baja temporal
+summary: Estudiante de Universidad politecnica puede solicitar su baja temporal, para estar en posibilidad de continuar
+  con sus estudios posteriormente
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1712
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1712
+  homoclave: BC-UPBC-012
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando el estudiante lo requiera
+result: Baja temporal
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Baja temporal
+  requirements:
+  - text: pagina de SIAA formato de baja temporal
+    cites:
+    - source: retys
+  - text: sello del departamento de finanzas y direccion de programa academico que corresponde
+    cites:
+    - source: retys
+  - text: depto. de gestion escolar, archiva en expediente de estudiante la baja temporal para cuando la/el estudiante
+      desee ingresar nuevamente
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - estudiante ingresa al sistema SIAA para solicitar baja, del cual se genera una hoja de no adeudo
+    - estudiante imprime documento de baja para recabar sellos de no adeudos, por parte del depto. de finanzas y
+      direccion de programa academico correspondiente
+    - depto de finanzas recibe solicitud de baja y revisa en el sistema que no cuente con algún adeudo, si no cuenta
+      procede a sellar documento.
+    - depto. de finanzas, si estudiante cuenta con adeudo se le notifica para que proceda a pagarlo y proceder a
+      sellar
+    - estudiante, se presenta en la direccion de programa academico para lo sello correspondiente de talleres y
+      laboratorio
+    - estudiante procede a presentar hoja al depto. de gestión escolar para su baja y entrega de documento.
+  notes: 'Alumno solicita baja temporal, y debera presentar ante el depto de control escolar su formqato de no adeudo
+    con los sellos correspondientes, recursos financieros, laboratorios y talleres, cadi. se dara la baja temporal
+    bajo los siguientes casos: Si no se concluye el trámite de reinscripción dentro del periodo establecido en el
+    calendario escolar, 2) Cuando no se entregue en el plazo concedido para ello, los documentos que se requieren
+    presentar en el trámite de inscripción de la carrera; 3) Por decisión propia, 4) previstas en el presente reglamento
+    de alumnos'
+legal_basis:
+- source: ley1
+  pinpoint: 37 y 38
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: estudiante ingresa al sistema SIAA para solicitar baja, del cual se genera una hoja de no adeudo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: estudiante imprime documento de baja para recabar sellos de no adeudos, por parte del depto. de finanzas
+    y direccion de programa academico correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: depto de finanzas recibe solicitud de baja y revisa en el sistema que no cuente con algún adeudo, si no
+    cuenta procede a sellar documento.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: depto. de finanzas, si estudiante cuenta con adeudo se le notifica para que proceda a pagarlo y proceder
+    a sellar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: estudiante, se presenta en la direccion de programa academico para lo sello correspondiente de talleres
+    y laboratorio
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: estudiante procede a presentar hoja al depto. de gestión escolar para su baja y entrega de documento.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1712: Baja temporal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1712
+    version_date: 24/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de alumnos de Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

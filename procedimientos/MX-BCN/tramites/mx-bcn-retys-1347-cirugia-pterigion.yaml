@@ -1,0 +1,231 @@
+id: mx-bcn-retys-1347-cirugia-pterigion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Cirugía Pterigion
+summary: El cirujano extirpa una pequeña carnosidad del ojo y coloca una pequeña parte de la propia conjuntiva de
+  la o el paciente con puntos de sutura para que no vuelva a crecer la carnosidad.
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1347
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1347
+  homoclave: BC-UNEME-013
+who_can:
+- Interesado
+when: Cuando tenga un crecieminto anormal tejido y presente un abultamiento en la parte blanca del ojo
+result: Atención médica especializada en oftalmología
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Olimpus #S/N, Plutarco Elías Calles, Mexicali, 21376'
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente requisitada y sellada, que le proporciona el centro de salud y/u Hospital
+      General
+    cites:
+    - source: retys
+  - text: Identificación oficial (credencial INE, pasaporte, licencia de manejo).
+    cites:
+    - source: retys
+  - text: CURP.
+    cites:
+    - source: retys
+  - text: Historia clínica, exámenes de laboratorio, reporte de la valoración cardiopulmonar cuando proceda y demás
+      estudios de gabinete que procedan de acuerdo a la intervención quirúrgica, que le proporciona el centro de
+      salud.
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta en el establecimiento que le corresponda
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física
+    - De ser necesario, se deriva a consulta con un especialista en oftalmología
+    - Acudir a la consulta de especialidad
+    - Realizar un examen físico y de agudeza visual. Si se confirma el diagnóstico, se deriva a UNEME.
+    - Contactar al ciudadano indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a la UNEME, con un acompañante. Identificarse en recepción y entregar los requisitos.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE e ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Nota médica de referencia de la unidad de origen que incluya resultados de laboratorio o los exámenes
+      de laboratorio de respaldo
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta en el establecimiento que le corresponda
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física
+    - De ser necesario, se deriva a consulta con un especialista en oftalmología
+    - Acudir a la consulta de especialidad
+    - Realizar un examen físico y de agudeza visual. Si se confirma el diagnóstico, se deriva a UNEME.
+    - Contactar al ciudadano indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a la UNEME, con un acompañante. Identificarse en recepción y entregar los requisitos.
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+- name: Gestión y apoyo ciudadano, Bienestar/DIF
+  requirements:
+  - text: Oficio de autorización del apoyo ciudadano, proporcionado por la Secretaría de Bienestar del Gobierno
+      del Estado.
+    cites:
+    - source: retys
+  - text: Valoración médica de oftalmología y medicina interna emitida por los especialistas de la UNEME.
+    cites:
+    - source: retys
+  - text: Análisis de laboratorio
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir las oficinas del Desarrollo Integral de la Familia (DIF) para solicitar el apoyo
+    - Si procede, acudir a las oficinas de la Secretaría de Bienestar, presentando los requisitos que le indiquen
+      en DIF
+    - Contactar al ciudadano para programar una cita de valoración de oftalmología
+    - Acudir a la UNEME, Identificarse y entregar los documentos
+    - Se le miden signos vitales, se realiza una entrevista médica, exploración física y examen de agudeza visual
+    - Al confirmar el diagnóstico, indicar los estudios de laboratorio a realizar y agenda cita de valoración por
+      un médico internista
+    - Acudir a la cita de medicina interna en la UNEME, con los resultados de laboratorio
+    - Programar la cirugía si el ciudadano es apto
+    - Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a UNEME con un acompañante, identificarse y firmar la carta de consentimiento informado
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía, trasladar al quirófano y, después del procedimiento, dar instrucciones
+      para el cuidado y alta.
+  notes: Convenio Bienestar/DIF-UNEME para apoyo a personas sin seguridad social
+legal_basis:
+- source: ley1
+  pinpoint: ART. 4
+- source: ley2
+  pinpoint: ART. 7
+- source: ley3
+  pinpoint: ART. 6
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta en el establecimiento que le corresponda
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le miden los signos vitales, se realiza una entrevista médica y exploración física
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: De ser necesario, se deriva a consulta con un especialista en oftalmología
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta de especialidad
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar un examen físico y de agudeza visual. Si se confirma el diagnóstico, se deriva a UNEME.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano indicando fecha, hora y cuidados necesarios previos a la cirugía
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir a la UNEME, con un acompañante. Identificarse en recepción y entregar los requisitos.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del
+    procedimiento, dar instrucciones para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1347: Cirugía Pterigion'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1347
+    version_date: 21/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: CONSTITUCION POLITICA DE LOS ESTADOS UNIDOS MEXICANOS
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY DE SALUD PUBLICA PARA EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: LEY GENERAL DE SALUD
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Oftalmología Cirugía de Pterigion. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,119 @@
+id: mx-bcn-retys-1898-registro-de-empresas-y-vacantes-bolsa-de-empleo-ju
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de Empresas y Vacantes (Bolsa de Empleo Juvenil)
+summary: Conecta a tu empresa con el talento de las juventudes de Baja California. Inscribe tu negocio para publicar
+  tus ofertas de trabajo sin costo y recibir perfiles de jóvenes acordes a tus necesidades.
+authority:
+  name: Instituto de la Juventud del Estado de Baja California
+official_ids:
+  retys_id: 1898
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1898
+  homoclave: BC-INJUVE-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieras el servicio de difusión de vacantes.
+result: Vinculación directa con talento joven.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Oficina Mexicali
+  address: 'BLVD. Adolfo López Mateos y Calzada Milton Castellanos #S/N, Fraccionamiento Caliss, Mexicali, 21010'
+scenarios:
+- name: Ofrezco Empleo (Para empresas)
+  requirements:
+  - text: 'CUENTA ACTIVA DE LLAVE BC: Necesaria para acceder a la Ventanilla Digital y completar el formulario de
+      registro de tu empresa.'
+    cites:
+    - source: retys
+  - text: 'CONSTANCIA DE SITUACIÓN FISCAL: Documento en formato PDF, con una antigüedad de expedición no mayor a
+      3 meses, para validar la formalidad y el estatus activo de tu empresa. Esto nos ayuda a garantizar un entorno
+      laboral seguro para las juventudes de Baja California.'
+    cites:
+    - source: retys
+  - text: 'INFORMACIÓN DE LA VACANTE: Tener a la mano los datos del puesto que ofreces (título, sueldo, horario,
+      ubicación y descripción del perfil buscado) para llenar tu formulario en línea.'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'INICIA SESIÓN Y COMPLETA EL REGISTRO: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave BC y
+      llena el formulario con los datos de contacto de tu empresa y la información detallada de la vacante que ofreces.'
+    - 'SUBE TUS DOCUMENTOS: Adjunta en la plataforma tu Constancia de Situación Fiscal vigente (en formato PDF y
+      con una antigüedad no mayor a 3 meses) para validar el estatus activo y la formalidad de tu negocio.'
+    - 'ESPERA LA VALIDACIÓN Y PUBLICACIÓN: El personal del INJUVEN revisará tu información y constancia fiscal.
+      Una vez aprobadas, tu oferta de empleo será integrada y publicada en el Catálogo Quincenal de Vacantes para
+      conectarte con el talento joven del estado.'
+  notes: Para empleadores/as que desean publicar vacantes y encontrar talento joven. Registra los datos de tu empresa
+    y las características del puesto que ofreces.
+legal_basis:
+- source: ley1
+  pinpoint: 35 y 83 Fracción XV, XXXII.
+- source: ley2
+  pinpoint: 40, Fracción X y XI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'INICIA SESIÓN Y COMPLETA EL REGISTRO: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave BC
+    y llena el formulario con los datos de contacto de tu empresa y la información detallada de la vacante que ofreces.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'SUBE TUS DOCUMENTOS: Adjunta en la plataforma tu Constancia de Situación Fiscal vigente (en formato PDF
+    y con una antigüedad no mayor a 3 meses) para validar el estatus activo y la formalidad de tu negocio.'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'ESPERA LA VALIDACIÓN Y PUBLICACIÓN: El personal del INJUVEN revisará tu información y constancia fiscal.
+    Una vez aprobadas, tu oferta de empleo será integrada y publicada en el Catálogo Quincenal de Vacantes para
+    conectarte con el talento joven del estado.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1898: Registro de Empresas y Vacantes (Bolsa de Empleo Juvenil)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1898
+    version_date: 29/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Juventud del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de la Juventud del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro de Empleadores y Publicación de Vacantes en la Bolsa de Empleo. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,103 @@
+id: mx-bcn-retys-1244-asesorias-complementarias-intersemestrales-y-semes
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Asesorías Complementarias, Intersemestrales y Semestrales
+summary: Asesorías complementarias, intersemestrales y semestrales para regularización de alumnos de la institución.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1244
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1244
+  homoclave: BC-CONALEP-001
+who_can:
+- Interesado
+- Tutor
+when: Cuando un alumno no alcanza la calificación aprobatoria y califica para algún tipo de asesoría
+result: Una asesoría complementaria, intersemestral o semestral
+cost:
+  type: variable
+  amount_mxn: 425.0
+  text: 'COSTO VARIABLE: Costo valido durante el 2026: $ 425.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Presentar historial académico
+    cites:
+    - source: retys
+  - text: Presentar comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar la documentación requerida en el plantel que aplique
+    - Habilitar asesoría al estudiante
+  notes: Requisitos para obtener una asesoría
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la documentación requerida en el plantel que aplique
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Habilitar asesoría al estudiante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1244: Asesorías Complementarias, Intersemestrales y Semestrales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1244
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de Creación del Colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

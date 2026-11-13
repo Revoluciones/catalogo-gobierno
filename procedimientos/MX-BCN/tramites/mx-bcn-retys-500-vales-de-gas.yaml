@@ -1,0 +1,139 @@
+id: mx-bcn-retys-500-vales-de-gas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Vales de Gas
+summary: Apoyo económico para el pago de consumo de gas.
+authority:
+  name: Secretaría de Bienestar
+official_ids:
+  retys_id: 500
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/500
+  homoclave: BC-SB-013
+who_can:
+- Interesado
+- Otro
+when: Cuando se requiera apoyo económico para el pago de gas
+result: Vale de 150 pesos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integrador del Bienestar (CIB)
+  address: 'Av. República de Uruguay #159, Sonora, Mexicali, 21210'
+- municipality: Mexicali
+  name: Oficinas Administrativas
+  address: 'Calzada Independencia #994, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Calle Paseo del Río #s/n, Río Tijuana 3ra etapa, Tijuana, 22226'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión de Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Delegación Rosarito
+  address: 'Calle Jose Haroz Aguilar #2004, Fraccionamiento Villa Turistica, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Centro Integrador del Bienestar San Quintín
+  address: 'Los Ciruelos Lote 1 y 2 #Manzana 9, El Olivo, Camalú, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Calle Mar Baltico Sur y Manzanillo #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Familias
+  requirements:
+  - text: Copia de la Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Copia de CURP
+    cites:
+    - source: retys
+  - text: Copia de Comprobante de domicilio no mayor a 3 meses
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la secretaria de bienestar con la documentación solicitada
+    - Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+    - Evaluación de la solicitud por parte del personal
+    - Notificación al usuario del estatus de su trámite
+  notes: Requisitos para inscripción en el programa Vales de Gas para familias
+- name: Apoyo en jornadas
+  requirements:
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Llenado de formato de comprobación junto con personal de la Secretaría del Bienestar
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse a una jornada
+    - Presentar identificación oficial vigente
+    - Firma de documento comprobatorio
+  notes: Solicitud realizada durante la jornada
+legal_basis:
+- source: ley1
+  pinpoint: Art. 4,6,14,91 y 93
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la secretaria de bienestar con la documentación solicitada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar entrevista y llenado de formato único junto con personal de la Secretaría del Bienestar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Evaluación de la solicitud por parte del personal
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Notificación al usuario del estatus de su trámite
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 500: Vales de Gas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/500
+    version_date: 28/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: ROP (Ley de desarrollo social del Estado de B.C.)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

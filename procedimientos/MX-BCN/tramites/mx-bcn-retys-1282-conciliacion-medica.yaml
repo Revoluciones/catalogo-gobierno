@@ -1,0 +1,154 @@
+id: mx-bcn-retys-1282-conciliacion-medica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Conciliación Médica
+summary: Es un proceso donde la persona que se queja y la persona prestadora de servicio de salud buscan resolver
+  su conflicto de manera amigable y sin necesidad de ir a un juicio. Durante ella las partes se reúnen para discutir
+  su problema con la ayuda de un mediador neutral que les facilita la comunicación y ayuda a encontrar una solución
+  aceptable para ambos.
+authority:
+  name: Comisión de Arbitraje Medico del Estado de Baja California
+official_ids:
+  retys_id: 1282
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1282
+  homoclave: BC-CAME-003
+who_can:
+- Representante Legal
+- Interesado
+when: En cualquier momento que ambos estén dispuestos a resolver su conflicto de manera amigable y sin necesidad
+  de ir a juicio.
+result: Depende del acuerdo al que lleguen las partes y de por solucionado el conflicto.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 5 AÑOS
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación de Conciliación
+  address: 'Paseo de los Héroes #s/n H9-31, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación de Conciliación
+  address: 'Diego Rivera y Vía Rápida Poniente #S/N, Zona Río, Tijuana, 22320'
+- municipality: Ensenada
+  name: Coordinación de Conciliación
+  address: 'Carretera Transpeninsular Ensenada la Paz #6500, Ex Ejido Chapultepec, Ensenada, 22880'
+- municipality: Tecate
+  name: Coordinación de Conciliación
+  address: 'Misión Santo Domingo #1016, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Coordinación de Conciliación
+  address: 'Avenida José Haros Aguilar #2000, Villa Turística, Playas de Rosarito, 22710'
+scenarios:
+- name: Conciliación Médica
+  requirements:
+  - text: Poder legal en caso de actuar por un tercero
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - 'Ve a la reunión: Asiste a la audiencia de conciliación en la fecha y hora programadas.'
+    - 'Explicación inicial: Al comenzar la reunión, el conciliador les explicará a ambas partes sus derechos, resumirá
+      la queja y los puntos en común y en desacuerdo, y les pedirá que busquen un acuerdo sincero.'
+    - 'Falta de asistencia o documentos: Si el prestador de servicios de salud no se presenta o no lleva la documentación,
+      se pedirá ayuda a asociaciones profesionales.'
+    - 'Si tú no vas a la reunión: Si no asistes y no das una razón válida dentro de los 5 días, se considerará que
+      has retirado la queja y el caso se cierra; no se puede volver a presentar en la comisión.'
+    - 'Acuerdo logrado: Si llegan a un acuerdo, se registrará y el caso se cerrará como resuelto.'
+    - 'No hay acuerdo: Si no llegan a un acuerdo, el conciliador puede sugerir que la Comisión actúe como árbitro
+      para resolver el problema.'
+    - 'Aceptar el arbitraje: Si aceptan el arbitraje, se firmará un compromiso y se enviará el caso para que continúe
+      el proceso.'
+    - 'Rechazar el arbitraje: Si no aceptan el arbitraje, el caso se cierra y ambos pueden buscar resolverlo con
+      otra autoridad.'
+  notes: Intervención de la Comisión como mediador entre la persona que se queja y la persona prestadora de servicio
+    de salud público o privado
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 32, 33, 34, 35 y 36
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Ve a la reunión: Asiste a la audiencia de conciliación en la fecha y hora programadas.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'Explicación inicial: Al comenzar la reunión, el conciliador les explicará a ambas partes sus derechos,
+    resumirá la queja y los puntos en común y en desacuerdo, y les pedirá que busquen un acuerdo sincero.'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'Falta de asistencia o documentos: Si el prestador de servicios de salud no se presenta o no lleva la
+    documentación, se pedirá ayuda a asociaciones profesionales.'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'Si tú no vas a la reunión: Si no asistes y no das una razón válida dentro de los 5 días, se considerará
+    que has retirado la queja y el caso se cierra; no se puede volver a presentar en la comisión.'
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: 'Acuerdo logrado: Si llegan a un acuerdo, se registrará y el caso se cerrará como resuelto.'
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: 'No hay acuerdo: Si no llegan a un acuerdo, el conciliador puede sugerir que la Comisión actúe como árbitro
+    para resolver el problema.'
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: 'Aceptar el arbitraje: Si aceptan el arbitraje, se firmará un compromiso y se enviará el caso para que
+    continúe el proceso.'
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: 'Rechazar el arbitraje: Si no aceptan el arbitraje, el caso se cierra y ambos pueden buscar resolverlo
+    con otra autoridad.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1282: Conciliación Médica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1282
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de la Comisión de Arbitraje Médico del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Conciliación. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

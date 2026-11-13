@@ -1,0 +1,203 @@
+id: mx-bcn-retys-211-recepcion-y-evaluacion-del-estudio-de-riesgo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Recepción y Evaluación del Estudio de Riesgo
+summary: Documento mediante el cual se dan a conocer los riesgos por la ejecución de una obra o actividad, para
+  los ecosistemas o la salud pública. Cuando se trate de obras y actividades consideradas riesgosas, se deberá incluir
+  el estudio de riesgo en la manifestación de impacto ambiental, modalidad general.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 211
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/211
+  homoclave: BC-SMADS-033
+who_can:
+- Representante Legal
+- Interesado
+when: cuando una obra o actividad a desarrollar sea considerada como riesgosas
+result: Resolución administrativa en materia de riesgo ambiental
+cost:
+  type: variable
+  amount_mxn: 14793.54
+  text: 'COSTO VARIABLE: $14,793.54 Moneda Nacional. Costo actualizado para el mes de noviembre del 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Regularmente es indefinida.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Formato para presentar el Estudio de Riesgo debidamente requisitado, de conformidad con su Instructivo
+      de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13088
+  - text: El Formato debe contener la firma autógrafa de la persona interesada o de su apoderado o representante
+      legal y del técnico que lo elaboró.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en el Estudio de Riesgo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Persona que pretende realizar una obra o actividad considerada como riesgosa.
+- name: Persona Moral
+  requirements:
+  - text: Formato para presentar el Estudio de Riesgo debidamente requisitado, de conformidad con su Instructivo
+      de llenado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13097
+  - text: El Formato debe contener la firma autógrafa de la persona apoderada o representante legal y del técnico
+      que lo elaboró.
+    cites:
+    - source: retys
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona moral.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en el Estudio de Riesgo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretende
+    realizar una obra o actividad considerada como riesgosa.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 17, fracción I, inciso B), numeral 3.
+- source: ley2
+  pinpoint: Artículos 42 fracción VIII y 44.
+- source: ley3
+  pinpoint: Artículos 4 fracción I, 6 fracción VII, 13 fracción X, 16 , 25, 35, 36, 37, 38 y 39.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de la resolución o solicitud de información adicional.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio y, en su caso, solventar los requerimientos de información adicional.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 211: Recepción y Evaluación del Estudio de Riesgo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/211
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente para el Estado de Baja California en Materia de Impacto
+      Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

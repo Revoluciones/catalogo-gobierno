@@ -1,0 +1,161 @@
+id: mx-bcn-retys-1774-servicio-social
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio social
+summary: Proceso mediante el cual el estudiante, que ha cumplido con el 70% de los créditos de su programa educativo,
+  puede registrar y llevar a cabo su servicio social en una dependencia, institución u organización autorizada,
+  con el acompañamiento del Departamento de Control Escolar y Servicios Estudiantiles. El trámite contempla la inscripción,
+  seguimiento y liberación del servicio social conforme a los lineamientos institucionales y normativos vigentes.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1774
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1774
+  homoclave: BC-UIBC-003
+who_can:
+- Interesado
+when: Estudiante con 70% de créditos aprobados o de 7mo semestre.
+result: Constancia de Liberación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Departamento de Control Escolar y Servicios Estudiantiles
+  address: 'Calle Sin Nombre, Lote A y fracción del Lote B-1 fracción 5 Manzana 102 #S/N, Fraccionamiento Valle
+    de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Solicitud de constancia de 70% de créditos cursados
+  requirements:
+  - text: Estar inscrito como estudiante activo en la UIBC.
+    cites:
+    - source: retys
+  - text: Haber cumplido con el 70% de los créditos del plan de estudios.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Estudiante solicita constancia de 70% de los créditos cursados al Departamento de Control Escolar y Servicios
+      Estudiantiles
+    - Presentación de padrón de unidades receptoras para que el estudiantado elija en donde realizar el Servicio
+      Social
+    - Elección de unidad receptora.
+    - Aspirante a Servicio Social acuerda o propone las actividades a realizar en la unidad receptora con el responsable
+      de la misma
+    - Aspirante a Servicio Social elabora el proyecto acordado con la Unidad Receptora.
+    - Presentación de la/el estudiante de la UIBC ante la Unidad Receptora
+  notes: Este escenario contempla el procedimiento mediante el cual el estudiante solicita, a través del Departamento
+    de Control Escolar y Servicios Estudiantiles, la constancia que acredita haber cursado al menos el 70% de los
+    créditos de su plan de estudios, requisito indispensable para iniciar el proceso de servicio social.
+- name: Entrega de reportes
+  requirements:
+  - text: Aceptación de la/el estudiante de la UIBC por la Unidad Receptora
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El estudiante entrega el reporte bimestral aprobado por la persona responsable en la Unidad Receptora al Departamento
+      de Control Escolar y Servicios Estudiantiles.
+    - El Departamento de Control Escolar y Servicios Estudiantiles revisa y valida el reporte bimestral entregado
+      por el estudiante.
+    - Al concluir las 480 horas, el estudiante entrega el reporte final con firma de validación de la Unidad Receptora.
+    - El Departamento de Control Escolar y Servicios Estudiantiles revisa el reporte final y lo archiva en el expediente
+      del estudiante.
+  notes: La/el estudiante entrega los reportes bimestrales y final previamente aprobados por la persona responsable
+    en la Unidad Receptora
+- name: Constancia de Liberación
+  requirements:
+  - text: Haber concluido las 480 horas de Servicio Social
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El estudiante solicita la Constancia de Liberación al Departamento de Control Escolar y Servicios Estudiantiles.
+    - El Departamento verifica que el estudiante haya cumplido las 480 horas de Servicio Social y los requisitos
+      establecidos
+    - Se expide y entrega la Constancia de Liberación al estudiante.
+  notes: El Departamento de Control Escolar y Servicios Estudiantiles expide la Constancia de Liberación a la/el
+    estudiante que concluyó las 480 horas de Servicio Social
+legal_basis:
+- source: ley1
+  pinpoint: 78 y 79
+- source: ley2
+  pinpoint: '137'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Estudiante solicita constancia de 70% de los créditos cursados al Departamento de Control Escolar y Servicios
+    Estudiantiles
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentación de padrón de unidades receptoras para que el estudiantado elija en donde realizar el Servicio
+    Social
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Elección de unidad receptora.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Aspirante a Servicio Social acuerda o propone las actividades a realizar en la unidad receptora con el
+    responsable de la misma
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Aspirante a Servicio Social elabora el proyecto acordado con la Unidad Receptora.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Presentación de la/el estudiante de la UIBC ante la Unidad Receptora
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1774: Servicio social'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1774
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Intercultural de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Educación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Prestación de servicio social. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

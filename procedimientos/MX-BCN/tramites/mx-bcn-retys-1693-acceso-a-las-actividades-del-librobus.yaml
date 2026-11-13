@@ -1,0 +1,101 @@
+id: mx-bcn-retys-1693-acceso-a-las-actividades-del-librobus
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a las Actividades del Librobus
+summary: Actividades para el fomento de la lectura con el apoyo de los recursos digitales, actividades artísticas,
+  culturales y educativas, para el desarrollo cultural de niñas, niños, adolescentes y personas adultas en los poblados
+  de Colonet, Camalú, Vicente Guerrero, el Rosario entre otros.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1693
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1693
+  homoclave: BC-SC-005
+who_can:
+- Interesado
+when: Durante el periodo escolar realizar la solicitud
+result: Acceso a las actividades para el fomento de la lectura con el apoyo de los recursos digitales.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Delgación San Quintin
+  address: '"A" entre Novena y Decima  #s/n, Fracc. Ciudad San Quintín, San Quintín, 22940'
+- municipality: San Felipe
+  name: Delegación San Felipe
+  address: 'Mar de Cortes Sur #316, San Felipe, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Escrito de solicitud para que asista el Librobus a la escuela, comunidad o poblado
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la dependencia
+    - Entrega del escrito de solicitud
+    - Personal de la Secretaría de Cultira revisara la agenda y dará respuesta por medio de oficio impreso
+    - Librobus acude a la escuela/comunidad a prestar el servicio
+  notes: Toda persona de las diferentes comunidades, poblados de San Quintín
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 28 fracción IV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la dependencia
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega del escrito de solicitud
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal de la Secretaría de Cultira revisara la agenda y dará respuesta por medio de oficio impreso
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Librobus acude a la escuela/comunidad a prestar el servicio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1693: Acceso a las Actividades del Librobus'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1693
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

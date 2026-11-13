@@ -1,0 +1,98 @@
+id: mx-bcn-retys-607-apoyo-a-usuarios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Apoyo a Usuarios
+summary: Brindar apoyo a los usuarios de la autopista a través de las torres de apoyo vial, para atender y resolver
+  algún problema que se presente durante su recorrido.
+authority:
+  name: Fideicomiso Público de Administración de Fondos e Inversión del Tramo Carretero Centinela Rumorosa
+official_ids:
+  retys_id: 607
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/607
+  homoclave: BC-FIARUM -001
+who_can:
+- Interesado
+when: Cuando se presente un percance en su recorrido por la autopista
+result: Apoyo vial
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tecate
+  name: Conservación y Mantenimiento
+  address: 'La Rumorosa Km 62 +900 #S/N, Carretera Centinela Rumorosa, Tecate, 21510'
+scenarios:
+- name: Apoyo a usuarios
+  requirements:
+  - text: No se requiere
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Transitar dentro de la autopista centinela-la rumorosa
+    - Acudir a las torres de auxilio vial mas cercana para solicitar el servicio o llamar al 911.
+    - Informar el tipo de servicio que requiere el usuario.
+    - Proporcionar su nombre, datos del vehículo y donde se encuentra.
+  notes: Brindar apoyo a los usuarios de la autopista a través de las torres de apoyo vial, para atender y resolver
+    algún problema que se presente durante su recorrido.
+legal_basis:
+- source: ley1
+  pinpoint: '27'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Transitar dentro de la autopista centinela-la rumorosa
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las torres de auxilio vial mas cercana para solicitar el servicio o llamar al 911.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Informar el tipo de servicio que requiere el usuario.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Proporcionar su nombre, datos del vehículo y donde se encuentra.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 607: Apoyo a Usuarios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/607
+    version_date: 30/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento interno de FIARUM
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

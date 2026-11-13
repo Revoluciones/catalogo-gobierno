@@ -1,0 +1,137 @@
+id: mx-bcn-retys-1891-registro-como-persona-interprete-y-traductora-de-l
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro como Persona Intérprete y Traductora de Lenguas Indígenas (LI)
+summary: Dirigido a personas hablantes de Lenguas Indígenas, intérpretes y traductoras en Baja California. A través
+  de este trámite puedes inscribirte en el Directorio Estatal para prestar tus servicios, y permitir que la Secretaría
+  de Inclusión Social te vincule con instituciones públicas o ciudadanía que requiera tu apoyo.
+authority:
+  name: Secretaría de Inclusión Social
+official_ids:
+  retys_id: 1891
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1891
+  homoclave: BC-SIS-001
+who_can:
+- Interesado
+when: Cuando desees prestar tus servicios de interpretación o traducción y formar parte del Directorio oficial del
+  Estado.
+result: Inscripción en el Directorio Estatal y vinculación con instituciones públicas.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Oficinas Mexicali
+  address: 'José María Morelos #221, Zona Centro , Mexicali, 21100'
+- municipality: Tijuana
+  name: Oficinas Tijuana
+  address: 'Paseo de los Héroes #1020, Zona Río, Tijuana, 22010'
+- municipality: Ensenada
+  name: Oficinas Ensenada
+  address: 'Prolongación Boulevard Zertuche #6474, Ex Ejido Chapultepec , Ensenada, 22785'
+- municipality: San Quintín
+  name: Oficinas San Quintín
+  address: 'Carretera Transpeninsular Km.190  #1311, Plaza Tartani II , San Quintín, 22940'
+scenarios:
+- name: Inscripción al Directorio Estatal
+  requirements:
+  - text: TENER 18 AÑOS CUMPLIDOS.
+    cites:
+    - source: retys
+  - text: 'CUENTA ACTIVA DE LLAVE BC: Indispensable para iniciar sesión en la Ventanilla Digital y autenticar tu
+      identidad.'
+    cites:
+    - source: retys
+  - text: 'IDENTIFICACIÓN OFICIAL CON FOTOGRAFÍA: Documento vigente (como INE o pasaporte) escaneado en formato
+      PDF o imagen.'
+    cites:
+    - source: retys
+  - text: 'CONSTANCIA O CERTIFICACIÓN DEL DOMINIO DE LA LENGUA (PREFERENTEMENTE): Si cuentas con él, documento en
+      formato PDF que avale tus conocimientos o certificación oficial como persona intérprete de Lengua Indígena
+      (por ejemplo, acreditación de INALI).'
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'INICIA SESIÓN Y COMPLETA EL FORMULARIO: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave BC
+      y llena la solicitud.'
+    - 'SUBE TUS DOCUMENTOS: Adjunta en la plataforma tu identificación oficial y, de contar con él, el documento
+      o constancia que avale tu experiencia.'
+    - 'ACEPTA LOS TÉRMINOS Y EL AVISO DE PRIVACIDAD: Lee y acepta los términos del manejo de tus datos personales
+      y firma digitalmente tu manifiesto de consentimiento para pertenecer al Directorio de la Secretaría de Inclusión
+      Social.'
+    - 'ESPERA LA VALIDACIÓN Y PUBLICACIÓN: La Secretaría revisará tu información. Una vez validada, tu perfil será
+      integrado y publicado en la próxima actualización semestral del Directorio Estatal.'
+  notes: Utiliza esta opción si eres persona hablante, intérprete o traductora de una Lengua Indígena y deseas registrar
+    tus datos para prestar tus servicios.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 20, fracción XV y 22, fracción XIII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'INICIA SESIÓN Y COMPLETA EL FORMULARIO: Ingresa a la Ventanilla Digital utilizando tu cuenta de Llave
+    BC y llena la solicitud.'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'SUBE TUS DOCUMENTOS: Adjunta en la plataforma tu identificación oficial y, de contar con él, el documento
+    o constancia que avale tu experiencia.'
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'ACEPTA LOS TÉRMINOS Y EL AVISO DE PRIVACIDAD: Lee y acepta los términos del manejo de tus datos personales
+    y firma digitalmente tu manifiesto de consentimiento para pertenecer al Directorio de la Secretaría de Inclusión
+    Social.'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'ESPERA LA VALIDACIÓN Y PUBLICACIÓN: La Secretaría revisará tu información. Una vez validada, tu perfil
+    será integrado y publicado en la próxima actualización semestral del Directorio Estatal.'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1891: Registro como Persona Intérprete y Traductora de Lenguas Indígenas (LI)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1891
+    version_date: 14/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Inclusión Social.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción al Directorio Estatal y Vinculación con Personas Intérpretes y Traductoras de
+  Lenguas Indígenas.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad;
+  las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

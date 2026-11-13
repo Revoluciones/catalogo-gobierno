@@ -1,0 +1,197 @@
+id: mx-bcn-retys-1594-constancia-de-no-adeudo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de No Adeudo
+summary: Emitir un documento en el que se hace constar que un bien inmueble está libre de cargos y multas relacionados
+  a los servicios de agua potable y alcantarillado sanitario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1594
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1594
+  homoclave: BC-CESPT-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera el servicio
+result: Constancia
+cost:
+  type: variable
+  amount_mxn: 207.67
+  text: 'COSTO VARIABLE: $207.67 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 2 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 meses
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+- municipality: Tijuana
+  name: CAP Plaza Pavilion
+  address: 'Paseo de los Héroes #9111 , Local 110, Plaza Pavillion, Zona Urbana Río, Tijuana, 22010'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: 'Formulario para Trámites en Archivo, (lo proporciona CESPT o lo puede obtener en la página de Internet:
+      (FRM-005), debidamente llenado y firmado por el titular de la cuenta o por la persona a quien éste le haya
+      otorgado el poder para realizar el trámite.'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12558
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio, puede ser UNO de los siguientes:
+      Credencial del INE, Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Documento para comprobar la propiedad del predio: Recibo de impuesto predial vigente (con fecha de emisión
+      no mayor a un año de antigüedad).'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente.
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: Para que el trámite proceda, el saldo de la cuenta de la que se va a solicitar la Constancia de no adeudo,
+      debe estar en ceros.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Pavilion
+    - Pasar a las cajas a realizar el pago por concepto de Expedición de Constancia de No Adeudo
+    - Con el recibo de pago, ingresar a la ventanilla de certificados de libertad de gravamen los requisitos
+    - La persona de ventanilla revisará que se cumpla con todos requisitos, si no están completos, le informará
+      que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+    - Con los requisitos completos la persona de ventanilla, imprime certificación de recibido a la copia del Formulario
+      para Trámites en Archivo, en donde se indica la fecha de respuesta
+    - En la fecha indicada, regrese a la ventanilla de certificados de libertad de gravamen a recoger la Constancia
+      de No adeudo que solicitó..
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo
+- name: Representante legal
+  requirements:
+  - text: 'Formulario para Trámites en Archivo, (lo proporciona CESPT o lo puede obtener en la página de Internet:
+      (FRM-005), debidamente llenado y firmado por el titular de la cuenta o por la persona a quien éste le haya'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12564
+  - text: 'Documento que confiera poder y facultades para realizar el trámite, otorgado por el propietario del predio,
+      puede ser UNO de los siguientes: Poder Notarial; Carta poder ante notario público, corredor público o fedatario
+      público; Carta Poder simple firmada por el propietario del predio y por dos testigos, que incluya copia de
+      las identificaciones oficiales de los testigos, cuya antigüedad no exceda los seis meses.'
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: 'Documento para comprobar la propiedad del predio: Recibo de impuesto predial vigente (con fecha de emisión
+      no mayor a un año de antigüedad).'
+    cites:
+    - source: retys
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Todos los documentos deben presentarse en ORIGINAL Y COPIA, la cual debe ser LEGIBLE y CONTENER EL DOCUMENTO
+      COMPLETO.
+    cites:
+    - source: retys
+  - text: Para que el trámite proceda, el saldo de la cuenta de la que se va a solicitar la Constancia de no adeudo,
+      debe estar en ceros.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Pavilion
+    - Pasar a las cajas a realizar el pago por concepto de Expedición de Constancia de No Adeudo
+    - Con el recibo de pago, ingresar a la ventanilla de certificados de libertad de gravamen los requisitos
+    - La persona de ventanilla revisará que se cumpla con todos requisitos, si no están completos, le informará
+      que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+    - Con los requisitos completos la persona de ventanilla, imprime certificación de recibido a la copia del Formulario
+      para Trámites en Archivo, en donde se indica la fecha de respuesta
+    - En la fecha indicada, el ciudadano debe regresar a la ventanilla de certificados de libertad de gravamen a
+      recoger la Constancia de No adeudo que solicitó.
+  notes: Todos los documentos deben presentarse en original y copia, la cual debe ser legible y contener el documento
+    completo
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención al Público (CAP) de Oficinas Centrales o al CAP Pavilion
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar a las cajas a realizar el pago por concepto de Expedición de Constancia de No Adeudo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con el recibo de pago, ingresar a la ventanilla de certificados de libertad de gravamen los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La persona de ventanilla revisará que se cumpla con todos requisitos, si no están completos, le informará
+    que no es posible realizar el trámite hasta que éstos se completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos la persona de ventanilla, imprime certificación de recibido a la copia del
+    Formulario para Trámites en Archivo, en donde se indica la fecha de respuesta
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: En la fecha indicada, regrese a la ventanilla de certificados de libertad de gravamen a recoger la Constancia
+    de No adeudo que solicitó..
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1594: Constancia de No Adeudo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1594
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

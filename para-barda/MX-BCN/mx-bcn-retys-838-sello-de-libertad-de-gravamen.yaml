@@ -1,0 +1,109 @@
+id: mx-bcn-retys-838-sello-de-libertad-de-gravamen
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Sello de Libertad de Gravamen
+summary: Documento válido que certifica que el usuario no tiene adeudo con la CESPE a la fecha de la certificación.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 838
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/838
+  homoclave: BC-CESPE-008
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se solicite la comprobación de no adeudo ante la CESPE
+result: Sello/Rubrica
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Actualización al mes de noviembre 2026. Uso doméstico: $ 255 moneda nacional. Uso no doméstico:
+    $856 moneda nacional.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 Meses
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Ciudadanos en General
+  requirements:
+  - text: Deslinde reciente del predio
+    cites:
+    - source: retys
+  - text: Tener el número de cuenta de agua del predio en cuestión (recibo)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar el sello de libertad de gravamen
+    - Realizar el pago correspondiente
+  notes: Trámite de carácter general que puede realizar cualquier ciudadano.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III
+- source: ley2
+  pinpoint: Artículos 2, 20, 21 y 22
+- source: ley3
+  pinpoint: Artículos 3, 6, 14,15, 16,17, 19, 20, 22, 23,24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44, 45,
+    47, 48, 49, 51, 52, 53, 54, 56, 59, 60 y 64.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a solicitar el sello de libertad de gravamen
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 838: Sello de Libertad de Gravamen'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/838
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de las Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Sello de Libertad de Gravamen.. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

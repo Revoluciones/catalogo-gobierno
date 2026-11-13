@@ -1,0 +1,119 @@
+id: mx-bcn-retys-1086-cofepris-05-087-solicitud-de-prorroga-o-modificaci
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-087 Solicitud de Prórroga o Modificación a la Tarjeta de Control Sanitario de Tatuadores, Micropigmentadores
+  y Perforadores
+summary: Cuando el ciudadano pretenda continuar prestando servicios de modificación a la apariencia física mediante
+  tatuajes, perforaciones o micropigmentaciones.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1086
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1086
+  homoclave: BC-COEPRIS-069
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera la prórroga o modificación
+result: Prórroga o modificación
+cost:
+  type: fijo
+  amount_mxn: 5658.3
+  text: 'COSTO: $5658.30 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7782
+  - text: Original y una copia simple del comprobante de pago de derechos, en términos de la Ley Federal de Derechos.
+    cites:
+    - source: retys
+  - text: Número o copia simple de la tarjeta de control sanitario de la cual se pide la prórroga.
+    cites:
+    - source: retys
+  - text: 2 Fotografías tamaño infantil.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+    - 'Nota 1: A contra entrega de la nueva tarjeta se le solicitara la tarjeta anterior'
+    - 'Nota 2: Con base en el Artículo 224 Bis del reglamento de control de productos y servicios deberá solicitar
+      la prórroga de la tarjeta a más tardar 15 días hábiles antes del vencimiento de la misma'
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del tramite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 224 Bis 14
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el centro integral de servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: 'Nota 1: A contra entrega de la nueva tarjeta se le solicitara la tarjeta anterior'
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: 'Nota 2: Con base en el Artículo 224 Bis del reglamento de control de productos y servicios deberá solicitar
+    la prórroga de la tarjeta a más tardar 15 días hábiles antes del vencimiento de la misma'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1086: COFEPRIS-05-087 Solicitud de Prórroga o Modificación a la Tarjeta de Control Sanitario
+      de Tatuadores, Micropigmentadores y Perforadores'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1086
+    version_date: 26/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Control Sanitario de Productos y Servicios
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-087 Solicitud de Prórroga o Modificación a la Tarjeta de Control Sanitario de
+  Tatuadores, Micropigmentadores y Perforadores.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

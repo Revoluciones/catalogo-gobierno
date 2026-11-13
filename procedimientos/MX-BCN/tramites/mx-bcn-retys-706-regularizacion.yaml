@@ -1,0 +1,241 @@
+id: mx-bcn-retys-706-regularizacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Regularización
+summary: Oportunidad extraordinaria de acuerdo a normatividad vigente, que se le brinda al alumnado al no acreditar
+  las materias del semestre, teniendo que solicitar y cubrir el costo del examen según el número de materias no
+  acreditadas, contando con la opción de tomar un curso de preparación con costo para el examen de manera previa.
+authority:
+  name: Colegio de Estudios Científicos y Tecnológicos del Estado de Baja California
+official_ids:
+  retys_id: 706
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/706
+  homoclave: BC-CECYTE-004
+who_can:
+- Interesado
+when: Cuando el alumnado requiera aprobar las materias no acreditadas
+result: Oportunidad extraordinaria para presentar exámenes de materias no aprobadas en los periodos de regularización
+  que marca el calendario escolar vigente.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Curso de regularización $650.00 pesos Moneda nacional, Costo por examen es de $195.00 pesos
+    Moneda Nacional (Costo para 2026-2).'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Plantel Bella Vista
+  address: 'Avenida de la paz #715, Bellavista, Mexicali, 21150'
+- municipality: Mexicali
+  name: Plantel Centenario
+  address: 'Av. Prado del Rey #S/N, Villa Lomas Altas, Mexicali, 21355'
+- municipality: Mexicali
+  name: Plantel Compuertas
+  address: 'Calle Claridad #3699, Nuevo Amanecer, Mexicali, 21378'
+- municipality: Mexicali
+  name: Plantel Ejido Puebla
+  address: 'Avenida Amixtlán #S/N, Valle del Puebla Sexta Sección, Mexicali, 21395'
+- municipality: Mexicali
+  name: Plantel Los Pinos
+  address: 'Prolongación Río Mayo #501, Pro-hogar, Mexicali, 21240'
+- municipality: Mexicali
+  name: Plantel Guadalupe Victoria
+  address: 'Av. de la Tierra y Calle Banano #s/n, Fraccionamiento Ampliación Valle Nuevo, Mexicali, 21720'
+- municipality: Mexicali
+  name: Plantel Los Portales
+  address: 'Fuentes del sol #s/n, Fraccionamiento Casa Digna, Mexicali, 21323'
+- municipality: Mexicali
+  name: Plantel Misiones
+  address: 'Calzada Continente Europeo y Calle Arroyo Calamajue #601, Valle de las Misiones, Mexicali, 21138'
+- municipality: Mexicali
+  name: Plantel Vicente Guerrero (Los Algodones)
+  address: 'Avenida Valle del Salado #1075, Fraccionamiento del Valle Vicente Guerrero Los Algodones, Mexicali,
+    21970'
+- municipality: Mexicali
+  name: Plantel Xochimilco
+  address: 'Calzada Laguna Xochimilco #1098, Desarrollo Urbano Xochimilco, Mexicali, 21380'
+- municipality: Mexicali
+  name: Grupo Ejido Michoacán de Ocampo (Perteneciente a Plantel Ejido Puebla)
+  address: 'Porción de la parcela escolar #92 (Colinda con la carretera Estatal y Parcela 91) #S/N, Ejido Michoacán
+    de Ocampo, Mexicali, 21700'
+- municipality: Mexicali
+  name: Grupo Ejido Oviedo Mota (Perteneciente a Plantel Guadalupe Victoria)
+  address: 'Avenida Lázaro Cárdenas y Francisco J. Mujica #200, Ejido Dr. Alberto Ovierdo Mora, Mexicali, 21370'
+- municipality: Mexicali
+  name: Grupo Ejido Hermosillo (Perteneciente a Plantel Vicente Guerrero)
+  address: '5 de Mayo, entre Lázaro Cárdenas y Sonora, 21840 #S/N, Ejido Hermosillo, Mexicali, 21840'
+- municipality: Tijuana
+  name: Plantel Zona Río
+  address: 'Paseo del Río #6652, Desarrollo Urbano Rio Tijuana 3ra. Etapa, Tijuana, 22226'
+- municipality: Tijuana
+  name: Plantel Altiplano
+  address: 'Calle de la naturaleza y ecologista #s/n, Altiplano, Tijuana, 22204'
+- municipality: Tijuana
+  name: Plantel Villa del Sol
+  address: 'Privada Paseo del Sol #23772, Villa del Sol Quinta Etapa, Tijuana, 22205'
+- municipality: Tijuana
+  name: Plantel Cachanilla
+  address: 'Privada cachanilla #8121, Infonavit cachanillas, Tijuana, 22180'
+- municipality: Tijuana
+  name: Plantel El Florido
+  address: 'Blvd. El Refugio #24703, Fraccionamiento Cerro de las Abejas, Tijuana, 22245'
+- municipality: Tijuana
+  name: Plantel Urbi Villas
+  address: 'Avenida de los volcanes #12362, Urbi villa del prado 2 da sección  sánchez taboada, Tijuana, 22170'
+- municipality: Tijuana
+  name: Plantel El Niño
+  address: 'Calle H. Cuerpo de Bomberos de Tijuana #5525, El Niño, Tijuana, 22330'
+- municipality: Tijuana
+  name: Plantel Playas de Tijuana
+  address: 'Avenida Paseo Coronado #5452, Rosario, Tijuana, 22117'
+- municipality: Tijuana
+  name: Plantel La Presa
+  address: 'Calle de la Piñitas #1132, Lomas de la Presa, Tijuana, 22125'
+- municipality: Tijuana
+  name: Plantel Las Águilas
+  address: 'Calle E lote 4 y 5 #s/n, Granjas Familiares División del Norte, Tijuana, 22247'
+- municipality: Tijuana
+  name: Plantel Pacífico
+  address: 'Calle República de Colombia #42, Panamericano, Tijuana, 22644'
+- municipality: Tijuana
+  name: Plantel Lázaro Cárdenas
+  address: 'Av. Emiliano Zapata #s/n, Parcela 119 Ejido Lázaro Cárdenas, Tijuana, 22654'
+- municipality: Ensenada
+  name: Plantel Ensenada
+  address: 'Eje Higueras y Golfo de Santa #15, Popular 89, Ensenada, 22812'
+- municipality: Ensenada
+  name: Grupo Cañón Buena Vista (Perteneciente a Plantel Ensenada)
+  address: 'Carretera Transpeninsular Calle San Javier y San José  #S/N, Dentro del Cañón Buena Vista Lomas de Mendoza,
+    Ensenada, 22790'
+- municipality: Ensenada
+  name: Grupo Eréndira (Perteneciente a Plantel Ensenada)
+  address: '13 de Diciembre #S/N, Parcela Escolar, Ensenada, 22904'
+- municipality: Ensenada
+  name: Grupo San Antonio de las Minas (Perteneciente a Plantel Ensenada)
+  address: 'Calle Mineral de Guerrero Negro #S/N, Rancho La Fortuna, Ensenada, 22766'
+- municipality: Tecate
+  name: Plantel Tecate
+  address: 'Carr. Tecate -Tijuana  km 140 #s/n, Paso del Águila, Tecate, 21478'
+- municipality: Tecate
+  name: Grupo Rumorosa (Perteneciente a Plantel Tecate)
+  address: 'Calle Tercera y Principal #S/N, La Rumorosa, Tecate, 21510'
+- municipality: Tecate
+  name: Grupo Nueva Hindú (Perteneciente a Plantel Tecate)
+  address: 'Sección Cafetalera #S/N, Ejido Nueva Hindú, Tecate, 21463'
+- municipality: Playas de Rosarito
+  name: Plantel Rosarito
+  address: 'Océano Índico y Mar Adriático #1302, Colinas de Mazatlán Plan Libertador, Playas de Rosarito, 22706'
+- municipality: Playas de Rosarito
+  name: Plantel Primo Tapía
+  address: 'Calle Raymundo Mora Lara #1140, Villas Margarita Ejido Primo Tapía Playas de Rosarito, Playas de Rosarito,
+    22710'
+- municipality: Playas de Rosarito
+  name: Grupo La Misión (Perteneciente a Plantel Primo Tapia)
+  address: 'Carretera Libre a Tijuana km 65 #S/N, La Misión, Playas de Rosarito, 22744'
+- municipality: San Quintín
+  name: Plantel San Quintín
+  address: 'Emiliano Zapata #PARCELA 16, Ejido Nuevo Baja California, San Quintín, 22930'
+- municipality: San Quintín
+  name: Grupo Díaz Ordáz (Perteneciente a Plantel San Quintín)
+  address: 'Carretera Transpeninsular km 39, Libramiento Fundadores y Diamante #S/N, Ejido Morelia, San Quintín,
+    22914'
+- municipality: San Quintín
+  name: Grupo Villa de Jesús María (Perteneciente a Plantel San Quintín)
+  address: 'Avenida Adolfo Ruíz Cortines y Calle Héctor Montenegro Espinoza #S/N, EJIDO VILLA DE JESÚS MARÍA B.C.,
+    San Quintín, 22991'
+- municipality: San Quintín
+  name: Grupo Bahía de los Ángeles (Perteneciente a Plantel San Quintín)
+  address: 'Carretera Aeropuerto y Carretera La Gringa  #S/N, Bahía de Los Ángeles, San Quintín, 22980'
+- municipality: San Felipe
+  name: Plantel San Felipe
+  address: 'Avenida Palomar y Paseo Ruiseñor  #S/N, Fraccionamiento El Palomar, San Felipe, 21850'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Ser estudiante con materias no acreditadas.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Ingresar al enlace de herramientas alumnos haciendo clic en el botón "iniciar trámite" ubicado en la parte
+      inferior derecha.
+    - Seleccionar las materias a regularizar (por periodo de regularización se pueden seleccionar 3 materias )
+    - Realizar el pago en línea del curso y examen de las materias seleccionadas.
+    - Acudir al plantel para informarse fecha de curso y aplicación de exámenes.
+    - Asistir a los cursos y a la aplicación del examen en la fecha indicada por el plantel.
+  notes: Estudiante por regularizarse
+legal_basis:
+- source: ley1
+  pinpoint: Art.5. inciso 1
+- source: ley2
+  pinpoint: Art. 3 fracc XLI, Art. 4, 50,55,62 fracc. III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al enlace de herramientas alumnos haciendo clic en el botón "iniciar trámite" ubicado en la parte
+    inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar las materias a regularizar (por periodo de regularización se pueden seleccionar 3 materias
+    )
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago en línea del curso y examen de las materias seleccionadas.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir al plantel para informarse fecha de curso y aplicación de exámenes.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Asistir a los cursos y a la aplicación del examen en la fecha indicada por el plantel.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 706: Regularización'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/706
+    version_date: 02/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Lineamiento para la impartición de cursos y talleres en CECyTE BC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Normas de Control Escolar y Estadística del CECyTE BC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Regularización del Estudiante.. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

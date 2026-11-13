@@ -1,0 +1,135 @@
+id: mx-bcn-retys-1219-certificado-parcial-de-estudios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado Parcial de Estudios
+summary: Documento Oficial que describe los semestres y asignaturas (aprobadas y/o reprobadas) cursadas por un alumno
+  inscrito en planes de estudios anteriores al RIEMS 2009-2, en COBACH BC, el cual solicita su baja para inscribirse
+  en otro Subsistema en el Estado, en otro Estado o en el Extranjero.
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1219
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1219
+  homoclave: BC-COBACH-002
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: Cuando la persona solicitante requiera obtener un certificado parcial de estudios de CoBachBC
+result: Certificado Parcial de Estudios
+cost:
+  type: fijo
+  amount_mxn: 333.0
+  text: 'COSTO: - Certificado Parcial de Estudios $333.00 mxn Nota: I. Historial Académico Parcial de Estudios.
+    Cuando la persona solicitante realizó sus estudios a partir del periodo 2009-2. II. Certificado Parcial de Estudios.
+    Cuando la persona solicitante realizó sus estudios entre los periodo 1981-2 al periodo 2009-1.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Registro y Control Escolar
+  address: 'Blvd. Anáhuac #936, Centro Civico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación Zona Costa
+  address: 'Vía Rápida Oriente #S/N, Tercera Etapa del Río, Delegación Cerro Colorado, Tijuana, 22226'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Acta de nacimiento
+    cites:
+    - source: retys
+  - text: Certificado de Educación Secundaria
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Fotografía digital
+    cites:
+    - source: retys
+  - text: Aviso baja del alumno
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Asiste a ventanilla
+    - Entrega documentos
+    - Realiza el pago de los derechos y proporciona el recibo.
+    - Entrega del documento solicitado
+  notes: Cuando la persona solicitante requiera obtener un Certificado Parcial de Estudios de COBACH BC
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+- source: ley2
+  pinpoint: .
+- source: ley3
+  pinpoint: '29'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Asiste a ventanilla
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega documentos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza el pago de los derechos y proporciona el recibo.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega del documento solicitado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1219: Certificado Parcial de Estudios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1219
+    version_date: 16/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Colegio de Bachilleres de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Manual por el que se establecen las cuotas de recuperación del Colegio de Bachilleres del Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Acreditación, Regulación de Estudios del Colegio de Bachilleres del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

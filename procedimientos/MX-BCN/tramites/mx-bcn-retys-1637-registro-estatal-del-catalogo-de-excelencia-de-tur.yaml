@@ -1,0 +1,195 @@
+id: mx-bcn-retys-1637-registro-estatal-del-catalogo-de-excelencia-de-tur
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro Estatal del Catálogo de Excelencia de Turismo de Salud y Bienestar de Baja California (CEETSB)
+summary: Registro a través del cual se obtiene un reconocimiento oficial que se otorga a aquellas instituciones
+  y profesionales de la salud que cumplen con las más altas normas y protocolos nacionales e internacionales de
+  calidad, servicio y seguridad del paciente.
+authority:
+  name: Secretaría de Turismo
+official_ids:
+  retys_id: 1637
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1637
+  homoclave: BC-SECTURE-008
+who_can:
+- Representante Legal
+- Interesado
+- Otro
+when: Cuando se requiera obtener un reconocimiento oficial de excelencia en turismo de salud y bienestar
+result: Constancia y engomado
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Dos años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Playas de Rosarito
+  name: Coordinación de Turismo de Salud y Bienestar- Secretaría de Turismo de Baja California
+  address: 'Carretera Escénica Tijuana - Ensenada #1029, Ejido Mazatlán , Playas de Rosarito, 22710'
+scenarios:
+- name: Registro para establecimientos
+  requirements:
+  - text: Identificación oficial (propietario y/o representante legal)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio fiscal (recibo de agua, luz, teléfono o predial)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal
+    cites:
+    - source: retys
+  - text: Título y cédula profesional del responsable sanitario del establecimiento
+    cites:
+    - source: retys
+  - text: Constancia del registro estatal de establecimientos prestadores de servicios de salud y bienestar (REPSSABI)
+      de la COEPRIS
+    cites:
+    - source: retys
+  - text: Fotografías del exterior del negocio ( a color y claras)
+    cites:
+    - source: retys
+  - text: Fotografías del interior del negocio ( a color y claras)
+    cites:
+    - source: retys
+  - text: Contar con página web en español/ inglés
+    cites:
+    - source: retys
+  - text: Contar con personal bilingüe español/inglés
+    cites:
+    - source: retys
+  - text: Contar con redes sociales
+    cites:
+    - source: retys
+  - text: Constancia vigente del Registro Estatal de Turismo (RET)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Llenar formulario entrando al enlace: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/4e987b05974218515e6ab4b68ed9ae0b/0'
+    - Evaluación y revisión
+    - Entrega de constancia del Registro Estatal de Turismo (RET) de turismo de salud y bienestar
+    - Integración al Catálogo de Excelencia de Turismo de Salud y Bienestar
+    - Entrega de constancia del Registro al Catálogo de Excelencia de Turismo de Salud y Bienestar y Engomado
+  notes: Establecimientos - Representante legal
+- name: Registro para médicos especialistas
+  requirements:
+  - text: Identificación oficial del médico especialista / dentista
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio fiscal (recibo de agua, luz, teléfono o predial)
+    cites:
+    - source: retys
+  - text: Título y cédula profesional del responsable sanitario del establecimiento
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC) del solicitante
+    cites:
+    - source: retys
+  - text: constancia de la certificación de su especialidad, emitida por el Comité Normativo Nacional de Consejos
+      de Especialidades Médicas (CONACEM)
+    cites:
+    - source: retys
+  - text: Fotografía a color del médico especialista
+    cites:
+    - source: retys
+  - text: Contar con página web en español e inglés
+    cites:
+    - source: retys
+  - text: Dominio del idioma inglés
+    cites:
+    - source: retys
+  - text: Contar con redes sociales
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - 'Llenar formulario entrando al enlace: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/4e987b05974218515e6ab4b68ed9ae0b/0'
+    - Evaluación y revisión
+    - Entrega de constancia del Registro Estatal de Turismo (RET) de turismo de salud y bienestar
+    - Integración al Catálogo de Excelencia de Turismo de Salud y Bienestar
+    - Entrega de constancia del Registro al Catálogo de Excelencia de Turismo de Salud y Bienestar y Engomado
+  notes: Médicos especialistas
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 30, Fracción XIII Y 43 Fracción XIII
+- source: ley2
+  pinpoint: Artículos 67, 69, 72 Y 73 Fracción V
+- source: ley3
+  pinpoint: Artículo 21 fracción XI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Llenar formulario entrando al enlace: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/init/4e987b05974218515e6ab4b68ed9ae0b/0'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Evaluación y revisión
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de constancia del Registro Estatal de Turismo (RET) de turismo de salud y bienestar
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Integración al Catálogo de Excelencia de Turismo de Salud y Bienestar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entrega de constancia del Registro al Catálogo de Excelencia de Turismo de Salud y Bienestar y Engomado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1637: Registro Estatal del Catálogo de Excelencia de Turismo de Salud y Bienestar de Baja
+      California (CEETSB)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1637
+    version_date: 03/Marzo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Turismo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

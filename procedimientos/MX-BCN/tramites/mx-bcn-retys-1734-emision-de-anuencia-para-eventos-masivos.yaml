@@ -1,0 +1,182 @@
+id: mx-bcn-retys-1734-emision-de-anuencia-para-eventos-masivos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Emisión de anuencia para eventos masivos
+summary: Se reciben y revisan los documentos conforme a los requisitos establecidos. Si cumple con la documentación
+  la respuesta se genera de manera condicionada ya que se realizan verificaciones físicas antes de iniciar el evento
+  con la finalidad de dar el visto bueno y den inicio al mismo. Posteriormente se realizan verificaciones durante
+  y al término del evento. Se reciben y revisan los documentos conforme a los requisitos establecidos. Si cumple
+  con la documentación la respuesta se genera de manera condicionada ya que se realizan verificaciones físicas antes
+  de iniciar el evento con la finalidad de dar el visto bueno y den inicio al mismo. Posteriormente se realizan
+  verificaciones durante y al término del evento.
+authority:
+  name: Secretaría General de Gobierno
+official_ids:
+  retys_id: 1734
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1734
+  homoclave: BC-SGG-019
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el evento de afluencia masiva se lleve a cabo en el Estado y que tenga un aforo mayor de 500 personas
+  en lugares cerrados y mayor a 1,000
+result: Oficio de aprobación/ aprobación condicionada
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Emisión de anuencias para eventos en lugares cerrados con capacidad de 500 hasta 1,000 personas.
+    $4,538.00 m.n. Emisión de anuencias para eventos en lugares cerrados o abiertos: Capacidad de 1,000 hasta 2,000
+    personas $ 6,051.00 m.n. Capacidad de 2,001 hasta 3,000 personas $ 9,076.00 m.n. Capacidad de 3,001 hasta 4,000
+    personas $ 12,102.00 m.n. Capacidad de 4,001 hasta 10,000 personas $ 15,127.00 m.n. Capacidad de 10,0001 personas
+    en adelante $ 19,665.00 m.n.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: El día o días del evento
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Protección Civil
+  address: 'Lago Winnipeg #441, Jardines del Lago , Mexicali, 21330'
+- municipality: Tijuana
+  name: Coordinación Estatal de Protección Civil
+  address: 'Panfilo Natera #6400,  Francisco Villa, Tijuana, 22615'
+scenarios:
+- name: Promotores, organizadores de eventos o espectáculos públicos de afluencia masiva.
+  requirements:
+  - text: Carta de solicitud de anuencia con nombre y firma, donde se indique el tipo de evento, fecha, lugar, cantidad
+      aproximada de asistentes, horario de inicio y terminación, número telefónico donde se pueda localizar al encargado
+      del evento y/o promotor.
+    cites:
+    - source: retys
+  - text: Copia de identificación del responsable por los dos lados.
+    cites:
+    - source: retys
+  - text: Copia de anuencia de bomberos, expedida por la Dirección de Bomberos del Municipio que corresponda.
+    cites:
+    - source: retys
+  - text: Cuando las instalaciones no cuenten con seguridad institucional, deberan presentar copia de servicio de
+      seguridad contratado y/o anuencia de policia comercial.
+    cites:
+    - source: retys
+  - text: Copia del servicio de ambulancias fijas y servicios prehospitalarios, conforme a la anuencia emitida por
+      Bomberos, dichas ambulancias deberán con registro a esta Coordinación Estatal.
+    cites:
+    - source: retys
+  - text: Copia del permiso de operación otorgado por el Municipio para el establecimiento donde se desarrollará
+      el evento. Documento proporcionado por el Municipio que corresponda.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Presentar programa específico de Protección Civil en carpeta conforme a la guía de Elaboración de Programas
+      Especificos, publicada en el Portal de la Coordinación Estatal de Protección Civil.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11517
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+    - Brindar original o en caso de no contar con ello, presentar una copia de cada uno de los requisitos.
+    - Realizar el pago de derechos correspondiente.
+    - Se otorga la anuencia entre 2 y 5 dias posteriores, siempre y cuando se haya cumplido con los requisitos.
+  notes: Carta de solicitud de anuencia con nombre y firma, donde se indique tipo de evento, fecha lugar, cantidad
+    aproximada de asistentes, horario de inicio y terminación, número de teléfono para poder comunicar con el encargado
+    del evento y/o promotor.
+legal_basis:
+- source: ley1
+  pinpoint: '-'
+- source: ley2
+  pinpoint: Artículo 31 Fracc. XIV
+- source: ley3
+  pinpoint: Artículo 18, fracción VI, Incisos B y C
+- source: ley4
+  pinpoint: Artículo 79
+- source: ley5
+  pinpoint: Art. 44
+- source: ley6
+  pinpoint: Artículo 77
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las instalaciones de la Coordinación Estatal de Protección Civil.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Brindar original o en caso de no contar con ello, presentar una copia de cada uno de los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se otorga la anuencia entre 2 y 5 dias posteriores, siempre y cuando se haya cumplido con los requisitos.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1734: Emisión de anuencia para eventos masivos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1734
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Guía de Elaboración de Programas Específicos de Protección Civil publicada en el Periódico Oficial el
+      20 de junio del 2019.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California POE 06-diciembre-2021
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos para el Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría General de Gobierno POE 27-marzo-2024
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley6:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección Civil y Gestión Integral de Riesgos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Anuencias para Eventos de Afluencia Masivos. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

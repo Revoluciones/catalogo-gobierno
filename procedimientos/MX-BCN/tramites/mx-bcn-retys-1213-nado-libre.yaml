@@ -1,0 +1,99 @@
+id: mx-bcn-retys-1213-nado-libre
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Nado libre
+summary: Ofrecer un espacio dentro de la alberca para que los usuarios puedan realizar nado libre para esparcimiento,
+  práctica y acondicionamiento físico.
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1213
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1213
+  homoclave: BC-INDEBC-002
+who_can:
+- Interesado
+when: Cuando el usuario lo requiera
+result: La oportunidad de realizar activación física, a través del nado libre
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 1 hora $80 pesos, paquete 5 horas $350.00 pesos, paquete 10 horas $600.00 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 50 minutos
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Contabilidad
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Pago de la cuota por hora
+    cites:
+    - source: retys
+  - text: Saber nadar previamente
+    cites:
+    - source: retys
+  - text: Para ingresar a la alberca es necesario el uso de sandalias, googles, gorra para cabello y traje de baño
+    cites:
+    - source: retys
+  - text: Examen médico con fecha de expedición no mayor a 14 días y 1 fotografía actual tamaño infantil a color
+      o blanco y negro, para la credencial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar documentación requerida completa en el área de caja del Instituto
+    - Pagar el tiempo que deseé hacer uso de la alberca
+  notes: Para hacer uso de este servicio, es recomendable saber nadar previamente
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 14, Fracción XXIV
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar documentación requerida completa en el área de caja del Instituto
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pagar el tiempo que deseé hacer uso de la alberca
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1213: Nado libre'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1213
+    version_date: 09/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Nado Libre. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

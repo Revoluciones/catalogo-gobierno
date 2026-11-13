@@ -1,0 +1,145 @@
+id: mx-bcn-retys-1165-registro-de-personal-de-seguridad-publica-y-privad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de Personal de Seguridad Pública y Privada
+summary: Registro del formato de cédula de inscripción para personal de seguridad pública y privada.
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1165
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1165
+  homoclave: BC-SSCBC-003
+who_can:
+- Interesado
+when: Cuando sea solicitado por el interesado
+result: Constancia de registro
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Seguridad Privada (Edificio Museo del Agua)
+  address: 'Av. Álvaro Obregón #514, Sección Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección de Registros
+  address: 'Antigua Carretera Tijuana-Tecate Km 133 #S/N, Piedras Blancas, Tijuana, 22244'
+- municipality: Ensenada
+  name: Dirección de Registros
+  address: 'Carretera Ensenada de la Paz #6500, Praderas del Cipres, Ensenada, 22785'
+scenarios:
+- name: Seguridad pública y privada
+  requirements:
+  - text: Presentarse en la Dirección de Registros de Seguridad Pública con identificación oficial con fotografía
+      vigente
+    cites:
+    - source: retys
+  - text: Presentarse con oficio de autorización personalizado perteneciente a la empresa o corporación (Privada
+      y Pública) el oficio debe estar vigente.
+    cites:
+    - source: retys
+  - text: Comprobante original de domicilio (No mayor a 2 meses)
+    cites:
+    - source: retys
+  - text: Señalar la fecha de ingreso a la empresa o corporación, con copia de autorización no mayor a 3 meses
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: 3 Referencias (de un familiar, un pariente y personal) debiendo contener nombre completo, teléfono y domicilio
+      con código postal. (DESCARGA EL FORMATO DE REFERENCIAS PERSONALES)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13674
+  - text: Señalar 3 dependientes económicos (en caso de tener) debiendo indicar nombre completo, fecha de nacimiento
+      y parentesco
+    cites:
+    - source: retys
+  - text: 'Mujeres: Deberán presentarse sin maquillaje, cabello recogido, no pestañas postizas y vestimenta formal
+      (no tirantes o strapless). En caso de ser servidor público deberá portar su vestimenta formal o el uniforme
+      de su corporación.'
+    cites:
+    - source: retys
+  - text: 'Hombres: Deberán presentarse sin barba y con bigote recortado (en caso de usar deberán traer el cuello
+      y las comisuras de la boca completamente visibles). En caso de ser servidor público deberá portar su vestimenta
+      formal o el uniforme de su corporación.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Descargar el formato de referencias personales y llenarlo
+    - Acudir a las oficinas de la Dirección de Registros de Seguridad Pública.
+    - Presentar el formato de referencias personales llenado y los documentos que sean requeridos
+    - Seguir las instrucciones que le sean indicadas por parte del personal para la continuación del trámite
+    - Si el interesado cumplió con todos los requisitos se le entregará fisicamente una constancia la cual deberá
+      entregar en su corporación o dependencia.
+  notes: Requisitos para el debido registro del personal activo y autorizado ante la Dirección de Registros de Seguridad
+    Pública
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 8 frac. XI, 10 frac. V, 53 frac. II, 100, 101, 103 frac. V y 105
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Descargar el formato de referencias personales y llenarlo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Dirección de Registros de Seguridad Pública.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar el formato de referencias personales llenado y los documentos que sean requeridos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Seguir las instrucciones que le sean indicadas por parte del personal para la continuación del trámite
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si el interesado cumplió con todos los requisitos se le entregará fisicamente una constancia la cual deberá
+    entregar en su corporación o dependencia.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1165: Registro de Personal de Seguridad Pública y Privada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1165
+    version_date: 13/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General del Sistema Nacional de Seguridad Pública
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro de Personal e Ingreso de la Información al Sistema de Registro Nacional de Personas
+  de Seguridad Pública y Privada. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

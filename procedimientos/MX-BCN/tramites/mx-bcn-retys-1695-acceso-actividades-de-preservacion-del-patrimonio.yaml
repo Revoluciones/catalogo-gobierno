@@ -1,0 +1,96 @@
+id: mx-bcn-retys-1695-acceso-actividades-de-preservacion-del-patrimonio
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso Actividades de Preservación del Patrimonio Cultural
+summary: ¿Te interesa la historia y la cultura de Baja California? ¡Este servicio es para ti! Participa en actividades
+  que promueven la preservación y difusión de nuestro patrimonio histórico y cultural
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1695
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1695
+  homoclave: BC-SC-007
+who_can:
+- Interesado
+when: Cuando quieras aprender, involucarte activamente en la protección de nuestro patrimonio
+result: La oportunidad de participar en proyectos significativos que preservan nuestro patrimonio cultural.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Archivo Histórico Del Estado
+  address: 'Pedro F. Pérez Y Ramírez #621, Primera Sección, Mexicali, 21100'
+- municipality: Mexicali
+  name: Dirección de Patrimonio Cultural y Culturas Populares
+  address: 'Álvaro Obregón #1209, Nueva, Mexicali, 21100'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Consulte la agenda de actividades y elija la de su interés
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Dar clic en el botón de Iniciar trámite para consultar la agenda de eventos
+    - Elije la actividad de su interes
+    - Asiste al evento seleccionado
+  notes: Personas que deseen conocer acerca del patrimonio histórico y cultural del Estado
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 33, fracción II, Artículo 34 fracción XII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Dar clic en el botón de Iniciar trámite para consultar la agenda de eventos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Elije la actividad de su interes
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Asiste al evento seleccionado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1695: Acceso Actividades de Preservación del Patrimonio Cultural'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1695
+    version_date: 07/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Acceso a Actividades de Preservación del Patrimonio Cultural. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

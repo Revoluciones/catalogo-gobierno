@@ -1,0 +1,83 @@
+id: mx-bcn-retys-1227-solicitud-de-informacion-sociodemografica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Información Sociodemográfica
+summary: Solicitud de Información Sociodemográfica para Estudios o Proyectos.
+authority:
+  name: Comité de Planeación para el Desarrollo del Estado de Baja California
+official_ids:
+  retys_id: 1227
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1227
+  homoclave: BC-COPLADE-001
+who_can:
+- Interesado
+when: Cuando se requiera
+result: Archivo o una dirección a donde apunta la información
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Administración y seguimiento institucional
+  address: 'Bulevar benito juárez    C.P. 21270 #1298, Jardines del valle, Mexicali, 21270'
+scenarios:
+- name: Ciudadanos en General
+  requirements: []
+  modes:
+  - name: Mixto
+    steps:
+    - Formato
+  notes: Consulta en Linea
+- name: Ciudadanos en General
+  requirements:
+  - text: Llenar formato
+    cites:
+    - source: retys
+  modes: []
+  notes: Presencial
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 1
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Formato
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1227: Solicitud de Información Sociodemográfica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1227
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Planeación de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Información Sociodemográfica.. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

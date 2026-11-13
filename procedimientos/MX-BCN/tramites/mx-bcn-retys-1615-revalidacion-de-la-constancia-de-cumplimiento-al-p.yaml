@@ -1,0 +1,190 @@
+id: mx-bcn-retys-1615-revalidacion-de-la-constancia-de-cumplimiento-al-p
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revalidación de la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos
+summary: Obtener la revalidación de la constancia de cumplimiento al programa atrapa la grasa y sólidos, para usuarios
+  no domésticos con procesos productivos que generen desecho de grasas y sólidos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1615
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1615
+  homoclave: BC-CESPT-037
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo requiera del servicio
+result: Revalidación de Constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos
+cost:
+  type: variable
+  amount_mxn: 1288.81
+  text: 'COSTO VARIABLE: $1,288.81 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: GENERAL
+  requirements:
+  - text: Original y copia del Formulario de Solicitud de revalidación o exención de constancia de cumplimiento
+      al Programa Atrapa la Grasa y Sólidos (FRM-015), debidamente llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11987
+  - text: Copia de Manifiesto de entrega, transporte y recepción de residuos de manejo especial
+    cites:
+    - source: retys
+  - text: 3. Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la coordinación de control de calidad, ubicada en el edificio posterior izquierdo de CESPT, y presentar
+      todos los requisitos necesarios.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad, le entrega una Ficha de
+      pago.
+    - Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona de
+      Cajas le entregará un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y copia del Formulario de Solicitud
+      de Revalidación o Exención de constancia de cumplimiento o al Programa Atrapa la Grasa y Sólidos.
+    - La persona del área de Archivo imprime certificación de recibido al original y copia Formulario de Solicitud
+      de Revalidación o Exención de constancia de cumplimiento o al Programa Atrapa la Grasa y Sólidos, en donde
+      se indica la fecha de respuesta, y entrega la copia a la persona solicitante.
+    - 'Una persona Analista de la Coordinación de Control de Calidad acudirá a la empresa o establecimiento a realizar
+      una visita de verificación para revalidación, para revisar si existen cambios en las instalaciones o en la
+      cantidad de desechos de grasa o sólidos que produce la empresa o establecimiento, NO DETECTAN CAMBIOS: Ir
+      al siguiente paso. SE DETECTAN CAMBIOS: Personal de la Coordinación de Control de Calidad elabora oficio de
+      Dimensionamiento de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento que
+      debe realizar y el plazo para realizarlas, y se comunica con el usuario para que pase a recoger el documento.'
+    - CESPT emite la Oficio de revalidación de Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos,
+      y contacta a la persona solicitante para que pase a recoger el documento.
+    - Acudir a CESPT por la Oficio de revalidación de Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos.
+  notes: GENERAL
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 94 y 109.
+- source: ley2
+  pinpoint: Artículos 1 y 2.
+- source: ley3
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la coordinación de control de calidad, ubicada en el edificio posterior izquierdo de CESPT, y
+    presentar todos los requisitos necesarios.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si
+    no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se
+    completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Control de Calidad, le entrega una Ficha
+    de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona
+    de Cajas le entregará un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de Pago y entregar el original y copia del Formulario de
+    Solicitud de Revalidación o Exención de constancia de cumplimiento o al Programa Atrapa la Grasa y Sólidos.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo imprime certificación de recibido al original y copia Formulario de Solicitud
+    de Revalidación o Exención de constancia de cumplimiento o al Programa Atrapa la Grasa y Sólidos, en donde se
+    indica la fecha de respuesta, y entrega la copia a la persona solicitante.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: 'Una persona Analista de la Coordinación de Control de Calidad acudirá a la empresa o establecimiento
+    a realizar una visita de verificación para revalidación, para revisar si existen cambios en las instalaciones
+    o en la cantidad de desechos de grasa o sólidos que produce la empresa o establecimiento, NO DETECTAN CAMBIOS:
+    Ir al siguiente paso. SE DETECTAN CAMBIOS: Personal de la Coordinación de Control de Calidad elabora oficio
+    de Dimensionamiento de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento
+    que debe realizar y el plazo para realizarlas, y se comunica con el usuario para que pase a recoger el documento.'
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: CESPT emite la Oficio de revalidación de Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos,
+    y contacta a la persona solicitante para que pase a recoger el documento.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Acudir a CESPT por la Oficio de revalidación de Constancia de Cumplimiento al Programa Atrapa la Grasa
+    y Sólidos.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1615: Revalidación de la Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1615
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Que Reglamenta El Servicio De Agua Potable En El Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

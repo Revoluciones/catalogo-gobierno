@@ -1,0 +1,107 @@
+id: mx-bcn-retys-598-inscripcion-a-los-talleres-mis-vacaciones-en-la-bi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción a los Talleres mis Vacaciones en la Biblioteca
+summary: Que las niñas y niños participen en talleres de entrenamiento para fomentar el hábito de la lectura, creatividad
+  artística y demás habilidades sociales.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 598
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/598
+  homoclave: BC-ICBC-024
+who_can:
+- Tutor
+when: Durante el periodo vacacional escolar de verano
+result: El desarrollo de sus habilidades y fortalecimiento de su formación intelectual
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Biblioteca Pública Central Estatal
+  address: 'Álvaro Obregón #1300, Nueva, Mexicali, 21100'
+- municipality: Ensenada
+  name: Biblioteca Pública Regional Benito Juárez
+  address: 'Guadalupe #201, Obrera, Ensenada, 22830'
+scenarios:
+- name: Niñas, niños y jóvenes de entre 7 a 17 años
+  requirements:
+  - text: Credencial de biblioteca
+    cites:
+    - source: retys
+  - text: Ficha de inscripción
+    cites:
+    - source: retys
+  - text: Niñas y niños de 7 a 17 años
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Obtiene credencial de biblioteca o la presenta
+    - Llena ficha de inscripción del taller
+    - Acude al taller
+  notes: Cuando la persona interesada desee obtener el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 7, fracción V
+- source: ley2
+  pinpoint: Artículo 32, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Obtiene credencial de biblioteca o la presenta
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llena ficha de inscripción del taller
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acude al taller
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 598: Inscripción a los Talleres mis Vacaciones en la Biblioteca'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/598
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,109 @@
+id: mx-bcn-retys-1371-certificado-de-terminacion-de-estudios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Terminación de Estudios
+summary: Documento con validez oficial emitido de manera física o electrónica por el sistema CONALEP, en el que
+  se hace constar que el alumno acreditó en su totalidad los módulos del plan de estudios de la carrera de profesional
+  técnico o de profesional técnico bachiller que cursó.
+authority:
+  name: Colegio de Educación Profesional Técnica del Estado de Baja California
+official_ids:
+  retys_id: 1371
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1371
+  homoclave: BC-CONALEP-010
+who_can:
+- Interesado
+- Tutor
+when: Inicio del trámite en julio de cada ciclo escolar de acuerdo al calendario oficial del sistema CONALEP BC
+result: Certificado de terminación de estudios profesionales
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Presentar historial académico, haber concluido la formación satisfactoriamente. En caso
+    de que no se haya realizado el pago en cada reinscripción se deberá pagar: Costo 2026: 1,325.00.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali I
+  address: 'Av. CONALEP #S/N, Ejido Puebla, Mexicali, 21620'
+- municipality: Mexicali
+  name: Servicios Escolares Plantel Mexicali II
+  address: 'Calle Salina Cruz #1228, Fraccionamiento Guajardo, Mexicali, 21150'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana I
+  address: 'Blvd. Las Fuentes #920, Fracc. Los Pinos 2da. Sección, Tijuana, 22450'
+- municipality: Tijuana
+  name: Servicios Escolares Plantel Tijuana II
+  address: 'Av. Ermita Norte #3900, San José del Río, Tijuana, 22430'
+- municipality: Ensenada
+  name: Servicios Escolares Plantel Ensenada
+  address: 'Av. Granito #408, Carlos Pacheco, Ensenada, 22890'
+- municipality: Tecate
+  name: Servicios Escolares Plantel Tecate
+  address: 'Carretera Tecate-Ensenada #KM 2.5, Maclovio Herrera, Tecate, 21400'
+scenarios:
+- name: Estudiante
+  requirements:
+  - text: Historial académico con formación concluida satisfactoriamente
+    cites:
+    - source: retys
+  - text: Fotografia
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar documentación requerida al plantel correspondiente
+    - Entrega de certificado de terminación de estudios
+  notes: Requisitos para obtener certificado de terminación de estudios
+legal_basis:
+- source: ley1
+  pinpoint: '25'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar documentación requerida al plantel correspondiente
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega de certificado de terminación de estudios
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1371: Certificado de Terminación de Estudios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1371
+    version_date: 11/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Acuerdo de creación del colegio
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

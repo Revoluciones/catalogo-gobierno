@@ -1,0 +1,130 @@
+id: mx-bcn-retys-1037-recurso-de-revision
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Recurso de revisión
+summary: La persona solicitante podrá interponer, por sí mismo o a través de su representante, de manera directa
+  o por medios electrónicos, recurso de revisión ante el instituto o ante la unidad de transparencia que haya conocido
+  de la solicitud de transparencia dentro de los quince días siguientes a la fecha de la notificación de la respuesta,
+  o del vencimiento del plazo para su notificación.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 1037
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1037
+  homoclave: BC-IMOS-088
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando la persona interesada o su representante legal lo solicite
+result: Se lleva a cabo el recurso de revisión
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en lo general
+  requirements:
+  - text: Formato de Interposición de Recurso de Revisión, llenado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13752
+  - text: El sujeto obligado ante la cual se presentó la solicitud
+    cites:
+    - source: retys
+  - text: El nombre del solicitante que recurre o de su representante y, en su caso, del tercero interesado, así
+      como la dirección o medio que señale para recibir notificaciones
+    cites:
+    - source: retys
+  - text: El número de folio de respuesta de la solicitud de acceso
+    cites:
+    - source: retys
+  - text: La fecha en que fue notificada la respuesta al solicitante o tuvo conocimiento del acto reclamado, o de
+      presentación de la solicitud, en caso de falta de respuesta
+    cites:
+    - source: retys
+  - text: El acto que se recurre
+    cites:
+    - source: retys
+  - text: Las razones o motivos de inconformidad
+    cites:
+    - source: retys
+  - text: La copia de la respuesta que se impugna y, en su caso, de la notificación correspondiente, salvo en el
+      caso de no respuesta de la solicitud
+    cites:
+    - source: retys
+  - text: Adicionalmente, se podrán anexar las pruebas y demás elementos que considere procedentes someter a juicio
+      del instituto
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Presentar el recurso de revisión en la Plataforma Nacional de Transparencia, en la sección ¨Quejas¨
+  - name: Presencial
+    steps:
+    - Acudir a las Oficinas del Instituto de Movilidad Sustentable y presentar el recurso de revisión
+  notes: Recurso de revisión en materia de transparencia y acceso a la información
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 128
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar el recurso de revisión en la Plataforma Nacional de Transparencia, en la sección ¨Quejas¨
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1037: Recurso de revisión'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1037
+    version_date: 24/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Transparencia, Acceso a la Información Pública y Apertura Institucional para el Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Recurso de Revisión en Materia de Transparencia. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

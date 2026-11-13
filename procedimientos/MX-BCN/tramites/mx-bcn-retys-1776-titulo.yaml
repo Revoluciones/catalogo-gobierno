@@ -1,0 +1,132 @@
+id: mx-bcn-retys-1776-titulo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Titulo
+summary: Trámite dirigido a estudiantes egresados de nivel licenciatura y posgrado de la Universidad Intercultural
+  de Baja California, que hayan cumplido con los requisitos académicos, administrativos y normativos para la obtención
+  de su título profesional. El proceso incluye la validación documental, emisión de actas de examen, generación
+  del título electrónico y su entrega conforme a los lineamientos establecidos por la Dirección General de Profesiones.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1776
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1776
+  homoclave: BC-UIBC-005
+who_can:
+- Interesado
+when: Una vez concluido el plan de estudios correspondiente, contar con certificado total de estudios, liberación
+  de servicio social (en caso de licenciatur
+result: Título con validez oficial expedido por la Universidad Intercultural de Baja California.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: 3,000 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Departamento de Control Escolar y Servicios Estudiantiles
+  address: 'Calle Sin Nombre, Lote A y fracción del Lote B-1 fracción 5 Manzana 102 #S/N, Fraccionamiento Valle
+    de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Revisión y aprobación de titulo
+  requirements:
+  - text: Tener su certificado profesional.
+    cites:
+    - source: retys
+  - text: Haber concluido su servicio social (Licenciatura).
+    cites:
+    - source: retys
+  - text: No tener adeudos con la institución.
+    cites:
+    - source: retys
+  - text: Entregar la documentación solicitada a Control Escolar y Servicio Estudiantil.
+    cites:
+    - source: retys
+  - text: Acta de examen profesional o grado
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Recibir oficio del Departamento de Control Escolar y Servicio Estudiantil con la relación de títulos electrónicos
+      a revisar
+    - Verificar que se incluya la documentación correspondiente (CURP, certificados, actas, archivos XML, títulos
+      en PDF y .zip)
+    - Revisar que los datos contenidos en los archivos XML coincidan con los expedientes físicos y digitales de
+      los estudiantes
+    - Validar técnicamente cada XML. Si procede, autorizar su incorporación al sistema y archivar electrónicamente
+      la documentación
+    - Informar por correo electrónico al Departamento de Control Escolar y Servicio Estudiantil sobre la aprobación
+      de los títulos electrónicos
+  notes: Revisión técnica y validación de los archivos digitales del título profesional por parte del Analista de
+    Control Escolar, verificando que la información contenida en los XML coincida con los expedientes completos
+    del estudiante. Una vez validado, se autoriza su incorporación en el Sistema de Certificados Electrónicos y
+    se remite oficialmente al Departamento de Control Escolar y Servicio Estudiantil.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 11 fracción XIX y 12 fracción XXIV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Recibir oficio del Departamento de Control Escolar y Servicio Estudiantil con la relación de títulos electrónicos
+    a revisar
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Verificar que se incluya la documentación correspondiente (CURP, certificados, actas, archivos XML, títulos
+    en PDF y .zip)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisar que los datos contenidos en los archivos XML coincidan con los expedientes físicos y digitales
+    de los estudiantes
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Validar técnicamente cada XML. Si procede, autorizar su incorporación al sistema y archivar electrónicamente
+    la documentación
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Informar por correo electrónico al Departamento de Control Escolar y Servicio Estudiantil sobre la aprobación
+    de los títulos electrónicos
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1776: Titulo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1776
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Intercultural de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Titulación de estudiantes. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

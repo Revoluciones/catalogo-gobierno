@@ -1,0 +1,101 @@
+id: mx-bcn-tijuana-tj-sgm-0196-rectificacion-de-actas-de-nacimiento-matrimonio-de
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: 'RECTIFICACIÓN de actas de Nacimiento, Matrimonio, Defunción, Divorcio, Adopción y Reconocimiento '
+summary: Corrección de errores u omisiones en actas de nacimiento, matrimonio, defunción, divorcio, adopción o reconocimiento
+  para garantizar que la información sea correcta y legalmente válida.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0196
+who_can:
+- Interesado
+- Representante_legal
+when: Cuando el acta tenga errores de escritura que afectan el nombre u otros datos importantes de la persona. ·
+  Cuando se necesite corregir el nombre o fecha de nacimiento para que coincida con la identidad real de la persona.
+result: Resolución
+requirements:
+- text: Solicitud por escrito con tu nombre, domicilio y el motivo de la corrección.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Copia certificada del acta que se desea corregir.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Copias certificadas de actas o documentos que respalden la corrección.. Se le pueden solicitar requisitos
+    extras dependiendo el error a corregir.
+  cites:
+  - source: remutys
+  original_or_copy: original, 2 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 meses
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 14:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+- source: fund4
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0196: RECTIFICACIÓN de actas de Nacimiento, Matrimonio, Defunción, Divorcio,
+      Adopción y Reconocimiento .'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0196
+    version_date: '2026-10-28'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 1 Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículos 131, 132, 133 y 134 del Código Civil para el Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20260605_CODCIVIL.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18, fracción VIII, inciso A) y B) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal 2026
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2025/LI-TJBC_E-2025.pdf
+  fund4:
+    type: ley
+    official: true
+    title: Artículo 18, fracción III, inciso E) y H) de la ley y de Ingresos del Estado de Baja California para
+      el Ejercicio Fiscal 2026
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20260217_LEYINGRESOSESTADO2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos solicitados'

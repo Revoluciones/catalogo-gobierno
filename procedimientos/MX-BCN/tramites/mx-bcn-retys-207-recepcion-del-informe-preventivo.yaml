@@ -1,0 +1,188 @@
+id: mx-bcn-retys-207-recepcion-del-informe-preventivo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Recepción del Informe Preventivo
+summary: Evaluación del documento denominado Informe Preventivo, a fin de obtener una autorización en materia de
+  impacto ambiental, para el desarrollo de una obra o actividad regulada por el estado.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 207
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/207
+  homoclave: BC-SMADS-031
+who_can:
+- Representante Legal
+when: Cuando se requiera evaluar el impacto ambiental de una obra o actividad.
+result: Resolución Administrativa en materia de Impacto Ambiental.
+cost:
+  type: variable
+  amount_mxn: 9804.24
+  text: 'COSTO VARIABLE: $9,804.24 Moneda Nacional. Costo actualizado para el mes de noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Regularmente es indefinida.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Formato para presentar el informe preventivo debidamente requisitado conforme a su instructivo.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/4371
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes de la persona interesada.
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago de los derechos a nombre de la persona interesada.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental completa y nítida
+      de la representación legal y copia de su identificación oficial vigente
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en el informe preventivo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional
+    - Recolectar el oficio o solventar los requerimientos de información adicional
+  notes: Persona interesada que pretende realizar una obra o actividad que requiere ser evaluada en materia de impacto
+    ambiental.
+- name: Persona moral
+  requirements:
+  - text: Formato para presentar el Informe Preventivo debidamente requisitado y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11081
+  - text: Resumen ejecutivo.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Copia simple del Registro Federal de Contribuyentes
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago de los derechos a nombre de la moral.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: CD o USB que contenga la totalidad de la información presentada en el informe preventivo.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o solicitud de información adicional.
+    - Recolectar el oficio o solventar los requerimientos de información adicional.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad que requiere ser evaluada en materia de impacto ambiental.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 42 y 45
+- source: ley2
+  pinpoint: Artículo 17, fracción I, inciso A)
+- source: ley3
+  pinpoint: Artículos 4 fracción V, 6, 7, 23 fracción II y 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de la resolución o solicitud de información adicional
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio o solventar los requerimientos de información adicional
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 207: Recepción del Informe Preventivo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/207
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente del Gobierno del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley de Protección al Ambiente del Gobierno del Estado de Baja California en Materia
+      de Impacto Ambiental
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

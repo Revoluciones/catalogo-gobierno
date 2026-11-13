@@ -1,0 +1,135 @@
+id: mx-bcn-retys-190-autorizacion-para-la-liberacion-de-ejemplares-de-v
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para la liberación de ejemplares de vida silvestre al hábitat natural
+summary: Autorización para la liberación de ejemplares de vida silvestre al hábitat natural como parte de proyectos
+  de reintroducción, repoblamiento y aprovechamiento por parte de la UMA u organización de la sociedad civil.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 190
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/190
+  homoclave: BC-SMADS-017
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretenda liberar ejemplares de vida silvestre a su hábitat natural
+result: Oficio con autorización
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Recursos Naturales
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Ensenada
+  name: Recursos Naturales
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona moral
+  requirements:
+  - text: Formato de solicitud de liberación de ejemplares al habitat natural
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/3753
+  - text: Copia de los documentos que acrediten la personalidad del solicitante (credencial de elector, pasaporte
+      o cedula profesional)
+    cites:
+    - source: retys
+  - text: Original o copia certificada y copia simple para cotejo del acta constitutiva para personas morales
+    cites:
+    - source: retys
+  - text: Original o copia certificada y copia simple para cotejo del documento con el que se acredita la representación
+      legal del promovente
+    cites:
+    - source: retys
+  - text: Proyecto de repoblación, reintroducción o traslocación
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentación del formato junto con los requisitos solicitados
+    - Evaluación de la información presentada y emisión del oficio de autorización
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    realizar una obra o actividad que requiere ser evaluada o necesite realizar algún tramite
+- name: Persona física
+  requirements:
+  - text: Formato de solicitud de liberación de ejemplares al habitat natural
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11817
+  - text: Copia de los documentos que acrediten la personalidad del solicitante (credencial de elector, pasaporte
+      o cedula profesional)
+    cites:
+    - source: retys
+  - text: Proyecto de repoblación, reintroducción o traslocación
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentación del formato junto con los requisitos solicitados
+    - Evaluación de la información presentada y emisión del oficio de autorización
+  notes: Persona que solicita la liberación de especies silvestres al medio natural
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 118 último Párrafo
+- source: ley2
+  pinpoint: Artículos 83 al 90
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentación del formato junto con los requisitos solicitados
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Evaluación de la información presentada y emisión del oficio de autorización
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 190: Autorización para la liberación de ejemplares de vida silvestre al hábitat natural'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/190
+    version_date: 18/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Vida Silvestre
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

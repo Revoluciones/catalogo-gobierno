@@ -1,0 +1,491 @@
+id: mx-bcn-retys-295-registro-revalidacion-o-modificacion-como-prestado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro, revalidación o modificación como Prestador de Servicios de Manejo Integral de Residuos de Manejo
+  Especial
+summary: Documento que acredita las actividades como prestador de servicios para el manejo integral de residuos
+  de manejo especial.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 295
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/295
+  homoclave: BC-SMADS-057
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se pretenda prestar el servicio del manejo integral de residuos de manejo especial.
+result: Registro, revalidación o modificación en el padrón estatal
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Registro: $16,445.72 M.N. Revalidación: $9,561.45 M.N. Modificación: $2,262.51 M.N. Costo
+    actualizado para el mes de noviembre de 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 a 5 años dependiendo de la evaluación realizada.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Registro persona física
+  requirements:
+  - text: 'Presentar le Formato para la obtención de la Licencia como prestador de servicios para el manejo integral
+      de RME, debidamente requisitado, de conformidad con el instructivo de llenado, y entregarlo con la firma autógrafa.
+      Mismo que deberá ir acompañado de lo siguiente:'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13870
+  - text: '--- Presentar plano o croquis de las instalaciones donde se pretende desarrollar la actividad, en el
+      cual se pueda apreciar cada una de las áreas que la componen.'
+    cites:
+    - source: retys
+  - text: '--- Tabla con las coordenadas geográficas (latitud, longitud) o en UTM (X, Y), Datum WGS 84, del polígono
+      del predio.'
+    cites:
+    - source: retys
+  - text: '--- Anexar copia simple de todas y cada una de las autorizaciones en materia ambiental, emitidas por
+      otras dependencias, en relación a la actividad principal la empresa.'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo I, en caso de que la persona solicitante pretenda prestar el servicio de recolección
+      y transporte de residuos de manejo especial, y presentar la información solicitada en el mismo. Acompañado
+      de lo siguiente:'
+    cites:
+    - source: retys
+  - text: '---* Listado de las empresas a las que presta el servicio.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de los documentos que acrediten la procedencia y destino de los residuos
+      de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Listado con el nombre de las empresas que recepcionarán los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de las Licencias para prestar el servicio de manejo integral de residuos
+      de manejo especial de los sitios a donde son enviados los residuos para su acopio, co-procesamiento, reciclaje,
+      valorización o disposición final.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de los documentos que acrediten la legal posesión de los automóviles utilizados
+      para el desarrollo de la actividad.'
+    cites:
+    - source: retys
+  - text: '---* Copia simple y legible de tarjeta de circulación de los vehículos, vigentes, emitidos por la autoridad
+      estatal'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo II, en caso de que la empresa solicitante pretenda prestar el servicio a terceros
+      consistente en el acopio y valorización de residuos de manejo especial. Deberá acompañarlo con la siguiente
+      información:'
+    cites:
+    - source: retys
+  - text: '---* Detallar el sistema de acopio: altura de las estibas y la maquinaria y equipo utilizados para la
+      manipulación de los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* En caso de comercializar los residuos, deberá presentar copia simple y legible de los documentos
+      que lo acrediten (facturas de compra-venta, contratos y/o convenios, pedimentos de exportación, etc.).'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo III, en caso de que la empresa solicitante pretenda prestar el servicio a terceros
+      consistente en la reutilización, reciclaje y/o co-procesamiento de residuos de manejo especial. Deberá acompañarlo
+      de lo siguiente:'
+    cites:
+    - source: retys
+  - text: '---* Describir cada fase del proceso de reutilización, reciclaje y/o co-procesamiento al que se someten
+      los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Presentar un diagrama de flujo o esquematizar por pasos la descripción del proceso.'
+    cites:
+    - source: retys
+  - text: '--- Presentar copia simple de los documentos que acrediten la correcta disposición de los residuos generados
+      durante el desarrollo de la actividad.'
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de persona apoderada o representante legal, presentar copia simple de
+      la documental idónea vigente, completa y legible, mediante la cual se acredite dicha personalidad.
+    cites:
+    - source: retys
+  - text: Presentar copia simple, legible y vigente, de la identificación oficial de la persona apoderada o representante
+      legal.
+    cites:
+    - source: retys
+  - text: 'Presentar copia simple del documento que acredite la legal utilización del predio. Los documentos que
+      puede presentar son: contrato de compra-venta, escritura pública, contrato de arrendamiento, concesión, expropiación,
+      etc.'
+    cites:
+    - source: retys
+  - text: Entregar una memoria fotográfica de las instalaciones del sitio, en la que se pueda apreciar cada una
+      de las áreas del manejo integral, maquinaria y equipos utilizados (incluir los vehículos rotulados con el
+      nombre, domicilio y teléfono de la empresa, así como del residuo que se transporta en cada vehículo).
+    cites:
+    - source: retys
+  - text: Presentar un programa de prevención y atención a contingencias ambientales, adecuado a las posibles situaciones
+      que pudiesen surgir dentro de cada fase del manejo integral de los residuos de manejo especial, el cual contendrá
+      la descripción de las acciones, medidas, obras, equipos, instrumentos o materiales con que se cuenta para
+      controlar dichas situaciones, tanto para prevenirlas como para mitigarlas, desglosando cada suceso en sus
+      diferentes fases indicando los efectos que espera anular, la cantidad del personal que participa en las brigadas,
+      como actuarán, que recursos se necesitan y de cuáles se dispone, incluyendo las adecuaciones del equipo de
+      seguridad utilizado.
+    cites:
+    - source: retys
+  - text: Anexar el programa de capacitación y adiestramiento al personal involucrado en el manejo de los residuos
+      de manejo especial (incendios, inundaciones, derrames, fugas, robo de material, pepena, generación de fauna
+      nociva, etc.), incluyendo copias de las constancias de las capacitaciones tomadas.
+    cites:
+    - source: retys
+  - text: Entregar USB que contenga la totalidad de la información presentada en la Licencia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o prevención.
+    - Recolectar el oficio y cumplir con las condicionantes o recolectar el oficio y solventar los requerimientos
+      de la prevención.
+  notes: Persona física que pretenda obtener el registro como prestador de servicios para el manejo integral de
+    residuos de manejo especial.
+- name: Registro persona moral
+  requirements:
+  - text: 'Presentar le formato para la obtención de la licencia como prestador de servicios para el manejo integral
+      de RME, debidamente requisitado, de conformidad con el instructivo de llenado, y entregarlo con la firma autógrafa
+      de la persona apoderada o representante legal. Mismo que deberá ir acompañado de lo siguiente:'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13897
+  - text: '--- Presentar plano o croquis de las instalaciones donde se pretende desarrollar la actividad, en el
+      cual se pueda apreciar cada una de las áreas que la componen.'
+    cites:
+    - source: retys
+  - text: '--- Tabla con las coordenadas geográficas (latitud, longitud) o en UTM (X, Y), Datum WGS 84, del polígono
+      del predio.'
+    cites:
+    - source: retys
+  - text: '--- Anexar copia simple de todas y cada una de las autorizaciones en materia ambiental, emitidas por
+      otras dependencias, en relación a la actividad principal la empresa.'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo I, en caso de que la persona solicitante pretenda prestar el servicio de recolección
+      y transporte de residuos de manejo especial, y presentar la información solicitada en el mismo. Acompañado
+      de lo siguiente:'
+    cites:
+    - source: retys
+  - text: '---* Listado de las empresas a las que presta el servicio.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de los documentos que acrediten la procedencia y destino de los residuos
+      de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Listado con el nombre de las empresas que recepcionarán los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de las Licencias para prestar el servicio de manejo integral de residuos
+      de manejo especial de los sitios a donde son enviados los residuos para su acopio, co-procesamiento, reciclaje,
+      valorización o disposición final.'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de los documentos que acrediten la legal posesión de los automóviles utilizados
+      para el desarrollo de la actividad.'
+    cites:
+    - source: retys
+  - text: '---* Copia simple y legible de tarjeta de circulación de los vehículos, vigentes, emitidos por la autoridad
+      estatal'
+    cites:
+    - source: retys
+  - text: '---* Copias simples y legibles de las Licencias de chófer, vigentes, de los conductores de los vehículos.'
+    cites:
+    - source: retys
+  - text: '---* Presentar un croquis con las rutas y horarios de transporte que seguirá el residuo de manejo especial
+      durante el transporte.'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo II, en caso de que la empresa solicitante pretenda prestar el servicio a terceros
+      consistente en el acopio y valorización de residuos de manejo especial. Deberá acompañarlo con la siguiente
+      información:'
+    cites:
+    - source: retys
+  - text: '---* Detallar el sistema de acopio: altura de las estibas y la maquinaria y equipo utilizados para la
+      manipulación de los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* En caso de comercializar los residuos, deberá presentar copia simple y legible de los documentos
+      que lo acrediten (facturas de compra-venta, contratos y/o convenios, pedimentos de exportación, etc.).'
+    cites:
+    - source: retys
+  - text: '--- Desarrollar el Anexo III, en caso de que la empresa solicitante pretenda prestar el servicio a terceros
+      consistente en la reutilización, reciclaje y/o co-procesamiento de residuos de manejo especial. Deberá acompañarlo
+      de lo siguiente:'
+    cites:
+    - source: retys
+  - text: '---* Describir cada fase del proceso de reutilización, reciclaje y/o co-procesamiento al que se someten
+      los residuos de manejo especial.'
+    cites:
+    - source: retys
+  - text: '---* Presentar un diagrama de flujo o esquematizar por pasos la descripción del proceso.'
+    cites:
+    - source: retys
+  - text: '--- Presentar copia simple de los documentos que acrediten la correcta disposición de los residuos generados
+      durante el desarrollo de la actividad.'
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos correspondiente.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva, completa y legible.
+    cites:
+    - source: retys
+  - text: Entregar copia simple de la documental idónea vigente, completa y legible, mediante la cual la persona
+      apoderada o representante legal acredite su personalidad jurídica.
+    cites:
+    - source: retys
+  - text: Presentar copia simple, legible y vigente, de la identificación oficial de la persona apoderada o representante
+      legal.
+    cites:
+    - source: retys
+  - text: 'Presentar copia simple del documento que acredite la legal utilización del predio. Los documentos que
+      puede presentar son: contrato de compra-venta, escritura pública, contrato de arrendamiento, concesión, expropiación,
+      etc.'
+    cites:
+    - source: retys
+  - text: Entregar una memoria fotográfica de las instalaciones del sitio, en la que se pueda apreciar cada una
+      de las áreas del manejo integral, maquinaria y equipos utilizados (incluir los vehículos rotulados con el
+      nombre, domicilio y teléfono de la empresa, así como del residuo que se transporta en cada vehículo).
+    cites:
+    - source: retys
+  - text: Presentar un programa de prevención y atención a contingencias ambientales, adecuado a las posibles situaciones
+      que pudiesen surgir dentro de cada fase del manejo integral de los residuos de manejo especial, el cual contendrá
+      la descripción de las acciones, medidas, obras, equipos, instrumentos o materiales con que se cuenta para
+      controlar dichas situaciones, tanto para prevenirlas como para mitigarlas, desglosando cada suceso en sus
+      diferentes fases indicando los efectos que espera anular, la cantidad del personal que participa en las brigadas,
+      como actuarán, que recursos se necesitan y de cuáles se dispone, incluyendo las adecuaciones del equipo de
+      seguridad utilizado.
+    cites:
+    - source: retys
+  - text: Anexar el programa de capacitación y adiestramiento al personal involucrado en el manejo de los residuos
+      de manejo especial (incendios, inundaciones, derrames, fugas, robo de material, pepena, generación de fauna
+      nociva, etc.), incluyendo copias de las constancias de las capacitaciones tomadas.
+    cites:
+    - source: retys
+  - text: Entregar USB que contenga la totalidad de la información presentada en la Licencia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o prevención.
+    - Recolectar el oficio y cumplir con las condicionantes o recolectar el oficio y solventar los requerimientos
+      de la prevención.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    obtener el registro como prestador de servicios para el manejo integral de residuos de manejo especial
+- name: Revalidación persona física
+  requirements:
+  - text: Escrito libre en el que se señale claramente el trámite solicitado, número de registro y el número del
+      expediente del que se trate el asunto.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental vigente, idóneo,
+      completo y nítido que lo acredite como tal.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o prevención.
+    - Recolectar el oficio o solventar los requerimientos de la prevención.
+  notes: Persona física que pretende obtener la revalidación de su registro como prestador de servicios para el
+    manejo integral de residuos de manejo especial
+- name: Revalidación persona moral
+  requirements:
+  - text: Escrito libre en el que se señale claramente el trámite solicitado, debiendo señalar el número del expediente
+      del que se trate el asunto y número de Registro.
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Documental vigente, idóneo, completo y nítido que acredite al apoderado o representante legal como tal
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  modes: []
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    obtener la revalidación de su registro como prestador de servicios para el manejo integral de residuos de manejo
+    especial
+- name: Modificación persona física
+  requirements:
+  - text: Escrito libre en el que se señale claramente el trámite solicitado, debiendo indicar el número del expediente
+      del que se trate el asunto y número de Registro.
+    cites:
+    - source: retys
+  - text: Formato para la obtención de la licencia como prestador de servicios para el manejo integral de RME, solo
+      con el llenado de los apartados y anexos a modificar.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12538
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de la persona interesada, legible y con vigencia activa.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar documental idónea, completa
+      y nítida, mediante la cual se acredite como tal, vigente.
+    cites:
+    - source: retys
+  - text: En caso de que se actúe a través de apoderado o representante legal, presentar copia simple de la identificación
+      oficial de este, nítida y con vigencia activa.
+    cites:
+    - source: retys
+  modes: []
+  notes: Persona física que pretenda modificar su registro como prestador de servicios para el manejo integral de
+    residuos de manejo especial
+- name: Modificación persona moral
+  requirements:
+  - text: Escrito libre en el que se señale claramente el trámite solicitado, debiendo indicar el número del expediente
+      del que se trate el asunto y número de Registro.
+    cites:
+    - source: retys
+  - text: Formato para la obtención de la licencia como prestador de servicios para el manejo integral de RME, solo
+      con el llenado de los apartados y anexos que le apliquen
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/12544
+  - text: Recibo de pago de derechos.
+    cites:
+    - source: retys
+  - text: Documental idónea, completa y nítida, mediante la cual se acredite al apoderado o representante legal
+      como tal, vigente.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal, legible y con vigencia activa.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de la Secretaría para presentar el trámite.
+    - Recepción y evaluación de la solicitud.
+    - Publicación de la resolución o prevención.
+    - Recolectar el oficio o solventar los requerimientos de la prevención.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho que pretenda
+    modificar su registro como prestador de servicios para el manejo integral de residuos de manejo especial
+legal_basis:
+- source: ley1
+  pinpoint: 14, 14 BIS, 14 BIS 1, 15 BIS1 y 15 BIS 2
+- source: ley2
+  pinpoint: 17, fracción IV incisos n), s) y t)
+- source: ley3
+  pinpoint: 37 y 38
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría para presentar el trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Publicación de la resolución o prevención.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recolectar el oficio y cumplir con las condicionantes o recolectar el oficio y solventar los requerimientos
+    de la prevención.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 295: Registro, revalidación o modificación como Prestador de Servicios de Manejo Integral
+      de Residuos de Manejo Especial'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/295
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Prevención y Gestión Integral de Residuos para el Estado de Baja California, de aplicación supletoria
+      a la LPGIECR de conformidad con el transitorio CUARTO
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley para la Prevención, Gestión Integral y Economía Circular de los Residuos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

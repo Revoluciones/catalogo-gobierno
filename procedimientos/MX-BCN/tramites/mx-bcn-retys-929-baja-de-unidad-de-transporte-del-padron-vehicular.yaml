@@ -1,0 +1,110 @@
+id: mx-bcn-retys-929-baja-de-unidad-de-transporte-del-padron-vehicular
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Baja de unidad de transporte del padrón vehicular
+summary: Consiste en solicitar la suspensión o "baja" de la unidad de transporte registrada en el padrón vehicular.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 929
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/929
+  homoclave: BC-IMOS-076
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la persona interesada lo solicite.
+result: Baja de unidad de transporte.
+cost:
+  type: fijo
+  amount_mxn: 390.98
+  text: 'COSTO: $390.98 M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios y concesionarios del servicio público de transporte
+  requirements:
+  - text: Última tarjeta de circulación
+    cites:
+    - source: retys
+  - text: Entregar ambas placas
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente o licencia de conducir vigente, expedida por el estado de baja california
+      (depende de la modalidad)
+    cites:
+    - source: retys
+  - text: Permiso de servicio público
+    cites:
+    - source: retys
+  - text: Reporte ante la Fiscalía General del Estado de Baja California (en caso de que un elemento de identificación
+      vehicular esté extraviado o hubiera sido robado)
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para dar de baja de vehículo del padrón estatal
+legal_basis:
+- source: ley1
+  pinpoint: Artícilo 10, Fracción III, Inciso 6
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 929: Baja de unidad de transporte del padrón vehicular'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/929
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Baja de Unidad de Transporte del Padrón Vehicular. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

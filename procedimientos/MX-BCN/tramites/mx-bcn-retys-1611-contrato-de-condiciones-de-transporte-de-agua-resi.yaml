@@ -1,0 +1,220 @@
+id: mx-bcn-retys-1611-contrato-de-condiciones-de-transporte-de-agua-resi
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contrato de Condiciones de Transporte de Agua Residual Tratada
+summary: Documento en el que se establecen las condiciones bajo las cuales se realizará el transporte de agua residual
+  tratada, del sitio de dotación al sitio de aprovechamiento, por medio de camiones-cisterna.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1611
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1611
+  homoclave: BC-CESPT-033
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio.
+result: Contrato de condiciones de transporte de agua residual tratada.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Registro de transporte de agua residual tratada. incluye: cubicación de unidad y recepción,
+    análisis de documentos: $2,361.09 pesos Revalidación anual del registro de transporte de agua residual tratada
+    Incluye recepción de documentos y análisis de los mismos, verificación de cubicación de unidades: $2,418.94
+    pesos Registro de transporte camión-cisterna adicional: $895.31 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: Primera vez
+  requirements:
+  - text: Original y copia del formulario Solicitud de registro de camiones cisterna para transporte de agua residual
+      tratada (FRM-021) debidamente llenado y firmado por el propietario o el representante legal, lo proporciona
+      CESPT o lo puede obtener en la página de Internet de CESPT, las instrucciones para el llenado del formulario
+      las puede obtener del documento INS-003, en la sección de Documentos Informativos
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11679
+  - text: Copia del Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: Copia certificada del Poder legal para actos de administración, vigente, que acredite la personalidad
+      del representante legal, en caso de NO ESTAR ESTABLECIDO en el Acta Constitutiva.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial con fotografía, VIGENTE, del propietario del predio y de la persona a quien éste
+      le haya otorgado el poder para gestionar el servicio, puede ser UNO de los siguientes: Credencial del INE,
+      Pasaporte mexicano, Licencia de conducir, Matrícula consular.'
+    cites:
+    - source: retys
+  - text: Copia de alta ante la Secretaría de Hacienda y Crédito Público.
+    cites:
+    - source: retys
+  - text: Copia de Tarjeta de circulación vigente del camión-cisterna que se utilizará.
+    cites:
+    - source: retys
+  - text: Copia de Póliza de aseguranza vigente del camión-cisterna que se utilizará.
+    cites:
+    - source: retys
+  - text: Copia de Licencia de manejo vigente de chofer que operará el camión-cisterna.
+    cites:
+    - source: retys
+  - text: Presentar el camión cisterna para reconocimiento.
+    cites:
+    - source: retys
+  - text: Croquis de localización con descripción de las colindancias hacia los cuatro puntos cardinales.
+    cites:
+    - source: retys
+  - text: Pagar los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+    - El personal revisará si tienes todos los requisitos. Si falta algo, te dirán qué necesitas completar.
+    - Inspeccionarán el camión cisterna para verificar su capacidad de almacenamiento.
+    - Si todo está en orden, te entregarán el formulario de Solicitud de registro de camiones cisterna para transporte
+      de agua residual tratada (FRM-021) sellado y firmado de validación.
+    - Recibirás una Ficha de pago. Luego, dirígete al área de cajas, presenta la Ficha y efectúa el pago correspondiente.
+      Al finalizar, te entregarán el Recibo de Pago.
+    - Lleva el Recibo de Pago y los requisitos al área de Archivo.
+    - Te darán una copia del formulario (FRM-021) con la certificación de recibido.
+    - Posteriormente, el personal de la Coordinación de Servicios de Saneamiento se pondrá en contacto contigo para
+      que acudas a firmar el contrato y te lo entreguen.
+  notes: Primera vez
+- name: Revalidación de contrato
+  requirements:
+  - text: Original y copia del formulario Solicitud de registro de camiones cisterna para transporte de agua residual
+      tratada (FRM-021) debidamente llenado y firmado por el propietario o el representante legal
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11697
+  - text: Copia de Póliza de aseguranza vigente del camión-cisterna que se utilizará
+    cites:
+    - source: retys
+  - text: Copia de Tarjeta de circulación vigente del camión-cisterna que se utilizará
+    cites:
+    - source: retys
+  - text: Pagar los derechos correspondientes
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+      posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+    - El personal revisará si tienes todos los requisitos. Si falta algo, te dirán qué necesitas completar.
+    - Inspeccionarán el camión cisterna para verificar su capacidad de almacenamiento.
+    - Si todo está en orden, te entregarán el formulario de Solicitud de registro de camiones cisterna para transporte
+      de agua residual tratada (FRM-021) sellado y firmado de validación.
+    - Recibirás una Ficha de pago. Luego, dirígete al área de cajas, presenta la Ficha y efectúa el pago correspondiente.
+      Al finalizar, te entregarán el Recibo de Pago.
+    - Lleva el Recibo de Pago y los requisitos al área de Archivo.
+    - Te darán una copia del formulario (FRM-021) con la certificación de recibido.
+    - Posteriormente, el personal de la Coordinación de Servicios de Saneamiento se pondrá en contacto contigo para
+      que acudas a firmar el contrato y te lo entreguen.
+  notes: Revalidación de contrato
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2.
+- source: ley2
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Servicios de Saneamiento, ubicada en el edificio que se encuentra en la parte
+    posterior izquierda de Oficinas Centrales de CESPT, presentar los requisitos y el camión-cisterna que se utilizará
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El personal revisará si tienes todos los requisitos. Si falta algo, te dirán qué necesitas completar.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Inspeccionarán el camión cisterna para verificar su capacidad de almacenamiento.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Si todo está en orden, te entregarán el formulario de Solicitud de registro de camiones cisterna para
+    transporte de agua residual tratada (FRM-021) sellado y firmado de validación.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recibirás una Ficha de pago. Luego, dirígete al área de cajas, presenta la Ficha y efectúa el pago correspondiente.
+    Al finalizar, te entregarán el Recibo de Pago.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Lleva el Recibo de Pago y los requisitos al área de Archivo.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Te darán una copia del formulario (FRM-021) con la certificación de recibido.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Posteriormente, el personal de la Coordinación de Servicios de Saneamiento se pondrá en contacto contigo
+    para que acudas a firmar el contrato y te lo entreguen.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1611: Contrato de Condiciones de Transporte de Agua Residual Tratada'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1611
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro de camiones-cisterna para transporte de agua residual tratada. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

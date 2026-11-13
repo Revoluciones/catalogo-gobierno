@@ -1,0 +1,94 @@
+id: mx-bcn-tijuana-tj-spa-0346-certificacion-del-plan-general-de-prevencion-y-res
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Medio ambiente
+title: Certificación del plan general de prevención y respuesta a emergencias y contingencias ambientales
+summary: Todo giro comercial por el solo hecho de funcionar deberá presentar ante la Dirección, para su certificación
+  un plan general de prevención y respuesta a emergencias y contingencias ambientales (PLAN DE CONTINGENCIA AMBIENTAL)
+authority:
+  name: Secretaría de Protección al Ambiente (Ayuntamiento de Tijuana)
+  unit: Dirección de Protección al Ambiente
+official_ids:
+  homoclave: TJ-SPA-0346
+who_can:
+- Interesado
+result: Certificado
+requirements:
+- text: Desarrollo del plan (PDF)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Dictamen de Uso de Suelo
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Anuencia de impacto ambiental
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Identificación oficial del solicitante
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 351.93
+  text: 'Por la certificación del Plan General de Prevención y Respuesta a Emergencias y Contingencias Ambientales:
+    3 UMA ($351.93). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 20 días habiles
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Protección al Ambiente
+  address: Avenida Independencia 1350, Zona Urbana Río, C. P. 22010 Tijuana, Baja California, México
+  phones: '6649737133'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SPA-0346: Certificación del plan general de prevención y respuesta a emergencias
+      y contingencias ambientales'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SPA-0346
+    version_date: '2026-04-08'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 34, fracción I, inciso J) de la Ley de Ingresos del Municipio de Tijuana, Baja California para
+      el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+  fund2:
+    type: reglamento
+    official: true
+    title: Artículos 7, 10, 59, 60, 182, 184, 185, 186, 187 del Reglamento de Protección al Ambiente para el Municipio
+      de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20230921092651331_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://www.tijuana.gob.mx/mejoraregulatoria/archivos/ArchivosDeTramites/T150/ESCRITOLIBRE.pdf Criterio
+  para resolver: El Plan de Prevención y Respuesta a Emergencias y Contingencias Ambientales cumpla con las especificaciones
+  necesarias, tales como la identificación de riesgos (incendios, sismos, manejo de residuos), la evaluación de
+  dichos riesgos y la identificación de soluciones.'

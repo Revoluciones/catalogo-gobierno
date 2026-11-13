@@ -1,0 +1,138 @@
+id: mx-bcn-retys-1542-consulta-medica-de-especialidad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Consulta Médica de Especialidad
+summary: Proporcionar atención médica en alguna de las ramas de la medicina cirugía, ginecología y obstetricia,
+  pediatría, medicina interna, entre otras para recibir el diagnóstico certero y tratamiento oportuno de enfermedades,
+  con la finalidad de que el paciente recupere su salud.
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1542
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1542
+  homoclave: BC-ISESALUD-020
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando el usuario requiera atención médica en alguna de las ramas de la medicina cirugía, ginecología y obstetricia,
+  pediatría, medicina interna.
+result: Consulta médica.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales
+  address: 'Mar Bermejo #173, Zona Puerto, Mexicali, 21850'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales
+  address: '27 De Enero #9410, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Del Hospital #S/N, CENTRO CÍVICO , Mexicali, 21000'
+- municipality: Mexicali
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'De La Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+- municipality: Mexicali
+  name: Consulta Médica de Especialidad
+  address: 'Avenida General Martin Carrera y Calle General Jose Moran #S/N, Felipe Angeles, Mexicali, 21320'
+- municipality: Tijuana
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Centenario #10851, Zona Río, Tijuana, 22000'
+- municipality: Tijuana
+  name: Consulta Médica de Especialidad
+  address: 'Avenida Maclavio Herrera y Toribio Ortega #3424, Francisco Villa, Tijuana, 22615'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales
+  address: 'Transpeninsular Km 20 #S/N, Maneadero, Ensenada, 22790'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales
+  address: '14 #1380, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Transpeninsular #111, Carlos Pacheco, Ensenada, 22898'
+- municipality: Ensenada
+  name: Consulta Médica de Especialidad
+  address: 'Avenida Vicente Guerrero y Santo Domingo #S/N, Vicente Guerrero, Ensenada, 22920'
+- municipality: Tecate
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Quinta #69, Benito Juárez, Tecate, 21480'
+- municipality: Playas de Rosarito
+  name: Coordinación Estatal de Hospitales (Consulta Externa)
+  address: 'Galilea #2200, Villa Turistica, Playas de Rosarito, 22707'
+scenarios:
+- name: Consulta médica de especialidad
+  requirements:
+  - text: Identificación oficial con fotografía.
+    cites:
+    - source: retys
+  - text: Hoja de referencia expedida por el médico del centro de salud.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar en línea o de manera presencial al establecimiento a donde se enviará el paciente, la cita para
+      que se presente el paciente y reciba la atención con la fecha y hora registrada
+    - El especialista proporcionará la consulta solicitada y llenará el formato de contrarreferencia en donde indicará
+      el manejo y las medidas pertinentes, incluyendo próxima consulta o el alta del paciente.
+  notes: Atención médica en alguna de las ramas de la medicina cirugía, ginecología y obstetricia, pediatría, medicina
+    interna, entre otras
+legal_basis:
+- source: ley1
+  pinpoint: APLICA DE MANERA GENERAL
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar en línea o de manera presencial al establecimiento a donde se enviará el paciente, la cita para
+    que se presente el paciente y reciba la atención con la fecha y hora registrada
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El especialista proporcionará la consulta solicitada y llenará el formato de contrarreferencia en donde
+    indicará el manejo y las medidas pertinentes, incluyendo próxima consulta o el alta del paciente.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1542: Consulta Médica de Especialidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1542
+    version_date: 13/Marzo /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Norma Oficial Mexicana NOM-016-SSA3-2012, Que Establece Las Características Mínimas De Infraestructura
+      Y Equipamiento De Hospitales Y Consultorios De Atención Médica. .
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,136 @@
+id: mx-bcn-retys-1083-atencion-a-solicitantes-de-empleo-en-vinculacion-l
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención a Solicitantes de Empleo en Vinculación Laboral
+summary: Brindar atención a solicitantes de empleo con la atención de un consejero para la orientación y vinculación
+  a opciones de trabajo dentro de las oficinas del servicio nacional de empleo.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1083
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1083
+  homoclave: BC-STPS-002
+who_can:
+- Interesado
+when: Cuando necesita una opción para emplearse
+result: Orientación sobre empresas y sus vacantes
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección del Servicio Nacional del Empleo BC
+  address: 'Avenida de los Pioneros #1100, Centro Cívico y Comercial, Mexicali, 21000'
+- municipality: Tijuana
+  name: Unidad Regional Tijuana del Servicio Nacional del Empleo
+  address: 'Bulevar Federico Benitez #14785, Las Brisas, Tijuana, 22115'
+- municipality: Ensenada
+  name: Unidad Regional Ensenada del Servicio Nacional del Empleo
+  address: 'Del Puerto #351, Playa Ensenada, Ensenada, 22880'
+- municipality: San Quintín
+  name: Módulo San Quintín del Servicio Nacional del Empleo
+  address: 'Avenida A #s/n, Centro de Gobierno, San Quintín, 22930'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial con fotografía
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al sitio haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha.
+    - Registrarse como candidato en búsqueda de empleo
+    - Llenar su solicitud electrónica
+    - Buscar opciones laborales
+    - Actualizar su información personal y profesional
+    - En caso de no encontrar vacantes puedes agendar una cita en la OSNE más cercana
+  - name: Presencial
+    steps:
+    - Presentarse en oficinas con CURP e identificación oficial
+    - Esperar turno para pasar con el servidor público encargado del registro
+    - Brindar información real y confiable de su perfil laboral
+    - Atención por un consejero de emepleo para búsqueda de opciones
+    - Acudir a las opciones de centros de trabajo que le fueron brindadas y actualizar su información
+  notes: Solicitante de vacantes de empleo
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 537, Artículo 538, Artículo 539
+- source: ley2
+  pinpoint: Artículo 19, Artículo 20
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al sitio haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrarse como candidato en búsqueda de empleo
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Llenar su solicitud electrónica
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Buscar opciones laborales
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Actualizar su información personal y profesional
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: En caso de no encontrar vacantes puedes agendar una cita en la OSNE más cercana
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1083: Atención a Solicitantes de Empleo en Vinculación Laboral'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1083
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría del Trabajo y Previsión Social
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

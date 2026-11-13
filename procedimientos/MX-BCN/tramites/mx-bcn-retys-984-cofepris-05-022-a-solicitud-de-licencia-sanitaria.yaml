@@ -1,0 +1,110 @@
+id: mx-bcn-retys-984-cofepris-05-022-a-solicitud-de-licencia-sanitaria
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-022-A Solicitud de licencia sanitaria para establecimientos de plaguicidas, nutrientes vegetales
+  y sustancias tóxicas o peligrosas para servicios urbanos de fumigación, desinfección y CON
+summary: Cuando el ciudadano requiera obtener la licencia sanitaria para un establecimiento de servicios de control
+  de plagas.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 984
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/984
+  homoclave: BC-COEPRIS-041
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Licencia
+cost:
+  type: fijo
+  amount_mxn: 7046.71
+  text: 'COSTO: $7046.71 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7764
+  - text: Original y dos copias del comprobante de pago de derechos, en términos de la ley federal de derechos
+    cites:
+    - source: retys
+  - text: Examen de colinesterasa en sangre del personal aplicador. (original)
+    cites:
+    - source: retys
+  - text: Plano del establecimiento en donde se especifiquen las áreas y se identifiquen el flujo de personal, materiales
+      y equipos, las acotaciones y colindancias con otros predios
+    cites:
+    - source: retys
+  - text: Plan maestro para el control de plagas. En el que se establezcan los criterios para coordinar y efectuar
+      un servicio de control de plagas, así como para elaborar y generar la documentación requerida a fin de garantizar
+      servicios seguros, eficaces y de calidad
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de licencia sanitaria para establecimientos
+      de plaguicidas, nutrientes vegetales y sustancias tóxicas o peligrosas para servicios urbanos de fumigación,
+      desinfección y control de plagas.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 198 fracciones II y III, artículos 204 y 373
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de expedición de licencia sanitaria para
+    establecimientos de plaguicidas, nutrientes vegetales y sustancias tóxicas o peligrosas para servicios urbanos
+    de fumigación, desinfección y control de plagas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 984: COFEPRIS-05-022-A Solicitud de licencia sanitaria para establecimientos de plaguicidas,
+      nutrientes vegetales y sustancias tóxicas o peligrosas para servicios urbanos de fumigación, desinfección
+      y CON'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/984
+    version_date: 20/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-022-A Solicitud de licencia sanitaria para establecimientos de plaguicidas,
+  nutrientes vegetales y sustancias tóxicas o peligrosas para servicios urbanos de fumigación, desinfección y control
+  de plagas. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás
+  variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

@@ -1,0 +1,109 @@
+id: mx-bcn-retys-1773-constancia-de-estudiante
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de estudiante
+summary: Emitir un documento oficial que acredite que la persona solicitante se encuentra inscrita como estudiante
+  activo en alguno de los programas educativos de la Universidad Intercultural de Baja California. Esta constancia
+  puede ser solicitada para diversos fines, tales como trámites institucionales, apoyos económicos, transporte,
+  residencias escolares, prácticas profesionales, entre otros.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1773
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1773
+  homoclave: BC-UIBC-002
+who_can:
+- Interesado
+- Tutor
+when: En cualquier momento del ciclo escolar, siempre que el estudiante se encuentre inscrito y activo en el sistema
+  escolar de la UIBC.
+result: Constancia oficial que acredita la calidad de estudiante activo en un programa educativo de la Universidad
+  Intercultural de Baja California.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Termino del semestre.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: San Quintín
+  name: Departamento de Control Escolar y Servicios Estudiantiles
+  address: 'Calle Sin Nombre, Lote A y fracción del Lote B-1 fracción 5 Manzana 102 #S/N, Fraccionamiento Valle
+    de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Tramite de Constancia
+  requirements:
+  - text: Estar inscrito en el periodo escolar vigente.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El estudiante realiza la solicitud de constancia en ventanilla del Departamento de Control Escolar.
+    - El Departamento de Control Escolar verifica que el solicitante esté inscrito en el periodo escolar vigente.
+    - En caso de estar debidamente inscrito, se genera la constancia oficial con los datos académicos correspondientes.
+    - La constancia se entrega de manera física al estudiante.
+  notes: Proceso mediante el cual el estudiante solicita formalmente la emisión de una constancia que acredite su
+    situación escolar actual, ya sea como alumno regular, inscripción vigente, carga académica o cualquier otro
+    aspecto relacionado con su trayectoria educativa.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 1 y 3
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El estudiante realiza la solicitud de constancia en ventanilla del Departamento de Control Escolar.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El Departamento de Control Escolar verifica que el solicitante esté inscrito en el periodo escolar vigente.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de estar debidamente inscrito, se genera la constancia oficial con los datos académicos correspondientes.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La constancia se entrega de manera física al estudiante.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1773: Constancia de estudiante'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1773
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Intercultural de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Constancia de estudio. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

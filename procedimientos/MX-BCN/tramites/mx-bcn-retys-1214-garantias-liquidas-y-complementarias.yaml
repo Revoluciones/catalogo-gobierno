@@ -1,0 +1,126 @@
+id: mx-bcn-retys-1214-garantias-liquidas-y-complementarias
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Garantías Líquidas y Complementarias
+summary: Los productores del sector primario, reciben garantías líquidas y complementarias por el monto de hasta
+  el 30% del proyecto autorizado por la institución bancaria o institución auxiliar del crédito de acuerdo a la
+  viabilidad y rentabilidad del proyecto autorizado por la misma, siempre y cuando el proyecto cumpla con los requisitos
+  exigidos por las fuentes de financiamiento y el comité técnico del fideicomiso
+authority:
+  name: Fondo de Garantías Complementarias y Créditos Puente
+official_ids:
+  retys_id: 1214
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1214
+  homoclave: BC-FOGABAC-002
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Constancia o certificado de garantía
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: La comisión por disposición puede variar de acuerdo al financiamiento otorgado al igual
+    que la tasa de interés'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Área Administrativa
+  address: 'Carretera Mexicali a San Luis #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Ensenada
+  name: Área Jurídica del FOGABAC
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona física
+  requirements:
+  - text: Solicitud de garantía líquida en formato abierto
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, licencia de conducir o pasaporte mexicano)
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (recibo de luz, teléfono, agua o predial)
+    cites:
+    - source: retys
+  - text: Relación de garantías otorgadas
+    cites:
+    - source: retys
+  modes: []
+  notes: Persona física
+- name: Persona moral
+  requirements:
+  - text: Solicitud de garantía líquida en formato abierto de persona moral
+    cites:
+    - source: retys
+  - text: Identificación oficial de representante y socios de la persona moral (INE, licencia de conducir o pasaporte
+      mexicano)
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes del representante legal, socios de la moral y persona moral (RFC)
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población del representante legal y socios (CURP)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (recibo de luz, teléfono, agua o predial)
+    cites:
+    - source: retys
+  - text: Personalidad jurídica (acta constitutiva, actas de asamblea y poder de apoderado legal)
+    cites:
+    - source: retys
+  - text: Relación de garantías otorgadas
+    cites:
+    - source: retys
+  modes: []
+  notes: Persona moral
+legal_basis:
+- source: ley1
+  pinpoint: Cláusula cuarta denominada fines
+- source: ley2
+  pinpoint: Apartado tipos de servicio
+steps: []
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1214: Garantías Líquidas y Complementarias'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1214
+    version_date: 29/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Convenio fiduciario
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Reglas de operación FOGABAC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

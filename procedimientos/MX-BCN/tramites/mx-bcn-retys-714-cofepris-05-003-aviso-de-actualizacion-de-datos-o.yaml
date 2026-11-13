@@ -1,0 +1,118 @@
+id: mx-bcn-retys-714-cofepris-05-003-aviso-de-actualizacion-de-datos-o
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-05-003 Aviso de Actualización de Datos o Baja del Establecimiento de Insumos para la Salud que Opera
+  con Licencia Sanitaria
+summary: Aviso para que el ciudadano pueda actualizar sus datos o dar de baja el establecimiento de insumos para
+  la salud que operan con licencia sanitaria. Así como comunicar suspensión temporal de actividades o reinicio de
+  actividades.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 714
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/714
+  homoclave: BC-COEPRIS-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera
+result: Aviso de actualizacion de datos o baja
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Integral de Servicios
+  address: 'Calzada milton castellanos #1499, Conjunto urbano caliss, Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7734
+  - text: Formato “avisos”, debidamente requisitado y en caso de requerir acuse deberá presentar copia simple legible
+      del mismo
+    cites:
+    - source: retys
+  - text: Original y copia legible para cotejo del acta constitutiva o poder notarial que acredite al representante
+      legal
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial de representante legal
+    cites:
+    - source: retys
+  - text: Para baja - original de licencia sanitaria
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 202
+- source: ley2
+  pinpoint: Artículo 36
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el Centro Integral de Servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 714: COFEPRIS-05-003 Aviso de Actualización de Datos o Baja del Establecimiento de Insumos
+      para la Salud que Opera con Licencia Sanitaria'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/714
+    version_date: 07/Junio /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Insumos para la Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-003 Aviso de actualización de datos o baja del establecimiento de insumos para
+  la salud que opera con licencia sanitaria.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

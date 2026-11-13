@@ -1,0 +1,127 @@
+id: mx-bcn-retys-597-solicitud-de-exencion-de-pago-a-viudas-y-discapaci
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de exención de pago a viudas y discapacitados en extrema pobreza, jubilados y pensionados.
+summary: Proporcionar la exención de pago a personas en situación de pobreza mayores de 60 años, personas viudas
+  en situación de pobreza mayores de 50 años, discapacitados, jubilados y pensionados, siempre que éstos no obtengan
+  ingresos mayores al equivalente a cinco veces a la unidad de medida y actualización ejercicio 2026
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 597
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/597
+  homoclave: BC-CESPM-018
+who_can:
+- Interesado
+when: Cuando requiera el tramite
+result: Exención de pago
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Usuario
+  requirements:
+  - text: Factura reciente de agua o cuenta.
+    cites:
+    - source: retys
+  - text: 'Identificación oficial cualquiera de las siguientes: INE, licencia de conducir, matricula consular, cédula
+      profesional, pasaporte mexicano. (documentos deben estar vigentes)'
+    cites:
+    - source: retys
+  - text: Original y copia de toda la documentación para cotejar.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la zona comercial correspondiente
+    - Presentarse en el área de atención al usuario con la documentación solicitada.
+    - Estar presente en su domicilio para la realización del estudio socioeconómico. recibir su notificación.
+  notes: Proporcionar información
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 9 PRIMER PÁRRAFO
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la zona comercial correspondiente
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentarse en el área de atención al usuario con la documentación solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Estar presente en su domicilio para la realización del estudio socioeconómico. recibir su notificación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 597: Solicitud de exención de pago a viudas y discapacitados en extrema pobreza, jubilados
+      y pensionados.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/597
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

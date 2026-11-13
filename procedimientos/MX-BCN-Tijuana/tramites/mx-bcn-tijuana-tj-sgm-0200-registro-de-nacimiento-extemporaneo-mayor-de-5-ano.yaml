@@ -1,0 +1,141 @@
+id: mx-bcn-tijuana-tj-sgm-0200-registro-de-nacimiento-extemporaneo-mayor-de-5-ano
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Oficialía civil
+title: Registro de NACIMIENTO Extemporáneo (Mayor de 5 años y Menor de 18 años)
+summary: Registrar el nacimiento de una persona mayor de 5 años y menor de 18 ante las oficinas del Registro Civil.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Oficialia del Registro Civil
+official_ids:
+  homoclave: TJ-SGM-0200
+who_can:
+- Interesado
+when: Cuando una persona no fue registrada al nacer y necesita su acta de nacimiento.
+result: Certificado
+requirements:
+- text: Solicitud (se entrega en las oficinas del Registro Civil).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'Certificado de nacimiento (expedido, firmado y sellado por el hospital en que ocurrió el parto). En caso
+    de no contar con certificado original, debe presentar: Reporte de robo o extravio del Ministerio Público, Copia
+    certificada del certificado de nacimiento expedida por el hospital .'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: 'Presentarse los padres y el menor a registrar con la siguiente información del menor:'
+  cites:
+  - source: remutys
+- text: A).-Cartilla de vacunación o constancia de vacunas (si se tiene).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: B).- Fotografía reciente tamaño credencial.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: C).- Fotografías del menor desde su nacimiento hasta la fecha de su registro, con su familia.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: D).-Boletas escolares o constancia de estudios.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Actas de nacimiento e identificación de los padres.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Acta de matrimonio de los padres (si están casados).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Dos testigos con identificación oficial vigente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Si los padres son menores de edad, deberán contar con el consentimiento de la madre, padre o sus tutores
+    y presentarse con su acta de nacimiento, e identificación oficial.
+  cites:
+  - source: remutys
+- text: Si la persona a registrar nació en otro Estado deberá presentar certificado de inexistencia de nacimiento
+    del Estado en donde nació, asi como inexistencia del Estado de Baja California
+  cites:
+  - source: remutys
+- text: Todo documento proveniente del extranjero debera ser apostillado o legalizado según el pais de origen, asi
+    como traducido al español por un perito autorizado por el Tribunal Superior de Justicia del Estado de Baja California
+  cites:
+  - source: remutys
+- text: Si el menor nació en otro estado, se debe presentar una constancia de inexistencia de registro de nacimiento
+    emitida por el estado correspondiente.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Constancia de inexistencia de registro de nacimiento, expedido por el Registro Civil del Estado de Baja
+    California.
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 día
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Oficialia del Registro Civil
+  address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7922
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+- source: fund3
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0200: Registro de NACIMIENTO Extemporáneo (Mayor de 5 años y Menor de
+      18 años).'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0200
+    version_date: '2026-10-28'
+    accessed: '2026-11-06'
+  fund1:
+    type: ley
+    official: true
+    title: Artículo 1 Ley Orgánica del Registro Civil del Estado de Baja California.
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_IV/20251107_LEYORRCI.PDF
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 54 y 55 del Código Civil para el Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_III/20230421_CODCIVIL-2.PDF
+  fund3:
+    type: ley
+    official: true
+    title: Artículo 18, fracción I, inciso A) subinciso a) de la Ley de Ingresos del Municipio de Tijuana, Baja
+      California para el Ejercicio Fiscal 2026
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_II/20251230_LEYINGRESOTIJUANA2026.PDF
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos solicitados.'

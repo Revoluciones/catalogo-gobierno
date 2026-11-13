@@ -1,0 +1,105 @@
+id: mx-bcn-retys-1239-departamento-de-empoderamiento-y-prevencion-de-las
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Departamento de Empoderamiento y Prevención de las Violencias
+summary: De manera integral contribuir a través de acciones de sensibilización, capacitación y profesionalización
+  en materia de prevención de la violencia, promoción de los derechos humanos, y la incorporación de la perspectiva
+  de género, orientado a prevenir, atender y erradicar todas las formas de violencia y discriminación. Fortaleciendo
+  las capacidades individuales, comunitarias e institucionales para fomentar espacios seguros, equitativos y libres
+  de violencia en todos los ámbitos
+authority:
+  name: Centro de Justicia para las Mujeres del Estado de Baja California
+official_ids:
+  retys_id: 1239
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1239
+  homoclave: BC-CEJUM-002
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando la persona interesada lo requiera
+result: Información referente a la prevención de la violencia
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: CEJUM DELEGACIÓN MEXICALI
+  address: 'CALZADA INDEPENDENCIA #1798, FRACCIONAMIENTO CALAFIA, Mexicali, 21040'
+- municipality: Tijuana
+  name: CEJUM DELEGACIÓN TIJUANA
+  address: 'Avenida Moctezuma #1, Residencial de Cortez, Tijuana, 22190'
+- municipality: San Quintín
+  name: CEJUM DELEGACIÓN SAN QUINTÍN
+  address: 'POPULAR SAN QUINTIN #22930, LÁZARO CÁRDENAS, San Quintín, 22930'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Escrito libre dirigido a la directora del centro solicitando la capacitación o taller deseado
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Hacer llegar el escrito de solicitud de capacitación o taller de manera presencial en las instalaciones del
+      centro o a tráves del correo electrónico cejum.bc@gmail.com
+    - Acordar fecha y lugar de capacitación o taller con la encargada de prevención
+    - Realización de capacitación o taller solicitado
+  notes: Contribuir a través de la sensibilización, capacitación y profesionalización en materia de prevención de
+    la violencia
+legal_basis:
+- source: ley1
+  pinpoint: Articulos 109 y 242 BIS
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Hacer llegar el escrito de solicitud de capacitación o taller de manera presencial en las instalaciones
+    del centro o a tráves del correo electrónico cejum.bc@gmail.com
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acordar fecha y lugar de capacitación o taller con la encargada de prevención
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realización de capacitación o taller solicitado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1239: Departamento de Empoderamiento y Prevención de las Violencias'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1239
+    version_date: 21/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

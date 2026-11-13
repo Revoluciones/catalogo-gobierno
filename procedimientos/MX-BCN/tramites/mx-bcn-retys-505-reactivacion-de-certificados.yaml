@@ -1,0 +1,132 @@
+id: mx-bcn-retys-505-reactivacion-de-certificados
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reactivación de Certificados
+summary: Que la persona pueda reactivar su trámite desde la comodidad de su hogar u oficina, mediante el servicio
+  de reactivación de certificados a través del portal de servicios sin la necesidad de trasladarse a la oficina
+  registral.
+authority:
+  name: Dirección del Registro Público de la Propiedad y del Comercio
+official_ids:
+  retys_id: 505
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/505
+  homoclave: BC-DRPPC-004
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+- Otro
+when: Cuando la persona cuente con el certificado de inscripción con o sin gravamen vía correo
+result: La reactivación de trámites.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Registral
+  address: 'Edificio del Poder Ejecutivo Del Estado #994, Centro Cívico , Mexicali, 210000'
+- municipality: Tijuana
+  name: Registral
+  address: 'Xavier Villarrutia 1271, Zona Río Tijuana   #1271, Zona Río , Tijuana, 22010'
+- municipality: Ensenada
+  name: Registral
+  address: 'Carretera Transpeninsular Ensenada-La Paz #S/N, Ex Ejido Chapultepec, Ensenada, 6500'
+- municipality: Tecate
+  name: Registral
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Registral
+  address: 'Av. Jose Haros Aguilar #2004, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Registral
+  address: 'Tercera #9, Fraccionamiento Ciudad de San Quintín, San Quintín, 22930'
+scenarios:
+- name: Personas físicas
+  requirements:
+  - text: Número de volante y código de autenticidad
+    cites:
+    - source: retys
+  - text: Solventar el motivo de rechazo
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar a la pagina haciendo clic en el botón "Iniciar Trámite" ubicado en la parte inferior derecha
+    - Ingresar el número de volante
+    - Ingresar el código de autenticidad
+    - Llenar los requisitos que se solicitan
+    - Se reactiva al instante
+  notes: Que ocupen de la reactivación de los trámites
+legal_basis:
+- source: ley1
+  pinpoint: '50'
+- source: ley2
+  pinpoint: Todos
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar a la pagina haciendo clic en el botón "Iniciar Trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar el número de volante
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresar el código de autenticidad
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Llenar los requisitos que se solicitan
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se reactiva al instante
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 505: Reactivación de Certificados'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/505
+    version_date: 05/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del Registro Público de la Propiedad y de Comercio para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,142 @@
+id: mx-bcn-retys-739-dictamen-tecnico-de-factibilidad-por-incremento-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Dictamen técnico de factibilidad por incremento de parque vehicular otorgada a concesión
+summary: Consiste en solicitar un dictamen técnico para determinar la factibilidad del incremento del parque vehicular
+  otorgada a una empresa concesionaria.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 739
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/739
+  homoclave: BC-IMOS-004
+who_can:
+- Representante Legal
+when: Cuando la concesionaria busque incrementar su parque vehicular
+result: Dictamen técnico de factibilidad para incremento de parque vehicular
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 21.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Empresas concesionarias de transporte público
+  requirements:
+  - text: Escrito libre que contenga los motivos que generan la solicitud de incremento de parque vehicular, correo
+      electrónico, número de celular del solicitante y el medio por el que estará disponible para recibir notificaciones
+    cites:
+    - source: retys
+  - text: Copia del Título de concesión y adendas en caso de haberlas.
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral
+    cites:
+    - source: retys
+  - text: Instrumento notarial de dónde se desprendan las facultades del representante legal
+    cites:
+    - source: retys
+  - text: Copia de la identificación oficial del representante legal
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal del SAT, con vigencia del año fiscal en curso
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales, en sentido positivo, del año fiscal en curso
+    cites:
+    - source: retys
+  - text: Acreditar mediante título, factura, pedimento, poliza de seguro u otro documento que avale la pertenencia
+      de cada una de las unidades destinadas para la prestacion del servicio público
+    cites:
+    - source: retys
+  - text: Archivo en formato KML, conteniendo información relativa a la (s) ruta (s)e itinerario (s) del recorrido
+      pactado entre la empresa y el prestador del servicio (Aplica para la modalidad de transporte de personal)
+    cites:
+    - source: retys
+  - text: Copia de los Contratos/convenios celebrados relacionados con la prestación de servicio público (transporte
+      de personal)
+    cites:
+    - source: retys
+  - text: Croquis de la localización impreso y digital, en el cual contenga eo domicilio del parque de encierro
+      y vialidades colindantes.
+    cites:
+    - source: retys
+  - text: Padron de operadores debidamente registrados, impreso firmado por el representante legal y el formato
+      en archivo digital.
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago de derechos por el trámite solicitado
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para solicitud de dictamen técnico de factibilidad por incremento de parque vehicular
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, fracción I, inciso A, subinciso 7
+- source: ley2
+  pinpoint: Artículo 152, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 739: Dictamen técnico de factibilidad por incremento de parque vehicular otorgada a concesión'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/739
+    version_date: 23/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte Del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Dictamen Técnico de Factibilidad por Incremento de Parque Vehicular Otorgada a Concesión.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

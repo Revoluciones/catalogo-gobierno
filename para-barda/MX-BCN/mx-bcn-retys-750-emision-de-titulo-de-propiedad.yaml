@@ -1,0 +1,175 @@
+id: mx-bcn-retys-750-emision-de-titulo-de-propiedad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Emisión de título de propiedad
+summary: Trámite mediante el cual el INDIVI emite el Título de Propiedad de un predio que sea propiedad del Instituto
+  o de un convenio de regularización.
+authority:
+  name: Instituto para el Desarrollo Inmobiliario y de la Vivienda para el Estado de Baja California
+official_ids:
+  retys_id: 750
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/750
+  homoclave: BC-INDIVI-002
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se quiera obetener el título de propiedad
+result: Título de propiedad inscrito en el Registro Público de la Propiedad y de Comercio (RPPC)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Por expedición de titulo de tierras del INDIVI: - Carta de no adeudo: $404.09 m.n. - Integración
+    de expediente: $3,350.00 m.n. - Gastos de administración: $3,350.00m.n. - Revisión de situación de predio (varia
+    conforme a la superficie): $7.00m.n por metro cuadrado. - Titulo predio habitado: $3520.90m.n - Titulo predio
+    baldío: $4,929.25m.n. Por expedición de titulo de regularización. Se cobran los conceptos de revisión de predio,
+    integración de expediente y carta de no adeudo.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: INDIVI Guadalupe Victoria
+  address: 'Calle 8 #S/N, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: INDIVI San Felipe
+  address: 'Av. Mar de Cortez y Calle Puerto de Manzanillo, Centro de Gobierno #S/N, Zona Centro San Felipe, Mexicali,
+    21850'
+- municipality: Mexicali
+  name: INDIVI Mexicali
+  address: 'Calle G y Avenida Arista #510, Segunda Sección Mexicali, Mexicali, 21100'
+- municipality: Tijuana
+  name: INDIVI Tijuana
+  address: 'Av. Instituto Politécnico Nacional #1351, Garita de Otay Tijuana, Tijuana, 22509'
+- municipality: Ensenada
+  name: INDIVI Ensenada
+  address: 'Calle Sexta y Avenida Granada #1990, Obrera Ensenada, Ensenada, 22830'
+scenarios:
+- name: Terrenos propiedad del INDIVI
+  requirements:
+  - text: Original y copia de acta de nacimiento del titular
+    cites:
+    - source: retys
+  - text: Original y copia de identificación oficial con fotografía del titular
+    cites:
+    - source: retys
+  - text: Carta de no adeudo o recibo de pago del terreno de cuenta liquidada
+    cites:
+    - source: retys
+  - text: Original y copia de declaración de pago sobre el impuesto de adquisición de bienes inmuebles (ISAI)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Sacar ficha de turno electrónico o anotarse en la lista de espera
+    - Entregar requisitos completos
+    - Efectuar el pago correspondiente
+    - Firmar el título de propiedad
+    - Acudir en el tiempo que le indiquen a recibir su título inscrito en el Registro Público de la Propiedad y
+      de Comercio (RPPC)
+  notes: Requisitos y proceso de titulación de terrenos que son propiedad del INDIVI
+- name: Terrenos de convenios de regularización
+  requirements:
+  - text: Original y copia del acta de nacimiento
+    cites:
+    - source: retys
+  - text: Original y copia de la Identificación Oficial
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población
+    cites:
+    - source: retys
+  - text: Contrato de compra-venta emitido por el propietario
+    cites:
+    - source: retys
+  - text: Finiquito emitido por el propietario
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Sacar ficha de turno electrónico o anotarse en la lista de espera
+    - Entregar requisitos completos
+    - Efectuar el pago correspondiente
+    - Firmar el título de propiedad
+    - Acudir en el tiempo que le indiquen a recibir su título inscrito en el Registro Público de la Propiedad y
+      de Comercio (RPPC)
+  notes: Requisitos y proceso para obtener el título de propiedad de un terreno adquirido en una colonia con convenio
+    de regularización.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4, fracción XX, XXI y XXII
+- source: ley2
+  pinpoint: Artículo 21 fracción II, incisos A), B), C), D) Y E)
+- source: ley3
+  pinpoint: SE.001.08.03.2023
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Sacar ficha de turno electrónico o anotarse en la lista de espera
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos completos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Efectuar el pago correspondiente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firmar el título de propiedad
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Acudir en el tiempo que le indiquen a recibir su título inscrito en el Registro Público de la Propiedad
+    y de Comercio (RPPC)
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 750: Emisión de título de propiedad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/750
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del INDIVI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Tercera Sesión Extraordinaria de la Junta Directiva del INDVI de fecha 8 de marzo de 2023 (Cobro de cuotas
+      por concepto de aprovechamientos)
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

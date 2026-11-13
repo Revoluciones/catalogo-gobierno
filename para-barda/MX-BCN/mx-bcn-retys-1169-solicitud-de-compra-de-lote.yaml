@@ -1,0 +1,200 @@
+id: mx-bcn-retys-1169-solicitud-de-compra-de-lote
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de compra de lote
+summary: Trámite mediante el cual una persona puede solicitar la compra de un lote propiedad del INDIVI
+authority:
+  name: Instituto para el Desarrollo Inmobiliario y de la Vivienda para el Estado de Baja California
+official_ids:
+  retys_id: 1169
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1169
+  homoclave: BC-INDIVI-008
+who_can:
+- Interesado
+when: Cuando quiera adquirir un predio
+result: Contrato de compra venta
+cost:
+  type: fijo
+  amount_mxn: 1550.0
+  text: 'COSTO: Pago de avalúo del predio: $1,550.00m.n. Una vez aprobada la compra, se paga el 10% de enganche'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 21 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: INDIVI Guadalupe Victoria
+  address: 'Calle 8 #S/N, Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: INDIVI San Felipe
+  address: 'Av. Mar de Cortez y Calle Puerto de Manzanillo, Centro de Gobierno #S/N, Zona Centro San Felipe, Mexicali,
+    21850'
+- municipality: Mexicali
+  name: INDIVI Mexicali
+  address: 'Calle G y Avenida Arista #510, Segunda Sección Mexicali, Mexicali, 21100'
+- municipality: Tijuana
+  name: INDIVI Tijuana
+  address: 'Av. Instituto Politécnico Nacional #1351, Garita de Otay Tijuana, Tijuana, 22509'
+- municipality: Ensenada
+  name: INDIVI Ensenada
+  address: 'Calle Sexta y Avenida Granada #1990, Obrera Ensenada, Ensenada, 22830'
+- municipality: Ensenada
+  name: INDIVI Vicente Guerrero
+  address: 'Blvd. Benito Juárez y Calle Ignacio Allende #101, A  Maclovio Rojas Vicente Guerrero, Ensenada, 22920'
+- municipality: Playas de Rosarito
+  name: INDIVI Rosarito
+  address: 'Calle José Haros Aguilar #2004, Villa Turistica Playas de Rosarito, Playas de Rosarito, 22710'
+scenarios:
+- name: Terreno baldío
+  requirements:
+  - text: Original y copia de acta de nacimiento
+    cites:
+    - source: retys
+  - text: Original y copia de la identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Copia de CURP del solicitante
+    cites:
+    - source: retys
+  - text: Original y copia de carta de trabajo reciente
+    cites:
+    - source: retys
+  - text: 2 referencias con original y copia de sus identificaciones oficiales vigentes
+    cites:
+    - source: retys
+  - text: En caso de estar casada y casado, se deberá presentar original y copia del acta de matrimonio, acta de
+      nacimiento, identificación oficial y CURP del cónyuge
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Registrarse en la lista o sacar turno electrónico para ser atendido por un operador de ventanilla
+    - Inscribirse al padrón de solicitantes del INDIVI
+    - Entregar requisitos
+    - Pasar a caja recaudadora para pago de avalúo
+    - Esperar la llegada del avalúo
+    - Contratar el lote habitado
+    - Elaboración y firma del contrato de compra venta
+    - Pagar en cajas el 10% de enganche del valor del predio
+    - Entrega de la copia del contrato del lote autorizado
+  notes: Contratación de terrenos baldíos propiedad del INDIVI
+- name: Terreno habitado
+  requirements:
+  - text: Original y copia de acta de nacimiento
+    cites:
+    - source: retys
+  - text: Original y copia de la identificación oficial con fotografía
+    cites:
+    - source: retys
+  - text: Copia de CURP del solicitante
+    cites:
+    - source: retys
+  - text: Original y copia de carta de trabajo reciente
+    cites:
+    - source: retys
+  - text: 2 referencias con original y copia de sus identificaciones oficiales vigentes
+    cites:
+    - source: retys
+  - text: En caso de estar casada y casado, se deberá presentar original y copia del acta de matrimonio, acta de
+      nacimiento, identificación oficial y CURP del cónyuge
+    cites:
+    - source: retys
+  - text: Copias de recibos de servicios públicos que demuestren antigüedad dentro del lote a contratar
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Registrarse en la lista o sacar turno electrónico para ser atendido por un operador de ventanilla
+    - Inscribirse al padrón de solicitantes del INDIVI
+    - Entregar requisitos
+    - Pasar a caja recaudadora para pago de avalúo
+    - Esperar la llegada del avalúo
+    - Contratar el lote habitado
+    - Elaboración y firma del contrato de compra venta
+    - Pagar en cajas el 10% de enganche del valor del predio
+    - Entrega de la copia del contrato del lote autorizado
+  notes: Contratación de predio habitado
+legal_basis:
+- source: ley1
+  pinpoint: Decreto Artículo 4, fracciones VI, XI, XIX Y XXVII / Reglamento Artículo 35, fracciones I, II Y V; Artículo
+    52 fracciones V, VI, VIII Y XX / SO/001/08.03.2023
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registrarse en la lista o sacar turno electrónico para ser atendido por un operador de ventanilla
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Inscribirse al padrón de solicitantes del INDIVI
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pasar a caja recaudadora para pago de avalúo
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Esperar la llegada del avalúo
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Contratar el lote habitado
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Elaboración y firma del contrato de compra venta
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Pagar en cajas el 10% de enganche del valor del predio
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Entrega de la copia del contrato del lote autorizado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1169: Solicitud de compra de lote'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1169
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación INDIVI/ Reglamento Interno INDIVI/3 Sesión Extraordinaria de la Junta Directiva 8
+      de Marzo 2023
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

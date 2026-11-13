@@ -1,0 +1,93 @@
+id: mx-bcn-retys-1697-acceso-al-festival-de-jazz-chinto-mendoza
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso al Festival de Jazz Chinto Mendoza
+summary: Acceso al disfrute de los conciertos musicales de jazz presentados por diferentes grupos locales e internacionales.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1697
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1697
+  homoclave: BC-SC-009
+who_can:
+- Interesado
+when: Consultar la agenda entre abril y agosto en la página
+result: Acceso a los recintos culturales que promueven la sana convivencia y disfrute del Arte.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección Artes Escénicas y Festivales
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Asistir con 15 minutos de antiicipación al concierto
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Para conocer la egenda ingrese a la pagina web: https://agendacultural.bajacalifornia.gob.mx/'
+    - Acudir a la dependencias por el pase gratuito; en su caso, o solo asistir al evento en el recinto en el día
+      y la hora estipulada
+    - Accede al concierto dentro del festival de jazz
+  notes: Toda persona que desee asistir y disfrutar de la música de jazz
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 25, fracción VIII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Para conocer la egenda ingrese a la pagina web: https://agendacultural.bajacalifornia.gob.mx/'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a la dependencias por el pase gratuito; en su caso, o solo asistir al evento en el recinto en el
+    día y la hora estipulada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Accede al concierto dentro del festival de jazz
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1697: Acceso al Festival de Jazz Chinto Mendoza'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1697
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

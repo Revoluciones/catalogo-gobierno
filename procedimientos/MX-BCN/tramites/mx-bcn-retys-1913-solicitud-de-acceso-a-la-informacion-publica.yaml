@@ -1,0 +1,183 @@
+id: mx-bcn-retys-1913-solicitud-de-acceso-a-la-informacion-publica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Acceso a la Información Pública
+summary: Recibir de los ciudadanos, solicitudes de acceso a la información pública, darles trámite de atención ante
+  las áreas correspondientes de la dependencia o de las que corresponda en el Poder Ejecutivo Estatal, por último,
+  entregar la información pública al solicitante en apego a los formatos y tiempos de los lineamientos de la Ley
+  de Transparencia de Baja California
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1913
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1913
+  homoclave: BC-SEPESCA-008
+who_can:
+- Interesado
+when: En cualquier momento que la persona interesada requiera la información
+result: Documento referente a la información pública solicitada
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Años'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 20 días hábiles, en caso de prórroga para ampliación de termino, pueden ser hasta 30 días hábiles
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Ensenada
+  name: Unidad de Transparencia de Secrtaría de Pesca y Acuacultura
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Registro de Solicitud de Acceso a la Información Pública
+  requirements:
+  - text: Registro de Persona Solicitante en la Plataforma Nacional de Transparencia (PNT); nombre, cuenta de correo
+      electrónico y contraseña.
+    cites:
+    - source: retys
+  - text: Registro de Solicitud de Acceso a la Información Pública en la Plataforma Nacional de Transparencia (PNT);
+      cuenta de correo electrónico, contraseña, nombre, identificación de la Institución a la que se dirige y redacción
+      lo solicitado.
+    cites:
+    - source: retys
+  - text: Atención a notificaciones que llegan a la cuenta de correo electrónico registrada como persona solicitante,
+      qué pueden ser de atención de a la solicitud o de requerimiento de información adicional a la persona solicitante
+      para el seguimiento a respuesta de la solicitud.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Persona Solicitante en la Plataforma Nacional de Transparencia (PNT)
+    - Registro de solicitud en materia de acceso a la información en poder de las Instituciones Públicas a través
+      de la Plataforma Nacional de Transparencia (PNT)
+    - En caso de desear incorporar algún archivo al registro de la solicitud, se debe adjuntar en el apartado correspondiente.
+      Solo se permite cargar 1 archivo en este espacio, el peso máximo del archivo son 20 MB (MegaBytes)
+    - Atender notificaciones que llegan a la cuenta de correo electrónico registrada como persona solicitante, qué
+      pueden ser de atención de a la solicitud o de requerimiento de información adicional a la persona solicitante
+      para el seguimiento a respuesta de la solicitud.
+    - En caso de no poseer facultades para tener la información solicitada, notificar a la Persona Solicitante en
+      un plazo máximo de 3 días hábiles, sobre la Incompetencia para dar respuesta y que se reorientara su solicitud
+      hacia la institución correcta.
+    - En caso de requerir aclaración de la Persona Solicitante sobre la información solicitada, notificarle en un
+      plazo máximo de 5 días hábiles, sobre la necesidad de aclaración o aclaraciones sobre lo solicitado, con el
+      objeto de dar respuesta correcta a la solicitud.
+    - Analiza la solicitud de información, determinar y asignar el área o áreas internas de la institución que apoyaran
+      en la elaboración de la respuesta.
+    - Elabora respuesta a la solicitud de información en términos y plazos de la ley.
+    - Carga el documento o documentos de respuesta a la solicitud de información en la Plataforma Nacional de Transparencia
+      (PNT).
+  notes: Solicitud en materia de acceso a la información en poder de las Instituciones Públicas a través de la Plataforma
+    Nacional de Transparencia
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 20, Fracción XVI
+- source: ley2
+  pinpoint: Artículo 22, Fracción XVI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registro de Persona Solicitante en la Plataforma Nacional de Transparencia (PNT)
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registro de solicitud en materia de acceso a la información en poder de las Instituciones Públicas a través
+    de la Plataforma Nacional de Transparencia (PNT)
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: En caso de desear incorporar algún archivo al registro de la solicitud, se debe adjuntar en el apartado
+    correspondiente. Solo se permite cargar 1 archivo en este espacio, el peso máximo del archivo son 20 MB (MegaBytes)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Atender notificaciones que llegan a la cuenta de correo electrónico registrada como persona solicitante,
+    qué pueden ser de atención de a la solicitud o de requerimiento de información adicional a la persona solicitante
+    para el seguimiento a respuesta de la solicitud.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: En caso de no poseer facultades para tener la información solicitada, notificar a la Persona Solicitante
+    en un plazo máximo de 3 días hábiles, sobre la Incompetencia para dar respuesta y que se reorientara su solicitud
+    hacia la institución correcta.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: En caso de requerir aclaración de la Persona Solicitante sobre la información solicitada, notificarle
+    en un plazo máximo de 5 días hábiles, sobre la necesidad de aclaración o aclaraciones sobre lo solicitado, con
+    el objeto de dar respuesta correcta a la solicitud.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Analiza la solicitud de información, determinar y asignar el área o áreas internas de la institución que
+    apoyaran en la elaboración de la respuesta.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Elabora respuesta a la solicitud de información en términos y plazos de la ley.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Carga el documento o documentos de respuesta a la solicitud de información en la Plataforma Nacional de
+    Transparencia (PNT).
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1913: Solicitud de Acceso a la Información Pública'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1913
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Transparencia y Acceso a la Información Pública
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Transparencia, Acceso a la Información Pública y Apertura Institucional para el Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Acceso a la Información Pública de la SEPESCA. Copiado tal cual de RETyS. Los
+  pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

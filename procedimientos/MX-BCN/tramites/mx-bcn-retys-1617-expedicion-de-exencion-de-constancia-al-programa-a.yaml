@@ -1,0 +1,176 @@
+id: mx-bcn-retys-1617-expedicion-de-exencion-de-constancia-al-programa-a
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Exención de Constancia al Programa Atrapa la Grasa y Sólidos
+summary: Solicitar la inspección y evaluación para la exención de la constancia de cumplimiento al programa atrapa
+  la grasa y sólidos, para usuarios no domésticos con procesos productivos que generen desecho de grasas y sólidos.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Tijuana
+official_ids:
+  retys_id: 1617
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1617
+  homoclave: BC-CESPT-039
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requiera del servicio
+result: Oficio de exención de constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos
+cost:
+  type: variable
+  amount_mxn: 1356.18
+  text: 'COSTO VARIABLE: $1,356.18 pesos Noviembre 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: CAP Oficinas Centrales
+  address: 'Blvd. Federico Benítez #4057, Col. 20 de Noviembre, Tijuana, 22430'
+scenarios:
+- name: General
+  requirements:
+  - text: Original y copia del Formulario de Solicitud de Revalidación o Exención al Programa Atrapa la Grasa (FRM-015)
+      debidamente llenado y firmado, lo proporciona CESPT o lo puede obtener en en la página de Internet
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11992
+  - text: Hacer el pago correspondiente
+    cites:
+    - source: retys
+  - text: Las copias deben ser LEGIBLES y contener el DOCUMENTO COMPLETO.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+      izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+    - La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si no están
+      completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se completen,
+      indicándole que es lo que falta.
+    - Con los requisitos completos, la persona de la Coordinación de Control de Calidad le entrega una Ficha de
+      pago.
+    - Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona de
+      Cajas le entregará un Recibo de Pago.
+    - Pasar al área de Archivo, presentar el Recibo de Pago y entregar los requisitos.
+    - La persona del área de Archivo certifica de recibido, el original y copia del Formulario de Solicitud de Revalidación
+      o Exención de constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos y entrega la copia a la persona
+      solicitante.
+    - 'Una persona Analista de la Coordinación de Control de Calidad acudirá a la empresa o establecimiento a realizar
+      una visita de verificación, para revisar si se generan desechos de grasas y sólidos: NO GENERAN DESECHOS:
+      Personal de la Coordinación de Control de Calidad elabora el Oficio de exención de Constancia de Cumplimiento
+      al Programa Atrapa la Grasa y Sólidos, y contacta a la persona solicitante para que pase a recoger el documento.
+      SI GENERAN DESECHOS: Personal de la Coordinación de Control de Calidad elabora oficio de Dimensionamiento
+      de dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento que debe realizar
+      y el plazo para realizarlas y contacta a la persona solicitante para que pase a recoger el documento.'
+    - Acudir a CESPT por el Oficio de exención de Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos
+      o el oficio de Dimensionamiento de dispositivo(s), según sea el caso.
+  notes: General
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 94 y 109.
+- source: ley2
+  pinpoint: Artículos 1 y 2.
+- source: ley3
+  pinpoint: Artículo 9.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Coordinación de Control de Calidad, ubicada en el edificio que se encuentra en la parte posterior
+    izquierda de Oficinas Centrales de CESPT y presentar los requisitos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La persona de la Coordinación de Control de Calidad revisa que se cumpla con todos los requisitos, si
+    no están completos, informa a la persona solicitante que no es posible realizar el trámite hasta que éstos se
+    completen, indicándole que es lo que falta.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Con los requisitos completos, la persona de la Coordinación de Control de Calidad le entrega una Ficha
+    de pago.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir al área de Cajas con la Ficha de Pago y realizar el pago de derechos correspondiente, la persona
+    de Cajas le entregará un Recibo de Pago.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar al área de Archivo, presentar el Recibo de Pago y entregar los requisitos.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: La persona del área de Archivo certifica de recibido, el original y copia del Formulario de Solicitud
+    de Revalidación o Exención de constancia de cumplimiento al Programa Atrapa la Grasa y Sólidos y entrega la
+    copia a la persona solicitante.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: 'Una persona Analista de la Coordinación de Control de Calidad acudirá a la empresa o establecimiento
+    a realizar una visita de verificación, para revisar si se generan desechos de grasas y sólidos: NO GENERAN DESECHOS:
+    Personal de la Coordinación de Control de Calidad elabora el Oficio de exención de Constancia de Cumplimiento
+    al Programa Atrapa la Grasa y Sólidos, y contacta a la persona solicitante para que pase a recoger el documento.
+    SI GENERAN DESECHOS: Personal de la Coordinación de Control de Calidad elabora oficio de Dimensionamiento de
+    dispositivo(s), en el que se indicarán las adecuaciones y sistemas de pretratamiento que debe realizar y el
+    plazo para realizarlas y contacta a la persona solicitante para que pase a recoger el documento.'
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Acudir a CESPT por el Oficio de exención de Constancia de Cumplimiento al Programa Atrapa la Grasa y Sólidos
+    o el oficio de Dimensionamiento de dispositivo(s), según sea el caso.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1617: Expedición de Exención de Constancia al Programa Atrapa la Grasa y Sólidos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1617
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Que Reglamenta El Servicio De Agua Potable En El Estado De Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Comisiones Estatales de Servicios Públicos del Estado De Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

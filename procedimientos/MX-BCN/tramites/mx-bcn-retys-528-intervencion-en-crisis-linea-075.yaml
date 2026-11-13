@@ -1,0 +1,105 @@
+id: mx-bcn-retys-528-intervencion-en-crisis-linea-075
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Intervención en Crisis Línea 075
+summary: Asistencia telefónica inmediata para intervención de crisis emocionales.
+authority:
+  name: Instituto de Psiquiatría del Estado de Baja California
+official_ids:
+  retys_id: 528
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/528
+  homoclave: BC-IPEBC-022
+who_can:
+- Interesado
+- Tutor
+when: Cuando se requiera intervención de crisis inmediata.
+result: Consulta
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Promoción y Prevención de la Salud Mental y Adicciones
+  address: 'Calzada Anáhuac #958, Jardines del Lago, Mexicali, 21330'
+scenarios:
+- name: Público en General
+  requirements:
+  - text: Datos generales del solicitante (nombre, sexo, edad, municipio); o de manera anónima.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Marcar a la línea telefónica gratuita 075.
+    - Brinda datos personales.
+    - Brinda asesoría e intervención psicológica breve e inmediata.
+  notes: Público en General
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 2 y 4
+- source: ley2
+  pinpoint: Artículo 4, Fracción IV, 29 Y 30
+- source: ley3
+  pinpoint: Artículo 36
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Marcar a la línea telefónica gratuita 075.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Brinda datos personales.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Brinda asesoría e intervención psicológica breve e inmediata.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 528: Intervención en Crisis Línea 075'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/528
+    version_date: 04/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del IPEBC
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

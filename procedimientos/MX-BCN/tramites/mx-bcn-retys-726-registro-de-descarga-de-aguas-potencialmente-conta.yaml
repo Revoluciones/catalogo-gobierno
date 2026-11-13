@@ -1,0 +1,130 @@
+id: mx-bcn-retys-726-registro-de-descarga-de-aguas-potencialmente-conta
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro de descarga de aguas potencialmente contaminantes
+summary: Revisar los volúmenes de agua, equipos, procesos, materias primas y contaminantes en contacto con el agua,
+  así como las condiciones operativas de la planta de tratamiento, para asegurar el cumplimiento normativo antes
+  de la descarga al alcantarillado
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 726
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/726
+  homoclave: BC-CESPM-032
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el servicio
+result: Permiso de descarga
+cost:
+  type: variable
+  amount_mxn: 5240.03
+  text: 'COSTO VARIABLE: $ 5,240.03. el costo del servicio variara durante el ejerció 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: presentar solicitud escrita o electrónica informando nombre, domicilio, RFC, giro o actividad de la empresa
+    cites:
+    - source: retys
+  - text: Nombre de la persona o representante legal a quien saldrá el permiso, (poder notarial)
+    cites:
+    - source: retys
+  - text: No. de cuenta de agua potable.
+    cites:
+    - source: retys
+  - text: No. de empleados
+    cites:
+    - source: retys
+  - text: Cantidad que producción diaria o mensual (anotar si es por temporadas).
+    cites:
+    - source: retys
+  - text: Recibos de pago del servicio, pago por la visita de verificación y por la expedición del pe la constancia.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El usuario o su responsable técnico debe llenar el formato del permiso de descarga de aguas disponible en
+      la página de CESPM, pagar la tarifa correspondiente y adjuntar los resultados del análisis de las aguas residuales
+      procedentes de procesos productivos.
+    - El usuario o su representante envía el formulario completo, el comprobante de pago y los resultados del análisis
+      a la Oficina de Normatividad y Control Ambiental (ONCA).
+    - ONCA recibirá y revisará el documento en caso de ser necesario solicitará información adicional y/o en su
+      caso programara una visita confirmativa de datos.
+    - Una vez que ONCA evalué la información y en su caso verifique los datos técnicos emitirá el permiso de descarga
+    - Se le comunicará al usuario para que pase por su permiso.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ART 9, PUNTO 8 INCISO o
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El usuario o su responsable técnico debe llenar el formato del permiso de descarga de aguas disponible
+    en la página de CESPM, pagar la tarifa correspondiente y adjuntar los resultados del análisis de las aguas residuales
+    procedentes de procesos productivos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El usuario o su representante envía el formulario completo, el comprobante de pago y los resultados del
+    análisis a la Oficina de Normatividad y Control Ambiental (ONCA).
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: ONCA recibirá y revisará el documento en caso de ser necesario solicitará información adicional y/o en
+    su caso programara una visita confirmativa de datos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez que ONCA evalué la información y en su caso verifique los datos técnicos emitirá el permiso de
+    descarga
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se le comunicará al usuario para que pase por su permiso.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 726: Registro de descarga de aguas potencialmente contaminantes'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/726
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

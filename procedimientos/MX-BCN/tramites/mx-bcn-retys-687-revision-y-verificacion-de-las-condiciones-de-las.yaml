@@ -1,0 +1,108 @@
+id: mx-bcn-retys-687-revision-y-verificacion-de-las-condiciones-de-las
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revisión y verificación de las condiciones de las descargas de aguas residuales a la red de alcantarillado
+  sanitario
+summary: Conocer cuáles son las condiciones de las descargas de aguas residual a la red de alcantarillado sanitario.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 687
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/687
+  homoclave: BC-CESPM-030
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el servicio
+result: Constancia
+cost:
+  type: variable
+  amount_mxn: 1040.36
+  text: 'COSTO VARIABLE: $ 1,040.36. el costo del servicio variara durante el ejerció 2026 de acuerdo a la actualización
+    por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Presentar identificación oficial del representante legal o registro del sat.
+    cites:
+    - source: retys
+  - text: Plantilla de personal.
+    cites:
+    - source: retys
+  - text: Cantidad que se produce según el giro.
+    cites:
+    - source: retys
+  - text: Visita al usuario del servicio ya sea a través de una carta amistosa o visita de inspección.
+    cites:
+    - source: retys
+  - text: Recibo de pago del servicio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Solicitar la revisión de CESPM (oficina de control de procesos) y/o esperar carta amistosa o en su caso visita
+      de inspección
+    - Pago del servicio cuando la revisión fue solicitada por el usuario.
+    - Se emite dictamen
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ART 9 PUNTO 8 INCISO E)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar la revisión de CESPM (oficina de control de procesos) y/o esperar carta amistosa o en su caso
+    visita de inspección
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pago del servicio cuando la revisión fue solicitada por el usuario.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se emite dictamen
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 687: Revisión y verificación de las condiciones de las descargas de aguas residuales a
+      la red de alcantarillado sanitario'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/687
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA.2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

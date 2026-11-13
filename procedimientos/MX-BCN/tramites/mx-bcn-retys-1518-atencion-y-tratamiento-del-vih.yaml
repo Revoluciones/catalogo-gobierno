@@ -1,0 +1,149 @@
+id: mx-bcn-retys-1518-atencion-y-tratamiento-del-vih
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención y Tratamiento del VIH
+summary: Aplicar la prueba rápida para la detección del virus de inmunodeficiencia humana (VIH), con el propósito
+  de realizar el diagnóstico confirmatorio oportuno de la enfermedad, proporcionar el tratamiento efectivo y supervisión
+  médica que le permita tener una mejor calidad de vida, así como la consejería pre y post aplicación de prueba
+  rápida. Atención de PrEP y PEP
+authority:
+  name: Instituto de Servicios de Salud Pública del Estado de Baja California
+official_ids:
+  retys_id: 1518
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1518
+  homoclave: BC-ISESALUD-010
+who_can:
+- Interesado
+when: Cuando el paciente lo solicite y lo requiera
+result: Consulta y consejería
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: ÚNICO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Medicina Preventiva
+  address: 'Avenida Ayuntamiento  y 27 de Septiembre #S/N, Lazaro Cardenas, Mexicali, 21370'
+- municipality: Tijuana
+  name: Departamento de Medicina Preventiva
+  address: 'Mexicali 1986 #S/N, Hacienda Las Fuentes, Tijuana, 22245'
+- municipality: Ensenada
+  name: Departamento de Medicina Preventiva
+  address: 'Agustín Iturbide Lote 2 Manzana 4 #S/N, Centro Artesanal, Ensenada, 22785'
+scenarios:
+- name: Aplicación de prueba rápida para la detección del virus de inmunodeficiencia humana (VIH)
+  requirements:
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a solicitar el servicio de aplicación de prueba rápida
+    - Se otorga consejería con psicólogo o trabajador social
+    - Se aplica la prueba
+    - Otorga resultados de prueba en el tiempo indicado e indica el seguimiento y tratamiento integral correspondiente
+      de ser necesario
+  notes: Proporcionar el servicio para la detección, prevención y atención especializada de pacientes con virus
+    de inmunodeficiencia humana (VIH)
+- name: Seguimiento a los pacientes
+  requirements:
+  - text: CURP.
+    cites:
+    - source: retys
+  - text: Identificación oficial
+    cites:
+    - source: retys
+  - text: Carta de no derechohabiencia
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al CAPASITS a solicitar cita o por medio de vía telefónica
+    - Para la atención, acudir 15 minutos antes de la hora de la cita, con sus documentos.
+    - Inicia consulta, consejería y tratamiento integral
+    - Realiza surtimiento de receta médica
+  notes: Citas subsecuentes a los pacientes que ya son tratados con CAPASITS
+legal_basis:
+- source: ley1
+  pinpoint: Articulo 1, 2 , 3 y 4
+- source: ley2
+  pinpoint: Articulo 1, 2 , 3 y 4
+- source: ley3
+  pinpoint: Aplica de manera general
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a solicitar el servicio de aplicación de prueba rápida
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se otorga consejería con psicólogo o trabajador social
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se aplica la prueba
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Otorga resultados de prueba en el tiempo indicado e indica el seguimiento y tratamiento integral correspondiente
+    de ser necesario
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1518: Atención y Tratamiento del VIH'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1518
+    version_date: 30/Enero /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: NOM-010-SSA2-2010, Para la prevención y el control de la infección por Virus de la Inmunodeficiencia
+      Humana.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

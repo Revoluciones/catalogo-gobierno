@@ -1,0 +1,120 @@
+id: mx-bcn-tijuana-tj-sgm-0172-carta-de-residencia
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: trámite
+title: Carta de Residencia
+summary: Documento para comprobar la residencia en la ciudad de Tijuana.
+authority:
+  name: Secretaría de Gobierno (Ayuntamiento de Tijuana)
+  unit: Dirección de Gobierno / Correspondencia
+official_ids:
+  homoclave: TJ-SGM-0172
+who_can:
+- Interesado
+when: Se realiza para los trámites que expresamente soliciten carta de residencia o constancia de domicilio.
+result: Documento
+requirements:
+- text: Identificación Oficial con fotografía vigente
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: (Credencial de Elector, Licencia de Conducir, Cartilla Militar, Credencial del INSEN, INAPAM, Pasaporte
+    Mexicano, Cedula Profesional, ISSSTE, IMSS, ISSSTECALI)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Dos comprobantes de domicilio MÁS RECIENTE y Uno de seis meses atrás para el caso de Cartas de Residencia
+    menores al año
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: (Recibo de agua, luz, teléfono, gas, predial, cable, internet o estado de cuenta bancaria)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: (Dichos recibos deberán estar a nombre del solicitante, en caso de no contar con ningún comprobante a su
+    nombre, deberá de presentar contrato de arrendamiento, comodato donde manifieste que el ciudadano vive en ese
+    domicilio)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: (además deberá agregar copia simple de la identificación oficial de los testigos y del propietario o cualquier
+    documento que demuestre una relación contractual con el propietario)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: (así sea un sujeto obligado (dependencia) o particular (contrato de servicio domiciliarios))
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Si usted desea una Carta de Residencia por un año o más, deberá presentar los comprobantes de domicilio
+    por un año consecutivo que desea comprobar (un documento por un año)
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: En caso de que los comprobantes de domicilio estén a nombre de los padres, presentar acta de nac del solicitante,
+    en escrito libre donde especifique que vive en ese domicilio y copia del INE del padre o madre cuyo nombre aparezca
+    en los comprobantes
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Certificado o constancia de residencia (Servicio ordinario): 1.95 UMA ($228.75) · Certificado o constancia
+    de residencia (Servicio urgente): 3.25 UMA ($381.26). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 90 días
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Gobierno / Correspondencia
+  address: Avenida Independencia 1350, Zona Urbana Río, C. P. 22010
+  phones: 6649737000 ext. 7195
+  hours: LUNES A VIERNES DE 08:00 HRS A 14:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SGM-0172: Carta de Residencia'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SGM-0172
+    version_date: '2026-10-20'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria de Gobierno.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/REGLAMENTO%20INTERNO%20DE%20LA%20SECRETARIA%20DE%20GOBIERNO%20MUNICIPAL%20DE%20TIJUANA%20BAJA%20CALIFORNIA_21092021.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 43, inciso G), subincisos a) y b) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Para
+  empezar: https://www.tijuana.gob.mx/ Criterio para resolver: Cumplir con los requisitos y normativa vigente.'

@@ -1,0 +1,136 @@
+id: mx-bcn-retys-391-representacion-ante-autoridad-administrativa-de-pe
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Representación ante Autoridad Administrativa de Persona Menor de Edad
+summary: Representación de persona menor de edad en ausencia de sus padres para algún trámite administrativo.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 391
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/391
+  homoclave: BC-DIF-018
+who_can:
+- Representante Legal
+- Otro
+when: Cuando la persona menor de edad se encuentre en ausencia de sus padres y requiera algún trámite administrativo
+result: Representación administrativa
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Mexicali
+  address: 'Avenida Cristobal Garcilazo y Calle Plateros  #s/n, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tijuana
+  address: 'Avenida Río Tijuana y Avenida de los Taxistas #s/n, Infonavit La Mesa, Tijuana, 22114'
+- municipality: Ensenada
+  name: Subprocuraduría para la Defensa de los Menores y la Familia Ensenada
+  address: 'Calle Transpeninsular del Poder Ejecutivo #s/n, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Subprocuraduría para la Defensa de los Menores y la Familia en Tecate
+  address: 'Avenida Hidalgo y Profesor Gutiérrez Hernandez Durán #s/n, Colonia Downey, Tecate, 21450'
+- municipality: Playas de Rosarito
+  name: Subprocuraduria para la Defensa de los Menores y la Familia Playas de Rosarito
+  address: 'ROSARITO CENTRO FRANCISCO DE ANZA MANZANA 25  #lote 26, Predios Urbanos, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Procuraduría para la Defensa de los Menores y la Familia en San Quintín
+  address: 'Calle A entre las Avenidas 9 y 10 #s/n, Fraccionamiento San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Subprocuraduría para la Defensa de los Menores y la Familia San Felipe
+  address: 'Mar Bermejo entre Chetumal y Ensenada #s/n, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Aviso de nacimiento del menor de edad (Original)
+    cites:
+    - source: retys
+  - text: Acta de nacimiento de padres (original)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (original)
+    cites:
+    - source: retys
+  - text: Fotografía del niño tamaño infantil blanco y negro
+    cites:
+    - source: retys
+  - text: CURP del menor de edad (original)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de las Subprocuradurías para la Defensa de los Menores y la Familia, en cualquiera de
+      los municipios del Estado, a solicitar el servicio y/o trámite.
+    - Se realiza la Comparecencia entre los Solicitantes y el Agente Procurador
+    - Los Solicitantes recaban y entregan la documentación que solicita el Agente Procurador
+    - El Agente Procurador recibe la documentación solicitada
+    - El Agente Procurador lleva a cabo las diligencias correspondientes a la representación
+  notes: Recopilación de documentos para el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 21 y 29 (de conformidad con el artículo segundo transitorio de la Ley para la Protección y
+    Defensa de los Derechos de las niñas, niños y adolescentes del Estado)
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de las Subprocuradurías para la Defensa de los Menores y la Familia, en cualquiera
+    de los municipios del Estado, a solicitar el servicio y/o trámite.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se realiza la Comparecencia entre los Solicitantes y el Agente Procurador
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Los Solicitantes recaban y entregan la documentación que solicita el Agente Procurador
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Agente Procurador recibe la documentación solicitada
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El Agente Procurador lleva a cabo las diligencias correspondientes a la representación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 391: Representación ante Autoridad Administrativa de Persona Menor de Edad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/391
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Protección y Defensa de los Derechos de los Menores y la Familia en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

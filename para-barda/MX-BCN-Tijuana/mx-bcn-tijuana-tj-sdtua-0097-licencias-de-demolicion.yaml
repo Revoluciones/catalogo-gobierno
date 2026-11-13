@@ -1,0 +1,148 @@
+id: mx-bcn-tijuana-tj-sdtua-0097-licencias-de-demolicion
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: Licencias de Demolición
+summary: Trámite que permite obtener la autorización para demolición de una obra existente dentro de un predio.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0097
+who_can:
+- Interesado
+when: Para el caso que se requiera.
+result: Licencia
+requirements:
+- text: Firma de perito responsable en solicitud para demolición de edificaciones con área mayor a 60.00m2 o altura
+    mayor a 2.50m, o dos niveles.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Si se demuele en régimen de condominio presentar carta de asamblea, con plano distribución y pre- escritura
+    de crédito hipotecario.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Carta de depósito de material.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Fotografía de la edificación a demoler.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Banquetas, con superficie mayor de 3.00 M² y hasta de 10.00 M²: 8.93 UMA ($1,047.58) · Banquetas, con superficies
+    mayores de 10.00 M²: 14.3 UMA ($1,677.53) · Firmes y/o arroyos de concreto, asfalto u otro material para uso
+    comercial, industrial, servicios o conjuntos condominales por M² hasta 100.00 M², por metro cuadrado: 0.25 UMA
+    ($29.33) · Firmes y/o arroyos de concreto, asfalto u otro material para uso comercial, industrial, servicios
+    o conjuntos condominales por M² por metro cuadrado excedente: $0.07 · Edificaciones hasta 50.00m²: 8.93 UMA
+    ($1,047.58) · Edificaciones de 50.00m² hasta 100.00m²: 17.88 UMA ($2,097.50) · Mayores de 100.00m²: 26 UMA ($3,050.06)
+    · Cercos, bardas y muros de contención de 10.00m² a 30.00m²: 8.93 UMA ($1,047.58) · Cercos, bardas y muros de
+    contención mayores de 30.00m²: 17.88 UMA ($2,097.50) · Cordón de banqueta o guarnición hasta 3.00m²: 2.68 UMA
+    ($314.39) · Cordón de banqueta o guarnición 3.00m² hasta 10.00m²: 8.93 UMA ($1,047.58) · Cordón de banqueta
+    o guarnición mayor a 10.00m²: 14.3 UMA ($1,677.53) · Banquetas, con superficie de hasta 3.00 m²: 5.36 UMA ($628.78).
+    UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 día
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Av. Aranjuez No. 22750, Fracc. Villa Fontana XIII Sección, CP 22205
+  phones: 6646278700 ext. 8710
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, CP 22200
+  phones: 6646316800 ext. 6835
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubi, CP 22626
+  phones: 6646356106 ext. 6106
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Av. Panamericana No. 9757, Colinas de California, anexa Panamericana, CP 22457
+  phones: 6649757621 ext. 7621
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila Zona Norte entre Negrete y Madero No. 8803, Zona Centro, CP 22000
+  phones: 6646885300 ext. 5352
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Canadá No. 7171, Rio Tijuana 3era Etapa, CP 22226
+  phones: 6641345013 ext. 5013
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Av. de los Charros y Allende No. 4200, Fracc Moreno, CP 22105
+  phones: 6641042113 ext. 2113
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Calle Cerezo esq. Carretera Tijuana-Tecate s/n, El Refugio, CP 22253
+  phones: 6641026001 ext. 6403
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Av. Insituto Politécnico Nacional No. 1462, Fracc. Garita de Otay, CP 22457
+  phones: 6646474214 ext. 4214
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0097: Licencias de Demolición'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0097
+    version_date: '2026-11-04'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de la ley de edificaciones para el municipio de Tijuana, Baja California.
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_202181810250960_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 31, Fracción V, Incisos A) a la N) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con los requisitos y normatividad vigente.'

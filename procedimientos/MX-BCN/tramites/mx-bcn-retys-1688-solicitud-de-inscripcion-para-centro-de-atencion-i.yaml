@@ -1,0 +1,189 @@
+id: mx-bcn-retys-1688-solicitud-de-inscripcion-para-centro-de-atencion-i
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Inscripción para Centro de Atención Infantil DIF
+summary: Proporcionar servicios de cuidado, atención y desarrollo infantil a través de los centros de atención infantil
+  DIF que contribuya a prevenir riesgos psicosociales y de salud.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 1688
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1688
+  homoclave: BC-DIF-027
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: cuando el tutor (a) lo requiera y cumpla con los requisitos
+result: Alimentación, cuidado y atención infantil hasta por 9 horas, servicio de enfermería preventiva y atención
+  educativa
+cost:
+  type: fijo
+  amount_mxn: 500.0
+  text: 'COSTO: $500 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Hasta cumplir la edad límite
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tecate
+  name: Centro de Atención Infantil DIF Tecate
+  address: 'Calle 24 de febrero  #200, 1ero de Mayo , Tecate, 21200'
+- municipality: San Quintín
+  name: Centro de Atención Infantil DIF San Quintín
+  address: 'Ignacio López Rayón #s/n, Ricardo Flores Magón, San Quintín, 22940'
+scenarios:
+- name: Presencial
+  requirements:
+  - text: Fotografía tamaño infantil del menor beneficiario
+    cites:
+    - source: retys
+  - text: Acta de nacimiento (De todos los menores que viven en el domicilio)
+    cites:
+    - source: retys
+  - text: CURP (del menor beneficiario)
+    cites:
+    - source: retys
+  - text: Credencial de elector (De todos los mayores de edad que vivan en el domicilio)
+    cites:
+    - source: retys
+  - text: CURP (tutores)
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes del Tutor (RFC)
+    cites:
+    - source: retys
+  - text: Certificado médico del beneficiario
+    cites:
+    - source: retys
+  - text: En caso de que el tutor estudie (presentar constancia de estudios)
+    cites:
+    - source: retys
+  - text: En caso de que el beneficiario presente alguna discapacidad (presentar diagnóstico médico)
+    cites:
+    - source: retys
+  - text: Comprobante de Ingresos (De todos los adultos que trabajen o reciban pensión)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (Que no exceda de tres meses de antiguedad)
+    cites:
+    - source: retys
+  - text: En caso de que el tutor no cuente con empleo (realizar un escrito que describa su situación y compromiso
+      de encontrar trabajo, fecha y firma)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Atención Infantil DIFBC Estatal para entregar los requisitos
+    - Personal del Centro de Atención Infantil DIFBC revisa que los documentos se encuentren completos y en orden,
+      y entrega al ciudadano formatos de solicitud de inscripción y autorización.
+    - El ciudadano deberá llenar los formatos en el Centro de Atención Infantil DIFBC
+    - Dar respuesta a estudio socioeconómico, el cual será aplicado por personal del Centro de Atención Infantil
+      DIFBC
+    - Personal del Centro de Atención Infantil DIFBC evaluará conforme a las Reglas de Operación del programa la
+      documentación entregada, la solicitud y el estudio socioeconómico.
+    - Se le proporciona a la madre, padre o persona que ejerce la tutoría que fueron aceptados el recibo de pago
+      para cubrir la cuota de recuperación por concepto de cuota semanal, informando la fecha de ingreso del menor
+      al CAI DIFBC
+    - Se entregará al tutor una carta compromiso la cual deberá firmar de consentimiento que acepta los términos
+      y condiciones de la estancia del menor en el CAI DIFBC
+    - El ciudadano presentará dicha carta compromiso firmada, comprobante de haber realizado el pago semanal al
+      Centro de Atención Infantil DIFBC
+    - El ciudadano presentará al niño/niña en el Centro de Atención Infantil DIFBC donde firmará las listas de asistencia
+      diariamente
+  notes: Madres, padres, tutores o principales cuidadores que tengan niñas o niños de 43 días de nacidos a 5 años
+    de 11 meses de edad y niñas o niños de 43 días de nacidos a 11 años 11 meses de edad con alguna discapacidad
+    que no cuenten con servicio de seguridad social
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 1
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al Centro de Atención Infantil DIFBC Estatal para entregar los requisitos
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Personal del Centro de Atención Infantil DIFBC revisa que los documentos se encuentren completos y en
+    orden, y entrega al ciudadano formatos de solicitud de inscripción y autorización.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El ciudadano deberá llenar los formatos en el Centro de Atención Infantil DIFBC
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Dar respuesta a estudio socioeconómico, el cual será aplicado por personal del Centro de Atención Infantil
+    DIFBC
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Personal del Centro de Atención Infantil DIFBC evaluará conforme a las Reglas de Operación del programa
+    la documentación entregada, la solicitud y el estudio socioeconómico.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se le proporciona a la madre, padre o persona que ejerce la tutoría que fueron aceptados el recibo de
+    pago para cubrir la cuota de recuperación por concepto de cuota semanal, informando la fecha de ingreso del
+    menor al CAI DIFBC
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se entregará al tutor una carta compromiso la cual deberá firmar de consentimiento que acepta los términos
+    y condiciones de la estancia del menor en el CAI DIFBC
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará dicha carta compromiso firmada, comprobante de haber realizado el pago semanal
+    al Centro de Atención Infantil DIFBC
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará al niño/niña en el Centro de Atención Infantil DIFBC donde firmará las listas
+    de asistencia diariamente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1688: Solicitud de Inscripción para Centro de Atención Infantil DIF'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1688
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

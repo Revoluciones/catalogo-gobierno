@@ -1,0 +1,175 @@
+id: mx-bcn-retys-1096-expedicion-de-documento-que-autoriza-a-menores-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de Documento que Autoriza a Menores de Edad a Prestar sus Servicios en un Centro de Trabajo
+summary: Solicitud de documento que autoriza a las y los menores en edad permisible, a prestar sus servicios en
+  un centro de trabajo.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1096
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1096
+  homoclave: BC-STPS-004
+who_can:
+- Interesado
+when: Cuando deseé laborar un menor de edad que tenga 15 años en adelante
+result: Documento de autorización de trabajo
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 60 DÍAS
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Inspección del Trabajo
+  address: 'Rómulo O´Farril #938, Centro Cívico y Comercial, Mexicali, 21000'
+- municipality: Tijuana
+  name: Inspección del Trabajo Delegación Tijuana
+  address: 'Bulevar Gustavo Diaz Ordaz #12649, El Paraiso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Inspección del Trabajo Delegación Ensenada
+  address: 'Carretera Transpeninsular #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: San Quintín
+  name: Inspección del Trabajo San Quintín
+  address: 'Avenida A #s/n, Centro de Gobierno, San Quintín, 22930'
+scenarios:
+- name: Menores
+  requirements:
+  - text: Acta de nacimiento original y copia
+    cites:
+    - source: retys
+  - text: CURP original y copia
+    cites:
+    - source: retys
+  - text: Comprobante de estudios (constancia, boleta de fecha reciente o comprobante de haber terminado preparatoria
+      original y copia. si el menor no estudia y tiene hijo(s), presentar el acta de nacimiento del hijo(s) en original
+      y copia
+    cites:
+    - source: retys
+  - text: Certificado médico expedido por institución de salud pública de gobierno, cruz roja o doctor particular
+    cites:
+    - source: retys
+  - text: Escrito de la empresa donde prestará sus servicios indicando nombre y dirección de la empresa, nombre
+      del menor, función a desempeñar, sueldo, horario y días que laborará (no deberá trabajar el domingo)
+    cites:
+    - source: retys
+  - text: Dos fotografías tamaño infantil, de frente, actualizada
+    cites:
+    - source: retys
+  - text: Identificación con fotografía reciente (credencial de la escuela, pasaporte mexicano, licencia de manejo
+      de estudiante, tarjeta de afiliación al imss) original y copia
+    cites:
+    - source: retys
+  - text: Jóvenes de 15 años deben venir acompañado (a) por su mamá o papá, los cuales deberán traer original y
+      copia fotostática de su identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acceder a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha para realizar
+      cita
+    - Presentarse en el módulo y día de cita
+    - Recepción de los documentos así como del menor
+    - Revisar la documentación e información
+    - Agregar los datos del menor (nombre del menor, nombre y domicilio de la empresa, sueldo, horario, puesto)
+      y fotografía
+    - Firma y sello del permiso
+  notes: Trabajo menores
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 123 Apartado a Fracción III
+- source: ley2
+  pinpoint: Artículos 22, 22 Bis, 23, 173, 180 Fracciones II al 191
+- source: ley3
+  pinpoint: Artículos 113 y 31
+- source: ley4
+  pinpoint: Artículos 76, 77 y 78
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acceder a la liga haciendo clic en el botón "iniciar trámite" ubicado en la parte inferior derecha para
+    realizar cita
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentarse en el módulo y día de cita
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recepción de los documentos así como del menor
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Revisar la documentación e información
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Agregar los datos del menor (nombre del menor, nombre y domicilio de la empresa, sueldo, horario, puesto)
+    y fotografía
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Firma y sello del permiso
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1096: Expedición de Documento que Autoriza a Menores de Edad a Prestar sus Servicios en
+      un Centro de Trabajo'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1096
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley General de Transparencia y Acceso a la Información Pública
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley General de los Derechos de Niñas, Niños y Adolescentes
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

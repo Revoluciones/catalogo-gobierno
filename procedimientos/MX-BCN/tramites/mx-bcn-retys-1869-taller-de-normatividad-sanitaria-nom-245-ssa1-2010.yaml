@@ -1,0 +1,131 @@
+id: mx-bcn-retys-1869-taller-de-normatividad-sanitaria-nom-245-ssa1-2010
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Taller de Normatividad Sanitaria NOM-245-SSA1-2010, Requisitos Sanitarios y Calidad del Agua que deben cumplir
+  las Albercas
+summary: Taller/Capacitación
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1869
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1869
+  homoclave: BC-COEPRIS-072
+who_can:
+- Otro
+when: Cada cambio de responsable de alberca
+result: Constancia
+cost:
+  type: fijo
+  amount_mxn: 450.0
+  text: 'COSTO: $ 450.00 pesos mexicanos por persona'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: UNIDAD REGIONAL MEXICALI
+  address: 'Avenida de la Patria #808, Centro cívico, Mexicali, 22010'
+- municipality: Tijuana
+  name: UNIDAD REGIONAL METROPOLITANA
+  address: 'CALLE HERMENEGILDO GALEANA Y AVENIDA REVOLUCION #8133, ZONA CENTRO, Tijuana, 22000'
+- municipality: Ensenada
+  name: UNIDAD REGIONAL ENSENADA
+  address: 'CALLE CUARTA Y OBREGON #389, Zona centro, Ensenada, 22880'
+- municipality: San Quintín
+  name: UNIDAD REGIONAL SAN QUINTIN
+  address: 'Avenida benito juarez #108, Vicente guerrero, San Quintín, 22920'
+scenarios:
+- name: Taller de Normatividad Sanitaria, Requisitos Sanitarios y Calidad de Agua que deben cumplir albercas
+  requirements:
+  - text: Original y Copia de la identificación oficial de la persona que busca tomar el taller
+    cites:
+    - source: retys
+  - text: Comprobante de pago
+    cites:
+    - source: retys
+  - text: Operar un establecimiento con alberca lista para entrar en funciones
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Generar recibo de pago en el distrito de salud del municipio correspondiente
+    - Realizar el pago en el distrito de salud del municipio correspondiente
+    - Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para completar
+      la inscripción al taller
+    - Presentarse en el día y la hora programada para tomar el taller
+    - Pasar con calificación aprobatoria la evaluación final
+    - Se emite el certificado correspondiente
+  notes: Taller de Normatividad Sanitaria, Requisitos Sanitarios y Calidad de Agua que deben cumplir albercas
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 194, 197 Y 210
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Generar recibo de pago en el distrito de salud del municipio correspondiente
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago en el distrito de salud del municipio correspondiente
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir a la Unidad Regional del municipio correspondiente con toda la documentación requerida para completar
+    la inscripción al taller
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Presentarse en el día y la hora programada para tomar el taller
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Pasar con calificación aprobatoria la evaluación final
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se emite el certificado correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1869: Taller de Normatividad Sanitaria NOM-245-SSA1-2010, Requisitos Sanitarios y Calidad
+      del Agua que deben cumplir las Albercas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1869
+    version_date: 15/Junio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

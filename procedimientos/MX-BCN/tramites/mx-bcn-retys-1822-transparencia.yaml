@@ -1,0 +1,116 @@
+id: mx-bcn-retys-1822-transparencia
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Transparencia
+summary: Garantizar que todas las personas puedan ejercer su derecho de acceso a la información pública, conforme
+  a la Ley de Transparencia de Baja California.
+authority:
+  name: Universidad Intercultural de Baja California
+official_ids:
+  retys_id: 1822
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1822
+  homoclave: BC-UIBC-006
+who_can:
+- Otro
+when: Cualquier momento que la persona interesada requiera la información
+result: Acceso a la información pública o de protección de datos personales, sin distinción de género, edad, origen
+  étnico o condición social
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: San Quintín
+  name: Unidad de Transparencia de la UIBC
+  address: 'S/N #Lote B-1 , Fraccion 5, Manzana 102, San Quintin, San Quintín, 22930'
+scenarios:
+- name: Acceso a la Transparencia
+  requirements:
+  - text: PRESENTAR SOLICITUD CON NOMBRE
+    cites:
+    - source: retys
+  - text: DESCRIPCION CLARA DE LA INFORMACION SOLICITADA
+    cites:
+    - source: retys
+  - text: MEDIO PARA RECIBIR NOTIFICACIONES
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - TENER USUARIO DE TRANPARENCIA
+    - INGRESAR CON EL USUARIO
+    - SELECCIONAR EL APARTADO DE SOLICITUD DE INFORMACION
+    - SELECCIONA LA INSTITUCION DE LA QUE SE REQUIERE INFORNACION, EN ESTE CASO LA UNIVERSIDAD INTERCULTURAL DE
+      BAJA CALIFORNIA(UIBC)
+    - REDACTAR LA SOLICITUD DE INFORMACION PARA POSTERIORMENTE ENVIARLA Y UNA VEZ FINALIZADO RECIBIRA UN ACUSE DE
+      LA SOLICITUD FORMULADDA
+  notes: Aquellas personas interesadas se pueden dirigir al buscador colocando "uibc san quintin", entrar el primer
+    link e ir a la parte inferior y seleccionar "transparencia" e ir nuevamente en la parte inferior y seleccionar
+    "consultar."
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 6°
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: TENER USUARIO DE TRANPARENCIA
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: INGRESAR CON EL USUARIO
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: SELECCIONAR EL APARTADO DE SOLICITUD DE INFORMACION
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: SELECCIONA LA INSTITUCION DE LA QUE SE REQUIERE INFORNACION, EN ESTE CASO LA UNIVERSIDAD INTERCULTURAL
+    DE BAJA CALIFORNIA(UIBC)
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: REDACTAR LA SOLICITUD DE INFORMACION PARA POSTERIORMENTE ENVIARLA Y UNA VEZ FINALIZADO RECIBIRA UN ACUSE
+    DE LA SOLICITUD FORMULADDA
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1822: Transparencia'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1822
+    version_date: 22/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

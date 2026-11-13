@@ -1,0 +1,113 @@
+id: mx-bcn-retys-653-dictamen-de-factibilidad-de-servicios-de-agua-pota
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Dictamen de factibilidad de servicios de agua potable, alcantarillado sanitario y alcantarillado pluvial.
+summary: Expedición de dictamen de factibilidad de los servicios de agua potable, alcantarillado sanitario y pluvial
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 653
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/653
+  homoclave: BC-CESPM-025
+who_can:
+- Interesado
+when: Cuando requieres el servicio
+result: Dictamen de factibilidad de servicio
+cost:
+  type: fijo
+  amount_mxn: 554.96
+  text: 'COSTO: $554.96 m.n. por cada sistema el costo del servicio variará durante el ejercicio 2026 de acuerdo
+    a la actualización por la variación que tenga el índice nacional de precios y cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Sinaloa #1399, Vallarta, Mexicali, 21270'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Presentar solicitud debidamente llenada.
+    cites:
+    - source: retys
+  - text: Presentar croquis de localización del terreno. Se aceptaran los deslindes como plano de la configuración
+      del predio.
+    cites:
+    - source: retys
+  - text: Entregar copia del recibo de pago por cada uno de los servicios solicitados.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar solicitud para factibilidad proporcionada por la zona comercial más cercana.
+    - Realizar el pago respectivo en la zona comercial más cercana.
+    - Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+    - Recoger el dictamen de factibilidad en la subdirección técnica.
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ARTICULO 1, 2 Y 14
+- source: ley2
+  pinpoint: 9 inciso G fracción 2
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar solicitud para factibilidad proporcionada por la zona comercial más cercana.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago respectivo en la zona comercial más cercana.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recoger el dictamen de factibilidad en la subdirección técnica.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 653: Dictamen de factibilidad de servicios de agua potable, alcantarillado sanitario y
+      alcantarillado pluvial.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/653
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY QUE REGLAMENTA EL SERVICIO DE AGUA POTABLE EN EL ESTADO DE BAJA CALIFORNIA.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Dictamen de factibilidad de servicios de agua potable, alcantarillado sanitario y alcantarillado
+  pluvial. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

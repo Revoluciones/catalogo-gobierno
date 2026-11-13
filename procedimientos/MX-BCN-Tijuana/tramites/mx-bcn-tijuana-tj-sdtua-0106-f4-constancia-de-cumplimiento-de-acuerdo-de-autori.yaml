@@ -1,0 +1,111 @@
+id: mx-bcn-tijuana-tj-sdtua-0106-f4-constancia-de-cumplimiento-de-acuerdo-de-autori
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Infraestructura y vivienda
+title: F4 Constancia de Cumplimiento de Acuerdo de Autorización
+summary: Certifica que el urbanizador o promotor inmobiliario ha cumplido con las obligaciones establecidas en la
+  Autorización de la Acción de Urbanización. Una vez acreditado el cumplimiento, se otorga la autorización para
+  realizar la venta, escrituración o traslación de dominio de los lotes o casas resultantes del proyecto. En el
+  caso de parques industriales, permite la venta y/o escrituración de lotes específicos.
+authority:
+  name: Secretaría de Desarrollo Territorial y Urbano (Ayuntamiento de Tijuana)
+  unit: Dirección de Administración Urbana
+official_ids:
+  homoclave: TJ-SDTUA-0106
+who_can:
+- Interesado
+when: Una vez que el urbanizador o promotor inmobiliario haya cumplido con todas las obligaciones establecidas en
+  la Autorización de la Acción de Urbanización
+result: Constancia
+requirements:
+- text: Llenar y firmar solicitud de la dirección de administración urbana (propietario o representante legal).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Recibo de pago de derechos (conforme a la ley de ingresos).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Certificado de inscripción ante el registro público de la propiedad y del comercio (del acuerdo de autorización
+    y memorias técnico descriptivas de lotificación y sus modificaciones).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta de terminación de obra (firmada por las entidades responsables y/o presupuesto de las obras de urbanización
+    faltantes, deberá desglosarse por conceptos y números generadores de obra, exhibiendo la garantía correspondiente).
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Reporte fotográfico
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Plano de lotificación autorizado y sus modificaciones.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Archivo digital de la siguiente información: acuerdo publicado, fianza vigente, donación municipal, donación
+    escolar, donación CESPT, calentamiento líneas CFE, bitácora de CESPT'
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: fijo
+  amount_mxn: 9226.43
+  text: 'Constancia de cumplimiento de requisitos para traslación de dominio en fraccionamientos, cada vez que se
+    solicite: 78.65 UMA ($9,226.43). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 1 día
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 3 meses
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Administración Urbana
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649739275 ext. 7275
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SDTUA-0106: F4 Constancia de Cumplimiento de Acuerdo de Autorización'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SDTUA-0106
+    version_date: '2026-08-17'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento de Acciones de Urbanización para el Municipio de Tijuana
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20241227113533997_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: ArtÍculo 31, fracción XVII, inciso K) de lanLey de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal del 2026
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Cumplir con lo que indica en el reglamento.'

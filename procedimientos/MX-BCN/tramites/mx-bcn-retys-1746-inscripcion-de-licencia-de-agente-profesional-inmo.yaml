@@ -1,0 +1,233 @@
+id: mx-bcn-retys-1746-inscripcion-de-licencia-de-agente-profesional-inmo
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Inscripción de Licencia de Agente Profesional Inmobiliario de Baja California
+summary: Documento que acredita las actividades de intermediación de los agentes y agencias inmobiliarias
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 1746
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1746
+  homoclave: BC-SEI-011
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera la acreditación como Agente Profesional Inmobiliario
+result: Licencia y Registro Estatal
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Costo total de Inscripción $5,349.00 moneda nacional, que incluye: 1.- Estudio y evaluación de factibilidad
+    de e incorporación al padrón de agentes. $5,067.00 moneda nacional. 2.- Constancia de registro. $282.00 moneda
+    nacional.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Avenida República de Honduras y Justo Sierra #377, Cuauhtémoc Sur, Mexicali, 21200'
+- municipality: Tijuana
+  name: Direccción de Emprendimiento y Desarrollo Empresarial
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Carretera Transpeninsular #6500, Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Baja California #53, La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'José Aros Aguilar #2003, Fraccionamiento Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Benito Juárez #1108, Colonia Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Dirección de Sectores y Cadenas Productivas
+  address: 'Mar de Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Inscripción Persona Fisica
+  requirements:
+  - text: Solicitud de Inscripción al Registro Estatal de Agentes Profesionales Inmobiliarios, en línea.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente del agente inmobiliario; en caso de ser extranjero, documento migratorio
+      vigente que acredite residencia permanente.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio fiscal registrado ante el SAT, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Constancia y/o certificado de curso en operaciones inmobiliarias, que cuente con RVOE, con duración mínima
+      de 40 horas y vigencia documental de 2 años.
+    cites:
+    - source: retys
+  - text: Contrato de adhesión ¨Prestación de servicios de intermediación para la compraventa inmobiliaria¨ registrado
+      ante PROFECO, de acuerdo a la NOM-247-SE-2021.
+    cites:
+    - source: retys
+  - text: Constancia de antecedentes penales, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Solicitud firmada y carta compromiso aceptando cumplir con los programas y actualizaciones en materia
+      de operaciones inmobiliarias.
+    cites:
+    - source: retys
+  - text: Fotografía reciente, con fondo blanco, vestimenta formal, mostrando hombros a partir de la clavícula,
+      en formato PNG.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar la solicitud en línea, haciendo clic en el botón “Iniciar trámite”, o bien, capturarla de manera impresa.
+    - Subir documentación en línea o presentar expediente con documentación completa en la dependencia.
+    - Revisión de documentación recibida.
+    - Realizar el pago de derechos, en caso de ser aprobada la solicitud.
+    - Asignación de folio por parte del servidor público.
+    - E-firma del Secretario de Economía firma de resultado y emisión de constancia.
+    - Notificación por correo electrónico al solicitante, indicando lugar, fecha y datos de contacto para la entrega
+      de la constancia.
+  notes: Regular las actividades de intermediación y las operaciones inmobiliarias realizadas por los Agentes Profesionales
+    Inmobiliarios en el Estado de Baja California.
+- name: Inscripción Persona Moral
+  requirements:
+  - text: Formulario en línea o formato de inscripción al Registro Estatal de Agentes Profesionales Inmobiliarios.
+    cites:
+    - source: retys
+  - text: Acta constitutiva.
+    cites:
+    - source: retys
+  - text: Hoja de inscripción en el Registro Público de la Propiedad y del Comercio.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente del representante legal de la agencia; en caso de ser extranjero, documento
+      migratorio vigente que acredite residencia permanente.
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio fiscal registrado ante el sat, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Constancia y/o certificado de curso en operaciones inmobiliarias, que cuente con RVOE, con duración mínima
+      de 40 horas y que tenga una vigencia documental de 2 años.
+    cites:
+    - source: retys
+  - text: Constancia de antecedentes penales del representante legal, no mayor a 3 meses.
+    cites:
+    - source: retys
+  - text: Contrato de adhesión ¨Prestación de servicios de intermediación para la compraventa inmobiliaria¨ registrado
+      ante PROFECO, de acuerdo a la NOM-247-SE-2021.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar la solicitud en línea, haciendo clic en el botón “Iniciar trámite”, o bien, capturarla de manera impresa.
+    - Subir documentación en línea o presentar expediente con documentación completa en la dependencia.
+    - Revisión de documentación recibida.
+    - Realizar el pago de derechos, en caso de ser aprobada la solicitud.
+    - Asignación de folio por parte del servidor público.
+    - E-firma del Secretario de Economía firma de resultado y emisión de constancia.
+    - Notificación por correo electrónico al solicitante, indicando lugar, fecha y datos de contacto para la entrega
+      de la constancia.
+  notes: Regular las actividades de intermediación y las operaciones inmobiliarias realizadas por los Agentes Profesionales
+    Inmobiliarios en el Estado de Baja California.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 1, 3, 8 y 9
+- source: ley2
+  pinpoint: Capítulo V, Artículo 16, fracción I, incisos A y D
+- source: ley3
+  pinpoint: Artículo 24, fracción VI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar la solicitud en línea, haciendo clic en el botón “Iniciar trámite”, o bien, capturarla de manera
+    impresa.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Subir documentación en línea o presentar expediente con documentación completa en la dependencia.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisión de documentación recibida.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago de derechos, en caso de ser aprobada la solicitud.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Asignación de folio por parte del servidor público.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: E-firma del Secretario de Economía firma de resultado y emisión de constancia.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Notificación por correo electrónico al solicitante, indicando lugar, fecha y datos de contacto para la
+    entrega de la constancia.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1746: Inscripción de Licencia de Agente Profesional Inmobiliario de Baja California'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1746
+    version_date: 11/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley que Regula las Actividades de los Agentes Profesionales Inmobiliarios en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Economía e Innovación del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Inscripción Agentes Profesionales Inmobiliarios de Baja California. Copiado tal cual de
+  RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

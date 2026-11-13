@@ -1,0 +1,111 @@
+id: mx-bcn-retys-456-certificado-de-incapacidad
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Certificado de Incapacidad
+summary: 'Obtener la incapacidad producto de enfermedad general, profesional o accidente de trabajo expedida y aprobada
+  por el médico tratante. Para soporte técnico: Si tiene problemas de acceso para la aplicación, favor de comunicarse
+  al teléfono mostrado en la ficha de este trámite.'
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 456
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/456
+  homoclave: BC-ISSSTECALI-011
+who_can:
+- Interesado
+when: Cuando requiera consultar sus incapacidades aprobadas.
+result: Certificado de incapacidad
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 72 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: TIEMPO INDICADO EN CERTIFICADO DE INCAPACIDAD CONSIDERANDO DÍAS NATURALES
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Jefatura de Departamento de Hospitales
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Jefatura de Departamento de Clínicas y Consultorios
+  address: 'Calle Calafia #1115 , Centro Cívico, Mexicali, 21000'
+scenarios:
+- name: Certificado de Incapacidad
+  requirements:
+  - text: Expedición del Certificado de Incapacidad por parte del Médico tratante en el Sistema Electrónico de incapacidades
+      del instituto
+    cites:
+    - source: retys
+  - text: Numero de afiliación y contraseña para acceso en servicios en línea
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Haz clic en Sistema Integral de Servicios a Afiliados (SISA). Regístrate si aún no tienes una cuenta.
+    - Introducir numero de afiliación y contraseña
+    - Seleccionar el menu de servicios medicos y presionar click en tu incapacidades
+    - Obtener certificado de incapacidad aprobado
+  notes: Asegurado(a)
+legal_basis:
+- source: ley1
+  pinpoint: 3,10 y 14
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haz clic en Sistema Integral de Servicios a Afiliados (SISA). Regístrate si aún no tienes una cuenta.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Introducir numero de afiliación y contraseña
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Seleccionar el menu de servicios medicos y presionar click en tu incapacidades
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Obtener certificado de incapacidad aprobado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 456: Certificado de Incapacidad'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/456
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Procedimiento para expedición de certificados de incapacidad de ISSSTECALI, validado el 26 de julio de
+      2022. con clave SGM-DAPS-PR-001-01
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

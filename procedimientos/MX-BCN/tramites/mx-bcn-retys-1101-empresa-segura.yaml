@@ -1,0 +1,138 @@
+id: mx-bcn-retys-1101-empresa-segura
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Empresa Segura
+summary: Asesoría y capacitación en la normatividad oficial en materia de seguridad e higiene, efectuando su seguimiento
+  hasta su reconocimiento como empresa segura.
+authority:
+  name: Secretaría del Trabajo y Previsión Social del Estado de Baja California
+official_ids:
+  retys_id: 1101
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1101
+  homoclave: BC-STPS-007
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera asesoría
+result: Dictamen
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: UN AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Previsión Social
+  address: 'Av. Alvaro Obregón #537, Centro Primera Sección, Mexicali, 211000'
+scenarios:
+- name: Empresa
+  requirements:
+  - text: Solicitud de inscripción
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/6519
+  modes:
+  - name: Mixto
+    steps:
+    - Presentarse en las oficinas
+    - Promoción en las empresas
+    - Inscripción al programa empresa segura
+    - Asignación de asesor de empresa segura
+    - Realizar recorrido dentro de la empresa
+    - Elaboración de dictamen a la empresa
+    - La empresa da plazos que incluya involucramiento directivo planeacion,aplicación y evaluación asi como el
+      control de información y documentos
+    - Se realiza minuta de cumplimiento
+    - Ya certificada la empresa anualmente se realizará verificación de cumplimiento donde deberan mantener actualizados
+      los documentos para la recertificación
+  notes: Empresa
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 18 fracciones VI,VII,VIII,IX,XI y XII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Promoción en las empresas
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Inscripción al programa empresa segura
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Asignación de asesor de empresa segura
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Realizar recorrido dentro de la empresa
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Elaboración de dictamen a la empresa
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: La empresa da plazos que incluya involucramiento directivo planeacion,aplicación y evaluación asi como
+    el control de información y documentos
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Se realiza minuta de cumplimiento
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Ya certificada la empresa anualmente se realizará verificación de cumplimiento donde deberan mantener
+    actualizados los documentos para la recertificación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1101: Empresa Segura'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1101
+    version_date: 15/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría del Trabajo y Previsión Social.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

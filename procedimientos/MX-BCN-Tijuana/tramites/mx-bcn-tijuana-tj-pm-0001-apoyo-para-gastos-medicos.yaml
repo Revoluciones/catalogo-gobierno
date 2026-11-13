@@ -1,0 +1,146 @@
+id: mx-bcn-tijuana-tj-pm-0001-apoyo-para-gastos-medicos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Programas y apoyos sociales, Salud
+title: Apoyo para Gastos Médicos
+summary: Apoyo para gastos médicos en dinero o en especie que se otorga a la población de escasos recursos cuando
+  necesite silla de ruedas, aparatos auditivos, lentes, aparatos ortopédicos, gastos médicos, gastos hospitalarios,
+  honorarios médicos, medicamentos, prótesis o aparatos de ortopedia y cualquier otro artículo médico necesario
+  para preservar o recuperar la salud.
+authority:
+  name: Presidencia Municipal (Ayuntamiento de Tijuana)
+  unit: Gestión Social
+official_ids:
+  homoclave: TJ-PM-0001
+who_can:
+- Interesado
+when: Cuando una persona de escasos recursos necesite adquirir artículos médicos o cubrir gastos médicos
+result: Apoyo
+requirements:
+- text: Identificación oficial con fotografía
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Comprobante de domicilio no mayor a 3 meses en la ciudad de Tijuana
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Cotización del proveedor del tipo de apoyo que se solicita
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Formatos del trámite debidamente llenados (si no puedes imprimir el formulario, puedes ir a la oficina y
+    te lo darán para que lo llenes a mano)
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 5 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 mes
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Gestión Social
+  address: Avenida Independencia 1350 Zona Urbana Río C.P. 22010, Tijuana, Baja California, México
+  phones: 6649737000 ext. 7798
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Centro
+  address: Calle Coahuila entre Madero y Negrete 8307, zona Centro, Tijuana, Baja California
+  phones: '6646885300'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegacion San antonio de los Buenos
+  address: Avenida Miraflores esquina calle Cabo San Lucas 8351 fraccionamiento El Rubí, Tijuana, Baja Californ
+  phones: '6646356112'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Cerro Colorado
+  address: Calle Canada 7171, Río Tijuana tercera etapa, Tijuana, Baja California, C.P. 22226
+  phones: '6648165849'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Mesa
+  address: Avenida De los Charros y Allende 4200, fraccionamiento Moreno, Tijuana, Baja California C.P.22105
+  phones: '6641042100'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Sánchez Taboada
+  address: Avenida Panamericano 9757, Colinas de California, anexa Panamericano, Tijuana, Baja California, C.P.
+  phones: '6641345042'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa A. L. R.
+  address: Avenida Aranjuez 22750, Fraccionamiento Villa Fontana Sección XIII, Tijuana, Baja California, C.P. 2
+  phones: '6646278707'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Secretaria de Bienestar
+  address: Avenida Independencia 1350 Zona Urbana Río C.P. 22010, Tijuana, Baja California, México
+  phones: 6649737000 ext. 7416
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Regidores
+  address: Avenida Independencia 1350 Zona Urbana Río C.P. 22010, Tijuana, Baja California, México
+  phones: '6649737189'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación La Presa Este
+  address: Avenida De los Cerezos S/N Fraccionamiento El Refugio, Tijuana, Baja California, C.P.22010
+  phones: '6641026001'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Playas de Tijuana
+  address: Paseo Pedregal y Avenida Del Agua S/N, Tijuana, Baja California, C.P. 22220
+  phones: '6631133718'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+- municipality: Tijuana
+  name: Delegación Otay Centenario
+  address: Avenida Instituto Politécnico Nacional 1462, Fraccionamiento Garita de Otay, Tijuana Baja California
+  phones: '6646474222'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-PM-0001: Apoyo para Gastos Médicos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-PM-0001
+    version_date: '2026-11-05'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento para la Administración, Ejecución, Asignación y Comprobación del Gasto de Orden Social del
+      Ayuntamiento de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20260319122210636_wp.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: programa de apoyo. Criterio para resolver: De acuerdo con la disponibilidad de la partida de Gasto
+  de Orden Social (recurso), reunir los requisitos y de la valoración por parte de Desarrollo Social Municipal o
+  del Sistema de Desarrollo Integral de la Familia'

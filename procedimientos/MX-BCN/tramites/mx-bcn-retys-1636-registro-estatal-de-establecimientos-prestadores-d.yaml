@@ -1,0 +1,258 @@
+id: mx-bcn-retys-1636-registro-estatal-de-establecimientos-prestadores-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Registro Estatal de Establecimientos Prestadores de Servicios de Salud y Bienestar (REPSSABI)
+summary: Registro que respalda la excelencia en los servicios médicos brindados por los establecimientos.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 1636
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1636
+  homoclave: BC-COEPRIS-070
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se quiera autorregular y certificar un establecimiento
+result: Una constancia
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 7 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Enlace de Fomento Sanitario
+  address: 'Calle hermenegildo galeana y avenida revolución #8133, Zona centro, Tijuana, 22000'
+scenarios:
+- name: Hospitales y unidades quirúrgicas
+  requirements:
+  - text: Licencia de actos quirúrgicos
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Licencia de farmacia intrahospitalaria
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click para iniciar el trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para hospitales y unidades quirúrgicas
+- name: Consultorios generales y/o de especialidad
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para consultorios generales y/o de especialidad
+- name: Consultorios de estomatología
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para consultorios de estomatología
+- name: Laboratorios clínicos
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para laboratorios clínicos
+- name: Farmacias y droguerías
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Licencia sanitaria para farmacia o botica (con venta de medicamentos controlados)
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para farmacias y droguerías
+- name: Ambulancias
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para ambulancias
+- name: Casas de recuperación
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para casas de recuperación
+- name: Casas de asistencia adultos mayores
+  requirements:
+  - text: Aviso de funcionamiento
+    cites:
+    - source: retys
+  - text: Aviso de responsable sanitario
+    cites:
+    - source: retys
+  - text: Titulo y cédula de responsable sanitario
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+      o dar click en iniciar trámite'
+    - Llenar cuestionario
+    - Aplicar cédula de autoevaluación
+    - Recibir visita de uno de nuestros colaboradores
+  notes: Distintivo para casas de asistencia adultos mayores
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 110, 111, 112 y 132
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Ingresar a la siguiente liga: https://www.ventanilladigital.bajacalifornia.gob.mx/tra/55921acb1431b2ba0337309f61664959
+    o dar click para iniciar el trámite'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Llenar cuestionario
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Aplicar cédula de autoevaluación
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recibir visita de uno de nuestros colaboradores
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1636: Registro Estatal de Establecimientos Prestadores de Servicios de Salud y Bienestar
+      (REPSSABI)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1636
+    version_date: 19/Agosto /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Registro Estatal de Establecimientos Prestadores de Servicios de Salud y Bienestar.. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

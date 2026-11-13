@@ -1,0 +1,225 @@
+id: mx-bcn-retys-1761-solicitud-de-audiencia
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Audiencia
+summary: La solicitud de audiencia es el primer paso que los usuarios habrán de tomar para iniciar con su procedimiento
+  conciliatorio.
+authority:
+  name: Centro de Conciliación Laboral
+official_ids:
+  retys_id: 1761
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1761
+  homoclave: BC-CCL-001
+who_can:
+- Interesado
+when: Al tener un conflicto laboral
+result: Acceso a justicia laboral
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 45 Días Naturales'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 3 días hábiles
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+offices:
+- municipality: Mexicali
+  name: Unidad Mexicali
+  address: 'Rómulo O''Farril #938, Centro Cívico , Mexicali, 21000'
+- municipality: Tijuana
+  name: Unidad Tijuana Otay
+  address: 'Aeropuerto #1900, Nueva Tijuana , Tijuana, 22435'
+- municipality: Tijuana
+  name: Unidad Tijuana Plaza Patria
+  address: 'Boulevard Gustavo Diaz Ordaz  #12649, El Paraíso , Tijuana, 22106'
+- municipality: Ensenada
+  name: Unidad Ensenada
+  address: 'Calle Tercera y Avenida Floresta  #321, Obrera , Ensenada, 22830'
+- municipality: Ensenada
+  name: Unidad San Felipe
+  address: 'Avenida Mar de Cortéz #1129-2, Zona Urbana, Ensenada, 21850'
+- municipality: Ensenada
+  name: Unidad San Quintín
+  address: 'Carretera Transpeninsular  #1321-5, San Quintín , Ensenada, 22940'
+- municipality: Tecate
+  name: Unidad Tecate
+  address: 'Misión Santo Domingo  #1052-6, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Unidad Rosarito
+  address: 'Boulevard Benito Juárez  #984-1, Centro, Playas de Rosarito, 22707'
+scenarios:
+- name: Conflicto Laboral
+  requirements:
+  - text: Informacion personal básica (nombre completo, dirección, edad, contacto)
+    cites:
+    - source: retys
+  - text: 'Datos sobre el empleo: salario, horas laboradas, fecha de incio de labores, fecha en que se termina la
+      relacion laboral (si es el caso)'
+    cites:
+    - source: retys
+  - text: 'Información básica de empleador: nombre y/o razón social, domicilio completo y correcto'
+    cites:
+    - source: retys
+  - text: Seleccionar objeto de solicitud
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Confirmar solicitud presencialmente
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Elegir Personalidad Empledo/empleador
+    - Seleccionar el conflicto que se busca resolver
+    - Reproducir video de orientacion (recomendado a quienes usan el servicio por primera vez)
+    - Aceptar aviso de privacidad
+    - Elegir "ninguna de las anteriores" en apartado de actividad del patron
+    - Seleccionar fecha de conflicto
+    - Seleccionar objeto de solicitud
+    - Seleccionar boton de "agregar solicitante"
+    - Llenar informacion solicitada por el sistema
+    - Validar información
+    - Seleccionar botón "Agregar citado"
+    - Validar información
+    - Describir brevemente el conflicto
+    - Enviar solicitud
+    - Descargar acuse
+    - Seleccionar botón "Finalizar"
+    - Para confirmar solicitud acudir personalmente al Centro de Conciliación con una identificación oficial vigente
+  - name: Presencial
+    steps:
+    - Acudir al Centro de Conciliación
+    - Registrar visita en área de recepción
+    - Llenar formato fisico proporcionado por el personal del centro
+    - Entregar formato fisico al funcionario orientador
+    - Leer y cerciorarse de que la información sea correcta antes de firmar cualquier documento
+    - Esperar fecha de audiencia
+  notes: Cualquier conflicto que vulnere derechos laborales.
+legal_basis:
+- source: ley1
+  pinpoint: 684-B
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Elegir Personalidad Empledo/empleador
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el conflicto que se busca resolver
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Reproducir video de orientacion (recomendado a quienes usan el servicio por primera vez)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Aceptar aviso de privacidad
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Elegir "ninguna de las anteriores" en apartado de actividad del patron
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Seleccionar fecha de conflicto
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Seleccionar objeto de solicitud
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Seleccionar boton de "agregar solicitante"
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Llenar informacion solicitada por el sistema
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Validar información
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: Seleccionar botón "Agregar citado"
+  cites:
+  - source: retys
+- n: '12'
+  actor: tú (según RETyS)
+  action: Validar información
+  cites:
+  - source: retys
+- n: '13'
+  actor: tú (según RETyS)
+  action: Describir brevemente el conflicto
+  cites:
+  - source: retys
+- n: '14'
+  actor: tú (según RETyS)
+  action: Enviar solicitud
+  cites:
+  - source: retys
+- n: '15'
+  actor: tú (según RETyS)
+  action: Descargar acuse
+  cites:
+  - source: retys
+- n: '16'
+  actor: tú (según RETyS)
+  action: Seleccionar botón "Finalizar"
+  cites:
+  - source: retys
+- n: '17'
+  actor: tú (según RETyS)
+  action: Para confirmar solicitud acudir personalmente al Centro de Conciliación con una identificación oficial
+    vigente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1761: Solicitud de Audiencia'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1761
+    version_date: 12/Agosto /2025
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

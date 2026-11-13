@@ -1,0 +1,106 @@
+id: mx-bcn-retys-1405-pago-de-prestacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pago de Prestación
+summary: Se brinda asesoría y representación jurídica a todas y todos los trabajadores, así como A sus beneficiarios,
+  para llevar a cabo la defensa de sus derechos ante el tribunal laboral, siempre y cuando no cuente con un abogado
+  particular.
+authority:
+  name: Consejería Jurídica del Estado de Baja California
+official_ids:
+  retys_id: 1405
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1405
+  homoclave: BC-CJ-025
+who_can:
+- Interesado
+when: Cuando se requiera
+result: Resolución jurídica
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de la Defensoría Pública del Estado y Coordinación Estatal del Área Laboral
+  address: 'Calz. De Los Presidentes #1185, Río Nuevo, Mexicali, 21120'
+- municipality: Tijuana
+  name: Área Civil, Familiar, Administrativa y Laboral, Tijuana
+  address: 'Calle Quinta #7951, Zona Centro, Tijuana, 22000'
+- municipality: Ensenada
+  name: Área Civil, Familiar, Administrativa y Laboral, Ensenada
+  address: 'Calle Novena E Insurgentes #S/N, Bustamante, Ensenada, 22840'
+- municipality: Tecate
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, Tecate
+  address: 'Carretera Libre Tecate-Tijuana #Km 140, Paseo Del Águila, Tecate, 21440'
+- municipality: San Quintín
+  name: Área Civil, Familiar, Administrativa, Penal y Laboral, San Quintín
+  address: 'Calle Décima Y Calle A #S/N, Ciudad San Quintín, San Quintín, 22940'
+scenarios:
+- name: Adulto
+  requirements:
+  - text: Identificación Oficial INE
+    cites:
+    - source: retys
+  - text: Documento que acredite la relación laboral
+    cites:
+    - source: retys
+  - text: Demás requisitos necesarios según señale el defensor público, en su caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del municipio y área correspondiente
+  notes: De 18 años en adelante
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 685 BIS.
+- source: ley2
+  pinpoint: Artículo 2, Fracciones IV y VII.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del municipio y área correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1405: Pago de Prestación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1405
+    version_date: 05/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Federal del Trabajo.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Defensoría Pública del Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

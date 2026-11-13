@@ -1,0 +1,115 @@
+id: mx-bcn-retys-584-solicitud-de-exencion-del-impuesto-estatal-para-ac
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Exención del Impuesto Estatal para Actividades de Espectáculos
+summary: Trámite para obtener la aprobación por parte del Instituto de Servicios Culturales en relación a la exención
+  del impuesto estatal sobre actividades de diversiones y espectáculos públicos.
+authority:
+  name: Instituto de Servicios Culturales de Baja California
+official_ids:
+  retys_id: 584
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/584
+  homoclave: BC-ICBC-020
+who_can:
+- Interesado
+when: Un mes antes de la fecha de realización del evento
+result: Carta que valida la exención de impuesto estatal sobre diversiones y espectáculos públicos
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Arrendamientos y Procuración de Fondos
+  address: 'Calzada de los Presidentes y Ciudad Victoria #s/n, Zona Río Nuevo, Mexicali, 21120'
+scenarios:
+- name: Ciudadania en General
+  requirements:
+  - text: Escrito de solicitud con firma, que incluya los datos del espectáculo, lugar y fecha a realizarse con
+      explicación de motivos y datos de contacto
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Interesado lleva escrito solicitud a la oficina del Instituto de Servicios Culturales para su validación y
+      seguimiento
+    - El Instituto da respuesta y seguimiento al trámite
+    - Recibe documento que exenta del pago de impuesto para la realización del evento
+  notes: Cuando la persona interesa desee obtener el beneficio de la exención de impuesto
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+- source: ley2
+  pinpoint: Artículo 1 y 2
+- source: ley3
+  pinpoint: Artículo 27, fracción IV.
+- source: ley4
+  pinpoint: Artículo 7, fracción XV.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Interesado lleva escrito solicitud a la oficina del Instituto de Servicios Culturales para su validación
+    y seguimiento
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El Instituto da respuesta y seguimiento al trámite
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibe documento que exenta del pago de impuesto para la realización del evento
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 584: Solicitud de Exención del Impuesto Estatal para Actividades de Espectáculos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/584
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Lineamientos para la aplicación de los beneficios del Decreto de Exención del Impuesto Estatal
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Decreto tasa cero para artistas y promotores culturales independientes
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Decreto de Creación del Instituto de Servicios Culturales de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

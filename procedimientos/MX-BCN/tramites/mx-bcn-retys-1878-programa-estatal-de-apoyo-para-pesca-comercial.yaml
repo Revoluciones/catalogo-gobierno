@@ -1,0 +1,277 @@
+id: mx-bcn-retys-1878-programa-estatal-de-apoyo-para-pesca-comercial
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Programa Estatal de Apoyo para PESCA COMERCIAL
+summary: Trámite para la Recepción de Solicitudes para aplicar a los beneficios del Programa Estatal de Apoyo para
+  el Sector de Pesca y Acuacultura, enfocado en la PESCA COMERCIAL a través del apoyo subsidiario a la inversión
+  en bienes de capital estratégico para equipamiento, mantenimiento, ordenamiento, sanidad y particularmente para
+  eficientizar la operación con énfasis en el incremento o mejora de la producción, servicios y/o su comercialización.
+authority:
+  name: Secretaría de Pesca y Acuacultura de Baja California
+official_ids:
+  retys_id: 1878
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1878
+  homoclave: BC-SEPESCA-003
+who_can:
+- Representante Legal
+- Interesado
+when: 'Para año actual el periodo de Recepción de Solicitud a Cerrado, para más información consultar en: https://www.bajacalifornia.gob.mx/sepesca/Servicios'
+result: Apoyo subsidiario a la inversión en bienes de capital estratégico para equipamiento y ordenamiento.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: En el periodo que permanezca abierta la Ventanilla de Recepción de Solicitudes; en Lineamientos.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Departamento de Ordenamiento Pesquero
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Departamento de Fomento Pesquero
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Subcomponente para Modernización de Flota Menor
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales)
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales)
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma, mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del Programa ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Permiso o concesión vigente o en trámite de renovación (SAP CONAPESCA) o Permiso de aprovechamiento extractivo
+      (SEMARNAT)
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  - text: De 1 a 3 Avisos de arribo de 2023, 2024 y/o de 2025 de alguna de las especies autorizadas en los permisos
+      de pesca de los cuales sean titulares.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: 'Modernización de Flota Menor El Apoyo podrá utilizarse para destinarse a artes de pesca, equipo auxiliar
+    al arte de pesca, reparación de motores o embarcaciones, materiales y/o refacciones para reparar embarcaciones
+    o motores, equipo de seguridad, navegación, buceo, protección, conservación, motobombas, cobrador de líneas
+    hidráulico, entre otros necesarios o específicos para la Pesca Comercial. *No se aceptarán consumibles tales
+    como: combustibles, gases, entre otros.'
+- name: Subcomponente para Modernización y Regularización de Embarcación Mayor
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (aplica solo para las personas morales).
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma, mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del Programa ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Cotización vigente a nombre del o la SOLICITANTE, emitida por el proveedor en donde se señalen las características
+      del bien o servicio solicitado.
+    cites:
+    - source: retys
+  - text: Permiso o concesión vigente o en trámite de renovación (SAP CONAPESCA)
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  - text: De 1 a 3 Avisos de arribo de 2023, 2024 y/o de 2025 de alguna de las especies autorizadas en los permisos
+      de pesca de los cuales sean titulares.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: 'El Apoyo podrá utilizarse para promover la Pesca Comercial mediante un apoyo económico en los siguientes
+    aspectos: a) Mantenimiento en dique (subida y bajada del barco, pintura para el casco, reemplazo de placas de
+    acero, ánodos de zinc, calibraciones del casco, chumaceras de la flecha principal y pistones de timonería) entre
+    otros. b) Pagos de derecho para la obtención de certificado de seguridad (plano de zafarrancho, cuadro de obligaciones);
+    cuadernillo de estabilidad (Planos de arreglo general y capacidades del tanque), entre otros. c) Adquisición
+    de equipamiento como: equipos electrónicos (radares, radio boyas, radios de banda lateral, radios de 2 m, plotter,
+    computadoras, pilotos automáticos entre otros); equipos hidráulicos (motores hidráulicos para los carretes de
+    pesca, bombas, pilotos automáticos); motores generadores. maquinas principales, equipos de refrigeración (compresores,
+    placas, difusores, marcadores), Compra de equipos de pesca (anzuelos, línea e monofilamento, ganchos snaps,
+    destorcedores, grapas, boyas y patescas).'
+- name: Subcomponente para Inocuidad Pesquera
+  requirements:
+  - text: Solicitud de Apoyo con datos técnicos y socioeconómicos del SOLICITANTE debidamente llenada y firmada.
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente (INE, Pasaporte, Cartilla Militar).
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (persona física, apoderado o representante legal) con una vigencia no mayor a
+      3 meses.
+    cites:
+    - source: retys
+  - text: Acta Constitutiva. (solo personas morales).
+    cites:
+    - source: retys
+  - text: Última Acta de Asamblea donde se establece quienes ostentan actualmente los poderes y representación de
+      la persona moral. (solo personas morales).
+    cites:
+    - source: retys
+  - text: Escrito libre con fecha y firma, mediante el cual se manifieste bajo protesta de decir verdad que quien
+      llevará a cabo los trámites y procesos del Programa ante la Dependencia, cuenta actualmente con los poderes
+      necesarios. (Consultar y descargar en la página electrónica).
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal (Actualizada, no mayor a tres meses de antigüedad).
+    cites:
+    - source: retys
+  - text: Cotización vigente a nombre del o la SOLICITANTE, emitida por el proveedor en donde se señalen las características
+      del bien o servicio solicitado.
+    cites:
+    - source: retys
+  - text: Comprobante con Datos bancarios de la PERSONA BENEFICIARIA o del proveedor (Estado de cuenta emitido por
+      el banco).
+    cites:
+    - source: retys
+  - text: De 1 a 3 Avisos de arribo de 2023, 2024 y/o de 2025 de alguna de las especies autorizadas en los permisos
+      de pesca de los cuales sean titulares.
+    cites:
+    - source: retys
+  - text: Relación de gastos por concepto a apoyar. (Fecha, factura o cotización y monto incluyendo I.V.A.).
+    cites:
+    - source: retys
+  - text: En caso de no contar con la expedición del certificado, presentar el documento probatorio de ingreso de
+      la solicitud para obtener la certificación del año en curso
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Registro de Solicitud en Línea
+    - Carga de Documentos de Requisitos
+    - Validación de Expediente para Asignación de Folio Estatal del Programa
+    - Dictaminación de Expediente
+    - Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  notes: 'El Apoyo podrá utilizarse para impulsar la certificación de personas físicas o morales dedicadas a la
+    actividad pesquera, mediante un apoyo económico para los siguientes aspectos: a) Pago de análisis requeridos
+    para la certificación de buenas prácticas de embarcaciones menores y plantas de procesamiento primario. b) Pago
+    de trámite del certificado. c) Pago de análisis de biotoxinas y microbiológicos.'
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30 fracción XV, 45 fracción I, XII y XIII
+- source: ley2
+  pinpoint: Artículo 8 fracción I y XVIII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Registro de Solicitud en Línea
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Carga de Documentos de Requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Validación de Expediente para Asignación de Folio Estatal del Programa
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Dictaminación de Expediente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Integración de Comprobación de aplicación del Recurso de Apoyo y Finiquito de Expediente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1878: Programa Estatal de Apoyo para PESCA COMERCIAL'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1878
+    version_date: 29/Mayo /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Pesca y Acuacultura Sustentables para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Programa Estatal de Apoyo para el Sector de Pesca y Acuacultura, Componente PESCA COMERCIAL.
+  Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

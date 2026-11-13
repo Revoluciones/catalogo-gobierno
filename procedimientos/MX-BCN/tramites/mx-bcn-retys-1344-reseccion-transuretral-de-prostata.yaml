@@ -1,0 +1,196 @@
+id: mx-bcn-retys-1344-reseccion-transuretral-de-prostata
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Resección Transuretral de Próstata
+summary: La resección transuretral de la próstata es una cirugía que remueve la parte interna de la próstata. Se
+  lleva a cabo con el fin de tratar los síntomas de un agrandamiento de la próstata.
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1344
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1344
+  homoclave: BC-UNEME-012
+who_can:
+- Interesado
+when: Cuando tenga un estudio que evidencie aumento de volumen y obstrucción de próstata
+result: Atención médica especializada en urología
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Olimpus #S/N, Plutarco Elías Calles, Mexicali, 21376'
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente requisitada y sellada, que le proporciona el centro de salud y/u Hospital
+      General
+    cites:
+    - source: retys
+  - text: Identificación oficial (credencial INE, pasaporte, licencia de manejo).
+    cites:
+    - source: retys
+  - text: CURP.
+    cites:
+    - source: retys
+  - text: Historia clínica, exámenes de laboratorio, reporte de la valoración cardiopulmonar cuando proceda y demás
+      estudios de gabinete que procedan de acuerdo a la intervención quirúrgica, se le proporciona en el centro
+      de salud.
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado para cirugía y anestesia, se le entrega en UNEME previo a la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario se
+      deriva con un especialista
+    - Acudir a la consulta con el especialista
+    - Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. De ser necesario,
+      se deriva a UNEME
+    - Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a UNEME con un acompañante. Identificarse y entregar los requisitos
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE E ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente requisitada y sellada, se le proporciona en IMSS, ISSSTE o ISSSTECALI en
+      su caso.
+    cites:
+    - source: retys
+  - text: Nota médica de referencia de la unidad de origen que incluya resultados de laboratorio o los exámenes
+      de laboratorio de respaldo.
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado para cirugía y anestesia. Se le entrega en UNEME previo a la cirugía
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario se
+      deriva con un especialista
+    - Acudir a la consulta con el especialista
+    - Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. De ser necesario,
+      se deriva a UNEME
+    - Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+    - Acudir a UNEME con un acompañante. Identificarse y entregar los requisitos
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Artículo 6
+- source: ley3
+  pinpoint: Artículo 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta médica del establecimiento que le corresponda.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le miden los signos vitales, se realiza una entrevista médica y exploración física. De ser necesario
+    se deriva con un especialista
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta con el especialista
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se le miden signos vitales. El especialista realiza entrevista médica y exploración física. De ser necesario,
+    se deriva a UNEME
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano, indicando fecha, hora y cuidados necesarios previos a la cirugía
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a UNEME con un acompañante. Identificarse y entregar los requisitos
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del
+    procedimiento, dar instrucciones para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1344: Resección Transuretral de Próstata'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1344
+    version_date: 21/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Urología Cirugía de Resección de Próstata. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

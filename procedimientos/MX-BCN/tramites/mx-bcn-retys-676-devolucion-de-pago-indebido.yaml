@@ -1,0 +1,236 @@
+id: mx-bcn-retys-676-devolucion-de-pago-indebido
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Devolución de Pago Indebido
+summary: La Secretaría de Hacienda devolverá a los contribuyentes, las cantidades pagadas indebidamente al fisco
+  estatal. Se puede tramitar en las 5 Oficinas de Recaudación de Rentas del Estado. La devolución del pago de lo
+  indebido, se realiza dentro de los 2 meses siguientes a la fecha en que sea presentada la solicitud ante Recaudación
+  de Rentas del Estado con todos los requisitos, datos, documentos e informes que justifiquen la procedencia de
+  la devolución, conforme a las disposiciones fiscales.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 676
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/676
+  homoclave: BC-SH-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el ciudadano requiera la devolución de dinero de un pago indebido
+result: La devolución del dinero que se pago indebidamente.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Naturales'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Devolución de pago de lo indebido (mayor a 40 UMAS)
+  requirements:
+  - text: 'Presentar solicitud de devolución dirgido a la Recaudación de Rentas correspondiente, indicando: -concepto
+      o impuesto referido.- Motivo del pago indebido.-Cantidad solicitada.-Nombre y firma del contribuyente (quien
+      realiza y acredita el pago).'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14094
+  - text: Recibo a favor de la Secretaría de Hacienda del Estado, por la cantidad solicitada, debiendo mencionar
+      el concepto del impuesto o derecho pagado indebidamente
+    cites:
+    - source: retys
+  - text: Original del recibo de pago con el que se demuestra el pago indebido.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del promovente. En caso de representación, el promovente debe
+      presentar poder notarial o carta poder firmada ante dos testigos y ratificadas las firmas del otorgante y
+      testigos ante el Recaudador de Rentas o el Procurador Fiscal del Estado.
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC) emitida por el Servicio de Administración Tributaria (SAT)
+    cites:
+    - source: retys
+  - text: Estado de cuenta bancario del contribuyente que evidencíe el movimiento respectivo. (En caso de pago electrónico)
+    cites:
+    - source: retys
+  - text: 'En caso de Persona Moral, adicionalmente se requiere: a) Solicitud de devolución y recibo a favor de
+      la SHE en hoja membretada (con información de la Moral: logo,domicilio,rfc, nombre y firma de representante
+      legal). b)Copia del Acta Constitutiva de la Empresa. c) RFC d) Copia de identificación oficial con fotografía
+      vigente del promovente. e) El promovente debe acreditar su representación, en los términos del art. 87 del
+      Código Fiscal del Estado.'
+    cites:
+    - source: retys
+  - text: 'Tratándose de doble pago: a) Original de la declaración con la que se efectuó el doble pago. b) En caso
+      de doble pago por INTERNET, copia del dispersado con el que se demuestre que el banco acreditó a la cuenta
+      del Gobierno del Estado los pagos efecuados por el contribuyente. c) Estados de cuenta bancarios, en caso
+      de que se solicite la devolución por depósito. d) Comprobantes fiscales que justifiquen el pago indebido.'
+    cites:
+    - source: retys
+  - text: 'Tratandose de Impuestos Estatales: a) Copia de la Declración Ordinaria. b) Copia de la Declaración Complementaria.
+      c) Papeles de trabajo utilizados para presenatción de la declaración ´´ordinaria´´ y de la declaración ´´complementaria´´.'
+    cites:
+    - source: retys
+  - text: 'Tratandose del Impuesto sobre Remuneraciones: a) Concentrado de Nóminas.'
+    cites:
+    - source: retys
+  - text: 'Tratandose de Impuestos Federales Coordinados: a) Solicitud de Devolución de Impuestos Federales ´´Formato
+      32´´'
+    cites:
+    - source: retys
+  - text: 'Tratándose de Derechos o Productos a una Dependencia: oficio del Titular de la Dependencia , en el que
+      explique el motivo por el cual no se prestó el servicio o por el cual no se realizó la venta o arrendamiento
+      del bien, así como su opinión sobre la procedencia de la devolución.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la Recaudación de Rentas del Estado
+    - Brinda información e instrucciones al solicitante
+    - Presenta la solicitud y los documentos (con acuse para su sello de recibido)
+    - Recibe la solicitud y revisa que estén completos los documentos del contribuyente, en caso de faltantes, otorga
+      plazo de 5 días para que el contribuyente solvente
+    - Si la documentación esta completa, le informa el tiempo establecido para la devolución
+  notes: La Dirección de Ingresos devolverá a los contribuyentes, las cantidades pagadas indebidamente al Fisco
+    Estatal.
+- name: Devolución de pago de lo indebido (menor a 40 UMAS)
+  requirements:
+  - text: 'Solicitud de devolución del contribuyente dirigido a la Rcaudación de Rentas correspondiente, indicando:
+      -Concepto o impuesto referido.-Motivo del pago indebido. -Cantidad solicitada. -Nombre y firma del contribuyente
+      (quien realiza y acredita el pago).'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14095
+  - text: Recibo a favor de la Secretaría de Hacienda del Estado, por la cantidad solicitada, debiendo mencionar
+      el concepto del impuesto o derecho pagado indebidamente.
+    cites:
+    - source: retys
+  - text: Original del recibo de pago con el que se demuestra el pago indebido.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del promovente. En caso de representación, el promovente debe
+      presentar poder notarial o carta poder firmada ante dos testigos y ratificadas las firmas del otorgante y
+      testigos ante el Recaudador de Rentas o el Procurador Fiscal del Estado.
+    cites:
+    - source: retys
+  - text: Copia Registro Federal de Contribuyentes RFC
+    cites:
+    - source: retys
+  - text: Estado de cuenta bancario del contribuyente que evidencíe el movimiento respectivo. (En caso de pago electrónico)
+    cites:
+    - source: retys
+  - text: 'En caso de Persona Moral, adicionalmente se requiere: a) Solicitud de devolución y recibo a favor de
+      la SHE en hoja membretada. b) Copia del Acta Constitutiva de la empresa. c) Registro Federal de Contribuyentes
+      RFC. d) Copia de Identificación Oficial Vigente con fotografía del promovente. e) El promovente debe acreditar
+      su representación, en los términos del art. 87 del Código Fiscal del Estado.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acurdir a la Recaudación de Rentas del Estado
+    - Brinda información e instrucciones al solicitante
+    - Presenta la solicitud y los documentos
+    - Recibe la solicitud y revisa que estén completos los documentos del contribuyente, en caso de faltantes, otorga
+      plazo para que el contribuyente solvente
+    - Si la documentación esta completa, verifica la disponiblidad presupuestal, si hay fondos suficientes se procede
+      al pago inmediato, de no ser así se informa al contribuyente y se agenda fecha para el pago.
+  notes: La Dirección de Ingresos devolverá a los contribuyentes, las cantidades pagadas indebidamente al Fisco
+    Estatal.
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 32.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la Recaudación de Rentas del Estado
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Brinda información e instrucciones al solicitante
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presenta la solicitud y los documentos (con acuse para su sello de recibido)
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recibe la solicitud y revisa que estén completos los documentos del contribuyente, en caso de faltantes,
+    otorga plazo de 5 días para que el contribuyente solvente
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Si la documentación esta completa, le informa el tiempo establecido para la devolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 676: Devolución de Pago Indebido'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/676
+    version_date: 01/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: CÓDIGO FISCAL DEL ESTADO
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

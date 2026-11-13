@@ -1,0 +1,109 @@
+id: mx-bcn-retys-1631-servicio-de-sala-para-capacitacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Sala para Capacitación
+summary: Servicio de espacios para la capacitación, en modalidad de renta o prestámo.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 1631
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1631
+  homoclave: BC-SADER-011
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando que se requiera realizar una capacitación
+result: el uso de las instalaciones
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Costos Sala de capacitación (capacidad 40 personas) $1,200 Sala de Multimedios (capacidad 18 personas)
+    $1,200 Auditorio (capacidad 300 personas) $7,500.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 día
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: C.C.I.I.A.A.
+  address: 'Parcela 29 #s/n, Ejido Sinaloa, Mexicali, 21620'
+scenarios:
+- name: Solicitud de préstamo
+  requirements:
+  - text: Presentar oficio, formato libre, solicitando préstamo
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Revisar disponibilidad en agenda de espacio solicitado, en sitio web intranet SADERBC
+    - Registrarse en sitio web intranet SADERBC, apartado de "disponibilidad de salas" haciendo clic en el botón
+      "iniciar trámite" ubicado en la parte inferior derecha
+  notes: Solicitud de préstamo
+- name: Solicitud de renta
+  requirements:
+  - text: Llenado de formato de solicitud
+    cites:
+    - source: retys
+  - text: Realizar pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a instalaciones CCIIAA
+    - Presentar documento de pago
+    - Realizar registro
+  notes: Solicitud de renta
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 20, 21, 22, 23 y 24
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Revisar disponibilidad en agenda de espacio solicitado, en sitio web intranet SADERBC
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Registrarse en sitio web intranet SADERBC, apartado de "disponibilidad de salas" haciendo clic en el botón
+    "iniciar trámite" ubicado en la parte inferior derecha
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1631: Servicio de Sala para Capacitación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1631
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría De Agricultura Y Desarrollo Rural de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Espacios para Capacitación. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

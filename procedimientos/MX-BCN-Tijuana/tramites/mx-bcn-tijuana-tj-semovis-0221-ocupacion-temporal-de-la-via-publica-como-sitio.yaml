@@ -1,0 +1,114 @@
+id: mx-bcn-tijuana-tj-semovis-0221-ocupacion-temporal-de-la-via-publica-como-sitio
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Movilidad y transporte
+title: Ocupación Temporal de la Vía Pública como Sitio
+summary: Este trámite permite que los vehículos de alquiler, como los taxis, se estacionen en un lugar autorizado
+  para que los usuarios puedan contratarlos. Estos lugares pueden ser en la vía pública o en propiedades privadas,
+  y están destinados a estacionar vehículos que no sigan un itinerario fijo.
+authority:
+  name: Secretaría de Movilidad Urbana Sustentable (Ayuntamiento de Tijuana)
+  unit: Dirección de Transporte Público
+official_ids:
+  homoclave: TJ-SEMOVIS-0221
+who_can:
+- Interesado
+when: Cuando la persona solicitante desea obtener un espacio autorizado para estacionar vehículos de alquiler en
+  la vía pública o en una propiedad privada.
+result: Permiso temporal de sitio
+requirements:
+- text: Formato de solicitud.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial de la persona solicitante.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Si es representante de una agrupación de taxis de sitio, presentar Acta Constitutiva.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Croquis de ubicación detallando las calles, colonia y puntos de referencia donde se solicita el espacio.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Fotografías del área donde se pretende establecer el sitio.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Carta de autorización o anuencia por escrito del propietario o encargado de centros comerciales, hoteles
+    u otros lugares cercanos, si el sitio está frente a ellos.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Carta de autorización para el uso de servicios sanitarios de los comercios cercanos, si aplica.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Si el sitio está en propiedad privada, presentar una carta de autorización del propietario, administrador
+    o encargado, especificando cuántos cajones de estacionamiento serán utilizados.
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+cost:
+  type: fijo
+  amount_mxn: 4223.16
+  text: 'Pago por análisis y emisión de factibilidad técnica para autorizar cierres de circuito, zonas de ascenso
+    y descenso, lanzaderas y sitios exclusivos de transporte público, considerando su ubicación y características
+    geométricas, a solicitud del interesado.: 36 UMA ($4,223.16). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 3 meses
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Transporte Público
+  address: Prolongación Paseo de los Heroes s/n, Los Santos, 22104 Tijuana, B.C.
+  phones: 6646088400 ext. 8400
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEMOVIS-0221: Ocupación Temporal de la Vía Pública como Sitio'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEMOVIS-0221
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículos del 218 al 225 del Reglamento de Transporte Público para el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/RM_TransportePublico_TJ-BC_03042020.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 30, fracción I de la Ley de Ingresos para el Municipio de Tijuana, Baja California, para el
+      Ejercicio Fiscal 2025
+    url: https://www.tijuana.gob.mx/dependencias/tesoreria/cp/2026/LI-TJBC_E-2026.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Criterio
+  para resolver: Reglamento de Transporte Público para el Municipio de Tijuana, Baja California .'

@@ -1,0 +1,183 @@
+id: mx-bcn-retys-464-solicitud-de-apoyo-para-pago-de-servicio-de-estanc
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Apoyo para Pago de Servicio de Estancia Infantil
+summary: Lograr que los padres o tutores de hijos menores de 6 años reciban un apoyo económico para el servicio
+  en un centro de atención infantil.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 464
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/464
+  homoclave: BC-DIF-025
+who_can:
+- Representante Legal
+- Interesado
+- Tutor
+when: Cuando el tutor(a) lo requiera y cumpla con los requisitos
+result: El apoyo mensual para el pago propocional del servicio de la estancia infantil
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Hasta cumplir la edad limite
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Apoyos a Población en Vulnerabilidad Social, Centros de Atención Infantil Mexicali
+  address: 'Avenida Mineros entre  “F" y “G" #345, Industrial, Mexicali, 21010'
+- municipality: Tijuana
+  name: Centro de Atención Infantil, Tijuana
+  address: 'Av. del paseo del río #s/n, Río Tijuana, Tijuana, 22226'
+- municipality: Ensenada
+  name: Almacén Alimentario de DIF BC
+  address: 'Calle Coral  #1756, Col. maestros, Ensenada B.C. , Ensenada, 22840'
+- municipality: San Quintín
+  name: Centro de Atención Infantil San Quintín
+  address: 'Calle López Rayón  #s/n, Fracc. Popular, San Quintín, 22930'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Copia del acta de nacimiento del niño (A)
+    cites:
+    - source: retys
+  - text: Copia del CURP del niño (A)
+    cites:
+    - source: retys
+  - text: Identificación oficial de padres o tutores (copia)
+    cites:
+    - source: retys
+  - text: Comprobante de domicilio (Copia)
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos de todas las personas del hogar que laboren.
+    cites:
+    - source: retys
+  - text: Solicitud (original)
+    cites:
+    - source: retys
+  - text: Fotografía infantil del menor (original)
+    cites:
+    - source: retys
+  - text: Certificado médico (original)
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Registro Federal de Contribuyentes (RFC)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano podrá realizar una cita para solicitar informes del programa y entrega de documentos.
+    - Acudir a las oficinas de DIF estatal para entregar los requisitos
+    - Personal de DIFBC revisará que los documentos se encuentren completos y en orden, y se le entregará formato
+      de solicitud de apoyo.
+    - El ciudadano deberá llenar la solicitud en oficinas de DIF estatal
+    - Dar respuesta a estudio socioeconómico, el cual será aplicado por personal de DIFBC
+    - Personal de DIFBC evaluará conforme a las Reglas de Operación del programa la documentación entregada, la
+      solicitud y el estudio socioeconómico y el espacio disponible en el Centro de Atención Infantil solicitado
+    - Si es aprobado personal de DIFBC dará de alta en el sistema y entregará formatos para firma del ciudadano
+      y se le proporcionará copia
+    - Personal de DIFBC le indicará la forma adecuada del llenado de las listas de asistencia del niño/niña
+    - El ciudadano presentará dicho comprobante al Centro de Atención Infantil indicado
+    - El ciudadano presentará al niño/niña en el Centro de Atención Infantil donde firmará las listas de asistencia
+      diariamente
+  notes: Recopilación de documentos para el servicio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 1
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano podrá realizar una cita para solicitar informes del programa y entrega de documentos.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de DIF estatal para entregar los requisitos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Personal de DIFBC revisará que los documentos se encuentren completos y en orden, y se le entregará formato
+    de solicitud de apoyo.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El ciudadano deberá llenar la solicitud en oficinas de DIF estatal
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Dar respuesta a estudio socioeconómico, el cual será aplicado por personal de DIFBC
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Personal de DIFBC evaluará conforme a las Reglas de Operación del programa la documentación entregada,
+    la solicitud y el estudio socioeconómico y el espacio disponible en el Centro de Atención Infantil solicitado
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Si es aprobado personal de DIFBC dará de alta en el sistema y entregará formatos para firma del ciudadano
+    y se le proporcionará copia
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Personal de DIFBC le indicará la forma adecuada del llenado de las listas de asistencia del niño/niña
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará dicho comprobante al Centro de Atención Infantil indicado
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará al niño/niña en el Centro de Atención Infantil donde firmará las listas de asistencia
+    diariamente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 464: Solicitud de Apoyo para Pago de Servicio de Estancia Infantil'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/464
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,171 @@
+id: mx-bcn-retys-778-expedicion-de-permiso-para-prestar-el-servicio-de
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de permiso para prestar el servicio de carga y arrastre
+summary: Consiste en solicitar la expedición de permiso para prestar el servicio de transporte carga y arrastre.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 778
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/778
+  homoclave: BC-IMOS-028
+who_can:
+- Interesado
+when: Cuando la persona interesada busque obtener permiso para prestar el servicio de carga y arrastre.
+result: Permiso para prestar el servicio de carga y arrastre
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: 100.00 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 6 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Personas que busquen obtener el permiso para prestar el servicio de carga y arrastre
+  requirements:
+  - text: Formato de solicitud proporcionado por el Instituto
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13750
+  - text: Acta de nacimiento del solicitante
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del beneficiario
+    cites:
+    - source: retys
+  - text: Acta de matrimonio (cuando el beneficiario es el cónyuge)
+    cites:
+    - source: retys
+  - text: Identificación oficial vigente
+    cites:
+    - source: retys
+  - text: Licencia de conducir expedida por el Estado de Baja California (tipo B o C)
+    cites:
+    - source: retys
+  - text: Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Carta de no antecedentes penales
+    cites:
+    - source: retys
+  - text: Carta de residencia
+    cites:
+    - source: retys
+  - text: Antidoping (expedido por laboratorio autorizado por el Instituto)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal
+    cites:
+    - source: retys
+  - text: Una fotografía tamaño credencial o infantil reciente a blanco y negro
+    cites:
+    - source: retys
+  - text: Pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para las personas físicas que busquen obtener el permiso para prestar el servicio de carga y
+    arrastre
+- name: Persona moral que busque obtener el permiso para prestar el servicio de carga y arrastre.
+  requirements:
+  - text: Formato de solicitud llenado completamente y firmado.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13761
+  - text: Acta Constitutiva y constancia de inscripción en el Registro Público de la Propiedad y Comercio.
+    cites:
+    - source: retys
+  - text: Sindicatos, presentar Toma de Nota
+    cites:
+    - source: retys
+  - text: Poder del (os) representante (s) legal (es)
+    cites:
+    - source: retys
+  - text: Identificación oficial del (os) representante (es) legal (s)
+    cites:
+    - source: retys
+  - text: Cédula de identificación fiscal (RFC) vigente
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento positivo de obligaciones fiscales.
+    cites:
+    - source: retys
+  - text: Pago de Derechos
+    cites:
+    - source: retys
+  modes: []
+  notes: Requisitos para las personas morales que busquen obtener el permiso para prestar el servicio de carga y
+    arrastre.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 11, Fracción I, Apartado L, Inciso 1, Subinciso C, numeral 1
+- source: ley2
+  pinpoint: Artículo 157
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 778: Expedición de permiso para prestar el servicio de carga y arrastre'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/778
+    version_date: 24/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Permiso para Prestar el Servicio de Carga y Arrastre.. Copiado tal cual de
+  RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

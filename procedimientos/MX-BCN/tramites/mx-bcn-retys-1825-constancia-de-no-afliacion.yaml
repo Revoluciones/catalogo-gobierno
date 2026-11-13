@@ -1,0 +1,163 @@
+id: mx-bcn-retys-1825-constancia-de-no-afliacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de No Afliación
+summary: Documento Oficial para Evidenciar la no Derechohabiencia del Instituto de Seguridad y Servicios Sociales
+  de los Trabajadores del Gobierno y Municipios del Estado de Baja California (ISSSTECALI)
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 1825
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1825
+  homoclave: BC-ISSSTECALI-012
+who_can:
+- Interesado
+when: Cuando sea solicitado
+result: Constancia de No afiliación
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15 dias
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Afiliación y Trabajo Social
+  address: 'Calle Calafia #1115 , Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Afiliacion Tijuana
+  address: 'Blvd Diaz Ordaz #12649, El Paraiso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Coordinacion de Prestaciones Económicas y Sociales
+  address: 'Calle de las rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+scenarios:
+- name: Constancia de No Afiliacion
+  requirements:
+  - text: CURP del interesado(a)
+    cites:
+    - source: retys
+  - text: Fecha de nacimiento del interesado (a)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - INGRESAR A LA PAGINA OFICIAL DEL ISSSTECALI
+    - INGRESAR AL APARTADO " SERVICIOS"
+    - INGRESAR AL APARTADO " CONSTANCIAS DIGITALES"
+    - INGRESAR DATOS SOLICITADOS POR LA PAGINA
+    - LEER Y ACEPTAR EL AVISO DE PRIVACIDAD
+    - GENERAR CONSTANCIA Y REALIZAR LA DESCARGA
+  notes: Modalidad digital
+- name: Constancia de No Afiliacion
+  requirements:
+  - text: CURP ó Identificación oficial
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - ASISTIR A LAS OFICINAS ADMINISTRATIVAS INDICADAS EN EL TRAMITE
+    - SOLICITAR CONSTANCIA DE NO AFILIACIÓN Y MOSTRAR CURP O IDENTIFICACION OFICIAL
+  notes: Modalidad Presencial
+legal_basis:
+- source: ley1
+  pinpoint: 8,9,10,13, 25 y 27
+- source: ley2
+  pinpoint: 1,23,24 Y 104
+- source: ley3
+  pinpoint: 15 y 80
+- source: ley4
+  pinpoint: '62'
+- source: ley5
+  pinpoint: 3,4 y 8 al 15
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: INGRESAR A LA PAGINA OFICIAL DEL ISSSTECALI
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: INGRESAR AL APARTADO " SERVICIOS"
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: INGRESAR AL APARTADO " CONSTANCIAS DIGITALES"
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: INGRESAR DATOS SOLICITADOS POR LA PAGINA
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: LEER Y ACEPTAR EL AVISO DE PRIVACIDAD
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: GENERAR CONSTANCIA Y REALIZAR LA DESCARGA
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1825: Constancia de No Afliación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1825
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Lineamientos de Protección de Datos Personales en Posesión de Sujetos Obligados del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley del ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Transparencia y Acceso a la Información Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: ley
+    official: true
+    title: Ley de Protección de Datos Personales en Posesión de Sujetos Obligados para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Constancia de No afiliación. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

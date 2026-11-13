@@ -1,0 +1,102 @@
+id: mx-bcn-retys-1699-acceso-a-exposiciones-de-artes-plasticas-y-visuale
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Acceso a Exposiciones de Artes Plásticas y Visuales
+summary: Este servicio te permite, como artista, mostrar tus obras de arte al público. Ya sea que pintes, tomes
+  fotos, esculpas, hagas instalaciones, dibujes o cualquier otra forma de arte visual, puedes solicitar un espacio
+  en una galería, sala de exposiciones o incluso un lugar alternativo para exhibir tu trabajo. Puedes hacerlo solo
+  o en grupo con otros artistas.
+authority:
+  name: Secretaría de Cultura
+official_ids:
+  retys_id: 1699
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1699
+  homoclave: BC-SC-010
+who_can:
+- Interesado
+when: Cuando hayas creado obras de arte y quieras que la gente las vea y las aprecie
+result: Difusión de la obra de arte y su autor. Tu arte cumplirá su función de ser compartido y apreciado
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 1 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Museos y Galerías
+  address: 'Paseo del Centenario #1151, Zona Urbana Río Tijuana, Tijuana, 22320'
+scenarios:
+- name: Artístas plásticos y visuales
+  requirements:
+  - text: Escrito de solicitud del espacio para la exposición
+    cites:
+    - source: retys
+  - text: Portafolio de fotografías e información de las obras deseadas a exponer
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acude a la Dependencia
+    - Entrega el escrito de solicitud y en su caso el portafolio de fotografías
+    - Servidor público revisa, valida los documentos y emite respuesta
+    - Persona artísta organiza su exposición de obra de arte en el espacio
+  notes: Personas artístas residentes bajacalifornianos emergentes, con trayectoría, etc.
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 27, fracción II.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acude a la Dependencia
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega el escrito de solicitud y en su caso el portafolio de fotografías
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Servidor público revisa, valida los documentos y emite respuesta
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Persona artísta organiza su exposición de obra de arte en el espacio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1699: Acceso a Exposiciones de Artes Plásticas y Visuales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1699
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Cultura de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

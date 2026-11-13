@@ -1,0 +1,130 @@
+id: mx-bcn-retys-889-analisis-de-laboratorio-de-los-parametros-de-la-no
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Análisis de laboratorio de los parámetros de la NOM-002 SEMARNAT 1996
+summary: Realización de muestreo y análisis para particulares, empresas y gobierno
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 889
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/889
+  homoclave: BC-CESPM-040
+who_can:
+- Representante Legal
+when: Cuando el interesado lo requiera
+result: Reporte de análisis
+cost:
+  type: variable
+  amount_mxn: 9964.74
+  text: 'COSTO VARIABLE: $ 9,964.74 el costo del servicio variable durante el ejercicio 2026 de acuerdo a la actualización
+    por la variación que tenga el Índice Nacional de Precios y Cotizaciones (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 12 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Culican y Plan de Ayutla #S/N, Prohogar, Mexicali, 21290'
+scenarios:
+- name: Requisitos
+  requirements:
+  - text: Solicitud de servicio
+    cites:
+    - source: retys
+  - text: Nombre a quien se dirige la cotización, nombre de la empresa muestreada que se reflejará en el informe.
+    cites:
+    - source: retys
+  - text: Título de concesión y/ó permiso de descarga
+    cites:
+    - source: retys
+  - text: Condiciones físicas de la descargas a muestrear
+    cites:
+    - source: retys
+  - text: Procesos generadores del agua a muestrear
+    cites:
+    - source: retys
+  - text: Cubrir o convenir el costo del servicio
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contactarse con departamento de control de procesos para contratar el servicio.
+    - Presentar requisitos solicitados para dar factibilidad del servicio
+    - Entregar presupuesto emitido
+    - Pagar en zonas comerciales
+    - Enviar comprobante de pago al laboratorio para coordinar el servicio
+    - Esperar periodo de análisis referido en cotización
+    - Entregar informe de laboratorio
+  notes: Requisitos
+legal_basis:
+- source: ley1
+  pinpoint: 9 PUNTO 8 INCISO h
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Contactarse con departamento de control de procesos para contratar el servicio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar requisitos solicitados para dar factibilidad del servicio
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar presupuesto emitido
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pagar en zonas comerciales
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Enviar comprobante de pago al laboratorio para coordinar el servicio
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Esperar periodo de análisis referido en cotización
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Entregar informe de laboratorio
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 889: Análisis de laboratorio de los parámetros de la NOM-002 SEMARNAT 1996'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/889
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California 2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

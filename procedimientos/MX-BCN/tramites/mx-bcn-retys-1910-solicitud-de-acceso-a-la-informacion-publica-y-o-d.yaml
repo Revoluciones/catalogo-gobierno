@@ -1,0 +1,108 @@
+id: mx-bcn-retys-1910-solicitud-de-acceso-a-la-informacion-publica-y-o-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: SOLICITUD DE ACCESO A LA INFORMACIÓN PÚBLICA Y/O DERECHOS ARCO
+summary: La persona interesada podrá solicitar, por sí mismo o a través de su representante, de manera directa o
+  por medios electrónicos, solicitud de acceso a la información pública y/o derecho de Acceso, Rectificación, Cancelación
+  u Oposición (ARCO) de sus datos personales, que se encuentren en posesión de este Instituto de Movilidad Sustentable.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 1910
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1910
+  homoclave: BC-IMOS-089
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la persona interesada o su representante legal lo solicite
+result: Acceso a la información Pública, que genera y/o posee este Instituto. Acceso a sus datos personales, en
+  caso de que se encuentren en posesión de este
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Ciudadanía en lo general
+  requirements:
+  - text: Para solicitud de derechos ARCO, deberá presentar identificación oficial vigente.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Presentar la solicitud de acceso a la información pública en la Plataforma Nacional de Transparencia.
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar su solicitud de acceso a la Información
+      Pública y/o Derecho de Acceso, Rectificación, Cancelación u Oposición (ARCO) de sus datos personales.
+  notes: Solicitud de acceso a la información pública y/o Derechos ARCO
+legal_basis:
+- source: ley1
+  pinpoint: '42'
+- source: ley2
+  pinpoint: 123, 124
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud de acceso a la información pública en la Plataforma Nacional de Transparencia.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1910: SOLICITUD DE ACCESO A LA INFORMACIÓN PÚBLICA Y/O DERECHOS ARCO'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1910
+    version_date: 16/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Transparencia y Acceso a la Información Pública
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de acceso a la información pública y/o Derechos ARCO. Copiado tal cual de RETyS.
+  Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes
+  citadas aún no enlazan a su texto oficial.'

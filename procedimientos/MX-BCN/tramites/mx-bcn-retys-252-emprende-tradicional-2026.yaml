@@ -1,0 +1,324 @@
+id: mx-bcn-retys-252-emprende-tradicional-2026
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Emprende Tradicional 2026
+summary: Programa dirigido a empresas con al menos 12 meses inscritos en la Secretaría de Hacienda y Crédito Público,
+  que requieran de un financiamiento a través de un proyecto con viabilidad técnica, financiera y comercial para
+  el crecimiento e impulso de su actividad empresarial.
+authority:
+  name: Secretaría de Economía e Innovación de Baja California
+official_ids:
+  retys_id: 252
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/252
+  homoclave: BC-SEI-004
+who_can:
+- Representante Legal
+- Interesado
+when: Al momento que el interesado requiera acceder a un financiamiento para impulsar y consolidar la MIPYME.
+result: Financiamiento de hasta $200,000.00 pesos (doscientos mil 00/100 M.N.).
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Hasta el 12 de noviembre de 2026, y/o hasta agotar el recurso.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Financiamiento
+  address: 'Avenida República de Honduras y Justo Sierra #377, Cuauhtémoc Sur, Mexicali, 21200'
+- municipality: Tijuana
+  name: Dirección de Financiamiento
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22250'
+- municipality: Ensenada
+  name: Dirección de Financiamiento
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Dirección de Financiamiento
+  address: 'Baja California #53, La Viñita, Tecate, 21400'
+- municipality: Playas de Rosarito
+  name: Dirección de Financiamiento
+  address: 'José Aros Aguilar #2003, Villa Turística, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Dirección de Financiamiento
+  address: 'Benito Juárez #108, Vicente Guerrero, San Quintín, 22920'
+- municipality: San Felipe
+  name: Dirección de Financiamiento
+  address: 'Mar de Cortés #614, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Lista de Requisitos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14699
+  - text: Solicitud de Crédito Emprende Tradicional 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14031
+  - text: Copia por ambos lados de la identificación oficial vigente.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal, con antigüedad mayor a 12 meses, con una fecha de emisión no mayor a 30
+      días.
+    cites:
+    - source: retys
+  - text: 'Certificado de No Deudor Alimentario, no mayor a 30 días de la solicitud. Ingresa aquí (copia y pega
+      en otra pestaña): (https://rnoa.dif.gob.mx/)'
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales positiva, no mayor a 30 días.
+    cites:
+    - source: retys
+  - text: 'Reporte de Buró de Crédito especial del solicitante, no mayor a 30 días de la solicitud. Ingresa aquí
+      (copia y pega en otra pestaña): (www.burodecredito.com.mx)'
+    cites:
+    - source: retys
+  - text: Estados de cuenta bancarios, mínimo 6 meses continuos, los más recientes.
+    cites:
+    - source: retys
+  - text: Foto a color del interior, exterior y equipamiento del negocio.
+    cites:
+    - source: retys
+  - text: Declaración anual de impuestos inmediata anterior y/o la última declaración de pagos provisionales o definitivos.
+    cites:
+    - source: retys
+  - text: Estados financieros acumulados al mes anterior (para solicitudes mayores a $100,000.00 pesos).
+    cites:
+    - source: retys
+  - text: Cotización de acuerdo a los conceptos elegibles, no mayor a 2 meses de emisión, con datos fiscales del
+      proveedor, dirigida al solicitante.
+    cites:
+    - source: retys
+  - text: En caso de estar casados bajo el régimen de sociedad conyugal, presentar acta de matrimonio o en su defecto
+      carta bajo protesta de decir la verdad que consta ser soltero (a).
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio particular, no mayor a 2 meses de emisión.
+    cites:
+    - source: retys
+  - text: Aviso de Privacidad para uso de datos personales.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14032
+  - text: Aval con capacidad financiera demostrable y activa.
+    cites:
+    - source: retys
+  - text: Copia por ambos lados de la identificación oficial vigente del aval.
+    cites:
+    - source: retys
+  - text: 'Reporte de Buró de Crédito especial del Aval, no mayor a 30 días de la solicitud. Ingresa aquí (copia
+      y pega en otra pestaña): (www.burodecredito.com.mx)'
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos del aval, de los últimos 2 meses.
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio del aval, no mayor a 2 meses de emisión.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar el pre registro en línea haciendo clic en el botón "iniciar trámite" y enviar los requisitos por ese
+      medio.
+    - Se programa visita domiciliaria por parte del ejecutivo de financiamiento.
+    - Revisión y en su caso, autorización de la solicitud por parte del “COMITÉ”, de ser aprobada la solicitud,
+      participar en el curso informativo impartido por la “SEI” y obtener la constancia de acreditación.
+    - Firma del contrato y formalización del crédito del beneficiario junto al aval en las oficinas de “FONDOS BC”.
+    - Entrega del financiamiento en la cuenta bancaria especificada por el solicitante.
+    - Una vez concluido el crédito solicitado, entrega del pagaré original y estado de cuenta para comprobar la
+      totalidad del pago.
+  notes: Personas físicas con actividad económica, formalmente constituidas e inscritas en el “SAT” con antigüedad
+    mayor a 12 meses.
+- name: Persona Moral
+  requirements:
+  - text: Lista de Requisitos.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14700
+  - text: Solicitud de Crédito Emprende Tradicional 2026
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14034
+  - text: Copia de identificación oficial vigente con fotografía del representante legal, por ambos lados.
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal de la persona moral, con una fecha de emisión no mayor a 30 días de la
+      solicitud.
+    cites:
+    - source: retys
+  - text: 'Certificado de No Deudor Alimentario, no mayor a 30 días de la solicitud. Ingresa aquí (copia y pega
+      en otra pestaña): (https://rnoa.dif.gob.mx/)'
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales positiva (no mayor a 30 días a la entrega de la solicitud).
+    cites:
+    - source: retys
+  - text: Estados de cuenta bancarios, mínimo 6 meses continuos, los más recientes.
+    cites:
+    - source: retys
+  - text: 'Reporte de Buró de Crédito especial de la persona moral, no mayor a 30 días de la solicitud. Ingresa
+      aquí (copia y pega en otra pestaña): (www.burodecredito.com.mx)'
+    cites:
+    - source: retys
+  - text: Foto a color del interior, exterior y equipamiento del negocio.
+    cites:
+    - source: retys
+  - text: Declaración anual de impuestos inmediata anterior y la última declaración de pagos provisionales o definitivos.
+    cites:
+    - source: retys
+  - text: Estados financieros acumulados al mes anterior.
+    cites:
+    - source: retys
+  - text: Acta constitutiva.
+    cites:
+    - source: retys
+  - text: Copia del instrumento notarial que acredita al Representante Legal.
+    cites:
+    - source: retys
+  - text: Cotización de acuerdo a los conceptos elegibles, no mayor a 2 meses de antigüedad, con datos fiscales
+      del proveedor, dirigida al solicitante.
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio particular del representante legal, no mayor a 2 meses de emisión.
+    cites:
+    - source: retys
+  - text: Documento que acredite el uso de la propiedad (Predial, en caso de ser domicilio propio) y/o Contrato
+      de Arrendamiento y/o Contrato Comodato del domicilio fiscal, entre otros)
+    cites:
+    - source: retys
+  - text: Constancia de Situación Fiscal del representante legal, con una fecha de emisión no mayor a 30 días de
+      la solicitud.
+    cites:
+    - source: retys
+  - text: 'Reporte de Buró de Crédito especial del representante legal, no mayor a 30 días de la solicitud. Ingresa
+      aquí (copia y pega en otra pestaña): (www.burodecredito.com.mx)'
+    cites:
+    - source: retys
+  - text: Aviso de Privacidad para uso de datos personales
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/14041
+  - text: Aval con capacidad financiera demostrable y activa.
+    cites:
+    - source: retys
+  - text: Copia por ambos lados de la identificación oficial vigente del aval.
+    cites:
+    - source: retys
+  - text: 'Reporte de Buró de Crédito especial del Aval, no mayor a 30 días de la solicitud. Ingresa aquí (copia
+      y pega en otra pestaña): (www.burodecredito.com.mx)'
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos del aval, de los últimos 2 meses.
+    cites:
+    - source: retys
+  - text: Copia del comprobante de domicilio del aval, no mayor a 2 meses de emisión.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - Llenar el pre registro en línea haciendo clic en el botón "iniciar trámite" y enviar los requisitos por ese
+      medio.
+    - Se programa visita domiciliaria por parte del ejecutivo de financiamiento.
+    - Revisión y en su caso, autorización de la solicitud por parte del “COMITÉ”.
+    - De ser aprobada la solicitud, participar en el curso informativo impartido por la “SEI” y obtener la constancia
+      de acreditación.
+    - Firma del contrato y formalización del crédito del beneficiario junto al aval en las oficinas de “FONDOS BC”.
+    - Entrega del financiamiento en la cuenta bancaria especificada por el solicitante.
+    - Una vez concluido el crédito solicitado, entrega del pagaré original y estado de cuenta para comprobar la
+      totalidad del pago.
+  notes: Personas morales con actividad económica, formalmente constituidas e inscritas en el “SAT” con antigüedad
+    mayor a 12 meses.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 30, fracción XI y 41, fracciones V, XII y XIII
+- source: ley2
+  pinpoint: Artículos 8, 9 y 10
+- source: ley3
+  pinpoint: Artículo 27, fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar el pre registro en línea haciendo clic en el botón "iniciar trámite" y enviar los requisitos por
+    ese medio.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se programa visita domiciliaria por parte del ejecutivo de financiamiento.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Revisión y en su caso, autorización de la solicitud por parte del “COMITÉ”, de ser aprobada la solicitud,
+    participar en el curso informativo impartido por la “SEI” y obtener la constancia de acreditación.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Firma del contrato y formalización del crédito del beneficiario junto al aval en las oficinas de “FONDOS
+    BC”.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entrega del financiamiento en la cuenta bancaria especificada por el solicitante.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez concluido el crédito solicitado, entrega del pagaré original y estado de cuenta para comprobar
+    la totalidad del pago.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 252: Emprende Tradicional 2026'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/252
+    version_date: 13/Julio /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Reglas Operación del Programa Emprende Tradicional 2026.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Economía e Innovación del Estado del Gobierno del Estado de Baja
+      California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Fondo Emprende Tradicional 2026. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

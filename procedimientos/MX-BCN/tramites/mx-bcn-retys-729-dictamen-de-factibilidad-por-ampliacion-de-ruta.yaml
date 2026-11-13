@@ -1,0 +1,127 @@
+id: mx-bcn-retys-729-dictamen-de-factibilidad-por-ampliacion-de-ruta
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Dictamen de factibilidad por ampliación de ruta
+summary: Consiste en solicitar la elaboración del dictamen técnico para determinar la factibilidad de la ampliación
+  de ruta.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 729
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/729
+  homoclave: BC-IMOS-002
+who_can:
+- Representante Legal
+when: Cuando la persona interesada busque la ampliación de ruta
+result: Dictamen de factibilidad para ampliación de ruta.
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Por ampliación dentro del límite del centro de población, por cada 1 metro lineal: 0.15 UMAS Por
+    ampliación fuera del límite del centro de población, por cada 1 metro lineal: 0.25 UMAS'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Permisionarios y concesionarios del servicio público de transporte
+  requirements:
+  - text: Escrito libre que contenga la solicitud de ampliación de ruta, debiendo contener nombre completo de la
+      moral, direccion de correo electronico y número de teléfono del solicitante y el medio por el cual estara
+      disponible para recibir notificaciones
+    cites:
+    - source: retys
+  - text: Copia del Título de concesión y adendas en caso de haberlas.
+    cites:
+    - source: retys
+  - text: Acta constitutiva de la persona moral
+    cites:
+    - source: retys
+  - text: Instrumento notarial de donde se desprendan las facultades de su representante legal.
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial vigente del representante legal (INE y/o pasaporte)
+    cites:
+    - source: retys
+  - text: Constancia de situación fiscal del SAT, con vigencia del año fiscal en curso
+    cites:
+    - source: retys
+  - text: Opinión de cumplimiento de obligaciones fiscales, en sentido positivo, del año fiscal en curso
+    cites:
+    - source: retys
+  - text: Presentar escrito libre que contenga la descripción del recorrido de modificación y/o ampliación de ruta
+      (en sentido ida y regreso)
+    cites:
+    - source: retys
+  - text: Presentar escrito libre qUe contenga la relación y cantidad de unidades consideradas
+    cites:
+    - source: retys
+  - text: Presentar en archivo digital trazo de recorrido en formato KMZ
+    cites:
+    - source: retys
+  - text: Original y copia del comprobante de pago de derechos por el trámite solicitado
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  notes: Requisitos para permisionarios y concesionarios del servicio público de transporte
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 152, fracción II y 177, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas del Instituto de Movilidad Sustentable y presentar la documentación requerida
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 729: Dictamen de factibilidad por ampliación de ruta'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/729
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Movilidad Sustentable y Transporte Del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Dictamen de Factibilidad por Ampliación de Ruta. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

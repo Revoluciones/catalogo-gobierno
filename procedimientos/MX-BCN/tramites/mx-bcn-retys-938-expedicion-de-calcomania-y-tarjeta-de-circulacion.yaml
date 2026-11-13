@@ -1,0 +1,110 @@
+id: mx-bcn-retys-938-expedicion-de-calcomania-y-tarjeta-de-circulacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Expedición de calcomanía y tarjeta de circulación (revalidación) para servicio público
+summary: Consiste en solicitar el refrendo de calcomanía y tarjeta de circulación para servicio público.
+authority:
+  name: Instituto de Movilidad Sustentable del Estado de Baja California
+official_ids:
+  retys_id: 938
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/938
+  homoclave: BC-IMOS-077
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando la persona interesada lo solicite, dentro del término legal
+result: Calcomanía y tarjeta de circulación
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: Taxis y autobuses de pasajeros: $1,172.29 M.N. Camiones de carga: $1,581.26 M.N. Motocicletas: $1,172.29
+    M.N.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 20 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 1 AÑO
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Delegación Mexicali
+  address: 'José María Morelos #411, Primera, Mexicali, 21100'
+- municipality: Tijuana
+  name: Zona Metropolitana (Tijuana, Tecate Y Playas De Rosarito)
+  address: 'Carretera Libre Tijuana Tecate Kilometro 26.5 Esquina Boulevard Nogales #S/N, El Florido , Tijuana,
+    22253'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Huerta #136, Rincón del Mar, Ensenada, 22896'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Carretera Transpeninsular #Km 1, Santa Fe De Braulio Maldonado, San Quintín, 22925'
+- municipality: San Felipe
+  name: Subdelegación San Felipe
+  address: 'Av. Mar Caribe Norte Y Santa Rosalía #S/N, Segunda Sección, San Felipe, 21850'
+scenarios:
+- name: Operadores del servicio público de transporte
+  requirements:
+  - text: Última tarjeta de circulación
+    cites:
+    - source: retys
+  - text: Licencia de conducir vigente, expedida por el Estado de Baja California (depende de la modalidad)
+    cites:
+    - source: retys
+  - text: Póliza de seguro de responsabilidad civil vigente (registrado ante la comisión nacional de seguro y fianzas)
+    cites:
+    - source: retys
+  - text: Permiso de servicio público vigente, original
+    cites:
+    - source: retys
+  - text: Revisión Físico mecánica vigente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - ACUDIR A LAS OFICINAS DEL INSTITUTO DE MOVILIDAD SUSTENTABLE Y PRESENTAR LA DOCUMENTACIÓN REQUERIDA
+  notes: Requisitos de revalidación de tarjeta de circulación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, Fracción II, Inciso B, Subinciso 1, Literal a.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: ACUDIR A LAS OFICINAS DEL INSTITUTO DE MOVILIDAD SUSTENTABLE Y PRESENTAR LA DOCUMENTACIÓN REQUERIDA
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 938: Expedición de calcomanía y tarjeta de circulación (revalidación) para servicio público'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/938
+    version_date: 14/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Expedición de Calcomanía y Tarjeta de Circulación (refrendo) para Servicio Público.. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

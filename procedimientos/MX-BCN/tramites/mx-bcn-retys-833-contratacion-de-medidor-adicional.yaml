@@ -1,0 +1,129 @@
+id: mx-bcn-retys-833-contratacion-de-medidor-adicional
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Contratación de Medidor Adicional
+summary: Contratación de un medidor adicional en la toma de agua contratada previamente ante la CESPE.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 833
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/833
+  homoclave: BC-CESPE-005
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera contar con el servicio
+result: Medidor adicional de la misma toma de agua
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Por cada medidor adicional más el costo de los derechos de conexión, en caso de aplicar
+    de acuerdo al giro solicitado.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 15 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Propietario del predio a contratar
+  requirements:
+  - text: Documentos de propiedad oficiales
+    cites:
+    - source: retys
+  - text: Identificacion oficial
+    cites:
+    - source: retys
+  - text: Carta poder (si no es el propietario)
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/5530
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a una de nuestras oficinas a solicitar un medidor adicional
+    - Realizar la preparación del registro
+    - Esperar la visita del inspector
+    - Acudir a una de nuestras oficinas a darle el seguimiento debido
+  notes: El propietario deberá acreditar su personalidad con identificación oficial
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III.
+- source: ley2
+  pinpoint: Artículos 3, 6, 14,15, 16,17, 19, 20, 22, 23,24, 26, 27, 30, 31, 33, 36, 37, 38, 40, 41, 42, 44, 45,
+    47, 48, 49,51, 52, 53, 54, 56, 59, 60 y 64
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a solicitar un medidor adicional
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar la preparación del registro
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Esperar la visita del inspector
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a una de nuestras oficinas a darle el seguimiento debido
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 833: Contratación de Medidor Adicional'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/833
+    version_date: 06/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que Reglamenta el Servicio de Agua Potable en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Contratación de Medidor Adicional.. Copiado tal cual de RETyS. Los pasos son los del primer
+  escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su
+  texto oficial.'

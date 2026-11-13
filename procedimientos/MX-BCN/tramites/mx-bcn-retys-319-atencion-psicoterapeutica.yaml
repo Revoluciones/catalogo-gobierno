@@ -1,0 +1,167 @@
+id: mx-bcn-retys-319-atencion-psicoterapeutica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Atención Psicoterapéutica
+summary: Brindar atención psicológica a las familias bajacalifornianas a través de terapias individuales para infantes,
+  adolescentes y/o adultos, así como terapias familiares y de pareja. como a padres y familiares de menores que
+  se encuentran a disposición de DIF Baja California.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 319
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/319
+  homoclave: BC-DIF-008
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: Cuando el interesado solicite el servicio y se cumpla con las características del programa.
+result: Atención psicológica
+cost:
+  type: variable
+  amount_mxn: 150.0
+  text: 'COSTO VARIABLE: El costo de la sesion de atención psicoterapeutica individual y familiar, para padres adoptivos,
+    asi como individual y familiar extramuros, sera de $150.00 pesos por sesión. Cuando el interesado manifieste
+    una imposibilidad para cubrir el pago, se realizara estudio socieconómico.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 8 Horas'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Centro Psicológico de Atención a la Familia Mexicali
+  address: 'Avenida Paseo del Valle #s/n, Jardines Del Valle, Mexicali, 21270'
+- municipality: Tijuana
+  name: Centro Psicológico de Atención a la Familia Tijuana
+  address: 'Ruta Mariano Matamoros #s/n, Fraccionamiento Mariano Matamoros Sur, Tijuana, 22234'
+- municipality: Ensenada
+  name: Centro de Gobierno Ensenada
+  address: 'Carretera Transpenisular Ensenada-La paz, 2do piso #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Playas de Rosarito
+  name: Centro Psicológico de Atención a la Familia Playas de Rosarito
+  address: 'Leonardo Armenta #s/n, Ejido Mazatlán, Playas de Rosarito, 22707'
+- municipality: San Quintín
+  name: Centro Psicológico de Atención a la Familia San Quintín
+  address: 'Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Módulo Centro Psicológico de Atención a la Familia San Felipe
+  address: 'Avenida Mar Bermejo entre Chetumal y Ensenada #s/n, Calzada Chetumal y Calle Ensenada, San Felipe, 21850'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Clave única de registro de población (CURP)
+    cites:
+    - source: retys
+  - text: INE (Copia)
+    cites:
+    - source: retys
+  - text: Comprobante de ingresos (Copia)
+    cites:
+    - source: retys
+  - text: Menor de edad CURP menor y del tutor (copia)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en la dependencia o comunicarse vía telefónica a solicitar la atención
+    - Se presenta el ciudadano a cita para realizar estudio socioeconómico y entrega de documentacion.
+    - Se recibe y revisa documentación para la integración de expediente
+    - Se entrega expediente administrativo a Supervisión Municipal del Centro Psicológico
+    - Se asigna expediente administrativo a psicoterapeuta.
+    - Agenda cita para inicio de servicio psicoterapéutico.
+    - Al presentarse el usuario se imparte el servicio psicoterapéutico, éste se agenda una vez a la semana durante
+      8 sesiones con una duración de 50 minutos cada una de ellas.
+  notes: Recopilación de documentos
+legal_basis:
+- source: ley1
+  pinpoint: 'Artículo(s): 3'
+- source: ley2
+  pinpoint: 'Artículo(s): 1'
+- source: ley3
+  pinpoint: 'Artículo(s): 1'
+- source: ley4
+  pinpoint: 'Artículo(s):'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en la dependencia o comunicarse vía telefónica a solicitar la atención
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se presenta el ciudadano a cita para realizar estudio socioeconómico y entrega de documentacion.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se recibe y revisa documentación para la integración de expediente
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Se entrega expediente administrativo a Supervisión Municipal del Centro Psicológico
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se asigna expediente administrativo a psicoterapeuta.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Agenda cita para inicio de servicio psicoterapéutico.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Al presentarse el usuario se imparte el servicio psicoterapéutico, éste se agenda una vez a la semana
+    durante 8 sesiones con una duración de 50 minutos cada una de ellas.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 319: Atención Psicoterapéutica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/319
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de asistencia social para el Estado de Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la protección de los derechos de niñas, niños y adolescentes.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de la familia para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Reglas de operación del depto. psicológico de atención a la familia de DIF Estatal 27 de marzo 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

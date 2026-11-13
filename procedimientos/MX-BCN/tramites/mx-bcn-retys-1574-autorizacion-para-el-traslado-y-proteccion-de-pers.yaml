@@ -1,0 +1,350 @@
+id: mx-bcn-retys-1574-autorizacion-para-el-traslado-y-proteccion-de-pers
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Autorización para el Traslado y Protección de Personas y/o Escoltas a Personas
+summary: Trámite en el cual se solicitan los requisitos necesarios para la autorización de la prestación del servicio
+  de seguridad privada en traslado y protección de personas, es decir, en custodia de personas (servicio de guardaespaldas
+  y/o escoltas)
+authority:
+  name: Secretaría de Seguridad Ciudadana del Estado de Baja California
+official_ids:
+  retys_id: 1574
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1574
+  homoclave: BC-SSCBC-018
+who_can:
+- Interesado
+- Representante Legal
+- Otro
+when: Cuando se desee prestar el servicio de seguridad privada
+result: Autorización para prestar servicios de seguridad privada
+cost:
+  type: fijo
+  amount_mxn: 22936.75
+  text: 'COSTO: $22,936.75 pesos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 30 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Seguridad Privada (Edificio Museo del Agua)
+  address: 'Av. Álvaro Obregón #514, Sección Primera, Mexicali, 21100'
+scenarios:
+- name: Traslado y protección de personas persona moral
+  requirements:
+  - text: Solicitud de autorización
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11906
+  - text: El acta constitutiva cuyo objeto social esté relacionado con la prestación de servicios de seguridad privada
+    cites:
+    - source: retys
+  - text: La cédula de Registro Federal de Contribuyente expedida por la SHCP
+    cites:
+    - source: retys
+  - text: La constancia de empadronamiento ante la Secretaría de Planeación y Finanzas del Estado de Baja California
+    cites:
+    - source: retys
+  - text: 'Autorización para operar equipo de radio: Expedida por la autoridad reguladora o por una empresa de telecomunicaciones
+      autorizada'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11882
+  - text: Listado detallado del equipo de radio comunicación
+    cites:
+    - source: retys
+  - text: Manuales de operaciones específicos para cada modalidad previstas en el artículo 4 del reglamento de seguridad
+    cites:
+    - source: retys
+  - text: Documento que señale la delimitación geográfica del servicio
+    cites:
+    - source: retys
+  - text: Documentación que acredite el domicilio legal de matriz y sucursales para recibir notificaciones dentro
+      del Estado, así como planos de ubicación de ambos
+    cites:
+    - source: retys
+  - text: Relación con nombre, domicilio, lugar y fecha de nacimiento, así como el nombre de sus padres, agregando
+      copia de las actas de nacimiento o cartas de naturalización e identificación oficial vigente del propietario
+      o de los socios y representante legal y personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11887
+  - text: Comprobante de cumplimiento del artículo 74 para personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11888
+  - text: Relación detallada del equipo de protección personal como marca, modelo y número de serie
+    cites:
+    - source: retys
+  - text: Descripción de la flota vehicular, especificando marca, modelo y documentación vigente, póliza contra
+      daños a terceros e imágenes colores, logotipos o emblemas en las que se aprecien sus insignias
+    cites:
+    - source: retys
+  - text: Documentación vigente que acredite la legal posesión y portación de las armas de fuego utilizadas en el
+      servicio de seguridad privada
+    cites:
+    - source: retys
+  - text: Una imagen a color de insignias y aditamentos de seguridad a utilizar
+    cites:
+    - source: retys
+  - text: Imagen a color frontal, trasera, lateral izquierda y lateral derecha, a color, de cuerpo entero del uniforme
+      y sus accesorios
+    cites:
+    - source: retys
+  - text: Nombre del jefe de operaciones anexado los requisitos del artículo 74 del reglamento
+    cites:
+    - source: retys
+  - text: Plan detallado de capacitación continua para todo el personal operativo, incluyendo al jefe de operaciones,
+      que cumpla con lo establecido en el artículo 4 del reglamento y los lineamientos del Instituto. Precisar materias,
+      duración, calendario y comprobante de conocimiento y de certificación al instructor por parte del Instituto.
+    cites:
+    - source: retys
+  - text: Nombre del jefe de operaciones anexado los requisitos del artículo 74 del reglamento
+    cites:
+    - source: retys
+  - text: Constancia de no antecedentes penales vigente del propietario y/o socios, representantes o apoderados
+      legales
+    cites:
+    - source: retys
+  - text: propietario y/o socios, representantes o apoderados legales no estar sujeto a proceso penal o haber sido
+      condenados por delitos dolosos
+    cites:
+    - source: retys
+  - text: Modelo del gafete o credencial de identificación para el personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11899
+  - text: Instruir al personal operativo a portar armas de fuego de manera discreta y no ostentosa.
+    cites:
+    - source: retys
+  - text: Instruir al personal operativo debe utilizar armas de fuego únicamente en caso de una agresión real o
+      inminente en defensa propia o de terceros, y siempre de manera proporcional a la amenaza
+    cites:
+    - source: retys
+  - text: El personal operativo que porte armas de fuego debe realizar obligatoriamente ejercicios de tiro conforme
+      a los lineamientos establecidos por el Instituto.
+    cites:
+    - source: retys
+  - text: Registro detallado de los clientes que contratan servicios de seguridad. Debe incluir su nombre, domicilio,
+      horarios de servicio y el personal asignado.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano acreditará los requisitos para su modalidad o modalidades
+    - El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+    - El servidor público revisará que cumpla con la totalidad de los requisitos
+    - El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+      solventar
+    - Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los requisitos
+      del establecimiento
+    - Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+    - El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+      privada
+    - El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe cumplir
+  notes: La custodia, salvaguarda y defensa de la vida y la integridad física de los prestatarios, dentro y fuera
+    de su domicilio
+- name: Traslado y protección de personal persona física
+  requirements:
+  - text: Solicitud de autorización
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11915
+  - text: CURP, acta de nacimiento o carta de naturalización que acredite nacionalidad mexicana
+    cites:
+    - source: retys
+  - text: La cédula de Registro Federal de Contribuyente expedida por la SHCP
+    cites:
+    - source: retys
+  - text: La constancia de empadronamiento ante la Secretaría de Planeación y Finanzas del Estado de Baja California
+    cites:
+    - source: retys
+  - text: 'Autorización para operar equipo de radio: Expedida por la autoridad reguladora o por una empresa de telecomunicaciones
+      autorizada'
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11920
+  - text: Listado detallado del equipo de radio comunicación
+    cites:
+    - source: retys
+  - text: Manuales de operaciones específicos para cada modalidad previstas en el artículo 4 del reglamento de seguridad.
+    cites:
+    - source: retys
+  - text: Documento que señale la delimitación geográfica del servicio
+    cites:
+    - source: retys
+  - text: Documentación que acredite el domicilio legal de matriz y sucursales para recibir notificaciones dentro
+      del Estado, así como planos de ubicación de ambos
+    cites:
+    - source: retys
+  - text: Relación con nombre, domicilio, lugar y fecha de nacimiento, así como el nombre de sus padres, agregando
+      copia de las actas de nacimiento o cartas de naturalización e identificación oficial vigente del propietario
+      o de los socios y representante legal y personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11925
+  - text: Comprobante de cumplimiento del artículo 74 para personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11926
+  - text: Relación detallada del equipo de protección personal como marca, modelo y número de serie
+    cites:
+    - source: retys
+  - text: Descripción de la flota vehicular, especificando marca, modelo y documentación vigente, póliza contra
+      daños a terceros e imágenes colores, logotipos o emblemas en las que se aprecien sus insignias
+    cites:
+    - source: retys
+  - text: Documentación vigente que acredite la legal posesión y portación de las armas de fuego utilizadas en el
+      servicio de seguridad privada
+    cites:
+    - source: retys
+  - text: Una imagen a color de insignias y aditamentos de seguridad a utilizar
+    cites:
+    - source: retys
+  - text: Imagen a color frontal, trasera, lateral izquierda y lateral derecha, a color, de cuerpo entero del uniforme
+      y sus accesorios
+    cites:
+    - source: retys
+  - text: Nombre del jefe de operaciones anexado los requisitos del artículo 74 del reglamento
+    cites:
+    - source: retys
+  - text: Plan detallado de capacitación continua para todo el personal operativo, incluyendo al jefe de operaciones,
+      que cumpla con lo establecido en el artículo 4 del reglamento y los lineamientos del Instituto. Precisar materias,
+      duración, calendario y comprobante de conocimiento y de certificación al instructor por parte del Instituto.
+    cites:
+    - source: retys
+  - text: Permiso de uso de suelo para local comercial expedido por la autoridad competente donde se encuentre matriz
+      y/o sucursales
+    cites:
+    - source: retys
+  - text: Constancia de no antecedentes penales vigente del propietario y/o socios, representantes o apoderados
+      legales
+    cites:
+    - source: retys
+  - text: Propietario y/o socios, representantes o apoderados legales no estar sujeto a proceso penal o haber sido
+      condenados por delitos dolosos
+    cites:
+    - source: retys
+  - text: Modelo del gafete o credencial de identificación para el personal operativo
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11939
+  - text: Instruir al personal operativo a portar armas de fuego de manera discreta y no ostentosa
+    cites:
+    - source: retys
+  - text: Instruir al personal operativo debe utilizar armas de fuego únicamente en caso de una agresión real o
+      inminente en defensa propia o de terceros, y siempre de manera proporcional a la amenaza
+    cites:
+    - source: retys
+  - text: El personal operativo que porte armas de fuego debe realizar obligatoriamente ejercicios de tiro conforme
+      a los lineamientos establecidos por el Instituto
+    cites:
+    - source: retys
+  - text: Registro detallado de los clientes que contratan servicios de seguridad. Debe incluir su nombre, domicilio,
+      horarios de servicio y el personal asignado
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - El ciudadano acreditará los requisitos para su modalidad o modalidades
+    - El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+    - El servidor público revisará que cumpla con la totalidad de los requisitos
+    - El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+      solventar
+    - Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los requisitos
+      del establecimiento
+    - Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+    - El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+      privada
+    - El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe cumplir
+  notes: La custodia, salvaguarda y defensa de la vida y la integridad física de los prestatarios, dentro y fuera
+    de su domicilio
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 22 fracción I, inciso A)
+- source: ley2
+  pinpoint: 4, 9, 22, 25, 36, 42 BIS y 67 TER
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El ciudadano acreditará los requisitos para su modalidad o modalidades
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El ciudadano presentará una carpeta con los requisitos en la dirección de seguridad privada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El servidor público revisará que cumpla con la totalidad de los requisitos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El servidor público informará al ciudadano si su carpeta cumple o no con los requisitos y que es necesario
+    solventar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Cuando la carpeta este completa, se realizará una visita al ciudadano, para verificar que cumpla con los
+    requisitos del establecimiento
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez realizada la visita y cumplidos todos los requisitos, se realizará un oficio de pago por la autorización
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: El ciudadano realizará el pago de la autorización y entregará su comprobante en la dirección de seguridad
+    privada
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: El servidor público hará entrega del permiso al ciudadano y explicará las obligaciones con las que debe
+    cumplir
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1574: Autorización para el Traslado y Protección de Personas y/o Escoltas a Personas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1574
+    version_date: 13/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Seguridad Privada para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Trámite para Obtener la Autorización de la Prestación de Servicios de Seguridad Privada
+  de Traslado y Protección de Personas. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera
+  modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

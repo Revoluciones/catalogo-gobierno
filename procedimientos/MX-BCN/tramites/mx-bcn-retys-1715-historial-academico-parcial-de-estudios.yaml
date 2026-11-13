@@ -1,0 +1,165 @@
+id: mx-bcn-retys-1715-historial-academico-parcial-de-estudios
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Historial Académico Parcial de Estudios
+summary: Documento oficial que certifica y describe los semestres y asignaturas (aprobadas y/o reprobadas) cursadas
+  por un alumno inscrito en el Plan de Estudios de la Reforma Integral de la Educación Media Superior (RIEMS), a
+  partir del periodo lectivo 2009-2, en el COBACH BC, el cual solicita su baja para inscribirse en otro Subsistema
+  en el Estado, en otro estado o en el extranjero, para realizar su portabilidad de estudios.
+authority:
+  name: Colegio de Bachilleres del Estado de Baja California
+official_ids:
+  retys_id: 1715
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1715
+  homoclave: BC-COBACH-005
+who_can:
+- Interesado
+- Tutor
+- Otro
+when: Cuando el alumnado requiera certificar sus estudios parciales en COBACH BC
+result: Historial Académico Parcial de Estudios
+cost:
+  type: fijo
+  amount_mxn: 240.0
+  text: 'COSTO: - Historial Académico Parcial de Estudios $240.00 mxn Nota: I. Historial Académico Parcial de Estudios.
+    Cuando la persona solicitante realizó sus estudios a partir del periodo 2009-2. II. Certificado Parcial de Estudios.
+    Cuando la persona solicitante realizó sus estudios entre los periodo 1981-2 al periodo 2009-1.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Registro y Control Escolar
+  address: 'Blvd. Anáhuac #936, Centro Civico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Coordinación Zona Costa
+  address: 'Vía Rápida Oriente #S/N, Tercera Etapa del Río, Delegación Cerro Colorado, Tijuana, 22226'
+scenarios:
+- name: Certificado Parcial de Estudios
+  requirements:
+  - text: Acta de nacimiento
+    cites:
+    - source: retys
+  - text: Certificado de Educación Secundaria
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Fotografía digital
+    cites:
+    - source: retys
+  - text: Aviso de baja del alumno
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Asiste a ventanilla
+    - Entrega de documentos
+    - Realiza el pago de los derechos y proporciona el recibo
+    - Entrega del documento solicitado
+  notes: Costo $333.00 - Cuando la persona solicitante realizó sus estudios entre los periodo 1981-2 al periodo
+    2009-1
+- name: Historial Académico Parcial de Estudios
+  requirements:
+  - text: Acta de nacimiento
+    cites:
+    - source: retys
+  - text: Certificado de Educación Secundaria
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Fotografía digital
+    cites:
+    - source: retys
+  - text: Aviso de baja del alumno
+    cites:
+    - source: retys
+  - text: Recibo de pago de derechos
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Asiste a ventanilla
+    - Entrega de documentos
+    - Realiza el pago de los derechos y proporciona el recibo
+    - Entrega del documento solicitado
+  notes: Costo $240.00 - Cuando la persona solicitante realizó sus estudios a partir del periodo 2009-2
+legal_basis:
+- source: ley1
+  pinpoint: Todos
+- source: ley2
+  pinpoint: Todos
+- source: ley3
+  pinpoint: '29'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Asiste a ventanilla
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entrega de documentos
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realiza el pago de los derechos y proporciona el recibo
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega del documento solicitado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1715: Historial Académico Parcial de Estudios'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1715
+    version_date: 16/Febrero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación del Colegio de Bachilleres de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Manual por el que se establecen las cuotas de recuperación del Colegio de Bachilleres del Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento de Acreditación, Regulación de Estudios del Colegio de Bachilleres del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

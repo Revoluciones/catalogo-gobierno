@@ -1,0 +1,113 @@
+id: mx-bcn-retys-869-cofepris-07-003-b-solicitud-de-certificado-de-cond
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: COFEPRIS-07-003-B Solicitud de Certificado de Condición Sanitaria de Agua para Uso y Consumo Humano, Incluida
+  la Certificación de la Calidad Sanitaria del Pozo de Agua para Consumo Humano o para Uso Industrial. Modalidad
+  B.- Sistemas de Abastecimiento Público
+summary: Cuando el ciudadano cuente con un sistema de abastecimiento para dotar de agua potable a una población
+  determinada (localidad, municipio, ciudad, etc.)
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 869
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/869
+  homoclave: BC-COEPRIS-031
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando el interesado lo requiera.
+result: Certificado
+cost:
+  type: fijo
+  amount_mxn: 8697.62
+  text: 'COSTO: $8697.62 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Guía de llenado
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/7784
+  - text: Formato “otros trámites”, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Comprobante de pago de derechos en original y dos copias simples legibles
+    cites:
+    - source: retys
+  - text: Documento que acredite la personalidad jurídica del representante legal de la institución (que indique
+      sus atribuciones y facultades)
+    cites:
+    - source: retys
+  - text: Copia legible de identificación oficial del representante legal (credencial del Instituto Nacional Electoral
+      (INE) o pasaporte vigente o cartilla del servicio militar nacional o licencia de manejo)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el Centro Integral de Servicios
+    - Entrega de la resolución
+  notes: En la guía se encuentran las indicaciones para el ingreso correcto del trámite
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 119, fracción II
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentarse en las oficinas de la COEPRIS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar requisitos documentales en el Centro Integral de Servicios
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega de la resolución
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 869: COFEPRIS-07-003-B Solicitud de Certificado de Condición Sanitaria de Agua para Uso
+      y Consumo Humano, Incluida la Certificación de la Calidad Sanitaria del Pozo de Agua para Consumo Humano o
+      para Uso Industrial. Modalidad B.- Sistemas de Abastecimiento Público'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/869
+    version_date: 19/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-07-003-B Solicitud de certificado de condición sanitaria de agua para uso y consumo
+  humano, incluida la certificación de la calidad sanitaria del pozo de agua para consumo humano o para uso industrial.
+  Modalidad B.- Sistemas de abastecimiento público.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

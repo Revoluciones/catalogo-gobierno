@@ -1,0 +1,93 @@
+id: mx-bcn-tijuana-tj-sspcm-0239-servicios-especiales-de-bomberos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento, Educación, deporte y cultura
+title: Servicios Especiales de Bomberos
+summary: Emisión de certificados o constancias por simulacros de incendio y evacuación, cursos de capacitación y
+  uso de equipo por hora.
+authority:
+  name: Secretaría de Seguridad y Protección Ciudadana Municipal (Ayuntamiento de Tijuana)
+  unit: Dirección de Bomberos
+official_ids:
+  homoclave: TJ-SSPCM-0239
+who_can:
+- Interesado
+when: Para establecimientos o personas físicas que requieran servicios especiales de la Dirección de Bomberos.
+result: Certificado
+requirements:
+- text: Documentación según el tipo de trámite solicitado.
+  cites:
+  - source: remutys
+  original_or_copy: original
+- text: Pago de derechos correspondiente.
+  cites:
+  - source: remutys
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Simulacros a petición de parte formación de brigadas: 19.5 UMA ($2,287.55) · Simulacros a petición de parte
+    manejo de extintores: 26 UMA ($3,050.06) · Curso de formación de brigadas: 24.7 UMA ($2,897.56) · Curso de manejo
+    de extintores: 33.8 UMA ($3,965.08) · Uso de equipor por hora, máquina extinguidora: 59.4 UMA ($6,968.21) ·
+    Uso de equipor por hora, máquina de iluminación: 59.4 UMA ($6,968.21) · Uso de equipor por hora, máquina escala:
+    59.4 UMA ($6,968.21) · Uso de equipor por hora, máquina rescate: 59.4 UMA ($6,968.21) · Uso de equipor por hora,
+    unidad de rescate: 59.4 UMA ($6,968.21) · Uso de equipor por hora, unidad tanque cisterna: 59.4 UMA ($6,968.21)
+    · Uso de equipor por hora, ambulancia: 59.4 UMA ($6,968.21) · Uso de equipor por hora, unidad de materiales
+    peligrosos: 59.4 UMA ($6,968.21). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 15 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 día
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Bomberos
+  address: Av. Aldrete y Madero, No. 8298, Zona Centro, C.P. 22000
+  phones: '6646885700'
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SSPCM-0239: Servicios Especiales de Bomberos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SSPCM-0239
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 9 del Reglamento para la Prevención, Control de los Incendios y Siniestros para la Seguridad
+      Civil en el Municipio de Tijuana, Baja California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_2021122916432669_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 37, fracción IX, inciso B), C) y D) de la Ley de Ingresos del Municipio Tijuana, Baja California
+      para el Ejercicio Fiscal 2025
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2025/LI-TJBC_E-2025.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Para empezar: https://pagos.tijuana.gob.mx/requisitos/bomberos.aspx Criterio para resolver:
+  Presentar la documentación requerida y realizar el pago correspondiente. Los simulacros están sujetos a cambios
+  por condiciones atmosféricas.'

@@ -1,0 +1,172 @@
+id: mx-bcn-retys-356-servicio-de-clasificacion-de-huevo-para-plato
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Clasificación de Huevo para Plato
+summary: Otorgar un grado de calidad y vigencia al huevo para plato de producción local, un grado de calidad y vigencia
+  al huevo para plato de producción local, introducción e importación al Estado.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 356
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/356
+  homoclave: BC-SADER-001
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando las personas físicas y morales que produzcan, introduzcan o importen huevo para plato
+result: Constancia de clasificación de huevo para plato
+cost:
+  type: variable
+  amount_mxn: 0.11
+  text: 'COSTO VARIABLE: Costo Clasificación de huevo para plato $0.11'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 2 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Asesoría y Acompañamiento Técnico
+  address: 'Carretera Mexicali- San Luis Rio Colorado Km 22.5 #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Diego  Rivera #33, Zona Urbana Rio Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+scenarios:
+- name: Clasificación de huevo para plato de producción local
+  requirements:
+  - text: Copia de bitacora de producción
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contar con reporte diario de clasificación de huevo
+    - Tomar una muestra al azar para clasificar
+    - Clasificar el producto apegado a la normatividad aplicable y a las diectrices establecidas para tal efecto
+    - Otorgar un grado de calidad y vigencia
+  notes: Clasificación de huevo para plato de producción local
+- name: Clasificación de huevo para plato de introducción
+  requirements:
+  - text: Copia guia de tránsito comercia emitida por la secretaria de agricultura y desarrollo rural del estado
+      de baja california
+    cites:
+    - source: retys
+  - text: Copia de factura o remisión del producto
+    cites:
+    - source: retys
+  - text: Copia de aviso o certificado zoosanitario de movilización
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contar con la documentación necesaria para avalar el origen del producto
+    - Tomar una muestra al azar para clasificar
+    - Clasificar el producto apegado a la normatividad aplicable y a las diectrices establecidas para tal efecto
+    - Otorgar un grado de calidad y vigencia
+  notes: Clasificación de huevo para plato de introducción
+- name: Clasificación de huevo para plato de importación
+  requirements:
+  - text: Copia de aviso o certificado zoosanitario de movilización
+    cites:
+    - source: retys
+  - text: Copia de pedimento de importación
+    cites:
+    - source: retys
+  - text: Copia de permiso de importación emitido por la Secretaría de Agricultura y Desarrollo Rural del Estado
+      de Baja California
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Contar con la documentación necesaria para avalar el origen del producto
+    - Tomar una muestra al azar para clasificar
+    - Clasificar el producto apegado a la normatividad aplicable y a las diectrices establecidas para tal efecto
+    - Otorgar un grado de calidad y vigencia
+  notes: Clasificación de huevo para plato de importación
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 10, Inciso d, fracción II; 12, Inciso e, fracción VI; 131 y 132
+- source: ley2
+  pinpoint: Artículo 20, fracción i, Inciso c
+- source: ley3
+  pinpoint: Artículos 36 fraciones I y III, y 40
+- source: ley4
+  pinpoint: Artículo 1,2,5,9 y 10
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Contar con reporte diario de clasificación de huevo
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Tomar una muestra al azar para clasificar
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Clasificar el producto apegado a la normatividad aplicable y a las diectrices establecidas para tal efecto
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Otorgar un grado de calidad y vigencia
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 356: Servicio de Clasificación de Huevo para Plato'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/356
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Agropecuario del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria de Agricultura y Desarrollo Rural en B.C.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento para el Servicio de Clasificación de Huevo para Plato en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

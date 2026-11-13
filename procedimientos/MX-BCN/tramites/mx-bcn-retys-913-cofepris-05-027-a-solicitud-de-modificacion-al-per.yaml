@@ -1,0 +1,122 @@
+id: mx-bcn-retys-913-cofepris-05-027-a-solicitud-de-modificacion-al-per
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: 'COFEPRIS-05-027-A Solicitud de Modificación al Permiso de Responsable de la Operación y Funcionamiento del
+  Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico. A: Rayos X'
+summary: Por cambio de horario del ciudadano responsable de la operación y funcionamiento del establecimiento de
+  diagnóstico médico con rayos X.
+authority:
+  name: Comisión Estatal para la Protección contra Riesgos Sanitarios
+official_ids:
+  retys_id: 913
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/913
+  homoclave: BC-COEPRIS-038
+who_can:
+- Representante Legal
+- Interesado
+when: Se encuentra en proceso de apertura-operación
+result: Modificación
+cost:
+  type: fijo
+  amount_mxn: 2214.65
+  text: 'COSTO: $ 2214.65 pesos mexicanos'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: true
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: COEPRIS
+  address: 'Calzada Milton Castellanos  #1149,-8 , Conjunto urbano caliss , Mexicali, 22010'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Formato de autorizaciones, certificados y visitas, debidamente requisitado
+    cites:
+    - source: retys
+  - text: Formato "Servicios de Salud", debidamente requisitado
+    cites:
+    - source: retys
+  - text: Comprobante del pago de derechos en original y dos copias simples legibles
+    cites:
+    - source: retys
+  - text: Únicamente por cambio de horario de asistencia del responsable de operación y funcionamiento al establecimiento
+    cites:
+    - source: retys
+  - text: Tener permanencia mínima en el establecimiento del 25% del horario de atención al público. En caso de
+      unidades médicas con turnos continuos deberá cubrir el turno con mayor carga de trabajo o bien se puede designar
+      a varios responsables de la operación y funcionamiento
+    cites:
+    - source: retys
+  - text: Original del permiso vigente del responsable de la operación y funcionamiento de establecimientos de diagnóstico
+      médico con rayos X
+    cites:
+    - source: retys
+  - text: Dos fotografías tamaño infantil (con nombre al reverso)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Si cumple con los requisitos solicitados, se autoriza Solicitud de Modificación al Permiso de Responsable
+      de la Operación y Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o
+      de Diagnóstico.
+  - name: Presencial
+    steps:
+    - Presentarse en las oficinas de la COEPRIS
+    - Entregar requisitos documentales en el centro integral de servicios
+    - Entrega de la resolución
+  notes: Establecimientos sujetos a regulación sanitaria
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 375 Fracción II
+- source: ley2
+  pinpoint: Articulo 224, Fracción III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Si cumple con los requisitos solicitados, se autoriza Solicitud de Modificación al Permiso de Responsable
+    de la Operación y Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de
+    Diagnóstico.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 913: COFEPRIS-05-027-A Solicitud de Modificación al Permiso de Responsable de la Operación
+      y Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico.
+      A: Rayos X'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/913
+    version_date: 20/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de la Ley General de Salud en Materia de Prestación de Servicios y Atención Médica
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: COFEPRIS-05-027-A Solicitud de Modificación al Permiso de Responsable de la Operación y
+  Funcionamiento del Establecimiento que Utiliza Fuentes de Radiación para Fines Médicos o de Diagnóstico Modalidad
+  A.- Rayos X.. Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás
+  variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

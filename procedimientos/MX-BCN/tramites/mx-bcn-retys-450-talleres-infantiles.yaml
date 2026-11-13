@@ -1,0 +1,140 @@
+id: mx-bcn-retys-450-talleres-infantiles
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Talleres Infantiles
+summary: Talleres que crean espacios que den voz a Niñas y Niños de forma dinámica esto como una medida para fortalecer
+  el desarrollo de habilidades sociales que les permitan ejercer, promover y difundir sus derechos de manera asertiva
+  y creativa.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 450
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/450
+  homoclave: BC-DIF-024
+who_can:
+- Interesado
+when: Cuando el usuario lo requiera y cumpla con los requisitos
+result: Talleres Infantiles para niñas y niños de 9 a 12 años
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Mexicali
+  address: 'Calzada Cuahtémoc #384, Las Fuentes, Mexicali, 21230'
+- municipality: Tijuana
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Tijuana
+  address: 'Ruta Mariano Matamoros #22239-2228, Fraccionamiento Mariano Matamoros, Tijuana, 22234'
+- municipality: Ensenada
+  name: Departamento de Desarrollo de Habilidades Socioemocionales Ensenada
+  address: 'Francisco González Bocanegra #2075, Colonia Hidalgo, Ensenada, 22880'
+- municipality: San Quintín
+  name: Departamento de Desarrollo de Habilidades Socioemocionales San Quintín
+  address: 'Luis Alcerrega y Nicolas Bravo #s/n, Fraccionamiento San Quintín, San Quintín, 22931'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: Llenar lista de asistencia (cuando se reciba el servicio)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Difusión del servicio en planteles educativos, organizaciones de la sociedad civil y centros comunitarios.
+    - Identifica los espacios interesados
+    - Muestra el catálogo de Talleres infantiles.
+    - En caso de estar interesado, se sugiere fecha y hora probable para recibir el servicio.
+    - Verifica disponibilidad en la agenda y se confirma fecha y hora de inicio, se establece cronograma de atención
+      de acuerdo con la cantidad de sesiones y asistentes.
+    - Se acuerda el espacio donde se brindara el servicio, el cual debe contar con luz eléctrica y mobiliario.
+    - Brinda el servicio en la fecha y hora acordada.
+    - Terminada la plática lleva a cabo la firma y sello de documentos probatorios de haber recibido el servicio.
+  notes: Recopilación de documentos
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 3
+- source: ley2
+  pinpoint: Artículo 1
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Difusión del servicio en planteles educativos, organizaciones de la sociedad civil y centros comunitarios.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Identifica los espacios interesados
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Muestra el catálogo de Talleres infantiles.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: En caso de estar interesado, se sugiere fecha y hora probable para recibir el servicio.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Verifica disponibilidad en la agenda y se confirma fecha y hora de inicio, se establece cronograma de
+    atención de acuerdo con la cantidad de sesiones y asistentes.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Se acuerda el espacio donde se brindara el servicio, el cual debe contar con luz eléctrica y mobiliario.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Brinda el servicio en la fecha y hora acordada.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Terminada la plática lleva a cabo la firma y sello de documentos probatorios de haber recibido el servicio.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 450: Talleres Infantiles'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/450
+    version_date: 15/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley para la Protección de los Derechos de Niñas, Niños y Adolescentes
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Talleres Infantiles.. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

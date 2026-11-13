@@ -1,0 +1,112 @@
+id: mx-bcn-retys-346-solicitud-para-apoyo-de-alimentacion-escolar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud para Apoyo de Alimentación Escolar
+summary: Entrega de alimentación escolar (desayunos escolares) a la población en condiciones de vulnerabilidad,
+  que asiste a planteles públicos de educación básica del sistema educativo nacional y/o estatal, acompañados de
+  acciones de orientación y educación alimentaria.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 346
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/346
+  homoclave: BC-DIF-012
+who_can:
+- Interesado
+- Tutor
+when: Cuando se cumpla con los requisitos establecidos
+result: Alimentación escolar
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Departamento de Apoyos Alimentarios y Desarrollo Nutricional, Mexicali
+  address: 'Av. Mineros  #345, Industrial, Mexicali, 21100'
+- municipality: Tijuana
+  name: Dirección de Alimentación y Desarrollo comunitario, Tijuana.
+  address: 'Avenida Eusebio Kino #17533, Fraccionamiento Garita Otay, Tijuana, 22430'
+- municipality: San Quintín
+  name: Departamento de Apoyos Alimentarios y Desarrollo Nutricional San Quintín
+  address: 'Avenida Lucio Blanco #1221, Nuevo Mexicali, Lázaro Cardenas, San Quintín, 22932'
+scenarios:
+- name: Ciudadania en general
+  requirements:
+  - text: Padrón de beneficiarios (original)
+    cites:
+    - source: retys
+  - text: Oficio formal dirigido al DIF Baja California (original)
+    cites:
+    - source: retys
+  - text: Acta de comité (original)
+    cites:
+    - source: retys
+  - text: Acta de asamblea (original)
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Solicitar vía telefónica la visita del personal del Departamento de Apoyos Alimentarios y Desarrollo Nutricional
+      para el análisis de aplicación del programa
+  - name: Presencial
+    steps:
+    - Solicitar la visita del personal del Departamento de Apoyos Alimentarios y Desarrollo Nutricional para el
+      análisis de aplicación del programa
+    - Se verificará el tipo de servicio que requiere el usuario
+  notes: Recopilación de documentos para el servicio.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 3 y 4 fracción X
+- source: ley2
+  pinpoint: N/A
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Solicitar vía telefónica la visita del personal del Departamento de Apoyos Alimentarios y Desarrollo Nutricional
+    para el análisis de aplicación del programa
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 346: Solicitud para Apoyo de Alimentación Escolar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/346
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Asistencia Social para el Estado de Baja California, Ley General de Salud, Ley General de Desarrollo
+      Social, Ley General de Educación
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud para Apoyo de Alimentación Escolar.. Copiado tal cual de RETyS. Los pasos son
+  los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún
+  no enlazan a su texto oficial.'

@@ -1,0 +1,133 @@
+id: mx-bcn-tijuana-tj-sedeti-0300-fortalecimiento-a-la-micro-y-pequena-empresa
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento
+title: Fortalecimiento a la micro y pequeña empresa
+summary: Crédito de hasta 250 mil pesos M.N. a personas físicas con actividad empresarial y/o personas morales que
+  requieran capital para el sostenimiento o crecimiento de su negocio y generen empleos nuevos.
+authority:
+  name: Secretaría de Desarrollo Económico (Ayuntamiento de Tijuana)
+  unit: Centro de Atención al Emprendedor
+official_ids:
+  homoclave: TJ-SEDETI-0300
+who_can:
+- Interesado
+when: Cuando personas físicas con actividad empresarial y/o personas morales que requieran capital para el sostenimiento
+  o crecimiento de su negocio y generen empleos nuevos
+result: Crédito
+requirements:
+- text: 'Persona física: Identificación oficial con fotografía. (Credencial de elector, pasaporte vigente y/o cédula
+    profesional)'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: 'Persona moral: Poder General para Pleitos y Cobranzas, Actos de Administración y para firma de títulos
+    de crédito, así como identificación oficial vigente del Representante Legal, el Acta Constitutiva deberá contar
+    con la inscripción en el RPPyC'
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Comprobante de domicilio para (personas físicas) o del domicilio fiscal (personas morales), agua, luz, teléfono
+    no mayor a tres meses el cual deberá estar a nombre del solicitante
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Constancia de Situación Fiscal del solicitante con alta en actividad no mayor a tres meses
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Permiso de operación municipal, ambulantaje o sobre ruedas según aplique, vigente
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Presupuesto del proyecto desglosado por conceptos y aportaciones (formato de solicitud de Fondos Tijuana
+    y aviso de privacidad)
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Cotización(es) de los conceptos para los que se solicite el crédito, los cuales deberá(n) ser de proveedor(es)
+    local(es) en el caso de contar con una mejor propuesta económica fuera de Tijuana, deberá acompañar cada cotización
+    foránea de una local
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Declaración del SAT del último pago anual, o pagos provisionales o definitivos mensuales según aplique
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Opinión de cumplimiento positiva conforme al articulo 32-D del Código Fiscal de la Federación
+  cites:
+  - source: remutys
+- text: No contar con adeudos a favor del Ayuntamiento de Tijuana, B.C.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Contar con Aval, presentando copia de identificación oficial con fotografía vigente. (INE, Pasaporte y/o
+    Cedula Profesional), así como comprobante de domicilio (agua, luz o teléfono) no mayor a tres (3) meses, el
+    cual firmará un pagaré por la cantidad
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 30 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 24 meses
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Centro de Atención al Emprendedor
+  address: Blvd. Independencia 1350, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+  phones: 6649737125 ext. 7036
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SEDETI-0300: Fortalecimiento a la micro y pequeña empresa'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SEDETI-0300
+    version_date: '2026-08-19'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Artículo 6 Fracción V, Artículo 10 Fracción IV, Artículo 18 del Reglamento Interno de la Secretaría de
+      Desarrollo Económico
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20260323153541313_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 3, Artículo 4, Artículo 10 Inciso b), Artículo 15, Artículo 17, Artíclo 21 Fracciones I, II,
+      III, IV, VI, VII y VIII de las Reglas de Operación del Fideicomiso Fondos Tijuana 2024-2027
+    url: https://www.tijuana.gob.mx/webpanel/UMAIHipervinculos/Archivo/Hipervinculos/24-202247143335940-12022193.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: programa de apoyo. Para empezar: https://sedeti.tijuana.gob.mx/fondostijuana Criterio para resolver:
+  La autorización de los créditos está sujeta al cumplimiento de los términos y condiciones de las Reglas de Operación
+  y Lineamientos vigentes del Fideicomiso Fondos Tijuana, así como a la disponibilidad de recursos'

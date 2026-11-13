@@ -1,0 +1,147 @@
+id: mx-bcn-retys-856-solicitud-de-servicio-industrial-comercial-departa
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Servicio Industrial, Comercial, Departamentos, Condominios y Similares
+summary: En el proceso de implementación de sistemas de agua potable y alcantarillado sanitario en construcciones
+  distintas a casa habitación se debe asegurar que estos sistemas cumplan con los estándares de calidad y seguridad
+  establecidos, es crucial llevar a cabo una revisión exhaustiva de los proyectos, tomando en consideración la normatividad
+  vigente.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Ensenada
+official_ids:
+  retys_id: 856
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/856
+  homoclave: BC-CESPE-016
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera contar con el servicio para fines no domesticos
+result: Aprobación
+cost:
+  type: variable
+  amount_mxn: 920.0
+  text: 'COSTO VARIABLE: Costo unitario por visita $ 920 M.N. Por hora adicional 307 $ M.N. Precios actualizados
+    noviembre 2026.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Matriz/ Sucursal Gastelum
+  address: 'Avenida Gastelúm #750, Zona Centro, Ensenada, 22800'
+- municipality: Ensenada
+  name: Sucursal Misión
+  address: 'Calle Once esquina con Reforma local 30 y 31 #831, Colonia Ulbrich, Ensenada, 22830'
+- municipality: Ensenada
+  name: Sucursal Chapultepec
+  address: 'Carretera transpeninsular km 14.7 #s/n, Ex -ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Sucursal Maneadero
+  address: 'Av. Alfonso García #162, LC.16, Maneadero parte baja, Ensenada, 22790'
+- municipality: Ensenada
+  name: Sucursal Vicente Guerrero
+  address: 'Av. Guadalupe Victoria #100, Vicente guerrero, Ensenada, 22920'
+- municipality: Ensenada
+  name: Sucursal Victoria
+  address: 'Genaro Vázquez #245 int 5, Fraccionamiento Victoria, Ensenada, 22810'
+scenarios:
+- name: Propietario del predio
+  requirements:
+  - text: 'Oficio de solicitud de factibilidad, dirigido al director general, anexando correo electrónico y número
+      de teléfono que le dará seguimiento al trámite. Debe indicar: nombre del propietario y/o razón social, rfc,
+      dirección, giro, necesidad de abasto, número de empleados, numero de locales comerciales y/o departamentos
+      además de indicar si ya tiene medidores instalados, cuántos tiene y si son domésc'
+    cites:
+    - source: retys
+  - text: Deslinde
+    cites:
+    - source: retys
+  - text: Plano de localización respecto a la ciudad referenciado con distancia a calles
+    cites:
+    - source: retys
+  - text: Superficie del predio y superficie de construcción
+    cites:
+    - source: retys
+  - text: Plano de planta de redes hidrosanitarias de la obra con dimensiones
+    cites:
+    - source: retys
+  - text: Factibilidad de uso de suelo positiva y autorizada
+    cites:
+    - source: retys
+  - text: Copia de número oficial
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial del solicitante vigente
+    cites:
+    - source: retys
+  - text: Carta poder (en caso necesario)
+    cites:
+    - source: retys
+  - text: Copia de documento de propiedad
+    cites:
+    - source: retys
+  - text: En caso de ser persona moral (copia del acta constitutiva)
+    cites:
+    - source: retys
+  - text: Copia de recibo de pago de factibilidad
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar oficio solicitud con copias de documentación en las oficinas de la cespe en avenida gastélum no.
+      750, con el guardia de recepción
+    - Si entregó la documentación completa, en un período de 10 a 15 días hábiles. Podrá comunicarse vía telefónica
+      con la asistente del sub director técnico, al teléfono 646 175 19 51 quien le dará fecha y hora en la que
+      podrá recoger la respuesta de su factibilidad
+  notes: El propietario deberá acreditar su personalidad con identificación oficial
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 9, Sección III
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar oficio solicitud con copias de documentación en las oficinas de la cespe en avenida gastélum
+    no. 750, con el guardia de recepción
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Si entregó la documentación completa, en un período de 10 a 15 días hábiles. Podrá comunicarse vía telefónica
+    con la asistente del sub director técnico, al teléfono 646 175 19 51 quien le dará fecha y hora en la que podrá
+    recoger la respuesta de su factibilidad
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 856: Solicitud de Servicio Industrial, Comercial, Departamentos, Condominios y Similares'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/856
+    version_date: 03/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Solicitud de Servicio Industrial, Comercial, Departamentos, Condominios y Similares.. Copiado
+  tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en
+  scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

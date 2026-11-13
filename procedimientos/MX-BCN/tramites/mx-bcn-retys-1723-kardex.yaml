@@ -1,0 +1,126 @@
+id: mx-bcn-retys-1723-kardex
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Kardex
+summary: Entrega de Historial Académico (Kardex) a las y los estudiantes de la Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1723
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1723
+  homoclave: BC-UTT-011
+who_can:
+- Interesado
+when: Cuando las y los estudiantes, exalumnos o egresados requieran de su Historial Académico (Kardex)
+result: Historial académico
+cost:
+  type: fijo
+  amount_mxn: null
+  text: 'COSTO: $117.42 pesos M.N. Servicio normal $139.05 pesos M.N. Servicio urgente'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 8 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Por cuatrimestre vigente
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Coordinación Operativa de Servicios Escolares
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+- municipality: Ensenada
+  name: Unidad Académica Ensenada
+  address: 'Avenida de las Flores s/n Carretera 1 a La Bufadora #s/n, Maneadero, Ensenada, 22790'
+scenarios:
+- name: Estudiantes de la UTT
+  requirements:
+  - text: Credencial de alumno de la Universidad Tecnológica de Tijuana vigente
+    cites:
+    - source: retys
+  - text: Recibo de pago
+    cites:
+    - source: retys
+  - text: Clave de matrícula
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+    - Dar clic a Otros trámites y seleccionar el tipo de trámite (Kardex).
+    - Ingresar datos requeridos.
+    - Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio de
+      Rectoría con tarjeta de débito o de crédito.
+    - Presentarse con el comprobante en las oficinas de atención de la UTT, según el plantel al que pertenece, para
+      obtener el historial del Kardex.
+  notes: Solicitud de Kardex
+legal_basis:
+- source: ley1
+  pinpoint: 5 Fracción IV
+- source: ley2
+  pinpoint: 3 Fracción I
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Accede al Botón de pago UTT: en https://boton.uttijuana.edu.mx/cliente'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Dar clic a Otros trámites y seleccionar el tipo de trámite (Kardex).
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Ingresar datos requeridos.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago en línea (https://boton.uttijuana.edu.mx/cliente) y/o en la Caja de Pagos en Edificio
+    de Rectoría con tarjeta de débito o de crédito.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presentarse con el comprobante en las oficinas de atención de la UTT, según el plantel al que pertenece,
+    para obtener el historial del Kardex.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1723: Kardex'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1723
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Decreto de Creación de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Ingresos Propios de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Historial Académico (Kardex). Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

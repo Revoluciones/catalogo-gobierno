@@ -1,0 +1,127 @@
+id: mx-bcn-retys-1900-denuncia-ambiental
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Denuncia Ambiental
+summary: Recepción y canalización de denuncias a las autoridades competentes por faltas o delitos ambientales.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 1900
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1900
+  homoclave: BC-SMADS-069
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando se requiera realizar una denuncia por un delito ambiental.
+result: El ingreso formal de la denuncia ambiental
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Auditoría, Inspección y Vigilancia
+  address: 'Calzada Francisco L. Montejano #1, Esteban Cantú, Mexicali, 21320'
+- municipality: Tijuana
+  name: Auditoría, Inspección y Vigilancia
+  address: 'Calle Dos Oriente, Esquina con Nueve Sur #Sin número, Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Auditoría, Inspección Y Vigilancia
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Formato de denuncia ambiental
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/15117
+  modes:
+  - name: En línea
+    steps:
+    - Se presenta la denuncia ambiental a través del portal de la SMADS
+    - Se revisa la denuncia y se turna a la autoridad
+    - Se emite una resolución para atender la denuncia ambiental
+  - name: Presencial
+    steps:
+    - Se presenta la denuncia ambiental en persona en las oficinas de la SMADS
+    - Se analiza la información y se turna a la autoridad correspondiente
+    - Se emite una resolución para la atención de la denuncia ambiental
+  notes: Promover la denuncia ciudadana de cualquier acto o delito contra el medio ambiente
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4, párrafo V
+- source: ley2
+  pinpoint: Artículo 46
+- source: ley3
+  pinpoint: Artículos 167 al 175, Capítulo III
+- source: ley4
+  pinpoint: Artículos 75 al 79
+- source: ley5
+  pinpoint: Artículo 19
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Se presenta la denuncia ambiental a través del portal de la SMADS
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se revisa la denuncia y se turna a la autoridad
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Se emite una resolución para atender la denuncia ambiental
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1900: Denuncia Ambiental'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1900
+    version_date: 04/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Ejecutivo del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Protección al Ambiente para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: ley
+    official: true
+    title: Ley para la Prevención, Gestión Integral y Economía Circular de los Residuos del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley5:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Medio Ambiente y Desarrollo Sustentable
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

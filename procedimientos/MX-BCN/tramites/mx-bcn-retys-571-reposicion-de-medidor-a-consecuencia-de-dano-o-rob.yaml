@@ -1,0 +1,159 @@
+id: mx-bcn-retys-571-reposicion-de-medidor-a-consecuencia-de-dano-o-rob
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Reposición de medidor a consecuencia de daño o robo.
+summary: Que el usuario cuente con medidor para determinar su consumo de agua para su facturación
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 571
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/571
+  homoclave: BC-CESPM-006
+who_can:
+- Representante Legal
+when: Cuando requieres el servicio
+result: Reporte
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Según el tipo de medidor'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: true
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Escrituras del predio o certificado de inscripción ante el registro público de la propiedad y del comercio
+      expedido por el gobierno del estado no mayor a seis meses de antigüedad.
+    cites:
+    - source: retys
+  - text: 'Presentar una identificación oficial: INE, licencia de conducir, matricula consular, cédula profesional
+      o pasaporte mexicano (vigentes).'
+    cites:
+    - source: retys
+  - text: En caso de reposición de medidor por robo, se deberá presentar el acta de robo correspondiente expedida
+      por la agencia del ministerio público
+    cites:
+    - source: retys
+  - text: En la primera reposición no tendrá costo alguno, pero en las ocasiones subsecuentes, tendrá que presentar
+      recibo de pago del total del costo del servicio o pagar mínimo el 30% a servicio doméstico y 50% a servicio
+      no doméstico como anticipo, para acceder a convenir el resto
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir al área de atención a usuarios de la zona comercial correspondiente
+    - Presentar su solicitud de servicios con los documentos requeridos.
+    - Entrega del presupuesto.
+    - Cubrir el total o convenir el importe de su presupuesto.
+    - Entrega de la orden de instalación.
+  notes: Acreditar la propiedad
+- name: Posesionario
+  requirements:
+  - text: Posesión expedida por el comisario ejidal o residencia expedida por el delegado municipal o concesión
+      expedida ante conagua, la secretaria de reforma agraria o el registro agrario nacional.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - acudir al área de atención a usuarios de la zona comercial correspondiente
+    - Presentar su solicitud de servicios con los documentos requeridos.
+    - Entrega del presupuesto.
+    - Cubrir el total o convenir el importe de su presupuesto.
+    - Entrega de la orden de instalación.
+  notes: Acreditar la propiedad
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 19 INCISO XII Y ART 25 DEL REGLAMENTO INTERNO DE LA COMISIÓN ESTATAL DE SERVICIOS PÚBLICOS
+    DE MEXICALI.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir al área de atención a usuarios de la zona comercial correspondiente
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Presentar su solicitud de servicios con los documentos requeridos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entrega del presupuesto.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Cubrir el total o convenir el importe de su presupuesto.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Entrega de la orden de instalación.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 571: Reposición de medidor a consecuencia de daño o robo.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/571
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: REGLAMENTO INTERNO VIGENTE
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

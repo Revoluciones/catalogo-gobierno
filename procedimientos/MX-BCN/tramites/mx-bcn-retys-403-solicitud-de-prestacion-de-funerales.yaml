@@ -1,0 +1,163 @@
+id: mx-bcn-retys-403-solicitud-de-prestacion-de-funerales
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Prestación de Funerales
+summary: Recepción de trámites de la prestación de funerales
+authority:
+  name: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno y Municipios del Estado de
+    Baja California
+official_ids:
+  retys_id: 403
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/403
+  homoclave: BC-ISSSTECALI-007
+who_can:
+- Interesado
+when: Al fallecer el trabajador asegurado vigente, jubilado o pensionado, antes de 3 años a partir de la fecha de
+  fallecimiento
+result: Otorgar apoyo económico para pagar los funerales del trabajador asegurado, jubilado o pensionado.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 6 Meses'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Otras Prestaciones
+  address: 'Calle Calafia #1115, Centro Cívico, Mexicali, 21000'
+- municipality: Tijuana
+  name: Administración
+  address: 'Blvd. Díaz Ordaz  #12649, El Paraíso, Tijuana, 22106'
+- municipality: Ensenada
+  name: Afiliaciones y Prestaciones Económicas
+  address: 'Calle de Las Rocas #254, Fraccionamiento Bahía de Ensenada, Ensenada, 22880'
+- municipality: Tecate
+  name: Administración
+  address: 'Carretera Federal Número 2 Tecate-Tijuana y Boulevard Los Encinos #S/N, Residencial El Palomino, Tecate,
+    21440'
+- municipality: Playas de Rosarito
+  name: Administración
+  address: 'Avenida Caleta #708, Fraccionamiento Angeles, Playas de Rosarito, 22710'
+- municipality: San Quintín
+  name: Administración Clínica San Quintín
+  address: 'Calle Josefa Ortíz de Domínguez #320, Colonia Lazáro Cárdenas, San Quintín, 22930'
+- municipality: San Felipe
+  name: Administración
+  address: 'Avenida Mar Caribe #615, Zona Centro, San Felipe, 21850'
+scenarios:
+- name: Solicitud de Prestación de Funerales
+  requirements:
+  - text: Solicitud llena
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/10977
+  - text: Acta de defunción del asegurado(a) (original y copia).
+    cites:
+    - source: retys
+  - text: Certificado de designación de beneficiario(a) ante ISSSTECALI (original y copia).
+    cites:
+    - source: retys
+  - text: Acta de nacimiento del beneficiario (a). este deberá estar en el certificado de designación de beneficiarios
+      ante ISSTECALI.(original y copia).
+    cites:
+    - source: retys
+  - text: Acta de matrimonio si el beneficiario es esposo (a). (original y copia).
+    cites:
+    - source: retys
+  - text: Identificación Oficial del Beneficiario (a) incluidos en el certificado de designación ante ISSSTECALI
+      (original y copia).
+    cites:
+    - source: retys
+  - text: CURP de beneficiario(a).
+    cites:
+    - source: retys
+  - text: Último talón del cheque del asegurado(a) (original y copia), solo jubilados y pensionados.
+    cites:
+    - source: retys
+  - text: Factura de la funeraria (original y copia).
+    cites:
+    - source: retys
+  - text: En caso de que el nombre no coincida entre el certificado y acta de nacimiento se necesitará testimonial
+      de nombre ante notario público (original y copia). Y se podrán requerir documentos adicionales según el caso.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a Oficinas de Atención.
+    - Solicitar en ventanilla el servicio de Solicitud de Prestación de Funerales y entregar documentación.
+    - Recibir copia sellada de la documentación.
+    - La información será capturada en el sistema y se realizará seguimiento a la solicitud.
+    - Se comunica al ciudadano la fecha de pago en caso de proceder la solicitud. Pago de prestación sujeto a flujo
+      y disponibilidad presupuestal
+    - Acudir a cobrar el pago.
+  notes: Beneficiario(a) designado(a) por el asegurado(a) que haya fallecido como trabajador(a). Pensionado o jubilado
+    y que haya cotizado al menos 6 meses al fondo de pensiones de ISSSTECALI
+legal_basis:
+- source: ley1
+  pinpoint: 1,4,93,96 y 97
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a Oficinas de Atención.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Solicitar en ventanilla el servicio de Solicitud de Prestación de Funerales y entregar documentación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Recibir copia sellada de la documentación.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: La información será capturada en el sistema y se realizará seguimiento a la solicitud.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se comunica al ciudadano la fecha de pago en caso de proceder la solicitud. Pago de prestación sujeto
+    a flujo y disponibilidad presupuestal
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a cobrar el pago.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 403: Solicitud de Prestación de Funerales'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/403
+    version_date: 23/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de ISSSTECALI
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Prestación de Funerales. Copiado tal cual de RETyS. Los pasos son los del primer escenario
+  y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.'

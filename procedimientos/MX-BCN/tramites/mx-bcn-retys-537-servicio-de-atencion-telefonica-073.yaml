@@ -1,0 +1,92 @@
+id: mx-bcn-retys-537-servicio-de-atencion-telefonica-073
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de atención telefónica (073)
+summary: Recepción de llamadas telefónicas para solicitar información y/o reportar emergencias de los usuarios de
+  CESPM, con atención los 365 días del año, las 24 horas del día.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 537
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/537
+  homoclave: BC-CESPM-001
+who_can:
+- Interesado
+when: Cuando tiene un problema de sus servicios de agua potable o drenaje
+result: Reporte
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 3 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Sinaloa #1399, Vallarta, Mexicali, 21270'
+scenarios:
+- name: Usuario
+  requirements:
+  - text: Proporcionar los datos necesarios para atender la emergencia (número de cuenta o clave catastral o nombre
+      de usuario).
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Marcar al número telefónico 073. y/o (686) 564-61-01
+    - Externar su inquietud.
+    - Proporcionar número de reporte.
+  notes: Da información
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 19 INCISO XII Y ART 25
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Marcar al número telefónico 073. y/o (686) 564-61-01
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Externar su inquietud.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Proporcionar número de reporte.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 537: Servicio de atención telefónica (073)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/537
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: REGLAMENTO INTERNO DE LA COMISIÓN ESTATAL DE SERVICIOS PÚBLICOS DE MEXICALI.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,219 @@
+id: mx-bcn-retys-1687-bloqueo-del-nervio-sacro-iliaco-debajo-de-la-regio
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Bloqueo del nervio sacro-iliaco (debajo de la región lumbar)
+summary: Es un procedimiento en el cual, la o el médico especialista realiza una punción para aplicación de analgésico,
+  mediante la cual bloquea el nervio afectado
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1687
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1687
+  homoclave: BC-UNEME-019
+who_can:
+- Interesado
+when: Cuando presente dolor crónico o de larga duración.
+result: Atención médica especializada en analgesia.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el centro de salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: Historia Clínica y diagnóstico de dolor crónico expedidos por Hospital General y/o centro de salud
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado que se le entrega en UNEME, previo a la intervención.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a consulta médica en el centro de salud IMSS-BIENESTAR que le corresponda
+    - Se realiza una exploración física y entrevista médica. Si se detectan signos de dolor crónico, se emite una
+      hoja de derivación para su atención en UNEME.
+    - El personal de UNEME le contacta por vía telefónica, indicando fecha y hora para una consulta de valoración
+      por un especialista
+    - Acudir a la UNEME, identificarse y entregar los requisitos
+    - Se miden los signos vitales, se realiza una entrevista y exploración física por parte del especialista. Si
+      se confirma el diagnóstico de dolor crónico, se programa la intervención necesaria.
+    - El personal de UNEME contacta a la persona interesada por vía telefónica, indicándole fecha, hora y cuidados
+      previos a la intervención
+    - Acudir nuevamente a la UNEME en la fecha y hora programados, con 1 persona acompañante. Firmar la carta de
+      consentimiento informado.
+    - Pasar al área que le indique el personal de UNEME para el cambio de ropa por una bata hospitalaria
+    - Pasar a la persona usuaria al área de preparación previa para el vendaje de los extremidades inferiores y
+      colocación de suero intravenoso
+    - Pasar a la persona usuaria al quirófano cuando el personal médico lo indique
+    - Al pasar al área de recuperación posterior, el médico le dará indicaciones para su cuidado y le dará de alta
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE e ISSSTECALI
+  requirements:
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Historia Clínica y diagnóstico de dolor crónico expedidos por Hospital General y/o centro de salud
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la intervención.
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a consulta médica en el establecimiento IMSS, ISSSTE o ISSSTECALI que le corresponda
+    - Realizar exploración y entrevista médica; derivación a UNEME si se detecta dolor crónico
+    - El personal de UNEME le contacta por vía telefónica, indicando fecha y hora para una consulta de valoración
+      por un especialista
+    - Acudir a la UNEME, identificarse y entregar los requisitos
+    - Medición de signos vitales, entrevista y exploración física; programación para intervención si se confirma
+      dolor crónico.
+    - El personal de UNEME contacta a la persona interesada por vía telefónica, indicándole fecha, hora y cuidados
+      previos a la intervención
+    - Acudir nuevamente a la UNEME en la fecha y hora programados, con 1 persona acompañante. Firmar la carta de
+      consentimiento informado.
+    - Pasar al área que le indique el personal de UNEME para el cambio de ropa por una bata hospitalaria
+    - Pasar a la persona usuaria al área de preparación previa para el vendaje de los extremidades inferiores y
+      colocación de suero intravenoso
+    - Pasar a la persona usuaria al quirófano cuando el personal médico lo indique
+    - Al pasar al área de recuperación posterior, el médico le dará indicaciones para su cuidado y le dará de alta
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 4
+- source: ley2
+  pinpoint: Articulo 6
+- source: ley3
+  pinpoint: Articulo 7
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a consulta médica en el centro de salud IMSS-BIENESTAR que le corresponda
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se realiza una exploración física y entrevista médica. Si se detectan signos de dolor crónico, se emite
+    una hoja de derivación para su atención en UNEME.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El personal de UNEME le contacta por vía telefónica, indicando fecha y hora para una consulta de valoración
+    por un especialista
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Acudir a la UNEME, identificarse y entregar los requisitos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Se miden los signos vitales, se realiza una entrevista y exploración física por parte del especialista.
+    Si se confirma el diagnóstico de dolor crónico, se programa la intervención necesaria.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: El personal de UNEME contacta a la persona interesada por vía telefónica, indicándole fecha, hora y cuidados
+    previos a la intervención
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acudir nuevamente a la UNEME en la fecha y hora programados, con 1 persona acompañante. Firmar la carta
+    de consentimiento informado.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Pasar al área que le indique el personal de UNEME para el cambio de ropa por una bata hospitalaria
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Pasar a la persona usuaria al área de preparación previa para el vendaje de los extremidades inferiores
+    y colocación de suero intravenoso
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Pasar a la persona usuaria al quirófano cuando el personal médico lo indique
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: Al pasar al área de recuperación posterior, el médico le dará indicaciones para su cuidado y le dará de
+    alta
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1687: Bloqueo del nervio sacro-iliaco (debajo de la región lumbar)'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1687
+    version_date: 16/Agosto /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Analgesia e inhibición del dolor. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

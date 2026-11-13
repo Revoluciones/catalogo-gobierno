@@ -1,0 +1,155 @@
+id: mx-bcn-retys-611-pagos-en-ventanilla-y-auto-pago-de-los-servicios-d
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Pagos en ventanilla y auto pago de los servicios de agua potable.
+summary: Atender al usuario de manera expedita, con el fin de que efectúe los pagos por derechos de consumo de agua,
+  de obras de alcantarillado sanitario y agua potable, ó abonos a convenio con el organismo y otros servicios; independientemente
+  de la zona comercial a que corresponda.
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 611
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/611
+  homoclave: BC-CESPM-021
+who_can:
+- Interesado
+when: Cuando requieres el servicio
+result: Recibo de pago
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Según factura de cobro de CESPM'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 2 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: VENCIMIENTO DE LA FACTURA
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Zona Comercial I Santorales
+  address: 'Avenida Camino Nacional y Plutón #S/N, Fraccionamiento El Coloso, Mexicali, 21138'
+- municipality: Mexicali
+  name: Zona Comercial II Nueva Esperanza
+  address: 'Villahermosa #1300, Nueva Esperanza, Mexicali, 21050'
+- municipality: Mexicali
+  name: Zona Comercial III Centro Civico
+  address: 'Calzada Independencia #S/N, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Zona Comercial IV Rio Mocorito
+  address: 'Gustavo Garmendia #S/N, Vallarta, Mexicali, 21270'
+- municipality: Mexicali
+  name: Zona Comercial V Novena
+  address: 'Novena #S/N, Calles, Mexicali, 21226'
+- municipality: Mexicali
+  name: Zona Comercial VI Gonzalez Ortega
+  address: 'Quinta y Rio Papaloapan #S/N, Delegación Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Zona Comercial VII Villas del Rey
+  address: 'Calzada Xochimilco Y Calle Del Polen #S/N, Fraccionamiento Villas del Rey, Mexicali, 21355'
+- municipality: Mexicali
+  name: Zona Comercial VIII Ciudad Morelos
+  address: 'Avenida 5 de Mayo #905, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Zona Comercial IX Guadalupe Victoria
+  address: 'Séptima y Avenida Hidalgo #S/N, Poblado Guadalupe Victoria, Mexicali, 21720'
+- municipality: Mexicali
+  name: Zona Comercial X San Felipe
+  address: 'Carretera al Aeropuerto #S/N, San Felipe, Mexicali, 21850'
+scenarios:
+- name: Ciudadano
+  requirements:
+  - text: Acudir con su factura
+    cites:
+    - source: retys
+  - text: Tener el monto del adeudo completo y/o el medio por el cual realizará el pago
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la zona comercial más cercana al área de cajas o auto pago y esperar su turno.
+    - Entregar la factura con el pago a la persona que esta en ventanilla
+    - Pago en efectivo en todos los casos, solo moneda nacional.
+    - Pago con cheques si la cuenta a pagar es de un servicio comercial ó en doméstico si el pago es mayor a 500
+      pesos.
+    - El cheque debe estar a nombre de comisión estatal de servicios públicos de Mexicali y por la cantidad exacta
+      a pagar
+    - Opción de pago con tarjeta de crédito o debito acompañado de su identificación.
+    - Se le entrega su comprobante de pago
+  notes: Realizar el pago
+legal_basis:
+- source: ley1
+  pinpoint: '9'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la zona comercial más cercana al área de cajas o auto pago y esperar su turno.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Entregar la factura con el pago a la persona que esta en ventanilla
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pago en efectivo en todos los casos, solo moneda nacional.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Pago con cheques si la cuenta a pagar es de un servicio comercial ó en doméstico si el pago es mayor a
+    500 pesos.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El cheque debe estar a nombre de comisión estatal de servicios públicos de Mexicali y por la cantidad
+    exacta a pagar
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Opción de pago con tarjeta de crédito o debito acompañado de su identificación.
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Se le entrega su comprobante de pago
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 611: Pagos en ventanilla y auto pago de los servicios de agua potable.'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/611
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

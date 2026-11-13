@@ -1,0 +1,242 @@
+id: mx-bcn-retys-405-solicitud-de-licencias-de-operacion-a-casas-hogar
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Licencias de Operación a Casas Hogar
+summary: Que las instituciones de asistencia social privada en el estado interesadas en brindar acogimiento residencial
+  a niñas, niños y adolescentes sin cuidados parentales, cuenten con licencia de operación expedida por la Procuraduría
+  de protección de niñas, niños y adolescentes para el estado de Baja California, para su operación y legal funcionamiento
+  como institución de asistencia social privada.
+authority:
+  name: Sistema para el Desarrollo Integral de la Familia
+official_ids:
+  retys_id: 405
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/405
+  homoclave: BC-DIF-019
+who_can:
+- Representante Legal
+- Otro
+when: Cuando deseen operar como institucióm de asistencia social privada
+result: Licencia de operación expedida por la procuraduría de protección de niñas, niños y adolescentes del estado
+  de Baja California
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 4 Meses'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 2 años
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: DIF Estatal BC (Oficinas Generales) Coordinación Estatal de Asistencia Privada Mexicali
+  address: 'Avenida Obregón #1290, Segunda Sección, Mexicali, 21100'
+- municipality: Tijuana
+  name: DIF Estatal BC (oficinas zona costa), Coordinación Asistencia Privada Tijuana
+  address: 'Avenida de los Ingenieros #2425, Otay Universidad, Tijuana, 22427'
+- municipality: Ensenada
+  name: DIF Estatal BC ( Centro de Gobierno), Coordinación Asistencia Privada Ensenada
+  address: 'Carretera Transpeninsular Ensenada- La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Ciudadanía en general
+  requirements:
+  - text: 1. Llenar la solicitud oficial de licencia de operación proporcionada por la procuraduría de protección.
+      Fundamento artículo 15 fracción i de la liaspnna.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/13630
+  - text: 2. Presentar la documentación que acredite la personalidad jurídica, y legal constitución de la institución
+      de asistencia social privada. Fundamento al artículo 15 fracción ii de la liaspnna.
+    cites:
+    - source: retys
+  - text: 3. Autorización de constitución como institución de asistencia social privada emitido por la secretaría
+      de bienestar de baja california. Fundamento artículo 15 fracción iii de la liaspnna.
+    cites:
+    - source: retys
+  - text: 4. Copia de la licencia de uso de suelo de sus instalaciones. Fundamento artículo 15 fracción iv de la
+      liaspnna.
+    cites:
+    - source: retys
+  - text: 5. Presentar sus programas de promoción para la integración familiar, formación, educación, recreación,
+      cultura y deporte de las niñas, niños y adolescentes. Fundamento artículo 15 fracción v de la liaspnna.
+    cites:
+    - source: retys
+  - text: 6. Presentar esquema de financiamiento y programa de allegamiento de recursos que permitan una atención
+      adecuada a las niñas, niños y adolescentes. Fundamento artículo 15 fracción vii de la liaspnna.
+    cites:
+    - source: retys
+  - text: 7. Presentar el padrón y expediente personal de cada uno del personal directivo, administrativo y voluntario
+      que prestara sus servicios en la institución de asistencia social privada. Fundamento artículo 15 fracción
+      viii de la liaspnna.
+    cites:
+    - source: retys
+  - text: 8. Acreditar satisfactoriamente la visita de supervisión que realice la procuraduría de protección. Fundamento
+      artículo 15 fracción vi de la liaspnna.
+    cites:
+    - source: retys
+  - text: 'Nota: se deberá presentar un dictamen o peritaje elaborado por autoridades de protección civil del estado,
+      en el que se acredite que las instalaciones de la institución de asistencia social privada cubran las condiciones
+      de seguridad necesaria para un adecuado funcionamiento. Fundamento artículo 20 de la liaspnna.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar la solicitud oficial de licencia de operación proporcionada por la procuraduría de protección. Fundamento
+      artículo 15 fracción i de la liaspnna.
+    - El usuario debe presentarse a las oficinas de la coordinación de asistencia privada de la procuraduría de
+      protección, en mexicali, tijuana (tecate y rosarito serán atendidos en tijuana) según corresponda y ensenada
+      (san quintín será atendido en ensenada) en donde podrán obtener el documento oficial “solicitud de licencia
+      de operación para instituciones de asistencia social privada para niñas, niños y adolescentes” para su llenado.
+    - Una vez que se presente la solicitud de la licencia debidamente requisitada, se revisará la documentación
+      presentada y en su caso se entregará un tanto del formato de recepción de documentos por el usuario.
+    - El usuario entregará original y copia simple de la “solicitud de licencia de operación para instituciones
+      de asistencia social privada para niñas, niños y adolescentes” y los documentos que la acompañen.
+    - Presentar la documentación que acredite la personalidad jurídica, y legal constitución de la institución de
+      asistencia social privada. fundamento al artículo 15 fracción ii de la liaspnna.
+    - 'Para la acreditación de la personalidad jurídica del representante legal cualquiera de estos documentos:
+      acta constitutiva debidamente protocolizada ante notario público, con copia simple para su cotejo, e inscrita
+      en el registro público de la propiedad y del comercio. acta de asamblea debidamente protocolizada ante notario
+      público, con copia simple para su cotejo. poder notariado, en que se falte al promovente para realizar el
+      trámite referido.'
+    - Acta constitutiva debidamente protocolizada ante notario público, con copia simple para su cotejo, e inscrita
+      en el registro público de la propiedad y del comercio.
+    - Autorización de constitución como institución de asistencia social privada emitido por la secretaría de bienestar
+      de baja california, en los términos que disponga la ley de asistencia social para el estado de baja california
+      y demás ordenamientos aplicables. Fundamento artículo 15 fracción iii de la liaspnna.
+    - Presentar copia de la licencia de uso de suelo de sus instalaciones. Fundamento artículo 15 fracción iv de
+      la liaspnna.
+    - Presentar sus programas de promoción para la integración familiar, formación, educación, recreación, cultura
+      y deporte de las niñas, niños y adolescentes. Fundamento artículo 15 fracción v de la liaspnna.
+    - Presentar esquema de financiamiento y programa de allegamiento de recursos que permitan una atención adecuada
+      a las niñas, niños y adolescentes. Fundamento artículo 15 fracción vii de la liaspnna.
+    - Presentar el padrón y expediente personal de cada uno del personal directivo, administrativo y voluntario
+      que prestara sus servicios en la institución de asistencia social privada. Fundamento artículo 15 fracción
+      viii de la liaspnna.
+    - Acreditar satisfactoriamente la visita de supervisión que realice la procuraduría de protección. Fundamento
+      artículo 15 fracción vi de la liaspnna.
+  notes: Recopilación de documentos para la licencia de operación para instituciones de asistencia social privada
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 13,14,15,16 y 17
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar la solicitud oficial de licencia de operación proporcionada por la procuraduría de protección.
+    Fundamento artículo 15 fracción i de la liaspnna.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El usuario debe presentarse a las oficinas de la coordinación de asistencia privada de la procuraduría
+    de protección, en mexicali, tijuana (tecate y rosarito serán atendidos en tijuana) según corresponda y ensenada
+    (san quintín será atendido en ensenada) en donde podrán obtener el documento oficial “solicitud de licencia
+    de operación para instituciones de asistencia social privada para niñas, niños y adolescentes” para su llenado.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Una vez que se presente la solicitud de la licencia debidamente requisitada, se revisará la documentación
+    presentada y en su caso se entregará un tanto del formato de recepción de documentos por el usuario.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El usuario entregará original y copia simple de la “solicitud de licencia de operación para instituciones
+    de asistencia social privada para niñas, niños y adolescentes” y los documentos que la acompañen.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presentar la documentación que acredite la personalidad jurídica, y legal constitución de la institución
+    de asistencia social privada. fundamento al artículo 15 fracción ii de la liaspnna.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: 'Para la acreditación de la personalidad jurídica del representante legal cualquiera de estos documentos:
+    acta constitutiva debidamente protocolizada ante notario público, con copia simple para su cotejo, e inscrita
+    en el registro público de la propiedad y del comercio. acta de asamblea debidamente protocolizada ante notario
+    público, con copia simple para su cotejo. poder notariado, en que se falte al promovente para realizar el trámite
+    referido.'
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Acta constitutiva debidamente protocolizada ante notario público, con copia simple para su cotejo, e inscrita
+    en el registro público de la propiedad y del comercio.
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Autorización de constitución como institución de asistencia social privada emitido por la secretaría de
+    bienestar de baja california, en los términos que disponga la ley de asistencia social para el estado de baja
+    california y demás ordenamientos aplicables. Fundamento artículo 15 fracción iii de la liaspnna.
+  cites:
+  - source: retys
+- n: '9'
+  actor: tú (según RETyS)
+  action: Presentar copia de la licencia de uso de suelo de sus instalaciones. Fundamento artículo 15 fracción iv
+    de la liaspnna.
+  cites:
+  - source: retys
+- n: '10'
+  actor: tú (según RETyS)
+  action: Presentar sus programas de promoción para la integración familiar, formación, educación, recreación, cultura
+    y deporte de las niñas, niños y adolescentes. Fundamento artículo 15 fracción v de la liaspnna.
+  cites:
+  - source: retys
+- n: '11'
+  actor: tú (según RETyS)
+  action: Presentar esquema de financiamiento y programa de allegamiento de recursos que permitan una atención adecuada
+    a las niñas, niños y adolescentes. Fundamento artículo 15 fracción vii de la liaspnna.
+  cites:
+  - source: retys
+- n: '12'
+  actor: tú (según RETyS)
+  action: Presentar el padrón y expediente personal de cada uno del personal directivo, administrativo y voluntario
+    que prestara sus servicios en la institución de asistencia social privada. Fundamento artículo 15 fracción viii
+    de la liaspnna.
+  cites:
+  - source: retys
+- n: '13'
+  actor: tú (según RETyS)
+  action: Acreditar satisfactoriamente la visita de supervisión que realice la procuraduría de protección. Fundamento
+    artículo 15 fracción vi de la liaspnna.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 405: Solicitud de Licencias de Operación a Casas Hogar'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/405
+    version_date: 30/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Instituciones de Asistencia Social Privada para Niñas, Niños y Adolescentes para el Estado de
+      Baja California.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

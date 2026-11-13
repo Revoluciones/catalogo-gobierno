@@ -1,0 +1,124 @@
+id: mx-bcn-retys-1724-curso-propedeutico-de-nivelacion-y-evaluacion-diag
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Curso propedéutico de nivelación y evaluación diagnóstica
+summary: Inscripción al curso propedéutico de nivelación y evaluación diagnóstica para los aspirantes a estudiar
+  el nivel de maestría en la Universidad Tecnológica de Tijuana.
+authority:
+  name: Universidad Tecnológica de Tijuana
+official_ids:
+  retys_id: 1724
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1724
+  homoclave: BC-UTT-012
+who_can:
+- Interesado
+when: En el periodo que indique la convocatoria.
+result: Carta de aceptación para realizar el curso propedéutico.
+cost:
+  type: fijo
+  amount_mxn: 8018.55
+  text: 'COSTO: $8,018.55 M.N. de inscripción.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Minutos'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Posgrado e Investigación
+  address: 'Carretera Libre Tijuana-Tecate #Km.10, Fraccionamiento El Refugio, Tijuana, 22253'
+scenarios:
+- name: Interesados en estudiar maestría
+  requirements:
+  - text: Acta de nacimiento original
+    cites:
+    - source: retys
+  - text: Certificado de Licenciatura original
+    cites:
+    - source: retys
+  - text: Copia de la Clave Única de Registro de Población (CURP)
+    cites:
+    - source: retys
+  - text: Currículum Vitae en formato Libre
+    cites:
+    - source: retys
+  - text: Cédula profesional de Licenciatura o Ingeniería
+    cites:
+    - source: retys
+  - text: Original y copia del recibo de pago realizado
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'Entrar a la liga: https://docs.google.com/forms/d/e/1FAIpQLSf1ymYiaC19BCyI1ukbZwhFK3cQAsJVq6paX3nEFzf6tKycNg/viewform
+      o al dar clic en el botón de iniciar trámite'
+    - Ingresar datos de acceso
+    - Generar referencia de pago
+    - Realizar pago con la referencia por medio de Transferencia bancaria, depósito en ventanilla de Banco Santander
+      o practicaja de Banco Santander
+    - Presentarse en la Dirección de Posgrado e Investigación en la UTT para entrega de documentación
+  notes: Las y los interesados en estudiar maestría en la Universidad Tecnológica de Tijuana
+legal_basis:
+- source: ley1
+  pinpoint: 6, 7, 8 y 13
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'Entrar a la liga: https://docs.google.com/forms/d/e/1FAIpQLSf1ymYiaC19BCyI1ukbZwhFK3cQAsJVq6paX3nEFzf6tKycNg/viewform
+    o al dar clic en el botón de iniciar trámite'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Ingresar datos de acceso
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Generar referencia de pago
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar pago con la referencia por medio de Transferencia bancaria, depósito en ventanilla de Banco Santander
+    o practicaja de Banco Santander
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Presentarse en la Dirección de Posgrado e Investigación en la UTT para entrega de documentación
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1724: Curso propedéutico de nivelación y evaluación diagnóstica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1724
+    version_date: 03/Septiembre/2026
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento Académico de Alumnos de la Universidad Tecnológica de Tijuana
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Curso propedéutico de nivelación y evaluación diagnóstica para maestría. Copiado tal cual
+  de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes están en scenarios.
+  Las leyes citadas aún no enlazan a su texto oficial.'

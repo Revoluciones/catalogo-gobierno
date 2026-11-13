@@ -1,0 +1,207 @@
+id: mx-bcn-retys-1897-actualizacion-de-representante-legal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Actualización de representante legal
+summary: Revisión de las constancias que exhiba el interesado, a fin de determinar si son suficientes para reconocer
+  la personalidad jurídica de aquel que estime pertinente para oír y recibir toda clase de notificaciones y documentos,
+  así como para realizar los trámites y gestiones necesarias en su nombre y representación ante la Secretaría.
+authority:
+  name: Secretaría de Medio Ambiente y Desarrollo Sustentable de Baja California
+official_ids:
+  retys_id: 1897
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1897
+  homoclave: BC-SMADS-068
+who_can:
+- Representante Legal
+when: En el momento de ingresar un trámite, o en cualquier momento que así lo considere necesario.
+result: Acuerdo administrativo con el reconocimiento de la personalidad jurídica.
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 60 Días Hábiles'
+  cites:
+  - source: retys
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 15 Días Hábiles'
+  cites:
+  - source: retys
+- what: otro
+  text: 'Tiempo que tiene el usuario para responder prevención: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Impacto Ambiental
+  address: 'Boulevard Benito Juárez y L. Montejano #1, Esteban Cantú, Mexicali, 21260'
+- municipality: Tijuana
+  name: Impacto Ambiental
+  address: 'Dos Oriente #16, Parque Ciudad Industrial, Tijuana, 22444'
+- municipality: Ensenada
+  name: Impacto Ambiental
+  address: 'Carretera Transpeninsular Ensenada-La Paz #6500, Ex-Ejido Chapultepec, Ensenada, 22785'
+scenarios:
+- name: Persona Física
+  requirements:
+  - text: Escrito libre en el que señale claramente el trámite solicitado, debiendo indicar domicilio, teléfono
+      y correo electrónico para oír y recibir notificaciones. Especificar las autorizaciones, permisos, licencias
+      y/o registros otorgados por la dependencia y/o los trámites que se encuentren en proceso de evaluación, en
+      los cuales solicita se le reconozca al apoderado y/o representante legal. Con firma autógrafa plasmada en
+      el escrito de solicitud.
+    cites:
+    - source: retys
+  - text: Copia simple del documento idoneo debidamente legalizado ante Notario Público en el cual se acredite a
+      la nueva personalidad jurídica.
+    cites:
+    - source: retys
+  - text: Copia simple de identificación oficial vigente del nuevo apoderado o representante legal.
+    cites:
+    - source: retys
+  - text: Original y copia, la primera para la dependencia y la segunda para el ciudadano, como acuse de recibido.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Seleccionar el tipo de persona (física o moral) y capturar la información solicitada.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS y revisar los requisitos.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  notes: Persona que requiere acreditar su personalidad jurídica.
+- name: Persona Moral
+  requirements:
+  - text: Escrito libre en el que señale claramente el trámite solicitado, debiendo indicar domicilio, teléfono
+      y correo electrónico para oír y recibir notificaciones. Especificar las autorizaciones, permisos, licencias
+      y/o registros otorgados por la dependencia y/o los trámites que se encuentren en proceso de evaluación, en
+      los cuales solicita se le reconozca al apoderado y/o representante legal. Con firma autógrafa plasmada en
+      el escrito de solicitud.
+    cites:
+    - source: retys
+  - text: Copia simple del Acta Constitutiva de la persona moral.
+    cites:
+    - source: retys
+  - text: Copia simple del documento idoneo debidamente legalizado ante Notario Público en el cual se acredite a
+      la nueva personalidad jurídica.
+    cites:
+    - source: retys
+  - text: Copia simple de la identificación oficial de apoderado o representante legal de la persona moral, legible
+      y con vigencia activa.
+    cites:
+    - source: retys
+  - text: Original y copia, la primera para la dependencia y la segunda para el ciudadano, como acuse de recibido.
+    cites:
+    - source: retys
+  modes:
+  - name: En línea
+    steps:
+    - Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+    - Seleccionar el tipo de persona (física o moral) y capturar la información solicitada.
+    - Subir los documentos solicitados vigentes.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  - name: Presencial
+    steps:
+    - Consultar el trámite en RETyS y revisar los requisitos.
+    - Integrar la documentación requerida conforme a los requisitos establecidos para el trámite.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable, presentar en original y
+      copia la solicitud del trámite, anexando la documentación correspondiente.
+    - Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+    - Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+    - Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+      notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+      por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la
+      normatividad aplicable.
+  notes: Sociedad civil o mercantil, organismo gubernamental, ejido y todo ente creado por el derecho, que requiere
+    asignar a un representante legal.
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 27 y 28
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Ingresar al portal, dando clic al botón "iniciar trámite", ubicado en la parte inferior derecha.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Seleccionar el tipo de persona (física o moral) y capturar la información solicitada.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Subir los documentos solicitados vigentes.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recepción y evaluación de la solicitud recibida por parte de la Secretaría.
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Publicación de Resolución Administrativa en la página oficial de la Secretaría.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de la Secretaría de Medio Ambiente y Desarrollo Sustentable para la entrega y debida
+    notificación de la Resolución Administrativa emitida por esta Autoridad. La notificación deberá ser recibida
+    por el representante legal o apoderado legal quien deberá acreditar su personalidad jurídica conforme a la normatividad
+    aplicable.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1897: Actualización de representante legal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1897
+    version_date: 08/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley del Procedimiento para los Actos de la Administración Pública del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Reconocimiento de representante legal. Copiado tal cual de RETyS. Los pasos son los del
+  primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no enlazan
+  a su texto oficial.'

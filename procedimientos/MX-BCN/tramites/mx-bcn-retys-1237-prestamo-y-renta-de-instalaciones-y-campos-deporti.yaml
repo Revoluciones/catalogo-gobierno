@@ -1,0 +1,108 @@
+id: mx-bcn-retys-1237-prestamo-y-renta-de-instalaciones-y-campos-deporti
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Préstamo y Renta de Instalaciones y Campos Deportivos
+summary: Proporcionar en préstamo y renta de instalaciones y campos deportivos, administrados por el Instituto del
+  Deporte y la Cultura Física de Baja California, para la práctica o entrenamiento de algún deporte (campo de futbol,
+  béisbol, softbol, tenis, canchas de frontón y básquetbol, como las áreas verdes, entre otros)
+authority:
+  name: Instituto del Deporte y la Cultura Física
+official_ids:
+  retys_id: 1237
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1237
+  homoclave: BC-INDEBC-010
+who_can:
+- Interesado
+- Representante Legal
+- Tutor
+when: Cuando la persona interesada necesite las instalaciones
+result: Uso de instalaciones y campos deportivos en préstamo y renta
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Dependerá de la instalación requerida'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 6 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: De acuerdo a la solicitud
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Ciudad Deportiva Mexicali
+  address: 'Calzada Aviación Ciudad Deportiva #s/n, Cuauhtémoc, Mexicali, 21230'
+- municipality: Tijuana
+  name: Centro De Alto Rendimiento Tijuana
+  address: 'Circuito Vial Sur #S/N, UABC, Universidad Otay, Tijuana, 22427'
+scenarios:
+- name: Ciudadanía en General
+  requirements:
+  - text: Ser aprobada la solicitud de renta o préstamo por la Dirección del Instituto del Deporte y la Cultura
+      de Baja California
+    cites:
+    - source: retys
+  - text: Pagar tarifa de la instalación, en caso de que sea renta
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar por escrito la solicitud dirigida a la persona de la Dirección General del Instituto, especificando
+      la necesidad del préstamo y/o renta, fecha y horario
+    - La Dirección del Instituto autoriza el préstamo o renta la instalación solicitada
+    - Realizar el pago el pago correspondiente
+  notes: Proporcionar en préstamo y renta de instalaciones y campos deportivos administrados por el Instituto del
+    Deporte y la Cultura Física de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 26, fracción VII
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar por escrito la solicitud dirigida a la persona de la Dirección General del Instituto, especificando
+    la necesidad del préstamo y/o renta, fecha y horario
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: La Dirección del Instituto autoriza el préstamo o renta la instalación solicitada
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Realizar el pago el pago correspondiente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1237: Préstamo y Renta de Instalaciones y Campos Deportivos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1237
+    version_date: 16/Enero /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Cultura Física y Deportes del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

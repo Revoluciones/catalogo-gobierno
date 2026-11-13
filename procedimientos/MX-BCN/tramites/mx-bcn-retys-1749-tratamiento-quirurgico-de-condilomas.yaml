@@ -1,0 +1,189 @@
+id: mx-bcn-retys-1749-tratamiento-quirurgico-de-condilomas
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Tratamiento quirúrgico de condilomas
+summary: Es una cirugía en la que se eliminan los condilomas (verrugas) en la zona perianal.
+authority:
+  name: Unidad de Especialidades Médicas de Baja California
+official_ids:
+  retys_id: 1749
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1749
+  homoclave: BC-UNEME-020
+who_can:
+- Interesado
+when: Cuando la o el especialista lo recomiende
+result: Atención médica especializada en Coloproctología
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 5 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Olimpus #S/N, Plutarco Elías Calles, Mexicali, 21376'
+- municipality: Ensenada
+  name: Dirección de Unidad Quirúrgica
+  address: 'Avenida Gastelum #1340, Zona Centro, Ensenada, 22800'
+scenarios:
+- name: Derechohabientes del IMSS-BIENESTAR
+  requirements:
+  - text: Hoja de derivación debidamente requisitada y sellada, que le proporciona el centro de salud y/u Hospital
+      General.
+    cites:
+    - source: retys
+  - text: Historia clínica, exámenes de laboratorio, reporte de la valoración cardiopulmonar cuando proceda y demás
+      estudios de gabinete que procedan de acuerdo a la intervención quirúrgica, proporcionados por el centro de
+      salud y/u Hospital General.
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte o licencia de manejo).
+    cites:
+    - source: retys
+  - text: CURP
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden signos vitales, se realiza entrevista médica y exploración física. Se deriva con un especialista
+      si es necesario.
+    - Acudir a la consulta de especialidad
+    - El especialista realiza una entrevista y exploración física. De ser necesario, se deriva a UNEME
+    - Contactar al ciudadano para indicar fecha y hora de la cirugía, además de los cuidados previos.
+    - Acudir a UNEME con un acompañante, identificarse y entregar los requisitos
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes de los Servicios de Salud del Instituto Mexicano del Seguro Social para el Bienestar
+- name: Derechohabientes IMSS, ISSSTE e ISSSTECALI
+  requirements:
+  - text: Nota médica de referencia de la unidad de origen que incluya resultados de laboratorio o los exámenes
+      de laboratorio de respaldo
+    cites:
+    - source: retys
+  - text: Identificación oficial (INE, pasaporte, licencia de conducir).
+    cites:
+    - source: retys
+  - text: Hoja de derivación debidamente llenada y sellada, que le proporciona el IMSS, ISSSTE o ISSSTECALI, según
+      corresponda.
+    cites:
+    - source: retys
+  - text: Carta de consentimiento informado, que se le entrega en UNEME antes de la cirugía
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a la consulta médica del establecimiento que le corresponda.
+    - Se le miden signos vitales, se realiza entrevista médica y exploración física. Se deriva con un especialista
+      si es necesario.
+    - Acudir a la consulta de especialidad
+    - El especialista realiza una entrevista y exploración física. De ser necesario, se deriva a UNEME
+    - Contactar al ciudadano para indicar fecha y hora de la cirugía, además de los cuidados previos.
+    - Acudir a UNEME con un acompañante, identificarse y entregar los requisitos
+    - Cambiarse a bata hospitalaria
+    - Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del procedimiento,
+      dar instrucciones para el cuidado y alta.
+  notes: Derechohabientes del Instituto Mexicano del Seguro Social, del Instituto de Seguridad y Servicios Sociales
+    de los Trabajadores del Estado y del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Gobierno
+    y Municipios del Estado de Baja California
+legal_basis:
+- source: ley1
+  pinpoint: '4'
+- source: ley2
+  pinpoint: '6'
+- source: ley3
+  pinpoint: '7'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta médica del establecimiento que le corresponda.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Se le miden signos vitales, se realiza entrevista médica y exploración física. Se deriva con un especialista
+    si es necesario.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Acudir a la consulta de especialidad
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El especialista realiza una entrevista y exploración física. De ser necesario, se deriva a UNEME
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Contactar al ciudadano para indicar fecha y hora de la cirugía, además de los cuidados previos.
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Acudir a UNEME con un acompañante, identificarse y entregar los requisitos
+  cites:
+  - source: retys
+- n: '7'
+  actor: tú (según RETyS)
+  action: Cambiarse a bata hospitalaria
+  cites:
+  - source: retys
+- n: '8'
+  actor: tú (según RETyS)
+  action: Preparar al paciente para la cirugía (incluyendo vendaje y suero), trasladar al quirófano y, después del
+    procedimiento, dar instrucciones para el cuidado y alta.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1749: Tratamiento quirúrgico de condilomas'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1749
+    version_date: 11/Octubre /2024
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley General de Salud
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: ley
+    official: true
+    title: Ley de Salud Pública para el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Servicio de Atención Especializada en Coloproctología. Copiado tal cual de RETyS. Los pasos
+  son los del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas
+  aún no enlazan a su texto oficial.'

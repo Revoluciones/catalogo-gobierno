@@ -1,0 +1,130 @@
+id: mx-bcn-retys-361-permisos-de-introduccion-y-o-salida-de-ganado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Permisos de Introducción y/o Salida de Ganado
+summary: Expedir permisos de Introducción y Salida de Ganado, con la finalidad de controlar y verificar su legal
+  procedencia, así como, la condición sanitaria del ganado.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 361
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/361
+  homoclave: BC-SADER-002
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieran introducir o sacar del estado ganado
+result: Permiso
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 3 Días Hábiles'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 30 dias naturales
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Ganadería
+  address: 'Carretera Mexicali- San Luis Rio Colorado Km 22.5 #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Diego  Rivera #33, Zona Urbana Rio Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada - La Paz #6500, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Subdelegación Zona Sur
+  address: 'Carretera Transpeninsular Punta Prieta Guerrero Nego Km 124+800 #S/N, Ejido El Costeño, Villa Jesús
+    María, Ensenada, 22991'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+- municipality: San Quintín
+  name: Subdelegación San Quintín
+  address: 'Calle 10 #130, Fraccionamiento San Quintín, San Quintín, 22940'
+scenarios:
+- name: Permiso de introducción y/o salida de ganado
+  requirements:
+  - text: Certificado zoosanitario y/o aviso de movilización
+    cites:
+    - source: retys
+  - text: Solicitud formato libre
+    cites:
+    - source: retys
+  - text: Remisión o factura
+    cites:
+    - source: retys
+  - text: Guía reemo-para introducción o salida de ganado
+    cites:
+    - source: retys
+  - text: Presentar copia de certificado del departamento de agricultura y ganaderia del país de origen (para permiso
+      de importación de ganado)
+    cites:
+    - source: retys
+  - text: Pedimento de importación (para permiso de importación de ganado)
+    cites:
+    - source: retys
+  - text: Comprobante de pago por servicio requerido (si aplica)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar solicitud por escrito en formato libre, dirigida al director(a) de ganadería, donde especifique
+      el nombre y número de patente ganadera, tipo de permiso solicitado, propósito, cantidad, motivo, unidad de
+      medida, origen, destino, de ganado, a introducir o sacar del estado
+  notes: Permiso de introducción y/o salida de ganado
+legal_basis:
+- source: ley1
+  pinpoint: Artículos 101,102 y 103
+- source: ley2
+  pinpoint: 56, fraccón XVI
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar solicitud por escrito en formato libre, dirigida al director(a) de ganadería, donde especifique
+    el nombre y número de patente ganadera, tipo de permiso solicitado, propósito, cantidad, motivo, unidad de medida,
+    origen, destino, de ganado, a introducir o sacar del estado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 361: Permisos de Introducción y/o Salida de Ganado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/361
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Agropecuario del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento interno de la Secretaria De Agricultura Y Desarrollo Rural de B.C.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

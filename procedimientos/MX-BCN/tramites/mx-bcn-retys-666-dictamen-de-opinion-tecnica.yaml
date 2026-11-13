@@ -1,0 +1,145 @@
+id: mx-bcn-retys-666-dictamen-de-opinion-tecnica
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Dictamen de opinión técnica
+summary: Expedición de dictamen de opinión técnica de los servicios de agua potable, alcantarillado sanitario y
+  pluvial
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 666
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/666
+  homoclave: BC-CESPM-026
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el servicio
+result: Dictamen
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: $326.33 m.n. doméstico y $664.43 m.n. no doméstico el costo del servicio variará durante
+    el ejercicio 2026 de acuerdo a la actualización por la variación que tenga el índice nacional de precios y cotizaciones
+    (INPC)'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Sinaloa #1399, Vallarta, Mexicali, 21270'
+scenarios:
+- name: Propietario
+  requirements:
+  - text: Escritura o certificado de inscripción en el RPPC (no mayor a 6 meses).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar solicitud para dictamen de opinión técnica proporcionada por la zona comercial más cercana
+    - Realizar el pago respectivo en la zona comercial más cercana.
+    - Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+    - Recoger el dictamen de opinión técnica en la subdirección técnica.
+  notes: Acreditar la propiedad
+- name: Posesionario
+  requirements:
+  - text: Posesión expedida por el comisariado ejidal
+    cites:
+    - source: retys
+  - text: Constancia de residencia expedida por el ayuntamiento.
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar solicitud para dictamen de opinión técnica proporcionada por la zona comercial más cercana
+    - Realizar el pago respectivo en la zona comercial más cercana.
+    - Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+    - Recoger el dictamen de opinión técnica en la subdirección técnica.
+  notes: Acreditar la propiedad
+- name: Industria, comercio y desarrolladores
+  requirements:
+  - text: Solicitud del tramite
+    cites:
+    - source: retys
+  - text: Comprobante de pago del trámite.
+    cites:
+    - source: retys
+  - text: Deslinde catastral certificado (en caso de no encontrarse registrado el predio en el sig)
+    cites:
+    - source: retys
+  - text: Copia de identificación oficial del propietario ó representante legal
+    cites:
+    - source: retys
+  - text: Poder notariado representante legal
+    cites:
+    - source: retys
+  - text: Presentar factibilidad de uso de suelo (dau).
+    cites:
+    - source: retys
+  - text: Planta de conjunto aprobada por la dau preferentemente.
+    cites:
+    - source: retys
+  - text: Desglose de gasto de consumo (memoria de cálculo hidráulico)
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Llenar solicitud para dictamen de opinión técnica proporcionada por la zona comercial más cercana
+    - Realizar el pago respectivo en la zona comercial más cercana.
+    - Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+    - Recoger el dictamen de opinión técnica en la subdirección técnica.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 9 SECCIÓN I INCISO G,1
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Llenar solicitud para dictamen de opinión técnica proporcionada por la zona comercial más cercana
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Realizar el pago respectivo en la zona comercial más cercana.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Presentar la solicitud en la recepción de la subdirección técnicas con la documentación solicitada.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Recoger el dictamen de opinión técnica en la subdirección técnica.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 666: Dictamen de opinión técnica'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/666
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DE BAJA CALIFORNIA 2025.
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,218 @@
+id: mx-bcn-retys-663-permiso-de-traslado
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Permiso de Traslado
+summary: Permiso de traslado para aquellos vehículos que no estén dados de alta en el Registro Estatal Vehicular,
+  con la finalidad de trasladarlos a otro Estado o de una ciudad a otra dentro del mismo Estado, el cual será otorgado
+  por un plazo máximo de 15 días naturales.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 663
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/663
+  homoclave: BC-SH-014
+who_can:
+- Interesado
+when: Cuándo se vaya a trasladar una unidad de una ciudad a otra dentro del Estado de Baja California o bien a otra
+  entidad federativa del país.
+result: Permiso de traslado de un vehículo.
+cost:
+  type: variable
+  amount_mxn: 1084.47
+  text: 'COSTO VARIABLE: Costos del mes de Noviembre de 2026. Por expedición por única vez, de permiso de traslado,
+    por 15 días. $1,084.47 *No incluye costo de contribuciones municipales'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 24 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: 15 días naturales.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Personas Fisicas
+  requirements:
+  - text: Presentar vehículo para revisión física
+    cites:
+    - source: retys
+  - text: Presentar en original y copia factura de origen que hubiese expedido el fabricante, ensamblador, distribuidor
+      autorizado o empresas comerciales dedicadas a la compra y venta de vehículos usados en la que se identifique
+      el vehículo en su individualidad.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de pedimento en el que conste la legal importación del vehículo cuando el
+      mismo es de procedencia extranjera
+    cites:
+    - source: retys
+  - text: Presentar en original y copia identificación oficial vigente del propietario.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11009
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de Recaudación de Rentas del Estado, prsentar el vehículo que requiere el permiso de
+      traslado.
+    - Pasar al área de revisión de número de serie
+    - Pasar al módulo de altas y cambio de propietarios para revisión de documentos
+    - Realizar el pago de los derechos e impuestos
+    - Recoger el permiso de traslado
+  notes: Requisitos para obtener el permiso de traslado.
+- name: Personas Morales
+  requirements:
+  - text: Presentar vehículo para revisión física
+    cites:
+    - source: retys
+  - text: Presentar en original y copia factura de origen que hubiese expedido el fabricante, ensamblador, distribuidor
+      autorizado o empresas comerciales dedicadas a la compra y venta de vehículos usados en la que se identifique
+      el vehículo en su individualidad.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de pedimento en el que conste la legal importación del vehículo cuando el
+      mismo es de procedencia extranjera
+    cites:
+    - source: retys
+  - text: Presentar en original y copia licencia de conducir vigente del estado. En caso de que se cuente con alguna
+      discapacidad o impedimento para conducir, presentar la licencia de conducir vigente del estado de la persona
+      que autorice para conducir
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11032
+  - text: Presentar en original y copia comprobante de domicilio no mayor a tres meses de antigüedad
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de la escritura constitutiva
+    cites:
+    - source: retys
+  - text: Presentar original y copia de la Cédula de Identificación Fiscal del Registro federal de Contribuyentes
+    cites:
+    - source: retys
+  - text: Presentar original y copia identificación oficial vigente (INE, pasaporte mexicano, cartilla del servicio
+      militar nacional o matrícula consular) del representante y documentación en la que conste la personalidad
+      de quien comparece.
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Acudir a las oficinas de Recaudación de Rentas del Estado, prsentar el vehículo que requiere el permiso de
+      traslado.
+    - Pasar al área de revisión de número de serie
+    - Pasar al módulo de altas y cambio de propietarios para revisión de documentos
+    - Realizar el pago de los derechos e impuestos
+    - Recoger el permiso de traslado
+  notes: Requisitos para obtener el permiso de traslado.
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 10, FRACCIÓN III, NÚMERO 13.
+- source: ley2
+  pinpoint: '28'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Acudir a las oficinas de Recaudación de Rentas del Estado, prsentar el vehículo que requiere el permiso
+    de traslado.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasar al área de revisión de número de serie
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Pasar al módulo de altas y cambio de propietarios para revisión de documentos
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Realizar el pago de los derechos e impuestos
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: Recoger el permiso de traslado
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 663: Permiso de Traslado'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/663
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA PARA EL EJERECICIO FISCAL DEL AÑO 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY QUE REGULA LOS SERVICIOS DE CONTROL VEHICULAR EN EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,166 @@
+id: mx-bcn-retys-1029-servicio-de-clasificacion-de-carne-de-bovino-en-ca
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Servicio de Clasificación de Carne de Bovino en Canal
+summary: Otorgar un grado de calidad a la carne de bovino en el canal de producción local, introducción, importación
+  al Estado.
+authority:
+  name: Secretaría de Agricultura y Desarrollo Rural
+official_ids:
+  retys_id: 1029
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1029
+  homoclave: BC-SADER-008
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando las personas físicas y morales que produzcan, introduzcan o importen carne de bovino en canal que pretendan
+  comercializar estos productos en BC
+result: Sello de calidad
+cost:
+  type: variable
+  amount_mxn: 18.5
+  text: 'COSTO VARIABLE: Costo Clasificación de carne de bovino en canal $18.50'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: para_prevenir
+  text: 'Tiempo que tiene el organismo para prevenir: 2 Horas'
+  cites:
+  - source: retys
+- what: vigencia
+  text: único
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Dirección de Asesoría y Acompañamiento Técnico
+  address: 'Carretera Mexicali- San Luis Rio Colorado Km 22.5 #S/N, Ejido Sinaloa, Mexicali, 21620'
+- municipality: Tijuana
+  name: Delegación Tijuana
+  address: 'Diego  Rivera #33, Zona Urbana Rio Tijuana, Tijuana, 22010'
+- municipality: Ensenada
+  name: Delegación Ensenada
+  address: 'Carretera Transpeninsular Ensenada-La Paz #65000, Ex Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Delegación Tecate
+  address: 'Calle Misión Santo Domingo #1016, Fraccionamiento El Descanso, Tecate, 21478'
+scenarios:
+- name: Clasificación de carne de bovino en canal de producción local
+  requirements:
+  - text: Copia de bitacora de producción
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'vía telefónica: solicitar el servicio de clasificación de carne de bovino en canal, describiento la cantidad
+      de producto así como la fecha así y horario deseado'
+    - 'Presencial: al momento de recibir el servicio se deberá presentar los requisitos documentales correspondientes
+      así como el embarque o lote de producto que será clasificado'
+  notes: Clasificación de carne de bovino en canal de producción local
+- name: CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL DE INTRODUCCIÓN
+  requirements:
+  - text: COPIA GUIA DE TRÁNSITO COMERCIA EMITIDA POR LA SECRETARIA DE AGRICULTURA Y DESARROLLO RURAL DEL ESTADO
+      DE BAJA CALIFORNIA.
+    cites:
+    - source: retys
+  - text: COPIA DE FACTURA O REMISIÓN DEL PRODUCTO
+    cites:
+    - source: retys
+  - text: COPIA DE AVISO O CERTIFICADO ZOOSANITARIO DE MOVILIZACIÓN.
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'VIA TELEFONICA: SOLICITAR EL SERVICIO DE CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL, DESCRIBIENTO LA CANTIDAD
+      DE PRODUCTO ASÍ COMO LA FECHA ASÍ Y HORARIO DESEADO'
+    - 'PRESENCIAL: AL MOMENTO DE RECIBIR EL SERVICIO SE DEBERÁ PRESENTAR LOS REQUISITOS DOCUMENTALES CORRESPONDIENTES
+      ASÍ COMO EL EMBARQUE O LOTE DE PRODUCTO QUE SERÁ CALSIFICADO'
+  notes: CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL DE INTRODUCCIÓN
+- name: CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL
+  requirements:
+  - text: COPIA DE AVISO O CERTIFICADO ZOOSANITARIO DE MOVILIZACIÓN
+    cites:
+    - source: retys
+  - text: COPIA DE PEDIMENTO DE IMPORTACIÓN
+    cites:
+    - source: retys
+  - text: COPIA DE PERMISO DE IMPORTACIÓN EMITIDO POR LA SECRETARIA DE AGRICULTURA Y DESARROLLO RURAL DEL ESTADO
+      DE BAJA CALIFORNIA
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - 'VIA TELEFONICA: SOLICITAR EL SERVICIO DE CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL, DESCRIBIENTO LA CANTIDAD
+      DE PRODUCTO ASÍ COMO LA FECHA ASÍ Y HORARIO DESEADO'
+    - 'PRESENCIAL: AL MOMENTO DE RECIBIR EL SERVICIO SE DEBERÁ PRESENTAR LOS REQUISITOS DOCUMENTALES CORRESPONDIENTES
+      ASÍ COMO EL EMBARQUE O LOTE DE PRODUCTO QUE SERÁ CALSIFICADO'
+  notes: CLASIFICACIÓN DE CARNE DE BOVINO EN CANAL
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 2, Artículo 10, Inciso E, fracción VI, Artículos 131 y 132
+- source: ley2
+  pinpoint: Artículo 20, fracción I, Inciso a
+- source: ley3
+  pinpoint: Artículo 36, fracciones I y III, Artículo 40
+- source: ley4
+  pinpoint: Artículos del 1 al 39
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: 'vía telefónica: solicitar el servicio de clasificación de carne de bovino en canal, describiento la cantidad
+    de producto así como la fecha así y horario deseado'
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: 'Presencial: al momento de recibir el servicio se deberá presentar los requisitos documentales correspondientes
+    así como el embarque o lote de producto que será clasificado'
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1029: Servicio de Clasificación de Carne de Bovino en Canal'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1029
+    version_date: 06/Noviembre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Desarrollo Agropecuario del Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el Ejercicio Fiscal 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley3:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaria De Agricultura Y Desarrollo Rural de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley4:
+    type: reglamento
+    official: true
+    title: Reglamento para el Funcionamiento del Servicio de Clasificación de Ganado y Carnes en el Estado de Baja
+      California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

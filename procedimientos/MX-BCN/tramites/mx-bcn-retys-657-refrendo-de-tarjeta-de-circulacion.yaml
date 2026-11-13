@@ -1,0 +1,237 @@
+id: mx-bcn-retys-657-refrendo-de-tarjeta-de-circulacion
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Refrendo de Tarjeta de Circulación
+summary: Registrar anualmente en el padrón vehicular el refrendo de las tarjetas de circulación de vehículos.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 657
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/657
+  homoclave: BC-SH-009
+who_can:
+- Representante Legal
+- Interesado
+when: Vehículos con antigüedad 0 a 9 años de enero a marzo, Vehículos con antigüedad 10 años o más de enero a junio.
+result: Tarjeta de circulación vigente.
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026: Refrendo de Tarjeta de circulación: Automóviles y camiones particulares
+    $1,201.16 Motocicletas $1,201.16 Para demostración $2,261.78 Remolques $527.69 *No incluye costos de contribuciones
+    municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 25 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Variable.
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Mexicali
+  name: Volanta Comandancia Ánahuac
+  address: 'Edificio de Seguridad Público Municipal Comandancia Blvd. Hector Teran Teran y Blvd. Ánahuac #S/N, Televisora,
+    Mexicali, 21340'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar Gonzalez Ortega
+  address: 'Calle 4ta, esquina con rio bravo. #311, Gonzalez Ortega, Mexicali, 21397'
+- municipality: Mexicali
+  name: Volanta CESPM Calle Novena
+  address: 'Calle Novena y Palmira #SN, Calles (Poblado Compuertas), Mexicali, 21226'
+- municipality: Mexicali
+  name: Volanta CESPM Villas del Rey
+  address: 'Calz. Xochimilco y C. del Polen #SN, Villas del Rey, Mexicali, 21354'
+- municipality: Tijuana
+  name: Volanta CANACINTRA Tijuana
+  address: 'Blvd. Agua Caliente  #12310, Del Prado, Tijuana, 22480'
+- municipality: Tijuana
+  name: Volanta CANACO
+  address: 'Av. Xavier Villarrutia #1271, Zona Rio, Tijuana, 22010'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Volanta Benitez
+  address: 'Blvd. Federico Benitez #1045, Los Españoles, La Mesa, Tijuana, 22105'
+- municipality: Tijuana
+  name: Volanta Playas de Tijuana
+  address: 'Calle del Pedregal #S/N, Jardines de Playas de Tijuana, Tijuana, 22500'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Tijuana
+  name: Oficinas de Gobierno del Estado en Tijuana
+  address: 'Vía rápida oriente #S/N, Zona Rio , Tijuana, 22010'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Ensenada
+  name: Volanta Manzana 8
+  address: 'Blvd. Las Dunas y Calle Rivera #SN, Manzana 8, Ensenada, 22840'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Ciudadanos en general
+  requirements:
+  - text: Entregar las placas de circulación en caso de reemplacamiento.
+    cites:
+    - source: retys
+  - text: Tratándose de personas físicas, presentar licencia de conducir vigente del Estado de Baja California
+    cites:
+    - source: retys
+  - text: Certificado de no adeudo municipal
+    cites:
+    - source: retys
+  - text: Seguro de responsabilidad civil vigente ( monto mínimo de cobertura de responsabilidad civil $472,279.50)
+    cites:
+    - source: retys
+  - text: Realizar el pago correspondiente
+    cites:
+    - source: retys
+  - text: 'Tratándose de personas morales: Presentar comprobante de domicilio ( con antigüedad no mayor a 6 meses),
+      acta constitutiva, copia de la cédula de identificación fiscal del RFC, identificación oficial con fotografía
+      vigente del representante legal y documentación en la que conste la personalidad de quién comparece.'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita dando click en el botón iniciar tramite
+    - Acudir a la oficina de Recaudación de Rentas del Estado más cercano a su domicilio
+    - Entregar requisitos para trámite en ventanilla
+    - Una vez que se valida la documentación, se procede a la captura de la información del vehículo en el sistema
+      de control vehicular
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Procesa e imprime la tarjeta de circulación del presente año y comprobante de pago y lo entrega al contribuyente
+  notes: Requisitos para obtener el refrendo de la tarjeta de circulación de vehículos
+- name: Pensionados, Jubilados, personas con discapacidad y adultos mayores
+  requirements:
+  - text: Entregar las placas de circulación en caso de reemplacamiento.
+    cites:
+    - source: retys
+  - text: Tratándose de personas físicas, presentar licencia de conducir vigente del Estado de Baja California
+    cites:
+    - source: retys
+  - text: Certificado de no adeudo municipal
+    cites:
+    - source: retys
+  - text: Seguro de responsabilidad civil vigente ( monto mínimo de cobertura de responsabilidad civil $472,279.50)
+    cites:
+    - source: retys
+  - text: Presentar INE e identifcación que acredite ser pensionado, jubilado, adulto mayor o persona con discapacidad
+    cites:
+    - source: retys
+  - text: Realizar el pago correspondiente
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Haz tu cita dando click en el botón iniciar tramite
+    - Acudir a la oficina de Recaudación de Rentas del Estado más cercano a su domicilio
+    - Entregar requisitos para trámite en ventanilla
+    - Una vez que se valida la documentación, se procede a la captura de la información del vehículo en el sistema
+      de control vehicular
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express )'
+    - Procesa e imprime la tarjeta de circulación del presente año y comprobante de pago y lo entrega al contribuyente
+  notes: Requisitos para obtener el Refrendo de Tarjeta de Circulación
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 10, Fracción II, Inciso A, Número 1,
+- source: ley2
+  pinpoint: 27 y 29
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Haz tu cita dando click en el botón iniciar tramite
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Acudir a la oficina de Recaudación de Rentas del Estado más cercano a su domicilio
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Entregar requisitos para trámite en ventanilla
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Una vez que se valida la documentación, se procede a la captura de la información del vehículo en el sistema
+    de control vehicular
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express )'
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Procesa e imprime la tarjeta de circulación del presente año y comprobante de pago y lo entrega al contribuyente
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 657: Refrendo de Tarjeta de Circulación'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/657
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: Ley de Ingresos del Estado de Baja California para el ejercicio fiscal del Año 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: Ley que regula los servicios de control vehicular en el Estado de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

@@ -1,0 +1,136 @@
+id: mx-bcn-retys-1342-solicitud-de-beca
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Solicitud de Beca
+summary: Tramitar las aportaciones que se concede a los estudiantes formalmente inscritos en la Universidad Politécnica
+  de Baja California, y que no pueden costear sus estudios.
+authority:
+  name: Universidad Politécnica de Baja California
+official_ids:
+  retys_id: 1342
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1342
+  homoclave: BC-UPBC-006
+who_can:
+- Interesado
+- Tutor
+when: En los periodos establecidos en la convocatoria de becas que se publica en el portal de esta Institución
+result: Obtención de beca autorizada
+cost:
+  type: gratuito
+  amount_mxn: null
+  text: SIN COSTO
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 30 Días Naturales'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Único cuatrimestral
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- en_linea
+- presencial
+offices:
+- municipality: Mexicali
+  name: Secretaría Académica
+  address: 'Av. Claridad #S/N, Plutarco Elias Calles, Mexicali, 21376'
+scenarios:
+- name: Estimular a estudiantes que obtengan buen promedio en el cuatrimestre
+  requirements:
+  - text: Matricula de UPBC
+    cites:
+    - source: retys
+  - text: Promedio minímo de 9.0/10
+    cites:
+    - source: retys
+  - text: Solicitud de beca en el sistema de SIAAX de la UPBC
+    cites:
+    - source: retys
+  - text: Solicitud de beca ante el Consejo de Calidad
+    cites:
+    - source: retys
+  modes:
+  - name: Mixto
+    steps:
+    - El estudiante obtendrá su promedio cuatrimestral como mínimo 9.0
+    - El estudiante deberá presentar ante el Director de carrera la solicitud de beca
+    - El Director de carrera revisará la factibilidad de la solicitud de la beca, para presentar ante el Consejo
+      de Calidad
+    - El Consejo de Calidad recibe y revisa solicitud de beca del estudiante para seleccionar
+    - El Consejo de Calidad revisa solicitudes interpuestas por parte de estudiantes y se selecciona de acuerdo
+      a la cantidad de becas autorizadas a entregar por parte de la UPBC
+    - Una vez seleccionado el estudiante el cual obtuvo la beca, se le notifica que fue autorizada
+  notes: Incentivar a los alumnos a obtener buen promedio en el cuatrimestre que cursan, con la finalidad de estar
+    en posición de solicitar una beca
+legal_basis:
+- source: ley1
+  pinpoint: Artículo 68, fracción III y XXI
+- source: ley2
+  pinpoint: Capítulo II De los Criterios para el Otorgamiento de Becas
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: El estudiante obtendrá su promedio cuatrimestral como mínimo 9.0
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: El estudiante deberá presentar ante el Director de carrera la solicitud de beca
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: El Director de carrera revisará la factibilidad de la solicitud de la beca, para presentar ante el Consejo
+    de Calidad
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: El Consejo de Calidad recibe y revisa solicitud de beca del estudiante para seleccionar
+  cites:
+  - source: retys
+- n: '5'
+  actor: tú (según RETyS)
+  action: El Consejo de Calidad revisa solicitudes interpuestas por parte de estudiantes y se selecciona de acuerdo
+    a la cantidad de becas autorizadas a entregar por parte de la UPBC
+  cites:
+  - source: retys
+- n: '6'
+  actor: tú (según RETyS)
+  action: Una vez seleccionado el estudiante el cual obtuvo la beca, se le notifica que fue autorizada
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 1342: Solicitud de Beca'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/1342
+    version_date: 24/Septiembre/2024
+    accessed: '2026-11-06'
+  ley1:
+    type: reglamento
+    official: true
+    title: Reglamento de Alumnos de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: reglamento
+    official: true
+    title: Reglamento de Becas de la Universidad Politécnica de Baja California
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

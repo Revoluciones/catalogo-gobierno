@@ -1,0 +1,211 @@
+id: mx-bcn-retys-662-constancia-de-registro-de-vehiculo-todo-terreno
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Constancia de Registro de Vehículo todo Terreno
+summary: Expedir la constancia de registro de vehículos que circulan exclusivamente fuera de las vías públicas con
+  domicilio en el estado de Baja California.
+authority:
+  name: Secretaría de Hacienda de Baja California
+official_ids:
+  retys_id: 662
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/662
+  homoclave: BC-SH-013
+who_can:
+- Representante Legal
+- Interesado
+when: Cuándo se deseé registrar algún vehículo todo terreno.
+result: Constancia
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: Mes de Noviembre de 2026. Por expedición por primera vez de Constancia anual de Registro
+    en el Padrón vehicular estatal, de automotores todo terreno cuya circulación no este permitida en poblaciones
+    y caminos del Estado de Baja California. Costo: $1,200.77 - Por la expedición anual de la Constancia de registro
+    en el Padrón vehicular Estatal, de vehículos todo terreno. Costo: $817.99 *No incluye costos de contribuciones
+    municipales.'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 22 Minutos'
+  cites:
+  - source: retys
+- what: vigencia
+  text: Anual
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Mexicali
+  address: 'Y Calle  Dr. Humberto Torres Sanguines #SN, Centro Cívico, Mexicali, 21000'
+- municipality: Mexicali
+  name: Sub Recaudación Auxiliar de Rentas Guadalupe Victoria
+  address: 'Calle 8 y Av. Miguel Hidalgo contra esquina con Estación de Bomberos Delg. Guadalupe Victoria #SN, Guadalupe
+    Victoria KM 43, Mexicali, 21720'
+- municipality: Mexicali
+  name: Sub Recaudación de Rentas Ciudad Morelos
+  address: 'Av. Morelos y Leyes de Reforma #512, Ciudad Morelos, Mexicali, 21960'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Vía Rápida
+  address: 'Vía Rápida, José Fimbres Moreno #12651, Colonia 20 de Noviembre, Tijuana, 22210'
+- municipality: Tijuana
+  name: Sub Recaudación de Rentas Tijuana Cerro Colorado
+  address: 'Blvd. Manuel J. Clouthier, frente a Plaza Monarca #19724, El Lago, Tijuana, 22210'
+- municipality: Tijuana
+  name: Recaudación de Rentas de Tijuana (IMOS)
+  address: 'Carretera Libre Tijuana-Tecate #KM 26.5, El Florido, Tijuana, 22237'
+- municipality: Ensenada
+  name: Recaudación de Rentas de Ensenada
+  address: 'Carretera Transpeninsular La Paz - Ensenada #6500, Ex. Ejido Chapultepec, Ensenada, 22785'
+- municipality: Tecate
+  name: Recaudación de Rentas de Tecate
+  address: 'Misión San Francisco #S/N, El Descanso, Tecate, 21478'
+- municipality: Playas de Rosarito
+  name: Recaudación de Rentas de Rosarito
+  address: 'Jose Aros Aguilar #2004, Villa Turística (Centro de Gobierno), Playas de Rosarito, 22700'
+- municipality: San Quintín
+  name: Sub Recaudación de Rentas San Quintín
+  address: 'Calle “A” entre 9 Y 10 #S/N, Fracc. Ciudad San Quintín, San Quintín, 22930'
+- municipality: San Felipe
+  name: Sub Recaudación Auxiliar de San Felipe
+  address: 'Mar Caribe Norte #616, Segunda Sección , San Felipe, 21850'
+scenarios:
+- name: Personas Fisicas
+  requirements:
+  - text: Presentar el vehículo de que se trate para su verificación.
+    cites:
+    - source: retys
+  - text: Factura de origen que hubiese expedido el fabricante, ensamblador, distribuidor autorizado o empresas
+      del ramo dedicadas a la compra y venta de vehículos, en la que se identifique el vehículo en su individualidad.
+    cites:
+    - source: retys
+  - text: Para vehículos importados presentar pedimento en el que conste la legal importación del vehículo en su
+      caso.
+    cites:
+    - source: retys
+  - text: Presentar original y copia de licencia de conducir vigente del Estado. En caso de que se cuente con alguna
+      discapacidad o impedimento para conducir, presentar la licencia de conducir vigente del estado de la persona
+      que autorice para conducir.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11038
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express )'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar el vehículo en las oficinas de recaudación de rentas del Estado, para la verificación de series.
+    - Pasa al módulo de atención ciudadana para revisión de documentación.
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express ).'
+    - Obtiene constancia.
+  notes: Expedir la constancia de registro de vehículos que circulan exclusivamente fuera de las vías públicas con
+    domicilio en el Estado.
+- name: Personas Morales
+  requirements:
+  - text: Presentar el vehículo de que se trate para su verificación.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia factura de origen que hubiese expedido el fabricante, ensamblador, distribuidor
+      autorizado o empresas comerciales dedicadas a la compra y venta de vehículos usados en la que se identifique
+      el vehículo en su individualidad.
+    cites:
+    - source: retys
+  - text: Para vehículos importados presentar pedimento en el que conste la legal importación del vehículo en su
+      caso.
+    cites:
+    - source: retys
+  - text: Presentar original y copia de licencia de conducir vigente del Estado. En caso de que se cuente con alguna
+      discapacidad o impedimento para conducir, presentar la licencia de conducir vigente del estado de la persona
+      que autorice para conducir.
+    cites:
+    - source: retys
+    form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11043
+  - text: Presentar original y copia de comprobante de domicilio no mayor de tres meses de antigüedad.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de la cédula de identificación fiscal del registro federal de contribuyentes.
+    cites:
+    - source: retys
+  - text: Presentar en original y copia de identificación oficial con fotografía vigente (INE, pasaporte mexicano,
+      cartilla del servicio militar nacional o matrícula consular) del representante legal y documentación en la
+      que conste la personalidad de quién comparece.
+    cites:
+    - source: retys
+  - text: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+      (excepto tarjetas American Express ).'
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar el vehículo en recaudación y rentas del estado, para la verificación de series.
+    - Pasa al módulo de atención ciudadana para revisión de documentación.
+    - 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito (excepto
+      tarjetas American Express ).'
+    - Obtiene constancia.
+  notes: Expedir la constancia de registro de vehículos que circulan exclusivamente fuera de las vías públicas con
+    domicilio en el Estado.
+legal_basis:
+- source: ley1
+  pinpoint: ARTÍCULO 10 FRACCIÓN II, NÚMERO 6.
+- source: ley2
+  pinpoint: '11'
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar el vehículo en las oficinas de recaudación de rentas del Estado, para la verificación de series.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Pasa al módulo de atención ciudadana para revisión de documentación.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: 'Realizar el pago correspondiente. Opciones de pago: efectivo,cheque certificado, tarjeta debito/crédito
+    (excepto tarjetas American Express ).'
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Obtiene constancia.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 662: Constancia de Registro de Vehículo todo Terreno'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/662
+    version_date: 30/Octubre /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADO DE BAJA CALIFORNIA PARA EL EJERCICIO FISCAL DEL AÑO 2026
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+  ley2:
+    type: ley
+    official: true
+    title: LEY QUE REGULA LOS SERVICIOS DE CONTROL VEHICULAR EN EL ESTADO DE BAJA CALIFORNIA
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: 'Nombre oficial: Constancia de Vehículos Fuera de Vía Pública. Copiado tal cual de RETyS. Los pasos son los
+  del primer escenario y la primera modalidad; las demás variantes están en scenarios. Las leyes citadas aún no
+  enlazan a su texto oficial.'

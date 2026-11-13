@@ -1,0 +1,118 @@
+id: mx-bcn-retys-667-revision-de-proyectos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: ejecutivo
+kind: tramite
+title: Revisión de proyectos
+summary: Revisión técnica de los proyectos de líneas de conducción, agua potable, alcantarillado sanitario ,alcantarillado
+  pluvial plantas de tratamiento cárcamos de bombeo elaborado por particulares y/o dependencias para la autorización
+  de su construcción
+authority:
+  name: Comisión Estatal de Servicios Públicos de Mexicali
+official_ids:
+  retys_id: 667
+  retys_url: https://retys.bajacalifornia.gob.mx/Portal/TyS/667
+  homoclave: BC-CESPM-027
+who_can:
+- Representante Legal
+- Interesado
+when: Cuando requieres el servicio
+result: Autorización de proyecto
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'COSTO VARIABLE: El costo por revisión de proyecto en predios hasta de 5,000 m2 de superficie por red $5,215.99,
+    mas por cada m2 de superficie adicional por red $0.03. el costo del servicio variara durante el ejercicio 2026'
+  as_of: '2026-11-06'
+  cites:
+  - source: retys
+deadlines:
+- what: respuesta_autoridad
+  text: 'Tiempo que tiene el organismo para resolver: 10 Días Hábiles'
+  cites:
+  - source: retys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Mexicali
+  name: Subdirección Técnica
+  address: 'Rio Sinaloa #1399, Vallarta, Mexicali, 21270'
+scenarios:
+- name: Representante legal
+  requirements:
+  - text: Solicitud por escrito.
+    cites:
+    - source: retys
+  - text: Factibilidad vigente.
+    cites:
+    - source: retys
+  - text: Cumplir con las normas técnicas vigentes.
+    cites:
+    - source: retys
+  - text: Comprobante de pago por revisión de proyecto.
+    cites:
+    - source: retys
+  - text: 2 Juegos de planos origínales
+    cites:
+    - source: retys
+  - text: Disco compacto con los planos digitalizados en Autocad. 2006.
+    cites:
+    - source: retys
+  - text: Responsable proyectista cédula profesional en planos ( documentos de estar vigentes).
+    cites:
+    - source: retys
+  modes:
+  - name: Presencial
+    steps:
+    - Presentar solicitud por escrito en la subdirección técnica.
+    - Cumplir con los requisitos.
+    - Efectuar el pago correspondiente.
+    - Entrega del oficio de autorización del proyecto.
+  notes: Carta poder notariada
+legal_basis:
+- source: ley1
+  pinpoint: ART 9 INCISO G. PUNTO 3.
+steps:
+- n: '1'
+  actor: tú (según RETyS)
+  action: Presentar solicitud por escrito en la subdirección técnica.
+  cites:
+  - source: retys
+- n: '2'
+  actor: tú (según RETyS)
+  action: Cumplir con los requisitos.
+  cites:
+  - source: retys
+- n: '3'
+  actor: tú (según RETyS)
+  action: Efectuar el pago correspondiente.
+  cites:
+  - source: retys
+- n: '4'
+  actor: tú (según RETyS)
+  action: Entrega del oficio de autorización del proyecto.
+  cites:
+  - source: retys
+sources:
+  retys:
+    type: registro_oficial
+    official: true
+    title: 'RETyS, ficha 667: Revisión de proyectos'
+    publisher: Gobierno del Estado de Baja California
+    url: https://retys.bajacalifornia.gob.mx/Portal/TyS/667
+    version_date: 05/Agosto /2026
+    accessed: '2026-11-06'
+  ley1:
+    type: ley
+    official: true
+    title: LEY DE INGRESOS DEL ESTADOS DE BAJA CALIFORNIA.2025
+    publisher: citado por RETyS (falta enlazar el texto oficial)
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_retys.py
+notes: Copiado tal cual de RETyS. Los pasos son los del primer escenario y la primera modalidad; las demás variantes
+  están en scenarios. Las leyes citadas aún no enlazan a su texto oficial.

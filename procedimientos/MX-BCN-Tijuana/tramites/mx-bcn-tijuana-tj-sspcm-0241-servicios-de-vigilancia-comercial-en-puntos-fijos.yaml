@@ -1,0 +1,127 @@
+id: mx-bcn-tijuana-tj-sspcm-0241-servicios-de-vigilancia-comercial-en-puntos-fijos
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: Negocios y trabajo, Emprendimiento, Otros
+title: Servicios de vigilancia Comercial en Puntos Fijos
+summary: Contratación de vigilancia en puntos fijos con agentes armados o guardias desarmados, así como renta de
+  patrullas con personal de seguridad.
+authority:
+  name: Secretaría de Seguridad y Protección Ciudadana Municipal (Ayuntamiento de Tijuana)
+  unit: Dirección de Servicios de Protección Comercial y de Vigilancia Auxiliar
+official_ids:
+  homoclave: TJ-SSPCM-0241
+who_can:
+- Interesado
+when: Para la custodia de edificios privados, industrias, bancos, comercios y tiendas departamentales, entre otros.
+result: Recibo
+requirements:
+- text: 'Carta petición en hoja membretada dirigida al Director de Servicios de Protección Comercial y Vigilancia
+    Auxiliar, firmada por el representante legal o solicitante, indicando:'
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Solicitud de servicio dirigida al titular de la Direccion de Servicios de Proteccion Comercial y de Vigilancia
+    Auxiliar
+  cites:
+  - source: remutys
+- text: '- Tipo de servicio y número de elementos requeridos (agente armado, guardia desarmado o patrulla con elemento
+    armado).'
+  cites:
+  - source: remutys
+- text: '- Fecha de inicio (mínimo 5 días de anticipación).'
+  cites:
+  - source: remutys
+- text: '- Días y horarios del servicio (diurno, nocturno o mixto).'
+  cites:
+  - source: remutys
+- text: '- Datos de contacto del enlace autorizado (nombre, teléfono y correo).'
+  cites:
+  - source: remutys
+- text: Croquis, mapa o plano (preferentemente Google Maps).
+  cites:
+  - source: remutys
+  original_or_copy: original, 1 copia(s)
+- text: Identificación oficial del representante legal.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Acta constitutiva y poder notarial vigente del representante en caso de ser persona moral.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Constancia de Situación Fiscal (SAT, estatus activo).
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Comprobante de domicilio con vigencia no mayor a 3 meses.
+  cites:
+  - source: remutys
+  original_or_copy: 1 copia(s)
+- text: Carta de anuencia y nombramiento de enlace (escrito libre firmado por el representante legal para autorizar
+    el estudio de factibilidad).
+  cites:
+  - source: remutys
+  original_or_copy: original
+cost:
+  type: variable
+  amount_mxn: null
+  text: 'Por agente de protección comercial, por turno de 8 horas: 13 UMA ($1,525.03) · Por vigilancia armada en
+    zonas habitacionales (contratadas por asociaciones civiles) por cada elemento armado, por turno de 8 horas:
+    13 UMA ($1,525.03) · Por vigilancia a instituciones gubernamentales, por cada elemento, por turno de 8 horas:
+    11.38 UMA ($1,334.99). UMA 2026 = $117.31.'
+  as_of: '2026-11-06'
+  cites:
+  - source: remutys
+deadlines:
+- what: respuesta_autoridad
+  text: 10 días
+  cites:
+  - source: remutys
+- what: vigencia
+  text: 1 año
+  cites:
+  - source: remutys
+positive_silence: false
+requires_inspection: false
+channels:
+- presencial
+offices:
+- municipality: Tijuana
+  name: Dirección de Servicios de Protección Comercial y de Vigilancia Auxiliar
+  address: Blvd. Cuauhtémoc Sur y Río Suchiate
+  phones: 6649737000 ext. 5558
+  hours: LUNES A VIERNES DE 08:00 HRS A 15:00 HRS
+legal_basis:
+- source: fund1
+- source: fund2
+steps: []
+sources:
+  remutys:
+    type: registro_oficial
+    official: true
+    title: 'REMUTyS Tijuana, ficha TJ-SSPCM-0241: Servicios de vigilancia Comercial en Puntos Fijos'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SSPCM-0241
+    version_date: '2026-02-10'
+    accessed: '2026-11-06'
+  fund1:
+    type: reglamento
+    official: true
+    title: Reglamento Interno de la Secretaría de Seguridad y Protección Ciudadana del Municipio de Tijuana, Baja
+      California
+    url: https://www.tijuana.gob.mx/normatividad/documentos/Reglamentos/40_20250102111736335_wp.pdf
+  fund2:
+    type: ley
+    official: true
+    title: Artículo 36, fracción I, inciso A), B) y C) de la Ley de Ingresos del Municipio de Tijuana, Baja California
+      para el Ejercicio Fiscal 2025
+    url: https://www.tijuana.gob.mx/Dependencias/tesoreria/cp/2025/LI-TJBC_E-2025.pdf
+status: importado
+last_checked: '2026-11-06'
+checked_by: importar_remutys.py
+notes: 'Copiado de REMUTyS (registro municipal de Tijuana). El registro no publica pasos; los requisitos sí. Tipo
+  en el registro: servicio. Criterio para resolver: Cumplir con los requisitos establecidos.'
