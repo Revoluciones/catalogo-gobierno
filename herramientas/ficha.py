@@ -14,7 +14,7 @@ Por cada id escribe en <salida>/<id>/:
 Las imágenes necesitan Playwright con Chromium (pip install playwright; playwright install chromium).
 Sin Playwright se escriben index.html y whatsapp.txt, y se avisa.
 """
-import argparse, html, os, re, sys, urllib.parse
+import argparse, html, json, os, re, sys, urllib.parse
 from pathlib import Path
 import yaml
 
@@ -79,6 +79,35 @@ def es_tu(actor):
     return bool(re.match(r"^\s*t[uú]\b", actor or "", re.I))
 
 
+_TODOS = None
+
+
+def todos():
+    """Todos los procedimientos, una vez: [(datos, archivo)]."""
+    global _TODOS
+    if _TODOS is None:
+        _TODOS = [(yaml.safe_load(f.read_text(encoding="utf-8")), f) for f in sorted((R / "procedimientos").rglob("*.yaml"))]
+    return _TODOS
+
+
+DISPONIBLE = {"siempre": ("Todo el año", "jade"), "con_cita": ("Con cita", "anil"), "solo_en_campana": ("Solo en campaña", "cemp")}
+
+
+def caminos(meta_id):
+    """Los procedimientos que llevan a la misma meta, del más barato al más caro."""
+    rs = [(d, f) for d, f in todos() if (d.get("goal") or {}).get("id") == meta_id]
+    # Primero los que se pueden hacer en cualquier momento; luego por costo y por número de documentos.
+    return sorted(rs, key=lambda df: (df[0]["route"].get("availability") == "solo_en_campana",
+                                      (df[0].get("cost") or {}).get("amount_mxn") or 0, len(df[0].get("requirements", []))))
+
+
+def costo_corto(d):
+    c = d.get("cost") or {}
+    if c.get("type") == "gratuito":
+        return "Gratis"
+    return pesos(c.get("amount_mxn")) if c.get("amount_mxn") is not None else "Varía"
+
+
 def cargar(pid):
     for f in (R / "procedimientos").rglob(f"{pid}.yaml"):
         return yaml.safe_load(f.read_text(encoding="utf-8")), f
@@ -118,7 +147,58 @@ def datos(d, base):
         hechos.append(("Vigencia", duracion(dls["vigencia"]["text"]), dls["vigencia"]["text"]))
 
     url = f"{base.rstrip('/')}/{ruta_corta(d)}"
-    return dict(src=src, orden=orden, num=num, chips=chips, cost=cost, dls=dls, pasos=pasos, hechos=hechos, url=url)
+    base = base.rstrip("/")
+    return dict(base=base, src=src, orden=orden, num=num, chips=chips, cost=cost, dls=dls, pasos=pasos, hechos=hechos, url=url)
+
+
+def grafo(pasos):
+    """Aristas, capa (fila) y columnas de cada paso, a partir de `next` (si falta, sigue el paso siguiente)."""
+    ns = [p["n"] for p in pasos]
+    aristas = []
+    for i, p in enumerate(pasos):
+        sig = [n["to"] for n in p.get("next", [])] if p.get("next") else ([ns[i + 1]] if i + 1 < len(ns) else [])
+        aristas += [(p["n"], t, next((n.get("when", "") for n in p.get("next", []) if n["to"] == t), "")) for t in sig if t in ns]
+    previos = {n: [a for a, b, _ in aristas if b == n] for n in ns}
+    capa = {}
+    for n in ns:  # los pasos vienen en orden; un paso va una fila abajo de su último paso previo
+        capa[n] = max((capa.get(a, 0) + 1 for a in previos[n] if a in capa), default=0)
+    col, ocupado = {}, set()
+    siguiente_col = 0
+    for n in ns:
+        pc = sorted({c for a in previos[n] if a in col for c in col[a]})
+        if not pc:
+            cs = (siguiente_col, siguiente_col)
+            siguiente_col += 1
+        else:
+            cs = (pc[0], pc[-1])
+        while any((capa[n], c) in ocupado for c in range(cs[0], cs[1] + 1)):
+            cs = (cs[0] + 1, cs[1] + 1)
+        for c in range(cs[0], cs[1] + 1):
+            ocupado.add((capa[n], c))
+        col[n] = range(cs[0], cs[1] + 1)
+        siguiente_col = max(siguiente_col, cs[1] + 1)
+    return aristas, capa, col, max((c[-1] for c in col.values()), default=0) + 1
+
+
+def mapa(pasos, grande=False):
+    """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador."""
+    if not pasos:
+        return ""
+    aristas, capa, col, ncols = grafo(pasos)
+    cajas = []
+    for p in pasos:
+        c = col[p["n"]]
+        marca = '<span class="difiere" title="En la práctica pasa otra cosa">≠ práctica</span>' if p.get("practice") else ""
+        cajas.append(
+            f'<div class="nodo{" nodo--tu" if es_tu(p["actor"]) else ""}" data-n="{e(p["n"])}" '
+            f'style="grid-row:{capa[p["n"]] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}">'
+            f'<span class="n">{e(p["n"])}</span><div><small>{e(p["actor"])}</small>'
+            f'<p>{e(corta(p["action"], 90 if grande else 80))}</p>{marca}</div></div>')
+    fin = max(capa.values()) + 1
+    flechas = json.dumps([[a, b, w] for a, b, w in aristas], ensure_ascii=False)
+    return (f'<div class="mapa" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
+            f'<svg class="flechas" aria-hidden="true"></svg>{"".join(cajas)}'
+            f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>')
 
 
 def pagina(d, x):
@@ -185,14 +265,26 @@ def pagina(d, x):
     }[d["status"]]
     archivo = f'{REPO}/blob/main/{x["ruta_archivo"]}'
 
+    otros = ""
+    meta = d.get("goal")
+    if meta:
+        hermanos = [h for h, _ in caminos(meta["id"]) if h["id"] != d["id"]]
+        if hermanos:
+            chips = "".join(
+                f'<a class="camino" href="{e(x["base"])}/{e(ruta_corta(h))}"><b>{e(h["route"]["name"])}</b>'
+                f'<span>{e(costo_corto(h))} · {e(DISPONIBLE.get(h["route"].get("availability"), ("", ""))[0])}</span></a>'
+                for h in hermanos)
+            otros = (f'<aside class="otros"><p><b>Hay {len(hermanos) + 1} caminos para lo mismo.</b> Este es '
+                     f'«{e(d["route"]["name"])}».</p><div class="caminos">{chips}</div>'
+                     f'<a class="comparar" href="{e(x["base"])}/{e(meta["id"])}">Compara los {len(hermanos) + 1} caminos</a></aside>')
     desc = corta(d.get("summary", ""), 180)
     rep = {
         "TITULO": e(d["title"]), "DESC": e(desc), "URL": e(x["url"]), "OG": e(x["url"] + "/og.png"),
         "LUGAR": e(lugar), "TIPO": "Trámite" if d["kind"] == "tramite" else "Por dentro del gobierno",
-        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos),
+        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos), "MAPA": mapa(x["pasos"]),
         "REQS": "".join(reqs), "OFIS": ofis, "GLOS": glos, "FUENTES": "".join(fuentes), "BASE": base_legal,
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
-        "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])),
+        "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,
     }
     out = TPL
     for k, v in rep.items():
@@ -234,17 +326,98 @@ def imagen_html(d, x, tipo):
     else:
         caja = "".join(f'<div><small>{e(k)}</small><b>{e(v)}</b></div>' for k, v, _ in x["hechos"] if k != "Pasos")
         caja = f'<div class="caja-datos">{caja}</div>' if caja else ""
-        pasos = "".join(
-            f'<li class="{"tu" if es_tu(p["actor"]) else ""}"><span class="n">{e(p["n"])}</span><div><small>{e(p["actor"])}</small>'
-            f'<p>{e(corta(p["action"], 105))}</p>'
-            + "".join(f'<p class="prac">En la práctica: {e(corta(q["text"], 95))}</p>' for q in p.get("practice", [])[:1])
-            + '</div></li>' for p in x["pasos"][:12])
-        if len(x["pasos"]) > 12:
-            pasos += f'<li class="mas"><span class="n">+{len(x["pasos"]) - 12}</span><div><p>pasos más en la ficha completa</p></div></li>'
-        densa = " densa" if len(x["pasos"]) > 8 else ""
+        densa = ""
         cuerpo = (f'<div class="ruta{densa}"><header class="img-top">{LOGO}<span class="marca">compartido</span><span class="pill">Por dentro</span></header>'
-                  f'<p class="lugar">{e(lugar)}</p><h1>{e(d["title"])}</h1><ol>{pasos}</ol>'
+                  f'<p class="lugar">{e(lugar)}</p><h1>{e(d["title"])}</h1>{mapa(x["pasos"], grande=True)}'
                   f'{caja}<footer><span>Cada paso con su fuente oficial en</span><b>{e(x["url"].split("://")[-1])}</b></footer><div class="hilos"></div></div>')
+    css = re.search(r"<style>(.*?)</style>", TPL, re.S)[1]
+    fuentes = re.search(r'(<link rel="preconnect".*?display=swap" rel="stylesheet">)', TPL, re.S)[1]
+    js = re.search(r'(<script id="dibujar-flechas">.*?</script>)', TPL, re.S)[1]
+    return f'<!doctype html><html lang="es-MX"><head><meta charset="utf-8">{fuentes}<style>{css}</style></head><body class="lienzo">{cuerpo}{js}</body></html>'
+
+
+def meta_datos(meta, base):
+    """Datos para la página que compara los caminos hacia una misma meta."""
+    rutas = []
+    orden, srcs = [], {}
+    for d, f in caminos(meta["id"]):
+        r = d["route"]
+
+        def chips(cites, d=d):
+            out = []
+            for c in cites:
+                clave = (d["id"], c["source"])
+                if clave not in orden:
+                    orden.append(clave)
+                    srcs[clave] = d["sources"].get(c["source"], {})
+                tip = " · ".join(v for v in (c.get("pinpoint"), c.get("quote")) if v)
+                out.append(f'<a class="cita" href="#f{orden.index(clave) + 1}" title="{e(tip)}">{orden.index(clave) + 1}</a>')
+            return "".join(out)
+
+        disp, color = DISPONIBLE.get(r.get("availability"), ("", "anil"))
+        rutas.append(dict(
+            d=d, nombre=r["name"], disp=disp, color=color, disp_txt=r.get("availability_text", ""),
+            costo=costo_corto(d), costo_txt=(d.get("cost") or {}).get("text", ""),
+            docs=len(d.get("requirements", [])), pasos=len(d.get("steps", [])),
+            pros=[(n["text"], chips(n["cites"])) for n in r.get("pros", [])],
+            cons=[(n["text"], chips(n["cites"])) for n in r.get("cons", [])],
+            url=f"{base}/{ruta_corta(d)}", borrador=d["status"] == "borrador"))
+    return rutas, orden, srcs
+
+
+def pagina_meta(meta, base):
+    rutas, orden, srcs = meta_datos(meta, base)
+    url = f"{base}/{meta['id']}"
+    tarjetas = []
+    for r in rutas:
+        pros = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["pros"])
+        cons = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["cons"])
+        cuando = f'<p class="cuando">{e(r["disp_txt"])}</p>' if r["disp_txt"] else ""
+        tarjetas.append(
+            f'<article class="opcion"><header><h3>{e(r["nombre"])}</h3>'
+            f'<span class="disp disp--{r["color"]}">{e(r["disp"])}</span></header>'
+            f'<dl class="cifras"><div><dt>Cuesta</dt><dd>{e(r["costo"])}</dd></div><div><dt>Documentos</dt><dd>{r["docs"]}</dd></div>'
+            f'<div><dt>Pasos</dt><dd>{r["pasos"]}</dd></div></dl>'
+            f'{cuando}'
+            f'{f"<h4>Elige este si</h4><ul class=pros>{pros}</ul>" if pros else ""}'
+            f'{f"<h4>Antes de ir</h4><ul class=cons>{cons}</ul>" if cons else ""}'
+            f'<a class="boton boton--ver" href="{e(r["url"])}">Ver el camino paso a paso</a></article>')
+    fuentes = []
+    for i, k in enumerate(orden):
+        s_ = srcs[k]
+        tipo = TIPO_FUENTE.get(s_.get("type"), s_.get("type", ""))
+        of = "oficial" if s_.get("official", True) else "no oficial"
+        pub = f'<small>{e(s_["publisher"])}</small>' if s_.get("publisher") else ""
+        t = f'<a href="{e(s_["url"])}" rel="noopener">{e(s_.get("title", k[1]))}</a>' if s_.get("url") else e(s_.get("title", k[1]))
+        fuentes.append(f'<li id="f{i + 1}"><span class="tipo tipo--{"of" if s_.get("official", True) else "no"}">{e(tipo)} · {of}</span>{t}'
+                       f'{pub}</li>')
+    wa = "\n".join([f"*{meta['title']}*", "_Compartido · Por dentro_", "", f"Hay {len(rutas)} caminos:"]
+                   + [f"• *{r['nombre']}*: {r['costo']}, {r['docs']} documentos. {r['disp']}." for r in rutas]
+                   + ["", f"Compáralos, con sus fuentes oficiales: {url}"])
+    principal = (
+        f'<main><div class="cabeza"><p class="lugar">Una meta, {len(rutas)} caminos</p><h1>{e(meta["title"])}</h1>'
+        f'<p class="resumen">Hay varias formas de lograrlo, en lugares distintos. Cambian el costo, los papeles y cuándo se pueden hacer.</p>'
+        f'<div class="hilos" aria-hidden="true"></div></div>'
+        f'<div class="opciones">{"".join(tarjetas)}</div>'
+        f'<div class="compartir"><a class="boton boton--wa" href="{e("https://wa.me/?text=" + urllib.parse.quote(wa))}" target="_blank" rel="noopener">Mandar por WhatsApp</a>'
+        f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div><p class="aviso" id="aviso" role="status"></p>'
+        f'<section aria-labelledby="t-fuentes"><h2 id="t-fuentes">Fuentes</h2><ol class="fuentes">{"".join(fuentes)}</ol></section>'
+        f'</main>')
+    out = re.sub(r"<main>.*?</main>", lambda m: principal, TPL, flags=re.S).replace('class="envoltura"', 'class="envoltura envoltura--ancha"')
+    desc = f"Hay {len(rutas)} caminos: " + "; ".join(f"{r['nombre']} ({r['costo']})" for r in rutas) + "."
+    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"])}.items():
+        out = out.replace("{{" + k + "}}", v)
+    out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
+    return out, rutas, wa
+
+
+def imagen_meta(meta, rutas, base):
+    filas = "".join(
+        f'<li><div><b>{e(r["nombre"])}</b><span class="disp disp--{r["color"]}">{e(r["disp"])}</span></div>'
+        f'<strong>{e(r["costo"])}</strong><small>{r["docs"]} documentos</small></li>' for r in rutas)
+    cuerpo = (f'<div class="og og--meta"><header class="img-top">{LOGO}<span class="marca">compartido</span><span class="pill">Por dentro</span></header>'
+              f'<p class="lugar">Una meta, {len(rutas)} caminos</p><h1>{e(meta["title"])}</h1><ol class="comparo">{filas}</ol>'
+              f'<div class="hilos"></div></div>')
     css = re.search(r"<style>(.*?)</style>", TPL, re.S)[1]
     fuentes = re.search(r'(<link rel="preconnect".*?display=swap" rel="stylesheet">)', TPL, re.S)[1]
     return f'<!doctype html><html lang="es-MX"><head><meta charset="utf-8">{fuentes}<style>{css}</style></head><body class="lienzo">{cuerpo}</body></html>'
@@ -253,14 +426,15 @@ def imagen_html(d, x, tipo):
 # Si el contenido no cabe en la imagen, achica la lista (o el título) hasta que quepa.
 AJUSTAR = """() => {
   const caja = document.querySelector('.og, .ruta');
-  const el = document.querySelector('.ruta ol') || document.querySelector('.og h1');
+  const el = document.querySelector('.ruta .mapa') || document.querySelector('.og h1');
   const pie = document.querySelector('.ruta footer, .og .datos');
   const nocabe = () => {
     const r = el.getBoundingClientRect(), p = pie.getBoundingClientRect();
-    return caja.scrollHeight > innerHeight || p.bottom > innerHeight - 40 || (el.tagName === 'OL' && r.top + el.scrollHeight * (parseFloat(el.style.zoom) || 1) > p.top - 8);
+    return caja.scrollHeight > innerHeight || p.bottom > innerHeight - 40 || (el.classList.contains('mapa') && r.bottom > p.top - 8);
   };
   let z = 1;
   while (nocabe() && z > 0.5) { z -= 0.03; el.style.zoom = z; }
+  if (window.dibujarFlechas) window.dibujarFlechas();
 }"""
 
 LOGO = ('<svg class="logo" viewBox="0 0 120 120" aria-hidden="true"><path d="M79.3 37A30 30 0 1 0 79.3 83" fill="none" '
@@ -295,6 +469,7 @@ def main():
         except Exception as err:  # noqa: BLE001
             print(f"Sin imágenes: Playwright no está disponible ({err.__class__.__name__}).")
 
+    metas = {}
     for pid in ids:
         d, f = cargar(pid)
         x = datos(d, a.base)
@@ -313,6 +488,21 @@ def main():
                 pg.evaluate(AJUSTAR)
                 pg.screenshot(path=str(out / f"{tipo}.png"))
                 pg.close()
+        print(out)
+        if d.get("goal"):
+            metas[d["goal"]["id"]] = d["goal"]
+    for meta in metas.values():
+        html_, rutas, wa = pagina_meta(meta, a.base.rstrip("/"))
+        out = Path(a.salida) / meta["id"]
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "index.html").write_text(html_, encoding="utf-8")
+        (out / "whatsapp.txt").write_text(wa + "\n", encoding="utf-8")
+        if navegador:
+            pg = navegador.new_page(viewport={"width": 1200, "height": 630}, device_scale_factor=1)
+            pg.set_content(imagen_meta(meta, rutas, a.base), wait_until="networkidle")
+            pg.evaluate("document.fonts.ready")
+            pg.screenshot(path=str(out / "og.png"))
+            pg.close()
         print(out)
     if navegador:
         navegador.close()

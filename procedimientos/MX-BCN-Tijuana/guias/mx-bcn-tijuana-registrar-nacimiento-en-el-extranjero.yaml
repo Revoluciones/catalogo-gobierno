@@ -6,10 +6,36 @@ level: municipal
 branch: ejecutivo
 kind: tramite
 category: identidad
-title: Registrar en México un nacimiento que ocurrió en otro país
-summary: Si naciste en otro país y tu mamá o tu papá es mexicano, ya eres mexicano por nacimiento. Este trámite
-  pasa tu acta extranjera a los libros del Registro Civil de Tijuana para que tengas acta mexicana. Pasa por tres
-  lugares, en este orden, y aquí está la ruta completa.
+title: Registrar en México un nacimiento en el extranjero, en el Registro Civil de Tijuana
+summary: Si naciste en otro país y tu mamá o tu papá es mexicano, ya eres mexicano por nacimiento. Este camino
+  pasa tu acta extranjera a los libros del Registro Civil de Tijuana, en cualquier época del año y sin cita. Pide
+  más papeles que el consulado y pasa por tres lugares, en este orden.
+goal:
+  id: nacimiento-en-el-extranjero
+  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+route:
+  name: En el Registro Civil de Tijuana
+  availability: siempre
+  availability_text: Todo el año, de lunes a viernes, sin cita.
+  pros:
+  - text: No necesitas cita.
+    cites:
+    - source: remutys-0190
+      pinpoint: Oficinas y horario
+  - text: Sirve cuando el consulado no puede registrarte, por ejemplo si tu papá no puede ir y tus padres no estaban
+      casados antes de que nacieras.
+    cites:
+    - source: consulado-sd-requisitos
+      pinpoint: Requisito 6
+      quote: el registro de nacimiento NO procede en el Consulado. En este caso, podrá solicitar la inscripción del
+        acta de nacimiento extranjera en cualquier Oficina del Registro Civil en México
+  cons:
+  - text: Pide apostilla, traducción de perito y la constancia de inexistencia del Estado ($498).
+    cites:
+    - source: remutys-0190
+      pinpoint: Requisitos
+    - source: retys-618
+      pinpoint: Costo
 authority:
   name: Oficialía del Registro Civil de Tijuana
   unit: Secretaría de Gobierno Municipal
@@ -129,6 +155,8 @@ steps:
     observed: Tijuana, julio de 2025
     cites:
     - source: reportes
+  next:
+  - to: '7'
 - n: '4'
   actor: Tú
   action: Llena y firma la solicitud de inexistencia de registro de nacimiento del Estado. Como naciste en otro
@@ -158,6 +186,8 @@ steps:
   cites:
   - source: retys-618
     pinpoint: Resultado y Vigencia
+  next:
+  - to: '7'
 - n: '7'
   actor: Tú, en la Oficialía del Registro Civil de Tijuana
   action: Lleva la solicitud de inscripción y todos los documentos de la lista, en original y 1 copia de cada
@@ -183,6 +213,8 @@ steps:
   next:
   - to: fin
 related:
+- mx-registro-de-nacimiento-en-el-consulado
+- mx-bcn-campana-soy-mexico-doble-nacionalidad
 - mx-bcn-tijuana-tj-sgm-0190-inscripcion-de-registro-de-nacimiento-ocurrido-en
 - mx-bcn-retys-618-inexistencia-de-registro-de-nacimiento-o-matrimoni
 - mx-registro-de-nacimiento
@@ -218,6 +250,14 @@ sources:
     url: https://retys.bajacalifornia.gob.mx/Portal/TyS/618
     version_date: 04/Noviembre/2026
     accessed: '2026-11-06'
+  consulado-sd-requisitos:
+    type: portal_oficial
+    official: true
+    title: 'Consulado General de México en San Diego: Registro de nacimiento (doble nacionalidad), requisitos'
+    publisher: Secretaría de Relaciones Exteriores
+    url: https://consulmex.sre.gob.mx/sandiego/images/Downloads/Reg_Civil/00_Nacimiento_Marzo_2025NUEVO.pdf
+    version_date: Marzo 2025
+    accessed: '2026-11-13'
   reportes:
     type: reportes_ciudadanos
     official: false

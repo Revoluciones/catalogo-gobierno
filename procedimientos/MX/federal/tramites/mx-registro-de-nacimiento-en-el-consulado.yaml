@@ -1,0 +1,177 @@
+id: mx-registro-de-nacimiento-en-el-consulado
+country: MX
+jurisdiction: MX
+level: federal
+branch: ejecutivo
+kind: tramite
+category: identidad
+title: Registrar en el consulado de México un nacimiento en el extranjero
+summary: Si naciste en otro país y tu mamá o tu papá es mexicano, el consulado de México te registra como mexicano.
+  Es gratis, incluye tu primera acta y un acta de Estados Unidos no necesita apostilla ni traducción. Lo difícil es
+  conseguir la cita.
+goal:
+  id: nacimiento-en-el-extranjero
+  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+route:
+  name: En el consulado de México
+  availability: con_cita
+  availability_text: Con cita en MiConsulado. En San Diego las citas se abren lunes y miércoles desde las 8:30.
+  pros:
+  - text: Es gratis e incluye la primera copia certificada de tu acta mexicana.
+    cites:
+    - source: consulado-sd-requisitos
+      pinpoint: Información importante
+      quote: El trámite es totalmente gratuito e incluye la primera copia certificada del acta de nacimiento mexicana.
+  - text: Si naciste en Estados Unidos, tu acta no necesita apostilla ni traducción.
+    cites:
+    - source: consulado-sd-requisitos
+      pinpoint: Requisito 2
+      quote: En caso de que el acta se haya expedido fuera de los Estados Unidos de América, deberá estar apostillada
+        o legalizada
+  cons:
+  - text: Necesitas cita, y se abren solo algunos días.
+    cites:
+    - source: consulado-sd-requisitos
+      pinpoint: Procedimiento
+      quote: CITAS PARA DOBLE NACIONALIDAD SE ABREN LUNES Y MIERCOLES UNICAMENTE A PARTIR DE LAS 8:30 AM
+  - text: Si tus padres no estaban casados antes de que nacieras y tu papá no puede ir (o falleció), el consulado no
+      puede registrarte. Ese caso va al Registro Civil.
+    cites:
+    - source: consulado-sd-requisitos
+      pinpoint: Requisito 6
+  - text: Son varias visitas, porque primero revisan tus papeles y luego te dan otra cita para registrar.
+    cites:
+    - source: consulado-sd-pagina
+      pinpoint: Procedimiento
+authority:
+  name: Consulado de México (Secretaría de Relaciones Exteriores)
+  unit: Registro Civil consular
+who_can:
+- La persona interesada, si es mayor de edad
+- Su mamá o su papá, si es menor de edad
+when: Naciste en otro país, al menos uno de tus padres es mexicano y quieres tu acta de nacimiento mexicana.
+result: Acta de nacimiento mexicana (la primera copia certificada es gratis).
+requirements:
+- text: Solicitud de registro de nacimiento, llena completa
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 1
+- text: Acta de nacimiento de Estados Unidos (no la versión corta o «abstract»). Si es de otro país, con apostilla
+    y traducción.
+  original_or_copy: original y 2 copias
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 2
+- text: Identificación oficial vigente de la persona que se registra (para menores hay otras opciones)
+  original_or_copy: original y 2 copias
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 3
+- text: Acta de nacimiento de tu mamá y de tu papá
+  original_or_copy: original y 2 copias
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 4
+- text: Identificación oficial vigente de tu mamá y de tu papá
+  original_or_copy: original y 2 copias
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 5
+- text: Acta de matrimonio de tus padres, si se casaron
+  original_or_copy: original y 2 copias
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Requisito 6
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratis, con la primera copia certificada. Las copias que siguen cuestan 19 dólares cada una.
+  as_of: '2026-11-13'
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Información importante
+channels:
+- presencial
+offices:
+- name: Consulado General de México en San Diego
+  municipality: San Diego, California
+legal_basis:
+- source: cpeum
+  pinpoint: 'art. 30, apartado A, fracción II'
+steps:
+- n: '1'
+  actor: Tú
+  action: Pide cita para «Registro Civil, nacimiento, recepción de documentos» en MiConsulado, por internet, WhatsApp
+    o teléfono.
+  cites:
+  - source: consulado-sd-requisitos
+    pinpoint: Procedimiento, punto 1
+  practice:
+  - text: En 2025 no se consiguió cita, y por eso el registro se hizo en el Registro Civil de Tijuana.
+    evidence_level: un_reporte
+    observed: San Diego, 2025
+    cites:
+    - source: reportes
+- n: '2'
+  actor: Tú, en el consulado
+  action: Lleva todos los documentos en original y 2 copias. Si están completos, el consulado te da otra cita para
+    registrarte.
+  cites:
+  - source: consulado-sd-pagina
+    pinpoint: Primera etapa
+- n: '3'
+  actor: Tú y tus padres, en el consulado
+  action: El día del registro van la persona que se registra y su mamá o papá, según el caso, otra vez con los
+    originales. El consulado pone a los testigos.
+  cites:
+  - source: consulado-sd-pagina
+    pinpoint: Segunda etapa
+- n: '4'
+  actor: Consulado
+  action: Te entrega el comprobante de registro y tu primera acta mexicana, gratis.
+  cites:
+  - source: consulado-sd-pagina
+    pinpoint: Tercera etapa
+  next:
+  - to: fin
+related:
+- mx-bcn-tijuana-registrar-nacimiento-en-el-extranjero
+- mx-registro-de-nacimiento
+glossary:
+- copia-certificada
+- apostilla
+sources:
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-06'
+  consulado-sd-requisitos:
+    type: portal_oficial
+    official: true
+    title: 'Consulado General de México en San Diego: Registro de nacimiento (doble nacionalidad), requisitos'
+    publisher: Secretaría de Relaciones Exteriores
+    url: https://consulmex.sre.gob.mx/sandiego/images/Downloads/Reg_Civil/00_Nacimiento_Marzo_2025NUEVO.pdf
+    version_date: Marzo 2025
+    accessed: '2026-11-13'
+  consulado-sd-pagina:
+    type: portal_oficial
+    official: true
+    title: 'Consulado General de México en San Diego: Registro de nacimiento'
+    publisher: Secretaría de Relaciones Exteriores
+    url: https://consulmex.sre.gob.mx/sandiego/index.php/component/content/article/334
+    accessed: '2026-11-13'
+  reportes:
+    type: reportes_ciudadanos
+    official: false
+    title: Reporte de primera mano, San Diego y Tijuana, 2025
+    report_ids:
+    - 2025-07-01-c4n9sd
+status: borrador
+last_checked: '2026-11-13'
+checked_by: Claude (Compartido)
+notes: Los requisitos y pasos son los del Consulado General en San Diego, el que queda junto a Tijuana. Cada consulado
+  publica su propia lista y cambia poco de uno a otro; revisa la del tuyo antes de ir.
