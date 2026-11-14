@@ -166,7 +166,7 @@ steps:
 - n: '4'
   actor: Tú
   action: Llena y firma la solicitud de inexistencia de registro de nacimiento del Estado. Como naciste en otro
-    país, agrega una copia de tu acta extranjera. El formato está en la lista «Lleva esto».
+    país, agrega una copia de tu acta extranjera.
   cites:
   - source: retys-618
     pinpoint: Escenario «Inexistencia de nacimiento», notas

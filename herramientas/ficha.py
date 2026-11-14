@@ -185,29 +185,58 @@ def grafo(pasos):
     return aristas, capa, col, max((c[-1] for c in col.values()), default=0) + 1
 
 
-def mapa(pasos, grande=False):
-    """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador."""
+def mapa(pasos, grande=False, detalles=None):
+    """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador.
+
+    En la página (detalles dado) cada caja se abre para mostrar fuentes, notas de práctica y formatos.
+    En pantallas angostas queda en una sola columna; las ramas se dicen con texto.
+    """
     if not pasos:
         return ""
     aristas, capa, col, ncols = grafo(pasos)
+    orden = [p["n"] for p in pasos]
+    entran = {}
+    for a, b, _ in aristas:
+        entran.setdefault(b, []).append(a)
+    inicios = [n for n in orden if not entran.get(n)]
     cajas = []
-    for p in pasos:
+    for i, p in enumerate(pasos):
         c = col[p["n"]]
-        marca = ('<span class="difiere" title="Quien lo hizo encontró algo distinto a lo oficial. Lo ves abajo, en este paso.">'
-                 'Ojo: en la práctica cambia</span>') if p.get("practice") else ""
+        n = p["n"]
+        marca = ('<span class="difiere">Ojo: en la práctica cambia</span>') if p.get("practice") else ""
+        cls = f'nodo{" nodo--tu" if es_tu(p["actor"]) else ""}'
+        pos = f'style="grid-row:{capa[n] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}"'
+        if detalles is None:
+            cajas.append(
+                f'<div class="{cls}" data-n="{e(n)}" {pos}><span class="n">{e(n)}</span><div><small>{e(p["actor"])}</small>'
+                f'<p>{e(corta(p["action"], 90 if grande else 80))}</p>{marca}</div></div>')
+            continue
+        # Lo que en una sola columna no se ve con flechas: ramas que empiezan aparte y saltos.
+        antes = ""
+        if n in inicios and n != inicios[0]:
+            antes = f'<p class="salto">Al mismo tiempo que el paso {e(inicios[0])}, empieza aquí:</p>'
+        sig = orden[i + 1] if i + 1 < len(orden) else "fin"
+        salen = [b for a, b, _ in aristas if a == n]
+        despues = "".join(f'<p class="salto">Luego sigue el paso {e(b)}.</p>' for b in salen if b != sig and b != "fin")
+        extras = ""
+        if p.get("deadline"):
+            extras += f'<span class="plazo">{e(p["deadline"])}</span>'
+        if p.get("form"):
+            extras += '<span class="etq-formato">Formato para llenar</span>'
         cajas.append(
-            f'<div class="nodo{" nodo--tu" if es_tu(p["actor"]) else ""}" data-n="{e(p["n"])}" '
-            f'style="grid-row:{capa[p["n"]] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}">'
-            f'<span class="n">{e(p["n"])}</span><div><small>{e(p["actor"])}</small>'
-            f'<p>{e(corta(p["action"], 90 if grande else 80))}</p>{marca}</div></div>')
+            f'<details class="{cls}" data-n="{e(n)}" {pos}><summary>{antes}<span class="n">{e(n)}</span>'
+            f'<div><small>{e(p["actor"])}</small><p>{e(p["action"])}</p>{extras}{marca}'
+            f'<span class="mas" aria-hidden="true">Fuentes y detalles</span></div>{despues}</summary>'
+            f'<div class="detalle">{detalles[n]}</div></details>')
     fin = max(capa.values()) + 1
     flechas = json.dumps([[a, b, w] for a, b, w in aristas], ensure_ascii=False)
-    return (f'<div class="mapa" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
+    return (f'<div class="mapa{" mapa--vivo" if detalles is not None else ""}" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
             f'<svg class="flechas" aria-hidden="true"></svg>{"".join(cajas)}'
             f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>'
-            + ('' if grande or not any(p.get("practice") for p in pasos) else
-               '<p class="mapa-nota"><b>«Ojo: en la práctica cambia»</b> marca los pasos donde alguien que hizo el trámite '
-               'encontró algo distinto a lo que dice la versión oficial. Abajo, en ese paso, ves qué pasó y la fuente.</p>'))
+            + ('' if detalles is None else
+               '<p class="mapa-nota">Toca un paso para ver sus fuentes'
+               + (' y, donde dice <b>«Ojo: en la práctica cambia»</b>, lo que encontró alguien que hizo el trámite'
+                  if any(p.get("practice") for p in pasos) else '') + '.</p>'))
 
 
 def formato(url):
@@ -250,22 +279,15 @@ def pagina(d, x):
         for k, v, n in x["hechos"]
     )
 
-    pasos = []
+    detalles = {}
     for p in x["pasos"]:
-        tu = es_tu(p["actor"])
         prac = "".join(
             f'<aside class="practica"><p class="etq">En la práctica · {e(EVIDENCIA.get(q["evidence_level"], ""))}'
             f'{" · " + e(q["observed"]) if q.get("observed") else ""}</p><p>{e(q["text"])} {chips(q["cites"])}</p></aside>'
             for q in p.get("practice", [])
         )
-        plazo = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
-        if p.get("form"):
-            plazo += llenado(p["form"], x)
-        pasos.append(
-            f'<li class="paso{" paso--tu" if tu else ""}"><span class="n" aria-hidden="true">{e(p["n"])}</span>'
-            f'<div class="cuerpo"><p class="actor">{e(p["actor"])}</p>'
-            f'<p class="accion">{e(p["action"])} {chips(p["cites"])}</p>{plazo}{prac}</div></li>'
-        )
+        forma = llenado(p["form"], x) if p.get("form") else ""
+        detalles[p["n"]] = f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{forma}{prac}'
 
     reqs = []
     for i, r in enumerate(d.get("requirements", [])):
@@ -332,7 +354,7 @@ def pagina(d, x):
     rep = {
         "TITULO": e(d["title"]), "DESC": e(desc), "URL": e(x["url"]), "OG": e(x["url"] + "/og.png"),
         "LUGAR": e(lugar), "TIPO": "Trámite" if d["kind"] == "tramite" else "Por dentro del gobierno",
-        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos), "MAPA": mapa(x["pasos"]),
+        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "MAPA": mapa(x["pasos"], detalles=detalles),
         "REQS": "".join(reqs), "OFIS": ofis, "GLOS": glos, "FUENTES": "".join(fuentes), "BASE": base_legal,
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
         "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,
@@ -342,7 +364,7 @@ def pagina(d, x):
     for k, v in rep.items():
         out = out.replace("{{" + k + "}}", v)
     # quita las secciones vacías
-    for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", pasos)):
+    for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", x["pasos"])):
         if not val:
             out = re.sub(rf"<!--{sec}-->.*?<!--/{sec}-->", "", out, flags=re.S)
     return out
@@ -457,7 +479,8 @@ def pagina_meta(meta, base):
         f'<div class="opciones">{"".join(tarjetas)}</div>'
         f'<div class="compartir"><a class="boton boton--wa" href="{e("https://wa.me/?text=" + urllib.parse.quote(wa))}" target="_blank" rel="noopener">Mandar por WhatsApp</a>'
         f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div><p class="aviso" id="aviso" role="status"></p>'
-        f'<section aria-labelledby="t-fuentes"><h2 id="t-fuentes">Fuentes</h2><ol class="fuentes">{"".join(fuentes)}</ol></section>'
+        f'<section aria-labelledby="t-fuentes"><details class="plegable" id="fuentes"><summary><h2 id="t-fuentes">Fuentes'
+        f'<small>Cada número en la página lleva aquí.</small></h2></summary><ol class="fuentes">{"".join(fuentes)}</ol></details></section>'
         f'</main>')
     out = re.sub(r"<main>.*?</main>", lambda m: principal, TPL, flags=re.S).replace('class="envoltura"', 'class="envoltura envoltura--ancha"')
     desc = f"Hay {len(rutas)} caminos: " + "; ".join(f"{r['nombre']} ({r['costo']})" for r in rutas) + "."

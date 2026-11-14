@@ -54,6 +54,7 @@ a{color:var(--enlace)}
 .marca span,.img-top .marca{font:800 21px/1 var(--f-display);font-stretch:112%;letter-spacing:-.02em}
 .pill{font:700 13px/1 var(--f-display);font-stretch:100%;text-transform:uppercase;letter-spacing:.08em;padding:6px 10px;border-radius:99px;background:var(--tinta);color:var(--papel);text-decoration:none}
 .top .pill{margin-left:auto}
+@media (max-width:330px){.marca span{font-size:18px}.top .pill{font-size:11px;padding:5px 8px}.logo{width:26px;height:26px}}
 
 /* Encabezado */
 .cabeza{padding:28px 0 8px}
@@ -118,6 +119,32 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .difiere{display:inline-block;margin-top:6px;font:700 11px/1.25 var(--f-texto);padding:4px 8px;border-radius:8px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
 .nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
 .mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
+.mapa--vivo{margin-bottom:26px}
+details.nodo{display:block;padding:0}
+details.nodo>summary{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;padding:10px 10px 11px;cursor:pointer;list-style:none;border-radius:10px}
+details.nodo>summary::-webkit-details-marker{display:none}
+details.nodo>summary:focus-visible{outline:3px solid var(--foco);outline-offset:2px}
+.mapa--vivo .nodo p{font-size:15px}
+.mas{display:flex;align-items:center;gap:4px;margin-top:8px;font:700 13px/1.2 var(--f-texto);color:var(--enlace)}
+.mas::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}
+details[open]>summary .mas::after{transform:rotate(-135deg) translate(-2px,0)}
+details[open]>summary .mas{color:var(--tinta-suave)}
+.detalle{padding:0 12px 12px 46px;font-size:15px}
+.detalle .fuente{margin:0;color:var(--tinta-suave)}
+.detalle .practica{margin-top:10px}
+.etq-formato{display:inline-block;margin:8px 6px 0 0;font-size:13px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--anil-suave);color:var(--anil)}
+.mapa--vivo .plazo{margin:8px 6px 0 0;font-size:13px}
+.mapa--vivo .difiere{margin-right:6px}
+.salto{display:none;margin:0;font:700 13px/1.3 var(--f-texto);color:var(--tinta-suave)}
+@media (max-width:560px){
+  .mapa--vivo{grid-template-columns:minmax(0,1fr);gap:26px}
+  .mapa--vivo>.nodo,.mapa--vivo>.nodo-fin{grid-row:auto!important;grid-column:1!important}
+  .mapa--vivo .salto{display:block;grid-column:1/-1}
+  details.nodo>summary>.salto{padding-bottom:6px;border-bottom:1px dashed var(--linea);margin-bottom:2px}
+  details.nodo>summary>.salto:last-child{padding-top:8px;border-top:1px dashed var(--linea);margin-top:4px}
+  .detalle{padding-left:12px}
+}
+@media print{details.nodo .mas{display:none}}
 .lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
 .lienzo .nodo{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px;border-width:3px;border-radius:16px}
 .lienzo .nodo .n{width:44px;height:44px;font-size:22px}
@@ -162,6 +189,7 @@ a.camino:hover{border-color:var(--anil)}
 .cifras div{background:var(--papel-hundido);border-radius:10px;padding:8px 10px}
 .cifras dt{font:700 11px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
 .cifras dd{margin:2px 0 0;font:800 22px/1.1 var(--f-display)}
+@media (max-width:380px){.cifras{grid-template-columns:1fr 1fr}.cifras div:first-child{grid-column:1/-1}.opcion{padding:14px}}
 .boton--ver{margin-top:auto;background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
 .og--meta h1{font-size:60px!important;max-width:none!important}
 .og--meta .lugar{margin:auto 0 12px!important}
@@ -203,6 +231,12 @@ a.camino:hover{border-color:var(--anil)}
 .tipo{display:block;font:700 11px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.07em;color:var(--jade)}
 .tipo--no{color:var(--barro)}
 .base{font-size:15px;color:var(--tinta-suave);margin:14px 0 0}
+.plegable>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--linea);border-radius:14px;background:var(--papel-alto)}
+.plegable>summary::-webkit-details-marker{display:none}
+.plegable>summary h2{margin:0;font-size:20px}
+.plegable>summary::after{content:"";flex:none;width:9px;height:9px;border:solid var(--tinta-suave);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translateY(-3px)}
+.plegable[open]>summary::after{transform:rotate(-135deg)}
+.plegable[open]>summary{margin-bottom:16px}
 
 /* Pie */
 .estado{margin:40px 0 0;padding:16px;border-radius:14px;border:1px dashed var(--linea-fuerte);font-size:15px}
@@ -300,7 +334,6 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
     <!--pasos--><section aria-labelledby="t-ruta">
       <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
       {{MAPA}}
-      <ol class="ruta-lista">{{PASOS}}</ol>
     </section><!--/pasos-->
 
     <!--reqs--><section aria-labelledby="t-lleva">
@@ -319,9 +352,10 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
     </section><!--/glos-->
 
     <section aria-labelledby="t-fuentes">
-      <h2 id="t-fuentes">Fuentes</h2>
+      <details class="plegable" id="fuentes"><summary><h2 id="t-fuentes">Fuentes<small>Cada número en la página lleva aquí.</small></h2></summary>
       <ol class="fuentes">{{FUENTES}}</ol>
       <p class="base">Fundamento legal: {{BASE}}</p>
+      </details>
     </section>
 
     <div class="estado">
@@ -339,11 +373,16 @@ window.dibujarFlechas=function(){
   document.querySelectorAll('.mapa').forEach(function(m){
     var svg=m.querySelector('.flechas'),z=parseFloat(getComputedStyle(m).zoom)||1;
     var R=m.getBoundingClientRect(),ns='http://www.w3.org/2000/svg';
-    var aristas=JSON.parse(m.dataset.aristas||'[]'),nodos={},salen={};
-    m.querySelectorAll('.nodo').forEach(function(n){nodos[n.dataset.n]=n;});
+    var aristas=JSON.parse(m.dataset.aristas||'[]'),nodos={},salen={},orden=[];
+    m.querySelectorAll('.nodo').forEach(function(n){nodos[n.dataset.n]=n;orden.push(n.dataset.n);});
     aristas.forEach(function(a){salen[a[0]]=1;});
     Object.keys(nodos).forEach(function(k){if(!salen[k])aristas.push([k,'fin','']);});
-    nodos.fin=m.querySelector('.nodo-fin');
+    nodos.fin=m.querySelector('.nodo-fin');orden.push('fin');
+    // En una sola columna solo se dibujan las flechas entre cajas vecinas; las demás ramas van en texto.
+    if(getComputedStyle(m).gridTemplateColumns.split(' ').length<2){
+      aristas=aristas.filter(function(a){return orden.indexOf(a[1])===orden.indexOf(a[0])+1;});
+      orden.forEach(function(k,i){if(i&&!aristas.some(function(a){return a[1]===k;}))aristas.push([orden[i-1],k,'']);});
+    }
     var r=function(el){var b=el.getBoundingClientRect();return{l:(b.left-R.left)/z,r:(b.right-R.left)/z,t:(b.top-R.top)/z,b:(b.bottom-R.top)/z};};
     var out='<defs><marker id="pt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="punta" d="M0 0L10 5L0 10z" style="stroke:none"/></marker></defs>';
     aristas.forEach(function(a){
@@ -361,6 +400,9 @@ window.dibujarFlechas=function(){
 window.dibujarFlechas();
 addEventListener('resize',window.dibujarFlechas);
 if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
+document.querySelectorAll('details.nodo').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
+addEventListener('click',function(ev){var c=ev.target.closest&&ev.target.closest('a.cita');if(c){var f=document.getElementById('fuentes');if(f)f.open=true;}});
+addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.nodo').forEach(function(d){d.open=true;});});
 </script>
 <script>
 (function(){
