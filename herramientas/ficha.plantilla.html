@@ -244,8 +244,7 @@ a.camino:hover{border-color:var(--anil)}
 .lienzo .ruta footer{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-top:22px;border-top:2px solid var(--linea);font-size:22px;color:var(--tinta-suave)}
 .lienzo .ruta footer b{font:800 26px/1.1 var(--f-display);text-align:right;color:var(--tinta)}
 /* Formatos: enlace al PDF oficial y llenado en línea (llenar.js) */
-.formato{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
-.formato-pdf{font-weight:700}
+.llenado{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
 .boton--llenar{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
 dialog.llenar{width:min(640px,100% - 24px);max-height:calc(100dvh - 24px);padding:0;border:1px solid var(--linea);border-radius:16px;background:var(--papel);color:var(--tinta)}
 dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
@@ -266,7 +265,7 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
 .boton--primario{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
 .boton--descargar{background:var(--jade);color:var(--sobre-tinta);border-color:var(--jade)}
 .llenar-estado{flex-basis:100%;margin:0;font-size:15px}
-@media print{.formato button,dialog.llenar{display:none}}
+@media print{.llenado button,dialog.llenar{display:none}}
 </style>
 </head>
 <body>

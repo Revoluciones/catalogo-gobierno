@@ -220,14 +220,13 @@ def formato(url):
             'Descarga el formato oficial</a>')
 
 
-def formato(fid, x):
+def llenado(fid, x):
     """Enlace al PDF oficial y botón para llenarlo en línea (herramientas/llenar.js lo arma en el navegador)."""
     f = FORMATOS[fid]
     x.setdefault("formatos", {})[fid] = f
     sube = "../" * x["profundidad"]
-    return (f'<div class="formato"><a class="formato-pdf" href="{e(f["source"]["url"])}" rel="noopener">Formato oficial en blanco (PDF)</a>'
-            f'<button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
-            f'Llénalo aquí, gratis</button></div>')
+    return (f'<div class="llenado"><button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
+            f'Llena el formato aquí, gratis</button><a href="{e(f["source"]["url"])}" target="_blank" rel="noopener">o descárgalo en blanco</a></div>')
 
 
 def formatos_js(x):
@@ -261,7 +260,7 @@ def pagina(d, x):
         )
         plazo = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
         if p.get("form"):
-            plazo += formato(p["form"], x)
+            plazo += llenado(p["form"], x)
         pasos.append(
             f'<li class="paso{" paso--tu" if tu else ""}"><span class="n" aria-hidden="true">{e(p["n"])}</span>'
             f'<div class="cuerpo"><p class="actor">{e(p["actor"])}</p>'
