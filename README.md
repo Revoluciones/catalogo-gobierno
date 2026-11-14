@@ -20,11 +20,12 @@ Hoy cubre México (federal), Baja California y Tijuana. El país es un campo de 
 | `procedimientos/MX/federal/` | Procedimientos federales escritos a partir de la ley |
 | `procedimientos/MX-BCN/tramites/` | Los trámites del Registro Estatal de Trámites y Servicios de Baja California (RETyS), importados tal cual |
 | `procedimientos/MX-BCN-Tijuana/tramites/` | Los trámites, servicios y apoyos del registro municipal de Tijuana (REMUTyS), importados tal cual |
+| `procedimientos/MX-BCN-Tijuana/guias/` | Rutas completas que juntan varios trámites oficiales, de principio a fin, con su práctica aparte |
 | `para-barda/` | Trámites de propiedad (Registro Público, gravámenes, predial, permisos de construcción); viven en Barda |
 | `reportes/` | Reportes de cómo fue un trámite de verdad |
 | `esquema/` | Las reglas de cada ficha (JSON Schema) |
 | `glosario.yaml` | Cada término legal explicado una vez, en palabras de todos los días |
-| `herramientas/` | `importar_retys.py` y `importar_remutys.py` (vuelven a bajar los registros estatal y de Tijuana) y `validar.py` (revisa todo) |
+| `herramientas/` | `importar_retys.py` y `importar_remutys.py` (vuelven a bajar los registros estatal y de Tijuana) `validar.py` (revisa todo) y `ficha.py` (la ficha para compartir de un procedimiento: página, vista previa para WhatsApp, imagen de la ruta y mensaje listo para pegar) |
 | `fuentes-crudas.tar.gz` | Copias de las páginas oficiales tal como se bajaron, para poder auditar el import (`tar xzf fuentes-crudas.tar.gz`) |
 
 Los códigos de lugar son los mismos que usa Barda: `MX`, `MX-BCN`, `MX-BCN-Tijuana`.

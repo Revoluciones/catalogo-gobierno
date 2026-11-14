@@ -1,0 +1,16 @@
+id: 2025-07-01-c4n9sd
+procedure_id: mx-registro-de-nacimiento-en-el-consulado
+official_version_checked: '2026-11-13'
+jurisdiction: MX
+office: Consulado General de México en San Diego
+started: '2025-07-01'
+outcome: lo_deje
+steps:
+- n: '1'
+  matched: distinto
+  what_happened: No se consiguió cita. El registro se hizo después en el Registro Civil de Tijuana.
+evidence: []
+review:
+  state: publicado
+  reviewed_on: '2026-11-13'
+  reason: Lo contó quien hizo el trámite. Sin datos personales.
