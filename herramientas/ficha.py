@@ -226,7 +226,7 @@ def llenado(fid, x):
     x.setdefault("formatos", {})[fid] = f
     sube = "../" * x["profundidad"]
     return (f'<div class="llenado"><button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
-            f'Llena el formato aquí, gratis</button><a href="{e(f["source"]["url"])}" target="_blank" rel="noopener">o descárgalo en blanco</a></div>')
+            f'Llena el formato aquí, gratis</button></div>')
 
 
 def formatos_js(x):
