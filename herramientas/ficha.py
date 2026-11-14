@@ -447,7 +447,16 @@ def meta_datos(meta, base):
             pros=[(n["text"], chips(n["cites"])) for n in r.get("pros", [])],
             cons=[(n["text"], chips(n["cites"])) for n in r.get("cons", [])],
             url=f"{base}/{ruta_corta(d)}", borrador=d["status"] == "borrador"))
+    rutas.sort(key=lambda r: (orden_costo(r["d"]), r["docs"], r["pasos"]))
     return rutas, orden, srcs
+
+
+def orden_costo(d):
+    """Para ordenar los caminos: lo gratis primero, luego lo más barato; si el costo varía, al final."""
+    c = d.get("cost") or {}
+    if c.get("type") == "gratuito":
+        return 0
+    return c["amount_mxn"] if c.get("amount_mxn") is not None else float("inf")
 
 
 def pegado(texto, citas):
@@ -462,12 +471,13 @@ def pagina_meta(meta, base):
     rutas, orden, srcs = meta_datos(meta, base)
     url = f"{base}/{meta['id']}"
     tarjetas = []
-    for r in rutas:
+    for i, r in enumerate(rutas, 1):
+        puesto = "Opción 1 · Recomendada" if i == 1 else f"Opción {i}"
         pros = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["pros"])
         cons = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["cons"])
         cuando = f'<p class="cuando">{e(r["disp_txt"])}</p>' if r["disp_txt"] else ""
         tarjetas.append(
-            f'<article class="opcion"><header><h3>{e(r["nombre"])}</h3>'
+            f'<article class="opcion{" opcion--primera" if i == 1 else ""}"><p class="puesto">{puesto}</p><header><h3>{e(r["nombre"])}</h3>'
             f'<span class="disp disp--{r["color"]}">{e(r["disp"])}</span></header>'
             f'<p class="resumen-camino"><b>{e(r["costo"])}</b> · {r["docs"]} documentos · {r["pasos"]} pasos</p>'
             f'{cuando}'
@@ -488,7 +498,7 @@ def pagina_meta(meta, base):
                    + ["", f"Compáralos, con sus fuentes oficiales: {url}"])
     principal = (
         f'<main><div class="cabeza"><p class="lugar">Una meta, {len(rutas)} caminos</p><h1>{e(meta["title"])}</h1>'
-        f'<p class="resumen">Hay varias formas de lograrlo, en lugares distintos. Cambian el costo, los papeles y cuándo se pueden hacer.</p>'
+        f'<p class="resumen">Hay {len(rutas)} caminos. Van en orden: primero el que cuesta menos y pide menos papeles. Empieza por el 1; si no te sirve, revisa el siguiente.</p>'
         f'<div class="hilos" aria-hidden="true"></div></div>'
         f'<div class="opciones">{"".join(tarjetas)}</div>'
         f'<div class="banda-compartir"><p>¿Conoces a alguien que lo necesite? Mándale esta comparación.</p>'

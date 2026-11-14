@@ -12,7 +12,7 @@ summary: Si naciste en otro país y tu mamá o tu papá es mexicano, ya eres mex
   más papeles que el consulado y pasa por tres lugares, en este orden.
 goal:
   id: nacimiento-en-el-extranjero
-  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+  title: Comprobar tu nacionalidad mexicana si naciste en otro país
 route:
   name: En el Registro Civil de Tijuana
   availability: siempre
