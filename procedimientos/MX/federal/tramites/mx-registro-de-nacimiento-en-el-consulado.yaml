@@ -11,7 +11,7 @@ summary: Si naciste en otro país y tu mamá o tu papá es mexicano, el consulad
   conseguir la cita.
 goal:
   id: nacimiento-en-el-extranjero
-  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+  title: Comprobar tu nacionalidad mexicana si naciste en otro país
 route:
   name: En el consulado de México
   availability: con_cita
@@ -106,6 +106,8 @@ steps:
   cites:
   - source: consulado-sd-requisitos
     pinpoint: Procedimiento, punto 1
+  - source: miconsulado
+    pinpoint: Sistema de citas de la SRE (la página del consulado enlaza aquí)
   practice:
   - text: En 2025 no se consiguió cita, y por eso el registro se hizo en el Registro Civil de Tijuana.
     evidence_level: un_reporte
@@ -164,6 +166,13 @@ sources:
     publisher: Secretaría de Relaciones Exteriores
     url: https://consulmex.sre.gob.mx/sandiego/index.php/component/content/article/334
     accessed: '2026-11-13'
+  miconsulado:
+    type: portal_oficial
+    official: true
+    title: 'MiConsulado: citas de la Secretaría de Relaciones Exteriores'
+    publisher: Secretaría de Relaciones Exteriores
+    url: https://citas.sre.gob.mx
+    accessed: '2026-11-14'
   reportes:
     type: reportes_ciudadanos
     official: false

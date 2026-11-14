@@ -11,7 +11,7 @@ summary: Algunos meses, el gobierno abre la campaña «Soy México» en las ofic
   Si naciste en Estados Unidos y tu mamá o tu papá es mexicano, inscribes tu acta con menos papeles y, en Tijuana, gratis.
 goal:
   id: nacimiento-en-el-extranjero
-  title: Tener tu acta de nacimiento mexicana si naciste en otro país
+  title: Comprobar tu nacionalidad mexicana si naciste en otro país
 route:
   name: En la campaña «Soy México»
   availability: solo_en_campana
@@ -27,7 +27,7 @@ route:
       quote: el solicitante queda exento del pago de la constancia de inexistencia de registro de nacimiento estatal,
         así como de la traducción y apostillado del acta de nacimiento de Estados Unidos
   cons:
-  - text: Solo existe algunos meses del año.
+  - text: Solo se hace algunos meses del año.
     cites:
     - source: zeta-2023-soy-mexico
       quote: En Mexicali el programa se desarrolló durante julio, en agosto en Tijuana y en septiembre en Playas de Rosarito
