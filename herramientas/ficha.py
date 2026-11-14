@@ -180,6 +180,27 @@ def grafo(pasos):
     return aristas, capa, col, max((c[-1] for c in col.values()), default=0) + 1
 
 
+def y(ns):
+    """['3', '6'] -> '3 y 6'."""
+    return ", ".join(ns[:-1]) + " y " + ns[-1] if len(ns) > 1 else ns[0]
+
+
+def orden(pasos):
+    """Lo que la lista numerada no dice sola: qué pasos van al mismo tiempo y cuáles esperan a otros."""
+    aristas, _, _, _ = grafo(pasos)
+    ns = [p["n"] for p in pasos]
+    notas = {}
+    for i, n in enumerate(ns):
+        previos = [a for a, b, _ in aristas if b == n]
+        if i and not previos:
+            notas[n] = f"No tienes que esperar los pasos anteriores: puedes hacerlo al mismo tiempo que el paso {ns[0]}."
+        elif len(previos) > 1:
+            notas[n] = f"Antes tienes que terminar los pasos {y(previos)}."
+        elif previos and previos[0] != ns[i - 1]:
+            notas[n] = f"Va después del paso {previos[0]}."
+    return notas
+
+
 def mapa(pasos, grande=False):
     """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador."""
     if not pasos:
@@ -225,6 +246,7 @@ def pagina(d, x):
     )
 
     pasos = []
+    notas = orden(x["pasos"])
     for p in x["pasos"]:
         tu = es_tu(p["actor"])
         prac = "".join(
@@ -233,9 +255,11 @@ def pagina(d, x):
             for q in p.get("practice", [])
         )
         plazo = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
+        nota = f'<p class="orden">{e(notas[p["n"]])}</p>' if p["n"] in notas else ""
         pasos.append(
             f'<li class="paso{" paso--tu" if tu else ""}"><span class="n" aria-hidden="true">{e(p["n"])}</span>'
             f'<div class="cuerpo"><p class="actor">{e(p["actor"])}</p>'
+            f'{nota}'
             f'<p class="accion">{e(p["action"])} {chips(p["cites"])}</p>{plazo}{prac}</div></li>'
         )
 
@@ -304,7 +328,7 @@ def pagina(d, x):
     rep = {
         "TITULO": e(d["title"]), "DESC": e(desc), "URL": e(x["url"]), "OG": e(x["url"] + "/og.png"),
         "LUGAR": e(lugar), "TIPO": "Trámite" if d["kind"] == "tramite" else "Por dentro del gobierno",
-        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos), "MAPA": mapa(x["pasos"]),
+        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos), 
         "REQS": "".join(reqs), "OFIS": ofis, "GLOS": glos, "FUENTES": "".join(fuentes), "BASE": base_legal,
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
         "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,

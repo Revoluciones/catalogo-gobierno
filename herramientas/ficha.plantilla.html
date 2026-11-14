@@ -48,7 +48,7 @@ a{color:var(--enlace)}
 .envoltura{max-width:720px;margin:0 auto;padding-block:0 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 
 /* Barra superior */
-.top{display:flex;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--linea)}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--linea)}
 .top a.marca{display:flex;align-items:center;gap:8px;color:var(--tinta);text-decoration:none}
 .logo{width:30px;height:30px;color:var(--tinta);flex:none}
 .marca span,.img-top .marca{font:800 21px/1 var(--f-display);font-stretch:112%;letter-spacing:-.02em}
@@ -117,6 +117,7 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .nodo p{margin:3px 0 0;font-size:14px;line-height:1.35}
 .difiere{display:inline-block;margin-top:6px;font:700 11px/1.25 var(--f-texto);padding:4px 8px;border-radius:8px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
 .nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
+.orden{margin:4px 0 0;font-size:15px;font-weight:700;color:var(--anil)}
 .mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
 .lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
 .lienzo .nodo{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px;border-width:3px;border-radius:16px}
@@ -159,6 +160,7 @@ a.camino:hover{border-color:var(--anil)}
 .disp--anil{background:var(--anil-suave);color:var(--anil)}
 .disp--cemp{background:var(--cemp-suave);color:var(--cemp)}
 .cifras{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;margin:0}
+@media (max-width:340px){.cifras{grid-template-columns:minmax(0,1fr)}}
 .cifras div{background:var(--papel-hundido);border-radius:10px;padding:8px 10px}
 .cifras dt{font:700 11px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
 .cifras dd{margin:2px 0 0;font:800 22px/1.1 var(--f-display)}
@@ -276,7 +278,6 @@ a.camino:hover{border-color:var(--anil)}
 
     <!--pasos--><section aria-labelledby="t-ruta">
       <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
-      {{MAPA}}
       <ol class="ruta-lista">{{PASOS}}</ol>
     </section><!--/pasos-->
 
