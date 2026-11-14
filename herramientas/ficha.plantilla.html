@@ -61,6 +61,13 @@ a{color:var(--enlace)}
 .lugar{margin:0 0 8px;font:700 13px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.1em;color:var(--tinta-suave)}
 h1{margin:0;font:800 clamp(30px,7.4vw,46px)/1.04 var(--f-display);font-stretch:88%;letter-spacing:-.015em;text-wrap:balance}
 .resumen{margin:14px 0 0;font-size:18px;color:var(--tinta-suave);max-width:60ch}
+@media (min-width:1000px){
+  .envoltura{max-width:1160px}
+  .dos-col{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);gap:0 44px;align-items:start}
+  .dos-col>section{margin-top:40px}
+  .lado>section:first-child{margin-top:40px}
+  .hechos,.compartir,.otros{max-width:none}
+}
 .hilos{height:6px;border-radius:3px;margin:22px 0 0;background:linear-gradient(90deg,var(--jade) 0 20%,var(--anil) 0 40%,var(--cemp-logo) 0 60%,var(--jaca) 0 80%,var(--barro) 0)}
 
 /* Datos clave */
@@ -339,11 +346,13 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
     </div>
     <p class="aviso" id="aviso" role="status"></p>
 
+    <div class="dos-col">
     <!--pasos--><section aria-labelledby="t-ruta">
       <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
       {{MAPA}}
     </section><!--/pasos-->
 
+    <div class="lado">
     <!--reqs--><section aria-labelledby="t-lleva">
       <h2 id="t-lleva">Lleva esto<small>Toca cada documento cuando ya lo tengas.</small></h2>
       <ul class="lleva">{{REQS}}</ul>
@@ -365,6 +374,7 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
       <p class="base">Fundamento legal: {{BASE}}</p>
       </details>
     </section>
+    </div></div>
 
     <div class="estado">
       <p>{{ESTADO}} Última revisión: {{REVISADO}}.</p>
