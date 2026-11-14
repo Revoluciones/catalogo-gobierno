@@ -167,6 +167,9 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 /* Lleva esto */
 .lleva{list-style:none;margin:0;padding:0;background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px}
 .lleva li+li{border-top:1px solid var(--linea)}
+.formato{display:flex;align-items:center;gap:8px;width:fit-content;min-height:44px;box-sizing:border-box;margin:0 14px 14px 52px;padding:8px 14px;border:1.5px solid var(--anil);border-radius:10px;color:var(--anil);font-weight:700;font-size:15px;text-decoration:none}
+.formato:hover{background:var(--anil);color:var(--papel)}
+.formato:focus-visible{outline:3px solid var(--foco);outline-offset:2px}
 .lleva label{display:grid;grid-template-columns:26px 1fr;gap:4px 12px;padding:14px;cursor:pointer;align-items:start}
 .lleva input{position:absolute;opacity:0;pointer-events:none}
 .caja{width:26px;height:26px;border-radius:7px;border:2px solid var(--linea-fuerte);display:grid;place-items:center}

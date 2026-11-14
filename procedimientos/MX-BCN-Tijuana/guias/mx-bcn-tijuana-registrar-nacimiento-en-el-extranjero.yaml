@@ -51,16 +51,22 @@ who_can:
 when: Naciste en otro país, al menos uno de tus padres es mexicano y quieres tu acta de nacimiento mexicana.
 result: Acta de nacimiento mexicana, inscrita en el Registro Civil de Tijuana.
 requirements:
-- text: Solicitud de inscripción (te la dan en la oficialía)
+- text: Solicitud de inscripción, llena y firmada. Puedes descargarla o pedirla en la oficialía.
   original_or_copy: original
+  form_url: https://remutys-api.tijuana.gob.mx/api/v1/archivos/ArchivosDeTramites/T190/NACIMIENTO_OCURRIDO_EN_EL_EXTRANJERO_1792689200924.pdf
   cites:
   - source: remutys-0190
-    pinpoint: Requisitos
-- text: Constancia de inexistencia de registro de nacimiento del Registro Civil del Estado (pasos 4 a 6)
+    pinpoint: Requisitos y formato «Solicitud de inscripción de nacimiento ocurrido en el extranjero»
+- text: Constancia de inexistencia de registro de nacimiento del Registro Civil del Estado (pasos 4 a 6). Para
+    pedirla llenas la solicitud del Estado.
   original_or_copy: original y 1 copia
+  form_url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11018
   cites:
   - source: remutys-0190
     pinpoint: Requisitos
+  - source: retys-618
+    pinpoint: Escenario «Inexistencia de nacimiento», «Llenar formato de solicitud de Inexistencia de registro de
+      nacimiento»
 - text: Acta de nacimiento de tu mamá o tu papá mexicano
   original_or_copy: original y 1 copia
   cites:
@@ -160,7 +166,7 @@ steps:
 - n: '4'
   actor: Tú
   action: Llena y firma la solicitud de inexistencia de registro de nacimiento del Estado. Como naciste en otro
-    país, agrega una copia de tu acta extranjera.
+    país, agrega una copia de tu acta extranjera. El formato está en la lista «Lleva esto».
   cites:
   - source: retys-618
     pinpoint: Escenario «Inexistencia de nacimiento», notas

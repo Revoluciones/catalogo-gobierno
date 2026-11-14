@@ -201,6 +201,16 @@ def mapa(pasos, grande=False):
             f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>')
 
 
+def formato(url):
+    """Liga al formato oficial, para descargarlo, llenarlo e imprimirlo."""
+    if not url:
+        return ""
+    return (f'<a class="formato" href="{e(url)}" target="_blank" rel="noopener">'
+            '<svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14" '
+            'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+            'Descarga el formato oficial</a>')
+
+
 def pagina(d, x):
     chips, num = x["chips"], x["num"]
     lugar = LUGAR.get(d["jurisdiction"], d["jurisdiction"])
@@ -231,7 +241,7 @@ def pagina(d, x):
         reqs.append(
             f'<li><label><input type="checkbox" data-k="{i}"><span class="caja" aria-hidden="true"></span>'
             f'<span class="txt">{e(r["text"])} {chips(r.get("cites"))}</span>'
-            f'{f"<span class=oc>{e(oc)}</span>" if oc else ""}</label></li>'
+            f'{f"<span class=oc>{e(oc)}</span>" if oc else ""}</label>{formato(r.get("form_url"))}</li>'
         )
 
     ofis = []
@@ -308,7 +318,11 @@ def whatsapp(d, x):
         lineas.append(f"{p['n']}. {quien}{corta(p['action'], 120)}")
     reqs = d.get("requirements", [])
     if reqs:
-        lineas += ["", "*Lleva esto*"] + [f"• {corta(r['text'], 90)}" for r in reqs]
+        lineas += ["", "*Lleva esto*"]
+        for r in reqs:
+            lineas.append(f"• {corta(r['text'], 90)}")
+            if r.get("form_url"):
+                lineas.append(f"  📄 Formato: {r['form_url']}")
     lineas += ["", f"Cada paso con su fuente oficial: {x['url']}"]
     return "\n".join(lineas)
 
