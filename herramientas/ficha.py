@@ -188,7 +188,8 @@ def mapa(pasos, grande=False):
     cajas = []
     for p in pasos:
         c = col[p["n"]]
-        marca = '<span class="difiere" title="En la práctica pasa otra cosa">≠ práctica</span>' if p.get("practice") else ""
+        marca = ('<span class="difiere" title="Quien lo hizo encontró algo distinto a lo oficial. Lo ves abajo, en este paso.">'
+                 'Ojo: en la práctica cambia</span>') if p.get("practice") else ""
         cajas.append(
             f'<div class="nodo{" nodo--tu" if es_tu(p["actor"]) else ""}" data-n="{e(p["n"])}" '
             f'style="grid-row:{capa[p["n"]] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}">'
@@ -198,7 +199,10 @@ def mapa(pasos, grande=False):
     flechas = json.dumps([[a, b, w] for a, b, w in aristas], ensure_ascii=False)
     return (f'<div class="mapa" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
             f'<svg class="flechas" aria-hidden="true"></svg>{"".join(cajas)}'
-            f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>')
+            f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>'
+            + ('' if grande or not any(p.get("practice") for p in pasos) else
+               '<p class="mapa-nota"><b>«Ojo: en la práctica cambia»</b> marca los pasos donde alguien que hizo el trámite '
+               'encontró algo distinto a lo que dice la versión oficial. Abajo, en ese paso, ves qué pasó y la fuente.</p>'))
 
 
 def formato(url):
@@ -278,15 +282,24 @@ def pagina(d, x):
     otros = ""
     meta = d.get("goal")
     if meta:
-        hermanos = [h for h, _ in caminos(meta["id"]) if h["id"] != d["id"]]
-        if hermanos:
-            chips = "".join(
-                f'<a class="camino" href="{e(x["base"])}/{e(ruta_corta(h))}"><b>{e(h["route"]["name"])}</b>'
-                f'<span>{e(costo_corto(h))} · {e(DISPONIBLE.get(h["route"].get("availability"), ("", ""))[0])}</span></a>'
-                for h in hermanos)
-            otros = (f'<aside class="otros"><p><b>Hay {len(hermanos) + 1} caminos para lo mismo.</b> Este es '
-                     f'«{e(d["route"]["name"])}».</p><div class="caminos">{chips}</div>'
-                     f'<a class="comparar" href="{e(x["base"])}/{e(meta["id"])}">Compara los {len(hermanos) + 1} caminos</a></aside>')
+        todos_ = [h for h, _ in caminos(meta["id"])]
+        if len(todos_) > 1:
+            tarjetas = []
+            for h in todos_:
+                r = h["route"]
+                actual = h["id"] == d["id"]
+                pro = (r.get("pros") or [{}])[0].get("text")
+                con = (r.get("cons") or [{}])[0].get("text")
+                dentro = (f'<b>{e(r["name"])}</b>'
+                          f'<span class="cifra">{e(costo_corto(h))} · {e(DISPONIBLE.get(r.get("availability"), ("", ""))[0])}</span>'
+                          + (f'<span class="pro"><i>Elige este si</i> {e(corta(pro, 110))}</span>' if pro else "")
+                          + (f'<span class="con"><i>Ojo</i> {e(corta(con, 110))}</span>' if con else "")
+                          + ('<span class="aqui">Estás viendo este</span>' if actual else ""))
+                tarjetas.append(f'<div class="camino camino--actual">{dentro}</div>' if actual else
+                                f'<a class="camino" href="{e(x["base"])}/{e(ruta_corta(h))}">{dentro}</a>')
+            otros = (f'<aside class="otros"><p><b>Hay {len(todos_)} caminos para lo mismo.</b> Cada uno conviene en un caso distinto.</p>'
+                     f'<div class="caminos">{"".join(tarjetas)}</div>'
+                     f'<a class="comparar" href="{e(x["base"])}/{e(meta["id"])}">Compara los {len(todos_)} caminos, con sus fuentes</a></aside>')
     desc = corta(d.get("summary", ""), 180)
     rep = {
         "TITULO": e(d["title"]), "DESC": e(desc), "URL": e(x["url"]), "OG": e(x["url"] + "/og.png"),

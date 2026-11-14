@@ -115,7 +115,7 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .nodo small{display:block;font:700 11px/1.25 var(--f-display);text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-suave)}
 .nodo--tu small{color:var(--cemp)}
 .nodo p{margin:3px 0 0;font-size:14px;line-height:1.35}
-.difiere{display:inline-block;margin-top:6px;font:700 11px/1 var(--f-texto);padding:4px 7px;border-radius:99px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
+.difiere{display:inline-block;margin-top:6px;font:700 11px/1.25 var(--f-texto);padding:4px 8px;border-radius:8px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
 .nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
 .mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
 .lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
@@ -132,8 +132,17 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .otros{margin:22px 0 0;padding:14px;border-radius:14px;background:var(--anil-suave);border:1px solid var(--linea)}
 .otros p{margin:0 0 10px}
 .caminos{display:flex;flex-wrap:wrap;gap:8px}
-.camino{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:10px;background:var(--papel-alto);border:1px solid var(--linea);color:var(--tinta);text-decoration:none;flex:1 1 150px;min-width:0}
-.camino span{font-size:14px;color:var(--tinta-suave)}
+.camino{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-radius:10px;background:var(--papel-alto);border:1px solid var(--linea);color:var(--tinta);text-decoration:none;flex:1 1 200px;min-width:0}
+.camino span{font-size:14px;line-height:1.4;color:var(--tinta-suave)}
+.camino b{font:800 17px/1.2 var(--f-display)}
+.camino .cifra{font-weight:700;color:var(--tinta)}
+.camino .pro,.camino .con{margin-top:4px;color:var(--tinta)}
+.camino i{display:block;font:700 11px/1.3 var(--f-display);font-style:normal;text-transform:uppercase;letter-spacing:.06em}
+.camino .pro i{color:var(--jade)}
+.camino .con i{color:var(--barro)}
+.camino .aqui{margin-top:6px;align-self:flex-start;font:700 12px/1 var(--f-texto);padding:5px 8px;border-radius:99px;background:var(--anil);color:var(--sobre-tinta)}
+.camino--actual{border:2px solid var(--anil)}
+a.camino:hover{border-color:var(--anil)}
 .comparar{display:inline-block;margin-top:10px;font-weight:700}
 .envoltura--ancha{max-width:1100px}
 .opciones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:26px 0 0;align-items:start}
