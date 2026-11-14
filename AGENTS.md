@@ -29,6 +29,7 @@ A dev container (`.devcontainer/`) does the same in Codespaces.
 | `glosario.yaml` | Each legal term explained once in everyday words. A procedure links terms by key in `glossary`. |
 | `reportes/<procedure-id>/` | Reports of how a procedure really went. Never put personal data here. |
 | `formatos/<jurisdiction>/` | Official PDF forms copied unchanged, plus a YAML (`esquema/formato.schema.json`) saying where each answer is written. A step points to one with `form: <id>`; `herramientas/llenar.js` fills it in the browser. Measure positions with `pdftotext -bbox` and check the filled PDF by eye. |
+| `datos-personales.yaml` | The personal data a person types once (name, CURP, birth, address) and that fills any form. A form field points to it with `person` and `profile`; `herramientas/mis-datos.js` keeps the values encrypted on the person's own device, never on a server. |
 | `herramientas/` | Importers (`importar_*.py`), the validator, the page builder. |
 | `fuentes-crudas.tar.gz` | Raw copies of official pages as downloaded, so imports can be audited. Unpack with `tar xzf fuentes-crudas.tar.gz` (the folder is gitignored). |
 

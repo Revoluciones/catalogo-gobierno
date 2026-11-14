@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Revoluciones/catalogo-gobierno/esquema/datos-personales.schema.json",
+  "title": "Diccionario de datos personales",
+  "description": "Los datos que una persona escribe una vez y que llenan cualquier formato. Un campo de formato apunta aquí con profile: <key>.",
+  "type": "object",
+  "required": ["fields", "relations"],
+  "additionalProperties": false,
+  "properties": {
+    "fields": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "required": ["key", "label", "group"], "additionalProperties": false,
+        "properties": {
+          "key": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "label": {"type": "string"},
+          "group": {"type": "string"},
+          "help": {"type": "string"},
+          "type": {"enum": ["text", "date", "choice", "tel", "email", "curp"]},
+          "autocomplete": {"type": "string", "description": "El valor de autocomplete de HTML, para que el navegador también pueda llenarlo."},
+          "options": {
+            "type": "array",
+            "items": {"type": "object", "required": ["value", "label"], "additionalProperties": false,
+                      "properties": {"value": {"type": "string"}, "label": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "relations": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Cómo se relaciona cada persona guardada con quien usa el teléfono. La primera es la persona misma."},
+    "curp_states": {"type": "object", "additionalProperties": {"type": "string"}, "description": "Clave de entidad de nacimiento en la CURP y su nombre."}
+  }
+}

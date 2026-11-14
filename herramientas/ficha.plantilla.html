@@ -322,6 +322,44 @@ dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
 .boton--primario{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
 .boton--descargar{background:var(--jade);color:var(--sobre-tinta);border-color:var(--jade)}
 .llenar-estado{flex-basis:100%;margin:0;font-size:15px}
+/* Mis datos (mis-datos.js): datos guardados con llave en el teléfono para llenar cualquier formato */
+.llenar .campo input[type=email],.misdatos-frase input,.llenar select{width:100%;min-height:48px;padding:10px 12px;font:16px var(--f-texto);border:1px solid var(--linea-fuerte);border-radius:10px;background:var(--papel-alto);color:var(--tinta)}
+.misdatos-barra{margin:8px 0 4px;padding:14px;border-radius:14px;background:var(--anil-suave)}
+.misdatos-barra h3,.misdatos-guardar h3{margin:0 0 6px;font:800 18px/1.2 var(--f-display)}
+.misdatos-barra p,.misdatos-guardar p{margin:0 0 10px;font-size:15px;color:var(--tinta-suave)}
+.misdatos-botones{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.misdatos-fila{margin:0 0 10px}
+.misdatos-fila label{display:block;margin-bottom:4px;font-weight:700;font-size:15px}
+@media (min-width:560px){.misdatos-fila{display:grid;grid-template-columns:200px 1fr;align-items:center;gap:12px}.misdatos-fila label{margin:0}}
+.boton--chico{min-height:44px;padding:8px 14px;font-size:15px}
+.boton--peligro{color:var(--grana);border-color:var(--grana)}
+.llenar .enlace{min-height:44px;padding:0;border:0;background:none;color:var(--enlace);font:700 15px var(--f-texto);text-decoration:underline;cursor:pointer}
+.misdatos-guardar{margin-top:16px;padding:14px;border-radius:14px;background:var(--jade-suave)}
+.misdatos-guardar ul{margin:0 0 12px;padding:0;list-style:none}
+.misdatos-guardar li{display:grid;gap:4px;margin-bottom:10px;font-size:15px}
+.misdatos-ya{color:var(--tinta-suave)}
+.misdatos-hecho{margin:0!important;color:var(--tinta)!important;font-weight:700}
+dialog.misdatos--chico{width:min(460px,100% - 24px)}
+.misdatos-cuerpo{padding:0 16px 16px}
+.misdatos-cuerpo .llenar-nota{margin:0 0 12px}
+.misdatos-cuerpo .llenar-form{padding:0}
+.misdatos-cuerpo .llenar-estado{margin-top:10px}
+.misdatos-frase{display:grid;gap:8px;margin:0 0 12px}
+.misdatos-frase label{font-weight:700;font-size:15px}
+.misdatos-frase small{color:var(--tinta-suave);font-size:14px;line-height:20px}
+.misdatos-o{margin:12px 0;text-align:center;color:var(--tinta-suave);font-size:14px}
+.misdatos-archivo{position:absolute;width:1px;height:1px;opacity:0}
+.misdatos-archivo:focus-visible+*,label.boton:focus-within{outline:3px solid var(--foco);outline-offset:2px}
+.misdatos-revisar{margin-top:12px}
+.misdatos-curp{font-weight:700}
+.misdatos-lista{margin:0 0 12px;padding:0;list-style:none}
+.misdatos-lista li{display:flex;gap:8px;align-items:stretch;margin-bottom:8px}
+.misdatos-persona{flex:1;display:grid;text-align:left;gap:2px;min-height:56px;padding:10px 14px;border:1px solid var(--linea);border-radius:12px;background:var(--papel-alto);color:var(--tinta);font:16px var(--f-texto);cursor:pointer}
+.misdatos-persona span{color:var(--tinta-suave);font-size:14px}
+.misdatos-quitar{min-width:44px;padding:0 12px;border:1px solid var(--linea);border-radius:12px;background:none;color:var(--grana);font:700 14px var(--f-texto);cursor:pointer}
+.misdatos-vacio{color:var(--tinta-suave)}
+.misdatos-acciones{display:flex;flex-wrap:wrap;gap:8px}
+.misdatos button:focus-visible,.misdatos select:focus-visible,.misdatos input:focus-visible,.misdatos-barra :focus-visible{outline:3px solid var(--foco);outline-offset:2px}
 @media print{.llenado button,dialog.llenar{display:none}}
 </style>
 </head>

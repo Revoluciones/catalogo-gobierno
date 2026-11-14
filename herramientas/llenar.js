@@ -13,6 +13,8 @@
     lib = new Promise(function (ok, mal) {
       var s = document.createElement('script');
       s.src = PDFLIB;
+      s.integrity = 'sha384-weMABwrltA6jWR8DDe9Jp5blk+tZQh7ugpCsF3JwSA53WZM9/14PjS5LAJNHNjAI';
+      s.crossOrigin = 'anonymous';
       s.onload = function () { ok(window.PDFLib); };
       s.onerror = function () { lib = null; mal(new Error('No se pudo cargar el generador de PDF.')); };
       document.head.appendChild(s);
@@ -48,7 +50,7 @@
     var tipo = f.type === 'date' ? 'date' : f.type === 'tel' ? 'tel' : 'text';
     var input = el('input', {
       id: id, name: f.key, type: tipo, required: !!f.required, 'aria-describedby': desc,
-      autocomplete: tipo === 'tel' ? 'tel' : 'off', value: f.default === 'today' ? hoyISO() : (f.default || null),
+      autocomplete: (window.MisDatos && MisDatos.autocompletar(def, f)) || 'off', value: f.default === 'today' ? hoyISO() : (f.default || null),
     });
     return el('div', { class: 'campo' }, [el('label', { for: id }, [f.label + (f.required ? '' : ' (opcional)')]), input].concat(ayuda ? [ayuda] : []));
   }
@@ -74,6 +76,9 @@
       el('p', { class: 'llenar-nota' }, ['Escribe tus datos y armamos el formato oficial para que solo lo firmes. Es gratis, y tus datos no salen de tu teléfono: el PDF se arma aquí mismo.']),
       form,
     ]);
+    // Mis datos (mis-datos.js): elegir a quién de tus datos guardados usar, o leer una INE.
+    var barra = window.MisDatos ? MisDatos.barra(def, form) : null;
+    if (barra) form.prepend(barra);
     form.append(el('div', { class: 'llenar-pie' }, [el('button', { type: 'submit', class: 'boton boton--primario' }, ['Armar mi PDF']), enlace, estado]));
     dlg.querySelector('.cerrar').addEventListener('click', function () { dlg.close(); });
     // Dentro de claude.ai la página no puede descargar directo: lo pide a la plataforma, que confirma con la persona.
@@ -97,6 +102,7 @@
         enlace.hidden = false;
         estado.textContent = 'Listo. ' + (def.sign || 'Imprímelo y fírmalo con tu letra.');
         enlace.focus();
+        if (window.MisDatos) MisDatos.ofrecerGuardar(def, form, barra, form.querySelector('.llenar-pie'));
       }, function (err) {
         estado.textContent = err.message + ' Puedes descargar el formato en blanco y llenarlo a mano.';
       });

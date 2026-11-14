@@ -42,6 +42,11 @@ for f in sorted((R / "procedimientos").rglob("*.yaml")):
         if g not in glos:
             errores.append(f"{f.relative_to(R)}: término sin definir en glosario.yaml: {g}")
 
+dp = yaml.safe_load((R / "datos-personales.yaml").read_text())
+for e in Draft202012Validator(json.loads((R / "esquema/datos-personales.schema.json").read_text())).iter_errors(dp):
+    errores.append(f"datos-personales.yaml: {'/'.join(map(str, e.path))}: {e.message[:160]}")
+perfil = {c["key"]: c for c in dp.get("fields", [])}
+
 fmt = Draft202012Validator(json.loads((R / "esquema/formato.schema.json").read_text()))
 formatos = set()
 for f in sorted((R / "formatos").rglob("*.yaml")):
@@ -58,6 +63,22 @@ for f in sorted((R / "formatos").rglob("*.yaml")):
         for ref in re.findall(r"\{([^}.]+)", t.get("text", "")) + list(t.get("when", {})):
             if ref not in claves:
                 errores.append(f"{f.relative_to(R)}: draw usa un campo que no existe: {ref}")
+    personas = {p["key"] for p in d.get("people", [])}
+    for p in d.get("people", []):
+        if p.get("relative") and p["relative"]["of"] not in personas:
+            errores.append(f"{f.relative_to(R)}: people/{p['key']} es pariente de alguien que no está en people: {p['relative']['of']}")
+    for c in d.get("fields", []):
+        if c.get("person") and c["person"] not in personas:
+            errores.append(f"{f.relative_to(R)}: el campo {c['key']} es de una persona que no está en people: {c['person']}")
+        if c.get("profile") and not c.get("person"):
+            errores.append(f"{f.relative_to(R)}: el campo {c['key']} usa profile sin decir de qué persona (person)")
+        for ref in re.findall(r"\{([^}]+)\}", c.get("profile", "")) or ([c["profile"]] if c.get("profile") else []):
+            if ref not in perfil:
+                errores.append(f"{f.relative_to(R)}: el campo {c['key']} usa un dato personal que no existe: {ref}")
+        valores = {o["value"] for o in perfil.get(c.get("profile"), {}).get("options", [])}
+        for o in c.get("options", []):
+            if o.get("profile") and o["profile"] not in valores:
+                errores.append(f"{f.relative_to(R)}: la opción {o['value']} de {c['key']} apunta a un valor que {c.get('profile')} no tiene")
     formatos.add(d.get("id"))
 
 for f in sorted((R / "procedimientos").rglob("*.yaml")):
