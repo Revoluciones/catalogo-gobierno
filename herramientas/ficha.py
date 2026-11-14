@@ -484,7 +484,7 @@ def pagina_meta(meta, base):
         f'</main>')
     out = re.sub(r"<main>.*?</main>", lambda m: principal, TPL, flags=re.S).replace('class="envoltura"', 'class="envoltura envoltura--ancha"')
     desc = f"Hay {len(rutas)} caminos: " + "; ".join(f"{r['nombre']} ({r['costo']})" for r in rutas) + "."
-    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"])}.items():
+    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"]), "FORMATOS": ""}.items():
         out = out.replace("{{" + k + "}}", v)
     out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
     return out, rutas, wa
