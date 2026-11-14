@@ -236,6 +236,15 @@ def formato(url):
             'Descarga el formato oficial</a>')
 
 
+def plegar_fuentes(out):
+    """Las fuentes empiezan plegadas: no estorban al leer, y una cita las abre (ver el script de la plantilla)."""
+    def plegar(m):
+        n = m.group(1).count('<li id="f')
+        return (f'<section aria-labelledby="t-fuentes"><details class="plegable" id="d-fuentes"><summary>'
+                f'<h2 id="t-fuentes">Fuentes <span class="cuenta">· {n}</span></h2></summary>{m.group(1)}</details></section>')
+    return re.sub(r'<section aria-labelledby="t-fuentes">\s*<h2 id="t-fuentes">Fuentes</h2>(.*?)\s*</section>', plegar, out, count=1, flags=re.S)
+
+
 def pagina(d, x):
     chips, num = x["chips"], x["num"]
     lugar = LUGAR.get(d["jurisdiction"], d["jurisdiction"])
@@ -340,7 +349,7 @@ def pagina(d, x):
     for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", pasos)):
         if not val:
             out = re.sub(rf"<!--{sec}-->.*?<!--/{sec}-->", "", out, flags=re.S)
-    return out
+    return plegar_fuentes(out)
 
 
 def whatsapp(d, x):
@@ -459,7 +468,7 @@ def pagina_meta(meta, base):
     for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"])}.items():
         out = out.replace("{{" + k + "}}", v)
     out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
-    return out, rutas, wa
+    return plegar_fuentes(out), rutas, wa
 
 
 def imagen_meta(meta, rutas, base):

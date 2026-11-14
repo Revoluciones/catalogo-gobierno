@@ -206,6 +206,15 @@ a.camino:hover{border-color:var(--anil)}
 .tipo--no{color:var(--barro)}
 .base{font-size:15px;color:var(--tinta-suave);margin:14px 0 0}
 
+/* Fuentes plegadas */
+.plegable>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;cursor:pointer;list-style:none}
+.plegable>summary::-webkit-details-marker{display:none}
+.plegable>summary h2{margin:0}
+.plegable>summary::after{content:"Ver";flex:none;font-weight:700;color:var(--enlace)}
+.plegable[open]>summary{margin-bottom:14px}
+.plegable[open]>summary::after{content:"Ocultar"}
+.cuenta{font:400 16px var(--f-texto);color:var(--tinta-suave)}
+
 /* Pie */
 .estado{margin:40px 0 0;padding:16px;border-radius:14px;border:1px dashed var(--linea-fuerte);font-size:15px}
 .estado p{margin:0}.estado p+p{margin-top:8px}
@@ -356,6 +365,15 @@ if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
     c.checked=!!marcas[c.dataset.k];
     c.addEventListener('change',function(){marcas[c.dataset.k]=c.checked;try{localStorage.setItem(clave,JSON.stringify(marcas));}catch(e){}});
   });
+})();
+</script>
+<script>
+(function(){
+  var d=document.getElementById('d-fuentes');if(!d)return;
+  var abrir=function(){d.open=true;};
+  if(/^#f\d+$/.test(location.hash))abrir();
+  document.addEventListener('click',function(e){if(e.target.closest('a.cita'))abrir();});
+  addEventListener('beforeprint',abrir);
 })();
 </script>
 </body>
