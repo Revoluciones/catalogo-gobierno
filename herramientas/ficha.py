@@ -443,19 +443,26 @@ def meta_datos(meta, base):
     return rutas, orden, srcs
 
 
+def pegado(texto, citas):
+    """Texto con sus números de fuente pegados a la última palabra, para que un número nunca quede solo en un renglón."""
+    if not citas:
+        return e(texto)
+    resto, _, ultima = texto.rpartition(" ")
+    return f'{e(resto)} <span class="nw">{e(ultima)}{citas}</span>' if resto else f'<span class="nw">{e(ultima)}{citas}</span>'
+
+
 def pagina_meta(meta, base):
     rutas, orden, srcs = meta_datos(meta, base)
     url = f"{base}/{meta['id']}"
     tarjetas = []
     for r in rutas:
-        pros = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["pros"])
-        cons = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["cons"])
+        pros = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["pros"])
+        cons = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["cons"])
         cuando = f'<p class="cuando">{e(r["disp_txt"])}</p>' if r["disp_txt"] else ""
         tarjetas.append(
             f'<article class="opcion"><header><h3>{e(r["nombre"])}</h3>'
             f'<span class="disp disp--{r["color"]}">{e(r["disp"])}</span></header>'
-            f'<dl class="cifras"><div><dt>Cuesta</dt><dd>{e(r["costo"])}</dd></div><div><dt>Documentos</dt><dd>{r["docs"]}</dd></div>'
-            f'<div><dt>Pasos</dt><dd>{r["pasos"]}</dd></div></dl>'
+            f'<p class="resumen-camino"><b>{e(r["costo"])}</b> · {r["docs"]} documentos · {r["pasos"]} pasos</p>'
             f'{cuando}'
             f'{f"<h4>Elige este si</h4><ul class=pros>{pros}</ul>" if pros else ""}'
             f'{f"<h4>Antes de ir</h4><ul class=cons>{cons}</ul>" if cons else ""}'
