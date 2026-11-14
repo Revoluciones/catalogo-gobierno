@@ -484,8 +484,9 @@ def pagina_meta(meta, base):
         f'<p class="resumen">Hay varias formas de lograrlo, en lugares distintos. Cambian el costo, los papeles y cuándo se pueden hacer.</p>'
         f'<div class="hilos" aria-hidden="true"></div></div>'
         f'<div class="opciones">{"".join(tarjetas)}</div>'
+        f'<div class="banda-compartir"><p>¿Conoces a alguien que lo necesite? Mándale esta comparación.</p>'
         f'<div class="compartir"><a class="boton boton--wa" href="{e("https://wa.me/?text=" + urllib.parse.quote(wa))}" target="_blank" rel="noopener">Mandar por WhatsApp</a>'
-        f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div><p class="aviso" id="aviso" role="status"></p>'
+        f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div></div><p class="aviso" id="aviso" role="status"></p>'
         f'<section aria-labelledby="t-fuentes"><details class="plegable" id="fuentes"><summary><h2 id="t-fuentes">Fuentes'
         f'<small>Cada número en la página lleva aquí.</small></h2></summary><ol class="fuentes">{"".join(fuentes)}</ol></details></section>'
         f'</main>')
