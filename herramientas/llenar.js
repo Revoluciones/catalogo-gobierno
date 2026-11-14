@@ -76,6 +76,14 @@
     ]);
     form.append(el('div', { class: 'llenar-pie' }, [el('button', { type: 'submit', class: 'boton boton--primario' }, ['Armar mi PDF']), enlace, estado]));
     dlg.querySelector('.cerrar').addEventListener('click', function () { dlg.close(); });
+    // Dentro de claude.ai la página no puede descargar directo: lo pide a la plataforma, que confirma con la persona.
+    enlace.addEventListener('click', function (ev) {
+      if (!guardar) return;
+      ev.preventDefault();
+      guardar.save({ filename: def.id + '.pdf', data: enlace._blob }).catch(function (err) {
+        if (err && err.code !== 'declined') estado.textContent = 'No se pudo guardar aquí. Abre esta página en compartido.org para descargarlo.';
+      });
+    });
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
       var datos = {};
@@ -85,6 +93,7 @@
       armar(def, pdf, datos).then(function (blob) {
         if (enlace.href) URL.revokeObjectURL(enlace.href);
         enlace.href = URL.createObjectURL(blob);
+        enlace._blob = blob;
         enlace.hidden = false;
         estado.textContent = 'Listo. ' + (def.sign || 'Imprímelo y fírmalo con tu letra.');
         enlace.focus();
@@ -129,6 +138,11 @@
         });
       });
     }).then(function (bytes) { return new Blob([bytes], { type: 'application/pdf' }); });
+  }
+
+  var guardar = null;
+  if (window.claude && window.claude.use) {
+    window.claude.use('downloads').then(function (d) { guardar = d; }, function () {});
   }
 
   var abiertos = {};
