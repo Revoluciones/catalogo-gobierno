@@ -215,6 +215,9 @@ def mapa(pasos, grande=False, detalles=None):
         antes = ""
         if n in inicios and n != inicios[0]:
             antes = f'<p class="salto">Al mismo tiempo que el paso {e(inicios[0])}, empieza aquí:</p>'
+        elif len(entran.get(n, [])) > 1:
+            previos = entran[n]
+            antes = f'<p class="salto">Antes terminas los pasos {e(", ".join(previos[:-1]))} y {e(previos[-1])}.</p>'
         sig = orden[i + 1] if i + 1 < len(orden) else "fin"
         salen = [b for a, b, _ in aristas if a == n]
         despues = "".join(f'<p class="salto">Luego sigue el paso {e(b)}.</p>' for b in salen if b != sig and b != "fin")
