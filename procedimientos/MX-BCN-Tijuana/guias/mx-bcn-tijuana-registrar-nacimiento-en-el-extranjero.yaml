@@ -171,6 +171,7 @@ steps:
   - source: retys-618
     pinpoint: Escenario «Inexistencia de nacimiento», notas
     quote: Para los casos de nacimiento en el extranjero agregar copia de nacimiento.
+  form: inexistencia-de-nacimiento
 - n: '5'
   actor: Tú, en Recaudación de Rentas del Estado
   action: Paga los derechos de la constancia. En noviembre de 2026 cuesta $498.

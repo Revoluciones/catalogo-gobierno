@@ -14,7 +14,7 @@ Por cada id escribe en <salida>/<id>/:
 Las imágenes necesitan Playwright con Chromium (pip install playwright; playwright install chromium).
 Sin Playwright se escriben index.html y whatsapp.txt, y se avisa.
 """
-import argparse, html, json, os, re, sys, urllib.parse
+import argparse, html, json, os, re, shutil, sys, urllib.parse
 from pathlib import Path
 import yaml
 
@@ -22,6 +22,11 @@ R = Path(__file__).resolve().parent.parent
 TPL = (R / "herramientas/ficha.plantilla.html").read_text(encoding="utf-8")
 GLOS = yaml.safe_load((R / "glosario.yaml").read_text(encoding="utf-8"))
 REPO = "https://github.com/Revoluciones/catalogo-gobierno"
+FORMATOS = {}
+for _f in sorted((R / "formatos").rglob("*.yaml")):
+    _d = yaml.safe_load(_f.read_text(encoding="utf-8"))
+    _d["_pdf"] = _f.parent / _d["file"]
+    FORMATOS[_d["id"]] = _d
 
 LUGAR = {"MX": "México (regla nacional)", "MX-BCN": "Baja California", "MX-BCN-Tijuana": "Tijuana, Baja California"}
 EVIDENCIA = {
@@ -215,6 +220,28 @@ def formato(url):
             'Descarga el formato oficial</a>')
 
 
+def formato(fid, x):
+    """Enlace al PDF oficial y botón para llenarlo en línea (herramientas/llenar.js lo arma en el navegador)."""
+    f = FORMATOS[fid]
+    x.setdefault("formatos", {})[fid] = f
+    sube = "../" * x["profundidad"]
+    return (f'<div class="formato"><a class="formato-pdf" href="{e(f["source"]["url"])}" rel="noopener">Formato oficial en blanco (PDF)</a>'
+            f'<button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
+            f'Llénalo aquí, gratis</button></div>')
+
+
+def formatos_js(x):
+    """Las definiciones de los formatos que usa la página y el script que los llena."""
+    fs = x.get("formatos")
+    if not fs:
+        return ""
+    defs = "".join(
+        f'<script type="application/json" id="formato-{e(fid)}">'
+        + json.dumps({k: f.get(k) for k in ("id", "title", "sign", "fields", "draw")}, ensure_ascii=False).replace("</", "<\\/")
+        + "</script>" for fid, f in fs.items())
+    return defs + f'<script src="{"../" * x["profundidad"]}formatos/llenar.js" defer></script>'
+
+
 def pagina(d, x):
     chips, num = x["chips"], x["num"]
     lugar = LUGAR.get(d["jurisdiction"], d["jurisdiction"])
@@ -233,6 +260,8 @@ def pagina(d, x):
             for q in p.get("practice", [])
         )
         plazo = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
+        if p.get("form"):
+            plazo += formato(p["form"], x)
         pasos.append(
             f'<li class="paso{" paso--tu" if tu else ""}"><span class="n" aria-hidden="true">{e(p["n"])}</span>'
             f'<div class="cuerpo"><p class="actor">{e(p["actor"])}</p>'
@@ -308,6 +337,7 @@ def pagina(d, x):
         "REQS": "".join(reqs), "OFIS": ofis, "GLOS": glos, "FUENTES": "".join(fuentes), "BASE": base_legal,
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
         "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,
+        "FORMATOS": formatos_js(x),
     }
     out = TPL
     for k, v in rep.items():
@@ -502,11 +532,18 @@ def main():
         x = datos(d, a.base)
         x["ruta_archivo"] = str(f.relative_to(R))
         x["wa"] = whatsapp(d, x)
+        x["profundidad"] = ruta_corta(d).count("/") + 1
         html_ = pagina(d, x)
         out = Path(a.salida) / ruta_corta(d)
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(html_, encoding="utf-8")
         (out / "whatsapp.txt").write_text(x["wa"] + "\n", encoding="utf-8")
+        if x.get("formatos"):
+            dest = Path(a.salida) / "formatos"
+            dest.mkdir(parents=True, exist_ok=True)
+            shutil.copy(R / "herramientas/llenar.js", dest / "llenar.js")
+            for fid, f in x["formatos"].items():
+                shutil.copy(f["_pdf"], dest / f"{fid}.pdf")
         if navegador:
             for tipo, (w, h) in (("og", (1200, 630)), ("ruta", (1080, 1350))):
                 pg = navegador.new_page(viewport={"width": w, "height": h}, device_scale_factor=1)

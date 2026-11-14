@@ -1,0 +1,63 @@
+# Solicitud de inexistencia de registro de nacimiento (Registro Civil del Estado de Baja California).
+# El PDF es el formato oficial tal cual, sin campos llenables; las coordenadas dicen dónde escribe cada dato.
+id: inexistencia-de-nacimiento
+title: Solicitud de inexistencia de registro de nacimiento
+jurisdiction: MX-BCN
+authority: Registro Civil del Estado de Baja California
+source:
+  title: RETyS, ficha 618 (BC-SGG-010), formato «Inexistencia de nacimiento»
+  url: https://retys.bajacalifornia.gob.mx/Portal/DescargarFormato/11018
+  retrieved: '2026-11-14'
+file: inexistencia-de-nacimiento.pdf
+sha256: d0e77d6b0194d924d1e2562c1ed5fe6653789c07dbd0d0de03f0183f19ba4e25
+sign: Imprímela y fírmala con tu letra. Si la persona es menor de edad, firma su mamá, su papá o quien tenga la custodia.
+fields:
+- {key: nombre, label: Nombre(s), group: Persona que se va a registrar, required: true}
+- {key: apellido1, label: Primer apellido, group: Persona que se va a registrar, required: true}
+- {key: apellido2, label: Segundo apellido, group: Persona que se va a registrar}
+- {key: nacimiento, label: Fecha de nacimiento, group: Persona que se va a registrar, type: date, required: true}
+- key: sexo
+  label: Sexo, como dice el acta
+  group: Persona que se va a registrar
+  type: choice
+  required: true
+  options: [{value: M, label: Masculino}, {value: F, label: Femenino}]
+- {key: localidad, label: Ciudad o localidad, group: Lugar de nacimiento, required: true,
+   help: 'Como dice el acta. Si naciste en otro país, la ciudad de ese país.'}
+- {key: municipio, label: Municipio o condado, group: Lugar de nacimiento}
+- {key: estado, label: Estado y país, group: Lugar de nacimiento, required: true, help: 'Por ejemplo: California, Estados Unidos.'}
+- {key: padre_nombre, label: Nombre(s), group: Padre}
+- {key: padre_apellido1, label: Primer apellido, group: Padre}
+- {key: padre_apellido2, label: Segundo apellido, group: Padre}
+- {key: madre_nombre, label: Nombre(s), group: Madre}
+- {key: madre_apellido1, label: Primer apellido, group: Madre}
+- {key: madre_apellido2, label: Segundo apellido, group: Madre}
+- {key: solicitante, label: Nombre completo de quien firma, group: Quien firma, required: true,
+   help: 'Tú, si eres mayor de edad. Si no, tu mamá, tu papá o quien tenga la custodia.'}
+- {key: telefono, label: Teléfono, group: Quien firma, type: tel}
+- {key: hoy, label: Fecha de la solicitud, group: Quien firma, type: date, default: today}
+# Dónde escribe cada dato: puntos PDF (1/72 de pulgada) desde la esquina superior izquierda de la página;
+# y es la línea base del texto. {campo.dia}, {campo.mes} (nombre del mes) y {campo.año} parten una fecha.
+draw:
+- {text: '{hoy.dia}', x: 397, y: 92, align: center, width: 40}
+- {text: '{hoy.mes}', x: 474, y: 92, align: center, width: 72}
+- {text: '{hoy.año}', x: 549, y: 92, align: center, width: 34}
+- {text: '{nombre}', x: 243, y: 135, align: center, width: 138}
+- {text: '{apellido1}', x: 386, y: 135, align: center, width: 138}
+- {text: '{apellido2}', x: 529, y: 135, align: center, width: 138}
+- {text: '{nacimiento.dia}', x: 243, y: 162, align: center, width: 138}
+- {text: '{nacimiento.mes}', x: 386, y: 162, align: center, width: 138}
+- {text: '{nacimiento.año}', x: 529, y: 162, align: center, width: 138}
+- {text: '{localidad}', x: 243, y: 189, align: center, width: 138}
+- {text: '{municipio}', x: 386, y: 189, align: center, width: 138}
+- {text: '{estado}', x: 529, y: 189, align: center, width: 138}
+- {text: '{padre_nombre}', x: 243, y: 216, align: center, width: 138}
+- {text: '{padre_apellido1}', x: 386, y: 216, align: center, width: 138}
+- {text: '{padre_apellido2}', x: 529, y: 216, align: center, width: 138}
+- {text: '{madre_nombre}', x: 243, y: 243, align: center, width: 138}
+- {text: '{madre_apellido1}', x: 386, y: 243, align: center, width: 138}
+- {text: '{madre_apellido2}', x: 529, y: 243, align: center, width: 138}
+- {text: X, when: {sexo: M}, x: 252, y: 275, align: center, size: 12}
+- {text: X, when: {sexo: F}, x: 373, y: 275, align: center, size: 12}
+- {text: '{solicitante}', x: 220, y: 318, align: center, width: 290}
+- {text: '{telefono}', x: 486, y: 318, align: center, width: 104}

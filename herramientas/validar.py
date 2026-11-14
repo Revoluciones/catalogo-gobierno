@@ -3,7 +3,7 @@
 
 Uso: python3 herramientas/validar.py   (desde la raíz del catálogo)
 """
-import json, sys
+import hashlib, json, re, sys
 from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator
@@ -41,6 +41,29 @@ for f in sorted((R / "procedimientos").rglob("*.yaml")):
     for g in d.get("glossary", []):
         if g not in glos:
             errores.append(f"{f.relative_to(R)}: término sin definir en glosario.yaml: {g}")
+
+fmt = Draft202012Validator(json.loads((R / "esquema/formato.schema.json").read_text()))
+formatos = set()
+for f in sorted((R / "formatos").rglob("*.yaml")):
+    d = yaml.safe_load(f.read_text())
+    for e in fmt.iter_errors(d):
+        errores.append(f"{f.relative_to(R)}: {'/'.join(map(str, e.path))}: {e.message[:160]}")
+    pdf = f.parent / str(d.get("file"))
+    if not pdf.is_file():
+        errores.append(f"{f.relative_to(R)}: falta el PDF {d.get('file')}")
+    elif hashlib.sha256(pdf.read_bytes()).hexdigest() != d.get("sha256"):
+        errores.append(f"{f.relative_to(R)}: el PDF no coincide con su sha256")
+    claves = {c["key"] for c in d.get("fields", [])}
+    for t in d.get("draw", []):
+        for ref in re.findall(r"\{([^}.]+)", t.get("text", "")) + list(t.get("when", {})):
+            if ref not in claves:
+                errores.append(f"{f.relative_to(R)}: draw usa un campo que no existe: {ref}")
+    formatos.add(d.get("id"))
+
+for f in sorted((R / "procedimientos").rglob("*.yaml")):
+    for p in yaml.safe_load(f.read_text()).get("steps", []):
+        if p.get("form") and p["form"] not in formatos:
+            errores.append(f"{f.relative_to(R)}: el paso {p['n']} usa un formato que no existe: {p['form']}")
 
 for f in sorted((R / "reportes").rglob("*.yaml")):
     d = yaml.safe_load(f.read_text())

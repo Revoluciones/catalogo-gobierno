@@ -243,6 +243,30 @@ a.camino:hover{border-color:var(--anil)}
 .caja-datos b{display:block;font:800 34px/1.1 var(--f-display);margin-top:4px}
 .lienzo .ruta footer{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-top:22px;border-top:2px solid var(--linea);font-size:22px;color:var(--tinta-suave)}
 .lienzo .ruta footer b{font:800 26px/1.1 var(--f-display);text-align:right;color:var(--tinta)}
+/* Formatos: enlace al PDF oficial y llenado en línea (llenar.js) */
+.formato{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
+.formato-pdf{font-weight:700}
+.boton--llenar{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+dialog.llenar{width:min(640px,100% - 24px);max-height:calc(100dvh - 24px);padding:0;border:1px solid var(--linea);border-radius:16px;background:var(--papel);color:var(--tinta)}
+dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
+.llenar-cabeza{position:sticky;top:0;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 16px 8px;background:var(--papel)}
+.llenar-cabeza h2{margin:0;font:800 22px/1.15 var(--f-display)}
+.llenar .cerrar{flex:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--linea);background:var(--papel-alto);color:var(--tinta);font-size:24px;cursor:pointer}
+.llenar-nota{margin:0 16px 8px;color:var(--tinta-suave);font-size:15px}
+.llenar-form{padding:0 16px 16px}
+.llenar .grupo{margin:16px 0 0;padding:0;border:0}
+.llenar .grupo>legend{padding:0;margin-bottom:8px;font:700 13px/18px var(--f-texto);letter-spacing:.06em;text-transform:uppercase;color:var(--tinta-suave)}
+.llenar .campo{margin:0 0 12px;padding:0;border:0;min-width:0}
+.llenar .campo label,.llenar .campo legend{display:block;font-weight:700;font-size:15px;margin-bottom:4px;padding:0}
+.llenar .campo input[type=text],.llenar .campo input[type=tel],.llenar .campo input[type=date]{width:100%;min-height:48px;padding:10px 12px;font:16px var(--f-texto);border:1px solid var(--linea-fuerte);border-radius:10px;background:var(--papel-alto);color:var(--tinta)}
+.llenar .campo small{display:block;margin-top:4px;color:var(--tinta-suave);font-size:14px;line-height:20px}
+.llenar .opcion{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-right:16px;font-weight:400}
+.llenar .opcion input{width:20px;height:20px}
+.llenar-pie{position:sticky;bottom:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:16px -16px -16px;padding:12px 16px;background:var(--papel);border-top:1px solid var(--linea)}
+.boton--primario{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.boton--descargar{background:var(--jade);color:var(--sobre-tinta);border-color:var(--jade)}
+.llenar-estado{flex-basis:100%;margin:0;font-size:15px}
+@media print{.formato button,dialog.llenar{display:none}}
 </style>
 </head>
 <body>
@@ -357,5 +381,6 @@ if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
   });
 })();
 </script>
+{{FORMATOS}}
 </body>
 </html>

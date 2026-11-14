@@ -180,7 +180,8 @@
           "type": "object", "required": ["to"], "additionalProperties": false,
           "properties": {"to": {"type": "string", "description": "n del siguiente paso, 'fin' o el id de otro procedimiento."}, "when": {"type": "string"}}
         }, "description": "Ramas. Si falta, sigue el paso siguiente. Sirve para exportar a BPMN (el formato de Barda)."},
-        "practice": {"type": "array", "items": {"$ref": "#/$defs/practice"}, "description": "Dónde la práctica no coincide con la ley. Cada nota trae sus propias fuentes."}
+        "practice": {"type": "array", "items": {"$ref": "#/$defs/practice"}, "description": "Dónde la práctica no coincide con la ley. Cada nota trae sus propias fuentes."},
+        "form": {"type": "string", "description": "id de un formato de formatos/ que este paso pide llenar. La ficha enlaza el PDF oficial y ofrece llenarlo en línea."}
       }
     },
     "practice": {
