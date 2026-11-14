@@ -10,7 +10,7 @@ source:
   retrieved: '2026-11-14'
 file: inexistencia-de-nacimiento.pdf
 sha256: d0e77d6b0194d924d1e2562c1ed5fe6653789c07dbd0d0de03f0183f19ba4e25
-sign: Imprímela y fírmala con tu letra. Si la persona es menor de edad, firma su mamá, su papá o quien tenga la custodia.
+sign: Imprímela y fírmala con tu letra. Si la persona es menor de edad, firma su mamá o su papá.
 fields:
 - {key: nombre, label: Nombre(s), group: Persona que se va a registrar, required: true}
 - {key: apellido1, label: Primer apellido, group: Persona que se va a registrar, required: true}
@@ -33,7 +33,7 @@ fields:
 - {key: madre_apellido1, label: Primer apellido, group: Madre}
 - {key: madre_apellido2, label: Segundo apellido, group: Madre}
 - {key: solicitante, label: Nombre completo de quien firma, group: Quien firma, required: true,
-   help: 'Tú, si eres mayor de edad. Si no, tu mamá, tu papá o quien tenga la custodia.'}
+   help: 'Tú, si eres mayor de edad. Si no, tu mamá o tu papá.'}
 - {key: telefono, label: Teléfono, group: Quien firma, type: tel}
 - {key: hoy, label: Fecha de la solicitud, group: Quien firma, type: date, default: today}
 # Dónde escribe cada dato: puntos PDF (1/72 de pulgada) desde la esquina superior izquierda de la página;
