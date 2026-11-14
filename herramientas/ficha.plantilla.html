@@ -127,18 +127,19 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
 .mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
 .mapa--vivo{margin-bottom:26px}
-details.nodo{display:block;padding:0}
-details.nodo>summary{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;padding:10px 10px 11px;cursor:pointer;list-style:none;border-radius:10px}
-details.nodo>summary::-webkit-details-marker{display:none}
-details.nodo>summary:focus-visible{outline:3px solid var(--foco);outline-offset:2px}
+.mapa--vivo .nodo{grid-template-columns:28px minmax(0,1fr)}
 .mapa--vivo .nodo p{font-size:15px}
-.mas{display:flex;align-items:center;gap:4px;margin-top:8px;font:700 13px/1.2 var(--f-texto);color:var(--enlace)}
-.mas::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}
-details[open]>summary .mas::after{transform:rotate(-135deg) translate(-2px,0)}
-details[open]>summary .mas{color:var(--tinta-suave)}
-.detalle{padding:0 12px 12px 46px;font-size:15px}
+.det{margin-top:6px}
+.det>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:5px;min-height:32px;font:700 13px/1.2 var(--f-texto);color:var(--enlace)}
+.det>summary::-webkit-details-marker{display:none}
+.det>summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}
+.det[open]>summary::after{transform:rotate(-135deg) translate(-2px,0)}
+.det[open]>summary{color:var(--tinta-suave)}
+.detalle{padding:2px 0 4px;font-size:15px}
 .detalle .fuente{margin:0;color:var(--tinta-suave)}
-.detalle .practica{margin-top:10px}
+.detalle .practica{margin-top:8px}
+.mapa--vivo .llenado{margin-top:10px}
+.mapa--vivo .boton--llenar{min-height:44px;padding:10px 16px;font-size:15px}
 .etq-formato{display:inline-block;margin:8px 6px 0 0;font-size:13px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--anil-suave);color:var(--anil)}
 .mapa--vivo .plazo{margin:8px 6px 0 0;font-size:13px}
 .mapa--vivo .difiere{margin-right:6px}
@@ -147,11 +148,10 @@ details[open]>summary .mas{color:var(--tinta-suave)}
   .mapa--vivo{grid-template-columns:minmax(0,1fr);gap:26px}
   .mapa--vivo>.nodo,.mapa--vivo>.nodo-fin{grid-row:auto!important;grid-column:1!important}
   .mapa--vivo .salto{display:block;grid-column:1/-1}
-  details.nodo>summary>.salto{padding-bottom:6px;border-bottom:1px dashed var(--linea);margin-bottom:2px}
-  details.nodo>summary>.salto:last-child{padding-top:8px;border-top:1px dashed var(--linea);margin-top:4px}
-  .detalle{padding-left:12px}
+  .mapa--vivo .nodo>.salto:first-child{padding-bottom:6px;border-bottom:1px dashed var(--linea);margin-bottom:2px}
+  .mapa--vivo .nodo>.salto:last-child{padding-top:8px;border-top:1px dashed var(--linea);margin-top:4px}
 }
-@media print{details.nodo .mas{display:none}}
+@media print{.det>summary{display:none}}
 .lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
 .lienzo .nodo{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px;border-width:3px;border-radius:16px}
 .lienzo .nodo .n{width:44px;height:44px;font-size:22px}
@@ -418,9 +418,9 @@ window.dibujarFlechas=function(){
 window.dibujarFlechas();
 addEventListener('resize',window.dibujarFlechas);
 if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
-document.querySelectorAll('details.nodo').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
+document.querySelectorAll('details.det').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
 addEventListener('click',function(ev){var c=ev.target.closest&&ev.target.closest('a.cita');if(c){var f=document.getElementById('fuentes');if(f)f.open=true;}});
-addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.nodo').forEach(function(d){d.open=true;});});
+addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det').forEach(function(d){d.open=true;});});
 </script>
 <script>
 (function(){

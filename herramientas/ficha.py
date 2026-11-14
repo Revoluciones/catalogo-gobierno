@@ -221,23 +221,20 @@ def mapa(pasos, grande=False, detalles=None):
         sig = orden[i + 1] if i + 1 < len(orden) else "fin"
         salen = [b for a, b, _ in aristas if a == n]
         despues = "".join(f'<p class="salto">Luego sigue el paso {e(b)}.</p>' for b in salen if b != sig and b != "fin")
-        extras = ""
-        if p.get("deadline"):
-            extras += f'<span class="plazo">{e(p["deadline"])}</span>'
-        if p.get("form"):
-            extras += '<span class="etq-formato">Formato para llenar</span>'
+        extras = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
+        d = detalles[n]
         cajas.append(
-            f'<details class="{cls}" data-n="{e(n)}" {pos}><summary>{antes}<span class="n">{e(n)}</span>'
-            f'<div><small>{e(p["actor"])}</small><p>{e(p["action"])}</p>{extras}{marca}'
-            f'<span class="mas" aria-hidden="true">Fuentes y detalles</span></div>{despues}</summary>'
-            f'<div class="detalle">{detalles[n]}</div></details>')
+            f'<div class="{cls}" data-n="{e(n)}" {pos}>{antes}<span class="n">{e(n)}</span>'
+            f'<div class="cuerpo-nodo"><small>{e(p["actor"])}</small><p>{e(p["action"])}</p>{extras}{marca}{d["boton"]}'
+            f'<details class="det"><summary class="mas">{"Fuentes y lo que pasó" if p.get("practice") else "Fuentes"}</summary>'
+            f'<div class="detalle">{d["resto"]}</div></details></div>{despues}</div>')
     fin = max(capa.values()) + 1
     flechas = json.dumps([[a, b, w] for a, b, w in aristas], ensure_ascii=False)
     return (f'<div class="mapa{" mapa--vivo" if detalles is not None else ""}" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
             f'<svg class="flechas" aria-hidden="true"></svg>{"".join(cajas)}'
             f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>'
             + ('' if detalles is None else
-               '<p class="mapa-nota">Toca un paso para ver sus fuentes'
+               '<p class="mapa-nota">Toca «Fuentes» en un paso para ver de dónde sale'
                + (' y, donde dice <b>«Ojo: en la práctica cambia»</b>, lo que encontró alguien que hizo el trámite'
                   if any(p.get("practice") for p in pasos) else '') + '.</p>'))
 
@@ -258,7 +255,7 @@ def llenado(fid, x):
     x.setdefault("formatos", {})[fid] = f
     sube = "../" * x["profundidad"]
     return (f'<div class="llenado"><button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
-            f'Llena el formato aquí, gratis</button></div>')
+            f'Llenar formulario</button></div>')
 
 
 def formatos_js(x):
@@ -289,8 +286,8 @@ def pagina(d, x):
             f'{" · " + e(q["observed"]) if q.get("observed") else ""}</p><p>{e(q["text"])} {chips(q["cites"])}</p></aside>'
             for q in p.get("practice", [])
         )
-        forma = llenado(p["form"], x) if p.get("form") else ""
-        detalles[p["n"]] = f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{forma}{prac}'
+        detalles[p["n"]] = {"boton": llenado(p["form"], x) if p.get("form") else "",
+                            "resto": f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{prac}'}
 
     reqs = []
     for i, r in enumerate(d.get("requirements", [])):
