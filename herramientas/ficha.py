@@ -236,12 +236,14 @@ def formato(url):
             'Descarga el formato oficial</a>')
 
 
-def plegar_fuentes(out):
-    """Las fuentes empiezan plegadas: no estorban al leer, y una cita las abre (ver el script de la plantilla)."""
+def pulir(out):
+    """Retoques finales: las citas no quedan solas en otro renglón, y las fuentes empiezan plegadas (una cita las abre)."""
     def plegar(m):
         n = m.group(1).count('<li id="f')
         return (f'<section aria-labelledby="t-fuentes"><details class="plegable" id="d-fuentes"><summary>'
                 f'<h2 id="t-fuentes">Fuentes <span class="cuenta">· {n}</span></h2></summary>{m.group(1)}</details></section>')
+    # la última palabra y sus citas van juntas, para que una cita no quede sola en otro renglón
+    out = re.sub(r'([^\s<>]+)\s((?:<a class="cita"[^>]*>[^<]*</a>)+)', r'<span class="con-cita">\1 \2</span>', out)
     return re.sub(r'<section aria-labelledby="t-fuentes">\s*<h2 id="t-fuentes">Fuentes</h2>(.*?)\s*</section>', plegar, out, count=1, flags=re.S)
 
 
@@ -349,7 +351,7 @@ def pagina(d, x):
     for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", pasos)):
         if not val:
             out = re.sub(rf"<!--{sec}-->.*?<!--/{sec}-->", "", out, flags=re.S)
-    return plegar_fuentes(out)
+    return pulir(out)
 
 
 def whatsapp(d, x):
@@ -468,7 +470,7 @@ def pagina_meta(meta, base):
     for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"])}.items():
         out = out.replace("{{" + k + "}}", v)
     out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
-    return plegar_fuentes(out), rutas, wa
+    return pulir(out), rutas, wa
 
 
 def imagen_meta(meta, rutas, base):
