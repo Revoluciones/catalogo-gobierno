@@ -22,6 +22,10 @@ route:
     cites:
     - source: remutys-0190
       pinpoint: Oficinas y horario
+  - text: Hay 11 oficialías en Tijuana, una en Palacio Municipal y una en cada delegación. Puedes ir a la más cercana.
+    cites:
+    - source: tijuana-rc-oficialias
+      quote: Puede acudir a la Oficialía del Registro Civil más cercana a usted
   - text: Sirve cuando el consulado no puede registrarte, por ejemplo si tu papá no puede ir y tus padres no estaban
       casados antes de que nacieras.
     cites:
@@ -124,10 +128,49 @@ channels:
 - presencial
 offices:
 - municipality: Tijuana
-  name: Oficialía del Registro Civil
+  name: Oficialía 01 del Registro Civil, Palacio Municipal
   address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
   phones: 664 973 7000 ext. 7922
   hours: Lunes a viernes, 8:00 a 15:00
+- municipality: Tijuana
+  name: Oficialía 02 del Registro Civil, Delegación La Mesa
+  address: Av. Paseo de los Charros y Allende s/n, Fracc. Moreno
+  phones: 664 104 2100 ext. 2177
+- municipality: Tijuana
+  name: Oficialía 03 del Registro Civil, Delegación La Presa
+  address: Aranjuez No. 22750, Fracc. Villa Fontana
+  phones: 664 627 8700 ext. 8715
+- municipality: Tijuana
+  name: Oficialía 04 del Registro Civil, Delegación Playas de Tijuana
+  address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, Playas de Tijuana
+  phones: 664 631 6800 ext. 6816
+- municipality: Tijuana
+  name: Oficialía 05 del Registro Civil, Delegación San Antonio de los Buenos
+  address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubí, C. P. 22626
+  phones: 664 635 6145 ext. 6161
+- municipality: Tijuana
+  name: Oficialía 06 del Registro Civil, Delegación La Presa Este
+  address: Calle de los Cerezos s/n esquina carretera libre Tijuana-Tecate, Fracc. El Refugio
+  phones: 664 102 6001 ext. 6407
+- municipality: Tijuana
+  name: Oficialía 07 del Registro Civil, Delegación La Presa Oriente
+  address: Calle Fuentes de Mexicali esquina con Amaranto s/n, Col. Hacienda Las Fuentes
+  phones: 664 650 2250
+- municipality: Tijuana
+  name: Oficialía 08 del Registro Civil, Delegación Centenario
+  address: Av. Politécnico Nacional s/n, Fracc. Garita de Otay
+  phones: 664 647 4235
+- municipality: Tijuana
+  name: Oficialía 09 del Registro Civil, Delegación Sánchez Taboada
+  address: Calle Panamericano No. 9757, Colinas de California, Col. Anexa Panamericano
+  phones: 664 973 7000 ext. 5041
+- municipality: Tijuana
+  name: Oficialía 10 del Registro Civil, Delegación Cerro Colorado
+  address: Calle Canadá No. 7171, Tercera Etapa Río Tijuana, C. P. 22226
+- municipality: Tijuana
+  name: Oficialía 11 del Registro Civil, Delegación Centro
+  address: Calle Coahuila, Zona Norte, entre Negrete y Madero No. 8803, Zona Centro
+  phones: 664 688 5300 ext. 5350
 legal_basis:
 - source: cpeum
   pinpoint: 'art. 30, apartado A, fracción II'
@@ -260,6 +303,13 @@ sources:
     url: https://consulmex.sre.gob.mx/sandiego/images/Downloads/Reg_Civil/00_Nacimiento_Marzo_2025NUEVO.pdf
     version_date: Marzo 2025
     accessed: '2026-11-13'
+  tijuana-rc-oficialias:
+    type: portal_oficial
+    official: true
+    title: 'Ayuntamiento de Tijuana: Oficialía de Registro Civil, las 11 oficialías'
+    publisher: XXV Ayuntamiento de Tijuana
+    url: https://www.tijuana.gob.mx/dependencias/RegistroCivil/index.aspx
+    accessed: '2026-11-16'
   reportes:
     type: reportes_ciudadanos
     official: false
@@ -272,4 +322,6 @@ checked_by: Claude (Compartido)
 notes: Ruta completa que junta tres trámites oficiales (las fichas TJ-SGM-0190 de Tijuana y BC-SGG-010 del Estado,
   más la apostilla y la traducción). La ruta y las notas de práctica salen de un caso real de julio de 2025 que
   se hizo de principio a fin. Una captura de la ficha de Tijuana de 2025 marcaba el original obligatorio solo para
-  la solicitud y la constancia; la ficha vigente lo pide para todo menos la carta poder.
+  la solicitud y la constancia; la ficha vigente lo pide para todo menos la carta poder. Las oficinas salen de la ficha TJ-SGM-0190 (Palacio
+  Municipal, con horario) y del directorio del Ayuntamiento (fuente tijuana-rc-oficialias), que lista 11 oficialías
+  y dice que puedes ir a la más cercana, salvo si ya empezaste un trámite en otra. El directorio no da horarios de las delegaciones.

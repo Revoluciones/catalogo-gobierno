@@ -247,6 +247,15 @@ a.camino:hover{border-color:var(--anil)}
 .ofis{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .ofis li{background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px;padding:14px}
 .ofis span{display:block;color:var(--tinta-suave);font-size:15px}
+.ofis li.mas-ofis{padding:0;border:0;background:none}
+.mas-ofis summary{cursor:pointer;font-weight:700;color:var(--enlace);min-height:44px;display:flex;align-items:center}
+.mas-ofis details[open] summary{margin-bottom:10px}
+@media print{.mas-ofis summary{display:none}}
+.ofis .en-mapa{display:inline-block;margin-top:6px;font-weight:700;font-size:15px}
+.ofis .ahora{display:inline-block;margin-left:8px;font:700 12px/1 var(--f-texto);padding:5px 8px;border-radius:99px;vertical-align:2px}
+.ahora--si{background:var(--jade-suave);color:var(--jade)}
+.ahora--no{background:var(--papel);color:var(--tinta-suave);border:1px solid var(--linea)}
+@media print{.ofis .en-mapa,.ofis .ahora{display:none}}
 .glos{margin:0;display:grid;gap:12px}
 .glos dt{font-weight:700;text-transform:capitalize}
 .glos dd{margin:2px 0 0;color:var(--tinta-suave)}
@@ -432,7 +441,7 @@ addEventListener('resize',window.dibujarFlechas);
 if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
 document.querySelectorAll('details.det').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
 addEventListener('click',function(ev){var c=ev.target.closest&&ev.target.closest('a.cita');if(c){var f=document.getElementById('fuentes');if(f)f.open=true;}});
-addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det').forEach(function(d){d.open=true;});});
+addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det,.mas-ofis details').forEach(function(d){d.open=true;});});
 </script>
 <script>
 (function(){
@@ -453,5 +462,31 @@ addEventListener('beforeprint',function(){var f=document.getElementById('fuentes
 })();
 </script>
 {{FORMATOS}}
+<script id="abierto-ahora">
+/* «Abierto ahora» según el horario escrito, con la hora de Tijuana. Solo entiende días seguidos y una franja. */
+(function(){
+  var DIAS=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"];
+  function sinAcentos(t){return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+  function leer(h){
+    var t=sinAcentos(h), d=t.match(/(domingo|lunes|martes|miercoles|jueves|viernes|sabado)\s+a\s+(domingo|lunes|martes|miercoles|jueves|viernes|sabado)/),
+        r=t.match(/(\d{1,2}):(\d{2})\D+?(\d{1,2}):(\d{2})/);
+    if(!d||!r)return null;
+    return {de:DIAS.indexOf(d[1]),a:DIAS.indexOf(d[2]),ini:+r[1]*60+ +r[2],fin:+r[3]*60+ +r[4]};
+  }
+  var ahora;
+  try{
+    var p={};new Intl.DateTimeFormat("en-US",{timeZone:"America/Tijuana",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false})
+      .formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+    ahora={dia:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday),min:(+p.hour%24)*60+ +p.minute};
+  }catch(_){return}
+  document.querySelectorAll(".ofis li[data-horario]").forEach(function(li){
+    var h=leer(li.dataset.horario); if(!h||h.de<0||h.a<0)return;
+    var dia=h.de<=h.a?(ahora.dia>=h.de&&ahora.dia<=h.a):(ahora.dia>=h.de||ahora.dia<=h.a);
+    var si=dia&&ahora.min>=h.ini&&ahora.min<h.fin;
+    var b=document.createElement("span");b.className="ahora ahora--"+(si?"si":"no");b.textContent=si?"Abierto ahora":"Cerrado ahora";
+    li.querySelector("b").after(b);
+  });
+})();
+</script>
 </body>
 </html>

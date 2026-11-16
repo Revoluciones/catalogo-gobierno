@@ -305,7 +305,14 @@ def pagina(d, x):
         for v in (dire, o.get("hours"), o.get("phones") and "Tel. " + o["phones"]):
             if v:
                 partes.append(f"<span>{e(v)}</span>")
-        ofis.append("<li>" + "".join(partes) + "</li>")
+        if dire:
+            q = urllib.parse.quote(f"{o.get('name', '')}, {dire}")
+            partes.append(f'<a class="en-mapa" href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener">Ver en el mapa</a>')
+        hor = f' data-horario="{e(o["hours"])}"' if o.get("hours") else ""
+        ofis.append(f"<li{hor}>" + "".join(partes) + "</li>")
+    if len(ofis) > 3:
+        ofis = ofis[:2] + [f'<li class="mas-ofis"><details><summary>Ver las otras {len(ofis) - 2} oficinas</summary>'
+                           f'<ul class="ofis">{"".join(ofis[2:])}</ul></details></li>']
     ofis = "".join(ofis)
 
     glos = "".join(f"<div><dt>{e(k.replace('-', ' '))}</dt><dd>{e(GLOS[k])}</dd></div>" for k in d.get("glossary", []) if k in GLOS)
