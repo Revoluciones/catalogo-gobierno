@@ -22,6 +22,7 @@ R = Path(__file__).resolve().parent.parent
 TPL = (R / "herramientas/ficha.plantilla.html").read_text(encoding="utf-8")
 GLOS = yaml.safe_load((R / "glosario.yaml").read_text(encoding="utf-8"))
 REPO = "https://github.com/Revoluciones/catalogo-gobierno"
+DATOS_PERSONALES = yaml.safe_load((R / "datos-personales.yaml").read_text(encoding="utf-8"))
 FORMATOS = {}
 for _f in sorted((R / "formatos").rglob("*.yaml")):
     _d = yaml.safe_load(_f.read_text(encoding="utf-8"))
@@ -294,9 +295,15 @@ def formatos_js(x):
         return ""
     defs = "".join(
         f'<script type="application/json" id="formato-{e(fid)}">'
-        + json.dumps({k: f.get(k) for k in ("id", "title", "sign", "fields", "draw")}, ensure_ascii=False).replace("</", "<\\/")
+        + json.dumps({k: f.get(k) for k in ("id", "title", "sign", "people", "fields", "draw")}, ensure_ascii=False).replace("</", "<\\/")
         + "</script>" for fid, f in fs.items())
-    return defs + f'<script src="{"../" * x["profundidad"]}formatos/llenar.js" defer></script>'
+    sube = "../" * x["profundidad"]
+    if any(f.get("people") for f in fs.values()):
+        # Mis datos: el diccionario de datos personales y el script que los guarda cifrados en el teléfono.
+        defs += ('<script type="application/json" id="datos-personales">'
+                 + json.dumps(DATOS_PERSONALES, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+                 + f'<script src="{sube}formatos/mis-datos.js" defer></script>')
+    return defs + f'<script src="{sube}formatos/llenar.js" defer></script>'
 
 
 def pagina(d, x):
@@ -614,6 +621,7 @@ def main():
             dest = Path(a.salida) / "formatos"
             dest.mkdir(parents=True, exist_ok=True)
             shutil.copy(R / "herramientas/llenar.js", dest / "llenar.js")
+            shutil.copy(R / "herramientas/mis-datos.js", dest / "mis-datos.js")
             for fid, f in x["formatos"].items():
                 shutil.copy(f["_pdf"], dest / f"{fid}.pdf")
         if navegador:

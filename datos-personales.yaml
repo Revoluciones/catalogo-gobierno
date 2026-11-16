@@ -1,0 +1,67 @@
+# Datos personales que la persona escribe una vez y que llenan cualquier formato.
+# Cada formato dice a qué dato de aquí corresponde cada campo (profile: <key>).
+# Los valores se guardan solo en el dispositivo de la persona, cifrados (herramientas/mis-datos.js).
+fields:
+- {key: nombre, label: Nombre(s), group: Nombre, autocomplete: given-name}
+- {key: apellido1, label: Primer apellido, group: Nombre, autocomplete: family-name}
+- {key: apellido2, label: Segundo apellido, group: Nombre}
+- {key: curp, label: CURP, group: Nacimiento, type: curp,
+   help: 'Son 18 letras y números. Vienen en tu INE y en tu acta. Con ella llenamos tu fecha de nacimiento, tu sexo y tu estado.'}
+- {key: nacimiento, label: Fecha de nacimiento, group: Nacimiento, type: date, autocomplete: bday}
+- key: sexo
+  label: Sexo, como dice el acta
+  group: Nacimiento
+  type: choice
+  options: [{value: H, label: Hombre}, {value: M, label: Mujer}]
+- {key: nacimiento_localidad, label: Ciudad o localidad donde nació, group: Nacimiento}
+- {key: nacimiento_municipio, label: Municipio o condado donde nació, group: Nacimiento}
+- {key: nacimiento_estado, label: Estado donde nació, group: Nacimiento}
+- {key: nacimiento_pais, label: País donde nació, group: Nacimiento, autocomplete: country-name}
+- {key: telefono, label: Teléfono, group: Contacto, type: tel, autocomplete: tel}
+- {key: correo, label: Correo, group: Contacto, type: email, autocomplete: email}
+- {key: calle, label: Calle, group: Domicilio, autocomplete: address-line1}
+- {key: numero_exterior, label: Número exterior, group: Domicilio}
+- {key: numero_interior, label: Número interior, group: Domicilio}
+- {key: colonia, label: Colonia, group: Domicilio}
+- {key: codigo_postal, label: Código postal, group: Domicilio, autocomplete: postal-code}
+- {key: domicilio_municipio, label: Municipio, group: Domicilio, autocomplete: address-level2}
+- {key: domicilio_estado, label: Estado, group: Domicilio, autocomplete: address-level1}
+# Cómo se relaciona cada persona guardada con quien usa el teléfono.
+relations: [Yo, Mi hija o hijo, Mi mamá, Mi papá, Mi pareja, Mi hermana o hermano, Otra persona]
+# Claves de entidad de nacimiento en la CURP (posiciones 12 y 13).
+# Fuente: lista de entidades válidas de python-stdnum (stdnum/mx/curp.py); el Instructivo Normativo
+# para la asignación de la CURP (DOF, 2018) remite al catálogo del Manual de Procedimientos.
+curp_states:
+  AS: Aguascalientes
+  BC: Baja California
+  BS: Baja California Sur
+  CC: Campeche
+  CL: Coahuila
+  CM: Colima
+  CS: Chiapas
+  CH: Chihuahua
+  DF: Ciudad de México
+  DG: Durango
+  GT: Guanajuato
+  GR: Guerrero
+  HG: Hidalgo
+  JC: Jalisco
+  MC: Estado de México
+  MN: Michoacán
+  MS: Morelos
+  NT: Nayarit
+  NL: Nuevo León
+  OC: Oaxaca
+  PL: Puebla
+  QT: Querétaro
+  QR: Quintana Roo
+  SP: San Luis Potosí
+  SL: Sinaloa
+  SR: Sonora
+  TC: Tabasco
+  TS: Tamaulipas
+  TL: Tlaxcala
+  VZ: Veracruz
+  YN: Yucatán
+  ZS: Zacatecas
+  NE: Nació en el extranjero
