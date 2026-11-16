@@ -22,6 +22,7 @@ Hoy cubre México (federal), Baja California y Tijuana. El país es un campo de 
 | `procedimientos/MX-BCN-Tijuana/tramites/` | Los trámites, servicios y apoyos del registro municipal de Tijuana (REMUTyS), importados tal cual |
 | `procedimientos/MX-BCN-Tijuana/guias/` | Rutas completas que juntan varios trámites oficiales, de principio a fin, con su práctica aparte |
 | `para-barda/` | Trámites de propiedad (Registro Público, gravámenes, predial, permisos de construcción); viven en Barda |
+| `formatos/` | Formatos oficiales en PDF, copiados sin cambios, con dónde va cada dato. Un paso los usa con `form:` y la ficha ofrece llenarlos en línea, gratis: el PDF se arma en el navegador y los datos no salen del dispositivo |
 | `reportes/` | Reportes de cómo fue un trámite de verdad |
 | `esquema/` | Las reglas de cada ficha (JSON Schema) |
 | `glosario.yaml` | Cada término legal explicado una vez, en palabras de todos los días |

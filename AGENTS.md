@@ -28,6 +28,7 @@ A dev container (`.devcontainer/`) does the same in Codespaces.
 | `esquema/reporte.schema.json` | The rules for lived-experience reports. |
 | `glosario.yaml` | Each legal term explained once in everyday words. A procedure links terms by key in `glossary`. |
 | `reportes/<procedure-id>/` | Reports of how a procedure really went. Never put personal data here. |
+| `formatos/<jurisdiction>/` | Official PDF forms copied unchanged, plus a YAML (`esquema/formato.schema.json`) saying where each answer is written. A step points to one with `form: <id>`; `herramientas/llenar.js` fills it in the browser. Measure positions with `pdftotext -bbox` and check the filled PDF by eye. |
 | `herramientas/` | Importers (`importar_*.py`), the validator, the page builder. |
 | `fuentes-crudas.tar.gz` | Raw copies of official pages as downloaded, so imports can be audited. Unpack with `tar xzf fuentes-crudas.tar.gz` (the folder is gitignored). |
 

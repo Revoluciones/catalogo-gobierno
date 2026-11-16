@@ -149,7 +149,12 @@
         "name": {"type": "string"},
         "address": {"type": "string"},
         "phones": {"type": "string"},
-        "hours": {"type": "string"}
+        "hours": {"type": "string"},
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "Corto y estable, para que un paso diga en qué oficinas se hace: 'palacio', 'delegacion-la-mesa'."},
+        "lat": {"type": "number", "minimum": -90, "maximum": 90, "description": "Latitud, para ordenar por cercanía y abrir el mapa."},
+        "lon": {"type": "number", "minimum": -180, "maximum": 180},
+        "url": {"type": "string", "description": "Página oficial de la oficina, si existe."},
+        "cites": {"type": "array", "items": {"$ref": "#/$defs/cite"}, "description": "De dónde salen la dirección, el horario y las coordenadas."}
       }
     },
     "scenario": {
@@ -180,7 +185,10 @@
           "type": "object", "required": ["to"], "additionalProperties": false,
           "properties": {"to": {"type": "string", "description": "n del siguiente paso, 'fin' o el id de otro procedimiento."}, "when": {"type": "string"}}
         }, "description": "Ramas. Si falta, sigue el paso siguiente. Sirve para exportar a BPMN (el formato de Barda)."},
-        "practice": {"type": "array", "items": {"$ref": "#/$defs/practice"}, "description": "Dónde la práctica no coincide con la ley. Cada nota trae sus propias fuentes."}
+        "practice": {"type": "array", "items": {"$ref": "#/$defs/practice"}, "description": "Dónde la práctica no coincide con la ley. Cada nota trae sus propias fuentes."},
+        "form": {"type": "string", "description": "id de un formato de formatos/ que este paso pide llenar. La ficha enlaza el PDF oficial y ofrece llenarlo en línea."},
+        "offices": {"type": "array", "items": {"type": "string"}, "description": "ids de offices donde se hace este paso. La ficha los muestra dentro del paso, los más cercanos primero."},
+        "link": {"type": "object", "required": ["label", "url"], "additionalProperties": false, "description": "Un botón a la página oficial donde se hace este paso (sacar cita, pagar). La url debe ser la de una fuente que el paso cita.", "properties": {"label": {"type": "string", "description": "Corto, empieza con verbo: 'Sacar cita'."}, "url": {"type": "string"}}}
       }
     },
     "practice": {

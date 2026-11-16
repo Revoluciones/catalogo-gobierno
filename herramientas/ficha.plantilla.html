@@ -54,12 +54,20 @@ a{color:var(--enlace)}
 .marca span,.img-top .marca{font:800 21px/1 var(--f-display);font-stretch:112%;letter-spacing:-.02em}
 .pill{font:700 13px/1 var(--f-display);font-stretch:100%;text-transform:uppercase;letter-spacing:.08em;padding:6px 10px;border-radius:99px;background:var(--tinta);color:var(--papel);text-decoration:none}
 .top .pill{margin-left:auto}
+@media (max-width:330px){.marca span{font-size:18px}.top .pill{font-size:11px;padding:5px 8px}.logo{width:26px;height:26px}}
 
 /* Encabezado */
 .cabeza{padding:28px 0 8px}
 .lugar{margin:0 0 8px;font:700 13px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.1em;color:var(--tinta-suave)}
 h1{margin:0;font:800 clamp(30px,7.4vw,46px)/1.04 var(--f-display);font-stretch:88%;letter-spacing:-.015em;text-wrap:balance}
 .resumen{margin:14px 0 0;font-size:18px;color:var(--tinta-suave);max-width:60ch}
+@media (min-width:1000px){
+  .envoltura{max-width:1160px}
+  .dos-col{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);gap:0 44px;align-items:start}
+  .dos-col>section{margin-top:40px}
+  .lado>section:first-child{margin-top:40px}
+  .hechos,.compartir,.otros{max-width:none}
+}
 .hilos{height:6px;border-radius:3px;margin:22px 0 0;background:linear-gradient(90deg,var(--jade) 0 20%,var(--anil) 0 40%,var(--cemp-logo) 0 60%,var(--jaca) 0 80%,var(--barro) 0)}
 
 /* Datos clave */
@@ -76,8 +84,17 @@ h1{margin:0;font:800 clamp(30px,7.4vw,46px)/1.04 var(--f-display);font-stretch:8
 
 /* Compartir */
 .compartir{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+[hidden]{display:none!important}
 .boton{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 18px;border-radius:12px;font:700 16px/1 var(--f-texto);text-decoration:none;border:1px solid var(--linea-fuerte);color:var(--tinta);background:var(--papel-alto);cursor:pointer}
 .boton--wa{background:var(--jade);border-color:var(--jade);color:var(--sobre-tinta);flex:1 1 220px}
+.banda-compartir{margin:28px 0 0}
+.banda-compartir>p{margin:0;font:700 17px/1.3 var(--f-display)}
+.banda-compartir .compartir{margin-top:12px}
+@media (min-width:700px){
+  .boton--wa{flex:0 0 auto;padding-inline:24px}
+  .banda-compartir{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 22px;border:1px solid var(--linea);border-radius:16px;background:var(--papel-alto)}
+  .banda-compartir .compartir{margin:0;flex:none}
+}
 .boton svg{width:20px;height:20px;flex:none}
 .aviso{font-size:14px;color:var(--jade);min-height:1.2em;margin:6px 0 0}
 
@@ -118,6 +135,44 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .difiere{display:inline-block;margin-top:6px;font:700 11px/1.25 var(--f-texto);padding:4px 8px;border-radius:8px;background:var(--papel-hundido);color:var(--barro);border:1px solid var(--barro)}
 .nodo-fin{position:relative;z-index:1;justify-self:center;font:800 15px/1 var(--f-display);text-transform:uppercase;letter-spacing:.08em;padding:10px 18px;border-radius:99px;background:var(--jade);color:var(--sobre-tinta)}
 .mapa-nota{font-size:14px;color:var(--tinta-suave);margin:-14px 0 26px}
+.mapa--vivo{margin-bottom:26px}
+.mapa--vivo .nodo{grid-template-columns:28px minmax(0,1fr)}
+.mapa--vivo .nodo p{font-size:15px}
+.det{margin-top:6px}
+.det>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:5px;min-height:32px;font:700 13px/1.2 var(--f-texto);color:var(--enlace)}
+.det>summary::-webkit-details-marker{display:none}
+.det>summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}
+.det[open]>summary::after{transform:rotate(-135deg) translate(-2px,0)}
+.det[open]>summary{color:var(--tinta-suave)}
+.detalle{padding:2px 0 4px;font-size:15px}
+.detalle .fuente{margin:0;color:var(--tinta-suave)}
+.detalle .practica{margin-top:8px}
+.mapa--vivo .llenado{margin-top:10px}
+.mapa--vivo .boton--llenar{min-height:44px;padding:10px 16px;font-size:15px}
+.boton--accion{background:var(--tinta);color:var(--papel);border-color:var(--tinta);margin-top:10px;min-height:44px;padding:10px 16px;font-size:15px}
+.lugares{margin-top:10px}
+.lugares>summary{cursor:pointer;font-weight:700;color:var(--enlace);font-size:15px;min-height:40px;display:flex;align-items:center;gap:6px}
+.lugares-t{margin:0 0 6px;font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave)}
+.lugares[open]>summary{margin-bottom:6px}
+.boton--cerca{min-height:40px;padding:8px 14px;font-size:14px;margin:0 0 8px}
+.ofis--paso{gap:8px}
+.ofis--paso li{padding:10px 12px;border-radius:10px;background:var(--papel)}
+.ofis--paso b{font-size:15px}
+.ofis--paso span{font-size:14px}
+.ofis .lejos{display:inline;margin-left:8px;font-size:13px;color:var(--tinta-suave)}
+@media print{.boton--accion,.boton--cerca{display:none}}
+.etq-formato{display:inline-block;margin:8px 6px 0 0;font-size:13px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--anil-suave);color:var(--anil)}
+.mapa--vivo .plazo{margin:8px 6px 0 0;font-size:13px}
+.mapa--vivo .difiere{margin-right:6px}
+.salto{display:none;margin:0;font:700 13px/1.3 var(--f-texto);color:var(--tinta-suave)}
+@media (max-width:560px){
+  .mapa--vivo{grid-template-columns:minmax(0,1fr);gap:26px}
+  .mapa--vivo>.nodo,.mapa--vivo>.nodo-fin{grid-row:auto!important;grid-column:1!important}
+  .mapa--vivo .salto{display:block;grid-column:1/-1}
+  .mapa--vivo .nodo>.salto:first-child{padding-bottom:6px;border-bottom:1px dashed var(--linea);margin-bottom:2px}
+  .mapa--vivo .nodo>.salto:last-child{padding-top:8px;border-top:1px dashed var(--linea);margin-top:4px}
+}
+@media print{.det>summary{display:none}}
 .lienzo .mapa{gap:38px 22px;margin:30px 0 26px;flex:1 1 auto;align-content:start}
 .lienzo .nodo{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px;border-width:3px;border-radius:16px}
 .lienzo .nodo .n{width:44px;height:44px;font-size:22px}
@@ -145,7 +200,7 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 a.camino:hover{border-color:var(--anil)}
 .comparar{display:inline-block;margin-top:10px;font-weight:700}
 .envoltura--ancha{max-width:1100px}
-.opciones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:26px 0 0;align-items:start}
+.opciones{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin:26px 0 0;align-items:stretch}
 .opcion{background:var(--papel-alto);border:1px solid var(--linea);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
 .opcion header{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}
 .opcion h3{margin:0;font:800 22px/1.15 var(--f-display);font-stretch:92%}
@@ -153,8 +208,19 @@ a.camino:hover{border-color:var(--anil)}
 .opcion ul{margin:-4px 0 0;padding-left:20px;display:grid;gap:6px;font-size:15px}
 .opcion ul.pros li::marker{content:"✓  ";color:var(--jade);font-weight:700}
 .opcion ul.cons li::marker{content:"!  ";color:var(--barro);font-weight:800}
-.cuando{margin:0;font-size:14px;color:var(--tinta-suave)}
+.cuando{margin:-4px 0 0;font-size:14px;color:var(--tinta-suave)}
+.resumen-camino{margin:0;font-size:16px;color:var(--tinta-suave)}
+.resumen-camino b{font:800 22px/1 var(--f-display);color:var(--tinta);margin-right:2px}
+.nw{white-space:nowrap}
+.opcion{gap:14px;padding:20px}
+.opcion h4{margin-top:4px}
+.opcion ul{gap:8px;line-height:1.45}
+.opcion .cita{min-width:0;height:auto;padding:0 2px;border:0;background:none;font-size:11px;vertical-align:super;color:var(--tinta-suave);margin-left:1px}
+.opcion .cita:hover{color:var(--enlace)}
 .disp{font:700 12px/1 var(--f-texto);padding:6px 9px;border-radius:99px;white-space:nowrap}
+.puesto{margin:-4px 0 -6px;font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave)}
+.opcion--primera{border:2px solid var(--jade)}
+.opcion--primera .puesto{color:var(--jade)}
 .disp--jade{background:var(--jade-suave);color:var(--jade)}
 .disp--anil{background:var(--anil-suave);color:var(--anil)}
 .disp--cemp{background:var(--cemp-suave);color:var(--cemp)}
@@ -162,6 +228,7 @@ a.camino:hover{border-color:var(--anil)}
 .cifras div{background:var(--papel-hundido);border-radius:10px;padding:8px 10px}
 .cifras dt{font:700 11px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--tinta-suave)}
 .cifras dd{margin:2px 0 0;font:800 22px/1.1 var(--f-display)}
+@media (max-width:380px){.cifras{grid-template-columns:1fr 1fr}.cifras div:first-child{grid-column:1/-1}.opcion{padding:14px}}
 .boton--ver{margin-top:auto;background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
 .og--meta h1{font-size:60px!important;max-width:none!important}
 .og--meta .lugar{margin:auto 0 12px!important}
@@ -192,6 +259,15 @@ a.camino:hover{border-color:var(--anil)}
 .ofis{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .ofis li{background:var(--papel-alto);border:1px solid var(--linea);border-radius:14px;padding:14px}
 .ofis span{display:block;color:var(--tinta-suave);font-size:15px}
+.ofis li.mas-ofis{padding:0;border:0;background:none}
+.mas-ofis summary{cursor:pointer;font-weight:700;color:var(--enlace);min-height:44px;display:flex;align-items:center}
+.mas-ofis details[open] summary{margin-bottom:10px}
+@media print{.mas-ofis summary{display:none}}
+.ofis .en-mapa{display:inline-block;margin-top:6px;font-weight:700;font-size:15px}
+.ofis .ahora{display:inline-block;margin-left:8px;font:700 12px/1 var(--f-texto);padding:5px 8px;border-radius:99px;vertical-align:2px}
+.ahora--si{background:var(--jade-suave);color:var(--jade)}
+.ahora--no{background:var(--papel);color:var(--tinta-suave);border:1px solid var(--linea)}
+@media print{.ofis .en-mapa,.ofis .ahora{display:none}}
 .glos{margin:0;display:grid;gap:12px}
 .glos dt{font-weight:700;text-transform:capitalize}
 .glos dd{margin:2px 0 0;color:var(--tinta-suave)}
@@ -203,6 +279,12 @@ a.camino:hover{border-color:var(--anil)}
 .tipo{display:block;font:700 11px/1.3 var(--f-display);text-transform:uppercase;letter-spacing:.07em;color:var(--jade)}
 .tipo--no{color:var(--barro)}
 .base{font-size:15px;color:var(--tinta-suave);margin:14px 0 0}
+.plegable>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--linea);border-radius:14px;background:var(--papel-alto)}
+.plegable>summary::-webkit-details-marker{display:none}
+.plegable>summary h2{margin:0;font-size:20px}
+.plegable>summary::after{content:"";flex:none;width:9px;height:9px;border:solid var(--tinta-suave);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translateY(-3px)}
+.plegable[open]>summary::after{transform:rotate(-135deg)}
+.plegable[open]>summary{margin-bottom:16px}
 
 /* Pie */
 .estado{margin:40px 0 0;padding:16px;border-radius:14px;border:1px dashed var(--linea-fuerte);font-size:15px}
@@ -211,7 +293,7 @@ a.camino:hover{border-color:var(--anil)}
 
 @media print{
   body{background:#fff;color:#000;font-size:12pt}
-  .compartir,.aviso,.top .pill{display:none}
+  .compartir,.banda-compartir,.aviso,.top .pill{display:none}
   .paso{break-inside:avoid}
   a{color:#000}
   .fuentes a::after{content:" " attr(href);font-size:9pt;color:#555}
@@ -243,6 +325,29 @@ a.camino:hover{border-color:var(--anil)}
 .caja-datos b{display:block;font:800 34px/1.1 var(--f-display);margin-top:4px}
 .lienzo .ruta footer{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-top:22px;border-top:2px solid var(--linea);font-size:22px;color:var(--tinta-suave)}
 .lienzo .ruta footer b{font:800 26px/1.1 var(--f-display);text-align:right;color:var(--tinta)}
+/* Formatos: enlace al PDF oficial y llenado en línea (llenar.js) */
+.llenado{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
+.boton--llenar{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+dialog.llenar{width:min(640px,100% - 24px);max-height:calc(100dvh - 24px);padding:0;border:1px solid var(--linea);border-radius:16px;background:var(--papel);color:var(--tinta)}
+dialog.llenar::backdrop{background:rgb(0 0 0 / .5)}
+.llenar-cabeza{position:sticky;top:0;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 16px 8px;background:var(--papel)}
+.llenar-cabeza h2{margin:0;font:800 22px/1.15 var(--f-display)}
+.llenar .cerrar{flex:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--linea);background:var(--papel-alto);color:var(--tinta);font-size:24px;cursor:pointer}
+.llenar-nota{margin:0 16px 8px;color:var(--tinta-suave);font-size:15px}
+.llenar-form{padding:0 16px 16px}
+.llenar .grupo{margin:16px 0 0;padding:0;border:0}
+.llenar .grupo>legend{padding:0;margin-bottom:8px;font:700 13px/18px var(--f-texto);letter-spacing:.06em;text-transform:uppercase;color:var(--tinta-suave)}
+.llenar .campo{margin:0 0 12px;padding:0;border:0;min-width:0}
+.llenar .campo label,.llenar .campo legend{display:block;font-weight:700;font-size:15px;margin-bottom:4px;padding:0}
+.llenar .campo input[type=text],.llenar .campo input[type=tel],.llenar .campo input[type=date]{width:100%;min-height:48px;padding:10px 12px;font:16px var(--f-texto);border:1px solid var(--linea-fuerte);border-radius:10px;background:var(--papel-alto);color:var(--tinta)}
+.llenar .campo small{display:block;margin-top:4px;color:var(--tinta-suave);font-size:14px;line-height:20px}
+.llenar .opcion{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-right:16px;font-weight:400}
+.llenar .opcion input{width:20px;height:20px}
+.llenar-pie{position:sticky;bottom:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:16px -16px -16px;padding:12px 16px;background:var(--papel);border-top:1px solid var(--linea)}
+.boton--primario{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.boton--descargar{background:var(--jade);color:var(--sobre-tinta);border-color:var(--jade)}
+.llenar-estado{flex-basis:100%;margin:0;font-size:15px}
+@media print{.llenado button,dialog.llenar{display:none}}
 </style>
 </head>
 <body>
@@ -274,12 +379,13 @@ a.camino:hover{border-color:var(--anil)}
     </div>
     <p class="aviso" id="aviso" role="status"></p>
 
+    <div class="dos-col">
     <!--pasos--><section aria-labelledby="t-ruta">
       <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
       {{MAPA}}
-      <ol class="ruta-lista">{{PASOS}}</ol>
     </section><!--/pasos-->
 
+    <div class="lado">
     <!--reqs--><section aria-labelledby="t-lleva">
       <h2 id="t-lleva">Lleva esto<small>Toca cada documento cuando ya lo tengas.</small></h2>
       <ul class="lleva">{{REQS}}</ul>
@@ -296,10 +402,12 @@ a.camino:hover{border-color:var(--anil)}
     </section><!--/glos-->
 
     <section aria-labelledby="t-fuentes">
-      <h2 id="t-fuentes">Fuentes</h2>
+      <details class="plegable" id="fuentes"><summary><h2 id="t-fuentes">Fuentes<small>Cada número en la página lleva aquí.</small></h2></summary>
       <ol class="fuentes">{{FUENTES}}</ol>
       <p class="base">Fundamento legal: {{BASE}}</p>
+      </details>
     </section>
+    </div></div>
 
     <div class="estado">
       <p>{{ESTADO}} Última revisión: {{REVISADO}}.</p>
@@ -316,11 +424,16 @@ window.dibujarFlechas=function(){
   document.querySelectorAll('.mapa').forEach(function(m){
     var svg=m.querySelector('.flechas'),z=parseFloat(getComputedStyle(m).zoom)||1;
     var R=m.getBoundingClientRect(),ns='http://www.w3.org/2000/svg';
-    var aristas=JSON.parse(m.dataset.aristas||'[]'),nodos={},salen={};
-    m.querySelectorAll('.nodo').forEach(function(n){nodos[n.dataset.n]=n;});
+    var aristas=JSON.parse(m.dataset.aristas||'[]'),nodos={},salen={},orden=[];
+    m.querySelectorAll('.nodo').forEach(function(n){nodos[n.dataset.n]=n;orden.push(n.dataset.n);});
     aristas.forEach(function(a){salen[a[0]]=1;});
     Object.keys(nodos).forEach(function(k){if(!salen[k])aristas.push([k,'fin','']);});
-    nodos.fin=m.querySelector('.nodo-fin');
+    nodos.fin=m.querySelector('.nodo-fin');orden.push('fin');
+    // En una sola columna solo se dibujan las flechas entre cajas vecinas; las demás ramas van en texto.
+    if(getComputedStyle(m).gridTemplateColumns.split(' ').length<2){
+      aristas=aristas.filter(function(a){return orden.indexOf(a[1])===orden.indexOf(a[0])+1;});
+      orden.forEach(function(k,i){if(i&&!aristas.some(function(a){return a[1]===k;}))aristas.push([orden[i-1],k,'']);});
+    }
     var r=function(el){var b=el.getBoundingClientRect();return{l:(b.left-R.left)/z,r:(b.right-R.left)/z,t:(b.top-R.top)/z,b:(b.bottom-R.top)/z};};
     var out='<defs><marker id="pt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="punta" d="M0 0L10 5L0 10z" style="stroke:none"/></marker></defs>';
     aristas.forEach(function(a){
@@ -338,6 +451,9 @@ window.dibujarFlechas=function(){
 window.dibujarFlechas();
 addEventListener('resize',window.dibujarFlechas);
 if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
+document.querySelectorAll('details.det,details.lugares').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
+addEventListener('click',function(ev){var c=ev.target.closest&&ev.target.closest('a.cita');if(c){var f=document.getElementById('fuentes');if(f)f.open=true;}});
+addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det,.mas-ofis details,details.lugares').forEach(function(d){d.open=true;});});
 </script>
 <script>
 (function(){
@@ -355,6 +471,61 @@ if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
     c.checked=!!marcas[c.dataset.k];
     c.addEventListener('change',function(){marcas[c.dataset.k]=c.checked;try{localStorage.setItem(clave,JSON.stringify(marcas));}catch(e){}});
   });
+})();
+</script>
+{{FORMATOS}}
+<script id="abierto-ahora">
+/* «Abierto ahora» con la hora de Tijuana, y orden por cercanía. Tu ubicación no sale de tu teléfono. */
+(function(){
+  var DIAS=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"], RX="(domingo|lunes|martes|miercoles|jueves|viernes|sabado)s?";
+  function sinAcentos(t){return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+  function franjas(h){
+    return sinAcentos(h).split(";").map(function(seg){
+      var r=seg.match(/(\d{1,2}):(\d{2})\D+?(\d{1,2}):(\d{2})/); if(!r)return null;
+      var d=seg.match(new RegExp(RX+"\\s+a\\s+"+RX)), u=seg.match(new RegExp(RX));
+      var de=d?DIAS.indexOf(d[1]):u?DIAS.indexOf(u[1]):-1, a=d?DIAS.indexOf(d[2]):de;
+      return de<0?null:{de:de,a:a,ini:+r[1]*60+ +r[2],fin:+r[3]*60+ +r[4]};
+    }).filter(Boolean);
+  }
+  var ahora;
+  try{
+    var p={};new Intl.DateTimeFormat("en-US",{timeZone:"America/Tijuana",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false})
+      .formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+    ahora={dia:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday),min:(+p.hour%24)*60+ +p.minute};
+  }catch(_){}
+  if(ahora)document.querySelectorAll(".ofis li[data-horario]").forEach(function(li){
+    var fs=franjas(li.dataset.horario); if(!fs.length)return;
+    var si=fs.some(function(h){
+      var dia=h.de<=h.a?(ahora.dia>=h.de&&ahora.dia<=h.a):(ahora.dia>=h.de||ahora.dia<=h.a);
+      return dia&&ahora.min>=h.ini&&ahora.min<h.fin;
+    });
+    var b=document.createElement("span");b.className="ahora ahora--"+(si?"si":"no");b.textContent=si?"Abierto ahora":"Cerrado ahora";
+    li.querySelector("b").after(b);
+  });
+
+  function km(a,b,c,d){var R=6371,r=Math.PI/180,x=Math.sin((c-a)*r/2),y=Math.sin((d-b)*r/2);
+    return 2*R*Math.asin(Math.sqrt(x*x+Math.cos(a*r)*Math.cos(c*r)*y*y));}
+  function ordenar(pos){
+    var la=pos.coords.latitude, lo=pos.coords.longitude;
+    document.querySelectorAll(".lugares").forEach(function(box){
+      var ul=box.querySelector("ul"), lis=[].slice.call(ul.children);
+      lis.forEach(function(li){
+        li._km=li.dataset.lat?km(la,lo,+li.dataset.lat,+li.dataset.lon):Infinity;
+        var v=li.querySelector(".lejos"); if(v)v.remove();
+        if(li._km<Infinity){var s=document.createElement("span");s.className="lejos";
+          s.textContent="a "+(li._km<10?li._km.toFixed(1):Math.round(li._km))+" km";li.querySelector("b").after(s);}
+      });
+      lis.sort(function(a,b){return a._km-b._km}).forEach(function(li){ul.appendChild(li)});
+      var bt=box.querySelector(".boton--cerca"); if(bt)bt.hidden=true;
+      var su=box.querySelector("summary"); if(su&&!/cercano/.test(su.textContent))su.textContent+=" · el más cercano primero";
+    });
+    if(window.dibujarFlechas)window.dibujarFlechas();
+  }
+  function pedir(){navigator.geolocation.getCurrentPosition(ordenar,function(){},{maximumAge:600000,timeout:15000});}
+  if(!("geolocation" in navigator))return;
+  document.querySelectorAll(".boton--cerca").forEach(function(b){b.hidden=false;b.addEventListener("click",pedir);});
+  if(navigator.permissions&&navigator.permissions.query)
+    navigator.permissions.query({name:"geolocation"}).then(function(r){if(r.state==="granted")pedir();}).catch(function(){});
 })();
 </script>
 </body>
