@@ -97,9 +97,12 @@ cost:
   type: variable
   amount_mxn: 498
   text: La constancia de inexistencia del Estado, $498 en noviembre de 2026. La inscripción en Tijuana es gratis.
-    La apostilla y la traducción se pagan aparte y su precio depende del país y del perito.
+    La apostilla y la traducción se pagan aparte y su precio depende del país y del perito. El precio de la constancia
+    sube cada año; en julio de 2025 se pagaron $473.
   as_of: '2026-11-13'
   cites:
+  - source: reportes
+    pinpoint: Pago en la Subrecaudación Auxiliar de Rentas de Tijuana, julio de 2025
   - source: remutys-0190
     pinpoint: Costo
     quote: Gratuito
@@ -179,13 +182,6 @@ steps:
   - source: retys-618
     pinpoint: Pasos y Costo
     quote: Realizar pago de derechos ante la recaudación de rentas del Estado
-  practice:
-  - text: En julio de 2025 se pagó $473 en la Subrecaudación Auxiliar de Rentas de Tijuana. El precio sube cada
-      año.
-    evidence_level: un_reporte
-    observed: Tijuana, julio de 2025
-    cites:
-    - source: reportes
 - n: '6'
   actor: Registro Civil del Estado
   action: Te entrega la constancia de inexistencia. Dice que no tienes ya un registro de nacimiento en Baja California.
@@ -203,8 +199,7 @@ steps:
   - source: remutys-0190
     pinpoint: Requisitos
   practice:
-  - text: En julio de 2025 se llevaron 2 copias de cada documento, no 1. En ese momento la ficha oficial pedía
-      el original solo de la solicitud y de la constancia; hoy pide el original de casi todo.
+  - text: En julio de 2025 se llevaron 2 copias de cada documento, no 1.
     evidence_level: un_reporte
     observed: Tijuana, julio de 2025
     cites:
