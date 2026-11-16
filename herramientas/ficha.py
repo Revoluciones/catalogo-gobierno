@@ -186,6 +186,35 @@ def grafo(pasos):
     return aristas, capa, col, max((c[-1] for c in col.values()), default=0) + 1
 
 
+def oficina(o):
+    """Una oficina: nombre, dirección, horario, teléfono y enlace al mapa. El navegador agrega «Abierto ahora» y la distancia."""
+    partes = [f"<b>{e(o.get('name'))}</b>"]
+    dire = ", ".join(v for v in (o.get("address"), o.get("municipality")) if v)
+    for v in (dire, o.get("hours"), o.get("phones") and "Tel. " + o["phones"]):
+        if v:
+            partes.append(f"<span>{e(v)}</span>")
+    if dire:
+        q = urllib.parse.quote(f"{o.get('name', '')}, {dire}")
+        partes.append(f'<a class="en-mapa" href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener">Ver en el mapa</a>')
+    datos = f' data-horario="{e(o["hours"])}"' if o.get("hours") else ""
+    if "lat" in o:
+        datos += f' data-lat="{o["lat"]}" data-lon="{o["lon"]}"'
+    return f"<li{datos}>" + "".join(partes) + "</li>"
+
+
+def lugares(ofis):
+    """Dónde se hace un paso. Con varias oficinas, una lista plegada que se puede ordenar por cercanía."""
+    if not ofis:
+        return ""
+    lista = "".join(oficina(o) for o in ofis)
+    if len(ofis) == 1:
+        return f'<div class="lugares"><p class="lugares-t">Dónde</p><ul class="ofis ofis--paso">{lista}</ul></div>'
+    cerca = ('<button type="button" class="boton boton--cerca" hidden>Ordenar por cercanía</button>'
+             if any("lat" in o for o in ofis) else "")
+    return (f'<details class="lugares"><summary>Dónde: {len(ofis)} lugares</summary>{cerca}'
+            f'<ul class="ofis ofis--paso">{lista}</ul></details>')
+
+
 def mapa(pasos, grande=False, detalles=None):
     """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador.
 
@@ -286,6 +315,7 @@ def pagina(d, x):
         for k, v, n in x["hechos"]
     )
 
+    por_id = {o["id"]: o for o in d.get("offices", []) if o.get("id")}
     detalles = {}
     for p in x["pasos"]:
         prac = "".join(
@@ -293,7 +323,12 @@ def pagina(d, x):
             f'{" · " + e(q["observed"]) if q.get("observed") else ""}</p><p>{e(q["text"])} {chips(q["cites"])}</p></aside>'
             for q in p.get("practice", [])
         )
-        detalles[p["n"]] = {"boton": llenado(p["form"], x) if p.get("form") else "",
+        boton = llenado(p["form"], x) if p.get("form") else ""
+        if p.get("link"):
+            boton += (f'<a class="boton boton--accion" href="{e(p["link"]["url"])}" target="_blank" rel="noopener">'
+                      f'{e(p["link"]["label"])}</a>')
+        boton += lugares([por_id[i] for i in p.get("offices", []) if i in por_id])
+        detalles[p["n"]] = {"boton": boton,
                             "resto": f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{prac}'}
 
     reqs = []
@@ -305,18 +340,8 @@ def pagina(d, x):
             f'{f"<span class=oc>{e(oc)}</span>" if oc else ""}</label>{formato(r.get("form_url"))}</li>'
         )
 
-    ofis = []
-    for o in d.get("offices", []):
-        partes = [f"<b>{e(o.get('name'))}</b>"]
-        dire = ", ".join(v for v in (o.get("address"), o.get("municipality")) if v)
-        for v in (dire, o.get("hours"), o.get("phones") and "Tel. " + o["phones"]):
-            if v:
-                partes.append(f"<span>{e(v)}</span>")
-        if dire:
-            q = urllib.parse.quote(f"{o.get('name', '')}, {dire}")
-            partes.append(f'<a class="en-mapa" href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener">Ver en el mapa</a>')
-        hor = f' data-horario="{e(o["hours"])}"' if o.get("hours") else ""
-        ofis.append(f"<li{hor}>" + "".join(partes) + "</li>")
+    en_pasos = {oid for p in x["pasos"] for oid in p.get("offices", [])}
+    ofis = [oficina(o) for o in d.get("offices", []) if o.get("id") not in en_pasos]
     if len(ofis) > 3:
         ofis = ofis[:2] + [f'<li class="mas-ofis"><details><summary>Ver las otras {len(ofis) - 2} oficinas</summary>'
                            f'<ul class="ofis">{"".join(ofis[2:])}</ul></details></li>']

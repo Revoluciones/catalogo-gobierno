@@ -127,50 +127,179 @@ deadlines:
 channels:
 - presencial
 offices:
-- municipality: Tijuana
+- id: rc-estado
+  municipality: Mexicali
+  name: Dirección de Registro Civil del Estado
+  address: Avenida Independencia 994, Centro Cívico, C. P. 21000
+  phones: 686 558 1000 ext. 1868
+  hours: Lunes a viernes, 8:00 a 15:00
+  lat: 32.639
+  lon: -115.472
+  cites:
+  - source: retys-618
+    pinpoint: Oficinas
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: rentas-central
+  municipality: Tijuana
+  name: Recaudación de Rentas, Central Tijuana
+  address: Vía Rápida Oriente 1, Zona Río
+  phones: 664 624 2000 ext. 2283 (impuestos)
+  hours: Lunes a viernes, 8:00 a 16:00; sábados, 9:00 a 12:00
+  lat: 32.537
+  lon: -117.027
+  cites:
+  - source: hacienda-bc-domicilios
+    pinpoint: En Tijuana, Central Tijuana
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: rentas-cerro-colorado
+  municipality: Tijuana
+  name: Recaudación de Rentas, Subrecaudación Cerro Colorado
+  address: Bulevar Manuel J. Clouthier 19724, Col. El Lago, C. P. 22210, frente a Plaza Monarca
+  phones: 664 701 8716 ext. 101 (impuestos)
+  hours: Lunes a viernes, 8:00 a 16:00; sábados, 8:00 a 13:00
+  lat: 32.525
+  lon: -116.927
+  cites:
+  - source: hacienda-bc-domicilios
+    pinpoint: En Tijuana, Subrecaudación Cerro Colorado
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: palacio
+  municipality: Tijuana
   name: Oficialía 01 del Registro Civil, Palacio Municipal
   address: Blvd Independencia 1350, Zona Urbana Río, C. P. 22010
   phones: 664 973 7000 ext. 7922
   hours: Lunes a viernes, 8:00 a 15:00
-- municipality: Tijuana
+  lat: 32.532
+  lon: -117.017
+  cites:
+  - source: remutys-0190
+    pinpoint: Oficinas y horario
+  - source: tijuana-rc-oficialias
+    pinpoint: 01 Palacio Municipal
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: la-mesa
+  municipality: Tijuana
   name: Oficialía 02 del Registro Civil, Delegación La Mesa
   address: Av. Paseo de los Charros y Allende s/n, Fracc. Moreno
   phones: 664 104 2100 ext. 2177
-- municipality: Tijuana
+  lat: 32.464
+  lon: -116.942
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 02 Delegación La Mesa
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: la-presa
+  municipality: Tijuana
   name: Oficialía 03 del Registro Civil, Delegación La Presa
   address: Aranjuez No. 22750, Fracc. Villa Fontana
   phones: 664 627 8700 ext. 8715
-- municipality: Tijuana
+  lat: 32.449
+  lon: -116.909
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 03 Delegación La Presa
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: playas
+  municipality: Tijuana
   name: Oficialía 04 del Registro Civil, Delegación Playas de Tijuana
   address: Paseo Pedregal y Av. Del Agua s/n, Sección Jardines, Playas de Tijuana
   phones: 664 631 6800 ext. 6816
-- municipality: Tijuana
+  lat: 32.523
+  lon: -117.113
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 04 Delegación Playas de Tijuana
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: san-antonio
+  municipality: Tijuana
   name: Oficialía 05 del Registro Civil, Delegación San Antonio de los Buenos
   address: Av. Miraflores esq. Cabo San Lucas No. 8351, Fracc. El Rubí, C. P. 22626
   phones: 664 635 6145 ext. 6161
-- municipality: Tijuana
+  lat: 32.452
+  lon: -116.991
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 05 Delegación San Antonio de los Buenos
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: la-presa-este
+  municipality: Tijuana
   name: Oficialía 06 del Registro Civil, Delegación La Presa Este
   address: Calle de los Cerezos s/n esquina carretera libre Tijuana-Tecate, Fracc. El Refugio
   phones: 664 102 6001 ext. 6407
-- municipality: Tijuana
+  lat: 32.458
+  lon: -116.821
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 06 Delegación La Presa Este
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: la-presa-oriente
+  municipality: Tijuana
   name: Oficialía 07 del Registro Civil, Delegación La Presa Oriente
   address: Calle Fuentes de Mexicali esquina con Amaranto s/n, Col. Hacienda Las Fuentes
   phones: 664 650 2250
-- municipality: Tijuana
+  lat: 32.472
+  lon: -116.850
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 07 Delegación La Presa Oriente
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: centenario
+  municipality: Tijuana
   name: Oficialía 08 del Registro Civil, Delegación Centenario
   address: Av. Politécnico Nacional s/n, Fracc. Garita de Otay
   phones: 664 647 4235
-- municipality: Tijuana
+  lat: 32.536
+  lon: -116.943
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 08 Delegación Centenario
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: sanchez-taboada
+  municipality: Tijuana
   name: Oficialía 09 del Registro Civil, Delegación Sánchez Taboada
   address: Calle Panamericano No. 9757, Colinas de California, Col. Anexa Panamericano
   phones: 664 973 7000 ext. 5041
-- municipality: Tijuana
+  lat: 32.459
+  lon: -117.003
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 09 Delegación Sánchez Taboada
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: cerro-colorado
+  municipality: Tijuana
   name: Oficialía 10 del Registro Civil, Delegación Cerro Colorado
   address: Calle Canadá No. 7171, Tercera Etapa Río Tijuana, C. P. 22226
-- municipality: Tijuana
+  lat: 32.479
+  lon: -116.925
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 10 Delegación Cerro Colorado
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
+- id: centro
+  municipality: Tijuana
   name: Oficialía 11 del Registro Civil, Delegación Centro
   address: Calle Coahuila, Zona Norte, entre Negrete y Madero No. 8803, Zona Centro
   phones: 664 688 5300 ext. 5350
+  lat: 32.538
+  lon: -117.035
+  cites:
+  - source: tijuana-rc-oficialias
+    pinpoint: 11 Delegación Centro
+  - source: osm-nominatim
+    pinpoint: Coordenadas aproximadas
 legal_basis:
 - source: cpeum
   pinpoint: 'art. 30, apartado A, fracción II'
@@ -218,6 +347,8 @@ steps:
     pinpoint: Escenario «Inexistencia de nacimiento», notas
     quote: Para los casos de nacimiento en el extranjero agregar copia de nacimiento.
   form: inexistencia-de-nacimiento
+  offices:
+  - rc-estado
 - n: '5'
   actor: Tú, en Recaudación de Rentas del Estado
   action: Paga los derechos de la constancia. En noviembre de 2026 cuesta $498.
@@ -225,6 +356,9 @@ steps:
   - source: retys-618
     pinpoint: Pasos y Costo
     quote: Realizar pago de derechos ante la recaudación de rentas del Estado
+  offices:
+  - rentas-central
+  - rentas-cerro-colorado
 - n: '6'
   actor: Registro Civil del Estado
   action: Te entrega la constancia de inexistencia. Dice que no tienes ya un registro de nacimiento en Baja California.
@@ -234,6 +368,8 @@ steps:
     pinpoint: Resultado y Vigencia
   next:
   - to: '7'
+  offices:
+  - rc-estado
 - n: '7'
   actor: Tú, en la Oficialía del Registro Civil de Tijuana
   action: Lleva la solicitud de inscripción y todos los documentos de la lista, en original y 1 copia de cada
@@ -247,6 +383,18 @@ steps:
     observed: Tijuana, julio de 2025
     cites:
     - source: reportes
+  offices:
+  - palacio
+  - la-mesa
+  - la-presa
+  - playas
+  - san-antonio
+  - la-presa-este
+  - la-presa-oriente
+  - centenario
+  - sanchez-taboada
+  - cerro-colorado
+  - centro
 - n: '8'
   actor: Oficialía del Registro Civil de Tijuana
   action: Inscribe tu nacimiento y te entrega tu acta mexicana. No cobra.
@@ -310,6 +458,21 @@ sources:
     publisher: XXV Ayuntamiento de Tijuana
     url: https://www.tijuana.gob.mx/dependencias/RegistroCivil/index.aspx
     accessed: '2026-11-16'
+  hacienda-bc-domicilios:
+    type: portal_oficial
+    official: true
+    title: 'Secretaría de Hacienda de Baja California: domicilios de las oficinas de recaudación'
+    publisher: Gobierno del Estado de Baja California
+    url: http://spf.bajacalifornia.gob.mx/finanzas/acercade/domicilios.jsp
+    version_date: '2019'
+    accessed: '2026-11-16'
+  osm-nominatim:
+    type: investigacion
+    official: false
+    title: 'OpenStreetMap (Nominatim): coordenadas aproximadas buscadas con el nombre o la dirección oficial'
+    publisher: Colaboradores de OpenStreetMap
+    url: https://nominatim.openstreetmap.org
+    accessed: '2026-11-16'
   reportes:
     type: reportes_ciudadanos
     official: false
@@ -324,4 +487,5 @@ notes: Ruta completa que junta tres trámites oficiales (las fichas TJ-SGM-0190 
   se hizo de principio a fin. Una captura de la ficha de Tijuana de 2025 marcaba el original obligatorio solo para
   la solicitud y la constancia; la ficha vigente lo pide para todo menos la carta poder. Las oficinas salen de la ficha TJ-SGM-0190 (Palacio
   Municipal, con horario) y del directorio del Ayuntamiento (fuente tijuana-rc-oficialias), que lista 11 oficialías
-  y dice que puedes ir a la más cercana, salvo si ya empezaste un trámite en otra. El directorio no da horarios de las delegaciones.
+  y dice que puedes ir a la más cercana, salvo si ya empezaste un trámite en otra. El directorio no da horarios de las delegaciones. Las coordenadas de las oficinas son aproximadas (OpenStreetMap)
+  y solo sirven para ordenar por cercanía; el mapa se abre con la dirección oficial.
