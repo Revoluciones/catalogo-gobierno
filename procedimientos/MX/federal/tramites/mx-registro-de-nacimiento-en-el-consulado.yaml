@@ -108,6 +108,9 @@ steps:
     pinpoint: Procedimiento, punto 1
   - source: miconsulado
     pinpoint: Sistema de citas de la SRE (la página del consulado enlaza aquí)
+  link:
+    label: Sacar cita en MiConsulado
+    url: https://citas.sre.gob.mx
   practice:
   - text: En 2025 no se consiguió cita, y por eso el registro se hizo en el Registro Civil de Tijuana.
     evidence_level: un_reporte

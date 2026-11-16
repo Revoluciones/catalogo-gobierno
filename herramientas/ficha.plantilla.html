@@ -149,6 +149,18 @@ h2 small{display:block;font:400 15px/1.4 var(--f-texto);color:var(--tinta-suave)
 .detalle .practica{margin-top:8px}
 .mapa--vivo .llenado{margin-top:10px}
 .mapa--vivo .boton--llenar{min-height:44px;padding:10px 16px;font-size:15px}
+.boton--accion{background:var(--tinta);color:var(--papel);border-color:var(--tinta);margin-top:10px;min-height:44px;padding:10px 16px;font-size:15px}
+.lugares{margin-top:10px}
+.lugares>summary{cursor:pointer;font-weight:700;color:var(--enlace);font-size:15px;min-height:40px;display:flex;align-items:center;gap:6px}
+.lugares-t{margin:0 0 6px;font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-suave)}
+.lugares[open]>summary{margin-bottom:6px}
+.boton--cerca{min-height:40px;padding:8px 14px;font-size:14px;margin:0 0 8px}
+.ofis--paso{gap:8px}
+.ofis--paso li{padding:10px 12px;border-radius:10px;background:var(--papel)}
+.ofis--paso b{font-size:15px}
+.ofis--paso span{font-size:14px}
+.ofis .lejos{display:inline;margin-left:8px;font-size:13px;color:var(--tinta-suave)}
+@media print{.boton--accion,.boton--cerca{display:none}}
 .etq-formato{display:inline-block;margin:8px 6px 0 0;font-size:13px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--anil-suave);color:var(--anil)}
 .mapa--vivo .plazo{margin:8px 6px 0 0;font-size:13px}
 .mapa--vivo .difiere{margin-right:6px}
@@ -439,9 +451,9 @@ window.dibujarFlechas=function(){
 window.dibujarFlechas();
 addEventListener('resize',window.dibujarFlechas);
 if(document.fonts)document.fonts.ready.then(window.dibujarFlechas);
-document.querySelectorAll('details.det').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
+document.querySelectorAll('details.det,details.lugares').forEach(function(d){d.addEventListener('toggle',window.dibujarFlechas);});
 addEventListener('click',function(ev){var c=ev.target.closest&&ev.target.closest('a.cita');if(c){var f=document.getElementById('fuentes');if(f)f.open=true;}});
-addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det,.mas-ofis details').forEach(function(d){d.open=true;});});
+addEventListener('beforeprint',function(){var f=document.getElementById('fuentes');if(f)f.open=true;document.querySelectorAll('details.det,.mas-ofis details,details.lugares').forEach(function(d){d.open=true;});});
 </script>
 <script>
 (function(){
@@ -463,29 +475,57 @@ addEventListener('beforeprint',function(){var f=document.getElementById('fuentes
 </script>
 {{FORMATOS}}
 <script id="abierto-ahora">
-/* «Abierto ahora» según el horario escrito, con la hora de Tijuana. Solo entiende días seguidos y una franja. */
+/* «Abierto ahora» con la hora de Tijuana, y orden por cercanía. Tu ubicación no sale de tu teléfono. */
 (function(){
-  var DIAS=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"];
+  var DIAS=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"], RX="(domingo|lunes|martes|miercoles|jueves|viernes|sabado)s?";
   function sinAcentos(t){return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
-  function leer(h){
-    var t=sinAcentos(h), d=t.match(/(domingo|lunes|martes|miercoles|jueves|viernes|sabado)\s+a\s+(domingo|lunes|martes|miercoles|jueves|viernes|sabado)/),
-        r=t.match(/(\d{1,2}):(\d{2})\D+?(\d{1,2}):(\d{2})/);
-    if(!d||!r)return null;
-    return {de:DIAS.indexOf(d[1]),a:DIAS.indexOf(d[2]),ini:+r[1]*60+ +r[2],fin:+r[3]*60+ +r[4]};
+  function franjas(h){
+    return sinAcentos(h).split(";").map(function(seg){
+      var r=seg.match(/(\d{1,2}):(\d{2})\D+?(\d{1,2}):(\d{2})/); if(!r)return null;
+      var d=seg.match(new RegExp(RX+"\\s+a\\s+"+RX)), u=seg.match(new RegExp(RX));
+      var de=d?DIAS.indexOf(d[1]):u?DIAS.indexOf(u[1]):-1, a=d?DIAS.indexOf(d[2]):de;
+      return de<0?null:{de:de,a:a,ini:+r[1]*60+ +r[2],fin:+r[3]*60+ +r[4]};
+    }).filter(Boolean);
   }
   var ahora;
   try{
     var p={};new Intl.DateTimeFormat("en-US",{timeZone:"America/Tijuana",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false})
       .formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
     ahora={dia:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday),min:(+p.hour%24)*60+ +p.minute};
-  }catch(_){return}
-  document.querySelectorAll(".ofis li[data-horario]").forEach(function(li){
-    var h=leer(li.dataset.horario); if(!h||h.de<0||h.a<0)return;
-    var dia=h.de<=h.a?(ahora.dia>=h.de&&ahora.dia<=h.a):(ahora.dia>=h.de||ahora.dia<=h.a);
-    var si=dia&&ahora.min>=h.ini&&ahora.min<h.fin;
+  }catch(_){}
+  if(ahora)document.querySelectorAll(".ofis li[data-horario]").forEach(function(li){
+    var fs=franjas(li.dataset.horario); if(!fs.length)return;
+    var si=fs.some(function(h){
+      var dia=h.de<=h.a?(ahora.dia>=h.de&&ahora.dia<=h.a):(ahora.dia>=h.de||ahora.dia<=h.a);
+      return dia&&ahora.min>=h.ini&&ahora.min<h.fin;
+    });
     var b=document.createElement("span");b.className="ahora ahora--"+(si?"si":"no");b.textContent=si?"Abierto ahora":"Cerrado ahora";
     li.querySelector("b").after(b);
   });
+
+  function km(a,b,c,d){var R=6371,r=Math.PI/180,x=Math.sin((c-a)*r/2),y=Math.sin((d-b)*r/2);
+    return 2*R*Math.asin(Math.sqrt(x*x+Math.cos(a*r)*Math.cos(c*r)*y*y));}
+  function ordenar(pos){
+    var la=pos.coords.latitude, lo=pos.coords.longitude;
+    document.querySelectorAll(".lugares").forEach(function(box){
+      var ul=box.querySelector("ul"), lis=[].slice.call(ul.children);
+      lis.forEach(function(li){
+        li._km=li.dataset.lat?km(la,lo,+li.dataset.lat,+li.dataset.lon):Infinity;
+        var v=li.querySelector(".lejos"); if(v)v.remove();
+        if(li._km<Infinity){var s=document.createElement("span");s.className="lejos";
+          s.textContent="a "+(li._km<10?li._km.toFixed(1):Math.round(li._km))+" km";li.querySelector("b").after(s);}
+      });
+      lis.sort(function(a,b){return a._km-b._km}).forEach(function(li){ul.appendChild(li)});
+      var bt=box.querySelector(".boton--cerca"); if(bt)bt.hidden=true;
+      var su=box.querySelector("summary"); if(su&&!/cercano/.test(su.textContent))su.textContent+=" · el más cercano primero";
+    });
+    if(window.dibujarFlechas)window.dibujarFlechas();
+  }
+  function pedir(){navigator.geolocation.getCurrentPosition(ordenar,function(){},{maximumAge:600000,timeout:15000});}
+  if(!("geolocation" in navigator))return;
+  document.querySelectorAll(".boton--cerca").forEach(function(b){b.hidden=false;b.addEventListener("click",pedir);});
+  if(navigator.permissions&&navigator.permissions.query)
+    navigator.permissions.query({name:"geolocation"}).then(function(r){if(r.state==="granted")pedir();}).catch(function(){});
 })();
 </script>
 </body>
