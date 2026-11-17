@@ -53,6 +53,10 @@ Este catálogo lo construimos entre muchas personas de todo México, con o sin a
 
 Los detalles están en [CONTRIBUTING.md](CONTRIBUTING.md). Si usas Claude Code, Codex, Cursor, Copilot u otro agente, ya lee solo [AGENTS.md](AGENTS.md).
 
+## Usarlo en otro proyecto
+
+Para usar los datos desde otro proyecto o agente, o para preguntarnos algo o pedir una mejora, lee [USAR.md](USAR.md).
+
 ## Licencia
 
 El código usa la licencia [MIT](LICENSE). El contenido usa [CC BY-SA 4.0](LICENSE-DATOS.md): puedes usarlo y cambiarlo si das crédito y compartes igual.

@@ -2,6 +2,8 @@
 
 Instructions for AI coding agents (Claude Code, Codex, Cursor, Copilot, Gemini and others) and the people who run them. `CLAUDE.md` imports this file. `CONTRIBUTING.md` says the same things for people, in Spanish.
 
+Only want to use the data in another project, ask how it works, or request a change? Read [USAR.md](USAR.md) and open an issue with the "Pregunta o pedido" template.
+
 ## The five rules (CI checks the first four)
 
 1. **Work only on a claimed issue.** Before you write anything, find an issue labeled `disponible` and ask your human to comment `/tomar` on it. Do not start on an issue that already has an assignee or the `en-curso` label: someone else is doing it. If no issue fits, open one with a template and wait for a maintainer to label it `disponible`. A PR whose body does not say `Cierra #<n>` for an issue assigned to the PR author fails the `vinculado` check.

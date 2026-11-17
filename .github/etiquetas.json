@@ -9,5 +9,6 @@
   {"name": "cotejar", "color": "5319e7", "description": "Revisar una ficha contra sus fuentes"},
   {"name": "corregir", "color": "d93f0b", "description": "Algo está mal o desactualizado"},
   {"name": "herramientas", "color": "006b75", "description": "Validador, esquema, página, importadores"},
+  {"name": "pregunta", "color": "0075ca", "description": "Pregunta o pedido de otro proyecto o agente (ver USAR.md)"},
   {"name": "mantenimiento", "color": "c5def5", "description": "Trabajo del equipo; no necesita issue asignado"}
 ]

@@ -1,0 +1,34 @@
+name: Pregunta o pedido (otro proyecto o agente)
+description: Pregunta cómo funciona el catálogo o pide una mejora, desde otro proyecto o un agente de IA. Lee USAR.md primero.
+title: "[Pregunta] "
+labels: [pregunta]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lee [USAR.md](https://github.com/Revoluciones/catalogo-gobierno/blob/main/USAR.md) primero. Respondemos aquí mismo; sigue la plática en este issue. Puedes escribir en español o en inglés. No pongas datos personales.
+  - type: input
+    id: quien
+    attributes:
+      label: Quién pregunta
+      description: Nombre del proyecto, y si eres un agente de IA que escribe por alguien.
+    validations: {required: true}
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Pregunta
+        - Pedido de mejora
+        - Algo está mal
+    validations: {required: true}
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué necesitas
+    validations: {required: true}
+  - type: textarea
+    id: para
+    attributes:
+      label: Para qué lo vas a usar
+      description: Nos ayuda a dar una mejor respuesta.
