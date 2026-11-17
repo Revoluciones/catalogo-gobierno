@@ -1,0 +1,299 @@
+id: mx-bcn-candidatura-independiente-municipes-2027
+country: MX
+jurisdiction: MX-BCN
+level: estatal
+branch: autonomo
+kind: tramite
+category: elecciones
+title: Postularte sin partido a un Ayuntamiento de Baja California, para la elección de 2027
+summary: Para competir sin partido por la presidencia municipal y el resto del Ayuntamiento, primero avisas al
+  Instituto Estatal Electoral que quieres hacerlo, con una asociación civil ya formada. Luego juntas el apoyo de
+  la ciudadanía con la aplicación del INE y, si alcanzas el mínimo, pides tu registro. En Tijuana el mínimo es de
+  44,262 apoyos.
+authority:
+  name: Instituto Estatal Electoral de Baja California (IEEBC)
+  unit: Secretaría Ejecutiva y Consejo General
+  url: https://ieebc.mx/candidaturas-independientes-2026-2027/
+other_authorities:
+- name: Instituto Nacional Electoral (aplicación para el apoyo de la ciudadanía y Sistema Nacional de Registro)
+- name: Un notario público (para formar la asociación civil)
+- name: Servicio de Administración Tributaria (RFC de la asociación civil)
+who_can:
+- Una planilla completa de personas propietarias y suplentes, con paridad de género. En Tijuana y Mexicali son
+  presidencia municipal, sindicatura procuradora y 8 regidurías; en Ensenada, 7 regidurías; en Tecate, Playas de
+  Rosarito, San Quintín y San Felipe, 5.
+- Para la presidencia municipal, una persona mexicana por nacimiento, hija de madre o padre mexicanos, con 25
+  años cumplidos el día de la elección.
+- Con al menos 5 años viviendo en el municipio antes de la elección.
+- Que en los últimos 3 años no haya dirigido un partido ni ocupado un cargo de elección popular.
+when: Quieres que tu planilla aparezca en la boleta del Ayuntamiento sin que la postule un partido.
+result: El registro de tu planilla como candidatura independiente, si alcanzas el apoyo mínimo y cumples los requisitos.
+requirements:
+- text: Manifestación de intención, formato IEEBC-CIM-01, con firma autógrafa.
+  original_or_copy: original
+  form_url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/IEEBC%20CIM%2001.docx
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, incisos a) y b), fracción II
+- text: Acta constitutiva de la asociación civil, con los estatutos del modelo único del IEEBC (Anexo 1). La asociación
+    la forman al menos quien aspira, su representante legal y quien administra el dinero.
+  original_or_copy: copia certificada
+  form_url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/1.1%20ANEXO%201%20CONV%20MODELO%20ESTATUTOS%20%28SP%29.docx
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracciones I y II
+- text: Documento del SAT con el RFC de la asociación civil.
+  original_or_copy: copia simple
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción III
+- text: Contrato de la cuenta bancaria a nombre de la asociación civil.
+  original_or_copy: copia simple
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción IV
+- text: Credencial para votar vigente, por los dos lados, de quien aspira, de su representante legal y de quien
+    administra el dinero.
+  original_or_copy: copia simple
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción VI
+- text: Carta en la que aceptas recibir avisos por correo electrónico sobre la aplicación del INE, formato IEEBC-CIM-05.
+  original_or_copy: original
+  form_url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/IEEBC%20CIM%2005.docx
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción VII
+- text: Formulario del Sistema Nacional de Registro del INE, con el informe de capacidad económica, firmado a mano.
+  original_or_copy: original
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción VIII
+  - source: ieebc-listado-documentos
+    pinpoint: Documento 7
+- text: Tu emblema o logotipo, impreso y en archivo PNG o JPG de alta resolución, con sus colores. No puede parecerse
+    al de un partido ni al de otra persona aspirante.
+  original_or_copy: impreso y digital
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción IX
+- text: Un domicilio en Mexicali para recibir avisos. Si no lo das, los avisos se publican en los estrados del IEEBC.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción V
+- text: Un correo con cuenta de Google, Facebook o X, para entrar a la aplicación del INE.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), después de la fracción IX
+cost:
+  type: desconocido
+  text: La convocatoria no fija ningún pago al IEEBC. Formar la asociación civil ante notario sí cuesta, y el precio
+    depende de la notaría. Lo que gastes para juntar apoyos sale de dinero privado de origen lícito y tiene un
+    tope; en Tijuana es de $3,174,282.72.
+  as_of: '2026-11-17'
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Séptima
+  - source: ieebc-topes
+    pinpoint: Tabla de topes para munícipes, Tijuana
+    quote: TIJUANA $3´174,282.72 M.N.
+deadlines:
+- what: para_presentar
+  text: La manifestación de intención se entrega a más tardar el 29 de diciembre de 2026. Ese último día reciben
+    de 8:00 a 23:59.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, incisos a), fracción II, y c)
+- what: para_corregir
+  text: Si a tu manifestación le falta algo, tienes 48 horas desde que te avisan para corregirlo. Si no, se tiene
+    por no presentada.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), últimos párrafos
+- what: otro
+  text: Los apoyos para Ayuntamientos se juntan del 30 de diciembre de 2026 al 12 de febrero de 2027.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Quinta, inciso a), fracción II
+- what: otro
+  text: 'Apoyos mínimos por municipio, el 2.5% de la lista nominal: Tijuana 44,262; Mexicali 22,790; Ensenada 9,589;
+    Playas de Rosarito 3,439; Tecate 2,672; San Quintín 2,385; San Felipe 396. Deben venir de al menos 1 de cada
+    3 secciones electorales del municipio.'
+  cites:
+  - source: ieebc-tablas
+    pinpoint: Munícipes
+  - source: ieebc-convocatoria
+    pinpoint: Base Sexta
+- what: para_presentar
+  text: La solicitud de registro como candidatura se entrega del 31 de marzo al 11 de abril de 2027.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Novena, inciso a), fracción II
+channels:
+- presencial
+- en_linea
+offices:
+- id: ieebc
+  municipality: Mexicali
+  name: Instituto Estatal Electoral de Baja California, Secretaría Ejecutiva
+  address: Calzada Cuauhtémoc 801 y Río Mocorito, Col. Pro-Hogar, C. P. 21240
+  url: https://ieebc.mx
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso b), fracción II
+legal_basis:
+- source: ieebc-convocatoria
+  pinpoint: 'Fundamento: arts. 3, 7 a 12, 14, 17 a 30 y 39 de la Ley que Reglamenta las Candidaturas Independientes
+    en el Estado de Baja California; art. 80 de la Constitución de Baja California'
+- source: ieebc-lineamientos
+  pinpoint: Lineamientos para la obtención y verificación del porcentaje de apoyo de la ciudadanía
+steps:
+- n: '1'
+  actor: Tú y tu equipo
+  action: Arma tu planilla completa, con personas propietarias y suplentes para la presidencia municipal, la sindicatura
+    y las regidurías, mitad mujeres y mitad hombres. Si falta la persona de la presidencia, o la sindicatura, o más
+    de la mitad de las regidurías o de las suplencias, el registro se cancela.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso b), fracción II, y Base Décima Segunda
+- n: '2'
+  actor: Tú, ante un notario
+  action: Forma una asociación civil con los estatutos del modelo único del IEEBC. Deben estar al menos tú, tu representante
+    legal y quien va a administrar el dinero.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracciones I y II
+- n: '3'
+  actor: Tu asociación civil
+  action: Dala de alta en el SAT para tener su RFC y abre una cuenta de banco a su nombre. Ahí se recibe el dinero
+    de la campaña.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracciones III y IV
+- n: '4'
+  actor: Tú, en el sitio del INE
+  action: Regístrate en el Sistema Nacional de Registro del INE, llena el informe de capacidad económica, imprime
+    el formulario y fírmalo a mano.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, inciso d), fracción VIII
+  - source: ine-snr
+    pinpoint: Liga pública que da el listado de documentos del IEEBC
+  link:
+    label: Abrir el registro del INE
+    url: https://registrocandidaturas.ine.mx/snr/app/login
+- n: '5'
+  actor: Tú, en el IEEBC en Mexicali
+  action: Entrega la manifestación de intención (formato IEEBC-CIM-01) con todos los documentos de la lista. Se entrega
+    en Mexicali, también si tu municipio es otro.
+  deadline: A más tardar el 29 de diciembre de 2026
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, incisos a), b) y d)
+  offices:
+  - ieebc
+- n: '6'
+  actor: Secretaría Ejecutiva del IEEBC
+  action: Revisa tus papeles. Si falta algo, te da 48 horas para corregir. Si todo está bien, te entrega tu constancia
+    de persona aspirante.
+  deadline: A más tardar el 1 de enero de 2027, si entregaste el último día
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Cuarta, incisos d) y e), fracción II
+- n: '7'
+  actor: Tú y tus personas auxiliares
+  action: Junta el apoyo de la ciudadanía con la aplicación móvil del INE. Cada apoyo lleva una foto de la persona
+    tomada en ese momento, por ella misma o por una persona auxiliar. No puedes usar radio ni televisión, ni hacer
+    campaña todavía.
+  deadline: Del 30 de diciembre de 2026 al 12 de febrero de 2027
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Quinta y Base Sexta
+  - source: ieebc-lineamientos
+    pinpoint: Glosario, incisos d) y l)
+    quote: tomada a través de la Aplicación Móvil, ya sea por sí misma o en el momento en que se encuentra presente
+      ante una Persona Auxiliar
+- n: '8'
+  actor: Consejo General del IEEBC
+  action: Al terminar la revisión de los apoyos, sesiona y entrega la constancia de porcentaje a favor a quien alcanzó
+    el mínimo. Sin ella no puedes pedir el registro.
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Octava y Base Novena, primer párrafo
+- n: '9'
+  actor: Tú, en el IEEBC
+  action: Pide el registro con el formato IEEBC-CIM-02 y sus anexos, entre ellos tu acta de nacimiento certificada,
+    tu plataforma, la constancia de residencia, los informes de lo que gastaste en juntar apoyos y el certificado
+    de no estar en el Registro Nacional de Obligaciones Alimentarias.
+  deadline: Del 31 de marzo al 11 de abril de 2027
+  cites:
+  - source: ieebc-convocatoria
+    pinpoint: Base Novena, incisos a), b) y c)
+  next:
+  - to: fin
+related:
+- mx-bcn-tijuana-registrar-nacimiento-en-el-extranjero
+glossary:
+- candidatura-independiente
+- manifestacion-de-intencion
+- asociacion-civil
+- apoyo-de-la-ciudadania
+- lista-nominal
+- seccion-electoral
+- planilla
+- tope-de-gastos
+sources:
+  ieebc-convocatoria:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: 'IEEBC: Convocatoria a la ciudadanía interesada en participar bajo la figura de candidatura independiente,
+      Proceso Electoral Local 2026-2027'
+    publisher: Instituto Estatal Electoral de Baja California
+    url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/1.%20CONVOCATORIA%20%28SP%29.pdf
+    version_date: '2026-11-05'
+    accessed: '2026-11-17'
+  ieebc-listado-documentos:
+    type: portal_oficial
+    official: true
+    title: 'IEEBC: Manifestación de intención y documentación anexa a presentar'
+    publisher: Instituto Estatal Electoral de Baja California
+    url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/listadodocs.pdf
+    accessed: '2026-11-17'
+  ieebc-tablas:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: 'IEEBC: Tablas de porcentaje a favor y apoyo ciudadano por cargos de elección popular, 2026-2027'
+    publisher: Instituto Estatal Electoral de Baja California
+    url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/tablasporcentaje20262027.pdf
+    accessed: '2026-11-17'
+  ieebc-topes:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: 'IEEBC, Acuerdo IEEBC/CGE68/2026: topes de gastos para juntar el apoyo de la ciudadanía'
+    publisher: Instituto Estatal Electoral de Baja California
+    url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/acuerdo68cge2026.pdf
+    version_date: '2026-10-22'
+    accessed: '2026-11-17'
+  ieebc-lineamientos:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: 'IEEBC, Acuerdo 69/2026: Lineamientos para la obtención y verificación del porcentaje de apoyo de la ciudadanía,
+      2026-2027'
+    publisher: Instituto Estatal Electoral de Baja California
+    url: https://www.ieebc.mx/archivos/partidos/candidatosindep/2026/acuerdo69cge2026.pdf
+    accessed: '2026-11-17'
+  ine-snr:
+    type: portal_oficial
+    official: true
+    title: 'INE: Sistema Nacional de Registro de precandidaturas y candidaturas, liga pública para aspirantes'
+    publisher: Instituto Nacional Electoral
+    url: https://registrocandidaturas.ine.mx/snr/app/login
+    accessed: '2026-11-17'
+status: borrador
+last_checked: '2026-11-17'
+checked_by: Claude (Compartido)
+notes: Escrito a partir de la convocatoria del 5 de noviembre de 2026 y sus anexos, para el cargo de munícipes. Los
+  apoyos en papel solo se permiten donde la autoridad declare una emergencia por desastre que impida usar la aplicación
+  (Lineamientos, Título V, punto 96). El listado de documentos dice que el archivo del emblema pesa hasta 500 kilobytes;
+  la convocatoria dice hasta 5 megabytes. La clave de acceso a la liga pública del SNR viene en el listado de documentos
+  del IEEBC y no se copia aquí.
