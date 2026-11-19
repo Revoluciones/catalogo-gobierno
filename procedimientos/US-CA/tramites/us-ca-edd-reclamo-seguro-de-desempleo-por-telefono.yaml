@@ -1,0 +1,303 @@
+id: us-ca-edd-reclamo-seguro-de-desempleo-por-telefono
+country: US
+jurisdiction: US-CA
+level: estatal
+branch: ejecutivo
+kind: tramite
+category: empleo
+title: Pedir por teléfono el seguro de desempleo en California (EDD) y preguntar por tu reclamo
+summary: Si perdiste tu trabajo o te bajaron las horas sin que fuera tu culpa, puedes pedir el seguro de desempleo al
+  Departamento de Desarrollo del Empleo de California (EDD). Se puede pedir por teléfono, de lunes a viernes de 8 a 5
+  (hora del Pacífico), aunque la forma más rápida es por internet, en myEDD.
+goal:
+  id: seguro-de-desempleo-california
+  title: Recibir el seguro de desempleo en California
+route:
+  name: Por teléfono, con Servicio al Cliente de Desempleo del EDD
+  availability: siempre
+  availability_text: De lunes a viernes, de 8 a. m. a 5 p. m. (hora del Pacífico), menos días festivos del estado.
+  pros:
+  - text: Hay líneas en inglés y español y en otros idiomas, y el servicio de intérprete es gratis.
+    cites:
+    - source: edd-contacto
+      pinpoint: Unemployment Insurance, Unemployment Customer Service
+      quote: Interpreter services are available free of charge.
+  - text: Si eres menor de 18 años, no puedes pedirlo por internet, pero sí por teléfono, fax o correo.
+    cites:
+    - source: edd-ui-online
+      pinpoint: Create a myEDD Account, Note
+      quote: To apply for benefits online, you must be at least 18 years old. If you are underage, you can apply by
+        phone, fax, or mail.
+  cons:
+  - text: El EDD dice que por teléfono se puede, pero que por internet es más rápido.
+    cites:
+    - source: edd-paso-2
+      pinpoint: Apply by Phone
+      quote: You can apply by phone, but it's faster to apply online.
+  - text: Los lunes y martes antes de las 10 de la mañana son las horas con más llamadas; el EDD recomienda llamar en
+      otro momento.
+    cites:
+    - source: edd-contacto
+      pinpoint: Unemployment Customer Service, Note
+      quote: Monday and Tuesday mornings before 10 a.m. are our busiest call times
+authority:
+  name: Departamento de Desarrollo del Empleo de California (EDD)
+  unit: Seguro de Desempleo (Unemployment Insurance)
+  url: https://edd.ca.gov/en/unemployment/
+who_can:
+- Personas que perdieron su trabajo o a las que les bajaron las horas sin que fuera su culpa
+- Si no eres ciudadano de Estados Unidos, necesitas permiso para trabajar en el país
+when: Cuando pierdes tu trabajo o te bajan las horas. Tu reclamo empieza el domingo de la semana en que lo pides.
+result: Si cumples los requisitos, un pago semanal de 40 a 450 dólares, según lo que ganaste en los últimos 18 meses.
+  El EDD tarda unas tres semanas en procesar la solicitud y hacer el primer pago.
+requirements:
+- text: Número de Seguro Social
+  cites:
+  - source: edd-desempleo
+    pinpoint: Am I Eligible?
+    quote: Have a Social Security number.
+- text: 'Tus datos: nombre, fecha de nacimiento, dirección y número de Seguro Social, una identificación con foto
+    (licencia de manejo, credencial o pasaporte) y otro documento que te identifique (W2, recibo de luz o agua, o acta
+    de nacimiento). Para evitar retrasos, deben coincidir con lo que tiene el DMV o el Seguro Social.'
+  cites:
+  - source: edd-paso-1
+    pinpoint: Personal Information
+    quote: 'Your name, birth date, address, Social Security number, photo identification'
+- text: 'De tu último empleador: nombre, dirección y teléfono, y los de tu supervisor directo; tu último día de trabajo
+    ahí; cuánto ganaste antes de impuestos en tu última semana (de domingo a sábado); y por qué ya no trabajas.'
+  cites:
+  - source: edd-paso-1
+    pinpoint: Most Recent Employer Information
+  - source: edd-de2321
+    pinpoint: Step 1, Unemployment Information Checklist
+- text: 'De todos tus empleadores de los últimos 18 meses: nombre, direcciones, fechas de trabajo, sueldo antes de
+    impuestos, horas trabajadas y cómo te pagaban.'
+  cites:
+  - source: edd-paso-1
+    pinpoint: Past 18 Months of Employment Information
+- text: Si no eres ciudadano y estás registrado en USCIS, tu documento de USCIS (por ejemplo tarjeta de residente
+    permanente o permiso de trabajo), con el número de registro de extranjero (Alien Registration Number), el número de
+    la tarjeta y la fecha de vencimiento si la tiene.
+  cites:
+  - source: edd-paso-1
+    pinpoint: Citizenship
+  - source: edd-de2321
+    pinpoint: Step 1, Unemployment Information Checklist
+    quote: This includes the Alien Registration Number, card number, and expiration date if applicable.
+- text: Si trabajaste para el gobierno federal en los últimos 18 meses, el formulario Standard Form 8. Si estuviste en el
+    ejército, tu DD214 Member Copy 4.
+  cites:
+  - source: edd-paso-1
+    pinpoint: Federal Employment; Military Service
+deadlines:
+- what: para_presentar
+  text: Pídelo cuando pierdas tu trabajo o te bajen las horas. Tu reclamo empieza el domingo de la semana en que lo
+    pides.
+  cites:
+  - source: edd-de2321
+    pinpoint: Step 1
+    quote: Your claim begins the Sunday of the week you apply for unemployment.
+- what: otro
+  text: Para seguir cobrando tienes que certificar cada dos semanas. La primera vez es unas dos semanas después de que
+    procesan tu solicitud. Si no certificas bien o a tiempo, el pago se retrasa o no llega.
+  cites:
+  - source: edd-paso-5
+    pinpoint: Introducción
+    quote: If you fail to certify accurately or on time, it will delay or prevent payment.
+- what: otro
+  text: Si recibes el seguro, tienes que registrarte en CalJOBS dentro de 21 días y subir tu currículum, salvo que el
+    EDD te diga otra cosa.
+  cites:
+  - source: edd-de2321
+    pinpoint: Step 5, Register in CalJOBS
+    quote: you must register for CalJOBS (edd.ca.gov/caljobs) within 21 days
+- what: para_corregir
+  text: Si el EDD te pide comprobar tu identidad con el formulario DE 1326C, tienes 10 días naturales desde la fecha de
+    envío que trae el formulario para responder.
+  cites:
+  - source: edd-faq
+    pinpoint: How do I verify my identity?
+    quote: You have 10 calendar days from the Mail Date on the Request for Identity Verification (DE 1326C)
+- what: otro
+  text: Si no estás de acuerdo con una decisión del EDD, tienes 30 días desde la fecha de envío del aviso para apelar
+    por escrito.
+  cites:
+  - source: edd-apelaciones
+    pinpoint: Introducción
+    quote: You must submit your appeal in writing within 30 days of the mailing date
+channels:
+- telefono
+- en_linea
+- correo
+offices:
+- name: Servicio al Cliente de Desempleo (Unemployment Customer Service), EDD
+  phones: 'Inglés y español: 1-800-300-5616; armenio: 1-855-528-1518; cantonés: 1-800-547-3506; coreano:
+    1-844-660-0877; mandarín: 1-866-303-0706; tagalo: 1-866-395-1513; vietnamita: 1-800-547-2058; otros idiomas:
+    1-800-300-5616; TTY: 1-800-815-9387; California Relay Service: 711 (dar el número 1-800-300-5616)'
+  hours: Lunes a viernes, 8 a. m. a 5 p. m. (hora del Pacífico), menos días festivos del estado
+- name: Línea automática de autoservicio de desempleo, EDD
+  phones: 1-866-333-4606 (inglés y español)
+  hours: 24 horas, los 7 días
+steps:
+- n: '1'
+  actor: Tú
+  action: Junta tus datos antes de llamar (los de la lista de requisitos).
+  cites:
+  - source: edd-paso-1
+    pinpoint: Step 1
+- n: '2'
+  actor: Tú
+  action: 'Llama a Servicio al Cliente de Desempleo de lunes a viernes, de 8 a. m. a 5 p. m. (hora del Pacífico): en
+    inglés y español al 1-800-300-5616, o a la línea de tu idioma. Si tu idioma no tiene línea propia, llama al
+    1-800-300-5616 y pide un intérprete, que es gratis. Con TTY, al 1-800-815-9387, o por el 711 dando el número
+    1-800-300-5616.'
+  cites:
+  - source: edd-paso-2
+    pinpoint: Apply by Phone
+    quote: Call Monday through Friday from 8 a.m. to 5 p.m. Pacific time
+  - source: edd-contacto
+    pinpoint: Unemployment Customer Service
+  - source: edd-de2321
+    pinpoint: Step 2, Interpreter Services
+- n: '3'
+  actor: EDD
+  action: 'Dentro de dos semanas te manda por correo los documentos de tu reclamo, entre ellos el aviso con tu Número de
+    Cliente del EDD (EDD Customer Account Number, formulario DE 5614). Ese número sirve para registrarte en UI Online
+    y puedes darlo en lugar de tu número de Seguro Social cuando hables con el EDD. Si pediste por teléfono o en papel,
+    o si el EDD no pudo confirmar tu identidad, también te manda una solicitud para comprobarla (DE 1326C).'
+  cites:
+  - source: edd-de2321
+    pinpoint: Step 3, Review Benefit Documents
+    quote: Your EDDCAN may be used instead of your Social Security number when speaking with the EDD
+- n: '4'
+  actor: Tú
+  action: Revisa esos documentos. Si algo está mal (por ejemplo faltan sueldos o un empleador), sigue las instrucciones
+    de cada aviso.
+  cites:
+  - source: edd-de2321
+    pinpoint: Step 3, Important
+- n: '5'
+  actor: Tú
+  action: 'Certifica cada dos semanas cuando el EDD te avise: en myEDD (lo más rápido), por teléfono en la línea
+    automática EDD Tele-Cert al 1-866-333-4606, o por correo con el formulario DE 4581.'
+  cites:
+  - source: edd-paso-5
+    pinpoint: Certify by Phone (Slower)
+    quote: Call the Unemployment Automated Self-Service Line at 1-866-333-4606.
+- n: '6'
+  actor: Tú
+  action: 'Para preguntar por tu reclamo: llama a Servicio al Cliente al 1-800-300-5616 en el mismo horario, o usa la
+    línea automática 1-866-333-4606 (24 horas) para saber de tu último pago. En myEDD también puedes hacer preguntas y
+    chatear con un agente de lunes a viernes, de 9 a. m. a 2 p. m. Si perdiste tu Número de Cliente del EDD, llama al
+    1-800-300-5616.'
+  cites:
+  - source: edd-contacto
+    pinpoint: Unemployment Insurance
+    quote: You can also ask questions about your claim and chat with a live agent.
+  - source: edd-faq
+    pinpoint: How do I see my payment history?
+  - source: edd-ui-online
+    pinpoint: Register for UI Online, Important
+    quote: If you have lost your EDD Customer Account Number, call us at 1-800-300-5616
+  next:
+  - to: fin
+scenarios:
+- name: Por internet, en myEDD (UI Online)
+  notes: Es la forma más rápida según el EDD. Primero creas una cuenta de myEDD y luego entras a UI Online para pedir el
+    seguro. Para registrarte en UI Online te piden nombre y apellido como aparecen en tu reclamo, fecha de nacimiento,
+    número de Seguro Social y tu Número de Cliente del EDD. Al pedirlo por internet, el EDD te manda a ID.me para
+    comprobar tu identidad con una selfie y una foto de tu identificación. Fuentes edd-paso-2, edd-ui-online y edd-faq.
+  requirements:
+  - text: Ser mayor de 18 años
+    cites:
+    - source: edd-ui-online
+      pinpoint: Create a myEDD Account, Note
+  - text: Nombre y apellido como aparecen en tu reclamo, fecha de nacimiento, número de Seguro Social y Número de
+      Cliente del EDD (para registrarte en UI Online, si no te registraron automáticamente)
+    cites:
+    - source: edd-ui-online
+      pinpoint: Register for UI Online
+- name: Por fax o correo
+  notes: Con la solicitud en papel DE 1101I, en inglés o español, siguiendo las instrucciones que trae. Un America’s Job
+    Center of California te puede ayudar a llenarla sin costo. Fuente edd-paso-2.
+  requirements:
+  - text: Solicitud de seguro de desempleo DE 1101I
+    form_url: https://edd.ca.gov/siteassets/files/pdf_pub_ctr/1101i/de1101ids.pdf
+    cites:
+    - source: edd-paso-2
+      pinpoint: Apply by Fax or Mail
+related:
+- us-ca-cdss-solicitar-audiencia-estatal-por-telefono
+sources:
+  edd-desempleo:
+    type: portal_oficial
+    official: true
+    title: Unemployment Benefits
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/
+    accessed: '2026-11-19'
+  edd-paso-1:
+    type: portal_oficial
+    official: true
+    title: 'Step 1: Get Your Information in Order'
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order/
+    accessed: '2026-11-19'
+  edd-paso-2:
+    type: portal_oficial
+    official: true
+    title: 'Step 2: Apply'
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/step-2-apply/
+    accessed: '2026-11-19'
+  edd-paso-5:
+    type: portal_oficial
+    official: true
+    title: 'Step 5: Certify for Benefits'
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/step-5-certify-for-benefits/
+    accessed: '2026-11-19'
+  edd-contacto:
+    type: portal_oficial
+    official: true
+    title: Contact Us
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/about_edd/contact_edd/
+    accessed: '2026-11-19'
+  edd-ui-online:
+    type: portal_oficial
+    official: true
+    title: Apply and Manage Your Claim with UI Online
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/ui_online/
+    accessed: '2026-11-19'
+  edd-faq:
+    type: portal_oficial
+    official: true
+    title: FAQs – Unemployment Insurance
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/FAQs/
+    accessed: '2026-11-19'
+  edd-apelaciones:
+    type: portal_oficial
+    official: true
+    title: Unemployment Insurance Appeals
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/en/unemployment/appeals/
+    accessed: '2026-11-19'
+  edd-de2321:
+    type: portal_oficial
+    official: true
+    title: How to Apply for Unemployment (DE 2321)
+    publisher: Employment Development Department (EDD), California
+    url: https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de2321.pdf
+    version_date: DE 2321 Rev. 2 (8-24)
+    accessed: '2026-11-19'
+status: borrador
+last_checked: '2026-11-19'
+checked_by: Claude (Compartido)
+notes: No hay reportes de llamadas al EDD; todo lo de esta ficha viene de páginas del EDD. La guía DE 2321 dice que el
+  reclamo empieza el domingo de la semana en que lo pides; ninguna página abierta pone otro plazo para pedirlo. La
+  apelación se manda por escrito a la dirección que trae tu aviso; si el EDD no cambia su decisión, la pasa a la Oficina
+  de Apelaciones de la Junta de Apelaciones del Seguro de Desempleo de California (CUIAB), según la página de apelaciones
+  del EDD.
