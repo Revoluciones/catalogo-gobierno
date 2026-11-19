@@ -11,7 +11,9 @@ dias-habiles: Días de trabajo de la oficina; no cuentan sábados, domingos ni d
 dictamen: La opinión por escrito de una comisión sobre una propuesta de ley; recomienda aprobarla, cambiarla o rechazarla.
 dof: Diario Oficial de la Federación, el periódico del gobierno donde se publican las leyes. Una ley no vale hasta que sale ahí.
 entidad-fiscalizada: La dependencia, gobierno u organismo cuyo gasto se está revisando.
+expediente-electronico: La copia digital de todo lo que hay en un juicio (escritos, pruebas y acuerdos del juez), que se puede ver por internet con permiso del juzgado.
 falta-administrativa: Cuando un servidor público no cumple sus obligaciones de trabajo, por ejemplo usar mal dinero público o pedir dinero por un trámite. Se sanciona con multas, suspensión o despido, no con cárcel.
+firec: Firma Electrónica Certificada del Poder Judicial de Baja California. Es la firma digital que el Poder Judicial te da para usar su Tribunal Electrónico; no es la e.firma del SAT.
 fiscalizar: Revisar en qué se gastó el dinero público y si se gastó como dice la ley.
 homoclave: La clave única de un trámite en el registro oficial (por ejemplo BC-SGG-010). Sirve para citarlo sin confusión.
 iniciativa: Una propuesta de ley o de cambio a una ley, presentada por escrito.
@@ -25,5 +27,6 @@ presupuesto-de-egresos: El plan anual que dice en qué se va a gastar el dinero 
 recurso-de-inconformidad: El escrito con el que quien denunció pide que se revise la decisión de considerar una falta como no grave, o de no sancionar.
 registro-civil: La oficina que registra nacimientos, matrimonios, divorcios y defunciones y entrega sus actas.
 servidor-publico: Cualquier persona que trabaja para el gobierno, desde una ventanilla hasta un secretario de Estado.
+surtir-efectos: El momento desde el que un acuerdo del juez empieza a valer. Depende de cuándo y cómo se notificó; no siempre es el mismo día en que se dictó.
 veto: Cuando el Ejecutivo regresa una ley al Congreso con objeciones en lugar de publicarla.
 votacion-nominal: Votación en la que se registra el nombre de cada persona y cómo votó.
