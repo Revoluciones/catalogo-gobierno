@@ -1,0 +1,271 @@
+id: us-ca-cdss-solicitar-audiencia-estatal-por-telefono
+country: US
+jurisdiction: US-CA
+level: estatal
+branch: ejecutivo
+kind: tramite
+category: salud
+title: Pedir por teléfono una audiencia estatal (apelación) por una decisión de Medi-Cal en California
+summary: Si no estás de acuerdo con lo que decidió el condado o el Departamento de Servicios de Salud de California
+  (DHCS) sobre tu Medi-Cal, incluido Medi-Cal Dental, puedes pedir una audiencia estatal. Se pide llamando gratis a la
+  División de Audiencias Estatales, por internet o por escrito, y en general tienes 90 días desde el aviso.
+authority:
+  name: Departamento de Servicios Sociales de California (CDSS)
+  unit: División de Audiencias Estatales (State Hearings Division)
+  url: https://www.cdss.ca.gov/inforesources/state-hearings
+other_authorities:
+- name: Departamento de Servicios de Salud de California (DHCS)
+  unit: Medi-Cal y Medi-Cal Dental
+who_can:
+- La persona que necesita la audiencia
+- Un representante autorizado que esa persona nombre (por escrito, con el formulario DPA 19)
+- Un familiar, amigo, abogado u otra persona puede ayudar con la audiencia, si aceptó hacerlo
+when: Recibiste un aviso (Notice of Action) que niega, baja o corta tu Medi-Cal o un servicio de Medi-Cal, como
+  Medi-Cal Dental, o entregaste una solicitud y el condado no hizo nada, y no estás de acuerdo.
+result: Una audiencia con un juez administrativo del CDSS, que revisa la decisión y luego emite una resolución.
+requirements:
+- text: Tu nombre completo, dirección y teléfono
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+    quote: Please provide all requested information such as your full name, address, telephone number
+- text: Fecha de nacimiento de la persona que necesita la audiencia
+  cites:
+  - source: na-back-9
+    pinpoint: Hearing Request, punto 3
+    quote: 'Print name of person who needs a hearing: ... Birthdate'
+- text: El programa (por ejemplo Medi-Cal o Medi-Cal Dental) y el condado o la agencia que tomó la decisión
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+    quote: the name of the county that took the action against you, the aid program(s) involved
+  - source: na-back-9
+    pinpoint: Hearing Request, punto 1
+- text: Por qué quieres la audiencia, explicado con detalle
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+    quote: a detailed reason why you want a hearing
+- text: Si necesitas intérprete, tu idioma (y variante); el intérprete es gratis
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+    quote: be sure to tell us your language (and dialect)
+  - source: na-back-9
+    pinpoint: Hearing Request, punto 6
+    quote: I want a free interpreter for the
+- text: Si nombraste un representante autorizado, su nombre y dirección
+  form_url: https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/DPA19.pdf
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+    quote: If you have chosen an authorized representative, be sure to tell us his/her name and address.
+  - source: dpa-19
+    pinpoint: Página 2
+deadlines:
+- what: para_presentar
+  text: 90 días desde el día siguiente a la fecha del aviso. Si pides la audiencia después, tienes que demostrar que
+    tuviste un buen motivo para pedirla tarde.
+  cites:
+  - source: na-back-9
+    pinpoint: Your Hearing Rights
+    quote: You have 90 days to do so, starting the day after the date of the notice.
+  - source: cdss-solicitudes
+    pinpoint: State Hearing Requests
+- what: para_presentar
+  text: Si la decisión fue de tu plan de Medi-Cal (managed care), primero se apela con el plan, en 60 días. Si el plan
+    no lo resuelve, tienes 120 días desde la respuesta del plan (Notice of Appeal Resolution) para pedir la audiencia
+    estatal. También puedes pedirla si el plan no te contestó en 30 días.
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: State Hearing Requests, segundo párrafo
+    quote: you have 120 calendar days from the date of the plan’s Notice of Appeal Resolution to request a state hearing
+- what: para_presentar
+  text: 'Temporal, desde el 1 de abril de 2023 y hasta nuevo aviso: si el aviso es por la renovación de tu Medi-Cal (te
+    lo cortan, te lo reducen o sube lo que te toca pagar), tienes 120 días desde que se envió el aviso. No aplica a
+    solicitudes nuevas ni a pedidos de un tratamiento o servicio.'
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: State Hearing Requests, nota sobre redeterminaciones
+    quote: to 120 days from the date the notice of action is mailed
+- what: otro
+  text: Si ya recibes Medi-Cal y pides la audiencia antes de la fecha del cambio, tus beneficios siguen igual mientras
+    se decide.
+  cites:
+  - source: na-back-9
+    pinpoint: Your Hearing Rights
+    quote: If you ask for a hearing before the date of the change, your benefits will continue unchanged.
+  - source: dpa-19
+    pinpoint: Página 2
+    quote: your assistance will continue in the same amount if your hearing request was filed before the effective
+      date of the proposed action
+channels:
+- telefono
+- en_linea
+- correo
+offices:
+- name: División de Audiencias Estatales, CDSS
+  municipality: Sacramento, California
+  address: PO Box 944243, MS 21-37, Sacramento, CA 94244-2430
+  phones: Gratis (800) 743-8525 o (855) 795-0634; TDD (800) 952-8349; fax (833) 281-0905
+steps:
+- n: '1'
+  actor: Tú
+  action: Llama gratis a la División de Audiencias Estatales al (800) 743-8525. Si usas TDD, el número es
+    (800) 952-8349.
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing or an Expedited Hearing by Phone
+    quote: Call the State Hearings Division toll free (800) 743-8525
+  - source: na-back-9
+    pinpoint: Your Hearing Rights
+    quote: Call toll free (800) 743-8525 (or TDD (800) 952-8349)
+  - source: cdss-audiencias
+    pinpoint: Contact Us
+    quote: 'Toll Free: (800) 743-8525 or (855) 795-0634'
+  practice:
+  - text: 'El menú está en inglés y al principio dice que con el 9 sigue en español. Luego menciona que se puede apelar
+      en acms.dss.ca.gov y ofrece: 1, apelar por CalFresh o CalWORKs nada más; 2, apelar por Medi-Cal, Covered
+      California, IHSS u otro programa; 3, posponer una audiencia ya programada; 4, saber cómo va una apelación o
+      retirarla; 5, información general sobre la apelación; otra opción para reportar fallas del sitio ACMS; y 9 para
+      hablar con una persona. El 9 se anuncia dos veces, para español y para hablar con una persona.'
+    evidence_level: un_reporte
+    observed: 2026-11-19, llamada a la línea 1-800-743-8525
+    cites:
+    - source: llamadas-asistente
+- n: '2'
+  actor: Tú
+  action: Di que quieres una audiencia estatal por una decisión de Medi-Cal y da tus datos, el programa, el condado o la
+    agencia que decidió y por qué no estás de acuerdo. Si necesitas intérprete o ya nombraste un representante, dilo.
+    Si es urgente, pide una audiencia acelerada.
+  cites:
+  - source: cdss-solicitudes
+    pinpoint: How to Request a Hearing in Writing
+  - source: pub-13
+    pinpoint: Expedited hearings
+    quote: For Medi-Cal, this is when regular hearing scheduling could seriously jeopardize the enrollee’s life or
+      physical or mental health.
+  practice:
+  - text: 'Pidieron: nombre completo y fecha de nacimiento de la persona que necesita la audiencia; su número de Seguro
+      Social o su número de Medi-Cal; si es menor de edad, también la fecha de nacimiento y el número de Seguro Social o
+      de Medi-Cal de la mamá o el papá; y dirección y teléfono. Un agente dijo que casi siempre piden número de Seguro
+      Social, nombre, fecha de nacimiento, dirección y teléfono.'
+    evidence_level: un_reporte
+    observed: 2026-11-19, llamada a la línea 1-800-743-8525
+    cites:
+    - source: llamadas-asistente
+  - text: No aceptaron la solicitud de un asistente que llamaba por la familia. Pidieron que estuviera en la línea la
+      persona que pide la audiencia (en el caso de un menor, su mamá o papá) o el representante autorizado nombrado, y
+      dijeron que esa persona puede volver a llamar.
+    evidence_level: un_reporte
+    observed: 2026-11-19, llamada a la línea 1-800-743-8525
+    cites:
+    - source: llamadas-asistente
+- n: '3'
+  actor: Tú
+  action: Si quieres que otra persona te represente, llena el formulario DPA 19 y mándalo a la División de Audiencias
+    Estatales antes de la audiencia, o que tu representante lo lleve ese día.
+  cites:
+  - source: dpa-19
+    pinpoint: Página 2
+    quote: If you want to authorize someone to represent you at the hearing, complete this form and send it to the
+      State Hearings Division.
+  - source: pub-412
+    pinpoint: State Hearing Information
+- n: '4'
+  actor: Tú
+  action: Para ver tus documentos por internet, crea una cuenta en acms.dss.ca.gov. Si te mudas, avisa tu nueva dirección
+    llamando al (800) 743-8525. Si necesitas posponer la audiencia, llama antes de la fecha y da un buen motivo.
+  cites:
+  - source: na-back-9
+    pinpoint: Your Hearing Rights
+    quote: Click “Create an account” to have an ACMS account and get documents online
+  - source: pub-412
+    pinpoint: State Hearing Information; Postponements
+    quote: you must notify the SHD of your new address by calling toll free 1-800-743-8525
+  practice:
+  - text: En el menú de la línea, la opción 4 es para saber cómo va una apelación o para retirarla, y la 3 para
+      posponer una audiencia programada.
+    evidence_level: un_reporte
+    observed: 2026-11-19, llamada a la línea 1-800-743-8525
+    cites:
+    - source: llamadas-asistente
+- n: '5'
+  actor: División de Audiencias Estatales
+  action: Programa la audiencia, que en general es por teléfono, con un juez administrativo y alguien del condado. Si
+    pediste intérprete antes, estará ahí sin costo para ti.
+  cites:
+  - source: na-back-9
+    pinpoint: Hearing Request, punto 8
+    quote: Your Hearing will be scheduled by phone.
+  - source: pub-412
+    pinpoint: State Hearing Information
+    quote: an interpreter will be present at your hearing at no cost to you
+  next:
+  - to: fin
+scenarios:
+- name: Otras formas de pedir la misma audiencia
+  notes: 'Además del teléfono: por internet en acms.dss.ca.gov, con o sin cuenta; por fax al (833) 281-0905; por correo
+    electrónico a SHDCSU@dss.ca.gov; o por correo postal a CDSS State Hearings Division, PO Box 944243, MS 21-37,
+    Sacramento CA 94244-2430. Por escrito puedes usar la hoja «Request for State Hearing» que viene atrás del aviso o
+    una hoja aparte. Fuentes: na-back-9 (Your Hearing Rights), pub-13 y cdss-solicitudes.'
+sources:
+  cdss-solicitudes:
+    type: portal_oficial
+    official: true
+    title: State Hearing Requests (cómo pedir una audiencia)
+    publisher: California Department of Social Services, State Hearings Division
+    url: https://www.cdss.ca.gov/hearing-requests
+    accessed: '2026-11-19'
+  cdss-audiencias:
+    type: portal_oficial
+    official: true
+    title: State Hearings (página de la División de Audiencias Estatales)
+    publisher: California Department of Social Services
+    url: https://www.cdss.ca.gov/inforesources/state-hearings
+    accessed: '2026-11-19'
+  na-back-9:
+    type: portal_oficial
+    official: true
+    title: 'NA Back 9: Your Hearing Rights / Hearing Request (hoja atrás del aviso)'
+    publisher: California Department of Social Services
+    url: https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/NABack9.pdf
+    version_date: 5/22
+    accessed: '2026-11-19'
+  dpa-19:
+    type: portal_oficial
+    official: true
+    title: 'DPA 19: Appointment of Authorized Representative'
+    publisher: California Department of Social Services
+    url: https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/A-D/DPA19.pdf
+    version_date: 6/22
+    accessed: '2026-11-19'
+  pub-412:
+    type: portal_oficial
+    official: true
+    title: 'PUB 412: State Hearing Information / Información sobre las audiencias con el Estado'
+    publisher: California Department of Social Services
+    url: https://www.cdss.ca.gov/cdssweb/entres/forms/English/PUB412_letter.pdf
+    version_date: 8/13
+    accessed: '2026-11-19'
+  pub-13:
+    type: portal_oficial
+    official: true
+    title: 'PUB 13: Your Rights (derechos en los programas de asistencia, con la sección de audiencias)'
+    publisher: California Department of Social Services
+    url: https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2020/M-P/PUB13.pdf
+    version_date: 5/22
+    accessed: '2026-11-19'
+  llamadas-asistente:
+    type: reportes_ciudadanos
+    official: false
+    title: Llamadas de un asistente a la línea de Audiencias Estatales, noviembre 2026
+    publisher: Revoluciones (reporte interno)
+status: borrador
+last_checked: '2026-11-19'
+checked_by: Claude (Compartido)
+notes: La página de solicitudes de CDSS lista Medi-Cal Dental entre los programas que se pueden apelar («Medi-Cal
+  Benefits (Medical, Dental, ...)»). Las direcciones postales no coinciden entre documentos de CDSS (MS 21-37 en la
+  página de la División, NA Back 9 y PUB 13; Mail Station 9-17-442 en la página de solicitudes; M.S. 9-17-37 en el DPA
+  19); aquí se usa la de la hoja NA Back 9. No se encontró en fuentes oficiales abiertas el horario de la línea. Las
+  páginas de DHCS y del Código de Bienestar e Instituciones no se pudieron abrir para esta versión.
