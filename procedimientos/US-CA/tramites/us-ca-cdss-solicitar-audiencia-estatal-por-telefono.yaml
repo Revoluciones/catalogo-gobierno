@@ -9,22 +9,6 @@ title: Pedir por teléfono una audiencia estatal (apelación) por una decisión 
 summary: Si no estás de acuerdo con lo que decidió el condado o el Departamento de Servicios de Salud de California
   (DHCS) sobre tu Medi-Cal, incluido Medi-Cal Dental, puedes pedir una audiencia estatal. Se pide llamando gratis a la
   División de Audiencias Estatales, por internet o por escrito, y en general tienes 90 días desde el aviso.
-goal:
-  id: apelar-decision-medi-cal
-  title: Apelar una decisión de Medi-Cal en California
-route:
-  name: Por teléfono, con la División de Audiencias Estatales
-  availability: siempre
-  pros:
-  - text: Se pide con una llamada gratuita.
-    cites:
-    - source: cdss-solicitudes
-      pinpoint: How to Request a Hearing or an Expedited Hearing by Phone
-      quote: Call the State Hearings Division toll free (800) 743-8525
-  - text: Por la misma línea se puede pedir una audiencia rápida (acelerada) si el caso es urgente.
-    cites:
-    - source: cdss-solicitudes
-      pinpoint: How to Request a Hearing or an Expedited Hearing by Phone
 authority:
   name: Departamento de Servicios Sociales de California (CDSS)
   unit: División de Audiencias Estatales (State Hearings Division)

@@ -9,37 +9,6 @@ title: Pedir por teléfono el seguro de desempleo en California (EDD) y pregunta
 summary: Si perdiste tu trabajo o te bajaron las horas sin que fuera tu culpa, puedes pedir el seguro de desempleo al
   Departamento de Desarrollo del Empleo de California (EDD). Se puede pedir por teléfono, de lunes a viernes de 8 a 5
   (hora del Pacífico), aunque la forma más rápida es por internet, en myEDD.
-goal:
-  id: seguro-de-desempleo-california
-  title: Recibir el seguro de desempleo en California
-route:
-  name: Por teléfono, con Servicio al Cliente de Desempleo del EDD
-  availability: siempre
-  availability_text: De lunes a viernes, de 8 a. m. a 5 p. m. (hora del Pacífico), menos días festivos del estado.
-  pros:
-  - text: Hay líneas en inglés y español y en otros idiomas, y el servicio de intérprete es gratis.
-    cites:
-    - source: edd-contacto
-      pinpoint: Unemployment Insurance, Unemployment Customer Service
-      quote: Interpreter services are available free of charge.
-  - text: Si eres menor de 18 años, no puedes pedirlo por internet, pero sí por teléfono, fax o correo.
-    cites:
-    - source: edd-ui-online
-      pinpoint: Create a myEDD Account, Note
-      quote: To apply for benefits online, you must be at least 18 years old. If you are underage, you can apply by
-        phone, fax, or mail.
-  cons:
-  - text: El EDD dice que por teléfono se puede, pero que por internet es más rápido.
-    cites:
-    - source: edd-paso-2
-      pinpoint: Apply by Phone
-      quote: You can apply by phone, but it's faster to apply online.
-  - text: Los lunes y martes antes de las 10 de la mañana son las horas con más llamadas; el EDD recomienda llamar en
-      otro momento.
-    cites:
-    - source: edd-contacto
-      pinpoint: Unemployment Customer Service, Note
-      quote: Monday and Tuesday mornings before 10 a.m. are our busiest call times
 authority:
   name: Departamento de Desarrollo del Empleo de California (EDD)
   unit: Seguro de Desempleo (Unemployment Insurance)
