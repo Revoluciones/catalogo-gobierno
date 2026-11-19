@@ -1,0 +1,210 @@
+id: mx-bcn-pjbc-acceso-al-expediente-electronico-como-parte
+country: MX
+jurisdiction: MX-BCN
+level: estatal
+branch: judicial
+kind: tramite
+category: justicia
+title: Pedir acceso a tu expediente en línea cuando eres parte en un juicio (Tribunal Electrónico de Baja California)
+summary: >-
+  Si eres parte en un juicio en un juzgado de Baja California, puedes pedir ver tu expediente por internet,
+  igual que tu abogado. Necesitas tres cosas: una cuenta en el Tribunal Electrónico, la firma electrónica del
+  Poder Judicial (FIREC) vigente y un escrito en cada juicio donde pides el acceso con tu nombre de usuario.
+  El acceso empieza cuando el juez lo acuerda y ese acuerdo surte efectos.
+authority:
+  name: Poder Judicial del Estado de Baja California
+  unit: Juzgado donde está tu juicio (quien autoriza el acceso)
+  url: https://tribunalelectronico.pjbc.gob.mx/
+other_authorities:
+  - name: Consejo de la Judicatura del Estado de Baja California
+    unit: Unidad que emite la Firma Electrónica Certificada (FIREC)
+who_can:
+  - Las partes del juicio, por sí mismas o por su representante
+  - Personas autorizadas en el juicio, si la ley procesal les da esa facultad
+result: >-
+  El juez te autoriza a consultar el expediente electrónico desde tu propio dispositivo. Solo ver; recibir
+  notificaciones electrónicas hay que pedirlo aparte y de forma expresa.
+channels:
+  - presencial
+  - en_linea
+cost:
+  type: desconocido
+  text: Ninguna de las fuentes revisadas publica un costo para la FIREC ni para la solicitud de acceso.
+deadlines:
+  - what: vigencia
+    text: >-
+      La FIREC dura 3 años desde que se autoriza. Se renueva dentro de los 30 días antes de que venza; si no,
+      caduca y hay que pedir una nueva. Sin FIREC vigente no puedes consultar el expediente.
+    cites:
+      - source: ag-02-2015
+        pinpoint: art. 4, incisos b) y h)
+      - source: ag-09-2024
+        pinpoint: art. 24
+legal_basis:
+  - source: ag-09-2024
+    pinpoint: Lineamientos, arts. 11 a 13 y 21 a 29
+  - source: ag-02-2015
+    pinpoint: arts. 4 a 6
+  - source: reglamento-firec-2016
+    pinpoint: arts. 14, 16 y 22
+requirements:
+  - text: Cuenta (nombre de usuario y contraseña) en el Tribunal Electrónico, a tu nombre. Nadie puede registrarse a nombre de otra persona.
+    cites:
+      - source: ag-09-2024
+        pinpoint: art. 23
+  - text: Firma Electrónica Certificada emitida o reconocida por el Poder Judicial de Baja California (FIREC), vigente y vinculada a tu cuenta. No es la e.firma del SAT.
+    cites:
+      - source: ag-09-2024
+        pinpoint: arts. 23 y 24
+  - text: >-
+      Para registrarte, la norma pide nombre, correo, comprobante de domicilio, CURP, identificación oficial y
+      cédula profesional.
+    cites:
+      - source: ag-09-2024
+        pinpoint: art. 23, fracción I
+  - text: Escrito de solicitud en cada juicio, con tu nombre de usuario (y el de la persona a quien autorizas, si pides acceso para alguien más).
+    cites:
+      - source: ag-09-2024
+        pinpoint: art. 25
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Haces tu registro en el Tribunal Electrónico: das tus datos, eliges nombre de usuario y contraseña, y
+      vinculas tu FIREC. El registro es personal.
+    cites:
+      - source: ag-09-2024
+        pinpoint: art. 23
+    practice:
+      - text: >-
+          El registro empieza con un pre-registro en línea; después te presentas con una memoria USB y, en
+          original y copia, INE, CURP, cédula profesional, comprobante de domicilio y la solicitud de registro
+          impresa que te llega por correo.
+        evidence_level: periodismo_o_investigacion
+        observed: Nota del 18 de marzo de 2026.
+        cites:
+          - source: portavoz-2026
+      - text: >-
+          La lista de requisitos incluye la cédula profesional, que solo tienen los abogados. Las fuentes
+          revisadas no dicen cómo se registra una parte que no es abogada. El aviso de privacidad del sistema
+          dice que los datos sirven para acreditar la autorización como profesionista del derecho.
+        evidence_level: documento_oficial
+        cites:
+          - source: ag-09-2024
+            pinpoint: art. 23
+          - source: aviso-privacidad-te
+  - n: '2'
+    actor: Tú y el Poder Judicial
+    action: >-
+      Obtienes la FIREC. Se pide por el portal o en persona en los módulos del Consejo de la Judicatura, con
+      identificación oficial, acta de nacimiento certificada, comprobante de domicilio y el formato de
+      solicitud; revisan los originales en persona. Firmas un documento donde te haces responsable de su uso.
+      Solo se da a personas físicas.
+    cites:
+      - source: ag-02-2015
+        pinpoint: art. 4, incisos a), c), d), e) y f)
+      - source: reglamento-firec-2016
+        pinpoint: art. 22
+    practice:
+      - text: >-
+          En octubre de 2025 el Poder Judicial pidió a todas las personas usuarias, incluidas las partes
+          procesales, renovar la FIREC en el portal del Tribunal Electrónico entre el 13 y el 28 de octubre,
+          porque renovó su autoridad certificadora raíz.
+        evidence_level: periodismo_o_investigacion
+        observed: Nota del 12 de octubre de 2025.
+        cites:
+          - source: bctneus-2025
+  - n: '3'
+    actor: Tú
+    action: >-
+      Presentas en el juzgado un escrito en el que pides, para ti, acceso al expediente electrónico de tu
+      juicio, y das tu nombre de usuario. Puede ser en papel en la oficialía de partes o en línea. Un mismo
+      escrito puede pedir acceso a uno o varios expedientes de ese juzgado. Si también quieres recibir
+      notificaciones en el sistema, pídelo de forma expresa.
+    cites:
+      - source: ag-09-2024
+        pinpoint: arts. 12, 25, 26 y 29
+  - n: '4'
+    actor: Titular del juzgado
+    action: >-
+      Revisa que seas parte con capacidad para actuar y que tu FIREC esté vigente, y dicta un acuerdo que
+      concede o niega el acceso.
+    cites:
+      - source: ag-09-2024
+        pinpoint: art. 27
+    next:
+      - to: '5'
+        when: Concede el acceso
+      - to: '3'
+        when: Lo niega o te pide corregir algo
+  - n: '5'
+    actor: Tú
+    action: >-
+      Entras con tu usuario y contraseña. El acceso funciona desde que surte efectos el acuerdo que lo
+      concedió; entonces ves la lista de expedientes donde te autorizaron.
+    cites:
+      - source: ag-09-2024
+        pinpoint: arts. 24 y 28
+    next:
+      - to: fin
+glossary:
+  - expediente-electronico
+  - firec
+  - surtir-efectos
+  - dias-habiles
+notes: >-
+  Los Lineamientos del Acuerdo 09/2024 se escribieron para los juzgados "cero papel" (primero el Tercero Civil
+  y el Cuarto Mercantil de Ensenada desde el 30 de septiembre de 2024); los demás juzgados del estado trabajan
+  de forma híbrida. Falta confirmar si en un juzgado híbrido aplica el mismo escrito. No se encontró ninguna
+  guía oficial ni testimonio público de una parte que no sea abogada y haya logrado el acceso.
+sources:
+  ag-09-2024:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: Acuerdo General 09/2024 del Pleno del Consejo de la Judicatura del Estado de Baja California (Juzgados Cero Papel y Lineamientos)
+    publisher: Consejo de la Judicatura del Estado de Baja California, Boletín Judicial núm. 14,859
+    url: https://transparencia.pjbc.gob.mx/documentos/pdfs/acuerdos/AcuerdoGeneral202409.pdf
+    version_date: '2024-09-27'
+    accessed: '2026-11-19'
+  ag-02-2015:
+    type: acuerdo_o_lineamiento
+    official: true
+    title: Acuerdo General 02/2015 del Consejo de la Judicatura (Firma Electrónica Certificada)
+    publisher: Consejo de la Judicatura del Estado de Baja California, Boletín Judicial núm. 12,933
+    url: https://transparencia.pjbc.gob.mx/documentos/pdfs/acuerdos/acuerdoCJ20151106.pdf
+    version_date: '2015-11-06'
+    accessed: '2026-11-19'
+  reglamento-firec-2016:
+    type: reglamento
+    official: true
+    title: Reglamento para el Uso del Expediente Electrónico y la Firma Electrónica Certificada del Poder Judicial del Estado de Baja California
+    publisher: Consejo de la Judicatura del Estado de Baja California (copia en el sitio de la SCJN)
+    url: https://www.scjn.gob.mx/sites/default/files/normativa/electronico/documentos/113967.pdf
+    version_date: '2016-03-18'
+    accessed: '2026-11-19'
+  aviso-privacidad-te:
+    type: portal_oficial
+    official: true
+    title: Aviso de privacidad integral del Tribunal Electrónico
+    publisher: Poder Judicial del Estado de Baja California
+    url: https://transparencia.pjbc.gob.mx/Documentos/pdfs/AvisoPrivacidad/apISGCA-Tribunal.pdf
+    version_date: '2026-01-30'
+    accessed: '2026-11-19'
+  portavoz-2026:
+    type: periodismo
+    official: false
+    title: La justicia digital fortalece al modelo de justicia oral civil y familiar
+    publisher: El Portavoz
+    url: https://elportavoznoticias.com.mx/la-justicia-digital-fortalece-al-modelo-de-justicia-oral-civil-y-familiar/
+    version_date: '2026-03-18'
+    accessed: '2026-11-19'
+  bctneus-2025:
+    type: periodismo
+    official: false
+    title: Poder Judicial BC renueva firma electrónica para validar sus documentos
+    publisher: BCTneus
+    url: https://bctneus.mx/Noticia/BC/29065/Poder-Judicial-BC-renueva-firma-electr%C3%B3nica-para-validar-sus-documentos
+    version_date: '2025-10-12'
+    accessed: '2026-11-19'
+status: borrador
+last_checked: '2026-11-19'
