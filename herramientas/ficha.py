@@ -306,6 +306,31 @@ def formatos_js(x):
     return defs + f'<script src="{sube}formatos/llenar.js" defer></script>'
 
 
+def reportes_publicados(pid):
+    """Cuenta, por paso, lo que dicen los reportes ya revisados y publicados en reportes/<id>/."""
+    por_paso, total = {}, 0
+    for f in sorted((R / "reportes" / pid).glob("*.yaml")):
+        r = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+        if (r.get("review") or {}).get("state") != "publicado":
+            continue
+        total += 1
+        for st in r.get("steps", []):
+            c = por_paso.setdefault(st["n"], {"igual": 0, "distinto": 0, "no_paso": 0, "extra": 0})
+            c[st["matched"]] = c.get(st["matched"], 0) + 1
+    return total, por_paso
+
+
+def conteo_reportes(c):
+    """«2 de 3 reportes: fue distinto», en palabras."""
+    n = sum(c.values())
+    dist = c.get("distinto", 0) + c.get("extra", 0)
+    if not n:
+        return ""
+    if dist:
+        return f"{dist} de {n} {'reporte dice' if n == 1 else 'reportes dicen'} que fue distinto"
+    return f"{n} {'reporte dice' if n == 1 else 'reportes dicen'} que fue igual"
+
+
 def pagina(d, x):
     chips, num = x["chips"], x["num"]
     lugar = LUGAR.get(d["jurisdiction"], d["jurisdiction"])
@@ -316,6 +341,14 @@ def pagina(d, x):
     )
 
     por_id = {o["id"]: o for o in d.get("offices", []) if o.get("id")}
+    n_rep, rep_paso = reportes_publicados(d["id"])
+    aristas = grafo(x["pasos"])[0] if x["pasos"] else []
+    guia = {
+        "id": d["id"], "titulo": d["title"], "revision": str(d["last_checked"]), "jurisdiccion": d["jurisdiction"],
+        "pasos": [{"n": p["n"], "accion": corta(p["action"], 90), "previos": [a_ for a_, b, _ in aristas if b == p["n"]]}
+                  for p in x["pasos"]],
+        "reportes": n_rep, "repo": REPO,
+    }
     detalles = {}
     for p in x["pasos"]:
         prac = "".join(
@@ -328,6 +361,11 @@ def pagina(d, x):
             boton += (f'<a class="boton boton--accion" href="{e(p["link"]["url"])}" target="_blank" rel="noopener">'
                       f'{e(p["link"]["label"])}</a>')
         boton += lugares([por_id[i] for i in p.get("offices", []) if i in por_id])
+        cuenta = conteo_reportes(rep_paso.get(p["n"], {}))
+        if cuenta:
+            boton += f'<p class="cuenta-rep">{e(cuenta)}</p>'
+        boton += (f'<div class="avance"><button type="button" class="ya" data-n="{e(p["n"])}" aria-pressed="false">Ya lo hice</button>'
+                  f'<button type="button" class="contar" data-n="{e(p["n"])}">¿Te pasó otra cosa?</button></div>')
         detalles[p["n"]] = {"boton": boton,
                             "resto": f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{prac}'}
 
@@ -398,6 +436,7 @@ def pagina(d, x):
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
         "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,
         "FORMATOS": formatos_js(x),
+        "GUIA": json.dumps(guia, ensure_ascii=False).replace("</", "<\\/"),
     }
     out = TPL
     for k, v in rep.items():
@@ -541,7 +580,7 @@ def pagina_meta(meta, base):
         f'</main>')
     out = re.sub(r"<main>.*?</main>", lambda m: principal, TPL, flags=re.S).replace('class="envoltura"', 'class="envoltura envoltura--ancha"')
     desc = f"Hay {len(rutas)} caminos: " + "; ".join(f"{r['nombre']} ({r['costo']})" for r in rutas) + "."
-    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"]), "FORMATOS": ""}.items():
+    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"]), "FORMATOS": "", "GUIA": "null"}.items():
         out = out.replace("{{" + k + "}}", v)
     out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
     return out, rutas, wa
