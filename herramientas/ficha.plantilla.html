@@ -386,6 +386,33 @@ dialog.misdatos--chico{width:min(460px,100% - 24px)}
 .misdatos-acciones{display:flex;flex-wrap:wrap;gap:8px}
 .misdatos button:focus-visible,.misdatos select:focus-visible,.misdatos input:focus-visible,.misdatos-barra :focus-visible{outline:3px solid var(--foco);outline-offset:2px}
 @media print{.llenado button,dialog.llenar{display:none}}
+/* Guía: «Ya lo hice», en qué paso vas y reportes de lo que pasó (script id=guia) */
+.tu-avance{margin:0 0 14px;padding:14px 16px;border-radius:14px;background:var(--papel-alto);border:2px solid var(--jade)}
+.tu-avance p{margin:0}
+.tu-avance .va{font:800 18px/1.25 var(--f-display)}
+.tu-avance .va small{display:block;margin-bottom:4px;font:700 12px/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--jade)}
+.tu-avance .falta{margin-top:6px;color:var(--tinta-suave);font-size:15px}
+.tu-avance .barra{height:8px;margin:10px 0 0;border-radius:99px;background:var(--linea);overflow:hidden}
+.tu-avance .barra i{display:block;height:100%;background:var(--jade);border-radius:99px}
+.tu-avance .acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tu-avance .boton{min-height:44px;padding:10px 16px;font-size:15px}
+.avance{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px}
+.avance button{min-height:40px;padding:6px 12px;border-radius:10px;border:1px solid var(--linea-fuerte);background:var(--papel);color:var(--tinta);font:700 14px/1 var(--f-texto);cursor:pointer}
+.avance .contar{border-color:transparent;background:none;color:var(--enlace);padding-inline:0}
+.avance .ya[aria-pressed=true]{background:var(--jade);border-color:var(--jade);color:var(--sobre-tinta)}
+.avance .ya[aria-pressed=true]::before{content:"✓ "}
+.nodo--hecho{opacity:.72}
+.nodo--hecho .cuerpo-nodo>p:first-of-type{text-decoration:line-through;text-decoration-color:var(--tinta-suave)}
+.nodo--ahora{box-shadow:0 0 0 4px var(--jade-suave);border-color:var(--jade)!important}
+.nodo--ahora .cuerpo-nodo>small::after{content:" · Aquí vas";color:var(--jade)}
+.contado{display:inline-block;margin-left:6px;font:700 12px/1 var(--f-texto);color:var(--jade)}
+.cuenta-rep{margin:8px 0 0;font-size:13px;color:var(--tinta-suave)}
+.contar-dlg textarea{width:100%;min-height:96px;padding:10px 12px;font:16px/1.4 var(--f-texto);border:1px solid var(--linea-fuerte);border-radius:10px;background:var(--papel-alto);color:var(--tinta)}
+.contar-dlg select,.contar-dlg input[type=number],.contar-dlg input[type=month]{width:100%;min-height:48px;padding:10px 12px;font:16px var(--f-texto);border:1px solid var(--linea-fuerte);border-radius:10px;background:var(--papel-alto);color:var(--tinta)}
+.contar-dlg .opcion{display:flex;margin-right:0}
+.contar-dlg .alerta{margin:8px 0 0;padding:10px 12px;border-radius:10px;background:var(--cemp-suave);color:var(--tinta);font-size:15px}
+.contar-dlg pre{white-space:pre-wrap;word-break:break-word;max-height:240px;overflow:auto;padding:10px;border-radius:10px;background:var(--papel-alto);border:1px solid var(--linea);font-size:13px}
+@media print{.tu-avance,.avance{display:none}.nodo--hecho{opacity:1}}
 </style>
 </head>
 <body>
@@ -420,6 +447,7 @@ dialog.misdatos--chico{width:min(460px,100% - 24px)}
     <div class="dos-col">
     <!--pasos--><section aria-labelledby="t-ruta">
       <h2 id="t-ruta">La ruta<small>Lo que dice la versión oficial. Donde en la práctica pasa otra cosa, va aparte.</small></h2>
+      <div class="tu-avance" id="tu-avance" hidden></div>
       {{MAPA}}
     </section><!--/pasos-->
 
@@ -512,6 +540,169 @@ addEventListener('beforeprint',function(){var f=document.getElementById('fuentes
 })();
 </script>
 {{FORMATOS}}
+<dialog class="llenar contar-dlg" id="dlg-paso" aria-labelledby="dlg-paso-t">
+  <div class="llenar-cabeza"><h2 id="dlg-paso-t">¿Cómo te fue en este paso?</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button></div>
+  <p class="llenar-nota" id="dlg-paso-accion"></p>
+  <form class="llenar-form" method="dialog">
+    <fieldset class="campo"><legend>¿Fue como dice la versión oficial?</legend>
+      <label class="opcion"><input type="radio" name="matched" value="igual"> Sí, fue igual</label>
+      <label class="opcion"><input type="radio" name="matched" value="distinto"> No, fue distinto</label>
+      <label class="opcion"><input type="radio" name="matched" value="extra"> Me pidieron algo que no está en la lista</label>
+      <label class="opcion"><input type="radio" name="matched" value="no_paso"> No lo hice o no me tocó</label>
+    </fieldset>
+    <div class="campo"><label for="rep-que">¿Qué pasó?</label>
+      <textarea id="rep-que" name="que" maxlength="600" placeholder="Por ejemplo: pidieron 2 copias de cada documento, no 1."></textarea>
+      <small>No escribas nombres, CURP, teléfonos ni direcciones. Cuenta qué pasó, no quién te atendió.</small>
+      <p class="alerta" id="rep-alerta" hidden></p></div>
+    <div class="campo"><label for="rep-espera">¿Cuánto esperaste? (opcional)</label>
+      <input type="text" id="rep-espera" name="espera" maxlength="60" placeholder="Por ejemplo: 2 horas, 3 semanas"></div>
+    <div class="campo"><label for="rep-pago">¿Cuánto pagaste en este paso? (opcional, en pesos)</label>
+      <input type="number" id="rep-pago" name="pago" min="0" step="1" inputmode="numeric"></div>
+    <div class="llenar-pie"><button class="boton boton--primario" type="submit" value="guardar">Guardar</button>
+      <span class="llenar-nota" style="margin:0">Se guarda solo en este teléfono hasta que mandes tu reporte.</span></div>
+  </form>
+</dialog>
+<dialog class="llenar contar-dlg" id="dlg-reporte" aria-labelledby="dlg-reporte-t">
+  <div class="llenar-cabeza"><h2 id="dlg-reporte-t">Tu reporte</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button></div>
+  <p class="llenar-nota">Lo revisamos antes de publicarlo, sin datos personales. Así la ficha dice cuántas personas vieron lo mismo.</p>
+  <form class="llenar-form" method="dialog">
+    <div class="campo"><label for="rep-resultado">¿Cómo terminó?</label>
+      <select id="rep-resultado" name="resultado">
+        <option value="sigo_esperando">Sigo en el trámite</option><option value="lo_obtuve">Lo obtuve</option>
+        <option value="me_lo_negaron">Me lo negaron</option><option value="lo_deje">Lo dejé</option></select></div>
+    <div class="campo"><label for="rep-inicio">¿Cuándo empezaste?</label><input type="month" id="rep-inicio" name="inicio"></div>
+    <div class="campo"><label for="rep-oficina">¿En qué oficina? (opcional)</label>
+      <input type="text" id="rep-oficina" name="oficina" maxlength="120" placeholder="Por ejemplo: Oficialía 02, Delegación La Mesa"></div>
+    <div class="campo"><label for="rep-visitas">¿Cuántas veces fuiste? (opcional)</label>
+      <input type="number" id="rep-visitas" name="visitas" min="0" step="1" inputmode="numeric"></div>
+    <details class="campo"><summary style="cursor:pointer;font-weight:700;color:var(--enlace);min-height:44px;display:flex;align-items:center">Ver el texto exacto que se manda</summary>
+    <pre id="rep-yaml"></pre></details>
+    <p class="alerta" id="rep-alerta2" hidden></p>
+    <div class="llenar-pie">
+      <a class="boton boton--primario" id="rep-mandar" target="_blank" rel="noopener">Mandar en GitHub</a>
+      <button class="boton" type="button" id="rep-copiar">Copiar</button>
+      <span class="llenar-nota" style="margin:0" id="rep-copiado" role="status"></span></div>
+  </form>
+</dialog>
+<script type="application/json" id="guia-datos">{{GUIA}}</script>
+<script id="guia">
+/* Guía paso a paso: qué ya hiciste, en qué paso vas y qué te falta llevar. Todo se guarda en este teléfono.
+   Lo que te pasó en cada paso se junta en un reporte con la forma de esquema/reporte.schema.json. */
+(function(){
+  var G; try{G=JSON.parse(document.getElementById("guia-datos").textContent);}catch(e){return;}
+  if(!G||!G.pasos||!G.pasos.length)return;
+  var clave="dentro-guia:"+G.id, st={hechos:{},pasos:{}};
+  try{var v=JSON.parse(localStorage.getItem(clave)||"null");if(v)st=v;}catch(e){}
+  st.hechos=st.hechos||{};st.pasos=st.pasos||{};
+  function guardar(){try{localStorage.setItem(clave,JSON.stringify(st));}catch(e){}}
+  var caja=document.getElementById("tu-avance");
+  function nodo(n){return document.querySelector('.mapa--vivo .nodo[data-n="'+CSS.escape(n)+'"]');}
+  function esc(t){var d=document.createElement("div");d.textContent=t;return d.innerHTML;}
+  function faltan(){return [].filter.call(document.querySelectorAll(".lleva input"),function(c){return !c.checked}).length;}
+  function pintar(){
+    var hechos=G.pasos.filter(function(p){return st.hechos[p.n]}).length;
+    var ahora=G.pasos.filter(function(p){return !st.hechos[p.n]&&p.previos.every(function(a){return st.hechos[a]})});
+    G.pasos.forEach(function(p){
+      var el=nodo(p.n); if(!el)return;
+      el.classList.toggle("nodo--hecho",!!st.hechos[p.n]);
+      el.classList.toggle("nodo--ahora",ahora.indexOf(p)>=0&&(hechos>0||Object.keys(st.pasos).length>0));
+      var b=el.querySelector(".ya"); if(b){b.setAttribute("aria-pressed",st.hechos[p.n]?"true":"false");b.textContent=st.hechos[p.n]?"Hecho":"Ya lo hice";}
+      var c=el.querySelector(".contar"); if(c)c.innerHTML=st.pasos[p.n]?'Cambiar lo que contaste <span class="contado">✓ guardado</span>':"¿Te pasó otra cosa?";
+    });
+    var empezado=hechos>0||Object.keys(st.pasos).length>0;
+    caja.hidden=!empezado; if(!empezado)return;
+    var f=faltan(), total=G.pasos.length, h="";
+    if(ahora.length){
+      h+='<p class="va"><small>Vas en el paso '+esc(ahora[0].n)+' · '+hechos+' de '+total+' hechos</small>'+esc(ahora[0].accion)+'</p>';
+      if(ahora.length>1)h+='<p class="falta">También puedes hacer ya: '+ahora.slice(1).map(function(p){return "paso "+esc(p.n)}).join(", ")+'.</p>';
+    }else{
+      h+='<p class="va"><small>'+total+' de '+total+' hechos</small>Terminaste la ruta.</p>';
+    }
+    if(f)h+='<p class="falta">Te '+(f==1?"falta 1 documento":"faltan "+f+" documentos")+' de la lista «Lleva esto».</p>';
+    h+='<div class="barra" aria-hidden="true"><i style="width:'+Math.round(100*hechos/total)+'%"></i></div><div class="acciones">';
+    if(ahora.length)h+='<button type="button" class="boton boton--primario" data-ir="'+esc(ahora[0].n)+'">Ir al paso '+esc(ahora[0].n)+'</button>';
+    h+='<button type="button" class="boton" data-reporte>'+(Object.keys(st.pasos).length?"Mandar mi reporte":"Contar cómo te fue")+'</button>';
+    h+='<button type="button" class="boton" data-borrar>Empezar de nuevo</button></div>';
+    caja.innerHTML=h;
+    if(window.dibujarFlechas)window.dibujarFlechas();
+  }
+  caja.addEventListener("click",function(ev){
+    var t=ev.target.closest("button"); if(!t)return;
+    if(t.dataset.ir){var el=nodo(t.dataset.ir);if(el){el.scrollIntoView({behavior:"smooth",block:"center"});}}
+    if(t.hasAttribute("data-reporte"))abrirReporte();
+    if(t.hasAttribute("data-borrar")){st={hechos:{},pasos:{}};guardar();pintar();}
+  });
+  document.querySelectorAll(".lleva input").forEach(function(c){c.addEventListener("change",pintar);});
+  document.querySelectorAll(".avance .ya").forEach(function(b){
+    b.addEventListener("click",function(){var n=b.dataset.n;if(st.hechos[n])delete st.hechos[n];else st.hechos[n]=true;guardar();pintar();});
+  });
+
+  /* Datos personales: si parece CURP, teléfono o correo, se avisa y no se guarda. */
+  var PERSONAL=[[/\b[A-Z]{4}\d{6}[HMX][A-Z]{5}[A-Z0-9]\d\b/i,"una CURP"],[/(\d[\s.-]?){10,}/,"un número de teléfono o de documento"],[/[^\s@]+@[^\s@]+\.[^\s@]+/,"un correo"]];
+  function personal(t){for(var i=0;i<PERSONAL.length;i++)if(PERSONAL[i][0].test(t||""))return PERSONAL[i][1];return "";}
+
+  var dp=document.getElementById("dlg-paso"), fp=dp.querySelector("form"), pasoActual=null;
+  document.querySelectorAll("dialog.contar-dlg [data-cerrar]").forEach(function(b){b.addEventListener("click",function(){b.closest("dialog").close();});});
+  document.querySelectorAll(".avance .contar").forEach(function(b){
+    b.addEventListener("click",function(){
+      pasoActual=b.dataset.n; var p=G.pasos.filter(function(x){return x.n==pasoActual})[0], r=st.pasos[pasoActual]||{};
+      document.getElementById("dlg-paso-t").textContent="¿Cómo te fue en el paso "+pasoActual+"?";
+      document.getElementById("dlg-paso-accion").textContent="Versión oficial: "+(p?p.accion:"");
+      fp.reset(); [].forEach.call(fp.matched,function(x){x.checked=x.value==(r.matched||"")});
+      fp.que.value=r.que||""; fp.espera.value=r.espera||""; fp.pago.value=r.pago!=null?r.pago:"";
+      document.getElementById("rep-alerta").hidden=true; dp.showModal();
+    });
+  });
+  fp.addEventListener("submit",function(ev){
+    var al=document.getElementById("rep-alerta"), m=fp.matched.value;
+    var malo=personal(fp.que.value)||personal(fp.espera.value);
+    if(malo){ev.preventDefault();al.textContent="Parece que escribiste "+malo+". Quítalo para guardar: el reporte no lleva datos personales.";al.hidden=false;return;}
+    if(!m){ev.preventDefault();al.textContent="Elige si fue igual, distinto o si te pidieron algo más.";al.hidden=false;return;}
+    st.pasos[pasoActual]={matched:m,que:fp.que.value.trim(),espera:fp.espera.value.trim(),pago:fp.pago.value===""?null:+fp.pago.value};
+    if(m!="no_paso")st.hechos[pasoActual]=true;
+    guardar();pintar();
+  });
+
+  /* El reporte completo, en YAML con la forma de reporte.schema.json */
+  var dr=document.getElementById("dlg-reporte"), fr=dr.querySelector("form");
+  function q(t){return JSON.stringify(String(t));}
+  function yamlReporte(){
+    if(!st.idRep){var a="abcdefghijkmnpqrstuvwxyz23456789",r="";for(var i=0;i<6;i++)r+=a[Math.floor(Math.random()*a.length)];st.idRep=r;guardar();}
+    var hoy=new Date().toISOString().slice(0,10), ini=fr.inicio.value?fr.inicio.value+"-01":hoy;
+    var pagos=Object.keys(st.pasos).map(function(n){return st.pasos[n].pago}).filter(function(x){return x!=null});
+    var L=["id: "+q(ini+"-"+st.idRep),"procedure_id: "+q(G.id),"official_version_checked: "+q(G.revision),"jurisdiction: "+q(G.jurisdiccion)];
+    if(fr.oficina.value.trim())L.push("office: "+q(fr.oficina.value.trim()));
+    L.push("started: "+q(ini),"outcome: "+fr.resultado.value);
+    if(fr.visitas.value!=="")L.push("visits: "+(+fr.visitas.value));
+    if(pagos.length)L.push("total_paid_mxn: "+pagos.reduce(function(a,b){return a+b},0));
+    var ns=G.pasos.map(function(p){return p.n}).filter(function(n){return st.pasos[n]});
+    L.push(ns.length?"steps:":"steps: []");
+    ns.forEach(function(n){var r=st.pasos[n];L.push("- n: "+q(n),"  matched: "+r.matched);
+      if(r.que)L.push("  what_happened: "+q(r.que)); if(r.espera)L.push("  waited: "+q(r.espera));});
+    L.push("evidence: []","review:","  state: pendiente");
+    return L.join("\n")+"\n";
+  }
+  function actualizar(){
+    var y=yamlReporte(), al=document.getElementById("rep-alerta2"), malo=personal(fr.oficina.value);
+    document.getElementById("rep-yaml").textContent=y;
+    al.hidden=!malo; if(malo)al.textContent="Parece que escribiste "+malo+". Quítalo antes de mandar.";
+    var cuerpo="Reporte de cómo me fue en «"+G.titulo+"». Sin datos personales.\n\n```yaml\n"+y+"```\n";
+    var a=document.getElementById("rep-mandar");
+    a.href=G.repo+"/issues/new?title="+encodeURIComponent("Reporte: "+G.titulo)+"&body="+encodeURIComponent(cuerpo);
+    a.toggleAttribute("aria-disabled",!!malo); a.style.pointerEvents=malo?"none":"";
+  }
+  function abrirReporte(){
+    if(!fr.inicio.value)fr.inicio.value=st.inicio||new Date().toISOString().slice(0,7);
+    actualizar(); document.getElementById("rep-copiado").textContent=""; dr.showModal();
+  }
+  fr.addEventListener("input",function(){st.inicio=fr.inicio.value;guardar();actualizar();});
+  document.getElementById("rep-copiar").addEventListener("click",function(){
+    var y=document.getElementById("rep-yaml").textContent, s_=document.getElementById("rep-copiado");
+    if(navigator.clipboard)navigator.clipboard.writeText(y).then(function(){s_.textContent="Copiado."},function(){s_.textContent="No se pudo copiar."});
+  });
+  pintar();
+})();
+</script>
 <script id="abierto-ahora">
 /* «Abierto ahora» con la hora de Tijuana, y orden por cercanía. Tu ubicación no sale de tu teléfono. */
 (function(){
