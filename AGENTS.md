@@ -28,7 +28,7 @@ A dev container (`.devcontainer/`) does the same in Codespaces.
 | `esquema/reporte.schema.json` | The rules for lived-experience reports. |
 | `glosario.yaml` | Each legal term explained once in everyday words. A procedure links terms by key in `glossary`. |
 | `reportes/<procedure-id>/` | Reports of how a procedure really went. Never put personal data here. |
-| `herramientas/` | Importers (`importar_*.py`), the validator, the page builder. |
+| `herramientas/` | Importers (`importar_*.py`), the validator, the page builder (`pagina.py`), the flowchart export (`exportar_bpmn.py`). `procedures_core.py` and `vendor/` are shared with other projects: do not edit them here for one procedure's sake. |
 | `fuentes-crudas.tar.gz` | Raw copies of official pages as downloaded, so imports can be audited. Unpack with `tar xzf fuentes-crudas.tar.gz` (the folder is gitignored). |
 
 Keys are in English. All human-readable content is in Mexican Spanish (es-MX).
