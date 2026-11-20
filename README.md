@@ -24,7 +24,7 @@ Hoy cubre México (federal), Baja California y Tijuana. El país es un campo de 
 | `reportes/` | Reportes de cómo fue un trámite de verdad |
 | `esquema/` | Las reglas de cada ficha (JSON Schema) |
 | `glosario.yaml` | Cada término legal explicado una vez, en palabras de todos los días |
-| `herramientas/` | `importar_retys.py` y `importar_remutys.py` (vuelven a bajar los registros estatal y de Tijuana) y `validar.py` (revisa todo) |
+| `herramientas/` | `importar_retys.py` y `importar_remutys.py` (vuelven a bajar los registros estatal y de Tijuana), `validar.py` (revisa todo), `exportar_bpmn.py` (dibuja un procedimiento como diagrama de flujo BPMN 2.0) y `pagina.py` (arma la página Por dentro) |
 | `fuentes-crudas.tar.gz` | Copias de las páginas oficiales tal como se bajaron, para poder auditar el import (`tar xzf fuentes-crudas.tar.gz`) |
 
 Los códigos de lugar son los mismos que usa Barda: `MX`, `MX-BCN`, `MX-BCN-Tijuana`.
@@ -35,6 +35,16 @@ Los códigos de lugar son los mismos que usa Barda: `MX`, `MX-BCN`, `MX-BCN-Tiju
 pip install -r requirements.txt
 python3 herramientas/validar.py
 ```
+
+## Diagramas de flujo
+
+Cada procedimiento escrito por el proyecto se puede ver como diagrama de flujo en la página Por dentro, y cualquiera puede editarlo ahí mismo: mover, agregar o quitar pasos y flechas. Nada se publica al editar. La página arma una propuesta con la lista de cambios y la fuente, y una persona la coteja antes de cambiar la ficha. Los trámites importados de un registro oficial son una lista de pasos sin ramas, así que se quedan como lista.
+
+```
+python3 herramientas/exportar_bpmn.py procedimientos/MX/federal/internos/mx-como-se-aprueba-una-ley-federal.yaml
+```
+
+El archivo `.bpmn` abre en [bpmn.io](https://demo.bpmn.io) y en Barda. Usa cinco figuras: inicio, paso, decisión, otro procedimiento y fin.
 
 ## Estado de cada ficha
 
