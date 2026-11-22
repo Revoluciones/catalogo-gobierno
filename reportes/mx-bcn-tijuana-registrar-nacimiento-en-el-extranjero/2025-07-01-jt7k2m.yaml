@@ -1,0 +1,37 @@
+id: 2025-07-01-jt7k2m
+procedure_id: mx-bcn-tijuana-registrar-nacimiento-en-el-extranjero
+official_version_checked: '2026-11-13'
+jurisdiction: MX-BCN-Tijuana
+office: Subrecaudación Auxiliar de Rentas del Estado (Tijuana) y Oficialía del Registro Civil de Tijuana
+started: '2025-07-01'
+outcome: lo_obtuve
+total_paid_mxn: 473
+steps:
+- n: '1'
+  matched: igual
+- n: '2'
+  matched: igual
+- n: '3'
+  matched: distinto
+  what_happened: Se tradujeron con perito el acta y también la apostilla.
+- n: '5'
+  matched: igual
+  what_happened: Se pagaron $473 por la constancia de inexistencia en la Subrecaudación Auxiliar de Rentas.
+- n: '7'
+  matched: distinto
+  what_happened: Se llevaron el original y 2 copias de cada documento (7 documentos, 14 copias).
+extra_requirements:
+- Traducción de la apostilla por perito
+evidence:
+- type: captura
+  file: evidencia/ficha-tijuana-requisitos-2025.png
+  describes_step: '7'
+  redacted: true
+- type: otro
+  file: evidencia/diagrama-de-la-ruta.drawio
+  describes_step: '1'
+  redacted: true
+review:
+  state: publicado
+  reviewed_on: '2026-11-13'
+  reason: Diagrama de la ruta hecho por quien hizo el trámite. Sin datos personales.
