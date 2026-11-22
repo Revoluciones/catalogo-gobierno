@@ -3,7 +3,7 @@
 
 Uso: python3 herramientas/validar.py   (desde la raíz del catálogo)
 """
-import json, sys
+import hashlib, json, re, sys
 from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator
@@ -41,6 +41,46 @@ for f in sorted((R / "procedimientos").rglob("*.yaml")):
     for g in d.get("glossary", []):
         if g not in glos:
             errores.append(f"{f.relative_to(R)}: término sin definir en glosario.yaml: {g}")
+
+fmt = Draft202012Validator(json.loads((R / "esquema/formato.schema.json").read_text()))
+formatos = set()
+for f in sorted((R / "formatos").rglob("*.yaml")):
+    d = yaml.safe_load(f.read_text())
+    for e in fmt.iter_errors(d):
+        errores.append(f"{f.relative_to(R)}: {'/'.join(map(str, e.path))}: {e.message[:160]}")
+    pdf = f.parent / str(d.get("file"))
+    if not pdf.is_file():
+        errores.append(f"{f.relative_to(R)}: falta el PDF {d.get('file')}")
+    elif hashlib.sha256(pdf.read_bytes()).hexdigest() != d.get("sha256"):
+        errores.append(f"{f.relative_to(R)}: el PDF no coincide con su sha256")
+    claves = {c["key"] for c in d.get("fields", [])}
+    for t in d.get("draw", []):
+        for ref in re.findall(r"\{([^}.]+)", t.get("text", "")) + list(t.get("when", {})):
+            if ref not in claves:
+                errores.append(f"{f.relative_to(R)}: draw usa un campo que no existe: {ref}")
+    formatos.add(d.get("id"))
+
+for f in sorted((R / "procedimientos").rglob("*.yaml")):
+    d = yaml.safe_load(f.read_text())
+    ofis = [o.get("id") for o in d.get("offices", []) if o.get("id")]
+    if len(ofis) != len(set(ofis)):
+        errores.append(f"{f.relative_to(R)}: hay oficinas con el mismo id")
+    for o in d.get("offices", []):
+        if ("lat" in o) != ("lon" in o):
+            errores.append(f"{f.relative_to(R)}: la oficina {o.get('id') or o.get('name')} tiene lat sin lon o al revés")
+        for c in o.get("cites", []):
+            if c["source"] not in d.get("sources", {}):
+                errores.append(f"{f.relative_to(R)}: la oficina {o.get('id') or o.get('name')} cita una fuente que no existe: {c['source']}")
+    for p in d.get("steps", []):
+        if p.get("form") and p["form"] not in formatos:
+            errores.append(f"{f.relative_to(R)}: el paso {p['n']} usa un formato que no existe: {p['form']}")
+        for oid in p.get("offices", []):
+            if oid not in ofis:
+                errores.append(f"{f.relative_to(R)}: el paso {p['n']} usa una oficina que no existe: {oid}")
+        if p.get("link"):
+            urls = {d.get("sources", {}).get(c["source"], {}).get("url") for c in p.get("cites", [])}
+            if p["link"]["url"] not in urls:
+                errores.append(f"{f.relative_to(R)}: el botón del paso {p['n']} no lleva a una fuente que el paso cite")
 
 for f in sorted((R / "reportes").rglob("*.yaml")):
     d = yaml.safe_load(f.read_text())

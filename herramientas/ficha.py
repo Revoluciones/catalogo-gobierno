@@ -14,7 +14,7 @@ Por cada id escribe en <salida>/<id>/:
 Las imágenes necesitan Playwright con Chromium (pip install playwright; playwright install chromium).
 Sin Playwright se escriben index.html y whatsapp.txt, y se avisa.
 """
-import argparse, html, json, os, re, sys, urllib.parse
+import argparse, html, json, os, re, shutil, sys, urllib.parse
 from pathlib import Path
 import yaml
 
@@ -22,6 +22,11 @@ R = Path(__file__).resolve().parent.parent
 TPL = (R / "herramientas/ficha.plantilla.html").read_text(encoding="utf-8")
 GLOS = yaml.safe_load((R / "glosario.yaml").read_text(encoding="utf-8"))
 REPO = "https://github.com/Revoluciones/catalogo-gobierno"
+FORMATOS = {}
+for _f in sorted((R / "formatos").rglob("*.yaml")):
+    _d = yaml.safe_load(_f.read_text(encoding="utf-8"))
+    _d["_pdf"] = _f.parent / _d["file"]
+    FORMATOS[_d["id"]] = _d
 
 LUGAR = {"MX": "México (regla nacional)", "MX-BCN": "Baja California", "MX-BCN-Tijuana": "Tijuana, Baja California"}
 EVIDENCIA = {
@@ -180,29 +185,87 @@ def grafo(pasos):
     return aristas, capa, col, max((c[-1] for c in col.values()), default=0) + 1
 
 
-def mapa(pasos, grande=False):
-    """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador."""
+def oficina(o):
+    """Una oficina: nombre, dirección, horario, teléfono y enlace al mapa. El navegador agrega «Abierto ahora» y la distancia."""
+    partes = [f"<b>{e(o.get('name'))}</b>"]
+    dire = ", ".join(v for v in (o.get("address"), o.get("municipality")) if v)
+    for v in (dire, o.get("hours"), o.get("phones") and "Tel. " + o["phones"]):
+        if v:
+            partes.append(f"<span>{e(v)}</span>")
+    if dire:
+        q = urllib.parse.quote(f"{o.get('name', '')}, {dire}")
+        partes.append(f'<a class="en-mapa" href="https://www.google.com/maps/search/?api=1&amp;query={q}" target="_blank" rel="noopener">Ver en el mapa</a>')
+    datos = f' data-horario="{e(o["hours"])}"' if o.get("hours") else ""
+    if "lat" in o:
+        datos += f' data-lat="{o["lat"]}" data-lon="{o["lon"]}"'
+    return f"<li{datos}>" + "".join(partes) + "</li>"
+
+
+def lugares(ofis):
+    """Dónde se hace un paso. Con varias oficinas, una lista plegada que se puede ordenar por cercanía."""
+    if not ofis:
+        return ""
+    lista = "".join(oficina(o) for o in ofis)
+    if len(ofis) == 1:
+        return f'<div class="lugares"><p class="lugares-t">Dónde</p><ul class="ofis ofis--paso">{lista}</ul></div>'
+    cerca = ('<button type="button" class="boton boton--cerca" hidden>Ordenar por cercanía</button>'
+             if any("lat" in o for o in ofis) else "")
+    return (f'<details class="lugares"><summary>Dónde: {len(ofis)} lugares</summary>{cerca}'
+            f'<ul class="ofis ofis--paso">{lista}</ul></details>')
+
+
+def mapa(pasos, grande=False, detalles=None):
+    """El diagrama de flujo: cajas en una cuadrícula y flechas que dibuja el navegador.
+
+    En la página (detalles dado) cada caja se abre para mostrar fuentes, notas de práctica y formatos.
+    En pantallas angostas queda en una sola columna; las ramas se dicen con texto.
+    """
     if not pasos:
         return ""
     aristas, capa, col, ncols = grafo(pasos)
+    orden = [p["n"] for p in pasos]
+    entran = {}
+    for a, b, _ in aristas:
+        entran.setdefault(b, []).append(a)
+    inicios = [n for n in orden if not entran.get(n)]
     cajas = []
-    for p in pasos:
+    for i, p in enumerate(pasos):
         c = col[p["n"]]
-        marca = ('<span class="difiere" title="Quien lo hizo encontró algo distinto a lo oficial. Lo ves abajo, en este paso.">'
-                 'Ojo: en la práctica cambia</span>') if p.get("practice") else ""
+        n = p["n"]
+        marca = ('<span class="difiere">Ojo: en la práctica cambia</span>') if p.get("practice") else ""
+        cls = f'nodo{" nodo--tu" if es_tu(p["actor"]) else ""}'
+        pos = f'style="grid-row:{capa[n] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}"'
+        if detalles is None:
+            cajas.append(
+                f'<div class="{cls}" data-n="{e(n)}" {pos}><span class="n">{e(n)}</span><div><small>{e(p["actor"])}</small>'
+                f'<p>{e(corta(p["action"], 90 if grande else 80))}</p>{marca}</div></div>')
+            continue
+        # Lo que en una sola columna no se ve con flechas: ramas que empiezan aparte y saltos.
+        antes = ""
+        if n in inicios and n != inicios[0]:
+            antes = f'<p class="salto">Al mismo tiempo que el paso {e(inicios[0])}, empieza aquí:</p>'
+        elif len(entran.get(n, [])) > 1:
+            previos = entran[n]
+            antes = f'<p class="salto">Antes terminas los pasos {e(", ".join(previos[:-1]))} y {e(previos[-1])}.</p>'
+        sig = orden[i + 1] if i + 1 < len(orden) else "fin"
+        salen = [b for a, b, _ in aristas if a == n]
+        despues = "".join(f'<p class="salto">Luego sigue el paso {e(b)}.</p>' for b in salen if b != sig and b != "fin")
+        extras = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
+        d = detalles[n]
         cajas.append(
-            f'<div class="nodo{" nodo--tu" if es_tu(p["actor"]) else ""}" data-n="{e(p["n"])}" '
-            f'style="grid-row:{capa[p["n"]] + 1};grid-column:{c[0] + 1}/{c[-1] + 2}">'
-            f'<span class="n">{e(p["n"])}</span><div><small>{e(p["actor"])}</small>'
-            f'<p>{e(corta(p["action"], 90 if grande else 80))}</p>{marca}</div></div>')
+            f'<div class="{cls}" data-n="{e(n)}" {pos}>{antes}<span class="n">{e(n)}</span>'
+            f'<div class="cuerpo-nodo"><small>{e(p["actor"])}</small><p>{e(p["action"])}</p>{extras}{marca}{d["boton"]}'
+            f'<details class="det"><summary class="mas">{"Fuentes y lo que pasó" if p.get("practice") else "Fuentes"}</summary>'
+            f'<div class="detalle">{d["resto"]}</div></details></div>{despues}</div>')
     fin = max(capa.values()) + 1
     flechas = json.dumps([[a, b, w] for a, b, w in aristas], ensure_ascii=False)
-    return (f'<div class="mapa" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
+    return (f'<div class="mapa{" mapa--vivo" if detalles is not None else ""}" style="--cols:{ncols}" data-aristas="{e(flechas)}">'
             f'<svg class="flechas" aria-hidden="true"></svg>{"".join(cajas)}'
             f'<div class="nodo-fin" style="grid-row:{fin + 1};grid-column:1/-1">Listo</div></div>'
-            + ('' if grande or not any(p.get("practice") for p in pasos) else
-               '<p class="mapa-nota"><b>«Ojo: en la práctica cambia»</b> marca los pasos donde alguien que hizo el trámite '
-               'encontró algo distinto a lo que dice la versión oficial. Abajo, en ese paso, ves qué pasó y la fuente.</p>'))
+            + ('' if detalles is None else
+               '<p class="mapa-nota">Toca «Fuentes» en un paso para ver de dónde sale'
+               + (' y, donde dice <b>«Ojo: en la práctica cambia»</b>, lo que encontró alguien que hizo el trámite'
+                  if any(p.get("practice") for p in pasos) else '') + '.</p>'))
 
 
 def formato(url):
@@ -215,6 +278,27 @@ def formato(url):
             'Descarga el formato oficial</a>')
 
 
+def llenado(fid, x):
+    """Enlace al PDF oficial y botón para llenarlo en línea (herramientas/llenar.js lo arma en el navegador)."""
+    f = FORMATOS[fid]
+    x.setdefault("formatos", {})[fid] = f
+    sube = "../" * x["profundidad"]
+    return (f'<div class="llenado"><button type="button" class="boton boton--llenar" data-formato="{e(fid)}" data-pdf="{sube}formatos/{e(fid)}.pdf" hidden>'
+            f'Llenar formulario</button></div>')
+
+
+def formatos_js(x):
+    """Las definiciones de los formatos que usa la página y el script que los llena."""
+    fs = x.get("formatos")
+    if not fs:
+        return ""
+    defs = "".join(
+        f'<script type="application/json" id="formato-{e(fid)}">'
+        + json.dumps({k: f.get(k) for k in ("id", "title", "sign", "fields", "draw")}, ensure_ascii=False).replace("</", "<\\/")
+        + "</script>" for fid, f in fs.items())
+    return defs + f'<script src="{"../" * x["profundidad"]}formatos/llenar.js" defer></script>'
+
+
 def pagina(d, x):
     chips, num = x["chips"], x["num"]
     lugar = LUGAR.get(d["jurisdiction"], d["jurisdiction"])
@@ -224,20 +308,21 @@ def pagina(d, x):
         for k, v, n in x["hechos"]
     )
 
-    pasos = []
+    por_id = {o["id"]: o for o in d.get("offices", []) if o.get("id")}
+    detalles = {}
     for p in x["pasos"]:
-        tu = es_tu(p["actor"])
         prac = "".join(
             f'<aside class="practica"><p class="etq">En la práctica · {e(EVIDENCIA.get(q["evidence_level"], ""))}'
             f'{" · " + e(q["observed"]) if q.get("observed") else ""}</p><p>{e(q["text"])} {chips(q["cites"])}</p></aside>'
             for q in p.get("practice", [])
         )
-        plazo = f'<span class="plazo">{e(p["deadline"])}</span>' if p.get("deadline") else ""
-        pasos.append(
-            f'<li class="paso{" paso--tu" if tu else ""}"><span class="n" aria-hidden="true">{e(p["n"])}</span>'
-            f'<div class="cuerpo"><p class="actor">{e(p["actor"])}</p>'
-            f'<p class="accion">{e(p["action"])} {chips(p["cites"])}</p>{plazo}{prac}</div></li>'
-        )
+        boton = llenado(p["form"], x) if p.get("form") else ""
+        if p.get("link"):
+            boton += (f'<a class="boton boton--accion" href="{e(p["link"]["url"])}" target="_blank" rel="noopener">'
+                      f'{e(p["link"]["label"])}</a>')
+        boton += lugares([por_id[i] for i in p.get("offices", []) if i in por_id])
+        detalles[p["n"]] = {"boton": boton,
+                            "resto": f'<p class="fuente">Fuente: {chips(p["cites"])}</p>{prac}'}
 
     reqs = []
     for i, r in enumerate(d.get("requirements", [])):
@@ -248,14 +333,11 @@ def pagina(d, x):
             f'{f"<span class=oc>{e(oc)}</span>" if oc else ""}</label>{formato(r.get("form_url"))}</li>'
         )
 
-    ofis = []
-    for o in d.get("offices", []):
-        partes = [f"<b>{e(o.get('name'))}</b>"]
-        dire = ", ".join(v for v in (o.get("address"), o.get("municipality")) if v)
-        for v in (dire, o.get("hours"), o.get("phones") and "Tel. " + o["phones"]):
-            if v:
-                partes.append(f"<span>{e(v)}</span>")
-        ofis.append("<li>" + "".join(partes) + "</li>")
+    en_pasos = {oid for p in x["pasos"] for oid in p.get("offices", [])}
+    ofis = [oficina(o) for o in d.get("offices", []) if o.get("id") not in en_pasos]
+    if len(ofis) > 3:
+        ofis = ofis[:2] + [f'<li class="mas-ofis"><details><summary>Ver las otras {len(ofis) - 2} oficinas</summary>'
+                           f'<ul class="ofis">{"".join(ofis[2:])}</ul></details></li>']
     ofis = "".join(ofis)
 
     glos = "".join(f"<div><dt>{e(k.replace('-', ' '))}</dt><dd>{e(GLOS[k])}</dd></div>" for k in d.get("glossary", []) if k in GLOS)
@@ -304,16 +386,17 @@ def pagina(d, x):
     rep = {
         "TITULO": e(d["title"]), "DESC": e(desc), "URL": e(x["url"]), "OG": e(x["url"] + "/og.png"),
         "LUGAR": e(lugar), "TIPO": "Trámite" if d["kind"] == "tramite" else "Por dentro del gobierno",
-        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "PASOS": "".join(pasos), "MAPA": mapa(x["pasos"]),
+        "RESUMEN": e(d.get("summary", "")), "HECHOS": hechos, "NCOLS": str(max(1, len(x["hechos"]) - 1)), "MAPA": mapa(x["pasos"], detalles=detalles),
         "REQS": "".join(reqs), "OFIS": ofis, "GLOS": glos, "FUENTES": "".join(fuentes), "BASE": base_legal,
         "ESTADO": e(estado), "REVISADO": e(fecha(d["last_checked"])), "ARCHIVO": e(archivo), "ID": e(d["id"]),
         "WA": e("https://wa.me/?text=" + urllib.parse.quote(x["wa"])), "CAMINOS": otros,
+        "FORMATOS": formatos_js(x),
     }
     out = TPL
     for k, v in rep.items():
         out = out.replace("{{" + k + "}}", v)
     # quita las secciones vacías
-    for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", pasos)):
+    for sec, val in (("reqs", reqs), ("ofis", ofis), ("glos", glos), ("hechos", hechos), ("pasos", x["pasos"])):
         if not val:
             out = re.sub(rf"<!--{sec}-->.*?<!--/{sec}-->", "", out, flags=re.S)
     return out
@@ -389,22 +472,39 @@ def meta_datos(meta, base):
             pros=[(n["text"], chips(n["cites"])) for n in r.get("pros", [])],
             cons=[(n["text"], chips(n["cites"])) for n in r.get("cons", [])],
             url=f"{base}/{ruta_corta(d)}", borrador=d["status"] == "borrador"))
+    rutas.sort(key=lambda r: (orden_costo(r["d"]), r["docs"], r["pasos"]))
     return rutas, orden, srcs
+
+
+def orden_costo(d):
+    """Para ordenar los caminos: lo gratis primero, luego lo más barato; si el costo varía, al final."""
+    c = d.get("cost") or {}
+    if c.get("type") == "gratuito":
+        return 0
+    return c["amount_mxn"] if c.get("amount_mxn") is not None else float("inf")
+
+
+def pegado(texto, citas):
+    """Texto con sus números de fuente pegados a la última palabra, para que un número nunca quede solo en un renglón."""
+    if not citas:
+        return e(texto)
+    resto, _, ultima = texto.rpartition(" ")
+    return f'{e(resto)} <span class="nw">{e(ultima)}{citas}</span>' if resto else f'<span class="nw">{e(ultima)}{citas}</span>'
 
 
 def pagina_meta(meta, base):
     rutas, orden, srcs = meta_datos(meta, base)
     url = f"{base}/{meta['id']}"
     tarjetas = []
-    for r in rutas:
-        pros = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["pros"])
-        cons = "".join(f"<li>{e(t)} {c}</li>" for t, c in r["cons"])
+    for i, r in enumerate(rutas, 1):
+        puesto = "Opción 1 · Recomendada" if i == 1 else f"Opción {i}"
+        pros = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["pros"])
+        cons = "".join(f"<li>{pegado(t, c)}</li>" for t, c in r["cons"])
         cuando = f'<p class="cuando">{e(r["disp_txt"])}</p>' if r["disp_txt"] else ""
         tarjetas.append(
-            f'<article class="opcion"><header><h3>{e(r["nombre"])}</h3>'
+            f'<article class="opcion{" opcion--primera" if i == 1 else ""}"><p class="puesto">{puesto}</p><header><h3>{e(r["nombre"])}</h3>'
             f'<span class="disp disp--{r["color"]}">{e(r["disp"])}</span></header>'
-            f'<dl class="cifras"><div><dt>Cuesta</dt><dd>{e(r["costo"])}</dd></div><div><dt>Documentos</dt><dd>{r["docs"]}</dd></div>'
-            f'<div><dt>Pasos</dt><dd>{r["pasos"]}</dd></div></dl>'
+            f'<p class="resumen-camino"><b>{e(r["costo"])}</b> · {r["docs"]} documentos · {r["pasos"]} pasos</p>'
             f'{cuando}'
             f'{f"<h4>Elige este si</h4><ul class=pros>{pros}</ul>" if pros else ""}'
             f'{f"<h4>Antes de ir</h4><ul class=cons>{cons}</ul>" if cons else ""}'
@@ -423,16 +523,18 @@ def pagina_meta(meta, base):
                    + ["", f"Compáralos, con sus fuentes oficiales: {url}"])
     principal = (
         f'<main><div class="cabeza"><p class="lugar">Una meta, {len(rutas)} caminos</p><h1>{e(meta["title"])}</h1>'
-        f'<p class="resumen">Hay varias formas de lograrlo, en lugares distintos. Cambian el costo, los papeles y cuándo se pueden hacer.</p>'
+        f'<p class="resumen">Hay {len(rutas)} caminos. Van en orden: primero el que cuesta menos y pide menos papeles. Empieza por el 1; si no te sirve, revisa el siguiente.</p>'
         f'<div class="hilos" aria-hidden="true"></div></div>'
         f'<div class="opciones">{"".join(tarjetas)}</div>'
+        f'<div class="banda-compartir"><p>¿Conoces a alguien que lo necesite? Mándale esta comparación.</p>'
         f'<div class="compartir"><a class="boton boton--wa" href="{e("https://wa.me/?text=" + urllib.parse.quote(wa))}" target="_blank" rel="noopener">Mandar por WhatsApp</a>'
-        f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div><p class="aviso" id="aviso" role="status"></p>'
-        f'<section aria-labelledby="t-fuentes"><h2 id="t-fuentes">Fuentes</h2><ol class="fuentes">{"".join(fuentes)}</ol></section>'
+        f'<button class="boton" type="button" id="copiar">Copiar enlace</button></div></div><p class="aviso" id="aviso" role="status"></p>'
+        f'<section aria-labelledby="t-fuentes"><details class="plegable" id="fuentes"><summary><h2 id="t-fuentes">Fuentes'
+        f'<small>Cada número en la página lleva aquí.</small></h2></summary><ol class="fuentes">{"".join(fuentes)}</ol></details></section>'
         f'</main>')
     out = re.sub(r"<main>.*?</main>", lambda m: principal, TPL, flags=re.S).replace('class="envoltura"', 'class="envoltura envoltura--ancha"')
     desc = f"Hay {len(rutas)} caminos: " + "; ".join(f"{r['nombre']} ({r['costo']})" for r in rutas) + "."
-    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"])}.items():
+    for k, v in {"TITULO": e(meta["title"]), "DESC": e(desc), "URL": e(url), "OG": e(url + "/og.png"), "ID": e(meta["id"]), "FORMATOS": ""}.items():
         out = out.replace("{{" + k + "}}", v)
     out = out.replace(": la ruta paso a paso, con fuentes oficiales", ": los caminos, comparados")
     return out, rutas, wa
@@ -502,11 +604,18 @@ def main():
         x = datos(d, a.base)
         x["ruta_archivo"] = str(f.relative_to(R))
         x["wa"] = whatsapp(d, x)
+        x["profundidad"] = ruta_corta(d).count("/") + 1
         html_ = pagina(d, x)
         out = Path(a.salida) / ruta_corta(d)
         out.mkdir(parents=True, exist_ok=True)
         (out / "index.html").write_text(html_, encoding="utf-8")
         (out / "whatsapp.txt").write_text(x["wa"] + "\n", encoding="utf-8")
+        if x.get("formatos"):
+            dest = Path(a.salida) / "formatos"
+            dest.mkdir(parents=True, exist_ok=True)
+            shutil.copy(R / "herramientas/llenar.js", dest / "llenar.js")
+            for fid, f in x["formatos"].items():
+                shutil.copy(f["_pdf"], dest / f"{fid}.pdf")
         if navegador:
             for tipo, (w, h) in (("og", (1200, 630)), ("ruta", (1080, 1350))):
                 pg = navegador.new_page(viewport={"width": w, "height": h}, device_scale_factor=1)
