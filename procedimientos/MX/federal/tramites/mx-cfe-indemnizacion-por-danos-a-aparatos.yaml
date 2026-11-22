@@ -1,0 +1,335 @@
+id: mx-cfe-indemnizacion-por-danos-a-aparatos
+country: MX
+jurisdiction: MX
+level: federal
+branch: ejecutivo
+kind: tramite
+category: energía eléctrica
+title: Pedir a CFE que pague o repare aparatos dañados por una falla de luz (y la bonificación por apagón)
+summary: >-
+  Si un apagón, una subida o una baja de voltaje que causó la red de CFE dañó tus aparatos, equipos o la
+  instalación de tu casa, CFE debe pagar la reparación o reponerlos. Tienes 15 días hábiles después de la
+  falla para reclamar. Aparte, si el apagón fue culpa de CFE y no de un caso fortuito, puedes pedir que te
+  descuenten del recibo el doble de la luz que no pudiste usar.
+authority:
+  name: CFE Suministrador de Servicios Básicos
+  url: https://www.cfe.mx
+other_authorities:
+  - name: CFE Distribución (hace la visita y el dictamen técnico)
+  - name: Procuraduría Federal del Consumidor (Profeco), si no estás de acuerdo con la respuesta
+  - name: >-
+      Comisión Nacional de Energía (CNE), para quejas que Profeco no puede atender. El contrato de 2021 todavía
+      dice Comisión Reguladora de Energía; la ley de 2025 pasó esa tarea a la CNE.
+who_can:
+  - La persona que tiene el contrato de luz a su nombre (el contrato la llama «Usuario de Suministro Básico»)
+when: >-
+  Dentro de los 15 días hábiles siguientes a la falla de luz que crees que causó el daño. Para la bonificación
+  por apagón, dentro del siguiente periodo de facturación.
+result: >-
+  Si procede, CFE paga la reparación o, si no se puede reparar o reparar cuesta más que el aparato, te
+  reembolsa su valor. La bonificación por apagón se aplica como saldo a favor en tu siguiente recibo.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: El trámite no tiene costo.
+  as_of: '2026-11-22'
+  cites:
+    - source: cfe-vun-pago-danos
+requires_inspection: true
+channels: [presencial, telefono]
+requirements:
+  - text: Contrato de luz vigente a tu nombre.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: que cuente con un contrato el servicio de energía eléctrica vigente
+  - text: >-
+      Un escrito que cuente cómo pasaron los hechos (día y hora aproximada de la falla), qué se dañó, cuánto
+      valen los daños y las pruebas que tengas (por ejemplo fotos o videos).
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: una narración de como acontecieron los hechos, cuáles fueron los daños que sufrió, valor comercial
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Cuál es el procedimiento?
+  - text: Identificación oficial vigente (credencial para votar, pasaporte o cédula profesional).
+    cites:
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Qué documento vigente puedo presentar como identificación oficial?
+  - text: >-
+      Solo si CFE dice que sí procede: factura o notas de compra que prueben que los aparatos son tuyos.
+    cites:
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Qué debes presentar para la reparación o pago de tus aparatos dañados?
+deadlines:
+  - what: para_presentar
+    text: 15 días hábiles después de la falla de luz que causó el daño.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: dentro de los quince días hábiles siguientes a la fecha de la falla
+  - what: respuesta_autoridad
+    text: CFE debe pagar los daños en no más de 15 días hábiles contados desde el día siguiente a tu reclamación.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: en un plazo no mayor de quince días hábiles contados a partir del día siguiente
+  - what: para_presentar
+    text: La queja para pedir la bonificación por apagón se presenta dentro del siguiente periodo de facturación.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Cuarta
+  - what: respuesta_autoridad
+    text: CFE contesta una queja en 10 días hábiles.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Cuarta
+legal_basis:
+  - source: contrato-pospago-bt
+    pinpoint: cláusulas Décima Séptima, Vigésima Cuarta y Vigésima Quinta
+  - source: lse
+    pinpoint: art. 11, fracción XLVI (quejas de usuarios de suministro básico, con Profeco)
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Reporta la falla de luz (071, la aplicación o la página de CFE) y guarda el número de reporte. CFE lo
+      anota en tu reclamación si existe.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: el número de solicitud con el cual se atendió la falla
+  - n: '2'
+    actor: Tú
+    action: >-
+      Presenta la reclamación en un centro de atención a clientes de CFE dentro de los 15 días hábiles
+      siguientes a la falla. Llenas un formato con los datos de tu servicio, la causa (apagón, subida o baja de
+      luz), el día y la hora, y entregas tu escrito con los daños, su valor y tus pruebas. No repares ni tires
+      los aparatos dañados: CFE los tiene que revisar.
+    deadline: 15 días hábiles después de la falla
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+        quote: deberá de interponer su reclamación ante el "SUMINISTRADOR" en sus centros de atención
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Cuál es el procedimiento?
+    practice:
+      - text: >-
+          El contrato dice que la reclamación se presenta en los centros de atención, pero la página de CFE
+          sobre este trámite dice que por el 071 también puedes hacer el trámite y darle seguimiento. Algunas
+          notas de prensa dicen que es solo en ventanilla. Conviene intentar el 071 y, si no lo aceptan,
+          ir a la ventanilla antes de que pase el plazo.
+        evidence_level: documento_oficial
+        observed: Página de CFE y contrato vigentes al 22 de noviembre de 2026
+        cites:
+          - source: cfe-vun-pago-danos
+            pinpoint: ¿Qué más puedo hacer en el teléfono 071?
+            quote: Nos puedes contactar para realizar el trámite, así como dar seguimiento a tu solicitud
+          - source: imparcial-2026-mexicali
+      - text: >-
+          Varias notas de prensa dan otro plazo para reclamar: 30 días, o 30 días naturales. El contrato
+          aprobado y publicado en el DOF dice 15 días hábiles. Para no perder el derecho, cuenta 15 días
+          hábiles.
+        evidence_level: periodismo_o_investigacion
+        observed: Notas de 2023 a 2026
+        cites:
+          - source: infobae-2023
+          - source: ambito-2026
+          - source: imparcial-2026-mexicali
+  - n: '3'
+    actor: CFE Suministrador de Servicios Básicos
+    action: >-
+      Revisa que la reclamación llegó a tiempo y que tienes contrato vigente, y la registra con los daños, la
+      fecha y la hora aproximada.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+  - n: '4'
+    actor: CFE Distribución
+    action: >-
+      Visita tu casa y hace un dictamen técnico: la lista de bienes dañados y si el daño vino de la interrupción,
+      de un cambio súbito de voltaje o de luz entregada fuera de norma. No paga si la falla fue un caso fortuito
+      o fuerza mayor que se pueda comprobar.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Cuál es el procedimiento?
+    next:
+      - to: '5'
+        when: El dictamen dice que el daño lo causó la red
+      - to: '7'
+        when: El dictamen dice que no procede
+  - n: '5'
+    actor: Tú
+    action: >-
+      Llevas los aparatos al centro de servicio que autorice CFE, que hace un diagnóstico con el costo del
+      daño. Si no se pueden mover, o el daño es en la instalación de tu casa, el centro de servicio va a tu
+      domicilio. Muestras la factura o notas de compra.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+      - source: cfe-vun-pago-danos
+        pinpoint: ¿Qué debes presentar para la reparación o pago de tus aparatos dañados?
+  - n: '6'
+    actor: CFE Suministrador de Servicios Básicos
+    action: >-
+      Paga la reparación, o reembolsa el costo diagnosticado si no se puede reparar o si repararlo cuesta más
+      que su valor comercial. El pago debe hacerse en no más de 15 días hábiles desde el día siguiente a tu
+      reclamación.
+    deadline: 15 días hábiles desde la reclamación
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Vigésima Quinta
+    next:
+      - to: fin
+  - n: '7'
+    actor: Tú
+    action: >-
+      Si no estás de acuerdo con la respuesta, el dictamen o el diagnóstico, puedes pedir que lo revise una
+      Unidad de Verificación de Instalaciones Eléctricas (UVIE) o presentar una queja ante CFE (071, la página
+      de aclaraciones, la aplicación o un centro de atención). CFE contesta en 10 días hábiles. Si sigue sin
+      resolverse, puedes presentar una queja ante Profeco. Si Profeco no puede admitirla, la Comisión Nacional
+      de Energía atiende la queja directamente.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusulas Vigésima Cuarta y Vigésima Quinta
+      - source: lse
+        pinpoint: art. 11, fracción XLVI
+    practice:
+      - text: >-
+          La oficina de Profeco en Yucatán dijo en 2026 que no recibe denuncias por daños causados por apagones
+          o fallas del sistema; sus quejas contra CFE son casi todas por cobros. Eso no coincide con el contrato,
+          que manda a Profeco cuando la queja sigue sin resolverse. En la misma nota dijo que 85 de cada 100
+          quejas contra CFE se resuelven a favor de la persona usuaria; en Sonora, el módulo Profeco-CFE dijo
+          que resolvió 9 de cada 10. Son cifras que dieron funcionarios, sin auditar, y sobre todo de cobros.
+        evidence_level: periodismo_o_investigacion
+        observed: Yucatán y Sonora, julio de 2026
+        cites:
+          - source: yucatan-2026-profeco
+          - source: imparcial-2026-sonora
+      - text: >-
+          En Profeco, una queja sencilla tarda de 15 a 30 días y una compleja hasta dos meses y medio; algunos
+          expedientes llevan años. CFE tenía 2,849 quejas pendientes en Profeco entre 2021 y 2025, más que
+          cualquier otra empresa.
+        evidence_level: periodismo_o_investigacion
+        observed: Nacional, abril de 2026
+        cites:
+          - source: imparcial-2026-profeco-pendientes
+  - n: '8'
+    actor: Tú
+    action: >-
+      Bonificación por apagón (aparte de los aparatos): si la interrupción o el cambio súbito de voltaje fue
+      culpa de la red y no un caso fortuito o fuerza mayor, pide la bonificación con una queja. Un corte por
+      mantenimiento solo cuenta si CFE no avisó con al menos 48 horas.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusulas Décima Séptima y Vigésima Cuarta
+  - n: '9'
+    actor: CFE Suministrador de Servicios Básicos
+    action: >-
+      Te descuenta en el siguiente recibo el doble de lo que habrías pagado por la luz durante el corte,
+      calculado con el consumo y el precio medio del recibo anterior.
+    cites:
+      - source: contrato-pospago-bt
+        pinpoint: cláusula Décima Séptima
+        quote: una cantidad igual a dos veces el importe del Suministro Eléctrico que hubiere estado disponible
+    practice:
+      - text: >-
+          Para una casa, la bonificación suele ser poca: unas horas de luz al doble de precio. Sirve más como
+          constancia de que el corte fue culpa de la red que como dinero.
+        evidence_level: documento_oficial
+        observed: Cálculo según la cláusula Décima Séptima
+        cites:
+          - source: contrato-pospago-bt
+            pinpoint: cláusula Décima Séptima
+glossary: [dias-habiles, caso-fortuito-o-fuerza-mayor, dictamen-tecnico, uvie, bonificacion]
+sources:
+  contrato-pospago-bt:
+    type: periodico_oficial
+    official: true
+    title: >-
+      Resolución RES/262/2021 de la CRE que aprueba el Modelo de Contrato mercantil para el suministro básico de
+      energía eléctrica en baja tensión, modalidad pospago, de CFE Suministrador de Servicios Básicos, y su Anexo
+      Único
+    publisher: Diario Oficial de la Federación (publicado por CFE SSB, 20 de agosto de 2021)
+    url: https://sidof.segob.gob.mx/notas/docFuente/5628991
+    accessed: '2026-11-22'
+  cfe-vun-pago-danos:
+    type: portal_oficial
+    official: true
+    title: Pago por daño a instalaciones, equipos o aparatos eléctricos por parte de la CFE
+    publisher: Comisión Federal de Electricidad, Ventanilla Única
+    url: https://www.cfe.gob.mx/vun/Paginas/pagoDanosInstalacionesAparatosElectricos.aspx
+    accessed: '2026-11-22'
+  imparcial-2026-mexicali:
+    type: periodismo
+    official: false
+    title: ¿Se dañaron tus electrodomésticos por un apagón? Así puedes solicitar el pago o reparación ante CFE
+    publisher: El Imparcial (Luis García), 8 de septiembre de 2026
+    url: https://www.elimparcial.com/mxl/mexicali/2026/09/08/se-danaron-tus-electrodomesticos-por-un-apagon-asi-puedes-solicitar-el-pago-o-reparacion-ante-cfe/
+    accessed: '2026-11-22'
+  lse:
+    type: ley
+    official: true
+    title: Ley del Sector Eléctrico
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSE.pdf
+    version_date: Nueva ley DOF 18-03-2025
+    accessed: '2026-11-22'
+  yucatan-2026-profeco:
+    type: periodismo
+    official: false
+    title: Profeco Yucatán revela cuáles son las principales quejas que atiende
+    publisher: Diario de Yucatán, 29 de julio de 2026
+    url: https://www.yucatan.com.mx/merida/2026/07/29/profeco-yucatan-revela-cuales-son-las-principales-quejas-que-atiende.html
+    accessed: '2026-11-22'
+  imparcial-2026-sonora:
+    type: periodismo
+    official: false
+    title: Cobros excesivos, principal causa de quejas ante módulo Profeco-CFE en Sonora
+    publisher: El Imparcial, 9 de julio de 2026
+    url: https://www.elimparcial.com/son/ciudad-obregon/2026/07/09/cobros-excesivos-principal-causa-de-quejas-ante-modulo-profeco-cfe-en-sonora/
+    accessed: '2026-11-22'
+  imparcial-2026-profeco-pendientes:
+    type: periodismo
+    official: false
+    title: Más de 7 mil quejas siguen sin resolverse en Profeco y afectan a usuarios de CFE, Walmart y aerolíneas
+    publisher: El Imparcial, 7 de abril de 2026
+    url: https://www.elimparcial.com/mexico/2026/04/07/mas-de-7-mil-quejas-siguen-sin-resolverse-en-profeco-y-afectan-a-usuarios-de-cfe-walmart-y-aerolineas-mientras-los-procesos-pueden-tardar-hasta-5-anos-sin-garantia-de-conciliacion/
+    accessed: '2026-11-22'
+  zeta-2026-tandeos:
+    type: periodismo
+    official: false
+    title: Tandeos energéticos en Tijuana ante ola de calor; usuarios de CFE acumulan pérdidas
+    publisher: Zeta Tijuana, 11 de septiembre de 2026
+    url: https://zetatijuana.com/2026/09/tandeos-energeticos-en-tijuana-ante-ola-de-calor-usuarios-de-cfe-acumulan-perdidas/
+    accessed: '2026-11-22'
+  infobae-2023:
+    type: periodismo
+    official: false
+    title: Cómo reclamar a CFE el pago por aparatos dañados durante apagones
+    publisher: Infobae, 21 de junio de 2023
+    url: https://www.infobae.com/mexico/2023/06/21/como-reclamar-a-cfe-el-pago-por-aparatos-danados-durante-apagones/
+    accessed: '2026-11-22'
+  ambito-2026:
+    type: periodismo
+    official: false
+    title: La CFE te debe dinero si un corte de luz te quemó los electrodomésticos
+    publisher: Ámbito, 25 de abril de 2026
+    url: https://www.ambito.com/mexico/informacion-general/la-cfe-te-debe-dinero-si-un-corte-luz-te-quemo-los-electrodomesticos-y-casi-nadie-lo-sabe-n6270269
+    accessed: '2026-11-22'
+status: borrador
+last_checked: '2026-11-22'
+checked_by: Claude (Compartido)
+notes: >-
+  Comida echada a perder: la cláusula de indemnización habla de «instalaciones, equipos o aparatos eléctricos»
+  y no menciona alimentos. Ninguna fuente oficial revisada dice que CFE pague comida; la vía que queda es una
+  queja ante CFE y luego ante Profeco (cláusula Vigésima Cuarta), sin garantía de resultado. No encontramos
+  casos documentados de pagos ni tasas de éxito; las notas de prensa de Baja California (2025 y 2026) solo
+  cuentan pérdidas de comida y aparatos sin reclamación (por ejemplo Zeta Tijuana, septiembre de 2026). El
+  contrato es de 2021, aprobado con la Ley de la Industria Eléctrica; la Ley del Sector Eléctrico de 2025 le da
+  las quejas a la CNE junto con Profeco (art. 11, fracción XLVI). No pudimos leer los transitorios de esa ley
+  para confirmar que el contrato de 2021 sigue vigente hasta que la CNE apruebe uno nuevo.
+  El nombre exacto del formato de CFE no aparece en la página oficial; la prensa lo llama «Solicitud de
+  reclamación por daños en aparatos eléctricos u otros bienes».
