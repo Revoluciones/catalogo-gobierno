@@ -1,0 +1,231 @@
+id: mx-bcn-queja-contra-personal-de-la-fiscalia
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: >-
+  Quejarte de un Ministerio Público, un agente de investigación o un perito de la Fiscalía de Baja California
+summary: >-
+  Si en la Fiscalía no te quisieron recibir la denuncia, te trataron mal, te pidieron dinero o tu caso no avanza,
+  tienes dos tipos de salida. Contra la persona: una queja ante la Fiscalía de Contraloría y Visitaduría, que investiga
+  y sanciona al personal de la Fiscalía. Contra la decisión sobre tu caso: pedir a un juez que la revise o un amparo
+  si no hacen nada. Puedes usar las dos, y la queja ante la CEDH.
+authority:
+  name: Fiscalía de Contraloría y Visitaduría de la Fiscalía General del Estado
+  unit: Dirección de Investigación de Asuntos Internos y Visitaduría
+  url: https://www.fgebc.gob.mx/servicios/buzonvisitaduria
+other_authorities:
+  - name: Juez de control (revisa archivos, no ejercicio y omisiones del Ministerio Público)
+  - name: Juzgado de Distrito (amparo)
+  - name: Comisión Estatal de los Derechos Humanos
+who_can:
+  - Cualquier persona. La queja administrativa puede ser anónima.
+when: Lo antes posible. Para impugnar ante un juez una decisión sobre tu caso tienes solo 10 días.
+result: >-
+  Una investigación sobre la persona servidora pública y, si procede, una sanción; o que un juez ordene corregir
+  la decisión sobre tu caso.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Presentar la queja no cuesta.
+  cites:
+    - source: lrabc
+      pinpoint: art. 92
+channels:
+  - en_linea
+  - presencial
+requirements:
+  - text: Tu número de caso o expediente.
+    cites:
+      - source: fge-buzon
+        pinpoint: Información del incidente
+        quote: Expediente
+  - text: >-
+      Todo lo que identifique al agente: nombre o número en el uniforme, número de patrulla, corporación, lugar,
+      fecha y hora. Si no sabes su nombre, describe cómo era.
+    cites:
+      - source: fge-buzon
+        pinpoint: Datos del servidor público; Información del incidente
+        quote: Descripción o señas particulares del servidor público
+  - text: Qué pasó, la fecha y la hora, y tus pruebas.
+    cites:
+      - source: fge-buzon
+        pinpoint: Información del incidente
+        quote: Fecha del incidente
+deadlines:
+  - what: otro
+    text: >-
+      Para impugnar ante un juez un archivo temporal, una abstención o un no ejercicio: 10 días después de la notificación.
+    cites:
+      - source: cnpp
+        pinpoint: art. 258
+  - what: para_corregir
+    text: 'Recurso de inconformidad en la queja administrativa: 5 días hábiles.'
+    cites:
+      - source: lrabc
+        pinpoint: art. 103
+offices:
+  - municipality: Mexicali
+    name: Fiscalía de Contraloría y Visitaduría
+    address: Calzada Justo Sierra 1101, Mexicali, B.C.
+    phones: (686) 689 00 30 ext. 7743
+  - municipality: Tijuana
+    name: Fiscalía Regional de Tijuana
+    address: Calle Río Suchiate 10036 y Bulevar Rodolfo Sánchez Taboada, Col. Revolución, Tijuana, B.C.
+    phones: (664) 104 28 00, (664) 736 53 26 ext. 5237 y 5329, (664) 736 52 60
+legal_basis:
+  - source: lofge
+    pinpoint: art. 25
+  - source: lrabc
+    pinpoint: arts. 91 a 104
+  - source: cnpp
+    pinpoint: arts. 109, 216 y 258
+  - source: lamp
+    pinpoint: art. 107, fracción VII
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Si el problema es que no avanzan: primero pide por escrito, con acuse, las diligencias que faltan y copia
+      de tu carpeta. El Ministerio Público tiene 3 días para contestar; si se niega, debe explicar por qué.
+    deadline: 3 días
+    cites:
+      - source: cnpp
+        pinpoint: art. 216
+      - source: cnpp
+        pinpoint: art. 109, fracciones XVII y XXII
+    practice:
+      - text: >-
+          Ante la CEDH se acumularon en un solo año más de 300 quejas contra la Fiscalía, la autoridad más señalada
+          del estado, por trabas para denunciar, obtener copias, llevar testigos y recibir protección.
+        evidence_level: periodismo_o_investigacion
+        observed: Columna en un semanario de Tijuana que cita cifras de la CEDH
+        cites:
+          - source: zeta-fge-quejas
+            quote: Es la autoridad más señalada del estado
+  - n: '2'
+    actor: Tú
+    action: >-
+      Presenta la queja contra la persona: en línea en el Buzón de Atención a Ciudadanos de la Fiscalía (elige «Queja»
+      o «Denuncia a funcionario público»), o por escrito ante la Fiscalía de Contraloría y Visitaduría. Pon tu número
+      de expediente, la fecha y hora, y cómo era la persona.
+    cites:
+      - source: fge-buzon
+      - source: lofge
+        pinpoint: art. 25
+        quote: es el órgano interno de control de la Fiscalía General del Estado
+      - source: lrabc
+        pinpoint: art. 93
+    next:
+      - to: '3'
+      - to: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+        when: También puedes presentar queja ante la CEDH
+  - n: '3'
+    actor: Fiscalía de Contraloría y Visitaduría
+    action: >-
+      Investiga y califica la falta. Sanciona ella misma las faltas no graves; las graves van al Tribunal de Justicia
+      Administrativa. Si encuentra un delito del personal, ella misma puede investigarlo y llevarlo ante un juez.
+      Si califica la falta como no grave o no sanciona, tienes 5 días hábiles para el recurso de inconformidad.
+    deadline: 5 días hábiles para el recurso
+    cites:
+      - source: lofge
+        pinpoint: art. 25
+        quote: >-
+          facultad para sancionar aquellas distintas a las que son competencia del Tribunal de Justicia Administrativa
+      - source: lrabc
+        pinpoint: arts. 100 a 104
+  - n: '4'
+    actor: Tú
+    action: >-
+      Contra la decisión sobre tu caso (archivo temporal, abstención, criterio de oportunidad o no ejercicio): pide
+      a un juez de control que la revise en los 10 días siguientes a que te notifiquen. Si el Ministerio Público
+      simplemente no actúa, puedes pedir al juez que revise esas omisiones o promover un amparo.
+    deadline: 10 días después de la notificación
+    cites:
+      - source: cnpp
+        pinpoint: art. 258
+      - source: cnpp
+        pinpoint: art. 109, fracción XXI
+      - source: lamp
+        pinpoint: art. 107, fracción VII
+      - source: lvbc
+        pinpoint: art. 12, fracción V
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+glossary:
+  - ministerio-publico
+  - organo-interno-de-control
+  - falta-administrativa
+  - recurso-de-inconformidad
+  - juez-de-control
+  - archivo-temporal
+  - no-ejercicio-de-la-accion-penal
+  - amparo
+  - dias-habiles
+sources:
+  lrabc:
+    type: ley
+    official: true
+    title: Ley de Responsabilidades Administrativas del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_I/20261023_LEYRESPADMTRA.PDF
+    version_date: '2026-10-23'
+    accessed: '2026-11-23'
+  fge-buzon:
+    type: portal_oficial
+    official: true
+    title: Buzón de Atención a Ciudadanos (boleta de queja para servidores públicos)
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://www.fgebc.gob.mx/servicios/buzonvisitaduria
+    accessed: '2026-11-23'
+  cnpp:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  lofge:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Fiscalía General del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20251226_LEYORGFISCALIA.PDF
+    version_date: '2025-12-26'
+    accessed: '2026-11-23'
+  lamp:
+    type: ley
+    official: true
+    title: Ley de Amparo
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf
+    version_date: '2025-10-16'
+    accessed: '2026-11-23'
+  zeta-fge-quejas:
+    type: periodismo
+    official: false
+    title: La Fiscalía que necesita ser denunciada (columna)
+    publisher: Semanario Zeta
+    url: https://zetatijuana.com/2026/10/la-fiscalia-que-necesita-ser-denunciada/
+    version_date: '2026-10-28'
+    accessed: '2026-11-23'
+  lvbc:
+    type: ley
+    official: true
+    title: Ley de Víctimas para el Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_VI/20240315_LEYVICTIMAS.PDF
+    version_date: '2024-03-15'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

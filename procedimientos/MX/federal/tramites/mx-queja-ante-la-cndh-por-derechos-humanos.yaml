@@ -1,0 +1,142 @@
+id: mx-queja-ante-la-cndh-por-derechos-humanos
+country: MX
+jurisdiction: MX
+level: federal
+branch: autonomo
+kind: tramite
+category: denuncias y quejas
+title: Presentar una queja de derechos humanos ante la CNDH
+summary: >-
+  La Comisión Nacional de los Derechos Humanos (CNDH) recibe quejas contra autoridades federales: Guardia Nacional,
+  Ejército, Marina, INM, aduanas, FGR, IMSS y demás. También lleva los casos donde participaron autoridades federales
+  y locales juntas. Intenta un arreglo con la autoridad y, si no lo hay, investiga y puede emitir una recomendación
+  pública, que no obliga pero que la autoridad tiene que contestar.
+authority:
+  name: Comisión Nacional de los Derechos Humanos
+  url: https://www.cndh.org.mx
+who_can:
+  - >-
+    La persona afectada o cualquier persona; si la víctima está detenida o desaparecida, también sus familiares
+    o vecinos, aunque sean menores de edad.
+when: >-
+  Dentro de 1 año desde los hechos o desde que te enteraste. En casos graves puede ampliarse, y no hay plazo para
+  crímenes de lesa humanidad.
+result: Una conciliación con la autoridad o una recomendación pública.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Presentar la queja no cuesta.
+  cites:
+    - source: lcndh
+      pinpoint: art. 27
+channels:
+  - en_linea
+  - telefono
+  - presencial
+requirements:
+  - text: >-
+      Tu nombre y datos. No se aceptan quejas anónimas: si no la firmas al principio, debes ratificarla en 5 días.
+    cites:
+      - source: lcndh
+        pinpoint: art. 27
+  - text: Qué autoridad fue, qué pasó, cuándo y dónde, y tus pruebas.
+    cites:
+      - source: lcndh
+        pinpoint: art. 25
+deadlines:
+  - what: para_presentar
+    text: 1 año desde los hechos o desde que te enteraste.
+    cites:
+      - source: lcndh
+        pinpoint: art. 26
+  - what: respuesta_autoridad
+    text: >-
+      La autoridad tiene 15 días naturales para mandar su informe a la CNDH, y 15 días hábiles para decir si acepta
+      una recomendación.
+    cites:
+      - source: lcndh
+        pinpoint: arts. 34 y 46
+legal_basis:
+  - source: lcndh
+    pinpoint: arts. 3o, 25 a 28, 34, 36, 40 y 46
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Presenta la queja en línea en el portal de atención ciudadana de la CNDH, por teléfono o por escrito. La CNDH
+      tiene personal de guardia a cualquier hora para casos urgentes.
+    cites:
+      - source: lcndh
+        pinpoint: arts. 25, 27 y 28
+        quote: personal de guardia para recibir y atender las reclamaciones o quejas urgentes a cualquier hora
+      - source: cndh-portal
+        quote: Ya puedes presentar tu queja en línea
+  - n: '2'
+    actor: CNDH
+    action: >-
+      Admite la queja y pide un informe a la autoridad, que tiene hasta 15 días naturales para mandarlo. Si hay
+      riesgo, puede pedir medidas para evitar un daño irreparable.
+    deadline: 15 días naturales para el informe
+    cites:
+      - source: lcndh
+        pinpoint: arts. 34 y 40
+  - n: '3'
+    actor: CNDH
+    action: Intenta un arreglo (conciliación) con la autoridad.
+    cites:
+      - source: lcndh
+        pinpoint: art. 36
+    next:
+      - to: 3a
+        when: Hay arreglo
+      - to: '4'
+        when: No hay arreglo
+  - n: 3a
+    actor: CNDH
+    action: Archiva el caso. Si la autoridad no cumple en 90 días, avisa a la CNDH y lo reabre.
+    cites:
+      - source: lcndh
+        pinpoint: art. 36
+        quote: no se ha cumplido con el compromiso en un plazo de 90 días
+    next:
+      - to: fin
+  - n: '4'
+    actor: CNDH y la autoridad
+    action: >-
+      Investiga y, si encuentra violaciones, emite una recomendación pública. La autoridad tiene 15 días hábiles
+      para aceptarla. Si no la acepta, tiene que explicar en público por qué y puede ser llamada por el Senado;
+      si insiste, la CNDH puede denunciar a los responsables.
+    cites:
+      - source: lcndh
+        pinpoint: art. 46
+        quote: no tendrá carácter imperativo
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-queja-contra-agentes-federales
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+glossary:
+  - queja-de-derechos-humanos
+  - conciliacion
+  - recomendacion
+  - ratificar
+  - dias-habiles
+sources:
+  lcndh:
+    type: ley
+    official: true
+    title: Ley de la Comisión Nacional de los Derechos Humanos
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNDH.pdf
+    version_date: '2024-04-01'
+    accessed: '2026-11-23'
+  cndh-portal:
+    type: portal_oficial
+    official: true
+    title: 'CNDH: queja en línea'
+    publisher: Comisión Nacional de los Derechos Humanos
+    url: https://www.cndh.org.mx/
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

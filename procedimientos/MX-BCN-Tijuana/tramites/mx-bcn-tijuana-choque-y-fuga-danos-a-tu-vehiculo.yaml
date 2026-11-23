@@ -1,0 +1,357 @@
+id: mx-bcn-tijuana-choque-y-fuga-danos-a-tu-vehiculo
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: 'Te chocaron el carro y el otro conductor se fue: a quién avisar y cómo cobrar los daños'
+summary: >-
+  Se hace en tres frentes al mismo tiempo. Tránsito municipal toma el reporte en el lugar. Tu aseguradora manda
+  un ajustador y, si tienes cobertura amplia, paga tu carro menos el deducible. Y la Fiscalía, con tu querella,
+  puede buscar al responsable para que te pague. Si no hay placa ni video, lo más probable es que la Fiscalía archive
+  el caso, así que junta pruebas desde el primer minuto.
+authority:
+  name: Fiscalía General del Estado de Baja California
+  unit: Fiscalía Regional de Tijuana
+  url: https://www.fgebc.gob.mx
+other_authorities:
+  - name: Policía y Tránsito Municipal de Tijuana (toma el reporte del accidente)
+    url: https://policia.tijuana.gob.mx
+  - name: Tu aseguradora (manda al ajustador y paga según tu póliza)
+  - name: Juez de control (revisa si la Fiscalía archiva el caso)
+who_can:
+  - La persona dueña del vehículo dañado o quien la represente legalmente.
+when: >-
+  Avisa a tránsito y a tu aseguradora en el momento, desde el lugar. La querella ante la Fiscalía puede presentarse
+  hasta 1 año después, pero mientras antes, más pruebas hay.
+result: >-
+  Un reporte del accidente, un número de siniestro con tu aseguradora y una carpeta de investigación. Si identifican
+  al conductor, un acuerdo para que te pague.
+cost:
+  type: variable
+  text: >-
+    Las denuncias son gratis. Si usas tu seguro de cobertura amplia, pagas el deducible de tu póliza, salvo que
+    tu póliza no lo cobre cuando se identifica al responsable.
+  cites:
+    - source: cnpp
+      pinpoint: art. 109, fracción IX
+    - source: unotv-condusef
+      quote: cobertura deducible 0 con tercero responsable
+channels:
+  - presencial
+  - en_linea
+  - telefono
+requirements:
+  - text: >-
+      Fotos del daño, de la posición de tu carro y del lugar, y de cualquier pedazo, pintura o pieza que dejó el
+      otro vehículo. Es la evidencia física que el reporte de tránsito debe registrar.
+    cites:
+      - source: rtt
+        pinpoint: art. 102, fracción VII
+        quote: Identificación, conservación y registro de toda evidencia física
+      - source: eluniversal-fuga
+        quote: tomar fotografías al daño
+  - text: >-
+      Lo que recuerdes del otro vehículo: placa (aunque sea incompleta), marca, color, daños visibles y hacia dónde
+      se fue.
+    cites:
+      - source: cnpp
+        pinpoint: art. 223
+        quote: la indicación de quién o quiénes lo habrían cometido
+  - text: Nombre y teléfono de testigos.
+    cites:
+      - source: cnpp
+        pinpoint: art. 223
+        quote: las personas que lo hayan presenciado
+      - source: eluniversal-fuga
+        quote: Busca a distintos testigos
+  - text: >-
+      Videos: de tu cámara de tablero, y de negocios o casas cercanas (pídelos el mismo día). Los videos de las
+      cámaras del gobierno pídeselos por escrito al Ministerio Público en tu querella: él puede requerirlos a otras
+      autoridades.
+    cites:
+      - source: cnpp
+        pinpoint: art. 131, fracción IX
+        quote: Requerir informes o documentación a otras autoridades y a particulares
+      - source: cnpp
+        pinpoint: art. 216
+  - text: El número del reporte de tránsito y el número de siniestro de tu aseguradora.
+    cites:
+      - source: rtt
+        pinpoint: art. 102
+      - source: eluniversal-fuga
+  - text: Tu identificación, tarjeta de circulación y póliza de seguro.
+    cites:
+      - source: rtt
+        pinpoint: art. 26
+        quote: También deberá contar con seguro de responsabilidad civil
+      - source: cdtec-registro
+        pinpoint: Tipo identificación
+  - text: Presupuesto o factura de la reparación, para que se cuantifique el daño que te deben pagar.
+    cites:
+      - source: cnpp
+        pinpoint: art. 131, fracción V
+        quote: >-
+          recabar los elementos necesarios que determinen el daño causado por el delito y la cuantificación del
+          mismo
+deadlines:
+  - what: para_presentar
+    text: 'Querella por daños: 1 año desde que supiste del delito (3 años como máximo).'
+    cites:
+      - source: cpbc
+        pinpoint: arts. 115 y 231
+  - what: otro
+    text: >-
+      Si la Fiscalía archiva el caso, tienes 10 días después de que te avisan para pedir que un juez lo revise.
+    cites:
+      - source: cnpp
+        pinpoint: art. 258
+offices:
+  - municipality: Tijuana
+    name: Fiscalía Regional de Tijuana
+    address: Calle Río Suchiate 10036 y Bulevar Rodolfo Sánchez Taboada, Col. Revolución, Tijuana, B.C.
+    phones: (664) 104 28 00, (664) 736 53 26 ext. 5237 y 5329, (664) 736 52 60
+  - municipality: Tijuana
+    name: Sala virtual de denuncia Zona Río (CDTEC)
+    address: >-
+      Bulevar General Rodolfo Sánchez Taboada 10036 esquina con Avenida Río Tijuana, Col. Revolución, Tijuana, B.C.
+  - municipality: Tijuana
+    name: Sala virtual de denuncia La Mesa (CDTEC)
+    address: Avenida Murua Martínez s/n, Chapultepec Alamar, Tijuana, B.C.
+  - municipality: Tijuana
+    name: Sala virtual de denuncia Mariano Matamoros (CDTEC)
+    address: Ruta Mariano Matamoros y Catalina González s/n, Mariano Matamoros, Tijuana, B.C.
+legal_basis:
+  - source: rtt
+    pinpoint: arts. 99 a 102
+  - source: cpbc
+    pinpoint: arts. 75, 115, 159, 227 y 231
+  - source: cnpp
+    pinpoint: arts. 187, 216, 225, 254 y 258
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      En el lugar: no persigas al otro carro. Si alguien está herido, llama al 911 por una ambulancia y no lo muevas
+      salvo que corra peligro. Avisa a tránsito aunque el daño sea leve: el reglamento obliga a todo conductor que
+      sufra un choque a dar aviso inmediato.
+    cites:
+      - source: rtt
+        pinpoint: arts. 99 y 100, fracción I
+        quote: >-
+          Es obligación de todo conductor de vehículo que sufra o cause un hecho vial dar aviso inmediato a la Dirección,
+          aun cuando los daños sean leves
+      - source: eluniversal-fuga
+        quote: No persigas al conductor que se dio a la fuga
+    next:
+      - to: '2'
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: 'Hay personas lesionadas: además ve a denunciar en persona'
+  - n: '2'
+    actor: Agente de tránsito municipal
+    action: >-
+      Toma los datos y hace el reporte: lugar, vehículos, conductores, la evidencia física, los daños y un croquis.
+      Irse del lugar del accidente es una infracción grave para el otro conductor. Pide el número del reporte.
+    cites:
+      - source: rtt
+        pinpoint: art. 102
+      - source: rtt
+        pinpoint: tabla de infracciones, art. 100 fracción I
+        quote: Abandonar el lugar del accidente
+  - n: '3'
+    actor: Tú y tu aseguradora
+    action: >-
+      Llama a tu aseguradora desde el lugar para que mande al ajustador antes de mover el carro. Con cobertura amplia,
+      la aseguradora repara tu carro y tú pagas el deducible. Si solo tienes responsabilidad civil, esa póliza cubre
+      lo que tú le hagas a otros, no tu carro: entonces cobrar depende de que encuentren al otro conductor.
+    cites:
+      - source: eluniversal-fuga
+        quote: llamar a tu aseguradora y esperar a que envíen al ajustador
+      - source: unotv-condusef
+        quote: el seguro de responsabilidad civil, el cual te ampara por los daños que puedas causar a terceros
+    practice:
+      - text: Es muy común que la aseguradora pida copia de tu denuncia ante el Ministerio Público para pagar.
+        evidence_level: periodismo_o_investigacion
+        observed: Nota de prensa nacional con información de una aseguradora
+        cites:
+          - source: eluniversal-fuga
+            quote: >-
+              es muy probable que las aseguradoras piden como requisito indispensable para proceder con los trámites
+              tu denuncia
+  - n: '4'
+    actor: Tú
+    action: >-
+      Presenta la querella por daño en propiedad ajena ante la Fiscalía: por videollamada en CDTEC, por teléfono
+      o en persona. Este delito solo se investiga si tú lo pides. En la misma querella pide por escrito que el Ministerio
+      Público solicite los videos de cámaras públicas y privadas de la zona, que consulte la placa y que un perito
+      valúe el daño.
+    cites:
+      - source: cpbc
+        pinpoint: art. 231
+        quote: Los daños en propiedad ajena se perseguirán por querella de parte ofendida
+      - source: cnpp
+        pinpoint: arts. 216 y 225
+      - source: zeta-telefono
+        quote: >-
+          Por teléfono se pueden denunciar robo de vehículos, robo o extravío de documentos, abuso de confianza,
+          fraude y daños
+    next:
+      - to: '5'
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: Para el paso a paso de la denuncia y tus derechos de víctima
+  - n: 4b
+    actor: Ministerio Público
+    action: >-
+      Casos que la Fiscalía investiga aunque no presentes querella: si el conductor iba ebrio o drogado. Si atropelló
+      a alguien y no lo ayudó ni pidió ayuda, eso es otro delito, además de las lesiones.
+    cites:
+      - source: cpbc
+        pinpoint: arts. 231 y 255
+        quote: cuya persecución será de manera oficiosa
+      - source: cpbc
+        pinpoint: art. 159
+        quote: Al que habiendo atropellado a una persona, no le preste auxilio
+  - n: '5'
+    actor: Ministerio Público
+    action: >-
+      Investiga: busca al dueño por la placa, pide videos y cita a la persona. Por el puro daño a un carro, sin
+      intención y sin alcohol, el castigo es solo una multa, así que lo que en realidad se busca es que te paguen.
+    cites:
+      - source: cnpp
+        pinpoint: art. 131, fracciones V y IX
+      - source: cpbc
+        pinpoint: art. 75
+        quote: se cause únicamente daño en propiedad ajena, se sancionará hasta con cuarenta días multa
+    next:
+      - to: 5a
+        when: Identifican al conductor
+      - to: 5b
+        when: No hay placa, video ni testigos
+  - n: 5a
+    actor: Tú y la persona responsable
+    action: >-
+      Acuerdo reparatorio: acuerdan cómo te paga o repara (o su aseguradora, si tiene) y, cuando cumple, el caso
+      se cierra. Si no cumple, el caso sigue.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 186 y 187, fracciones I y II
+      - source: unotv-condusef
+    next:
+      - to: fin
+  - n: 5b
+    actor: Ministerio Público
+    action: 'Archivo temporal: guarda el caso hasta que aparezcan datos nuevos. Te lo deben notificar.'
+    cites:
+      - source: cnpp
+        pinpoint: arts. 254 y 258
+    next:
+      - to: '6'
+    practice:
+      - text: >-
+          A nivel nacional, de cada 10 denuncias que sí se investigan, menos de 2 terminan bien para quien denunció.
+          Por eso, en un choque y fuga sin placa ni video, lo más seguro para recuperar el dinero suele ser tu propio
+          seguro.
+        evidence_level: documento_oficial
+        observed: Encuesta nacional del INEGI sobre delitos del año anterior
+        cites:
+          - source: envipe2026
+            pinpoint: III. Denuncia y cifra oculta
+  - n: '6'
+    actor: Tú
+    action: >-
+      Si consigues datos nuevos (un video, la placa, un testigo), llévalos para que reabran el caso. Si no estás
+      de acuerdo con el archivo, pide a un juez de control que lo revise dentro de los 10 días siguientes a que
+      te avisen.
+    deadline: 10 días después de la notificación
+    cites:
+      - source: cnpp
+        pinpoint: arts. 254 y 258
+    next:
+      - to: fin
+related:
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-bcn-tijuana-queja-contra-policia-municipal-o-transito
+glossary:
+  - querella
+  - ministerio-publico
+  - carpeta-de-investigacion
+  - ajustador
+  - deducible
+  - perito
+  - acuerdo-reparatorio
+  - archivo-temporal
+  - juez-de-control
+  - dias-multa
+sources:
+  cnpp:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  unotv-condusef:
+    type: periodismo
+    official: false
+    title: Qué hacer si te choca un auto sin seguro (con consejos de la Condusef)
+    publisher: Uno TV
+    url: https://www.unotv.com/negocios/seguro-de-autos-condusef-que-hacer-si-te-choca-un-auto-sin-seguro/
+    accessed: '2026-11-23'
+  rtt:
+    type: reglamento
+    official: true
+    title: Reglamento de Tránsito y Control Vehicular del Municipio de Tijuana, Baja California
+    publisher: Ayuntamiento de Tijuana (Secretaría de Seguridad y Protección Ciudadana Municipal)
+    url: https://policia.tijuana.gob.mx/PDF/Reglamentos/reglamento%20transito2025.pdf
+    version_date: '2025-07-11'
+    accessed: '2026-11-23'
+  eluniversal-fuga:
+    type: periodismo
+    official: false
+    title: Qué hacer si te chocan y se dan a la fuga
+    publisher: El Universal
+    url: https://www.eluniversal.com.mx/autopistas/que-puedes-hacer-si-te-chocan-y-se-dan-la-fuga/
+    version_date: '2023-03-11'
+    accessed: '2026-11-23'
+  cdtec-registro:
+    type: portal_oficial
+    official: true
+    title: 'CDTEC: registro de la persona denunciante'
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://cdtec.fgebc.gob.mx/cdtec/denuncia/denunciante/new
+    accessed: '2026-11-23'
+  cpbc:
+    type: ley
+    official: true
+    title: >-
+      Código Penal para el Estado de Baja California (copia que publica el Ayuntamiento de Mexicali en su portal
+      de transparencia)
+    publisher: Congreso del Estado de Baja California
+    url: https://www.mexicali.gob.mx/fidum/articulo81/2025/2do%20Trimestre/I/CodigoPenalEdoBajaCfa.doc
+    version_date: '2025-07-27'
+    accessed: '2026-11-23'
+  zeta-telefono:
+    type: periodismo
+    official: false
+    title: Por mes, 250 mujeres denuncian por teléfono a sus agresores ante la FGE
+    publisher: Semanario Zeta
+    url: >-
+      https://zetatijuana.com/2022/04/por-mes-250-mujeres-denuncian-por-telefono-a-sus-agresores-ante-la-fge/
+    version_date: 2022-04
+    accessed: '2026-11-23'
+  envipe2026:
+    type: informe_oficial
+    official: true
+    title: >-
+      Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) 2026, comunicado de prensa
+      50/26
+    publisher: INEGI
+    url: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/envipe/ENVIPE2026_CP.pdf
+    version_date: '2026-09-10'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

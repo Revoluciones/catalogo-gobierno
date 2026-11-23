@@ -1,0 +1,240 @@
+id: mx-bcn-tijuana-queja-contra-policia-municipal-o-transito
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: Quejarte de un policía municipal o un agente de tránsito de Tijuana
+summary: >-
+  Las quejas contra policías y agentes de tránsito municipales las investiga la Sindicatura Procuradora, no la policía
+  misma. Puedes ir en persona o hacerlo en línea, incluso sin dar tu nombre. La Sindicatura investiga, decide si
+  hubo falta y pide la sanción. Si además hubo un delito (golpes, te pidió dinero), denúncialo también ante la Fiscalía.
+authority:
+  name: Sindicatura Procuradora del Ayuntamiento de Tijuana
+  unit: Autoridad investigadora
+  url: https://www.sindicatura.gob.mx
+other_authorities:
+  - name: Comisión de Honor y Justicia de la policía municipal (decide remociones y sanciones graves)
+  - name: Fiscalía General del Estado (si hubo delito)
+  - name: Comisión Estatal de los Derechos Humanos (si violaron tus derechos)
+official_ids:
+  homoclave: TJ-SP-0324
+who_can:
+  - Cualquier persona, con su nombre o de forma anónima.
+when: >-
+  Lo antes posible. La Sindicatura puede sancionar una falta no grave hasta 3 años después; una grave, hasta 7.
+result: Una investigación sobre el agente y, si se prueba la falta, una sanción.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Gratuito según la ficha oficial.
+  cites:
+    - source: remutys-0324
+channels:
+  - en_linea
+  - presencial
+  - telefono
+requirements:
+  - text: Identificación oficial (original y una copia), si das tu nombre.
+    cites:
+      - source: remutys-0324
+        pinpoint: Requisitos
+  - text: Tus datos de contacto, para que te avisen cómo va.
+    cites:
+      - source: remutys-0324
+        pinpoint: Requisitos
+  - text: Una descripción clara y completa de lo que pasó.
+    cites:
+      - source: remutys-0324
+        pinpoint: Requisitos
+  - text: >-
+      Todo lo que identifique al agente: nombre o número en el uniforme, número de patrulla, corporación, lugar,
+      fecha y hora. Si no sabes su nombre, describe cómo era.
+    cites:
+      - source: fge-buzon
+        pinpoint: Datos del servidor público; Información del incidente
+        quote: Descripción o señas particulares del servidor público
+  - text: 'Tus pruebas: fotos, videos, la boleta de infracción si te dieron una, y datos de testigos.'
+    cites:
+      - source: remutys-0324
+        pinpoint: Requisitos
+        quote: Pruebas disponibles para apoyar la denuncia
+deadlines:
+  - what: respuesta_autoridad
+    text: 1 año para resolver, según la ficha oficial.
+    cites:
+      - source: remutys-0324
+        pinpoint: Plazo de respuesta
+  - what: otro
+    text: >-
+      La Sindicatura puede sancionar una falta no grave hasta 3 años después de cometida; una grave, hasta 7 años.
+    cites:
+      - source: lrabc
+        pinpoint: art. 74
+  - what: para_corregir
+    text: 'Recurso de inconformidad: 5 días hábiles después de que te notifiquen la calificación.'
+    cites:
+      - source: lrabc
+        pinpoint: art. 103
+offices:
+  - municipality: Tijuana
+    name: Sindicatura Procuradora
+    address: Blvd. Independencia 1350, Zona Urbana Río Tijuana, 22010 Tijuana, B.C.
+    phones: 664 973 7273 ext. 7723
+    hours: Lunes a viernes de 08:00 a 17:00
+legal_basis:
+  - source: lsesc
+    pinpoint: art. 97 BIS
+  - source: lrabc
+    pinpoint: arts. 74, 91 a 104
+  - source: remutys-0324
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      En el momento, mantén la calma y anota todo lo que identifique al agente y a la patrulla. Si te dieron una
+      boleta de infracción, guárdala. Si te piden dinero, eso es un delito (cohecho).
+    cites:
+      - source: fge-buzon
+        pinpoint: Datos del servidor público
+      - source: cpbc
+        pinpoint: art. 296, fracción I
+        quote: solicite o reciba ilícitamente para sí o para otro, dinero
+  - n: '2'
+    actor: Tú
+    action: >-
+      Presenta la denuncia ante la Sindicatura Procuradora, en línea o en su oficina. Puede ser anónima, y si das
+      tu nombre deben mantenerlo confidencial. También puedes reportarlo al 911, que por ley recibe quejas contra
+      policías.
+    cites:
+      - source: remutys-0324
+      - source: lsesc
+        pinpoint: art. 97 BIS
+      - source: lrabc
+        pinpoint: arts. 91 a 93
+        quote: Las denuncias podrán ser anónimas
+      - source: lsesc
+        pinpoint: art. 60, fracción IV
+        quote: Recepción de quejas por faltas y actos delictivos de Miembros
+    next:
+      - to: '3'
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: 'Si hubo delito: denuncia también ante la Fiscalía'
+      - to: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+        when: 'Si violaron tus derechos: queja también ante la CEDH'
+  - n: '3'
+    actor: Sindicatura Procuradora
+    action: >-
+      Investiga: pide informes, revisa bitácoras y videos y puede llamarte a ampliar tu declaración. Si la falta
+      es seria, puede suspender al agente mientras investiga.
+    cites:
+      - source: lrabc
+        pinpoint: arts. 94 a 100
+      - source: lsesc
+        pinpoint: arts. 148 y 157
+      - source: remutys-0324
+        pinpoint: Criterio para resolver
+  - n: '4'
+    actor: Sindicatura Procuradora
+    action: >-
+      Decide si hubo falta y si es grave o no grave (calificación). Si no encuentra pruebas suficientes, cierra
+      el caso y te avisa si diste tus datos; se puede reabrir con pruebas nuevas mientras no prescriba.
+    cites:
+      - source: lrabc
+        pinpoint: arts. 100 y 102
+    next:
+      - to: '5'
+        when: La califica como no grave o decide no sancionar y no estás de acuerdo
+      - to: '6'
+        when: Encuentra falta y sigue el procedimiento
+  - n: '5'
+    actor: Tú
+    action: >-
+      Presenta un recurso de inconformidad en los 5 días hábiles siguientes a que te notifiquen, ante la misma autoridad,
+      explicando por qué la decisión está mal.
+    deadline: 5 días hábiles después de la notificación
+    cites:
+      - source: lrabc
+        pinpoint: arts. 102 a 104
+        quote: El plazo para la presentación del recurso será de cinco días hábiles
+    next:
+      - to: '6'
+  - n: '6'
+    actor: Sindicatura Procuradora
+    action: >-
+      Sigue el procedimiento contra el agente: lo notifica, recibe pruebas, hace una audiencia y resuelve. Para
+      remover a un policía, la Sindicatura lo pide a la Comisión de Honor y Justicia. Las sanciones para policías
+      van de una amonestación, un arresto de hasta 36 horas, un cambio de lugar o una disculpa pública, hasta suspensión
+      de 15 días a 3 meses, remoción del cargo o inhabilitación hasta por 10 años.
+    cites:
+      - source: lsesc
+        pinpoint: arts. 144, 157 y 157 TER
+      - source: lrabc
+        pinpoint: art. 100
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+  - mx-bcn-tijuana-tj-sp-0324-denuncia-a-contra-servidores-publicos-y-miembros-p
+glossary:
+  - sindicatura
+  - asuntos-internos
+  - falta-administrativa
+  - calificacion
+  - recurso-de-inconformidad
+  - dias-habiles
+  - cohecho
+sources:
+  remutys-0324:
+    type: registro_oficial
+    official: true
+    title: >-
+      REMUTyS Tijuana, ficha TJ-SP-0324: Denuncia contra servidores públicos y miembros policiales del Municipio
+      de Tijuana
+    publisher: Ayuntamiento de Tijuana
+    url: https://remutys.tijuana.gob.mx/TJ-SP-0324
+    version_date: '2026-02-10'
+    accessed: '2026-11-23'
+  fge-buzon:
+    type: portal_oficial
+    official: true
+    title: Buzón de Atención a Ciudadanos (boleta de queja para servidores públicos)
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://www.fgebc.gob.mx/servicios/buzonvisitaduria
+    accessed: '2026-11-23'
+  lrabc:
+    type: ley
+    official: true
+    title: Ley de Responsabilidades Administrativas del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_I/20261023_LEYRESPADMTRA.PDF
+    version_date: '2026-10-23'
+    accessed: '2026-11-23'
+  lsesc:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20260227_LEYSEGCIUDADANA.PDF
+    version_date: '2026-02-27'
+    accessed: '2026-11-23'
+  cpbc:
+    type: ley
+    official: true
+    title: >-
+      Código Penal para el Estado de Baja California (copia que publica el Ayuntamiento de Mexicali en su portal
+      de transparencia)
+    publisher: Congreso del Estado de Baja California
+    url: https://www.mexicali.gob.mx/fidum/articulo81/2025/2do%20Trimestre/I/CodigoPenalEdoBajaCfa.doc
+    version_date: '2025-07-27'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'
+notes: >-
+  La ficha importada TJ-SP-0324 copia el registro municipal tal cual; esta ficha explica los pasos con la ley.

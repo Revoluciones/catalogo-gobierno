@@ -1,0 +1,242 @@
+id: mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+country: MX
+jurisdiction: MX-BCN-Tijuana
+inegi_code: '02004'
+level: municipal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: ¿Te pasó algo con un delito o con un agente del gobierno? Elige tu caso y te decimos a dónde ir
+summary: >-
+  Hay tres caminos y a veces se usan al mismo tiempo. Denunciar es avisar de un delito a la Fiscalía para que lo
+  investigue y castigue. Quejarte de un agente es pedir que su propia institución lo investigue y sancione (Asuntos
+  Internos o el órgano de control). Y la queja de derechos humanos es pedir a una comisión que revise si una autoridad
+  violó tus derechos. Responde dos preguntas: qué pasó y quién fue.
+authority:
+  name: Varias autoridades, según el caso
+who_can:
+  - Cualquier persona en Tijuana. Muchas de estas vías también aceptan denuncias de testigos o anónimas.
+result: Saber a qué oficina ir primero y cuáles otras puedes usar al mismo tiempo.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Denunciar y presentar quejas no cuesta.
+  cites:
+    - source: cnpp
+      pinpoint: art. 109, fracción IX
+channels:
+  - en_linea
+  - telefono
+  - presencial
+legal_basis:
+  - source: cnpp
+    pinpoint: arts. 221 y 222
+  - source: lrabc
+    pinpoint: art. 91
+  - source: lcedh
+    pinpoint: arts. 7 y 33
+  - source: lcndh
+    pinpoint: art. 3o
+steps:
+  - n: '1'
+    actor: Tú
+    action: ¿Qué pasó?
+    cites:
+      - source: cnpp
+        pinpoint: art. 222
+        quote: está obligada a denunciarlo ante el Ministerio Público
+      - source: lrabc
+        pinpoint: art. 91
+      - source: lcedh
+        pinpoint: art. 7, fracción II
+    next:
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: >-
+          Alguien cometió un delito contra ti o contra otra persona: robo, golpes, amenazas, fraude, daños, extorsión
+      - to: mx-bcn-tijuana-choque-y-fuga-danos-a-tu-vehiculo
+        when: Chocaron tu carro y el otro conductor se fue
+      - to: '2'
+        when: >-
+          Un agente o servidor público te trató mal, te pidió dinero, no hizo su trabajo o no te quiso recibir una
+          denuncia
+      - to: '3'
+        when: Un agente te golpeó, te detuvo sin motivo, te amenazó, te quitó tus cosas o te torturó
+  - n: '2'
+    actor: Tú
+    action: >-
+      ¿Quién fue? Antes de irte, anota el número de patrulla, el nombre o número en el uniforme, la hora y el lugar.
+      Si no sabes de qué corporación era, presenta la queja de derechos humanos: la comisión investiga a la autoridad
+      y, si hubo agentes federales y locales juntos, la lleva la comisión nacional.
+    cites:
+      - source: lsesc
+        pinpoint: arts. 23 y 97 BIS
+        quote: serán competentes para conocer y resolver sobre estos, las Sindicaturas Municipales correspondientes
+      - source: lofge
+        pinpoint: art. 25
+      - source: lgn
+        pinpoint: art. 23
+      - source: lcndh
+        pinpoint: art. 3o
+        quote: la competencia se surtirá en favor de la Comisión Nacional
+      - source: fge-buzon
+        pinpoint: Datos del servidor público
+    next:
+      - to: mx-bcn-tijuana-queja-contra-policia-municipal-o-transito
+        when: Policía municipal o agente de tránsito de Tijuana
+      - to: mx-bcn-queja-contra-policia-estatal
+        when: Policía estatal (Fuerza Estatal de Seguridad Ciudadana) o custodio de un penal del estado
+      - to: mx-bcn-queja-contra-personal-de-la-fiscalia
+        when: >-
+          Ministerio Público, agente de investigación (Agencia Estatal de Investigación) o perito de la Fiscalía
+          del estado
+      - to: mx-queja-contra-agentes-federales
+        when: Guardia Nacional, Ejército, Marina, FGR, migración (INM), aduanas u otra oficina federal
+      - to: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+        when: No sabes quién era, o era de otra oficina del estado o del municipio
+      - to: mx-queja-ante-la-cndh-por-derechos-humanos
+        when: No sabes quién era, pero había agentes federales
+  - n: '3'
+    actor: Tú
+    action: >-
+      Cuando un agente usa violencia o abusa de su cargo, usa los tres caminos al mismo tiempo: denuncia penal (abuso
+      de autoridad, cohecho si te pidió dinero, tortura), queja en su institución y queja de derechos humanos. Ninguno
+      cancela al otro. Toma fotos de tus lesiones y busca atención médica el mismo día. Si el agente era federal,
+      la denuncia penal va a la Fiscalía General de la República.
+    cites:
+      - source: cpbc
+        pinpoint: arts. 293 y 296
+        quote: hiciere violencia a una persona sin causa legítima, o la vejare
+      - source: lgpist
+        pinpoint: arts. 22 y 24
+      - source: lopjf
+        pinpoint: art. 48, fracción I, inciso f
+      - source: lcedh
+        pinpoint: art. 33
+        quote: no excluyen, ni afectan el ejercicio de otros derechos o medios de defensa
+      - source: cnpp
+        pinpoint: art. 109, fracciones XIV y XVIII
+    next:
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: 'Agente municipal o estatal: denuncia penal'
+      - to: mx-queja-contra-agentes-federales
+        when: 'Agente federal: denuncia ante la FGR y queja'
+      - to: '2'
+        when: Para la queja en su institución
+      - to: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+        when: 'Agente municipal o estatal: derechos humanos'
+      - to: mx-queja-ante-la-cndh-por-derechos-humanos
+        when: 'Agente federal: derechos humanos'
+related:
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+  - mx-bcn-tijuana-choque-y-fuga-danos-a-tu-vehiculo
+  - mx-bcn-tijuana-queja-contra-policia-municipal-o-transito
+  - mx-bcn-queja-contra-policia-estatal
+  - mx-bcn-queja-contra-personal-de-la-fiscalia
+  - mx-queja-contra-agentes-federales
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+  - mx-queja-ante-la-cndh-por-derechos-humanos
+glossary:
+  - denuncia
+  - queja-de-derechos-humanos
+  - asuntos-internos
+  - organo-interno-de-control
+  - servidor-publico
+  - abuso-de-autoridad
+  - cohecho
+sources:
+  cnpp:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  lrabc:
+    type: ley
+    official: true
+    title: Ley de Responsabilidades Administrativas del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_I/20261023_LEYRESPADMTRA.PDF
+    version_date: '2026-10-23'
+    accessed: '2026-11-23'
+  lcedh:
+    type: ley
+    official: true
+    title: Ley de la Comisión Estatal de los Derechos Humanos de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20250214_LEYCOMISIONDH.PDF
+    version_date: '2025-02-14'
+    accessed: '2026-11-23'
+  lcndh:
+    type: ley
+    official: true
+    title: Ley de la Comisión Nacional de los Derechos Humanos
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNDH.pdf
+    version_date: '2024-04-01'
+    accessed: '2026-11-23'
+  lsesc:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20260227_LEYSEGCIUDADANA.PDF
+    version_date: '2026-02-27'
+    accessed: '2026-11-23'
+  lofge:
+    type: ley
+    official: true
+    title: Ley Orgánica de la Fiscalía General del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20251226_LEYORGFISCALIA.PDF
+    version_date: '2025-12-26'
+    accessed: '2026-11-23'
+  lgn:
+    type: ley
+    official: true
+    title: Ley de la Guardia Nacional
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGN.pdf
+    version_date: '2025-07-16'
+    accessed: '2026-11-23'
+  fge-buzon:
+    type: portal_oficial
+    official: true
+    title: Buzón de Atención a Ciudadanos (boleta de queja para servidores públicos)
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://www.fgebc.gob.mx/servicios/buzonvisitaduria
+    accessed: '2026-11-23'
+  cpbc:
+    type: ley
+    official: true
+    title: >-
+      Código Penal para el Estado de Baja California (copia que publica el Ayuntamiento de Mexicali en su portal
+      de transparencia)
+    publisher: Congreso del Estado de Baja California
+    url: https://www.mexicali.gob.mx/fidum/articulo81/2025/2do%20Trimestre/I/CodigoPenalEdoBajaCfa.doc
+    version_date: '2025-07-27'
+    accessed: '2026-11-23'
+  lgpist:
+    type: ley
+    official: true
+    title: >-
+      Ley General para Prevenir, Investigar y Sancionar la Tortura y Otros Tratos o Penas Crueles, Inhumanos o Degradantes
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPIST.pdf
+    version_date: '2022-04-28'
+    accessed: '2026-11-23'
+  lopjf:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Judicial de la Federación
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

@@ -1,0 +1,178 @@
+id: mx-bcn-queja-contra-policia-estatal
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: Quejarte de un policía estatal (Fuerza Estatal de Seguridad Ciudadana) o un custodio
+summary: >-
+  Cada policía del estado tiene una Unidad de Asuntos Internos que investiga las quejas contra sus agentes y pide
+  a la Comisión de Honor y Justicia que los sancione o los remueva. Puedes presentar la queja por escrito, reportarla
+  al 911 o llevarla al Consejo Ciudadano de Seguridad. Si hubo delito, denúncialo también ante la Fiscalía, y si
+  violaron tus derechos, ante la CEDH.
+authority:
+  name: >-
+    Unidad de Asuntos Internos de la Fuerza Estatal de Seguridad Ciudadana (o de la Fuerza Estatal de Seguridad
+    y Custodia Penitenciaria)
+other_authorities:
+  - name: Comisión de Honor y Justicia (decide sanciones graves y remociones)
+  - name: Consejo Ciudadano de Seguridad (puede turnar tu queja a Asuntos Internos)
+  - name: Fiscalía General del Estado (si hubo delito)
+  - name: Comisión Estatal de los Derechos Humanos
+who_can:
+  - Cualquier persona, con su nombre o de forma anónima.
+when: Lo antes posible. Una falta no grave puede sancionarse hasta 3 años después; una grave, hasta 7.
+result: Una investigación sobre el agente y, si se prueba la falta, una sanción.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Presentar la queja no cuesta.
+  cites:
+    - source: lrabc
+      pinpoint: art. 92
+channels:
+  - presencial
+  - telefono
+requirements:
+  - text: >-
+      Todo lo que identifique al agente: nombre o número en el uniforme, número de patrulla, corporación, lugar,
+      fecha y hora. Si no sabes su nombre, describe cómo era.
+    cites:
+      - source: fge-buzon
+        pinpoint: Datos del servidor público; Información del incidente
+        quote: Descripción o señas particulares del servidor público
+  - text: 'Qué pasó, en orden, y tus pruebas: fotos, videos, certificados médicos, datos de testigos.'
+    cites:
+      - source: lrabc
+        pinpoint: art. 93
+        quote: los datos o indicios que permitan advertir la presunta responsabilidad
+deadlines:
+  - what: otro
+    text: 'Falta no grave: se puede sancionar hasta 3 años después; grave: hasta 7 años.'
+    cites:
+      - source: lrabc
+        pinpoint: art. 74
+  - what: para_corregir
+    text: 'Recurso de inconformidad: 5 días hábiles después de que te notifiquen la calificación.'
+    cites:
+      - source: lrabc
+        pinpoint: art. 103
+legal_basis:
+  - source: lsesc
+    pinpoint: arts. 23, 60, 83, 97 BIS, 144, 148 y 157
+  - source: lrabc
+    pinpoint: arts. 74, 91 a 104
+steps:
+  - n: '1'
+    actor: Tú
+    action: Anota todo lo que identifique al agente y a la unidad, y guarda tus pruebas.
+    cites:
+      - source: fge-buzon
+        pinpoint: Datos del servidor público
+  - n: '2'
+    actor: Tú
+    action: >-
+      Presenta la queja ante la Unidad de Asuntos Internos de la corporación, por escrito. También puedes reportarla
+      al 911, que por ley recibe quejas contra policías, o llevarla al Consejo Ciudadano de Seguridad, que puede
+      turnarla a Asuntos Internos. Puede ser anónima.
+    cites:
+      - source: lsesc
+        pinpoint: arts. 23 y 97 BIS
+      - source: lsesc
+        pinpoint: art. 60, fracción IV
+      - source: lsesc
+        pinpoint: art. 83, fracción VIII
+      - source: lrabc
+        pinpoint: art. 91
+        quote: Las denuncias podrán ser anónimas
+    next:
+      - to: '3'
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: 'Si hubo delito: denuncia también ante la Fiscalía'
+      - to: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+        when: 'Si violaron tus derechos: queja también ante la CEDH'
+  - n: '3'
+    actor: Unidad de Asuntos Internos
+    action: >-
+      Investiga: pide informes, revisa bitácoras y videos y puede llamarte a ampliar tu declaración. Si la falta
+      es seria, puede suspender al agente mientras investiga.
+    cites:
+      - source: lsesc
+        pinpoint: arts. 148, 157 y 157 TER
+  - n: '4'
+    actor: Unidad de Asuntos Internos
+    action: >-
+      Decide si hubo falta y si es grave o no grave (calificación). Si no encuentra pruebas suficientes, cierra
+      el caso y te avisa si diste tus datos; se puede reabrir con pruebas nuevas mientras no prescriba.
+    cites:
+      - source: lrabc
+        pinpoint: arts. 100 y 102
+    next:
+      - to: '5'
+        when: La califica como no grave o decide no sancionar y no estás de acuerdo
+      - to: '6'
+        when: Encuentra falta y sigue el procedimiento
+  - n: '5'
+    actor: Tú
+    action: >-
+      Presenta un recurso de inconformidad en los 5 días hábiles siguientes a que te notifiquen, ante la misma autoridad,
+      explicando por qué la decisión está mal.
+    deadline: 5 días hábiles después de la notificación
+    cites:
+      - source: lrabc
+        pinpoint: arts. 102 a 104
+        quote: El plazo para la presentación del recurso será de cinco días hábiles
+    next:
+      - to: '6'
+  - n: '6'
+    actor: Unidad de Asuntos Internos
+    action: >-
+      Sigue el procedimiento contra el agente: lo notifica, recibe pruebas, hace una audiencia y resuelve. Para
+      remover al agente, Asuntos Internos lo pide a la Comisión de Honor y Justicia. Las sanciones para policías
+      van de una amonestación, un arresto de hasta 36 horas, un cambio de lugar o una disculpa pública, hasta suspensión
+      de 15 días a 3 meses, remoción del cargo o inhabilitación hasta por 10 años.
+    cites:
+      - source: lsesc
+        pinpoint: arts. 144, 157 y 157 TER
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+glossary:
+  - asuntos-internos
+  - falta-administrativa
+  - calificacion
+  - recurso-de-inconformidad
+  - dias-habiles
+sources:
+  lrabc:
+    type: ley
+    official: true
+    title: Ley de Responsabilidades Administrativas del Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_I/20261023_LEYRESPADMTRA.PDF
+    version_date: '2026-10-23'
+    accessed: '2026-11-23'
+  fge-buzon:
+    type: portal_oficial
+    official: true
+    title: Buzón de Atención a Ciudadanos (boleta de queja para servidores públicos)
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://www.fgebc.gob.mx/servicios/buzonvisitaduria
+    accessed: '2026-11-23'
+  lsesc:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20260227_LEYSEGCIUDADANA.PDF
+    version_date: '2026-02-27'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'
