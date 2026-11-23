@@ -89,6 +89,18 @@ dl.glos dd{margin:0;color:var(--muted)}
 .empty{color:var(--muted)}
 .legend{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:4px}
 @media (prefers-reduced-motion:no-preference){.list li button{transition:background .12s}}
+/* Flowchart of a procedure: always on white, because the drawing keeps its own light colours in both themes. */
+.flow{background:#fff;color:#1b1a2e;border:1px solid var(--rule);border-radius:6px;overflow:auto;margin:10px 0 6px}
+.flow.editing #flow{height:min(72vh,760px)}
+.flowbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+.flowbar button,.propose button{font:700 14px var(--body);min-height:40px;padding:6px 14px;border-radius:6px;border:1px solid var(--ink);background:var(--panel);color:var(--ink);cursor:pointer}
+.flowbar button.primary,.propose button{background:var(--ink);color:var(--panel)}
+.flowhint{font-size:14px;color:var(--muted);margin:0}
+.propose{margin:12px 0 4px}.propose ul{margin:6px 0 12px;padding-left:20px}
+.propose label{display:block;font-weight:700;margin-bottom:4px}
+.propose textarea{width:100%;min-height:84px;font:inherit;padding:8px;border:1px solid var(--muted);border-radius:6px;background:var(--panel);color:var(--ink)}
+.propose a.go{display:inline-block;margin-top:10px;font-weight:700}
+/*BPMN_CSS*/
 </style>
 
 <div class="wrap">
@@ -173,6 +185,7 @@ function show(id){
     ${d.s?`<p class="sum">${esc(d.s)}</p>`:''}
     ${facts.length?`<dl class="facts">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`:''}
     ${d.lb.length?`<h3>Fundamento legal</h3><div class="cites">${d.lb.map(cite).join('')}</div>`:''}
+    ${d.bp?`<h3>Diagrama</h3><div class="flowbar"><button type="button" id="flow-edit">Editar el diagrama</button><button type="button" id="flow-propose" class="primary" hidden>Proponer este cambio</button><button type="button" id="flow-cancel" hidden>Cancelar</button><p class="flowhint" id="flow-hint">Cada rombo es una decisión. Los pasos con sus fuentes están abajo.</p></div><div class="flow"><div id="flow"></div></div><div class="propose" id="flow-out" hidden></div>`:''}
     ${d.st.length?'<h3>Pasos</h3>':''}
     <div class="legend" ${d.st.length?'':'hidden'}><span><span class="cite">fuente oficial</span></span><span><span class="cite unofficial">fuente no oficial</span></span><span>En naranja: lo que pasa en la práctica.</span></div>
     ${d.st.length?`<ol class="steps">${steps}</ol>`:''}
@@ -184,7 +197,95 @@ function show(id){
     ${d.ru?`<p class="note">Ficha oficial: <a href="${esc(d.ru)}" target="_blank" rel="noopener">${esc(d.ru)}</a></p>`:''}
     ${d.no?`<p class="note">${esc(d.no)}</p>`:''}`;
   document.querySelectorAll('#list button').forEach(b=>b.setAttribute('aria-current',b.dataset.id===id));
+  if(d.bp) draw(d,false);
 }
+// ---- Flowcharts: bpmn-js 18.31.1, drawn the way Barda draws its procedures (the question inside each diamond).
+const BPMN='https://unpkg.com/bpmn-js@18.31.1/dist/', REPO='https://github.com/Revoluciones/catalogo-gobierno';
+const libs={}; let flow=null;
+function lib(name){return libs[name]||(libs[name]=new Promise((ok,no)=>{const s=document.createElement('script');s.src=BPMN+name;s.onload=()=>ok(window.BpmnJS);s.onerror=()=>{delete libs[name];no();};document.head.append(s);}));}
+const FONT='"Atkinson Hyperlegible Next",system-ui,sans-serif';
+const TEXT={defaultStyle:{fontFamily:FONT,fontSize:17,lineHeight:1.25},externalStyle:{fontFamily:FONT,fontSize:14,lineHeight:1.25}};
+const large=e=>e.type==='bpmn:ExclusiveGateway'&&e.width>=120;
+function Questions(eventBus,bpmnRenderer,textRenderer){
+  eventBus.on('render.shape',1500,(event,{gfx,element})=>{
+    if(element.type==='label'&&large(element.labelTarget)){element.hidden=true;return gfx;}
+    if(!large(element)) return undefined;
+    const diamond=bpmnRenderer.drawShape(gfx,element);
+    gfx.querySelectorAll('path').forEach(p=>p.remove());
+    const {width,height}=element;
+    const text=textRenderer.createText(element.businessObject.name||'',{box:{width,height},align:'center-middle',padding:{left:width/5,right:width/5,top:height/5,bottom:height/5},style:{fontSize:15}});
+    text.classList.add('djs-label');gfx.append(text);return diamond;
+  });
+}
+Questions.$inject=['eventBus','bpmnRenderer','textRenderer'];
+const questions={__init__:['questions'],questions:['type',Questions]};
+// The editor offers only the shapes a procedure uses: start, step, decision, another procedure, wait, end.
+const keep=(entries,ids)=>Object.fromEntries(Object.entries(entries).filter(([id])=>ids.includes(id)));
+function Limits(palette,contextPad,popupMenu,elementFactory){
+  const size=elementFactory.getDefaultSize.bind(elementFactory);
+  elementFactory.getDefaultSize=(element,di)=>{const b=element.businessObject||element;
+    if(b.$instanceOf('bpmn:Gateway')) return {width:220,height:130};
+    if(b.$instanceOf('bpmn:Task')||b.$instanceOf('bpmn:CallActivity')) return {width:240,height:100};
+    return size(element,di);};
+  palette.registerProvider(1,{getPaletteEntries:()=>e=>keep(e,['hand-tool','lasso-tool','space-tool','global-connect-tool','tool-separator','create.start-event','create.end-event','create.exclusive-gateway','create.task'])});
+  contextPad.registerProvider(1,{getContextPadEntries:()=>e=>keep(e,['append.end-event','append.gateway','append.append-task','connect','delete','replace'])});
+  popupMenu.registerProvider('bpmn-replace',1,{getPopupMenuEntries:()=>e=>keep(e,['replace-with-task','replace-with-call-activity','replace-with-exclusive-gateway','replace-with-none-start','replace-with-timer-intermediate-catch','replace-with-none-end']),getPopupMenuHeaderEntries:()=>()=>({})});
+}
+Limits.$inject=['palette','contextPad','popupMenu','elementFactory'];
+async function draw(d,edit){
+  const box=$('#flow'), frame=box.parentElement; if(flow){flow.destroy();flow=null;}
+  box.innerHTML='';box.style.cssText='';frame.classList.toggle('editing',edit);
+  $('#flow-edit').hidden=edit;$('#flow-propose').hidden=$('#flow-cancel').hidden=!edit;$('#flow-out').hidden=true;
+  $('#flow-hint').textContent=edit?'Arrastra, conecta y cambia los nombres con doble clic. Nada se publica hasta que alguien lo coteje con sus fuentes.':'Cada rombo es una decisión. Los pasos con sus fuentes están abajo.';
+  let Ctor; try{Ctor=await lib(edit?'bpmn-modeler.production.min.js':'bpmn-navigated-viewer.production.min.js');}
+  catch(e){box.textContent='No se pudo cargar el dibujo. Los pasos están abajo.';box.style.padding='12px';return;}
+  if(cur!==d.id||!$('#flow')) return;
+  const mine=flow=new Ctor({container:box,textRenderer:TEXT,additionalModules:[questions,edit?{__init__:['limits'],limits:['type',Limits]}:{moveCanvas:['value',{}],zoomScroll:['value',{}]}]});
+  try{await mine.importXML(d.bp);}catch(e){box.textContent='Este diagrama no se pudo dibujar. Los pasos están abajo.';box.style.padding='12px';return;}
+  if(flow!==mine) return;
+  const canvas=mine.get('canvas');
+  if(edit){canvas.zoom('fit-viewport');canvas.zoom(Math.max(.6,canvas.zoom()));const v=canvas.viewbox();canvas.viewbox({x:v.inner.x-90/v.scale,y:v.inner.y-20/v.scale,width:v.width,height:v.height});return;}
+  const {x,y,width,height}=canvas.viewbox().inner;
+  const fit=()=>{ if(flow!==mine) return; const room=frame.clientWidth,scale=Math.max(.7,Math.min(1,(room-40)/width));
+    box.style.width=Math.max(room,Math.ceil(width*scale+40))+'px';box.style.height=Math.ceil(height*scale+40)+'px';canvas.resized();
+    const w=box.clientWidth/scale,h=box.clientHeight/scale;canvas.viewbox({x:x-(w-width)/2,y:y-(h-height)/2,width:w,height:h});};
+  fit();window.addEventListener('resize',fit);
+}
+// What changed between two diagrams, in words a reviewer can check against the sources.
+function outline(xml){
+  const doc=new DOMParser().parseFromString(xml,'application/xml'),names={},arrows=[];
+  const KIND={startEvent:'Inicio',endEvent:'Fin',exclusiveGateway:'Decisión',callActivity:'Otro procedimiento',intermediateCatchEvent:'Espera'};
+  doc.querySelectorAll('process > *').forEach(e=>{const tag=e.localName,name=(e.getAttribute('name')||'').replace(/\s+/g,' ').trim();
+    if(tag==='sequenceFlow') arrows.push([e.getAttribute('sourceRef'),e.getAttribute('targetRef'),name]);
+    else if(KIND[tag]||/[tT]ask$/.test(tag)) names[e.getAttribute('id')]={kind:KIND[tag]||'Paso',name};});
+  return {names,arrows};
+}
+function changes(before,after){
+  const a=outline(before),b=outline(after),out=[],say=n=>`«${n.name||n.kind}»`;
+  for(const [id,n] of Object.entries(b.names)){const o=a.names[id];
+    if(!o) out.push(`${n.kind} nuevo: ${say(n)}`); else if(o.name!==n.name) out.push(`Cambia de nombre: ${say(o)} ahora es ${say(n)}`);}
+  for(const [id,o] of Object.entries(a.names)) if(!b.names[id]) out.push(`Se quita: ${say(o)}`);
+  // Arrows are compared by the steps they join, not by name, so renaming a step does not count as new arrows.
+  const show=(g,[s,t,l])=>`${say(g.names[s]||{name:s})} → ${say(g.names[t]||{name:t})}${l?` (${l})`:''}`;
+  const ka=new Set(a.arrows.map(x=>x.join('|'))),kb=new Set(b.arrows.map(x=>x.join('|')));
+  b.arrows.forEach(x=>ka.has(x.join('|'))||out.push(`Flecha nueva: ${show(b,x)}`));
+  a.arrows.forEach(x=>kb.has(x.join('|'))||out.push(`Se quita la flecha: ${show(a,x)}`));
+  return out;
+}
+async function propose(d){
+  const {xml}=await flow.saveXML({format:true}),list=changes(d.bp,xml),out=$('#flow-out');out.hidden=false;
+  if(!list.length){out.innerHTML='<p>No cambiaste ningún paso ni flecha. Mover las figuras no cambia el procedimiento.</p>';return;}
+  out.innerHTML=`<p><b>Tu propuesta cambia esto:</b></p><ul>${list.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>
+    <label for="flow-src">¿En qué fuente te basas? (ley y artículo, registro oficial, respuesta de transparencia, o lo que viviste)</label>
+    <textarea id="flow-src"></textarea>
+    <p class="flowhint">Se abre una propuesta pública en GitHub (necesitas una cuenta). Una persona la coteja con las fuentes antes de publicarla. No pongas datos personales.</p>
+    <a class="go" id="flow-go" target="_blank" rel="noopener" href="#">Abrir la propuesta →</a> · <a id="flow-file" download="${esc(d.id)}.bpmn" href="data:application/xml;charset=utf-8,${encodeURIComponent(xml)}">Descargar el diagrama editado</a>`;
+  const link=()=>{const body=`Procedimiento: \`${d.id}\`\n\nCambios propuestos en el diagrama:\n${list.map(c=>'- '+c).join('\n')}\n\nFuente:\n${$('#flow-src').value.trim()||'(falta)'}\n\nHecho desde la página Por dentro. Si descargaste el diagrama editado, arrástralo aquí.`;
+    $('#flow-go').href=`${REPO}/issues/new?title=${encodeURIComponent('Cambio propuesto: '+d.t)}&body=${encodeURIComponent(body.slice(0,6000))}`;};
+  link();$('#flow-src').addEventListener('input',link);
+}
+$('#ficha').addEventListener('click',e=>{const d=byId[cur];if(!d||!d.bp) return;
+  if(e.target.id==='flow-edit') draw(d,true); else if(e.target.id==='flow-cancel') draw(d,false); else if(e.target.id==='flow-propose'&&flow) propose(d);});
 $('#list').addEventListener('click',e=>{const b=e.target.closest('button[data-id]');if(!b)return;location.hash=b.dataset.id;if(matchMedia('(max-width:860px)').matches)$('#ficha').scrollIntoView({behavior:'smooth'});});
 document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{kind=b.dataset.k;document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderList();}));
 $('#q').addEventListener('input',renderList);$('#au').addEventListener('change',renderList);
