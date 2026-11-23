@@ -1,0 +1,195 @@
+id: mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: autonomo
+kind: tramite
+category: denuncias y quejas
+title: Presentar una queja de derechos humanos ante la CEDH de Baja California
+summary: >-
+  Si una autoridad estatal o municipal (policía, Fiscalía, hospital, escuela, oficina) violó tus derechos o no quiso
+  actuar, la Comisión Estatal de los Derechos Humanos (CEDH) recibe tu queja, pide explicaciones a la autoridad
+  y busca un arreglo rápido. Si no lo hay, investiga y puede emitir una recomendación pública. La recomendación
+  no obliga a la autoridad, pero si no la acepta tiene que explicar por qué en público.
+authority:
+  name: Comisión Estatal de los Derechos Humanos de Baja California
+  url: https://derechoshumanosbc.org
+other_authorities:
+  - name: Comisión Nacional de los Derechos Humanos (si hubo autoridades federales)
+who_can:
+  - La persona afectada o cualquier persona que sepa de los hechos. No se aceptan quejas anónimas.
+when: >-
+  Dentro de 1 año desde que pasaron los hechos o desde que te enteraste. En violaciones graves puede aceptarla después.
+result: >-
+  Una conciliación con la autoridad o una recomendación pública. Presentarla no frena ni sustituye tus otras vías.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Presentar la queja no cuesta.
+  cites:
+    - source: lcedh
+      pinpoint: art. 28
+channels:
+  - en_linea
+  - presencial
+  - telefono
+requirements:
+  - text: >-
+      Tu nombre y datos de contacto. Si no firmas la queja desde el principio, debes ratificarla en 3 días.
+    cites:
+      - source: lcedh
+        pinpoint: art. 28
+        quote: No se admitirán denuncias anónimas
+      - source: cedh-queja
+  - text: Qué autoridad fue, qué hizo o dejó de hacer, cuándo y dónde, y tus pruebas.
+    cites:
+      - source: cedh-queja
+        pinpoint: Autoridades
+      - source: lcedh
+        pinpoint: art. 7, fracción II
+deadlines:
+  - what: para_presentar
+    text: 1 año desde los hechos o desde que te enteraste.
+    cites:
+      - source: lcedh
+        pinpoint: art. 27
+  - what: respuesta_autoridad
+    text: La autoridad tiene 10 días hábiles para decir si acepta una recomendación.
+    cites:
+      - source: lcedh
+        pinpoint: art. 47
+offices:
+  - municipality: Tijuana
+    name: Comisión Estatal de los Derechos Humanos, oficina Tijuana
+    address: Blvd. Insurgentes 16310-B, Tercera Etapa del Río, Col. Los Álamos, C.P. 22110, Tijuana, B.C.
+    phones: (664) 973 2373 y (664) 973 2374; guardia (664) 450 3534
+legal_basis:
+  - source: lcedh
+    pinpoint: arts. 7, 27, 28, 33, 37, 41, 47 y 48
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Presenta la queja en línea, por teléfono, por escrito o en la oficina de Tijuana. Si es urgente (por ejemplo,
+      una persona detenida), usa el teléfono de guardia.
+    cites:
+      - source: lcedh
+        pinpoint: art. 28
+        quote: podrán formularse por cualquier medio de comunicación electrónica o telefónica
+      - source: cedh-queja
+      - source: cedh-contacto
+    practice:
+      - text: >-
+          El presidente de la CEDH reconoció que el organismo ha tenido que acompañar a personas a quienes la Fiscalía
+          no les recibía la denuncia.
+        evidence_level: periodismo_o_investigacion
+        observed: Columna en un semanario de Tijuana
+        cites:
+          - source: zeta-fge-quejas
+            quote: ha tenido que acompañar a personas que no habían podido formalizar su denuncia
+  - n: '2'
+    actor: CEDH
+    action: >-
+      Admite la queja y te avisa que presentarla no detiene los plazos de tus otras vías (denuncia, amparo, recursos):
+      sigue con ellas. Si hay riesgo, puede pedir a la autoridad medidas para evitar un daño irreparable.
+    cites:
+      - source: lcedh
+        pinpoint: art. 33
+        quote: ni interrumpen sus plazos de preclusión o prescripción
+      - source: lcedh
+        pinpoint: art. 41
+  - n: '3'
+    actor: CEDH
+    action: Pide un informe a la autoridad e intenta un arreglo (conciliación).
+    cites:
+      - source: lcedh
+        pinpoint: art. 37
+    next:
+      - to: 3a
+        when: La autoridad acepta arreglarlo
+      - to: '4'
+        when: No hay arreglo
+  - n: 3a
+    actor: CEDH
+    action: Archiva la queja. Si la autoridad no cumple en 90 días naturales, avisa a la CEDH y la reabre.
+    cites:
+      - source: lcedh
+        pinpoint: art. 37
+        quote: que no se ha cumplido con el compromiso en un plazo de noventa días naturales
+    next:
+      - to: fin
+  - n: '4'
+    actor: CEDH
+    action: 'Investiga: pide documentos, visita lugares, escucha a testigos y revisa tus pruebas.'
+    cites:
+      - source: lcedh
+        pinpoint: art. 40
+      - source: lcedh
+        pinpoint: art. 51
+    next:
+      - to: '5'
+        when: Encuentra violaciones
+      - to: fin
+        when: 'No las encuentra: emite un acuerdo de no responsabilidad'
+  - n: '5'
+    actor: CEDH y la autoridad
+    action: >-
+      Emite una recomendación pública. La autoridad tiene 10 días hábiles para decir si la acepta y otros 5 para
+      probar que cumplió. Si no la acepta, la CEDH le pide que explique en público por qué, y puede avisar a sus
+      superiores.
+    cites:
+      - source: lcedh
+        pinpoint: art. 47
+        quote: no tendrá carácter imperativo
+      - source: lcedh
+        pinpoint: art. 48
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-queja-ante-la-cndh-por-derechos-humanos
+  - mx-bcn-tijuana-queja-contra-policia-municipal-o-transito
+  - mx-bcn-queja-contra-policia-estatal
+  - mx-bcn-queja-contra-personal-de-la-fiscalia
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+glossary:
+  - queja-de-derechos-humanos
+  - conciliacion
+  - recomendacion
+  - ratificar
+  - dias-habiles
+sources:
+  lcedh:
+    type: ley
+    official: true
+    title: Ley de la Comisión Estatal de los Derechos Humanos de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20250214_LEYCOMISIONDH.PDF
+    version_date: '2025-02-14'
+    accessed: '2026-11-23'
+  cedh-queja:
+    type: portal_oficial
+    official: true
+    title: 'CEDHBC: presenta tu queja en línea'
+    publisher: Comisión Estatal de los Derechos Humanos de Baja California
+    url: https://derechoshumanosbc.org/presenta-tu-queja-en-linea/
+    accessed: '2026-11-23'
+  cedh-contacto:
+    type: portal_oficial
+    official: true
+    title: 'CEDHBC: contacto y oficinas'
+    publisher: Comisión Estatal de los Derechos Humanos de Baja California
+    url: https://derechoshumanosbc.org/contacto-2/
+    accessed: '2026-11-23'
+  zeta-fge-quejas:
+    type: periodismo
+    official: false
+    title: La Fiscalía que necesita ser denunciada (columna)
+    publisher: Semanario Zeta
+    url: https://zetatijuana.com/2026/10/la-fiscalia-que-necesita-ser-denunciada/
+    version_date: '2026-10-28'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

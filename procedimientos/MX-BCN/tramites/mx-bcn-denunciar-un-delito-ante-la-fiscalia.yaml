@@ -1,0 +1,457 @@
+id: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+country: MX
+jurisdiction: MX-BCN
+inegi_code: '02'
+level: estatal
+branch: varios
+kind: tramite
+category: denuncias y quejas
+title: 'Denunciar un delito ante la Fiscalía de Baja California: en línea (CDTEC), por teléfono o en persona'
+summary: >-
+  Para que la Fiscalía investigue un delito tienes que avisarle. Eso es la denuncia, o la querella cuando el delito
+  solo se investiga si la víctima lo pide. Puedes hacerlo por videollamada en el Centro de Denuncia Tecnológica
+  (CDTEC), por teléfono o en una oficina; las tres valen igual. Te dan un número de caso, la Fiscalía investiga
+  y el caso termina en un acuerdo para pagarte, en un juicio, o archivado si no hay pistas. Si lo archivan, puedes
+  pedirle a un juez que lo revise.
+authority:
+  name: Fiscalía General del Estado de Baja California
+  unit: Fiscalía Regional de Tijuana
+  url: https://www.fgebc.gob.mx
+other_authorities:
+  - name: >-
+      Juez de control del Poder Judicial de Baja California (revisa si archivan tu caso y autoriza actos de investigación)
+  - name: Comisión Ejecutiva Estatal de Atención Integral a Víctimas (te da un asesor jurídico gratuito)
+who_can:
+  - Cualquier persona que sepa de un delito puede denunciarlo.
+  - Si el delito es de querella, la víctima, o quien la represente, tiene que pedir que se investigue.
+when: >-
+  Lo antes posible: la evidencia (videos, testigos, huellas) se pierde rápido. Si el delito es de querella, tienes
+  1 año desde que te enteraste.
+result: >-
+  Una carpeta de investigación con su número de caso, y los derechos de víctima durante todo el proceso.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Presentar la denuncia y obtener copia de tu carpeta no cuesta.
+  cites:
+    - source: cnpp
+      pinpoint: art. 109, fracciones IX y XXII
+    - source: cdtec
+      pinpoint: Términos y condiciones, punto 4
+      quote: El acceso y uso del mismo es libre y gratuito
+channels:
+  - en_linea
+  - telefono
+  - presencial
+requirements:
+  - text: Una identificación. El registro de CDTEC pide el tipo y número de identificación y fotos de ella.
+    cites:
+      - source: cdtec-registro
+        pinpoint: Tipo identificación; Fotos de identificación
+  - text: 'Para CDTEC: internet, un correo electrónico y un celular para recibir el código de validación.'
+    cites:
+      - source: fge-bol-10131
+        quote: el único requisito es contar con acceso a internet y un correo electrónico
+      - source: cdtec-registro
+        pinpoint: Validación de teléfono
+  - text: >-
+      Lo que pasó contado en orden: qué, cuándo, dónde, quién lo hizo (o cómo era) y quién lo vio. Escríbelo antes
+      para no olvidar nada.
+    cites:
+      - source: cnpp
+        pinpoint: art. 223
+        quote: la narración circunstanciada del hecho, la indicación de quién o quiénes lo habrían cometido
+  - text: >-
+      Tus pruebas: fotos, videos, capturas de pantalla, facturas o presupuestos de lo dañado o robado, y nombre
+      y teléfono de testigos. La Fiscalía debe recibirlas.
+    cites:
+      - source: cnpp
+        pinpoint: art. 109, fracción XIV
+        quote: A que se le reciban todos los datos o elementos de prueba pertinentes
+deadlines:
+  - what: para_presentar
+    text: 'Delitos de querella: 1 año desde que la víctima supo del delito (y 3 años como máximo).'
+    cites:
+      - source: cpbc
+        pinpoint: art. 115
+  - what: respuesta_autoridad
+    text: Cuando pides por escrito que se haga una diligencia, el Ministerio Público debe contestar en 3 días.
+    cites:
+      - source: cnpp
+        pinpoint: art. 216
+  - what: otro
+    text: >-
+      Si archivan o cierran tu caso, tienes 10 días después de que te avisan para pedir que un juez lo revise.
+    cites:
+      - source: cnpp
+        pinpoint: art. 258
+offices:
+  - municipality: Tijuana
+    name: Fiscalía Regional de Tijuana
+    address: Calle Río Suchiate 10036 y Bulevar Rodolfo Sánchez Taboada, Col. Revolución, Tijuana, B.C.
+    phones: (664) 104 28 00, (664) 736 53 26 ext. 5237 y 5329, (664) 736 52 60
+  - municipality: Tijuana
+    name: Sala virtual de denuncia Zona Río (CDTEC)
+    address: >-
+      Bulevar General Rodolfo Sánchez Taboada 10036 esquina con Avenida Río Tijuana, Col. Revolución, Tijuana, B.C.
+  - municipality: Tijuana
+    name: Sala virtual de denuncia La Mesa (CDTEC)
+    address: Avenida Murua Martínez s/n, Chapultepec Alamar, Tijuana, B.C.
+  - municipality: Tijuana
+    name: Sala virtual de denuncia Mariano Matamoros (CDTEC)
+    address: Ruta Mariano Matamoros y Catalina González s/n, Mariano Matamoros, Tijuana, B.C.
+scenarios:
+  - name: En línea por videollamada (CDTEC)
+    notes: Abierto las 24 horas, todos los días. También sirve desde fuera del estado o del país.
+    modes:
+      - name: En línea
+        steps:
+          - Entra a cdtec.fgebc.gob.mx/cdtec, acepta los términos y elige «Video atención».
+          - >-
+            Regístrate con tus datos, tu identificación y tu correo; valida tu celular con el código que te llega.
+          - Entra con tu correo y contraseña y espera a que te atienda una persona de la Fiscalía por video.
+          - Cuenta lo que pasó, manda tus pruebas y guarda el número de caso que te den.
+  - name: En una sala virtual
+    notes: >-
+      Si no tienes internet o computadora, en Tijuana hay salas virtuales de CDTEC en Zona Río, La Mesa y Mariano
+      Matamoros.
+  - name: Por teléfono
+    notes: >-
+      800 343 2220. La Fiscalía dijo que por teléfono se pueden denunciar robo de vehículo, robo o extravío de documentos,
+      abuso de confianza, fraude y daños.
+  - name: En persona
+    notes: >-
+      En la Fiscalía Regional de Tijuana. Conviene ir en persona cuando hay personas lesionadas, cuando un perito
+      tiene que revisar algo, cuando llevas pruebas físicas o cuando la Fiscalía te cita.
+legal_basis:
+  - source: cnpp
+    pinpoint: arts. 109, 131, 221 a 225, 253 a 258
+  - source: cpbc
+    pinpoint: art. 115
+  - source: lvbc
+    pinpoint: art. 12
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Si el peligro sigue, llama al 911 primero. Si no, guarda todo lo que sirva de prueba antes de que se pierda:
+      fotos, videos de cámaras cercanas, capturas de mensajes y datos de testigos.
+    cites:
+      - source: lsesc
+        pinpoint: art. 60
+        quote: La recepción de reportes por delitos
+      - source: cnpp
+        pinpoint: art. 109, fracción XIV
+  - n: '2'
+    actor: Tú
+    action: >-
+      Presenta la denuncia, o la querella, por el canal que te acomode: videollamada en CDTEC, una sala virtual,
+      el 800 343 2220 o en persona en la Fiscalía. La ley obliga al Ministerio Público a recibirla por cualquier
+      medio, también digital, y a investigar sin pedirte más requisitos.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 131, fracción II y 223
+        quote: >-
+          Recibir las denuncias o querellas que le presenten en forma oral, por escrito, o a través de medios digitales
+      - source: cnpp
+        pinpoint: art. 221
+        quote: están obligados a proceder sin mayores requisitos a la investigación
+      - source: cdtec
+      - source: cdtec-salas
+      - source: fge-bol-10131
+    practice:
+      - text: >-
+          La Fiscalía dijo que una denuncia por teléfono o por internet vale igual que una hecha en la oficina,
+          pero que algunos delitos requieren ratificarla después en persona ante el Ministerio Público.
+        evidence_level: periodismo_o_investigacion
+        observed: Declaraciones de la Fiscalía a la prensa en Tijuana
+        cites:
+          - source: zeta-telefono
+          - source: zeta-oxxo
+            quote: algunos delitos requieren de la ratificación en el Ministerio Público
+      - text: >-
+          Ante la Comisión Estatal de los Derechos Humanos se acumularon en un solo año más de 300 quejas contra
+          la Fiscalía, sobre todo por trabas para recibir denuncias, dar copias o atender a testigos, y la Comisión
+          ha tenido que acompañar a personas para que les reciban la denuncia. Si no te la quieren recibir, anota
+          el nombre de quien te atendió y la hora, y presenta una queja (ver los procedimientos relacionados).
+        evidence_level: periodismo_o_investigacion
+        observed: Columna en un semanario de Tijuana que cita cifras de la CEDH
+        cites:
+          - source: zeta-fge-quejas
+            quote: trabas para presentar denuncias, para obtener copias del expediente
+  - n: '3'
+    actor: Fiscalía General del Estado
+    action: >-
+      Registra tu denuncia, te da un número de caso y abre una carpeta de investigación. Pide ese número y el nombre
+      de quien te atendió: sin el número no puedes darle seguimiento.
+    cites:
+      - source: fge-bol-9280
+        quote: para generar un número único de caso, e iniciar con las investigaciones
+      - source: cnpp
+        pinpoint: art. 211, fracción I, inciso a
+    practice:
+      - text: A nivel nacional, en 1 de cada 4 denuncias la autoridad no abrió una carpeta de investigación.
+        evidence_level: documento_oficial
+        observed: Encuesta nacional del INEGI sobre delitos del año anterior
+        cites:
+          - source: envipe2026
+            pinpoint: III. Denuncia y cifra oculta
+            quote: se abrieron carpetas de investigación en 73.5 % de estas denuncias
+  - n: '4'
+    actor: Tú
+    action: >-
+      Si la Fiscalía te cita, ve: para ratificar, para una entrevista, para que un perito revise lesiones o daños,
+      o para reconocer a alguien. Si por salud o edad no puedes ir, pide que la autoridad vaya a donde estás.
+    cites:
+      - source: zeta-oxxo
+      - source: cnpp
+        pinpoint: art. 131, fracción IX
+      - source: cnpp
+        pinpoint: art. 109, fracción XX
+  - n: '5'
+    actor: Tú
+    action: >-
+      Dale seguimiento. Tienes derecho a: pedir copia gratis de tu carpeta; pedir por escrito diligencias concretas
+      (pedir videos de cámaras, citar a un testigo, consultar una placa), que el Ministerio Público debe contestar
+      en 3 días; tener un asesor jurídico gratuito; y pedir medidas de protección si corres peligro. Cada vez que
+      entregues algo, pide acuse con fecha.
+    deadline: El Ministerio Público contesta tus solicitudes en 3 días.
+    cites:
+      - source: cnpp
+        pinpoint: art. 109, fracciones VII, XVII, XIX y XXII
+      - source: cnpp
+        pinpoint: art. 216
+        quote: La solicitud deberá resolverse en un plazo máximo de tres días
+      - source: cnpp
+        pinpoint: art. 137
+      - source: lvbc
+        pinpoint: art. 12, fracción IV
+    practice:
+      - text: >-
+          A nivel nacional, de cada 10 denuncias que sí se investigan, unas 4 terminan sin que pase nada, unas 4
+          siguen en trámite y menos de 2 terminan bien para quien denunció.
+        evidence_level: documento_oficial
+        observed: Encuesta nacional del INEGI sobre delitos del año anterior
+        cites:
+          - source: envipe2026
+            pinpoint: III. Denuncia y cifra oculta
+            quote: el resultado fue positivo para la persona denunciante en 16.0 % de las ocasiones
+  - n: '6'
+    actor: Ministerio Público
+    action: 'Investiga y decide cómo sigue el caso. Puede terminar de una de estas formas:'
+    cites:
+      - source: cnpp
+        pinpoint: arts. 186, 187, 211 y 253 a 256
+    next:
+      - to: 6a
+        when: La persona responsable acepta pagar o reparar el daño
+      - to: 6b
+        when: Hay pruebas para acusar
+      - to: 6c
+        when: No hay pistas para seguir
+      - to: 6d
+        when: El Ministerio Público cree que no hubo delito, que ya prescribió o que no vale la pena perseguirlo
+  - n: 6a
+    actor: Tú y la persona responsable
+    action: >-
+      Acuerdo reparatorio: se ponen de acuerdo en cómo te paga o repara, y al cumplirse el caso se cierra. Procede
+      en delitos de querella, delitos sin intención (culposos) y delitos contra tus bienes sin violencia. No procede
+      en violencia familiar.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 186 y 187
+    next:
+      - to: fin
+  - n: 6b
+    actor: Ministerio Público y juez de control
+    action: >-
+      El Ministerio Público lleva el caso ante un juez. Sigue la audiencia inicial, la etapa intermedia y, si no
+      hay acuerdo antes, el juicio, hasta una sentencia. Puedes pedir directamente al juez que te reparen el daño.
+    cites:
+      - source: cnpp
+        pinpoint: art. 211
+      - source: cnpp
+        pinpoint: art. 109, fracción XXV
+    next:
+      - to: fin
+  - n: 6c
+    actor: Ministerio Público
+    action: >-
+      Archivo temporal: guarda el caso porque no hay datos para investigar. No es definitivo: se reabre si aparecen
+      datos nuevos (una placa, un video, un testigo). Te lo deben notificar.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 254 y 258
+    next:
+      - to: '7'
+  - n: 6d
+    actor: Ministerio Público
+    action: >-
+      Puede abstenerse de investigar (no hay delito o ya prescribió), aplicar un criterio de oportunidad (no perseguirlo,
+      por ejemplo en delitos menores, siempre que se repare el daño) o decretar el no ejercicio de la acción penal
+      (cerrar el caso). Todas estas decisiones te las deben notificar por escrito y explicar por qué.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 253, 255, 256 y 258
+    next:
+      - to: '7'
+  - n: '7'
+    actor: Tú
+    action: >-
+      Si no estás de acuerdo, pide a un juez de control que revise la decisión dentro de los 10 días siguientes
+      a que te notifiquen. Si el Ministerio Público simplemente no hace nada, puedes pedir un amparo por sus omisiones.
+      Y si aparecen datos nuevos, llévalos para que reabra el caso archivado.
+    deadline: 10 días después de la notificación
+    cites:
+      - source: cnpp
+        pinpoint: art. 258
+      - source: cnpp
+        pinpoint: art. 109, fracción XXI
+      - source: lamp
+        pinpoint: art. 107, fracción VII
+      - source: lvbc
+        pinpoint: art. 12, fracción V
+    next:
+      - to: fin
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-bcn-tijuana-choque-y-fuga-danos-a-tu-vehiculo
+  - mx-bcn-queja-contra-personal-de-la-fiscalia
+  - mx-bcn-queja-ante-la-cedh-por-derechos-humanos
+glossary:
+  - denuncia
+  - querella
+  - ministerio-publico
+  - carpeta-de-investigacion
+  - ratificar
+  - perito
+  - asesor-juridico
+  - medidas-de-proteccion
+  - acuerdo-reparatorio
+  - juez-de-control
+  - archivo-temporal
+  - criterio-de-oportunidad
+  - no-ejercicio-de-la-accion-penal
+  - amparo
+sources:
+  cnpp:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  cdtec:
+    type: portal_oficial
+    official: true
+    title: >-
+      Centro de Denuncia Tecnológica (CDTEC): video atención, constancia de extravío y denuncia de personas morales
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://cdtec.fgebc.gob.mx/cdtec/
+    accessed: '2026-11-23'
+  cdtec-registro:
+    type: portal_oficial
+    official: true
+    title: 'CDTEC: registro de la persona denunciante'
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://cdtec.fgebc.gob.mx/cdtec/denuncia/denunciante/new
+    accessed: '2026-11-23'
+  fge-bol-10131:
+    type: portal_oficial
+    official: true
+    title: 'Boletín: FGE presenta ante burócratas el Centro de Denuncia Tecnológica'
+    publisher: Fiscalía General del Estado de Baja California
+    url: >-
+      https://www.fgebc.gob.mx/boletines/10131-fge-presenta-ante-burocratas-el-centro-de-denuncia-tecnologica
+    version_date: '2024-02-17'
+    accessed: '2026-11-23'
+  cpbc:
+    type: ley
+    official: true
+    title: >-
+      Código Penal para el Estado de Baja California (copia que publica el Ayuntamiento de Mexicali en su portal
+      de transparencia)
+    publisher: Congreso del Estado de Baja California
+    url: https://www.mexicali.gob.mx/fidum/articulo81/2025/2do%20Trimestre/I/CodigoPenalEdoBajaCfa.doc
+    version_date: '2025-07-27'
+    accessed: '2026-11-23'
+  lvbc:
+    type: ley
+    official: true
+    title: Ley de Víctimas para el Estado de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_VI/20240315_LEYVICTIMAS.PDF
+    version_date: '2024-03-15'
+    accessed: '2026-11-23'
+  lsesc:
+    type: ley
+    official: true
+    title: Ley del Sistema Estatal de Seguridad Ciudadana de Baja California
+    publisher: Congreso del Estado de Baja California
+    url: >-
+      https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Leyes/TOMO_V/20260227_LEYSEGCIUDADANA.PDF
+    version_date: '2026-02-27'
+    accessed: '2026-11-23'
+  cdtec-salas:
+    type: portal_oficial
+    official: true
+    title: 'CDTEC: directorio de salas virtuales'
+    publisher: Fiscalía General del Estado de Baja California
+    url: https://cdtec.fgebc.gob.mx/cdtec/salas_virtuales
+    accessed: '2026-11-23'
+  zeta-telefono:
+    type: periodismo
+    official: false
+    title: Por mes, 250 mujeres denuncian por teléfono a sus agresores ante la FGE
+    publisher: Semanario Zeta
+    url: >-
+      https://zetatijuana.com/2022/04/por-mes-250-mujeres-denuncian-por-telefono-a-sus-agresores-ante-la-fge/
+    version_date: 2022-04
+    accessed: '2026-11-23'
+  zeta-oxxo:
+    type: periodismo
+    official: false
+    title: En los Oxxos ya podrás denunciar delitos en Baja California
+    publisher: Semanario Zeta
+    url: https://zetatijuana.com/2024/04/en-los-oxxos-ya-podras-denunciar-delitos-en-baja-california/
+    version_date: 2024-04
+    accessed: '2026-11-23'
+  zeta-fge-quejas:
+    type: periodismo
+    official: false
+    title: La Fiscalía que necesita ser denunciada (columna)
+    publisher: Semanario Zeta
+    url: https://zetatijuana.com/2026/10/la-fiscalia-que-necesita-ser-denunciada/
+    version_date: '2026-10-28'
+    accessed: '2026-11-23'
+  fge-bol-9280:
+    type: portal_oficial
+    official: true
+    title: >-
+      Boletín: Denuncia Tecnológica, herramienta fundamental para facilitar el acceso a la justicia ciudadana
+    publisher: Fiscalía General del Estado de Baja California
+    url: >-
+      https://www.fgebc.gob.mx/boletines/9280-denuncia-tecnologica-herramienta-fundamental-para-facilitar-el-acceso-a-la-justicia-ciudadana-fgebc
+    version_date: '2023-11-13'
+    accessed: '2026-11-23'
+  envipe2026:
+    type: informe_oficial
+    official: true
+    title: >-
+      Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública (ENVIPE) 2026, comunicado de prensa
+      50/26
+    publisher: INEGI
+    url: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/envipe/ENVIPE2026_CP.pdf
+    version_date: '2026-09-10'
+    accessed: '2026-11-23'
+  lamp:
+    type: ley
+    official: true
+    title: Ley de Amparo
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf
+    version_date: '2025-10-16'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'

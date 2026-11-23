@@ -1,0 +1,253 @@
+id: mx-queja-contra-agentes-federales
+country: MX
+jurisdiction: MX
+level: federal
+branch: ejecutivo
+kind: tramite
+category: denuncias y quejas
+title: 'Quejarte de un agente federal: Guardia Nacional, Ejército, Marina, FGR, migración (INM) o aduanas'
+summary: >-
+  Con agentes federales hay tres vías, como con los locales, pero en oficinas federales. La queja contra la persona
+  va a su órgano de control o a Asuntos Internos (la Guardia Nacional tiene la suya, que acepta quejas anónimas).
+  Los delitos que comete un agente federal en su trabajo los investiga la Fiscalía General de la República (FGR).
+  Si un militar le hace daño a una persona civil, lo juzga la justicia civil, no la militar. Y los derechos humanos
+  van a la CNDH.
+authority:
+  name: Órgano interno de control de cada institución federal, o su unidad de Asuntos Internos
+other_authorities:
+  - name: Unidad de Asuntos Internos de la Guardia Nacional
+  - name: Fiscalía General de la República (delitos de servidores públicos federales)
+    url: https://www.gob.mx/fgr
+  - name: Fiscalía Especializada de Asuntos Internos de la FGR (delitos de su propio personal)
+  - name: Comisión Nacional de los Derechos Humanos
+who_can:
+  - Cualquier persona. Las denuncias administrativas pueden ser anónimas.
+when: >-
+  Lo antes posible. Una falta no grave puede sancionarse hasta 3 años después; una grave, hasta 7. La queja ante
+  la CNDH, dentro de 1 año.
+result: >-
+  Una investigación administrativa, una carpeta de investigación en la FGR o una queja en la CNDH, según la vía.
+cost:
+  type: gratuito
+  amount_mxn: 0
+  text: Denunciar y quejarte no cuesta.
+  cites:
+    - source: cnpp
+      pinpoint: art. 109, fracción IX
+channels:
+  - en_linea
+  - presencial
+requirements:
+  - text: >-
+      Todo lo que identifique al agente: institución, nombre o número en el uniforme, número del vehículo, lugar,
+      fecha y hora.
+    cites:
+      - source: lgra
+        pinpoint: art. 93
+  - text: 'Qué pasó y tus pruebas: fotos, videos, certificados médicos, documentos que te dieron, testigos.'
+    cites:
+      - source: cnpp
+        pinpoint: art. 223
+      - source: lgra
+        pinpoint: art. 93
+deadlines:
+  - what: otro
+    text: 'Falta no grave: se puede sancionar hasta 3 años después; grave: hasta 7 años.'
+    cites:
+      - source: lgra
+        pinpoint: art. 74
+  - what: para_presentar
+    text: 'Queja ante la CNDH: 1 año.'
+    cites:
+      - source: lcndh
+        pinpoint: art. 26
+legal_basis:
+  - source: lgra
+    pinpoint: arts. 74, 91 a 104
+  - source: lgn
+    pinpoint: art. 23
+  - source: cjm
+    pinpoint: art. 57
+  - source: lopjf
+    pinpoint: art. 48
+  - source: lfgr
+    pinpoint: art. 13, fracción VIII
+  - source: lgpist
+    pinpoint: art. 22
+  - source: lcndh
+    pinpoint: art. 3o
+steps:
+  - n: '1'
+    actor: Tú
+    action: ¿Qué quieres lograr? Puedes seguir más de una vía a la vez.
+    cites:
+      - source: lcndh
+        pinpoint: art. 3o
+      - source: lgra
+        pinpoint: art. 91
+    next:
+      - to: '2'
+        when: Que sancionen al agente (falta administrativa)
+      - to: '3'
+        when: Que lo investiguen por un delito
+      - to: mx-queja-ante-la-cndh-por-derechos-humanos
+        when: Que revisen si violaron tus derechos humanos
+  - n: '2'
+    actor: Tú
+    action: >-
+      Queja administrativa. Guardia Nacional: ante su Unidad de Asuntos Internos, que recibe quejas incluso anónimas.
+      Ejército, Marina, INM, aduanas y demás oficinas federales: ante el órgano interno de control de esa institución;
+      el gobierno federal recibe estas denuncias en denuncias.gob.mx. Personal de la FGR (agentes del Ministerio
+      Público, policías y peritos): ante su Fiscalía Especializada de Asuntos Internos. Después siguen los mismos
+      pasos que en cualquier denuncia administrativa: investigación, calificación, recurso de inconformidad en 5
+      días hábiles y sanción.
+    cites:
+      - source: lgn
+        pinpoint: art. 23
+        quote: >-
+          conocerá de las quejas y denuncias en contra de los integrantes de la Guardia Nacional, incluso anónimas
+      - source: lgra
+        pinpoint: arts. 91 a 93 y 100 a 104
+      - source: lfgr
+        pinpoint: art. 13, fracción VIII
+        quote: de la actuación de las personas agentes del Ministerio Público de la Federación
+      - source: imparcial-denuncias-gob
+        quote: 'plataforma oficial del Gobierno de México : denuncias.gob.mx'
+    next:
+      - to: fin
+  - n: '3'
+    actor: Tú
+    action: >-
+      Denuncia penal ante la Fiscalía General de la República: los delitos que comete un servidor público federal
+      en su trabajo son federales, y la tortura cometida por un servidor público federal también la investiga la
+      federación. Si el agente es militar y la víctima es civil, el caso no va a la justicia militar. Si el agente
+      es de la propia FGR, lo investiga su Fiscalía Especializada de Asuntos Internos. Puedes denunciar en una oficina
+      de la FGR o en línea.
+    cites:
+      - source: lopjf
+        pinpoint: art. 48, fracción I, inciso f
+        quote: >-
+          Los cometidos por una o un servidor público o persona empleada federal, en ejercicio de sus funciones
+      - source: lgpist
+        pinpoint: art. 22, fracción I
+      - source: cjm
+        pinpoint: art. 57, fracción II
+        quote: siempre y cuando no tenga la condición de civil el sujeto pasivo
+      - source: lfgr
+        pinpoint: art. 13, fracción VIII
+      - source: elceo-fiscanet
+        quote: podrán ser recibidas a través de la página institucional https://tudenuncia.fgr.org.mx
+    next:
+      - to: '4'
+  - n: '4'
+    actor: Ministerio Público de la Federación
+    action: >-
+      Investiga y decide igual que en cualquier denuncia: acuerdo, juicio, archivo temporal o no ejercicio. Tienes
+      los mismos derechos de víctima: copia de tu carpeta, pedir diligencias (contestan en 3 días) e impugnar ante
+      un juez en 10 días si archivan el caso.
+    cites:
+      - source: cnpp
+        pinpoint: arts. 109, 216, 254, 255 y 258
+    next:
+      - to: mx-bcn-denunciar-un-delito-ante-la-fiscalia
+        when: Ver el paso a paso de la denuncia y sus finales posibles
+related:
+  - mx-bcn-tijuana-denunciar-o-quejarte-elige-tu-caso
+  - mx-queja-ante-la-cndh-por-derechos-humanos
+  - mx-bcn-denunciar-un-delito-ante-la-fiscalia
+glossary:
+  - organo-interno-de-control
+  - asuntos-internos
+  - falta-administrativa
+  - recurso-de-inconformidad
+  - ministerio-publico
+  - fuero-militar
+  - dias-habiles
+sources:
+  cnpp:
+    type: ley
+    official: true
+    title: Código Nacional de Procedimientos Penales
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  lgra:
+    type: ley
+    official: true
+    title: Ley General de Responsabilidades Administrativas
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf
+    accessed: '2026-11-23'
+  lcndh:
+    type: ley
+    official: true
+    title: Ley de la Comisión Nacional de los Derechos Humanos
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNDH.pdf
+    version_date: '2024-04-01'
+    accessed: '2026-11-23'
+  lgn:
+    type: ley
+    official: true
+    title: Ley de la Guardia Nacional
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGN.pdf
+    version_date: '2025-07-16'
+    accessed: '2026-11-23'
+  cjm:
+    type: ley
+    official: true
+    title: Código de Justicia Militar
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CJM.pdf
+    version_date: '2025-07-16'
+    accessed: '2026-11-23'
+  lopjf:
+    type: ley
+    official: true
+    title: Ley Orgánica del Poder Judicial de la Federación
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf
+    version_date: '2025-11-28'
+    accessed: '2026-11-23'
+  lfgr:
+    type: ley
+    official: true
+    title: Ley de la Fiscalía General de la República
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFGR.pdf
+    version_date: '2025-11-14'
+    accessed: '2026-11-23'
+  lgpist:
+    type: ley
+    official: true
+    title: >-
+      Ley General para Prevenir, Investigar y Sancionar la Tortura y Otros Tratos o Penas Crueles, Inhumanos o Degradantes
+    publisher: Cámara de Diputados
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPIST.pdf
+    version_date: '2022-04-28'
+    accessed: '2026-11-23'
+  imparcial-denuncias-gob:
+    type: periodismo
+    official: false
+    title: >-
+      Gobierno lanza «Tu Denuncia Transforma»: así puedes denunciar actos de corrupción de servidores públicos federales
+    publisher: El Imparcial
+    url: >-
+      https://www.elimparcial.com/mexico/2026/07/14/gobierno-lanza-tu-denuncia-transforma-asi-puedes-denunciar-actos-de-corrupcion-de-servidores-publicos-federales/
+    version_date: '2026-07-14'
+    accessed: '2026-11-23'
+  elceo-fiscanet:
+    type: periodismo
+    official: false
+    title: FGR crea FISC@NET, plataforma para denunciar delitos federales
+    publisher: El CEO
+    url: https://elceo.com/actualidad/fgr-lanza-plataforma-denuncias-reportar-delitos-federales/
+    version_date: '2026-10-22'
+    accessed: '2026-11-23'
+status: borrador
+last_checked: '2026-11-23'
+notes: >-
+  Falta confirmar en una fuente oficial que la plataforma denuncias.gob.mx de la Secretaría Anticorrupción y Buen
+  Gobierno recibe denuncias contra las fuerzas armadas, y si FISC@NET ya sustituyó a tudenuncia.fgr.org.mx.
