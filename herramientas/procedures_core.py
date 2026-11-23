@@ -7,6 +7,10 @@ shapes and look as Barda's procedures) and writes a page that draws it with bpmn
 
     python3 procedures_core.py check  <folder> [--catalog <catalogo-gobierno checkout>]
     python3 procedures_core.py render <folder> <output folder> [--catalog ...]
+    python3 procedures_core.py layout <file.bpmn> ... [--style page|barda]   drawing check; exit 1 on any problem
+    python3 procedures_core.py tidy   <file.bpmn> ... [--write]              redraw (stdout, or in place)
+
+check also runs the drawing check on every .bpmn file in the folder and on every flowchart it generates.
 
 Needs Python 3.10+ and PyYAML. check_diagram and build_diagram are Barda's (portfolio/procedures.py at 1f8388c),
 with two additions for long public procedures: arrows go round steps that sit in their way, and long answers
@@ -282,6 +286,572 @@ def build_diagram(name, nodes, flows, sections=()):
 
 
 
+# ---- Drawing check and tidy (stdlib only) -----------------------------------------------------------------
+# Geometry of the BPMN drawing (DI) as bpmn-js 18 draws it, so a check here matches what people see.
+# Names of circles and diamonds, and arrow answers, are "external labels": 11px text wrapped to the label box's
+# width (90px when the file gives no box), top-aligned at the box's top, centred across it. A file without a box
+# gets bpmn-js's default: centred under the shape (top at its bottom edge), or near the middle of the arrow.
+# Step names sit inside the step box at 12px. Widths are estimated per character, on the generous side.
+# Two looks: 'page' is plain bpmn-js (the command center Procedures page: names 11px, steps 12px); 'barda' is
+# Barda's and the core viewer's (names 14px, steps 18px, and a decision 120px or wider has its question inside).
+STYLES = {'page': {'label_char': 6.0, 'label_line': 13, 'task_char': 7.0, 'task_line': 15, 'inside': False,
+                   'gateway': (56, 56), 'task_h': 80},
+          'barda': {'label_char': 8.0, 'label_line': 18, 'task_char': 10.0, 'task_line': 23, 'inside': True,
+                    'gateway': (220, 130), 'task_h': 100}}
+ST = dict(STYLES['page'])  # the look being checked; layout_problems and tidy set it for the length of a call
+LABEL_WRAP, LABEL_MAX, TASK_PAD = 90, 150, 6
+FLOW_INDENT = 15  # bpmn-js puts an arrow's default label 15px off the middle of its middle segment
+EVENTS = ('startEvent', 'endEvent', 'intermediateCatchEvent')
+BOXES = STEPS + ('callActivity',)
+
+
+def _wrap(text, width, char):
+    """Greedy word wrap as bpmn-js does it; a word wider than the box stays on its own line."""
+    lines, line = [], ''
+    for word in text.split():
+        if line and (len(line) + 1 + len(word)) * char > width:
+            lines.append(line)
+            line = word
+        else:
+            line = f'{line} {word}'.strip()
+    return lines + ([line] if line else [])
+
+
+def _text_box(text, x, y, width, centre=True):
+    """(x, y, w, h) of label text wrapped to width, top at y; x is the box's left (text centred in it)."""
+    lines = _wrap(text, width, ST['label_char'])
+    w = max((len(line) for line in lines), default=0) * ST['label_char']
+    return (x + (width - w) / 2 if centre else x, y, w, len(lines) * ST['label_line'])
+
+
+def _overlaps(a, b, pad=0.0):
+    return a[0] < b[0] + b[2] + pad and b[0] < a[0] + a[2] + pad and a[1] < b[1] + b[3] + pad and b[1] < a[1] + a[3] + pad
+
+
+def _cuts(p, r, box, pad=0.0):
+    """Does the segment p-r pass through box (grown by pad, or shrunk if pad < 0)? Liang-Barsky clipping."""
+    x0, y0, w, h = box[0] - pad, box[1] - pad, box[2] + 2 * pad, box[3] + 2 * pad
+    if w <= 0 or h <= 0:
+        return False
+    dx, dy = r[0] - p[0], r[1] - p[1]
+    lo, hi = 0.0, 1.0
+    for d, dist in ((-dx, p[0] - x0), (dx, x0 + w - p[0]), (-dy, p[1] - y0), (dy, y0 + h - p[1])):
+        if d == 0:
+            if dist <= 0:
+                return False
+        else:
+            t = dist / d
+            if d < 0:
+                lo = max(lo, t)
+            else:
+                hi = min(hi, t)
+            if lo >= hi:
+                return False
+    return True
+
+
+def read_drawing(xml):
+    """Nodes, arrows and their drawing: ({id: node}, [arrow]) with node {tag, name, box, label} and arrow
+    {id, source, target, name, points, label}. label is the estimated text box of the name (None if no name)."""
+    root = ET.fromstring(xml)
+    process = root.find(q('process'))
+    if process is None:
+        raise ValidationError('A procedure is one BPMN process without pools.')
+    nodes, arrows = {}, []
+    for child in process:
+        tag = child.tag.rpartition('}')[2]
+        name = ' '.join((child.get('name') or '').split())
+        if tag in KINDS:
+            nodes[child.get('id')] = {'id': child.get('id'), 'tag': tag, 'name': name, 'box': None, 'label': None,
+                                      'label_bounds': None}
+        elif tag == 'sequenceFlow':
+            arrows.append({'id': child.get('id'), 'source': child.get('sourceRef'), 'target': child.get('targetRef'),
+                           'name': name, 'points': [], 'label': None, 'label_bounds': None})
+    by_id = {a['id']: a for a in arrows}
+
+    def bounds(el):
+        b = el.find(q('Bounds', 'http://www.omg.org/spec/DD/20100524/DC')) if el is not None else None
+        return tuple(float(b.get(k, 0)) for k in ('x', 'y', 'width', 'height')) if b is not None else None
+    for shape in root.iter(q('BPMNShape', BPMNDI)):
+        n = nodes.get(shape.get('bpmnElement'))
+        if n:
+            n['box'], n['label_bounds'] = bounds(shape), bounds(shape.find(q('BPMNLabel', BPMNDI)))
+    for edge in root.iter(q('BPMNEdge', BPMNDI)):
+        a = by_id.get(edge.get('bpmnElement'))
+        if a:
+            a['points'] = [(float(p.get('x')), float(p.get('y')))
+                           for p in edge.findall(q('waypoint', 'http://www.omg.org/spec/DD/20100524/DI'))]
+            a['label_bounds'] = bounds(edge.find(q('BPMNLabel', BPMNDI)))
+    for n in nodes.values():
+        inside = ST['inside'] and n['tag'] == 'exclusiveGateway' and n['box'] and n['box'][2] >= 120
+        if n['name'] and n['tag'] not in BOXES and n['box'] and not inside:
+            b, x, y, w, h = n['label_bounds'], *n['box']
+            n['label'] = (_text_box(n['name'], b[0], b[1], b[2]) if b else
+                          _text_box(n['name'], x + w / 2 - LABEL_WRAP / 2, y + h, LABEL_WRAP))
+    for a in arrows:
+        if a['name'] and len(a['points']) > 1:
+            b = a['label_bounds']
+            if b:
+                a['label'] = _text_box(a['name'], b[0], b[1], b[2])
+            else:  # bpmn-js getFlowLabelPosition
+                pts, mid = a['points'], len(a['points']) / 2 - 1
+                p, r = pts[int(mid)], pts[min(len(pts) - 1, int(mid + 1.01))]
+                cx, cy = (p[0] + r[0]) / 2, (p[1] + r[1]) / 2
+                if r[0] != p[0]:
+                    cy -= FLOW_INDENT
+                else:
+                    cx += FLOW_INDENT
+                x, y, w, h = _text_box(a['name'], 0, 0, LABEL_WRAP)
+                a['label'] = (cx - w / 2, cy - h / 2, w, h)
+    return nodes, arrows
+
+
+def _styled(fn):
+    def call(xml, style='page'):
+        before = dict(ST)
+        ST.update(STYLES[style])
+        try:
+            return fn(xml)
+        finally:
+            ST.clear()
+            ST.update(before)
+    call.__name__, call.__doc__, call.__wrapped__ = fn.__name__, fn.__doc__, fn
+    return call
+
+
+@_styled
+def layout_problems(xml):
+    """Every place the drawing is hard to read, as plain sentences; empty when it is clean. Pure geometry:
+    names on arrows, shapes or other names, arrows through shapes, overlapping shapes, step names too long.
+    style='barda' checks it as Barda draws it (bigger text, questions inside large diamonds)."""
+    nodes, arrows = read_drawing(xml)
+    problems = []
+    title = lambda n: f'“{n["name"][:50]}”' if n['name'] else f'the {KINDS[n["tag"]].lower()}'  # noqa: E731
+    say_arrow = lambda a: (f'the arrow “{a["name"]}”' if a['name'] else  # noqa: E731
+                           f'the arrow from {title(nodes[a["source"]])}' if a['source'] in nodes else 'an arrow')
+    for n in nodes.values():
+        if not n['box']:
+            problems.append(f'{title(n)} has no place on the drawing.')
+    shapes = [n for n in nodes.values() if n['box']]
+    near = lambda pt, b: b[0] - 3 <= pt[0] <= b[0] + b[2] + 3 and b[1] - 3 <= pt[1] <= b[1] + b[3] + 3  # noqa: E731
+    for a in arrows:
+        s, t = nodes.get(a['source']), nodes.get(a['target'])
+        if not (s and t and s['box'] and t['box']):
+            continue
+        if len(a['points']) < 2 or not near(a['points'][0], s['box']) or not near(a['points'][-1], t['box']):
+            problems.append(f'{say_arrow(a)[0].upper()}{say_arrow(a)[1:]} to {title(t)} is not drawn between its '
+                            'two shapes.')
+    labels = [(f'The name of {title(n)}', n['label'], n['id'], n) for n in shapes if n['label']]
+    labels += [(f'The answer “{a["name"]}”', a['label'], a['id'], a) for a in arrows if a['label']]
+    for what, box, own, item in labels:
+        given = item['label_bounds']
+        if given and max(len(w) for w in item['name'].split()) * 6.0 + 4 > given[2]:  # 6px: the page's widest
+            problems.append(f'{what} has a box narrower than its longest word, so it breaks mid-word (a much '
+                            'narrower box can freeze the page).')
+        for a in arrows:
+            if any(_cuts(p, r, box, 2) for p, r in zip(a['points'], a['points'][1:])):
+                problems.append(f'{what} lies on {"its own arrow" if a["id"] == own else say_arrow(a)}.')
+        for n in shapes:
+            if _overlaps(box, n['box'], -0.5):
+                problems.append(f'{what} lies on {"its own shape" if n["id"] == own else title(n)}.')
+    for i, (what, box, _, _) in enumerate(labels):
+        for other, box2, _, _ in labels[i + 1:]:
+            if _overlaps(box, box2, 2):
+                problems.append(f'{what} and {other[0].lower()}{other[1:]} overlap.')
+    for a in arrows:
+        for n in shapes:
+            if n['id'] in (a['source'], a['target']):
+                continue
+            if any(_cuts(p, r, n['box'], -2) for p, r in zip(a['points'], a['points'][1:])):
+                problems.append(f'{say_arrow(a)[0].upper()}{say_arrow(a)[1:]} passes through {title(n)}.')
+    for i, n in enumerate(shapes):
+        for m in shapes[i + 1:]:
+            if _overlaps(n['box'], m['box'], -1):
+                problems.append(f'{title(n)} and {title(m)} overlap.')
+    for n in shapes:
+        if n['tag'] in BOXES and n['name']:
+            x, y, w, h = n['box']
+            lines = _wrap(n['name'], w - 2 * TASK_PAD, ST['task_char'])
+            if len(lines) * ST['task_line'] > h - 2 * TASK_PAD or max(len(s) for s in lines) * ST['task_char'] > w - 2 * TASK_PAD:
+                problems.append(f'The step name {title(n)} is too long for its box; shorten it (detail goes in the '
+                                'notes) or widen the box.')
+    return list(dict.fromkeys(problems))
+
+
+# Tidy: the same process, drawn again. Main path (each node's first arrow) straight down one column; other
+# answers branch into columns to the right; arrows that skip ahead or loop back run in lanes between columns,
+# outside the shapes they pass; names of circles and diamonds beside the shape where no arrow is (left first);
+# answers beside their arrow near its start.
+TIDY = {'task_w': 240, 'wide_w': 300, 'event': 36, 'row_gap': 56, 'col_gap': 150,
+        'left': 200, 'top': 40, 'lane': 16, 'lane_step': 14}
+
+
+def _order(nodes, arrows):
+    """Reading order (depth first, first arrow first), the depth-first tree and the arrows that close a loop."""
+    out = {i: [a for a in arrows if a['source'] == i and a['target'] in nodes] for i in nodes}
+    starts = [i for i, n in nodes.items() if n['tag'] == 'startEvent'] or list(nodes)[:1]
+    order, parent, back, state = [], {}, set(), {}
+
+    def visit(i):
+        state[i] = 'open'
+        order.append(i)
+        for a in out[i]:
+            t = a['target']
+            if state.get(t) == 'open':
+                back.add(a['id'])
+            elif t not in state:
+                parent[t] = a['id']
+                visit(t)
+        state[i] = 'done'
+    import sys as _sys
+    _sys.setrecursionlimit(max(1000, 4 * len(nodes) + 100))
+    for s in starts + list(nodes):
+        if s not in state:
+            visit(s)
+    return order, parent, back, out
+
+
+def _sizes(n, cfg):
+    if n['tag'] == 'exclusiveGateway':
+        return ST['gateway']
+    if n['tag'] in EVENTS:
+        return cfg['event'], cfg['event']
+    for w in (cfg['task_w'], cfg['wide_w']):
+        lines = _wrap(n['name'], w - 2 * TASK_PAD, ST['task_char'])
+        if len(lines) <= 3 and max((len(s) for s in lines), default=0) * ST['task_char'] <= w - 2 * TASK_PAD:
+            return w, ST['task_h']
+    lines = _wrap(n['name'], cfg['wide_w'] - 2 * TASK_PAD, ST['task_char'])
+    longest = max(len(s) for s in lines) * ST['task_char'] + 2 * TASK_PAD
+    return max(cfg['wide_w'], int(longest) + 2), max(ST['task_h'], len(lines) * ST['task_line'] + 2 * TASK_PAD + 8)
+
+
+def _layout(nodes, arrows, cfg, sections=()):
+    order, parent, back, out = _order(nodes, arrows)
+    fwd = [a for a in arrows if a['id'] not in back and a['source'] in nodes and a['target'] in nodes]
+    row = {i: 0 for i in nodes}
+    band = {m: k for k, (_, members, _) in enumerate(sections) for m in members if m in nodes}
+    for _ in range(len(nodes) * (len(sections) + 1)):  # longest path over forward arrows; a section starts below
+        changed = False  # every row of the sections before it, so section boxes never share a row
+        for a in fwd:
+            if row[a['target']] < row[a['source']] + 1:
+                row[a['target']], changed = row[a['source']] + 1, True
+        last = {}
+        for i, k in band.items():
+            last[k] = max(last.get(k, -1), row[i])
+        for i, k in band.items():
+            floor = max((last[j] + 1 for j in last if j < k), default=0)
+            if row[i] < floor:
+                row[i], changed = floor, True
+        if not changed:
+            break
+    col, cells = {}, set()
+    first = {i: next((a['id'] for a in out[i] if a['id'] not in back), None) for i in nodes}
+    for i in order:
+        if i not in parent:  # a start (or unreachable): first free column on its row
+            c = 0
+            while (row[i], c) in cells:
+                c += 1
+            col[i] = c
+            cells.add((row[i], c))
+            continue
+        a = next(x for x in arrows if x['id'] == parent[i])
+        s = a['source']
+        down = [(r, col[s]) for r in range(row[s] + 1, row[i] + 1)]
+        if first[s] == a['id'] and not any(c in cells for c in down):
+            col[i] = col[s]
+            cells.update(down)
+            continue
+        c = col[s] + 1
+        while (row[s], c) in cells or any((r, c) in cells for r in range(row[s] + 1, row[i] + 1)):
+            c += 1  # a cell in between taken on the source's row is fine: the arrow then runs in the gap below
+        col[i] = c
+        cells.update((row[s], k) for k in range(col[s] + 1, c + 1))
+        cells.update((r, c) for r in range(row[s] + 1, row[i] + 1))
+    size = {i: _sizes(n, cfg) for i, n in nodes.items()}
+    ncol, nrow = max(col.values()) + 1, max(row.values()) + 1
+    col_w = [max([size[i][0] for i in nodes if col[i] == c] + [cfg['task_w']]) for c in range(ncol)]
+    row_h = [max([size[i][1] for i in nodes if row[i] == r] + [cfg['event']]) for r in range(nrow)]
+    cx, x = [], cfg['left']
+    for w in col_w:
+        cx.append(x + w / 2)
+        x += w + cfg['col_gap']
+    cy, y = [], cfg['top']
+    for h in row_h:
+        cy.append(y + h / 2)
+        y += h + cfg['row_gap']
+    box = {}
+    for i in nodes:
+        w, h = size[i]
+        box[i] = (round(cx[col[i]] - w / 2), round(cy[row[i]] - h / 2), w, h)
+    return order, back, out, row, col, box, col_w, cx, cy, row_h
+
+
+def _route(nodes, arrows, back, out, row, col, box, col_w, cx, cy, row_h, cfg):
+    """Orthogonal arrows. Tree arrows go straight down or right-then-down; the others try a few routes and keep
+    the one that crosses no shape and runs along no other arrow."""
+    routes, lanes = {}, []
+    mid = lambda b: (b[0] + b[2] / 2, b[1] + b[3] / 2)  # noqa: E731
+    others = lambda a: [b for i, b in box.items() if i not in (a['source'], a['target'])]  # noqa: E731
+
+    def score(a, pts):
+        bad = sum(100 for p, r in zip(pts, pts[1:]) for b in others(a) if _cuts(p, r, b, -2))
+        bad += sum(100 for p, r in zip(pts[1:-1], pts[2:-1]) for i in (a['source'], a['target'])
+                   if _cuts(p, r, box[i], -2))
+        for other, opts in routes.items():
+            o = next(x for x in arrows if x['id'] == other)
+            if o['source'] == a['source'] or o['target'] == a['target']:
+                continue
+            for p, r in zip(pts, pts[1:]):  # running along (or end to end with) another arrow reads as one line
+                for p2, r2 in zip(opts, opts[1:]):
+                    if _same_line(p, r, (p2, r2), 8):
+                        bad += 10
+        (tx, ty, tw, th), (sx, sy, sw, sh) = box[a['target']], box[a['source']]
+        side_answers = lambda i: nodes[i]['tag'] == 'exclusiveGateway' and len(out[i]) > 1  # noqa: E731
+        if side_answers(a['target']) and pts[-1][0] == tx + tw:
+            bad += 50  # keep a decision's right corner for its answers
+        if side_answers(a['source']) and first[a['source']] != a['id'] and pts[0][1] == sy + sh:
+            bad += 30  # the bottom corner is the first answer's
+        return bad
+
+    def lane_x(c, k):
+        return cx[c] + col_w[c] / 2 + cfg['lane'] + k * cfg['lane_step']
+    first = {i: next((a['id'] for a in out[i] if a['id'] not in back), None) for i in nodes}
+    tree_like = []
+    for a in arrows:
+        s, t = a['source'], a['target']
+        if s not in box or t not in box:
+            continue
+        (sx, sy, sw, sh), (tx, ty, tw, th) = box[s], box[t]
+        (scx, scy), (tcx, tcy) = mid(box[s]), mid(box[t])
+        options = []
+        if a['id'] not in back and col[s] == col[t] and row[t] > row[s]:
+            options.append([(scx, sy + sh), (tcx, ty)])
+        if a['id'] not in back and col[t] > col[s] and row[t] > row[s]:
+            options.append([(sx + sw, scy), (tcx, scy), (tcx, ty)])
+            gy, lx = ty - cfg['row_gap'] / 2, lane_x(col[s], 0)
+            options.append([(sx + sw, scy), (lx, scy), (lx, gy), (tcx, gy), (tcx, ty)])
+        if a['id'] not in back and col[t] < col[s] and row[t] > row[s]:
+            options.append([(scx, sy + sh), (scx, tcy), (tx + tw, tcy)])
+            gy = ty - cfg['row_gap'] / 2
+            options.append([(scx, sy + sh), (scx, gy), (tcx, gy), (tcx, ty)])
+        span = range(min(row[s], row[t]), max(row[s], row[t]) + 1)
+        outer = max([col[i] for i in nodes if row[i] in span] + [col[s], col[t]])
+        for c in sorted({max(col[s], col[t]), outer}):
+            for k in range(6):
+                lx = lane_x(c, k)
+                options.append([(sx + sw, scy), (lx, scy), (lx, tcy), (tx + tw, tcy)])
+                if a['id'] not in back and row[t] > row[s]:
+                    gy = ty - cfg['row_gap'] / 2
+                    options.append([(sx + sw, scy), (lx, scy), (lx, gy), (tcx, gy), (tcx, ty)])
+        if a['id'] not in back and row[t] > row[s]:
+            gy = ty - cfg['row_gap'] / 2
+            options.append([(scx, sy + sh), (scx, gy), (tcx, gy), (tcx, ty)])
+        tree_like.append((a, options))
+    # tree arrows first so the others route around them
+    tree_like.sort(key=lambda ao: (ao[0]['id'] in back, first.get(ao[0]['source']) != ao[0]['id']))
+    for a, options in tree_like:
+        best = min(options, key=lambda pts: (score(a, pts), options.index(pts)))
+        routes[a['id']] = [(round(x), round(y)) for x, y in _simplify(best)]
+    return routes
+
+
+def _simplify(pts):
+    out = [pts[0]]
+    for p in pts[1:]:
+        if p == out[-1]:
+            continue
+        if len(out) >= 2 and (out[-2][0] == out[-1][0] == p[0] or out[-2][1] == out[-1][1] == p[1]):
+            out[-1] = p
+        else:
+            out.append(p)
+    return out
+
+
+def _place_labels(nodes, arrows, box, routes):
+    """Label boxes: names beside circles and diamonds (left, right, under, over), answers beside their arrow
+    near its start. Each spot is tried in turn; the first that touches no arrow, shape or other name wins."""
+    segs = [(a['id'], p, r) for a in arrows for p, r in zip(routes.get(a['id'], []), routes.get(a['id'], [])[1:])]
+    taken, placed = [], {}
+
+    def free(b, own=None):  # an answer keeps clear of other arrows so it is not read as theirs
+        return (not any(_cuts(p, r, b, 3 if own in (None, i) else 9) for i, p, r in segs) and not any(_overlaps(b, s, 2) for s in box.values())
+                and not any(_overlaps(b, t, 3) for t in taken))
+
+    def fit(text, width):
+        x, y, w, h = _text_box(text, 0, 0, width)
+        return int(w + 0.999) + 10, h  # bpmn-js wraps at the box width: leave room so short words never break
+    for i, n in nodes.items():
+        if not n['name'] or n['tag'] in BOXES or i not in box or (
+                ST['inside'] and n['tag'] == 'exclusiveGateway' and box[i][2] >= 120):  # Barda: question inside
+            continue
+        x, y, w, h = box[i]
+        lw, lh = fit(n['name'], LABEL_MAX)
+        spots = [(x - 10 - lw, y + h / 2 - lh / 2), (x + w + 10, y + h / 2 - lh / 2),
+                 (x + w / 2 - lw / 2, y + h + 6), (x + w / 2 - lw / 2, y - 6 - lh),
+                 (x - 10 - lw, y + h + 4), (x + w + 10, y + h + 4), (x - 10 - lw, y - 4 - lh), (x + w + 10, y - 4 - lh)]
+        for lw2, lh2 in ((lw, lh), fit(n['name'], LABEL_WRAP)):
+            spots2 = [(sx + (lw - lw2) if sx < x else sx, sy) for sx, sy in spots]
+            got = next(((sx, sy, lw2, lh2) for sx, sy in spots2 if free((sx, sy, lw2, lh2))), None)
+            if got:
+                break
+        got = got or (spots[0][0], spots[0][1], lw, lh)
+        placed[i] = tuple(round(v) for v in got)
+        taken.append(placed[i])
+    for a in arrows:
+        pts = routes.get(a['id'])
+        if not a['name'] or not pts:
+            continue
+        lw, lh = fit(a['name'], LABEL_MAX)
+        shared = {(p, r) for o in arrows if o['id'] != a['id'] and o['source'] == a['source']
+                  for p, r in zip(routes.get(o['id'], []), routes.get(o['id'], [])[1:])}
+        spots = []
+        for k, (p, r) in enumerate(zip(pts, pts[1:])):
+            on_shared = any(_same_line(p, r, s) for s in shared)
+            cand = []
+            for step in (0, 16):  # just after the corner, else a little further along
+                if r[0] == p[0]:
+                    y0 = p[1] + 6 + step if r[1] > p[1] else p[1] - 6 - step - lh
+                    cand += [(p[0] + 8, y0), (p[0] - 8 - lw, y0)]
+                else:
+                    x0 = p[0] + 10 + step if r[0] > p[0] else p[0] - 10 - step - lw
+                    cand += [(x0, p[1] - 5 - lh), (x0, p[1] + 5)]
+            spots += [(on_shared, k, c) for c in cand]
+        spots.sort(key=lambda s: (s[0], s[1]))
+        got = next(((sx, sy, lw, lh) for _, _, (sx, sy) in spots if free((sx, sy, lw, lh), a['id'])), None)
+        got = got or next(((sx, sy, lw, lh) for _, _, (sx, sy) in spots if free((sx, sy, lw, lh))), None)
+        got = got or (spots[0][2][0], spots[0][2][1], lw, lh)
+        placed[a['id']] = tuple(round(v) for v in got)
+        taken.append(placed[a['id']])
+    return placed
+
+
+def _same_line(p, r, seg, slack=0):
+    """Do two straight segments run along each other (or meet end to end within slack)?"""
+    (p2, r2) = seg
+    if p[0] == r[0] == p2[0] == r2[0]:
+        return min(max(p[1], r[1]), max(p2[1], r2[1])) + slack > max(min(p[1], r[1]), min(p2[1], r2[1]))
+    if p[1] == r[1] == p2[1] == r2[1]:
+        return min(max(p[0], r[0]), max(p2[0], r2[0])) + slack > max(min(p[0], r[0]), min(p2[0], r2[0]))
+    return False
+
+
+def _draw(xml, nodes, arrows, box, routes, labels, sections=()):
+    """xml with only the inside of its BPMNPlane rewritten; the process, ids, names and arrows stay as they are."""
+    decls = {}  # namespace -> prefix, from the root and the plane (a tidied plane declares its own)
+    for tag in re.findall(r'<(?:\w+:)?(?:definitions|BPMNDiagram|BPMNPlane)\b[^>]*>', xml):
+        decls.update((uri, p) for p, uri in re.findall(r'xmlns:(\w+)="([^"]+)"', tag))
+    dc, di = decls.get('http://www.omg.org/spec/DD/20100524/DC'), decls.get('http://www.omg.org/spec/DD/20100524/DI')
+    color = decls.get('http://www.omg.org/spec/BPMN/non-normative/color/1.0')
+    plane = re.search(r'<((?:\w+:)?)BPMNPlane\b([^>]*?)(/?)>', xml)
+    old = {}
+    if plane:
+        pre = plane.group(1)
+        end = xml.find(f'</{pre}BPMNPlane>', plane.end()) if not plane.group(3) else plane.end()
+        inner = xml[plane.end():end] if not plane.group(3) else ''
+        for m in re.finditer(r'<(?:\w+:)?BPMN(?:Shape|Edge)\b([^>]*?)/?>', inner):
+            attrs = dict(re.findall(r'([\w:.-]+)="([^"]*)"', m.group(1)))
+            if attrs.get('bpmnElement'):
+                old[attrs['bpmnElement']] = attrs
+    else:
+        pre = 'bpmndi:'
+    extra = ''
+    if not dc:
+        dc, extra = 'dc', extra + ' xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"'
+    if not di:
+        di, extra = 'di', extra + ' xmlns:di="http://www.omg.org/spec/DD/20100524/DI"'
+    if not color:
+        color, extra = 'color', extra + ' xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0"'
+    bounds = lambda b: f'<{dc}:Bounds x="{b[0]}" y="{b[1]}" width="{b[2]}" height="{b[3]}" />'  # noqa: E731
+    keep = lambda el: ''.join(f' {k}={quoteattr(v)}' for k, v in old.get(el, {}).items()  # noqa: E731
+                              if k not in ('id', 'bpmnElement', 'isMarkerVisible', 'isHorizontal'))
+    body = ''
+    for gid, members, title in sections:  # coloured section boxes, redrawn round the same steps, behind them
+        if not members:
+            continue
+        parts = [box[m] for m in members] + [labels[m] for m in members if m in labels]
+        x0, y0 = min(b[0] for b in parts) - 24, min(b[1] for b in parts) - 40
+        x1, y1 = max(b[0] + b[2] for b in parts) + 24, max(b[1] + b[3] for b in parts) + 16
+        sid = old.get(gid, {}).get('id') or f'{gid}_di'
+        body += (f'<{pre}BPMNShape id={quoteattr(sid)} bpmnElement={quoteattr(gid)}{keep(gid)}>'
+                 f'{bounds((round(x0), round(y0), round(x1 - x0), round(y1 - y0)))}<{pre}BPMNLabel>'
+                 f'{bounds((round(x0) + 14, round(y0) + 8, int(len(title) * ST["label_char"]) + 14, 20))}'
+                 f'</{pre}BPMNLabel></{pre}BPMNShape>')
+    for i, n in nodes.items():
+        attrs = keep(i)
+        if 'color' not in attrs and 'fill' not in attrs:
+            tone = 'decision' if n['tag'] == 'exclusiveGateway' else 'done' if n['tag'] == 'endEvent' else ''
+            attrs += f' {color}:background-color="{TONES[tone][0]}" {color}:border-color="{TONES[tone][1]}"' if tone else ''
+        sid = old.get(i, {}).get('id') or f'{i}_di'
+        body += (f'<{pre}BPMNShape id={quoteattr(sid)} bpmnElement={quoteattr(i)}{attrs}'
+                 + (' isMarkerVisible="true"' if n['tag'] == 'exclusiveGateway' else '') + f'>{bounds(box[i])}'
+                 + (f'<{pre}BPMNLabel>{bounds(labels[i])}</{pre}BPMNLabel>' if i in labels else '')
+                 + f'</{pre}BPMNShape>')
+    for a in arrows:
+        if a['id'] not in routes:
+            continue
+        eid = old.get(a['id'], {}).get('id') or f'{a["id"]}_di'
+        body += (f'<{pre}BPMNEdge id={quoteattr(eid)} bpmnElement={quoteattr(a["id"])}{keep(a["id"])}>'
+                 + ''.join(f'<{di}:waypoint x="{x}" y="{y}" />' for x, y in routes[a['id']])
+                 + (f'<{pre}BPMNLabel>{bounds(labels[a["id"]])}</{pre}BPMNLabel>' if a['id'] in labels else '')
+                 + f'</{pre}BPMNEdge>')
+    if plane:
+        start = plane.group(0)[:-2] + '>' if plane.group(3) else plane.group(0)
+        start = start[:-1] + extra + '>' if extra else start
+        return xml[:plane.start()] + start + body + f'</{pre}BPMNPlane>' + xml[end + (0 if plane.group(3) else len(f'</{pre}BPMNPlane>')):]
+    pid = ET.fromstring(xml).find(q('process')).get('id')
+    diagram = (f'<bpmndi:BPMNDiagram xmlns:bpmndi="{BPMNDI}" id="Diagram_tidy"><bpmndi:BPMNPlane id="Plane_tidy" '
+               f'bpmnElement={quoteattr(pid)}{extra}>{body}</bpmndi:BPMNPlane></bpmndi:BPMNDiagram>')
+    close = re.search(r'</(?:\w+:)?definitions>\s*$', xml)
+    return xml[:close.start()] + diagram + xml[close.start():]
+
+
+def _sections(xml, nodes):
+    """Section boxes (bpmn:group): (id, the steps drawn inside it now, its title)."""
+    root = ET.fromstring(xml)
+    titles = {v.get('id'): v.get('value') or '' for v in root.iter(q('categoryValue'))}
+    groups = {g.get('id'): titles.get(g.get('categoryValueRef'), '') for g in root.iter(q('group'))}
+    out = []
+    for shape in root.iter(q('BPMNShape', BPMNDI)):
+        gid = shape.get('bpmnElement')
+        b = shape.find(q('Bounds', 'http://www.omg.org/spec/DD/20100524/DC'))
+        if gid in groups and b is not None:
+            x, y, w, h = (float(b.get(k, 0)) for k in ('x', 'y', 'width', 'height'))
+            inside = [i for i, n in nodes.items() if n['box'] and x <= n['box'][0] + n['box'][2] / 2 <= x + w
+                      and y <= n['box'][1] + n['box'][3] / 2 <= y + h]
+            out.append((gid, inside, groups[gid], (x + w / 2, y + h / 2)))
+    owner = {}  # a step inside two overlapping boxes belongs to the one whose middle is nearest, so a redraw
+    for k, (_, inside, _, (mx, my)) in enumerate(out):  # cannot make one section swallow the next
+        for i in inside:
+            bx, by, bw, bh = nodes[i]['box']
+            d = (bx + bw / 2 - mx) ** 2 + (by + bh / 2 - my) ** 2
+            if i not in owner or d < owner[i][0]:
+                owner[i] = (d, k)
+    out = [(gid, [i for i in inside if owner[i][1] == k], title, mid) for k, (gid, inside, title, mid) in enumerate(out)]
+    return [g[:3] for g in sorted(out, key=lambda g: g[3][1])]  # top to bottom, the order the bands are laid out in
+
+
+@_styled
+def tidy(xml):
+    """The same process with only its drawing redone, so layout_problems(result) is empty when it can be.
+    Element ids, names, arrows and notes are untouched (run history is keyed on the ids)."""
+    nodes, arrows = read_drawing(xml)
+    arrows = [a for a in arrows if a['source'] in nodes and a['target'] in nodes]
+    sections = _sections(xml, nodes)
+    best = None
+    for grow in (0, 1, 2):
+        cfg = {**TIDY, 'row_gap': TIDY['row_gap'] + 24 * grow, 'col_gap': TIDY['col_gap'] + 60 * grow}
+        order, back, out, row, col, box, col_w, cx, cy, row_h = _layout(nodes, arrows, cfg, sections)
+        routes = _route(nodes, arrows, back, out, row, col, box, col_w, cx, cy, row_h, cfg)
+        labels = _place_labels(nodes, arrows, box, routes)
+        drawn = _draw(xml, {i: nodes[i] for i in order}, arrows, box, routes, labels, sections)
+        problems = layout_problems.__wrapped__(drawn)
+        if best is None or len(problems) < len(best[1]):
+            best = (drawn, problems)
+        if not problems:
+            break
+    return best[0]
+
+
 # ---- The core: YAML procedures ---------------------------------------------------------------------------
 REQUIRED = ('id', 'title', 'summary', 'owner', 'audience', 'status', 'last_checked', 'steps')
 AUDIENCES = ('internal', 'shared', 'public')
@@ -386,7 +956,7 @@ def to_bpmn(procedure, titles):
         raise ValidationError([f'A step points to “{t}”, which does not exist.' for t in lost])
     sections = [(s['name'], s.get('colour', 'fog'), [node[str(n)] for n in s['steps']])
                 for s in procedure.get('sections') or []]
-    return build_diagram(procedure['title'], nodes, flows, sections)
+    return tidy(build_diagram(procedure['title'], nodes, flows, sections), 'barda')  # tidy: nothing on a line
 
 
 def check(folder, catalog=None, today=None):
@@ -430,12 +1000,21 @@ def check(folder, catalog=None, today=None):
         try:
             diagrams[key] = to_bpmn(p, titles)
             check_diagram(diagrams[key], [titles.get(r['id'], r['id']) for r in refs], p['title'])
+            for message in layout_problems(diagrams[key], 'barda'):
+                said(f'drawing: {message}')
         except ValidationError as error:
             for message in error.messages:
                 said(message)
         age = (today - datetime.date.fromisoformat(str(p['last_checked']))).days
         if age > STALE_DAYS and STATUSES.get(p['status']) != 'outdated':
             said(f'last checked {age} days ago; walk through it again.', warnings)
+    for path in sorted(Path(folder).rglob('*.bpmn')):
+        if 'core' in path.parts or 'fixtures-drawing' in path.parts:
+            continue
+        try:
+            problems += [f'{path.name}: drawing: {m}' for m in layout_problems(path.read_text())]
+        except (ET.ParseError, ValidationError):
+            problems.append(f'{path.name}: could not be read as BPMN.')
     return own, outside, diagrams, problems, warnings
 
 
@@ -497,7 +1076,35 @@ def render(folder, out, catalog=None, core=None):
     return own, warnings
 
 
+def drawings(argv):
+    """layout / tidy on .bpmn files."""
+    style = argv[argv.index('--style') + 1] if '--style' in argv else 'page'
+    files = [a for a in argv[1:] if a.endswith('.bpmn')]
+    bad = 0
+    for path in files:
+        xml = Path(path).read_text()
+        if argv[0] == 'tidy':
+            new = tidy(xml, style)
+            if '--write' in argv:
+                if new != xml:
+                    Path(path).write_text(new)
+                left = layout_problems(new, style)
+                print(f'{path}: {"tidied" if new != xml else "unchanged"}' + (f', {len(left)} left' if left else ''))
+                bad += len(left)
+            else:
+                sys.stdout.write(new)
+            continue
+        for message in layout_problems(xml, style):
+            print('FIX   ', f'{path}: {message}')
+            bad += 1
+    if argv[0] == 'layout':
+        print(f'{len(files)} drawings, {bad} to fix')
+    return 1 if bad else 0
+
+
 def main(argv):
+    if argv and argv[0] in ('layout', 'tidy') and len(argv) > 1:
+        return drawings(argv)
     catalog = argv[argv.index('--catalog') + 1] if '--catalog' in argv else None
     args = [a for a in argv if a != '--catalog' and a != catalog]
     if len(args) < 2 or args[0] not in ('check', 'render') or (args[0] == 'render' and len(args) < 3):
