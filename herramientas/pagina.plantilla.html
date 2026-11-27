@@ -123,7 +123,7 @@ const DATA=/*DATOS*/[];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
-const JUR={MX:'México (federal)','MX-BCN':'Baja California','MX-BCN-Tijuana':'Tijuana'};
+const JUR={MX:'México (federal)','MX-BCN':'Baja California','MX-BCN-Tijuana':'Tijuana','MX-BCN-Rosarito':'Playas de Rosarito'};
 const EVID={documento_oficial:'documento oficial',auditoria_o_sentencia:'auditoría o sentencia',periodismo_o_investigacion:'periodismo o investigación',varios_reportes:'varios reportes',un_reporte:'un reporte'};
 const STATUS={importado:'importado de registro oficial',borrador:'borrador, falta revisión',revisado:'revisado',desactualizado:'desactualizado'};
 DATA.sort((a,b)=>(a.k===b.k?0:a.k==='interno'?-1:1)||a.t.localeCompare(b.t,'es'));

@@ -1,0 +1,335 @@
+id: mx-bcn-rosarito-reportar-perros-agresivos-o-sueltos
+country: MX
+jurisdiction: MX-BCN-Rosarito
+level: municipal
+branch: ejecutivo
+kind: tramite
+category: animales domésticos
+title: Reportar perros agresivos o sueltos en Playas de Rosarito y escalar si no atienden
+summary: >-
+  Cualquier persona puede denunciar a un perro agresivo o que anda suelto en la calle. Control Animal (hoy la
+  Dirección de Derecho y Bienestar Animal) tiene la obligación de atender las quejas por animales agresivos y de
+  capturarlos, y la persona dueña puede recibir multas. Si no atienden, puedes pedirlo por escrito con el derecho
+  de petición y, si tampoco contestan, presentar una queja contra los servidores públicos ante la Sindicatura.
+authority:
+  name: Ayuntamiento de Playas de Rosarito, Secretaría de Protección al Medio Ambiente
+  unit: Dirección de Derecho y Bienestar Animal (antes Departamento de Control Animal de la Dirección de Salud Municipal)
+  url: https://www.rosarito.gob.mx/directorio/funcionarios/entidad/137
+other_authorities:
+  - name: Secretaría de Seguridad Ciudadana de Playas de Rosarito (también recibe denuncias y apoya en casos graves)
+  - name: Jueza o Juez Cívico Municipal (resuelve la infracción cuando presentan a la persona infractora)
+  - name: Sindicatura Municipal de Playas de Rosarito (quejas contra servidores públicos municipales, línea 072)
+    url: https://www.rosarito.gob.mx/directorio/funcionarios/entidad/24
+who_can:
+  - Cualquier persona que sepa de los hechos; no tienes que ser la persona afectada ni vivir junto al animal.
+when: >-
+  Cuando un perro ataca o intenta atacar a personas o a otros animales, o cuando anda en la vía pública sin
+  correa o sin control.
+result: >-
+  Una denuncia registrada; la autoridad debe atender la queja y, si procede, capturar al animal y sancionar a la
+  persona dueña o encargada. Si haces una petición por escrito, una respuesta por escrito.
+requires_inspection: true
+channels: [presencial, telefono]
+offices:
+  - municipality: Playas de Rosarito
+    name: Ayuntamiento de Playas de Rosarito (dirección general que publica el portal oficial)
+    address: José Haroz Aguilar 2004, Fracc. Villa Turística, Playas de Rosarito, Baja California
+    phones: (661) 614-9600
+  - municipality: Playas de Rosarito
+    name: Sindicatura Municipal
+    phones: (661) 614-9684, ext. 3051
+legal_basis:
+  - source: reglamento-animales
+    pinpoint: arts. 3 fr. II, 5 fr. V, IX y X, 26, 35, 36, 37 TER, 39, 46, 77, 78, 88 BIS, 89 y 92 a 97
+  - source: reglamento-spma
+    pinpoint: art. 23 y transitorio TERCERO
+  - source: reglamento-sindicatura
+    pinpoint: arts. 7 fr. XIII y 25 fr. VIII y IX
+  - source: cpeum
+    pinpoint: art. 8
+deadlines:
+  - what: respuesta_autoridad
+    text: >-
+      A una petición por escrito la autoridad debe contestar por escrito «en breve término». La Constitución no
+      da un número de días, y ninguna fuente que revisamos lo fija para este trámite.
+    cites:
+      - source: cpeum
+        pinpoint: art. 8, segundo párrafo
+        quote: la cual tiene obligación de hacerlo conocer en breve término al peticionario
+  - what: otro
+    text: >-
+      Un animal capturado se observa al menos 72 horas hábiles. En ese plazo la persona dueña puede reclamarlo
+      con sus documentos; después, la guarda pasa al Ayuntamiento.
+    cites:
+      - source: reglamento-animales
+        pinpoint: arts. 5 fr. V y 78
+        quote: Observar clínicamente los animales capturados dentro de un lapso de 72 horas hábiles como mínimo
+steps:
+  - n: '1'
+    actor: Tú
+    action: >-
+      Si un perro está atacando a alguien, ponte a salvo y llama al 911. La Secretaría de Seguridad Ciudadana
+      también recibe denuncias por este reglamento y, en casos graves en el momento, apoya a Control Animal para
+      presentar a la persona infractora ante el Juez Cívico.
+    cites:
+      - source: gobmx-911
+      - source: reglamento-animales
+        pinpoint: art. 26 fr. I y IV
+        quote: Corresponde a la Dirección de Salud Municipal por medio del Departamento de Control Animal y a la Secretaría de Seguridad Ciudadana recibir las denuncias
+    practice:
+      - text: >-
+          Ayuda mucho anotar cada vez que pasa algo: fecha, hora, lugar exacto y qué hizo el perro, con fotos o
+          video. Esa lista con fechas sirve después para la denuncia, para el escrito y para una queja.
+        evidence_level: un_reporte
+        observed: Playas de Rosarito, octubre y noviembre de 2026
+        cites:
+          - source: reporte-rosarito-2026
+  - n: '2'
+    actor: La persona mordida
+    action: >-
+      Busca atención médica. El reglamento de salud pública dice que Control Animal canaliza a las personas
+      agredidas a la institución médica que corresponde. Si un perro potencialmente peligroso causa lesiones
+      permanentes, la autoridad municipal lo decomisa. La persona dueña, poseedora o encargada responde por los
+      daños que cause su animal en la vía pública, aunque se le haya escapado.
+    cites:
+      - source: reglamento-salud-publica
+        pinpoint: art. 77 fr. IX
+        quote: Canalizar a las personas agredidas a la institución médica correspondiente para su tratamiento oportuno
+      - source: reglamento-animales
+        pinpoint: arts. 4 fr. XXXII y XXXIII, 35 y 46
+        quote: se procederá al decomiso del animal por parte de la Autoridad Municipal con competencia en la materia
+  - n: '3'
+    actor: Tú
+    action: >-
+      Presenta la denuncia ante Control Animal, que desde febrero de 2026 es la Dirección de Derecho y Bienestar
+      Animal de la Secretaría de Protección al Medio Ambiente. Puede hacerla cualquier persona que sepa de los
+      hechos. Di el lugar exacto, cómo es el perro, qué pasó y cuándo, si tiene dueño, y lleva tus fotos o videos.
+      Pide un número de folio y una fecha de visita.
+    cites:
+      - source: reglamento-animales
+        pinpoint: art. 26 fr. I
+        quote: podrán ser realizadas por cualquier persona que tenga conocimiento de los hechos
+      - source: reglamento-spma
+        pinpoint: art. 23 fr. XI y XVI, y transitorio TERCERO
+        quote: dichas atribuciones se entenderán concedidas para su ejercicio a la mencionada dependencia
+    practice:
+      - text: >-
+          Un reporte por teléfono a la oficina de Bienestar Animal recibió un número de folio de seguimiento. Dos
+          reportes en persona, en el «Formato de Denuncia Ciudadana», se recibieron sin folio. En uno de ellos el
+          personal escribió «Segundo Reporte» a un lado. Después, por teléfono, la oficina dijo que no tenía
+          registro de los reportes anteriores.
+        evidence_level: un_reporte
+        observed: Playas de Rosarito, octubre y noviembre de 2026
+        cites:
+          - source: reporte-rosarito-2026
+      - text: >-
+          Pide siempre el folio antes de irte o de colgar, y si entregas algo en papel, una copia con sello,
+          fecha y hora de recibido (acuse). Da el lugar exacto y el nombre y teléfono de alguien que pueda recibir
+          a los inspectores.
+        evidence_level: un_reporte
+        observed: Playas de Rosarito, octubre y noviembre de 2026
+        cites:
+          - source: reporte-rosarito-2026
+  - n: '4'
+    actor: Dirección de Derecho y Bienestar Animal (Control Animal)
+    action: >-
+      Atiende la queja. El reglamento le manda atender quejas sobre animales agresivos y capturar animales
+      agresivos y callejeros. Sus inspectores capturan al animal, levantan un acta de captura y una boleta de
+      infracción, y lo llevan al albergue. Un perro que anda suelto en la vía pública se retira; la persona dueña
+      solo lo recupera pagando la sanción y probando que cumple sus obligaciones. El animal capturado se observa
+      al menos 72 horas hábiles.
+    cites:
+      - source: reglamento-animales
+        pinpoint: art. 5 fr. V, IX y X
+        quote: Atender quejas sobre animales agresivos
+      - source: reglamento-animales
+        pinpoint: arts. 26 fr. V y VIII, 35, 77 y 78
+    practice:
+      - text: >-
+          La oficina dio días para la visita de inspección y la visita no ocurrió esos días.
+        evidence_level: un_reporte
+        observed: Playas de Rosarito, noviembre de 2026
+        cites:
+          - source: reporte-rosarito-2026
+    next:
+      - to: '5'
+        when: Hubo inspección
+      - to: '6'
+        when: No hubo inspección o el problema sigue
+  - n: '5'
+    actor: Dirección de Derecho y Bienestar Animal y Juez Cívico
+    action: >-
+      Sancionan a la persona dueña, poseedora o encargada si no cumplió. Sus obligaciones: tener al animal bajo
+      control y dentro de su casa, o sujeto si no hay cerca; sacarlo a la calle con correa; y, si es un perro
+      potencialmente peligroso, con bozal. Está prohibido dejar que ande en la calle sin correa (multa de 5 a 10
+      UMA) y soltarlo o dejarlo salir a la vía pública por descuido (multa de 10 a 40 UMA); azuzarlo contra
+      personas tiene multa de 40 a 200 UMA. Las sanciones pueden ser amonestación, multa, arresto de hasta 36
+      horas y retiro del animal. Pagar la multa no quita la obligación de corregir, y quien reincide recibe
+      multas mayores.
+    cites:
+      - source: reglamento-animales
+        pinpoint: arts. 35, 36 y 37 TER
+        quote: deberá usar bozal
+      - source: reglamento-animales
+        pinpoint: art. 39 fr. III, XIII y XXV
+        quote: Transitar o permitir que el animal ande por la vía pública sin correa
+      - source: reglamento-animales
+        pinpoint: arts. 89, 92, 93, 94, 96 y 97
+        quote: Se impondrá multa de 5 a 10 UMAS
+    next:
+      - to: fin
+        when: El problema se resolvió
+      - to: '6'
+        when: El problema sigue
+  - n: '6'
+    actor: Tú
+    action: >-
+      Si no hubo inspección o el problema sigue, haz una petición por escrito, pacífica y respetuosa, dirigida a
+      la Secretaría de Protección al Medio Ambiente, Dirección de Derecho y Bienestar Animal. Cita el folio de tu
+      denuncia, lo que ha pasado con fechas, y los artículos del reglamento que obligan a la autoridad (art. 5
+      fr. IX y X, art. 26) y a la persona dueña (arts. 35, 36, 37 TER y 39). Pide algo concreto, por ejemplo una
+      inspección con fecha. Entrégalo en persona y quédate con una copia sellada de recibido.
+    cites:
+      - source: cpeum
+        pinpoint: art. 8, primer párrafo
+        quote: siempre que ésta se formule por escrito, de manera pacífica y respetuosa
+      - source: reglamento-animales
+        pinpoint: arts. 5 fr. IX y X, 26, 35, 36, 37 TER y 39
+      - source: reglamento-spma
+        pinpoint: transitorio TERCERO
+    practice:
+      - text: >-
+          La copia sellada (acuse) es la prueba de que entregaste el escrito y de cuándo. Sin ella es difícil
+          probar que la autoridad lo recibió.
+        evidence_level: un_reporte
+        observed: Playas de Rosarito, noviembre de 2026
+        cites:
+          - source: reporte-rosarito-2026
+  - n: '7'
+    actor: Secretaría de Protección al Medio Ambiente
+    action: >-
+      Contesta tu petición por escrito y te da a conocer la respuesta en breve término.
+    deadline: En breve término (la Constitución no da un número de días)
+    cites:
+      - source: cpeum
+        pinpoint: art. 8, segundo párrafo
+        quote: A toda petición deberá recaer un acuerdo escrito de la autoridad a quien se haya dirigido
+    next:
+      - to: fin
+        when: Te contestan y atienden
+      - to: '8'
+        when: No contestan o no atienden
+  - n: '8'
+    actor: Tú
+    action: >-
+      Presenta una queja ante la Sindicatura Municipal contra el desempeño de los servidores públicos que no
+      atendieron. La Síndica o el Síndico Procurador recibe las quejas y denuncias contra servidores públicos
+      municipales cuando no cumplen las leyes o los reglamentos municipales. También puedes quejarte por la línea
+      072, que coordina la Dirección de Sindicatura Ciudadana. Lleva el folio, el acuse de tu escrito y tu lista de
+      hechos. El reglamento de animales dice que los servidores públicos que no cumplan sus obligaciones serán
+      sancionados.
+    cites:
+      - source: reglamento-sindicatura
+        pinpoint: art. 7 fr. XIII
+        quote: Recibir las quejas y denuncias que los ciudadanos y autoridades presenten contra el desempeño de los servidores públicos municipales
+      - source: reglamento-sindicatura
+        pinpoint: art. 25 fr. VIII y IX
+        quote: a través de la línea 072
+      - source: reglamento-animales
+        pinpoint: art. 88 BIS
+        quote: Las personas servidoras públicas están obligadas a dar cumplimiento a sus obligaciones
+      - source: directorio-sindicatura
+    next:
+      - to: mx-denuncia-contra-un-servidor-publico
+related: [mx-denuncia-contra-un-servidor-publico]
+glossary: [derecho-de-peticion, acuse, uma, canino-potencialmente-peligroso, juez-civico, sindicatura, servidor-publico, dias-habiles]
+sources:
+  reglamento-animales:
+    type: reglamento
+    official: true
+    title: Reglamento para la Protección y Control de Animales Domésticos de Playas de Rosarito, Baja California
+    publisher: Ayuntamiento de Playas de Rosarito (portal de transparencia)
+    url: https://www.rosarito.gob.mx/ix-transparencia/archivo/57831
+    version_date: Última reforma P.O.E. No. 28, 06-05-2025
+    accessed: '2026-11-26'
+  reglamento-spma:
+    type: reglamento
+    official: true
+    title: Reglamento Interior de la Secretaría de Protección al Medio Ambiente de Playas de Rosarito
+    publisher: Ayuntamiento de Playas de Rosarito (portal de transparencia)
+    url: https://www.rosarito.gob.mx/ix-transparencia/archivo/64821
+    version_date: Periódico Oficial No. 9, 13-02-2026
+    accessed: '2026-11-26'
+  reglamento-salud-publica:
+    type: reglamento
+    official: true
+    title: Reglamento de Salud Pública del Municipio de Playas de Rosarito
+    publisher: Ayuntamiento de Playas de Rosarito (portal de transparencia)
+    url: https://www.rosarito.gob.mx/ix-transparencia/archivo/57811
+    version_date: Última reforma P.O.E. No. 28, 06-05-2025
+    accessed: '2026-11-26'
+  reglamento-sindicatura:
+    type: reglamento
+    official: true
+    title: Reglamento Interior de la Sindicatura Municipal del Ayuntamiento de Playas de Rosarito
+    publisher: Ayuntamiento de Playas de Rosarito (portal de transparencia)
+    url: https://www.rosarito.gob.mx/ix-transparencia/archivo/57820
+    version_date: Periódico Oficial No. 15, Sección I, 12-03-2021
+    accessed: '2026-11-26'
+  cpeum:
+    type: constitucion
+    official: true
+    title: Constitución Política de los Estados Unidos Mexicanos
+    publisher: Cámara de Diputados, Secretaría de Servicios Parlamentarios
+    url: https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
+    version_date: Última reforma DOF 07-10-2026
+    accessed: '2026-11-27'
+  gobmx-911:
+    type: portal_oficial
+    official: true
+    title: 9-1-1 Emergencias
+    publisher: Gobierno de México, Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública
+    url: https://www.gob.mx/911
+    accessed: '2026-11-27'
+  directorio-sindicatura:
+    type: portal_oficial
+    official: true
+    title: Directorio de funcionarios, Sindicatura Municipal
+    publisher: Ayuntamiento de Playas de Rosarito
+    url: https://www.rosarito.gob.mx/directorio/funcionarios/entidad/24
+    accessed: '2026-11-27'
+  directorio-spma:
+    type: portal_oficial
+    official: true
+    title: Directorio de funcionarios, Secretaría de Protección al Medio Ambiente
+    publisher: Ayuntamiento de Playas de Rosarito
+    url: https://www.rosarito.gob.mx/directorio/funcionarios/entidad/137
+    accessed: '2026-11-27'
+  reporte-rosarito-2026:
+    type: reportes_ciudadanos
+    official: false
+    title: >-
+      Reporte al proyecto de una persona que denunció perros agresivos en Playas de Rosarito (octubre y noviembre
+      de 2026). No se publica el reporte completo para no revelar datos personales.
+    publisher: Compartido
+    accessed: '2026-11-27'
+status: borrador
+last_checked: '2026-11-27'
+checked_by: Claude (Compartido)
+notes: >-
+  El reglamento de animales todavía nombra a la «Dirección de Salud Municipal y Departamento de Control Animal».
+  Desde el 13 de febrero de 2026 esas funciones están en la Dirección de Derecho y Bienestar Animal de la
+  Secretaría de Protección al Medio Ambiente: el Reglamento Interior de Salud Municipal derogó el capítulo de
+  Control Animal (arts. 31 a 34) y el transitorio TERCERO del Reglamento Interior de la Secretaría dice que las
+  atribuciones con otro nombre se entienden dadas a ella. El portal oficial no publica la dirección, el teléfono
+  ni el horario de la oficina de Bienestar Animal (las páginas de sus trámites dan error 404), así que la ficha no
+  los incluye; tampoco publica una dirección ni un horario propios de la Sindicatura, solo la dirección general
+  del Ayuntamiento. El nombre «Formato de Denuncia Ciudadana» viene del reporte, no de una fuente oficial.
+  El reglamento municipal no fija un periodo de observación antirrábica para un perro que mordió a alguien; solo
+  las 72 horas hábiles para cualquier animal capturado (art. 5 fr. V). El art. 26 fr. XI da 10 días hábiles para
+  animales que lesionaron a personas, pero excluye expresamente a perros y gatos.
+  Esta ficha no describe con fuentes la denuncia penal por lesiones ante el Ministerio Público, la queja ante la
+  Comisión Estatal de los Derechos Humanos de Baja California, la petición a una regiduría o comisión del Cabildo,
+  ni el amparo cuando no contestan una petición; son vías que existen y que faltan por documentar. Si la casa es
+  rentada, las reglas sobre mascotas del contrato de arrendamiento son un asunto entre particulares y no las cubre
+  esta ficha.
